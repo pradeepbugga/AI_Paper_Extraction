@@ -17,6 +17,35 @@ NUMBERED_PREFIX_RE = re.compile(r"^\d{1,3}\.\s+\S")
 TOC_LABEL_RE = re.compile(r"^(table of )?contents$", re.IGNORECASE)
 BOLD_FLAG = 1 << 4
 
+# Standard IMRaD/back-matter section names, common across journals and
+# publishers regardless of house style -- a font-size/numbering-based
+# hierarchy can misjudge these as nested (e.g. an unnumbered "References"
+# sharing a numbered body section's size lands one tier "deeper" by a purely
+# typographic ranking), but these are never genuinely subsections of one
+# another. Matched after stripping a leading numbered ("4.") or Appendix
+# ("Appendix A.") prefix and trailing punctuation.
+HEADING_PREFIX_RE = re.compile(r"^(\d{1,3}\.\s*|appendix\s+[a-z]\.?\s*)", re.IGNORECASE)
+TOP_LEVEL_SECTION_RE = re.compile(
+    r"^(introduction|background|"
+    r"results(\s+and\s+discussion)?|discussion|"
+    r"(materials\s+and\s+)?methods|experimental(\s+(section|details|part))?|"
+    r"conclusions?|summary|outlook|"
+    r"acknowledge?ments?|references?|bibliography|notes(\s+and\s+references)?|"
+    r"author\s+contributions?|credit\s+authorship\s+contribution\s+statement|"
+    r"author\s+information|associated\s+content|corresponding\s+author|authors?|"
+    r"data\s+availability(\s+statement)?|"
+    r"(declaration\s+of\s+)?competing\s+interests?|"
+    r"conflicts?\s+of\s+interest(s)?|declaration\s+of\s+interest(s)?|"
+    r"supporting\s+information|supplementary\s+(information|materials?|data)|"
+    r"abbreviations|funding|abstract)$",
+    re.IGNORECASE,
+)
+
+
+def is_top_level_section_name(text):
+    normalized = HEADING_PREFIX_RE.sub("", text).strip().rstrip(".:")
+    return bool(TOP_LEVEL_SECTION_RE.match(normalized))
+
 # Chemical-nomenclature terms conventionally italicized inline (stereo/locant
 # descriptors, Latin abbreviations) — kept regardless of a style mismatch with
 # the surrounding heading text, rather than relying on font/weight/size
@@ -494,7 +523,12 @@ def assemble_sections(elements):
     for el in elements:
         m = re.fullmatch(r"heading(\d+)", el["type"])
         if m:
-            level = int(m.group(1))
+            # A style-based rank can misjudge a standard section name as
+            # nested (e.g. an unnumbered "References" sharing a numbered
+            # body section's font size lands one tier "deeper" purely by
+            # typography) -- these are never genuinely subsections of one
+            # another, so the text overrides the style-derived level here.
+            level = 1 if is_top_level_section_name(el["text"]) else int(m.group(1))
             parent = container_for(level)
             node = {"heading": el["text"], "page_start": el["page"],
                     "paragraphs": [], "subsections": []}
