@@ -18,7 +18,7 @@ def extract_text_blocks(page):
     return blocks
 
 
-def extract_raster_images(doc, page, page_number, images_dir):
+def extract_raster_images(doc, page, page_number, images_dir, doc_source):
     images = []
     for img_index, img in enumerate(page.get_images(full=True)):
         xref = img[0]
@@ -32,10 +32,10 @@ def extract_raster_images(doc, page, page_number, images_dir):
         image_filename = f"page{page_number}_raster{img_index}.png"
         pix.save(images_dir / image_filename)
         images.append({
-            "image_id": f"p{page_number}_raster{img_index}",
+            "image_id": f"{doc_source}_p{page_number}_raster{img_index}",
             "source": "embedded_raster",
             "bbox": [round(bbox.x0, 1), round(bbox.y0, 1), round(bbox.x1, 1), round(bbox.y1, 1)],
-            "path": f"images/{image_filename}",
+            "path": f"{images_dir.name}/{image_filename}",
             "width": pix.width,
             "height": pix.height,
         })
@@ -90,7 +90,7 @@ def is_invisible_drawing(d, white_tol=0.02):
     return all(abs(c - 1.0) < white_tol for c in fill)
 
 
-def extract_vector_figures(page, page_number, images_dir, zoom=3.0):
+def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0):
     drawings = page.get_drawings()
     if not drawings:
         return []
@@ -107,10 +107,10 @@ def extract_vector_figures(page, page_number, images_dir, zoom=3.0):
         image_filename = f"page{page_number}_fig{fig_index}.png"
         pix.save(images_dir / image_filename)
         figures.append({
-            "image_id": f"p{page_number}_fig{fig_index}",
+            "image_id": f"{doc_source}_p{page_number}_fig{fig_index}",
             "source": "vector_region",
             "bbox": [round(bbox.x0, 1), round(bbox.y0, 1), round(bbox.x1, 1), round(bbox.y1, 1)],
-            "path": f"images/{image_filename}",
+            "path": f"{images_dir.name}/{image_filename}",
             "width": pix.width,
             "height": pix.height,
         })
@@ -118,28 +118,35 @@ def extract_vector_figures(page, page_number, images_dir, zoom=3.0):
     return figures
 
 
-def ingest_pdf(pdf_path: Path, output_dir: Path):
-    images_dir = output_dir / "images"
+def ingest_pdf(pdf_path: Path, output_dir: Path, doc_source: str = "main", images_dirname: str = "images"):
+    """doc_source tags every page 'main' or 'SI' — main text and Supporting
+    Information are ingested as one job (see __main__) but stay two documents
+    with independent page numbering, so paths/image_ids/output files are kept
+    in source-specific namespaces to avoid collisions (both start at page 1)."""
+    images_dir = output_dir / images_dirname
     images_dir.mkdir(parents=True, exist_ok=True)
 
     doc = fitz.open(pdf_path)
     pages = []
     for page_number, page in enumerate(doc, start=1):
-        raster_images = extract_raster_images(doc, page, page_number, images_dir)
-        vector_figures = extract_vector_figures(page, page_number, images_dir)
+        raster_images = extract_raster_images(doc, page, page_number, images_dir, doc_source)
+        vector_figures = extract_vector_figures(page, page_number, images_dir, doc_source)
         pages.append({
             "page_number": page_number,
+            "source": doc_source,
             "text_blocks": extract_text_blocks(page),
             "images": raster_images + vector_figures,
         })
 
     result = {
         "source_pdf": pdf_path.name,
+        "source": doc_source,
         "page_count": len(pages),
         "pages": pages,
     }
 
-    output_path = output_dir / "raw_extraction.json"
+    output_filename = "raw_extraction.json" if doc_source == "main" else f"{doc_source}_raw_extraction.json"
+    output_path = output_dir / output_filename
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
 
@@ -147,14 +154,19 @@ def ingest_pdf(pdf_path: Path, output_dir: Path):
     return result
 
 
-if __name__ == "__main__":
-    paper_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/papers/suzuki_iron_2024")
-    pdf_path = paper_dir / "paper.pdf"
-
-    result = ingest_pdf(pdf_path, paper_dir)
-
+def _print_summary(label, result):
     total_blocks = sum(len(p["text_blocks"]) for p in result["pages"])
     total_images = sum(len(p["images"]) for p in result["pages"])
-    print(f"Pages: {result['page_count']}")
-    print(f"Text blocks: {total_blocks}")
-    print(f"Images extracted: {total_images}")
+    print(f"[{label}] Pages: {result['page_count']}  Text blocks: {total_blocks}  Images: {total_images}")
+
+
+if __name__ == "__main__":
+    paper_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/papers/suzuki_iron_2024")
+
+    main_result = ingest_pdf(paper_dir / "paper.pdf", paper_dir, doc_source="main")
+    _print_summary("main", main_result)
+
+    si_path = paper_dir / "SI.pdf"
+    if si_path.exists():
+        si_result = ingest_pdf(si_path, paper_dir, doc_source="SI", images_dirname="images_SI")
+        _print_summary("SI", si_result)

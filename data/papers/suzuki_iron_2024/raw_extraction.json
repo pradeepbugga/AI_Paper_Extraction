@@ -1,9 +1,11 @@
 {
   "source_pdf": "paper.pdf",
+  "source": "main",
   "page_count": 14,
   "pages": [
     {
       "page_number": 1,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -158,7 +160,7 @@
       ],
       "images": [
         {
-          "image_id": "p1_raster0",
+          "image_id": "main_p1_raster0",
           "source": "embedded_raster",
           "bbox": [
             39.7,
@@ -174,6 +176,7 @@
     },
     {
       "page_number": 2,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -438,7 +441,7 @@
       ],
       "images": [
         {
-          "image_id": "p2_fig0",
+          "image_id": "main_p2_fig0",
           "source": "vector_region",
           "bbox": [
             314.0,
@@ -454,6 +457,7 @@
     },
     {
       "page_number": 3,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -1008,7 +1012,7 @@
       ],
       "images": [
         {
-          "image_id": "p3_fig0",
+          "image_id": "main_p3_fig0",
           "source": "vector_region",
           "bbox": [
             52.1,
@@ -1024,6 +1028,7 @@
     },
     {
       "page_number": 4,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -1978,7 +1983,7 @@
       ],
       "images": [
         {
-          "image_id": "p4_fig0",
+          "image_id": "main_p4_fig0",
           "source": "vector_region",
           "bbox": [
             47.1,
@@ -1994,6 +1999,7 @@
     },
     {
       "page_number": 5,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -2708,7 +2714,7 @@
       ],
       "images": [
         {
-          "image_id": "p5_fig0",
+          "image_id": "main_p5_fig0",
           "source": "vector_region",
           "bbox": [
             81.7,
@@ -2724,6 +2730,7 @@
     },
     {
       "page_number": 6,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -3748,7 +3755,7 @@
       ],
       "images": [
         {
-          "image_id": "p6_fig0",
+          "image_id": "main_p6_fig0",
           "source": "vector_region",
           "bbox": [
             40.4,
@@ -3764,6 +3771,7 @@
     },
     {
       "page_number": 7,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -4498,7 +4506,7 @@
       ],
       "images": [
         {
-          "image_id": "p7_fig0",
+          "image_id": "main_p7_fig0",
           "source": "vector_region",
           "bbox": [
             41.7,
@@ -4514,6 +4522,7 @@
     },
     {
       "page_number": 8,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -6538,7 +6547,7 @@
       ],
       "images": [
         {
-          "image_id": "p8_fig0",
+          "image_id": "main_p8_fig0",
           "source": "vector_region",
           "bbox": [
             45.8,
@@ -6554,6 +6563,7 @@
     },
     {
       "page_number": 9,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -6680,6 +6690,7 @@
     },
     {
       "page_number": 10,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -8864,7 +8875,7 @@
       ],
       "images": [
         {
-          "image_id": "p10_fig0",
+          "image_id": "main_p10_fig0",
           "source": "vector_region",
           "bbox": [
             43.7,
@@ -8880,6 +8891,7 @@
     },
     {
       "page_number": 11,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -9006,6 +9018,7 @@
     },
     {
       "page_number": 12,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -9052,6 +9065,7 @@
     },
     {
       "page_number": 13,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -9208,6 +9222,7 @@
     },
     {
       "page_number": 14,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -9242,7 +9257,7 @@
       ],
       "images": [
         {
-          "image_id": "p14_raster0",
+          "image_id": "main_p14_raster0",
           "source": "embedded_raster",
           "bbox": [
             41.1,

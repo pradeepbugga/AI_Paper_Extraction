@@ -42,6 +42,33 @@ python3 ingest/pdf_ingest.py data/papers/suzuki_iron_2024
 Outputs `raw_extraction.json` (per-page text blocks + figure metadata) and an
 `images/` directory of rasterized figures, inside the paper's data directory.
 
+### Supporting Information
+
+Materials chemistry papers lean heavily on their SI PDF — most of the actual
+synthesis procedures and compound characterization data (NMR shifts, IR,
+HRMS, melting points) lives there, not in the main text. If `SI.pdf` is
+present alongside `paper.pdf` in a paper's directory, the same run also
+ingests it as its own document (`SI_raw_extraction.json`, `images_SI/`),
+with every page tagged `"source": "main"` or `"source": "SI"` so downstream
+stages can tell which document a given span of text or figure came from.
+Image IDs and output filenames are kept in per-source namespaces since both
+documents restart page numbering at 1.
+
+Tested on two SI PDFs of very different scale — 111 pages (`copper_iron_2025`,
+mostly text: procedures, per-compound characterization data, and NMR
+spectrum plots drawn as dense vector line traces rather than chemical
+structures) and 406 pages (`suzuki_iron_2024`, which also includes a large
+block of raw DFT-calculation Cartesian coordinates). The same vector-drawing
+clustering from the main text handles NMR spectrum traces correctly despite
+them being a structurally different kind of vector drawing (one continuous
+line, thousands of tiny path segments, vs. discrete chemical-structure
+bonds) — verified by rendering a crop and confirming it's a clean,
+correctly-cropped spectrum.
+
+```
+python3 ingest/pdf_ingest.py data/papers/copper_iron_2025
+```
+
 ## Stage 2: section/layout parsing
 
 `ingest/section_parse.py` turns the flat per-page text blocks from Stage 1

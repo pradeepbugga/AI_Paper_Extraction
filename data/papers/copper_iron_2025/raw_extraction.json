@@ -1,9 +1,11 @@
 {
   "source_pdf": "paper.pdf",
+  "source": "main",
   "page_count": 7,
   "pages": [
     {
       "page_number": 1,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -148,7 +150,7 @@
       ],
       "images": [
         {
-          "image_id": "p1_raster0",
+          "image_id": "main_p1_raster0",
           "source": "embedded_raster",
           "bbox": [
             515.5,
@@ -161,7 +163,7 @@
           "height": 397
         },
         {
-          "image_id": "p1_raster1",
+          "image_id": "main_p1_raster1",
           "source": "embedded_raster",
           "bbox": [
             511.0,
@@ -174,7 +176,7 @@
           "height": 144
         },
         {
-          "image_id": "p1_raster2",
+          "image_id": "main_p1_raster2",
           "source": "embedded_raster",
           "bbox": [
             -252.9,
@@ -187,7 +189,7 @@
           "height": 100
         },
         {
-          "image_id": "p1_raster3",
+          "image_id": "main_p1_raster3",
           "source": "embedded_raster",
           "bbox": [
             357.7,
@@ -200,7 +202,7 @@
           "height": 21
         },
         {
-          "image_id": "p1_raster4",
+          "image_id": "main_p1_raster4",
           "source": "embedded_raster",
           "bbox": [
             274.9,
@@ -213,7 +215,7 @@
           "height": 192
         },
         {
-          "image_id": "p1_raster5",
+          "image_id": "main_p1_raster5",
           "source": "embedded_raster",
           "bbox": [
             344.5,
@@ -226,7 +228,7 @@
           "height": 117
         },
         {
-          "image_id": "p1_raster6",
+          "image_id": "main_p1_raster6",
           "source": "embedded_raster",
           "bbox": [
             259.8,
@@ -239,7 +241,7 @@
           "height": 207
         },
         {
-          "image_id": "p1_raster7",
+          "image_id": "main_p1_raster7",
           "source": "embedded_raster",
           "bbox": [
             321.3,
@@ -252,7 +254,7 @@
           "height": 141
         },
         {
-          "image_id": "p1_raster8",
+          "image_id": "main_p1_raster8",
           "source": "embedded_raster",
           "bbox": [
             298.3,
@@ -265,7 +267,7 @@
           "height": 48
         },
         {
-          "image_id": "p1_raster9",
+          "image_id": "main_p1_raster9",
           "source": "embedded_raster",
           "bbox": [
             300.6,
@@ -278,7 +280,7 @@
           "height": 32
         },
         {
-          "image_id": "p1_raster10",
+          "image_id": "main_p1_raster10",
           "source": "embedded_raster",
           "bbox": [
             159.5,
@@ -291,7 +293,7 @@
           "height": 55
         },
         {
-          "image_id": "p1_raster11",
+          "image_id": "main_p1_raster11",
           "source": "embedded_raster",
           "bbox": [
             162.1,
@@ -304,7 +306,7 @@
           "height": 37
         },
         {
-          "image_id": "p1_raster12",
+          "image_id": "main_p1_raster12",
           "source": "embedded_raster",
           "bbox": [
             120.1,
@@ -317,7 +319,7 @@
           "height": 284
         },
         {
-          "image_id": "p1_raster13",
+          "image_id": "main_p1_raster13",
           "source": "embedded_raster",
           "bbox": [
             344.5,
@@ -330,7 +332,7 @@
           "height": 64
         },
         {
-          "image_id": "p1_fig0",
+          "image_id": "main_p1_fig0",
           "source": "vector_region",
           "bbox": [
             53.7,
@@ -343,7 +345,7 @@
           "height": 150
         },
         {
-          "image_id": "p1_fig1",
+          "image_id": "main_p1_fig1",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -356,7 +358,7 @@
           "height": 35
         },
         {
-          "image_id": "p1_fig2",
+          "image_id": "main_p1_fig2",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -369,7 +371,7 @@
           "height": 70
         },
         {
-          "image_id": "p1_fig3",
+          "image_id": "main_p1_fig3",
           "source": "vector_region",
           "bbox": [
             1.5,
@@ -382,7 +384,7 @@
           "height": 940
         },
         {
-          "image_id": "p1_fig4",
+          "image_id": "main_p1_fig4",
           "source": "vector_region",
           "bbox": [
             315.5,
@@ -395,7 +397,7 @@
           "height": 186
         },
         {
-          "image_id": "p1_fig5",
+          "image_id": "main_p1_fig5",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -411,6 +413,7 @@
     },
     {
       "page_number": 2,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -575,7 +578,7 @@
       ],
       "images": [
         {
-          "image_id": "p2_fig0",
+          "image_id": "main_p2_fig0",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -588,7 +591,7 @@
           "height": 37
         },
         {
-          "image_id": "p2_fig1",
+          "image_id": "main_p2_fig1",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -604,6 +607,7 @@
     },
     {
       "page_number": 3,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -708,7 +712,7 @@
       ],
       "images": [
         {
-          "image_id": "p3_fig0",
+          "image_id": "main_p3_fig0",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -721,7 +725,7 @@
           "height": 37
         },
         {
-          "image_id": "p3_fig1",
+          "image_id": "main_p3_fig1",
           "source": "vector_region",
           "bbox": [
             52.4,
@@ -734,7 +738,7 @@
           "height": 1269
         },
         {
-          "image_id": "p3_fig2",
+          "image_id": "main_p3_fig2",
           "source": "vector_region",
           "bbox": [
             316.5,
@@ -750,6 +754,7 @@
     },
     {
       "page_number": 4,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -904,7 +909,7 @@
       ],
       "images": [
         {
-          "image_id": "p4_raster0",
+          "image_id": "main_p4_raster0",
           "source": "embedded_raster",
           "bbox": [
             406.4,
@@ -917,7 +922,7 @@
           "height": 100
         },
         {
-          "image_id": "p4_fig0",
+          "image_id": "main_p4_fig0",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -930,7 +935,7 @@
           "height": 37
         },
         {
-          "image_id": "p4_fig1",
+          "image_id": "main_p4_fig1",
           "source": "vector_region",
           "bbox": [
             316.8,
@@ -946,6 +951,7 @@
     },
     {
       "page_number": 5,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -1200,7 +1206,7 @@
       ],
       "images": [
         {
-          "image_id": "p5_fig0",
+          "image_id": "main_p5_fig0",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -1216,6 +1222,7 @@
     },
     {
       "page_number": 6,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -1350,7 +1357,7 @@
       ],
       "images": [
         {
-          "image_id": "p6_fig0",
+          "image_id": "main_p6_fig0",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -1366,6 +1373,7 @@
     },
     {
       "page_number": 7,
+      "source": "main",
       "text_blocks": [
         {
           "block_id": 0,
@@ -1480,7 +1488,7 @@
       ],
       "images": [
         {
-          "image_id": "p7_fig0",
+          "image_id": "main_p7_fig0",
           "source": "vector_region",
           "bbox": [
             51.5,
