@@ -12,7 +12,7 @@ TERMINAL_PUNCT_RE = re.compile(r"[.?!:;]$")
 TRAILING_PAGE_NUM_RE = re.compile(r"\s*\d{1,4}$")
 BOLD_FLAG = 1 << 4
 
-HEADER_FRACTION = 0.08    # top of page treated as running-header territory
+HEADER_FRACTION = 0.05    # top of page treated as running-header territory
 FOOTER_FRACTION = 0.05    # bottom of page treated as running-footer territory
 REPEAT_FRACTION = 0.3     # line text repeated on this share of pages is furniture
 HEADING_SIZE_RATIO = 1.02  # heading candidate must be strictly larger than body size
