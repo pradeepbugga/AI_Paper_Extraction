@@ -1,0 +1,875 @@
+{
+  "source_pdf": "paper.pdf",
+  "front_matter": [
+    "The Suzuki\u2013Miyaura coupling of aryl chlorides with arylboronic acids catalysed by NHC platinum complexes",
+    "Anna Smoczy\u00b4nska a, Sylwia Ostrowska a",
+    ", Cezary Pietraszuk a,*",
+    "a Adam Mickiewicz University, Faculty of Chemistry, Uniwersytetu Pozna\u00b4nskiego 8, Pozna\u00b4n 61-614, Poland b Department of Chemistry and Center for Sustainable Chemistry, Ghent University, Krijgslaan 281 (S-3), 9000 Ghent, Belgium",
+    "A R T I C L E I N F O",
+    "Keywords: N-heterocyclic carbenes Platinum complexes Suzuki\u2013Miyaura cross-coupling Arylboronic acids"
+  ],
+  "sections": [
+    {
+      "heading": "1. Introduction",
+      "page_start": 1,
+      "paragraphs": [
+        "Since the landmark work of Suzuki and Miyaura [1,2], coupling of organic halides with organoboronic acids or their esters is commonly catalysed by palladium complexes [3]. However, subsequent in\u00ad vestigations have revealed the catalytic activity of several other transi\u00ad tion metal complexes facilitating this transformation [4]. To date, examples of efficient catalysis of the Suzuki\u2013Miyaura cross-coupling in the presence of nickel [5], iron [6], cobalt [7,8] and copper [9,10] complexes have been described. Although aryl chlorides are the cheapest and most accessible aryl halides, they represent a more chal\u00ad lenging choice of reactant for coupling due to their higher C-Cl bond energy compared to other C-X bonds. Currently, aryl chlorides are effi\u00ad ciently converted by complexes of Pd [11\u201313], Ni [5], Co [7,8,14,15], and Fe [16]. NHC platinum complexes are less popular than analogous complexes of other platinum metals. First synthesised by Arduengo in 1994 [17], it took a long time for them to find catalytic applications. In 2002, Marko described a series of platinum complexes with the general formula [NHC-Pt(dvtms)] (dvtms = 1,3-divinyltetramethyldisiloxane), demonstrating their catalytic activity in the hydrosilylation of olefins [18]. A family of Marko catalysts was quickly developed, demonstrating activity in selected organic transformations [19]. Fig. 1 illustrates a variety of structures of NHC platinum complexes that exhibit catalytic activity [18,20,21].",
+        "To date, the most efficient platinum-based homogeneous systems have been described by Sabounchei [22] and Bedford [23], with the",
+        "* Corresponding authors. E-mail addresses: steven.nolan@ugent.be (S.P. Nolan), pietrasz@amu.edu.pl (C. Pietraszuk).",
+        "https://doi.org/10.1016/j.jcat.2025.116452 Received 5 July 2025; Received in revised form 19 September 2025; Accepted 22 September 2025",
+        "Available online 23 September 2025 0021-9517/\u00a9 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        ", Anna Chojnacka a, Steven P. Nolan b,*",
+        "A B S T R A C T",
+        "The platinum complexes [Pt(IPr)(DMS)Cl2] and [Pt(IPr*)(DMS)Cl2] are highly effective catalysts in the Suzu\u00ad ki\u2013Miyaura coupling reaction involving aryl chlorides and aryl- and alkenylboronic acids. A procedure for the selective synthesis of a series of biphenyls is presented. The reaction can be scaled up to at least the gram level. A proposed mechanism for the process is outlined.",
+        "latter reporting the coupling of 4-chloroacetophenone with phenyl\u00ad boronic acid, achieving a conversion of 29 % and a TON of 58 with the platinacyclic complex 1a (see Fig. 2). Among heterogeneous platinumbased catalysts, platinum nanoparticles supported on a hierarchically porous polymer exhibit the highest activity. This catalyst is active in the coupling of chlorobenzene and a set of other chloroarenes with phe\u00ad nylboronic acid [24]. Our interest in the catalytic activity of platinum NHC complexes has resulted in the development of efficient hydro\u00ad silylation procedures for olefins and/or acetylenes [25\u201328] as well as the discovery of a highly effective and selective acetylene dimerization process [29].",
+        "In this article, we describe a homogeneous catalytic system based on NHC platinum complexes capable of efficiently performing the SuzukiMiyaura cross-coupling of inactivated aryl chlorides with boronic acids."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "2. Results and discussion",
+      "page_start": 1,
+      "paragraphs": [
+        "Exploration of the catalytic activity of N-heterocyclic carbene plat\u00ad inum complexes of the general formula [Pt(NHC)(DMS)Cl2] (DMS = dimethyl sulphide) recently developed by Nolan [27] (Fig. 1, 1b-e) revealed their excellent catalytic performance in Suzuki\u2013Miyaura coupling reactions involving aryl chlorides. Adding 1 mol% of the [Pt (IPr)(DMS)Cl2] (1b) complex to an ethanol solution of 4-chlorotoluene (3a) and 4-methoxyphenylboronic acid in the presence of KOH at 80 \u25e6C caused the initially clear, straw-coloured solution to gradually cloud. After 20 h, GC/MS analysis of the light brown reaction mixture revealed complete conversion of the substrate and formation of a single product identified as 4-methoxy-4\u2032-methyl-1,1\u2032-biphenyl (4aa) (see Scheme 1). The product identity was confirmed by 1H NMR spectroscopy. The white precipitate formed during the reaction was filtered off and identified as potassium chloride.",
+        "An analogous reaction using 4-bromotoluene resulted in complete conversion of the aryl bromide within 15 min.",
+        "A series of experiments were performed to determine the active catalysts/catalytic systems and the conditions for efficient reactions. The catalytic activity of 1b was compared to that of 1c, 1d, and to its IMes analogue [Pt(IMes)(DMS)Cl2] (1e) (Table 1 entries 2\u20134). Further\u00ad more, the catalytic activity of selected analogous platinum complexes, including the Marko type catalyst [Pt(IPr*)(dvtms)] (Table 2, entry 5) [30], Karstedt catalyst (Table 2, entry 6) [31] and [PtCl2(DMS)2] re\u00ad ported by Nolan [32], was investigated. It was observed that the cata\u00ad lytic activity strongly depends on the stereoelectronic properties of the NHC ligand. In the presence of complexes 1b and 1d, the reaction pro\u00ad ceeded almost quantitatively, whereas the use of [Pt(IMes)(DMS)Cl2] results in no reaction (Table 1 entries 1 and 3, respectively). The high catalytic activity of complexes containing the IPr [33] and IPr* [34] ligands is well documented in palladium and other platinum metal catalysis. No catalytic activity was observed for both the Marko catalyst (1f) (see Table 1, entry 5), for the NHC ligand-free Karstedt catalyst (see Table 1, entry 6) and [PtCl2(DMS)2]. The reason for the lack of activity of the Marko catalyst may be the presence of a reluctantly dissociating dvtms ligand. Similarly to the case of catalysis with palladium com\u00ad plexes, the lack of activity of complexes not containing strongly electron-donating and sterically extended ligands, such as NHC, results from an inability to carry out effective oxidative addition of the strong C- Cl bond to the Pt complex, as well as an inability to carry out reductive elimination in an uncrowded coordination sphere.",
+        "Experiments to determine the optimum base, solvent and reaction temperature are summarized in Table 2. The reaction does not proceed in the absence of platinum and under base-free conditions. The presence of water in reaction system has a significant effect on the course of the reaction. In 96 % ethanol, the reaction proceeded almost quantitative, while in ethanol (99.8 %), no reaction was observed (Table 2, entries 1 and 2). Changing ethanol as a solvent to another alcohol resulted in a significant decrease in yield (see Table 2, entries 5 and 6). The use of 1,4- dioxane or toluene as a solvent, to which 10 \u00b5L of water has been added, results in trace amounts or no coupling product (see Table 2, entries 7 and 8). Potassium containing bases were found more effective than the ones based on caesium. KOH enabled the highest performance. By contrast, no reaction was observed in the presence of sodium carbonate or hydroxide. The lower activity of sodium derivatives is probably due to the higher solubility of NaCl compared to KCl in ethanol, although there may be other reasons as well. In palladium-catalysed coupling reactions, sodium-containing bases also show reduced activity, a phenomenon most often associated with solubility issues. Other tested bases, such as Et3N and TBAOH, were found to be inactive. Reducing the reaction temperature to 60 \u25e6C (see Table 2, entry 18) significantly reduced the reaction yield. No conversion was observed at room temperature.",
+        "Subsequent experiments attempted to determine the optimum cata\u00ad lyst concentration. The results are summarized in Table 3.",
+        "All attempts to reduce the catalyst loading below 1 mol% results in a significant drop in reaction efficiency (see Table 3). On the other hand, increasing the temperature to 100 \u25e6C for reactions with lower catalyst loading resulted in a 20 % increase in reaction yield and productivity (see Table 3, entries 2 and 3). Under optimal conditions, a TON value of 152 was obtained (see Table 3, Entry 3). The optimal reaction conditions were used to study the scope of the reaction (Scheme 2). Efficient re\u00ad actions were obtained in the presence of aryl chlorides regardless of the electron properties of the substituents at the para position in the aro\u00ad matic ring. High yields were obtained for sterically hindered 2-chloro1,3-dimethylbenzene (4ad) as well as for heterocyclic derivatives. A lower yield of coupling product (4af, 53 %) was obtained only in the case of 2-chloropyridine, which is known to be a challenging reagent.",
+        "The reactivity of selected arylboronic acids with different sub\u00ad stituents at the phenyl ring was also tested in the reaction (see Scheme 3). The formation of the expected coupling products was observed, with high or satisfactory yields.",
+        "To investigate the scope of the reaction in more detail, the activity of styrylboronic acid (2e) was tested. When 2e reacted with 4-chloroto\u00ad luene, the expected cross-coupling product was produced, with an isolation yield of 82 % (Scheme 4a). This demonstrates the activity of alkenylboronic acids in Suzuki cross-coupling catalysed by NHC plat\u00ad inum complexes. In contrast, coupling the pinacol ester of phenyl\u00ad ethynylboronic acid (2f) with p-chlorotoluene (see Scheme 4b) produced the desired product, albeit with an unsatisfactory isolation efficiency of just 22 %. The low isolation yield of 4fa was mainly due to the low conversion of 3a (48 %) but also due to the formation of a semihydrogenated by-product.",
+        "As products containing pyridine derivatives have high potential for use as building blocks in medicinal chemistry and materials science, as well as in coordination complexes, the scalability of the system was tested in the reaction of 4-methoxyphenylboronic acid with 3-chloropyr\u00ad idine. The scale-up process enabled the synthesis of 3-(4-methox\u00ad yphenyl)pyridine (4ae) to be carried out with an excellent yield of 95 % (see Scheme 5).",
+        "To gain insight into the reaction mechanism, a series of tests and preliminary kinetic experiments was conducted. To assess whether the process proceeds according to the Pt(II)/Pt(IV) cycle, reactions of [Pt (IPr)(DMS)Cl2] with an excess of 4-chlorotoluene were carried out at room temperature and at 80 \u25e6C. Analysis of the reaction mixtures using 1H NMR spectroscopy showed no changes in the system. Furthermore, a test reaction was carried out to couple 4-methoxyphenylboronic acid (2a) and 4-chlorotoluene (3a) in the presence of a twofold molar excess of ascorbic acid relative to the catalyst [35]. This was done under the assumption that any active Pt(IV) complexes would be reduced during the coupling reaction, resulting in a significant decrease in reaction yield. However, the experiment did not reveal any decrease in reaction yield. It was therefore assumed that the reaction could proceed",
+        "according to the Pt(0)/Pt(II) cycle.",
+        "In order to gain a better understanding of the reaction mechanism, the reaction profiles of the catalysts [Pt(IPr)(DMS)Cl2] and [Pt(IPr*) (DMS)Cl2] were compared (Fig. S1). Unexpectedly, the experiment revealed high similarity in the reaction profiles. Previous observations of palladium complexes indicated significantly higher catalytic activity in complexes containing the bulkier ligand IPr*. Interestingly, Fig. S1 shows that the reaction rate is independent of the concentration of aryl chloride. Preliminary kinetic studies also showed a first-order depen\u00ad dence of the reaction rate on the catalyst concentration and a second order dependence on the concentration of boronic acid (Figs. S2\u2013S4). The results obtained suggest that the reaction rate (for concentrations of [Pt(IPr)(DMS)Cl2] = 1\u20132 mol%) is determined by the rate of catalyst initiation. The proposed catalyst initiation scheme (Scheme 6) starts with the reversible dissociation of DMS from [Pt(IPr)(DMS)Cl2]. This step was confirmed by a catalytic test, which revealed that the reaction is significantly suppressed in the presence of a fivefold excess of DMS relative to the catalyst. The next step of the initiation process is trans\u00ad metalation, which results in the formation of a biaryl complex. Based on the results of catalytic studies, we propose that this process limits the reaction rate. The sequence of initiating the actual catalyst \u2013 the [(NHC) Pt(0)] complex \u2013 is completed by a process of reductive elimination. This step is confirmed by the observation of the of 4,4\u2032-dimethoxy-1,1\u2032- biphenyl in the reaction system. Following the generation of a",
+        "catalytically active Pt(0) complex, we propose a mechanism analogous to that observed for palladium complexes. This involves a sequence of processes comprising oxidative addition, transmetalation and reductive elimination. The presence of an NHC ligand is essential for the reaction to proceed. As with palladium complexes, strong \u03c3-donor properties facilitate the oxidative addition of aryl chlorides, while bulky structures enable reductive elimination.",
+        "A comparison of the properties of platinum and palladium catalysts in the coupling reaction of aryl chlorides with arylboronic acids clearly shows that platinum complexes have several orders of magnitude lower yield and activity compared to highly active palladium-based systems [36]. The influence of the stereoelectronic properties of NHC ligands on the activity of platinum complexes appears to be similar to that observed for palladium complexes. The range of reactions appears to be similar and includes both aryl and heteroaryl derivatives. A significant advan\u00ad tage of platinum catalysts is their total inactivity in the homocoupling of arylboronic acids. This prevents the formation of one of the main un\u00ad desirable by-products. Improving the efficiency and activity of platinum catalysts in the activation of aryl and alkenyl chlorides is the greatest challenge for platinum-based coupling catalysts. This challenge can be met through the rational design of new platinum complexes with potentially higher catalytic activity and through the search for reusable catalysts, such as the recently described catalyst containing platinum nanoparticles deposited on a hierarchically porous polymer, which is",
+        "Table 1 Suzuki\u2013Miyaura coupling of 4-methoxyphenylboronic acid (2a) with 4-chloroto\u00ad luene (3a).",
+        "1 [Pt(IPr)(DMS)Cl2] (1b) 97 [Pt(SIPr)(DMS)Cl2] (1c) 38 [Pt(IPr*)(DMS)Cl2] (1d) 95 4 [Pt(IMes)(DMS)Cl2] (1e) NR [Pt(IPr*)(dvtms)] (1f) NR [Pt2(dvtms)3] Karstedt catalyst NR [PtCl2(DMS)2] NR",
+        "Reaction conditions: 4-methoxyphenylboronic acid (0.55 mmol), 1-chloro-4- methylbenzene (0.5 mmol, 1 equiv.), KOH (1.1 mmol, 2 equiv.), [Pt] (1 mol %), EtOH (1 mL), 80 \u25e6C, 20 h.",
+        "a Yield of the 4aa, as measured by GC; dvtms = 1,1,3,3-tetramethyl-1,3- divinyldisiloxane.",
+        "Table 2 Optimization of Suzuki\u2013 the presence of [Pt(IPr)(DMS)Cl2] (1b).",
+        "1 EtOH KOH 80 \u25e6C 99 EtOH KOH EtOH (99.8 %) NR EtOH KOH no cat. NR 4 EtOH \u2013 no base NR MeOH KOH iPrOH KOH 22 1,4-dioxaneb KOH NR 8 tolueneb KOH <5 9 EtOH NaOH NR 10 EtOH Na2CO3 NR 11 EtOH K3PO4 53 12 EtOH K2CO3 31 13 EtOH CsOH 11 14 EtOH Cs2CO3 26 15 EtOH TBAOH <5 16 EtOH Et3N NR 17 EtOH KOH 70\u25e6C 71 18 EtOH KOH 60\u25e6C 43 19 EtOH KOH 25\u25e6C NR 20 1,4-dioxane K3PO4 100\u25e6C NRc",
+        "21 DMF/H2O Cs2CO3 75\u25e6C 39d",
+        "Reaction conditions: 4-chlorotoluene (0.5 mmol, 1 equiv.), 4-methoxyphenyl\u00ad boronic acid (0.55 mmol, 1.1 equiv.), base (1.1 mmol, 2.2 equiv.), cat. [Pt (IPr)(DMS)Cl2] (1b) (1 mol%), EtOH (96 %), 80 \u25e6C, 20 h; a) Yield of 4aa, as measured by GC; b) 10 \u00b5L H2O were added c) conditions from ref. [23]: 4-chlor\u00ad otoluene (0.5 mmol, 1 equiv.), 4-methoxyphenylboronic acid (0.75 mmol, 1.5 equiv.), K3PO4 (1.0 mmol, 2.0 equiv.), cat. [Pt(IPr)(DMS)Cl2] (1b) (1 mol%), 1,4-dioxane (1 mL), 20 h; d) conditions from ref. [24]: 4-chlorotoluene (0.5 mmol, 1 equiv.), 4-methoxyphenylboronic acid (0.6 mmol, 1.2 equiv.), Bu4NCl (0.6 mmol, 1.2 equiv.), Cs2CO3 (0.7 mmol, 1.4 equiv.), cat. [Pt(IPr)(DMS)Cl2] (1b) (1 mol%), DMF/H2O 4:1 (2 mL), 20 h.",
+        "one of the most active heterogeneous catalysts for the coupling of aryl chloride substrates [24]."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "3. Conclusions",
+      "page_start": 4,
+      "paragraphs": [
+        "In conclusion, NHC platinum complexes [Pt(IPr)(DMS)Cl2] and [Pt (IPr*)(DMS)Cl2] serve as efficient precatalysts of Suzuki coupling of aryl chlorides and aryl- or alkenylboronic acids. The developed catalytic Table 3 Coupling of 4-methoxyphenylboronic acid (2a) with 4-chlorotoluene (3a). Optimization of the catalyst loading.",
+        "1 1 98 98 0.75 71 (93)b 95 (124)b",
+        "0.5 54 (76)b 108 (152)b",
+        "4 0.25 18 72 0.1 <5 <50",
+        "Reaction conditions: 4-methoxyphenylboronic acid (0.55 mmol), 4-chloroto\u00ad luene (0.5 mmol, 1 equiv.), KOH (1.1 mmol, 2.2 equiv.), cat. [Pt(IPr)(DMS) Cl2] (1b), EtOH (96 %) (1 mL), 80 \u25e6C, 20 h;",
+        "a Yield of the 4aa, as measured by GC. b 100 \u25e6C.",
+        "system is scalable to the gram scale without significant loss of efficiency. A mechanism involving a Pt(0)/Pt(II) cycle has been proposed. Pre\u00ad liminary kinetic investigations have shown that the initiation of the (NHC)Pt(0) complex is the rate-limiting step of the process. Ongoing mechanistic studies dealing with this specific issue are presently ongoing in our laboratories as are studies dealing with related platinummediated transformations."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "4. Methods",
+      "page_start": 4,
+      "paragraphs": [
+        "4.1. General information",
+        "Air- and moisture-sensitive reactions were carried out under an argon atmosphere using standard Schlenk techniques. Solvents used for all experiments were purchased from Sigma Aldrich (Merck), dried over molecular sieves, and degassed by bubbling with argon. NHC platinum complexes were prepared using the methods previously described [27]. The (4-(ethoxycarbonyl)phenyl)boronic acid was purchased from Frontier Scientific, and the remaining arylboronic acids were purchased from FluoroChem, and used as received. All aryl chlorides were pur\u00ad chased from Sigma Aldrich (Merck) and used as received. Potassium carbonate, potassium tert-butoxide, potassium phosphate, and potas\u00ad sium hydroxide were purchased from Sigma Aldrich (Merck), dried under high vacuum, and stored protected from moisture and air. EtOH (96 %) was purchased from POCh (Poland). The progress of the re\u00ad actions was monitored by gas chromatography (GC), using dodecane as an internal standard. GC analyses were performed using Varian CP-3800 (column: RTX-5 30 m ID 0.53 mm), equipped with TCD. GC/MS analyses were performed on an Agilent 5977B GC/MSD with an Agilent 8860 GC System. The structures of the complexes and hydrogenation products were determined by NMR spectroscopy and elemental analysis. 1H NMR (600 MHz) and 13C NMR (100 and 151 MHz) spectra were recorded on an Avance I (Bruker) spectrometer at 600 MHz using chloroform\u2011d1 (CDCl3) as the solvent.",
+        "4.2. General procedure for the synthesis of biaryls",
+        "A reaction flask with a stirring bar was charged with arylboronic acid (1.1 mmol, 1.1 equiv.) and KOH (2.2 mmol, 2.2 equiv.). The flask con\u00ad tents were then degassed for 3 min using an inert gas. Aryl chloride (1 mmol, 1 equiv.) and ethanol (96 %) (degassed) 2 mL were introduced into the reaction flask. The whole was stirred for 2 min at 80 \u25e6C (until all",
+        "reagents dissolved); after that, the catalyst [Pt(IPr)(DMS)Cl2] (7.2 mg, 0.01 mmol, 1 mol%) was added. The reaction mixture was stirred at 80 \u25e6C for 20 h, observing the formation of a white precipitate. Products were purified on a column using silica gel as a stationary phase and hexane/ethyl acetate mixture as eluent.",
+        "4.3. A scaled-up synthesis of 3-(4-methoxyphenyl)pyridine (4ae)",
+        "A 20 mL reaction flask with a stirring bar was charged with 4- methoxyphenylboronic acid (1 g, 6.58 mmol, 1.1 equiv.) and KOH (0.679 g, 13.16 mmol, 2.2 equiv.). The flask contents were then degassed for 10 min using an inert gas. The 3-chloropyridine (0.679 g, 5.98 mmol, 1 equiv.) and ethanol (96 %) (degassed) 10 mL were",
+        "introduced into the degassed reaction flask. The whole was stirred for 5 min at 80 \u25e6C (until all reagents dissolved); after that, the catalyst [Pt(IPr) (DMS)Cl2] (1b) (43 mg, 0.059 mmol, 1 mol%) was added. The reaction mixture was stirred at 80 \u25e6C for 24 h, observing the formation of a white precipitate. The product was purified by filtering the reaction mixture through celite. The filtrate was evaporated to dryness. The crude prod\u00ad uct was washed 3 times with cold n-hexane to obtain the pure product in 95 % yield (1.158 g)."
+      ],
+      "subsections": [
+        {
+          "heading": "CRediT authorship contribution statement",
+          "page_start": 6,
+          "paragraphs": [
+            "Anna Smoczy\u00b4nska: Investigation, Funding acquisition. Sylwia Ostrowska: Writing \u2013 review & editing, Writing \u2013 original draft, Conceptualization. Anna Chojnacka: Investigation. Steven P. Nolan: Writing \u2013 review & editing, Supervision, Conceptualization. Cezary Pietraszuk: Writing \u2013 review & editing, Writing \u2013 original draft, Su\u00ad pervision, Conceptualization."
+          ],
+          "subsections": []
+        },
+        {
+          "heading": "Declaration of competing interest",
+          "page_start": 6,
+          "paragraphs": [
+            "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper."
+          ],
+          "subsections": []
+        },
+        {
+          "heading": "Acknowledgements",
+          "page_start": 6,
+          "paragraphs": [
+            "AS, thanks for the financial support provided under the Initiative for Excellence \u2013 Research University (IDUB) project, project number 136// 13/SNS/0009. CP, acknowledges the financial support of the Faculty of Chemistry, Adam Mickiewicz University, Poznan, from the funds awarded by the Ministry of Science and Higher Education in the form of a subsidy for the maintenance and development of research potential in 2024. SPN acknowledges support from the FWO for work performed in Ghent. The authors would like to thank Bo\u02d9zena Wyrzykiewicz (M.Sc.) for carrying out and processing the NMR spectra."
+          ],
+          "subsections": []
+        },
+        {
+          "heading": "Appendix A. Supplementary data",
+          "page_start": 6,
+          "paragraphs": [
+            "Supplementary data to this article can be found online at https://doi. org/10.1016/j.jcat.2025.116452."
+          ],
+          "subsections": []
+        },
+        {
+          "heading": "Data availability",
+          "page_start": 6,
+          "paragraphs": [
+            "Data will be made available on request."
+          ],
+          "subsections": []
+        },
+        {
+          "heading": "References",
+          "page_start": 6,
+          "paragraphs": [
+            "[1] N. Miyaura, K. Yamada, A. Suzuki, Tetrahedron Lett. 20 (1979) 3437\u20133440.",
+            "Suzuki\u2013Miyaura seminal paper. [2] N. Miyaura, A. Suzuki, J. Chem. Soc. Chem. Commun. (1979) 866\u2013867. [3] N. Miyaura, A. Suzuki, Chem. Rev. 95 (1995) 2457\u20132483. For a seminal review on",
+            "the Suzuki\u2013Miyaura reaction. [4] B.S. Kadu, Catal. Sci. Technol. 11 (2021) 1186\u20131221. [5] F.-S. Han, Chem. Soc. Rev. 42 (2014) 5270\u20135298. [6] W.M. Czaplik, M. Mayer, J. Cvengros, A.J. von Wangelin, ChemSusChem 2 (2009)",
+            "396\u2013417. [7] J.M. Neely, M.J. Bezdek, P.J. Chirik, ACS Cent. Sci. 2 (2016) 935\u2013942. [8] S.S. Bera, M. Szostak, ACS Catal. 12 (2022) 3111\u20133137. [9] J.-H. Li, J.-L. Li, D.-P. Wang, S.-F. Pi, Y.-X. Xie, M.-B. Zhang, X.-C. Hu, J. Org.",
+            "Chem. 72 (2007) 2053\u20132057. [10] S. Thapa, B. Shrestha, S.K. Gurung, R. Giri, Org. Biomol. Chem. 13 (2015)",
+            "4816\u20134827. [11] M. Beller, H. Fischer, W.A. Herrmann, K. \u00a8Ofele, C. Brossmer, Angew. Chem. Int. Ed.",
+            "Engl. 34 (1995) 1848\u20131849. [12] A.F. Littke, G.C. Fu, Angew. Chem. Int. Ed. 37 (1998) 3387\u20133388. [13] D.W. Old, J.P. Wolfe, S.L. Buchwald, J. Am. Chem. Soc. 120 (1998) 9722\u20139723. [14] S. Asghar, S.B. Tailor, D. Elorriaga, R.B. Bedford, Angew. Chem. Int. Ed. 56 (2017)",
+            "16367\u201316370. [15] S.B. Tailor, M. Manzotti, G.J. Smith, S.A. Davis, R.B. Bedford, ACS Catal. 11 (2021)",
+            "3856\u20133866. [16] B.J.S. Rowsell, H.M. O\u2019Brien, G. Athavan, P.R. Daley-Dee, J. Krieger, E. Richards,",
+            "K. Heaton, I.J.S. Fairlamb, R.B. Bedford, Nat. Catal. 7 (2024) 1186\u20131198. [17] A.J. Arduengo III, S.F. Camper, J.C. Calabrese, F. Davidson, J. Am. Chem. Soc. 116",
+            "(1994) 4391\u20134394. [18] I.E. Marko, S. Sterin, O. Buisine, G. Mignani, P. Branlard, B. Tinant, J.P. Declercq,",
+            "Science 298 (2002) 204\u2013206. [19] For review see: S. Dierick, I.E. Marko, \u201cNHC platinum(0) complexes: unique",
+            "catalysts for the hydrosilylation of alkenes and alkynes\u201d, in: S.P. Nolan (Ed.), N- Heterocyclic Carbenes: Effective Tools for Organometallic Synthesis, Wiley-VCH, Weinheim, 2014, pp. 111\u2013149. [20] D. Brissy, M. Skander, P. Retailleau, A. Marinetti, Organometallics 26 (2007)",
+            "5782\u20135785. [21] J.J. Hu, F. Li, T.S.A. Hor, Organometallics 28 (2009) 1212\u20131220.",
+            "[22] A. Yousefi, S.J. Sabounchei, S.H.M. Farida, R. Karamian, N. Rahmani, R.W. Gable,",
+            "J. Organomet. Chem. 890 (2019) 21\u201331. [23] R.B. Bedford, S.L. Hazelwood, D.A. Albisson, Organometallics 21 (2002)",
+            "2599\u20132600. [24] S. Kim, G. Varga, M. Seo, A. S\u00b4api, V. R\u00b4acz, J.F. G\u00b4omez-P\u00b4erez, D. Sebo\u030bk, J. Lee,",
+            "\u00b4A. Kukovecz, Z. K\u00b4onya, ACS Appl. Nano Mat. 4 (2021) 4070\u20134076. [25] P. \u02d9Zak, M. Bo\u0142t, M. Kubicki, C. Pietraszuk, Dalton Trans. 47 (2018) 1903\u20131910. [26] P. \u02d9Zak, M. Bo\u0142t, C. Pietraszuk, Eur. J. Inorg. Chem. 2019 (2019) 2455\u20132461. [27] B.P. Maliszewski, N.V. Tzouras, S.G. Guillet, M. Saab, M. Beli\u02c7s, K. Van Hecke,",
+            "F. Nahra, S.P. Nolan, Dalton Trans. 49 (2020) 14673\u201314679. [28] B.P. Maliszewski, T.A.C.A. Bayrakdar, P. Lambert, L. Hamdouna, X. Trivelli,",
+            "L. Cavallo, A. Poater, M. Beli\u02c7s, O. Lafon, K. Van Hecke, D. Ormerod, C.S.J. Cazin, F. Nahra, S.P. Nolan, Chem. Eur. J. 29 (2023) e202301259.",
+            "[29] P. Zak, M. Bo\u0142t, J. Lorkowski, M. Kubicki, C. Pietraszuk, ChemCatChem 9 (2017)",
+            "3627\u20133631. [30] G. Berthon-Gelloz, M.A. Siegler, A.L. Spek, B. Tinant, J.N.H. Reek, I.E. Marko,",
+            "Dalton Trans. 39 (2010) 1444\u20131446. [31] L.N. Lewis, J. Stein, Y. Gao, R.E. Colborn, G. Hutchins, Platin. Metals Rev. 41",
+            "(1977) 66\u201375. [32] B.P. Maliszewski, E. Casillo, P. Lambert, F. Nahra, C.S.J. Cazin, S.P. Nolan, Chem.",
+            "Commun. 59 (2023) 14017\u201314020. [33] V.A. Voloshkin, L.P. Zorba, S.P. Nolan, Chem. Sci. 16 (2025) 2062\u20132082. [34] F. Izquierdo, S. Manzini, S.P. Nolan, Chem. Commun. 50 (2014) 14926\u201314937. [35] E. Dabbish, F. Ponte, N. Russo, E. Sicilia, Inorg. Chem. 58 (2019) 3851\u20133860. [36] D. Roy, Y. Uozumi, Adv. Synth. Catal. 360 (2018) 602\u2013625."
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "label": "Fig 1",
+      "caption": "Fig. 1. Examples of NHC platinum complexes.",
+      "page": 2,
+      "image_id": "main_p2_raster0",
+      "image_path": "images/page2_raster0.png"
+    },
+    {
+      "label": "Fig 2",
+      "caption": "Fig. 2. Platinacyclic complex reported by Bedford (1a) [23] and N-heterocyclic carbene (NHC) platinum complexes [Pt(NHC)(DMS)Cl2] (1b-e) developed by Nolan [27].",
+      "page": 3,
+      "image_id": "main_p3_fig0",
+      "image_path": "images/page3_fig0.png"
+    },
+    {
+      "label": "Scheme 1",
+      "caption": "Scheme 1. Suzuki cross-coupling of 4-chlorotoluene with 4-methoxyphenylboronic acid.",
+      "page": 4,
+      "image_id": "main_p4_fig1",
+      "image_path": "images/page4_fig1.png"
+    },
+    {
+      "label": "Scheme 2",
+      "caption": "Scheme 2. The scope of platinum catalyzed Suzuki-Miyaura coupling of 4-methoxyphenylboronic acid (2a) with aryl chlorides. Isolated yields are given in brackets and are the average of two runs.",
+      "page": 5,
+      "image_id": "main_p5_fig0",
+      "image_path": "images/page5_fig0.png"
+    },
+    {
+      "label": "Scheme 3",
+      "caption": "Scheme 3. The scope of platinum catalyzed Suzuki-Miyaura coupling of arylboronic acids with 4-chlorotoluene (3a). Isolated yields are given in brackets and are the average of two runs.",
+      "page": 5,
+      "image_id": "main_p5_fig3",
+      "image_path": "images/page5_fig3.png"
+    },
+    {
+      "label": "Scheme 4",
+      "caption": "Scheme 4. The platinum catalyzed Suzuki-Miyaura coupling of styrylboronic acid (a) and phenylethynylboronic acid pinacol ester (b) with 4-chlorostyrene. Isolated yields are given in brackets and are the average of two runs.",
+      "page": 5,
+      "image_id": "main_p5_fig9",
+      "image_path": "images/page5_fig9.png"
+    },
+    {
+      "label": "Scheme 5",
+      "caption": "Scheme 5. Gram-scale synthesis of 3-(4-methoxyphenyl)pyridine (4ae).",
+      "page": 6,
+      "image_id": "main_p6_fig1",
+      "image_path": "images/page6_fig1.png"
+    },
+    {
+      "label": "Scheme 6",
+      "caption": "Scheme 6. The proposed mechanism of Suzuki cross-coupling in the presence of platinum complexes, together with the catalyst initiation pathway.",
+      "page": 6,
+      "image_id": "main_p6_fig3",
+      "image_path": "images/page6_fig3.png"
+    }
+  ],
+  "references": [
+    {
+      "id": "b0",
+      "title": "A new stereospecific cross-coupling by the palladium-catalyzed reaction of 1-alkenylboranes with 1-alkenyl or 1-alkynyl halides",
+      "authors": [
+        "Norio Miyaura",
+        "Kinji Yamada",
+        "Akira Suzuki"
+      ],
+      "journal": "Tetrahedron Letters",
+      "volume": "20",
+      "issue": "36",
+      "pages": "3437-3440",
+      "year": "1979-01",
+      "doi": "10.1016/s0040-4039(01)95429-2",
+      "publisher": "Elsevier BV"
+    },
+    {
+      "id": "b1",
+      "title": "Stereoselective synthesis of arylated (E)-alkenes by the reaction of alk-1-enylboranes with aryl halides in the presence of palladium catalyst",
+      "authors": [
+        "Norio Miyaura",
+        "Akira Suzuki"
+      ],
+      "journal": "Journal of the Chemical Society, Chemical Communications",
+      "volume": null,
+      "issue": "19",
+      "pages": null,
+      "year": "1979",
+      "doi": "10.1039/c39790000866",
+      "publisher": "Royal Society of Chemistry (RSC)"
+    },
+    {
+      "id": "b2",
+      "title": "Palladium-Catalyzed Cross-Coupling Reactions of Organoboron Compounds",
+      "authors": [
+        "Norio. Miyaura",
+        "Akira. Suzuki"
+      ],
+      "journal": "Chemical Reviews",
+      "volume": "95",
+      "issue": "7",
+      "pages": "2457-2483",
+      "year": "1995-11-01",
+      "doi": "10.1021/cr00039a007",
+      "publisher": "American Chemical Society (ACS)"
+    },
+    {
+      "id": "b3",
+      "title": "Catal. Sci. Technol",
+      "authors": [
+        "B S Kadu"
+      ],
+      "journal": "Catal. Sci. Technol",
+      "volume": "11",
+      "issue": null,
+      "pages": "1186-1221",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b4",
+      "title": "Transition-metal-catalyzed Suzuki\u2013Miyaura cross-coupling reactions: a remarkable advance from palladium to nickel catalysts",
+      "authors": [
+        "F.-S Han"
+      ],
+      "journal": "Chemical Society Reviews",
+      "volume": "42",
+      "issue": "12",
+      "pages": null,
+      "year": "2014",
+      "doi": "10.1039/c3cs35521g",
+      "publisher": "Royal Society of Chemistry (RSC)"
+    },
+    {
+      "id": "b5",
+      "title": "ChemSusChem",
+      "authors": [
+        "W M Czaplik",
+        "M Mayer",
+        "J Cvengros",
+        "A J Von Wangelin"
+      ],
+      "journal": "ChemSusChem",
+      "volume": "2",
+      "issue": null,
+      "pages": "396-417",
+      "year": "2009",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b6",
+      "title": "ACS Cent. Sci",
+      "authors": [
+        "J M Neely",
+        "M J Bezdek",
+        "P J Chirik"
+      ],
+      "journal": "ACS Cent. Sci",
+      "volume": "2",
+      "issue": null,
+      "pages": "935-942",
+      "year": "2016",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b7",
+      "title": "ACS Catal",
+      "authors": [
+        "S S Bera",
+        "M Szostak"
+      ],
+      "journal": "ACS Catal",
+      "volume": "12",
+      "issue": null,
+      "pages": "3111-3137",
+      "year": "2022",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b8",
+      "title": "J. Org. Chem",
+      "authors": [
+        "J.-H Li",
+        "J.-L Li",
+        "D.-P Wang",
+        "S.-F Pi",
+        "Y.-X Xie",
+        "M.-B Zhang",
+        "X.-C Hu"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "72",
+      "issue": null,
+      "pages": "2053-2057",
+      "year": "2007",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b9",
+      "title": "Org. Biomol. Chem",
+      "authors": [
+        "S Thapa",
+        "B Shrestha",
+        "S K Gurung",
+        "R Giri"
+      ],
+      "journal": "Org. Biomol. Chem",
+      "volume": "13",
+      "issue": null,
+      "pages": "4816-4827",
+      "year": "2015",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b10",
+      "title": "Angew. Chem. Int. Ed. Engl",
+      "authors": [
+        "M Beller",
+        "H Fischer",
+        "W A Herrmann",
+        "K \u00d6fele",
+        "C Brossmer"
+      ],
+      "journal": "Angew. Chem. Int. Ed. Engl",
+      "volume": "34",
+      "issue": null,
+      "pages": "1848-1849",
+      "year": "1995",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b11",
+      "title": "Angew. Chem. Int. Ed",
+      "authors": [
+        "A F Littke",
+        "G C Fu"
+      ],
+      "journal": "Angew. Chem. Int. Ed",
+      "volume": "37",
+      "issue": null,
+      "pages": "3387-3388",
+      "year": "1998",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b12",
+      "title": "A Highly Active Catalyst for Palladium-Catalyzed Cross-Coupling Reactions: Room-Temperature Suzuki Couplings and Amination of Unactivated Aryl Chlorides",
+      "authors": [
+        "David W Old",
+        "John P Wolfe",
+        "Stephen L Buchwald"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "volume": "120",
+      "issue": "37",
+      "pages": "9722-9723",
+      "year": "1998-09-01",
+      "doi": "10.1021/ja982250+",
+      "publisher": "American Chemical Society (ACS)"
+    },
+    {
+      "id": "b13",
+      "title": "Angew. Chem. Int. Ed",
+      "authors": [
+        "S Asghar",
+        "S B Tailor",
+        "D Elorriaga",
+        "R B Bedford"
+      ],
+      "journal": "Angew. Chem. Int. Ed",
+      "volume": "56",
+      "issue": null,
+      "pages": "16367-16370",
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b14",
+      "title": "ACS Catal",
+      "authors": [
+        "S B Tailor",
+        "M Manzotti",
+        "G J Smith",
+        "S A Davis",
+        "R B Bedford"
+      ],
+      "journal": "ACS Catal",
+      "volume": "11",
+      "issue": null,
+      "pages": "3856-3866",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b15",
+      "title": "Nat. Catal",
+      "authors": [
+        "B J S Rowsell",
+        "H M O'brien",
+        "G Athavan",
+        "P R Daley-Dee",
+        "J Krieger",
+        "E Richards",
+        "K Heaton",
+        "I J S Fairlamb",
+        "R B Bedford"
+      ],
+      "journal": "Nat. Catal",
+      "volume": "7",
+      "issue": null,
+      "pages": "1186-1198",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b16",
+      "title": "J. Am. Chem. Soc",
+      "authors": [
+        "A J Arduengo",
+        "Iii",
+        "S F Camper",
+        "J C Calabrese",
+        "F Davidson"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "116",
+      "issue": null,
+      "pages": "4391-4394",
+      "year": "1994",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b17",
+      "title": "Science",
+      "authors": [
+        "I E Marko",
+        "S Sterin",
+        "O Buisine",
+        "G Mignani",
+        "P Branlard",
+        "B Tinant",
+        "J P Declercq"
+      ],
+      "journal": "Science",
+      "volume": "298",
+      "issue": null,
+      "pages": "204-206",
+      "year": "2002",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b18",
+      "title": "NHC platinum(0) complexes: unique catalysts for the hydrosilylation of alkenes and alkynes",
+      "authors": [
+        "; S For Review",
+        "I E Dierick",
+        "Marko"
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": "111-149",
+      "year": "2014",
+      "doi": null,
+      "publisher": "Wiley-VCH"
+    },
+    {
+      "id": "b19",
+      "title": "Organometallics",
+      "authors": [
+        "D Brissy",
+        "M Skander",
+        "P Retailleau",
+        "A Marinetti"
+      ],
+      "journal": "Organometallics",
+      "volume": "26",
+      "issue": null,
+      "pages": "5782-5785",
+      "year": "2007",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b20",
+      "title": "Organometallics",
+      "authors": [
+        "J J Hu",
+        "F Li",
+        "T S A Hor"
+      ],
+      "journal": "Organometallics",
+      "volume": "28",
+      "issue": null,
+      "pages": "1212-1220",
+      "year": "2009",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b21",
+      "title": "Gram-scale synthesis of 3-(4-methoxyphenyl)pyridine (4ae). Scheme",
+      "authors": [],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": null,
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b22",
+      "title": "The proposed mechanism of Suzuki cross-coupling in the presence of platinum complexes, together with the catalyst initiation pathway. A. Smoczy\u0144ska et al",
+      "authors": [],
+      "journal": "Journal of Catalysis",
+      "volume": "453",
+      "issue": null,
+      "pages": null,
+      "year": "2026",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b23",
+      "title": "J. Organomet. Chem",
+      "authors": [
+        "A Yousefi",
+        "S J Sabounchei",
+        "S H M Farida",
+        "R Karamian",
+        "N Rahmani",
+        "R W Gable"
+      ],
+      "journal": "J. Organomet. Chem",
+      "volume": "890",
+      "issue": null,
+      "pages": "21-31",
+      "year": "2019",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b24",
+      "title": "Organometallics",
+      "authors": [
+        "R B Bedford",
+        "S L Hazelwood",
+        "D A Albisson"
+      ],
+      "journal": "Organometallics",
+      "volume": "21",
+      "issue": null,
+      "pages": "2599-2600",
+      "year": "2002",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b25",
+      "title": "ACS Appl. Nano Mat",
+      "authors": [
+        "S Kim",
+        "G Varga",
+        "M Seo",
+        "A S\u00e1pi",
+        "V R\u00e1cz",
+        "J F G\u00f3mez-P\u00e9rez",
+        "D Sebo \u030bk",
+        "J Lee",
+        "\u00c1 Kukovecz",
+        "Z K\u00f3nya"
+      ],
+      "journal": "ACS Appl. Nano Mat",
+      "volume": "4",
+      "issue": null,
+      "pages": "4070-4076",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b26",
+      "title": "Dalton Trans",
+      "authors": [
+        "P \u017bak",
+        "M Bo\u0142t",
+        "M Kubicki",
+        "C Pietraszuk"
+      ],
+      "journal": "Dalton Trans",
+      "volume": "47",
+      "issue": null,
+      "pages": "1903-1910",
+      "year": "2018",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b27",
+      "title": "Eur. J. Inorg. Chem",
+      "authors": [
+        "P \u017bak",
+        "M Bo\u0142t",
+        "C Pietraszuk"
+      ],
+      "journal": "Eur. J. Inorg. Chem",
+      "volume": null,
+      "issue": null,
+      "pages": "2455-2461",
+      "year": "2019",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b28",
+      "title": "Dalton Trans",
+      "authors": [
+        "B P Maliszewski",
+        "N V Tzouras",
+        "S G Guillet",
+        "M Saab",
+        "M Beli\u0161",
+        "K Van Hecke",
+        "F Nahra",
+        "S P Nolan"
+      ],
+      "journal": "Dalton Trans",
+      "volume": "49",
+      "issue": null,
+      "pages": "14673-14679",
+      "year": "2020",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b29",
+      "title": "Chem. Eur. J",
+      "authors": [
+        "B P Maliszewski",
+        "T A C A Bayrakdar",
+        "P Lambert",
+        "L Hamdouna",
+        "X Trivelli",
+        "L Cavallo",
+        "A Poater",
+        "M Beli\u0161",
+        "O Lafon",
+        "K Van Hecke",
+        "D Ormerod",
+        "C S J Cazin",
+        "F Nahra",
+        "S P Nolan"
+      ],
+      "journal": "Chem. Eur. J",
+      "volume": "29",
+      "issue": null,
+      "pages": null,
+      "year": "2023",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b30",
+      "title": "ChemCatChem",
+      "authors": [
+        "P Zak",
+        "M Bo\u0142t",
+        "J Lorkowski",
+        "M Kubicki",
+        "C Pietraszuk"
+      ],
+      "journal": "ChemCatChem",
+      "volume": "9",
+      "issue": null,
+      "pages": "3627-3631",
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b31",
+      "title": "Dalton Trans",
+      "authors": [
+        "G Berthon-Gelloz",
+        "M A Siegler",
+        "A L Spek",
+        "B Tinant",
+        "J N H Reek",
+        "I E Marko"
+      ],
+      "journal": "Dalton Trans",
+      "volume": "39",
+      "issue": null,
+      "pages": "1444-1446",
+      "year": "2010",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b32",
+      "title": "Platin. Metals Rev",
+      "authors": [
+        "L N Lewis",
+        "J Stein",
+        "Y Gao",
+        "R E Colborn",
+        "G Hutchins"
+      ],
+      "journal": "Platin. Metals Rev",
+      "volume": "41",
+      "issue": null,
+      "pages": "66-75",
+      "year": "1977",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b33",
+      "title": "Chem. Commun",
+      "authors": [
+        "B P Maliszewski",
+        "E Casillo",
+        "P Lambert",
+        "F Nahra",
+        "C S J Cazin",
+        "S P Nolan"
+      ],
+      "journal": "Chem. Commun",
+      "volume": "59",
+      "issue": null,
+      "pages": "14017-14020",
+      "year": "2023",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b34",
+      "title": "Chem. Sci",
+      "authors": [
+        "V A Voloshkin",
+        "L P Zorba",
+        "S P Nolan"
+      ],
+      "journal": "Chem. Sci",
+      "volume": "16",
+      "issue": null,
+      "pages": "2062-2082",
+      "year": "2025",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b35",
+      "title": "Chem. Commun",
+      "authors": [
+        "F Izquierdo",
+        "S Manzini",
+        "S P Nolan"
+      ],
+      "journal": "Chem. Commun",
+      "volume": "50",
+      "issue": null,
+      "pages": "14926-14937",
+      "year": "2014",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b36",
+      "title": "Inorg. Chem",
+      "authors": [
+        "E Dabbish",
+        "F Ponte",
+        "N Russo",
+        "E Sicilia"
+      ],
+      "journal": "Inorg. Chem",
+      "volume": "58",
+      "issue": null,
+      "pages": "3851-3860",
+      "year": "2019",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b37",
+      "title": "Adv. Synth. Catal",
+      "authors": [
+        "D Roy",
+        "Y Uozumi"
+      ],
+      "journal": "Adv. Synth. Catal",
+      "volume": "360",
+      "issue": null,
+      "pages": "602-625",
+      "year": "2018",
+      "doi": null,
+      "publisher": null
+    }
+  ]
+}

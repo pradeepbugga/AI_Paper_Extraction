@@ -280,16 +280,16 @@ def compute_heading_levels(pages, body_size, furniture_lines):
     multiple distinct blocks — a one-off large bold block (title, byline)
     reads the same as a heading by font alone, but real section headings
     are a family of *different* short blocks sharing one style, not a
-    single wrapped one. Page 1 doesn't count toward that recurrence: a
-    title page routinely has two or three unrelated large-bold lines
-    (title, byline, a 'Table of Contents' label) that coincidentally share
-    a style without being genuine siblings in the document's structure —
-    counting them together can validate a level that then never legitimately
-    closes for the rest of the document. A real structural tier still has
-    enough occurrences elsewhere; something whose only instances are on the
-    title page doesn't, and rightly stops being a heading level at all
-    (still gets classified fine if it also appears on page 1, once the tier
-    is validated by its non-title-page occurrences).
+    single wrapped one. A tier confined *entirely* to page 1 doesn't count,
+    even if it recurs enough times there: a title page routinely has two or
+    three unrelated large-bold lines (title, byline, a 'Table of Contents'
+    label) that coincidentally share a style without being genuine siblings
+    in the document's structure, and validating a level from them alone can
+    leave it never legitimately closing for the rest of the document. But a
+    real structural tier can perfectly well include a page-1 occurrence too
+    (a paper whose two-column body -- and so its 'Introduction' heading --
+    starts on the title page itself, common enough), so page-1 occurrences
+    still count toward a tier as long as it also recurs somewhere else.
 
     A dedicated Table of Contents page is excluded outright, wherever it
     falls (not just page 1) — its entries are an index of headings that
@@ -315,7 +315,7 @@ def compute_heading_levels(pages, body_size, furniture_lines):
             for line in block["lines"]:
                 if is_furniture_line(line, page["height"], furniture_lines):
                     continue
-                if heading_eligible(line, body_size, first_line) and page["page_number"] > 1:
+                if heading_eligible(line, body_size, first_line):
                     key = heading_style_key(line)
                     blocks_by_key.setdefault(key, set()).add(block_key)
                 first_line = False
@@ -324,7 +324,11 @@ def compute_heading_levels(pages, body_size, furniture_lines):
         size = key[0]
         return MIN_HEADING_BLOCKS if size >= body_size * HEADING_SIZE_RATIO else MIN_RELAXED_HEADING_BLOCKS
 
-    candidates = [key for key, blocks in blocks_by_key.items() if len(blocks) >= min_blocks_for(key)]
+    def spans_beyond_page1(blocks):
+        return any(page_num != 1 for page_num, _ in blocks)
+
+    candidates = [key for key, blocks in blocks_by_key.items()
+                  if len(blocks) >= min_blocks_for(key) and spans_beyond_page1(blocks)]
     ranked = sorted(candidates, key=lambda k: (-k[0], not k[1], not k[2], not k[3]))[:MAX_HEADING_LEVELS]
     return {key: level for level, key in enumerate(ranked, start=1)}
 

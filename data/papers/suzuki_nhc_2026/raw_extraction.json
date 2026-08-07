@@ -1,0 +1,1643 @@
+{
+  "source_pdf": "paper.pdf",
+  "source": "main",
+  "page_count": 7,
+  "pages": [
+    {
+      "page_number": 1,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            143.7,
+            105.5,
+            159.4
+          ],
+          "text": "Research article"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            37.6,
+            161.0,
+            462.0,
+            200.2
+          ],
+          "text": "The Suzuki\u2013Miyaura coupling of aryl chlorides with arylboronic acids \ncatalysed by NHC platinum complexes"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            37.6,
+            206.2,
+            434.7,
+            236.9
+          ],
+          "text": "Anna Smoczy\u00b4nska a, Sylwia Ostrowska a\n, Anna Chojnacka a, Steven P. Nolan b,*\n,  \nCezary Pietraszuk a,*"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            37.6,
+            238.3,
+            381.0,
+            260.1
+          ],
+          "text": "a Adam Mickiewicz University, Faculty of Chemistry, Uniwersytetu Pozna\u00b4nskiego 8, Pozna\u00b4n 61-614, Poland\nb Department of Chemistry and Center for Sustainable Chemistry, Ghent University, Krijgslaan 281 (S-3), 9000 Ghent, Belgium"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            37.6,
+            281.9,
+            115.7,
+            293.3
+          ],
+          "text": "A R T I C L E I N F O"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            37.6,
+            301.1,
+            125.7,
+            345.8
+          ],
+          "text": "Keywords:\nN-heterocyclic carbenes\nPlatinum complexes\nSuzuki\u2013Miyaura cross-coupling\nArylboronic acids"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            202.0,
+            281.9,
+            258.7,
+            293.3
+          ],
+          "text": "A B S T R A C T"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            202.0,
+            301.2,
+            559.8,
+            341.6
+          ],
+          "text": "The platinum complexes [Pt(IPr)(DMS)Cl2] and [Pt(IPr*)(DMS)Cl2] are highly effective catalysts in the Suzu\u00ad\nki\u2013Miyaura coupling reaction involving aryl chlorides and aryl- and alkenylboronic acids. A procedure for the \nselective synthesis of a series of biphenyls is presented. The reaction can be scaled up to at least the gram level. A \nproposed mechanism for the process is outlined."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            37.6,
+            373.9,
+            97.8,
+            387.0
+          ],
+          "text": "1. Introduction"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            37.6,
+            394.9,
+            291.0,
+            627.6
+          ],
+          "text": "Since the landmark work of Suzuki and Miyaura [1,2], coupling of \norganic halides with organoboronic acids or their esters is commonly \ncatalysed by palladium complexes [3]. However, subsequent in\u00ad\nvestigations have revealed the catalytic activity of several other transi\u00ad\ntion metal complexes facilitating this transformation [4]. To date, \nexamples of efficient catalysis of the Suzuki\u2013Miyaura cross-coupling in \nthe presence of nickel [5], iron [6], cobalt [7,8] and copper [9,10] \ncomplexes have been described. Although aryl chlorides are the \ncheapest and most accessible aryl halides, they represent a more chal\u00ad\nlenging choice of reactant for coupling due to their higher C-Cl bond \nenergy compared to other C-X bonds. Currently, aryl chlorides are effi\u00ad\nciently converted by complexes of Pd [11\u201313], Ni [5], Co [7,8,14,15], \nand Fe [16]. NHC platinum complexes are less popular than analogous \ncomplexes of other platinum metals. First synthesised by Arduengo in \n1994 [17], it took a long time for them to find catalytic applications. In \n2002, Marko described a series of platinum complexes with the general \nformula [NHC-Pt(dvtms)] (dvtms = 1,3-divinyltetramethyldisiloxane), \ndemonstrating their catalytic activity in the hydrosilylation of olefins \n[18]. A family of Marko catalysts was quickly developed, demonstrating \nactivity in selected organic transformations [19]. Fig. 1 illustrates a \nvariety of structures of NHC platinum complexes that exhibit catalytic \nactivity [18,20,21]."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            37.6,
+            625.0,
+            291.0,
+            648.5
+          ],
+          "text": "To date, the most efficient platinum-based homogeneous systems \nhave been described by Sabounchei [22] and Bedford [23], with the"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            306.6,
+            373.9,
+            560.0,
+            491.6
+          ],
+          "text": "latter reporting the coupling of 4-chloroacetophenone with phenyl\u00ad\nboronic acid, achieving a conversion of 29 % and a TON of 58 with the \nplatinacyclic complex 1a (see Fig. 2). Among heterogeneous platinum- \nbased catalysts, platinum nanoparticles supported on a hierarchically \nporous polymer exhibit the highest activity. This catalyst is active in the \ncoupling of chlorobenzene and a set of other chloroarenes with phe\u00ad\nnylboronic acid [24]. Our interest in the catalytic activity of platinum \nNHC complexes has resulted in the development of efficient hydro\u00ad\nsilylation procedures for olefins and/or acetylenes [25\u201328] as well as the \ndiscovery of a highly effective and selective acetylene dimerization \nprocess [29]."
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            306.6,
+            489.0,
+            560.0,
+            523.0
+          ],
+          "text": "In this article, we describe a homogeneous catalytic system based on \nNHC platinum complexes capable of efficiently performing the Suzuki- \nMiyaura cross-coupling of inactivated aryl chlorides with boronic acids."
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            306.6,
+            530.9,
+            405.2,
+            543.9
+          ],
+          "text": "2. Results and discussion"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            306.6,
+            551.8,
+            560.0,
+            648.5
+          ],
+          "text": "Exploration of the catalytic activity of N-heterocyclic carbene plat\u00ad\ninum complexes of the general formula [Pt(NHC)(DMS)Cl2] (DMS =\ndimethyl sulphide) recently developed by Nolan [27] (Fig. 1, 1b-e) \nrevealed their excellent catalytic performance in Suzuki\u2013Miyaura \ncoupling reactions involving aryl chlorides. Adding 1 mol% of the [Pt \n(IPr)(DMS)Cl2] (1b) complex to an ethanol solution of 4-chlorotoluene \n(3a) and 4-methoxyphenylboronic acid in the presence of KOH at 80 \n\u25e6C caused the initially clear, straw-coloured solution to gradually cloud. \nAfter 20 h, GC/MS analysis of the light brown reaction mixture revealed"
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            42.6,
+            669.1,
+            344.1,
+            690.4
+          ],
+          "text": "* Corresponding authors.\nE-mail addresses: steven.nolan@ugent.be (S.P. Nolan), pietrasz@amu.edu.pl (C. Pietraszuk)."
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            228.4,
+            59.3,
+            369.1,
+            72.3
+          ],
+          "text": "Contents lists available at ScienceDirect"
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            237.3,
+            80.0,
+            360.2,
+            102.8
+          ],
+          "text": "Journal of Catalysis"
+        },
+        {
+          "block_id": 18,
+          "bbox": [
+            206.6,
+            118.2,
+            391.0,
+            126.1
+          ],
+          "text": "journal homepage: www.elsevier.com/locate/jcat"
+        },
+        {
+          "block_id": 19,
+          "bbox": [
+            37.6,
+            695.7,
+            358.9,
+            716.9
+          ],
+          "text": "https://doi.org/10.1016/j.jcat.2025.116452\nReceived 5 July 2025; Received in revised form 19 September 2025; Accepted 22 September 2025"
+        },
+        {
+          "block_id": 20,
+          "bbox": [
+            233.9,
+            33.5,
+            362.8,
+            45.2
+          ],
+          "text": "Journal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 21,
+          "bbox": [
+            37.5,
+            714.7,
+            470.8,
+            736.0
+          ],
+          "text": "Available online 23 September 2025 \n0021-9517/\u00a9 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies."
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p1_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            501.1,
+            55.4,
+            557.7,
+            127.0
+          ],
+          "path": "images/page1_raster0.png",
+          "width": 236,
+          "height": 298
+        },
+        {
+          "image_id": "main_p1_raster1",
+          "source": "embedded_raster",
+          "bbox": [
+            225.1,
+            211.1,
+            233.2,
+            219.1
+          ],
+          "path": "images/page1_raster1.png",
+          "width": 33,
+          "height": 33
+        },
+        {
+          "image_id": "main_p1_raster2",
+          "source": "embedded_raster",
+          "bbox": [
+            36.8,
+            62.0,
+            96.4,
+            127.2
+          ],
+          "path": "images/page1_raster2.png",
+          "width": 248,
+          "height": 271
+        },
+        {
+          "image_id": "main_p1_raster3",
+          "source": "embedded_raster",
+          "bbox": [
+            500.9,
+            148.7,
+            529.4,
+            176.8
+          ],
+          "path": "images/page1_raster3.png",
+          "width": 118,
+          "height": 117
+        },
+        {
+          "image_id": "main_p1_fig0",
+          "source": "vector_region",
+          "bbox": [
+            37.6,
+            55.6,
+            557.7,
+            176.8
+          ],
+          "path": "images/page1_fig0.png",
+          "width": 1561,
+          "height": 365
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            51.3,
+            291.0,
+            106.2
+          ],
+          "text": "complete conversion of the substrate and formation of a single product \nidentified as 4-methoxy-4\u2032-methyl-1,1\u2032-biphenyl (4aa) (see Scheme 1). \nThe product identity was confirmed by 1H NMR spectroscopy. The white \nprecipitate formed during the reaction was filtered off and identified as \npotassium chloride."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            37.6,
+            103.6,
+            291.0,
+            127.1
+          ],
+          "text": "An analogous reaction using 4-bromotoluene resulted in complete \nconversion of the aryl bromide within 15 min."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            37.6,
+            124.5,
+            291.0,
+            378.2
+          ],
+          "text": "A series of experiments were performed to determine the active \ncatalysts/catalytic systems and the conditions for efficient reactions. \nThe catalytic activity of 1b was compared to that of 1c, 1d, and to its \nIMes analogue [Pt(IMes)(DMS)Cl2] (1e) (Table 1 entries 2\u20134). Further\u00ad\nmore, the catalytic activity of selected analogous platinum complexes, \nincluding the Marko type catalyst [Pt(IPr*)(dvtms)] (Table 2, entry 5) \n[30], Karstedt catalyst (Table 2, entry 6) [31] and [PtCl2(DMS)2] re\u00ad\nported by Nolan [32], was investigated. It was observed that the cata\u00ad\nlytic activity strongly depends on the stereoelectronic properties of the \nNHC ligand. In the presence of complexes 1b and 1d, the reaction pro\u00ad\nceeded almost quantitatively, whereas the use of [Pt(IMes)(DMS)Cl2] \nresults in no reaction (Table 1 entries 1 and 3, respectively). The high \ncatalytic activity of complexes containing the IPr [33] and IPr* [34] \nligands is well documented in palladium and other platinum metal \ncatalysis. No catalytic activity was observed for both the Marko catalyst \n(1f) (see Table 1, entry 5), for the NHC ligand-free Karstedt catalyst (see \nTable 1, entry 6) and [PtCl2(DMS)2]. The reason for the lack of activity \nof the Marko catalyst may be the presence of a reluctantly dissociating \ndvtms ligand. Similarly to the case of catalysis with palladium com\u00ad\nplexes, the lack of activity of complexes not containing strongly \nelectron-donating and sterically extended ligands, such as NHC, results \nfrom an inability to carry out effective oxidative addition of the strong C- \nCl bond to the Pt complex, as well as an inability to carry out reductive \nelimination in an uncrowded coordination sphere."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            37.6,
+            375.6,
+            291.0,
+            587.4
+          ],
+          "text": "Experiments to determine the optimum base, solvent and reaction \ntemperature are summarized in Table 2. The reaction does not proceed \nin the absence of platinum and under base-free conditions. The presence \nof water in reaction system has a significant effect on the course of the \nreaction. In 96 % ethanol, the reaction proceeded almost quantitative, \nwhile in ethanol (99.8 %), no reaction was observed (Table 2, entries 1 \nand 2). Changing ethanol as a solvent to another alcohol resulted in a \nsignificant decrease in yield (see Table 2, entries 5 and 6). The use of 1,4- \ndioxane or toluene as a solvent, to which 10 \u00b5L of water has been added, \nresults in trace amounts or no coupling product (see Table 2, entries 7 \nand 8). Potassium containing bases were found more effective than the \nones based on caesium. KOH enabled the highest performance. By \ncontrast, no reaction was observed in the presence of sodium carbonate \nor hydroxide. The lower activity of sodium derivatives is probably due to \nthe higher solubility of NaCl compared to KCl in ethanol, although there \nmay be other reasons as well. In palladium-catalysed coupling reactions, \nsodium-containing bases also show reduced activity, a phenomenon \nmost often associated with solubility issues. Other tested bases, such as \nEt3N and TBAOH, were found to be inactive. Reducing the reaction \ntemperature to 60 \u25e6C (see Table 2, entry 18) significantly reduced the"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            306.6,
+            51.3,
+            538.2,
+            64.3
+          ],
+          "text": "reaction yield. No conversion was observed at room temperature."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            306.6,
+            61.8,
+            557.7,
+            85.3
+          ],
+          "text": "Subsequent experiments attempted to determine the optimum cata\u00ad\nlyst concentration. The results are summarized in Table 3."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            306.6,
+            82.7,
+            560.0,
+            221.3
+          ],
+          "text": "All attempts to reduce the catalyst loading below 1 mol% results in a \nsignificant drop in reaction efficiency (see Table 3). On the other hand, \nincreasing the temperature to 100 \u25e6C for reactions with lower catalyst \nloading resulted in a 20 % increase in reaction yield and productivity \n(see Table 3, entries 2 and 3). Under optimal conditions, a TON value of \n152 was obtained (see Table 3, Entry 3). The optimal reaction conditions \nwere used to study the scope of the reaction (Scheme 2). Efficient re\u00ad\nactions were obtained in the presence of aryl chlorides regardless of the \nelectron properties of the substituents at the para position in the aro\u00ad\nmatic ring. High yields were obtained for sterically hindered 2-chloro- \n1,3-dimethylbenzene (4ad) as well as for heterocyclic derivatives. A \nlower yield of coupling product (4af, 53 %) was obtained only in the \ncase of 2-chloropyridine, which is known to be a challenging reagent."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            306.6,
+            218.7,
+            560.0,
+            263.1
+          ],
+          "text": "The reactivity of selected arylboronic acids with different sub\u00ad\nstituents at the phenyl ring was also tested in the reaction (see Scheme \n3). The formation of the expected coupling products was observed, with \nhigh or satisfactory yields."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            306.6,
+            260.5,
+            560.0,
+            378.2
+          ],
+          "text": "To investigate the scope of the reaction in more detail, the activity of \nstyrylboronic acid (2e) was tested. When 2e reacted with 4-chloroto\u00ad\nluene, the expected cross-coupling product was produced, with an \nisolation yield of 82 % (Scheme 4a). This demonstrates the activity of \nalkenylboronic acids in Suzuki cross-coupling catalysed by NHC plat\u00ad\ninum complexes. In contrast, coupling the pinacol ester of phenyl\u00ad\nethynylboronic acid (2f) with p-chlorotoluene (see Scheme 4b) \nproduced the desired product, albeit with an unsatisfactory isolation \nefficiency of just 22 %. The low isolation yield of 4fa was mainly due to \nthe low conversion of 3a (48 %) but also due to the formation of a semi- \nhydrogenated by-product."
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            306.6,
+            375.6,
+            560.0,
+            451.4
+          ],
+          "text": "As products containing pyridine derivatives have high potential for \nuse as building blocks in medicinal chemistry and materials science, as \nwell as in coordination complexes, the scalability of the system was \ntested in the reaction of 4-methoxyphenylboronic acid with 3-chloropyr\u00ad\nidine. The scale-up process enabled the synthesis of 3-(4-methox\u00ad\nyphenyl)pyridine (4ae) to be carried out with an excellent yield of 95 % \n(see Scheme 5)."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            306.6,
+            448.8,
+            560.0,
+            587.4
+          ],
+          "text": "To gain insight into the reaction mechanism, a series of tests and \npreliminary kinetic experiments was conducted. To assess whether the \nprocess proceeds according to the Pt(II)/Pt(IV) cycle, reactions of [Pt \n(IPr)(DMS)Cl2] with an excess of 4-chlorotoluene were carried out at \nroom temperature and at 80 \u25e6C. Analysis of the reaction mixtures using \n1H NMR spectroscopy showed no changes in the system. Furthermore, a \ntest reaction was carried out to couple 4-methoxyphenylboronic acid \n(2a) and 4-chlorotoluene (3a) in the presence of a twofold molar excess \nof ascorbic acid relative to the catalyst [35]. This was done under the \nassumption that any active Pt(IV) complexes would be reduced during \nthe coupling reaction, resulting in a significant decrease in reaction \nyield. However, the experiment did not reveal any decrease in reaction \nyield. It was therefore assumed that the reaction could proceed"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            222.8,
+            708.0,
+            372.5,
+            719.7
+          ],
+          "text": "Fig. 1. Examples of NHC platinum complexes."
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            37.6,
+            33.6,
+            560.2,
+            44.1
+          ],
+          "text": "A. Smoczy\u00b4nska et al.                                                                                                                                                                                                                           \nJournal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            296.2,
+            754.5,
+            301.7,
+            764.9
+          ],
+          "text": "2"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p2_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            85.0,
+            600.9,
+            510.3,
+            701.4
+          ],
+          "path": "images/page2_raster0.png",
+          "width": 1772,
+          "height": 419
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            51.3,
+            160.4,
+            64.3
+          ],
+          "text": "according to the Pt(0)/Pt(II) cycle."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            37.6,
+            61.8,
+            291.0,
+            304.9
+          ],
+          "text": "In order to gain a better understanding of the reaction mechanism, \nthe reaction profiles of the catalysts [Pt(IPr)(DMS)Cl2] and [Pt(IPr*) \n(DMS)Cl2] were compared (Fig. S1). Unexpectedly, the experiment \nrevealed high similarity in the reaction profiles. Previous observations of \npalladium complexes indicated significantly higher catalytic activity in \ncomplexes containing the bulkier ligand IPr*. Interestingly, Fig. S1 \nshows that the reaction rate is independent of the concentration of aryl \nchloride. Preliminary kinetic studies also showed a first-order depen\u00ad\ndence of the reaction rate on the catalyst concentration and a second \norder dependence on the concentration of boronic acid (Figs. S2\u2013S4). \nThe results obtained suggest that the reaction rate (for concentrations of \n[Pt(IPr)(DMS)Cl2] = 1\u20132 mol%) is determined by the rate of catalyst \ninitiation. The proposed catalyst initiation scheme (Scheme 6) starts \nwith the reversible dissociation of DMS from [Pt(IPr)(DMS)Cl2]. This \nstep was confirmed by a catalytic test, which revealed that the reaction \nis significantly suppressed in the presence of a fivefold excess of DMS \nrelative to the catalyst. The next step of the initiation process is trans\u00ad\nmetalation, which results in the formation of a biaryl complex. Based on \nthe results of catalytic studies, we propose that this process limits the \nreaction rate. The sequence of initiating the actual catalyst \u2013 the [(NHC) \nPt(0)] complex \u2013 is completed by a process of reductive elimination. This \nstep is confirmed by the observation of the of 4,4\u2032-dimethoxy-1,1\u2032- \nbiphenyl in the reaction system. Following the generation of a"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            306.6,
+            51.3,
+            560.0,
+            127.1
+          ],
+          "text": "catalytically active Pt(0) complex, we propose a mechanism analogous \nto that observed for palladium complexes. This involves a sequence of \nprocesses comprising oxidative addition, transmetalation and reductive \nelimination. The presence of an NHC ligand is essential for the reaction \nto proceed. As with palladium complexes, strong \u03c3-donor properties \nfacilitate the oxidative addition of aryl chlorides, while bulky structures \nenable reductive elimination."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            306.6,
+            124.5,
+            560.0,
+            304.9
+          ],
+          "text": "A comparison of the properties of platinum and palladium catalysts \nin the coupling reaction of aryl chlorides with arylboronic acids clearly \nshows that platinum complexes have several orders of magnitude lower \nyield and activity compared to highly active palladium-based systems \n[36]. The influence of the stereoelectronic properties of NHC ligands on \nthe activity of platinum complexes appears to be similar to that observed \nfor palladium complexes. The range of reactions appears to be similar \nand includes both aryl and heteroaryl derivatives. A significant advan\u00ad\ntage of platinum catalysts is their total inactivity in the homocoupling of \narylboronic acids. This prevents the formation of one of the main un\u00ad\ndesirable by-products. Improving the efficiency and activity of platinum \ncatalysts in the activation of aryl and alkenyl chlorides is the greatest \nchallenge for platinum-based coupling catalysts. This challenge can be \nmet through the rational design of new platinum complexes with \npotentially higher catalytic activity and through the search for reusable \ncatalysts, such as the recently described catalyst containing platinum \nnanoparticles deposited on a hierarchically porous polymer, which is"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            37.6,
+            723.3,
+            559.7,
+            744.5
+          ],
+          "text": "Fig. 2. Platinacyclic complex reported by Bedford (1a) [23] and N-heterocyclic carbene (NHC) platinum complexes [Pt(NHC)(DMS)Cl2] (1b-e) developed by \nNolan [27]."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            37.6,
+            33.6,
+            560.2,
+            44.1
+          ],
+          "text": "A. Smoczy\u00b4nska et al.                                                                                                                                                                                                                           \nJournal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            296.2,
+            754.5,
+            301.7,
+            764.9
+          ],
+          "text": "3"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p3_fig0",
+          "source": "vector_region",
+          "bbox": [
+            127.9,
+            325.8,
+            467.3,
+            716.6
+          ],
+          "path": "images/page3_fig0.png",
+          "width": 1019,
+          "height": 1173
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            649.5,
+            291.0,
+            673.0
+          ],
+          "text": "one of the most active heterogeneous catalysts for the coupling of aryl \nchloride substrates [24]."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            37.6,
+            680.9,
+            95.5,
+            693.9
+          ],
+          "text": "3. Conclusions"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            37.6,
+            701.8,
+            291.0,
+            735.7
+          ],
+          "text": "In conclusion, NHC platinum complexes [Pt(IPr)(DMS)Cl2] and [Pt \n(IPr*)(DMS)Cl2] serve as efficient precatalysts of Suzuki coupling of aryl \nchlorides and aryl- or alkenylboronic acids. The developed catalytic"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            306.6,
+            295.8,
+            560.0,
+            371.6
+          ],
+          "text": "system is scalable to the gram scale without significant loss of efficiency. \nA mechanism involving a Pt(0)/Pt(II) cycle has been proposed. Pre\u00ad\nliminary kinetic investigations have shown that the initiation of the \n(NHC)Pt(0) complex is the rate-limiting step of the process. Ongoing \nmechanistic studies dealing with this specific issue are presently ongoing \nin our laboratories as are studies dealing with related platinum- \nmediated transformations."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            306.6,
+            380.9,
+            351.2,
+            393.9
+          ],
+          "text": "4. Methods"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            306.6,
+            401.8,
+            392.5,
+            414.8
+          ],
+          "text": "4.1. General information"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            306.6,
+            422.7,
+            560.0,
+            655.8
+          ],
+          "text": "Air- and moisture-sensitive reactions were carried out under an \nargon atmosphere using standard Schlenk techniques. Solvents used for \nall experiments were purchased from Sigma Aldrich (Merck), dried over \nmolecular sieves, and degassed by bubbling with argon. NHC platinum \ncomplexes were prepared using the methods previously described [27]. \nThe (4-(ethoxycarbonyl)phenyl)boronic acid was purchased from \nFrontier Scientific, and the remaining arylboronic acids were purchased \nfrom FluoroChem, and used as received. All aryl chlorides were pur\u00ad\nchased from Sigma Aldrich (Merck) and used as received. Potassium \ncarbonate, potassium tert-butoxide, potassium phosphate, and potas\u00ad\nsium hydroxide were purchased from Sigma Aldrich (Merck), dried \nunder high vacuum, and stored protected from moisture and air. EtOH \n(96 %) was purchased from POCh (Poland). The progress of the re\u00ad\nactions was monitored by gas chromatography (GC), using dodecane as \nan internal standard. GC analyses were performed using Varian CP-3800 \n(column: RTX-5 30 m ID 0.53 mm), equipped with TCD. GC/MS analyses \nwere performed on an Agilent 5977B GC/MSD with an Agilent 8860 GC \nSystem. The structures of the complexes and hydrogenation products \nwere determined by NMR spectroscopy and elemental analysis. 1H NMR \n(600 MHz) and 13C NMR (100 and 151 MHz) spectra were recorded on \nan Avance I (Bruker) spectrometer at 600 MHz using chloroform\u2011d1 \n(CDCl3) as the solvent."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            306.6,
+            669.1,
+            477.0,
+            682.2
+          ],
+          "text": "4.2. General procedure for the synthesis of biaryls"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            306.6,
+            690.1,
+            560.0,
+            744.9
+          ],
+          "text": "A reaction flask with a stirring bar was charged with arylboronic acid \n(1.1 mmol, 1.1 equiv.) and KOH (2.2 mmol, 2.2 equiv.). The flask con\u00ad\ntents were then degassed for 3 min using an inert gas. Aryl chloride (1 \nmmol, 1 equiv.) and ethanol (96 %) (degassed) 2 mL were introduced \ninto the reaction flask. The whole was stirred for 2 min at 80 \u25e6C (until all"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            155.0,
+            113.0,
+            440.2,
+            124.8
+          ],
+          "text": "Scheme 1. Suzuki cross-coupling of 4-chlorotoluene with 4-methoxyphenylboronic acid."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            37.6,
+            142.2,
+            288.7,
+            173.1
+          ],
+          "text": "Table 1 \nSuzuki\u2013Miyaura coupling of 4-methoxyphenylboronic acid (2a) with 4-chloroto\u00ad\nluene (3a)."
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            43.6,
+            174.9,
+            282.7,
+            185.9
+          ],
+          "text": "Entry\nCatalyst\nYield (%)a"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            43.6,
+            188.6,
+            262.3,
+            250.7
+          ],
+          "text": "1\n[Pt(IPr)(DMS)Cl2] (1b)\n97\n2\n[Pt(SIPr)(DMS)Cl2] (1c)\n38\n3\n[Pt(IPr*)(DMS)Cl2] (1d)\n95\n4\n[Pt(IMes)(DMS)Cl2] (1e)\nNR\n5\n[Pt(IPr*)(dvtms)] (1f)\nNR\n6\n[Pt2(dvtms)3] Karstedt catalyst\nNR\n7\n[PtCl2(DMS)2]\nNR"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            37.6,
+            253.2,
+            290.8,
+            284.1
+          ],
+          "text": "Reaction conditions: 4-methoxyphenylboronic acid (0.55 mmol), 1-chloro-4- \nmethylbenzene (0.5 mmol, 1 equiv.), KOH (1.1 mmol, 2 equiv.), [Pt] (1 mol \n%), EtOH (1 mL), 80 \u25e6C, 20 h."
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            37.6,
+            278.7,
+            290.8,
+            303.2
+          ],
+          "text": "a Yield of the 4aa, as measured by GC; dvtms = 1,1,3,3-tetramethyl-1,3- \ndivinyldisiloxane."
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            37.6,
+            320.6,
+            242.7,
+            342.1
+          ],
+          "text": "Table 2 \nOptimization of Suzuki\u2013 the presence of [Pt(IPr)(DMS)Cl2] (1b)."
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            43.6,
+            343.7,
+            282.7,
+            354.6
+          ],
+          "text": "Entry\nSolvent\nBase\nNote\nYield of 4aa [%]a"
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            43.6,
+            357.4,
+            244.4,
+            530.8
+          ],
+          "text": "1\nEtOH\nKOH\n80 \u25e6C\n99\n2\nEtOH\nKOH\nEtOH (99.8 %)\nNR\n3\nEtOH\nKOH\nno cat.\nNR\n4\nEtOH\n\u2013\nno base\nNR\n5\nMeOH\nKOH\n\u200b\u200b6\niPrOH\nKOH\n\u200b22\n7\n1,4-dioxaneb\nKOH\n\u200bNR\n8\ntolueneb\nKOH\n\u200b<5\n9\nEtOH\nNaOH\n\u200bNR\n10\nEtOH\nNa2CO3\n\u200bNR\n11\nEtOH\nK3PO4\n\u200b53\n12\nEtOH\nK2CO3\n\u200b31\n13\nEtOH\nCsOH\n\u200b11\n14\nEtOH\nCs2CO3\n\u200b26\n15\nEtOH\nTBAOH\n\u200b<5\n16\nEtOH\nEt3N\n\u200bNR\n17\nEtOH\nKOH\n70\u25e6C\n71\n18\nEtOH\nKOH\n60\u25e6C\n43\n19\nEtOH\nKOH\n25\u25e6C\nNR\n20\n1,4-dioxane\nK3PO4\n100\u25e6C\nNRc"
+        },
+        {
+          "block_id": 18,
+          "bbox": [
+            43.6,
+            528.2,
+            243.4,
+            539.4
+          ],
+          "text": "21\nDMF/H2O\nCs2CO3\n75\u25e6C\n39d"
+        },
+        {
+          "block_id": 19,
+          "bbox": [
+            37.6,
+            542.0,
+            290.8,
+            640.0
+          ],
+          "text": "Reaction conditions: 4-chlorotoluene (0.5 mmol, 1 equiv.), 4-methoxyphenyl\u00ad\nboronic acid (0.55 mmol, 1.1 equiv.), base (1.1 mmol, 2.2 equiv.), cat. [Pt \n(IPr)(DMS)Cl2] (1b) (1 mol%), EtOH (96 %), 80 \u25e6C, 20 h; a) Yield of 4aa, as \nmeasured by GC; b) 10 \u00b5L H2O were added c) conditions from ref. [23]: 4-chlor\u00ad\notoluene (0.5 mmol, 1 equiv.), 4-methoxyphenylboronic acid (0.75 mmol, 1.5 \nequiv.), K3PO4 (1.0 mmol, 2.0 equiv.), cat. [Pt(IPr)(DMS)Cl2] (1b) (1 mol%), \n1,4-dioxane (1 mL), 20 h; d) conditions from ref. [24]: 4-chlorotoluene (0.5 \nmmol, 1 equiv.), 4-methoxyphenylboronic acid (0.6 mmol, 1.2 equiv.), Bu4NCl \n(0.6 mmol, 1.2 equiv.), Cs2CO3 (0.7 mmol, 1.4 equiv.), cat. [Pt(IPr)(DMS)Cl2] \n(1b) (1 mol%), DMF/H2O 4:1 (2 mL), 20 h."
+        },
+        {
+          "block_id": 20,
+          "bbox": [
+            306.6,
+            142.2,
+            559.8,
+            173.1
+          ],
+          "text": "Table 3 \nCoupling of 4-methoxyphenylboronic acid (2a) with 4-chlorotoluene (3a). \nOptimization of the catalyst loading."
+        },
+        {
+          "block_id": 21,
+          "bbox": [
+            312.6,
+            174.9,
+            533.9,
+            185.9
+          ],
+          "text": "Entry\nCatalyst (mol%)\nYield of 4aa (%)a\nTON"
+        },
+        {
+          "block_id": 22,
+          "bbox": [
+            312.6,
+            188.6,
+            548.1,
+            207.6
+          ],
+          "text": "1\n1\n98\n98\n2\n0.75\n71 (93)b\n95 (124)b"
+        },
+        {
+          "block_id": 23,
+          "bbox": [
+            312.6,
+            205.2,
+            551.7,
+            216.1
+          ],
+          "text": "3\n0.5\n54 (76)b\n108 (152)b"
+        },
+        {
+          "block_id": 24,
+          "bbox": [
+            312.6,
+            214.3,
+            532.9,
+            233.3
+          ],
+          "text": "4\n0.25\n18\n72\n5\n0.1\n<5\n<50"
+        },
+        {
+          "block_id": 25,
+          "bbox": [
+            306.6,
+            236.1,
+            559.8,
+            267.2
+          ],
+          "text": "Reaction conditions: 4-methoxyphenylboronic acid (0.55 mmol), 4-chloroto\u00ad\nluene (0.5 mmol, 1 equiv.), KOH (1.1 mmol, 2.2 equiv.), cat. [Pt(IPr)(DMS) \nCl2] (1b), EtOH (96 %) (1 mL), 80 \u25e6C, 20 h;"
+        },
+        {
+          "block_id": 26,
+          "bbox": [
+            312.2,
+            261.6,
+            436.7,
+            286.0
+          ],
+          "text": "a Yield of the 4aa, as measured by GC.\nb 100 \u25e6C."
+        },
+        {
+          "block_id": 27,
+          "bbox": [
+            37.6,
+            33.6,
+            560.2,
+            44.1
+          ],
+          "text": "A. Smoczy\u00b4nska et al.                                                                                                                                                                                                                           \nJournal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 28,
+          "bbox": [
+            296.2,
+            754.5,
+            301.7,
+            764.9
+          ],
+          "text": "4"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p4_fig0",
+          "source": "vector_region",
+          "bbox": [
+            272.4,
+            55.8,
+            370.6,
+            103.9
+          ],
+          "path": "images/page4_fig0.png",
+          "width": 295,
+          "height": 145
+        },
+        {
+          "image_id": "main_p4_fig1",
+          "source": "vector_region",
+          "bbox": [
+            381.7,
+            67.1,
+            467.7,
+            106.5
+          ],
+          "path": "images/page4_fig1.png",
+          "width": 259,
+          "height": 119
+        },
+        {
+          "image_id": "main_p4_fig2",
+          "source": "vector_region",
+          "bbox": [
+            37.6,
+            173.9,
+            288.7,
+            187.6
+          ],
+          "path": "images/page4_fig2.png",
+          "width": 755,
+          "height": 42
+        },
+        {
+          "image_id": "main_p4_fig3",
+          "source": "vector_region",
+          "bbox": [
+            306.6,
+            173.9,
+            557.7,
+            187.6
+          ],
+          "path": "images/page4_fig3.png",
+          "width": 754,
+          "height": 42
+        },
+        {
+          "image_id": "main_p4_fig4",
+          "source": "vector_region",
+          "bbox": [
+            37.6,
+            342.7,
+            288.7,
+            356.3
+          ],
+          "path": "images/page4_fig4.png",
+          "width": 755,
+          "height": 42
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            662.2,
+            291.0,
+            717.0
+          ],
+          "text": "reagents dissolved); after that, the catalyst [Pt(IPr)(DMS)Cl2] (7.2 mg, \n0.01 mmol, 1 mol%) was added. The reaction mixture was stirred at 80 \n\u25e6C for 20 h, observing the formation of a white precipitate. Products \nwere purified on a column using silica gel as a stationary phase and \nhexane/ethyl acetate mixture as eluent."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            306.6,
+            662.2,
+            527.0,
+            675.2
+          ],
+          "text": "4.3. A scaled-up synthesis of 3-(4-methoxyphenyl)pyridine (4ae)"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            306.6,
+            683.1,
+            560.0,
+            738.0
+          ],
+          "text": "A 20 mL reaction flask with a stirring bar was charged with 4- \nmethoxyphenylboronic acid (1 g, 6.58 mmol, 1.1 equiv.) and KOH \n(0.679 g, 13.16 mmol, 2.2 equiv.). The flask contents were then \ndegassed for 10 min using an inert gas. The 3-chloropyridine (0.679 g, \n5.98 mmol, 1 equiv.) and ethanol (96 %) (degassed) 10 mL were"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            37.6,
+            279.6,
+            559.8,
+            300.9
+          ],
+          "text": "Scheme 2. The scope of platinum catalyzed Suzuki-Miyaura coupling of 4-methoxyphenylboronic acid (2a) with aryl chlorides. Isolated yields are given in brackets \nand are the average of two runs."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            37.6,
+            450.4,
+            559.8,
+            471.7
+          ],
+          "text": "Scheme 3. The scope of platinum catalyzed Suzuki-Miyaura coupling of arylboronic acids with 4-chlorotoluene (3a). Isolated yields are given in brackets and are the \naverage of two runs."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            37.6,
+            631.1,
+            559.7,
+            652.4
+          ],
+          "text": "Scheme 4. The platinum catalyzed Suzuki-Miyaura coupling of styrylboronic acid (a) and phenylethynylboronic acid pinacol ester (b) with 4-chlorostyrene. Isolated \nyields are given in brackets and are the average of two runs."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            37.6,
+            33.6,
+            560.2,
+            44.1
+          ],
+          "text": "A. Smoczy\u00b4nska et al.                                                                                                                                                                                                                           \nJournal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            296.2,
+            754.5,
+            301.7,
+            764.9
+          ],
+          "text": "5"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p5_fig0",
+          "source": "vector_region",
+          "bbox": [
+            274.4,
+            55.9,
+            467.7,
+            273.0
+          ],
+          "path": "images/page5_fig0.png",
+          "width": 581,
+          "height": 653
+        },
+        {
+          "image_id": "main_p5_fig1",
+          "source": "vector_region",
+          "bbox": [
+            127.6,
+            66.6,
+            266.0,
+            247.3
+          ],
+          "path": "images/page5_fig1.png",
+          "width": 416,
+          "height": 543
+        },
+        {
+          "image_id": "main_p5_fig2",
+          "source": "vector_region",
+          "bbox": [
+            271.2,
+            321.0,
+            361.6,
+            362.9
+          ],
+          "path": "images/page5_fig2.png",
+          "width": 272,
+          "height": 127
+        },
+        {
+          "image_id": "main_p5_fig3",
+          "source": "vector_region",
+          "bbox": [
+            228.9,
+            332.7,
+            259.9,
+            443.4
+          ],
+          "path": "images/page5_fig3.png",
+          "width": 94,
+          "height": 333
+        },
+        {
+          "image_id": "main_p5_fig4",
+          "source": "vector_region",
+          "bbox": [
+            403.0,
+            332.7,
+            459.2,
+            439.7
+          ],
+          "path": "images/page5_fig4.png",
+          "width": 170,
+          "height": 322
+        },
+        {
+          "image_id": "main_p5_fig5",
+          "source": "vector_region",
+          "bbox": [
+            99.2,
+            341.9,
+            195.7,
+            439.7
+          ],
+          "path": "images/page5_fig5.png",
+          "width": 291,
+          "height": 295
+        },
+        {
+          "image_id": "main_p5_fig6",
+          "source": "vector_region",
+          "bbox": [
+            272.0,
+            390.4,
+            333.0,
+            443.4
+          ],
+          "path": "images/page5_fig6.png",
+          "width": 185,
+          "height": 160
+        },
+        {
+          "image_id": "main_p5_fig7",
+          "source": "vector_region",
+          "bbox": [
+            92.2,
+            492.4,
+            140.9,
+            605.2
+          ],
+          "path": "images/page5_fig7.png",
+          "width": 147,
+          "height": 339
+        },
+        {
+          "image_id": "main_p5_fig8",
+          "source": "vector_region",
+          "bbox": [
+            301.3,
+            502.5,
+            377.2,
+            541.2
+          ],
+          "path": "images/page5_fig8.png",
+          "width": 228,
+          "height": 117
+        },
+        {
+          "image_id": "main_p5_fig9",
+          "source": "vector_region",
+          "bbox": [
+            389.3,
+            513.9,
+            440.4,
+            624.5
+          ],
+          "path": "images/page5_fig9.png",
+          "width": 155,
+          "height": 333
+        },
+        {
+          "image_id": "main_p5_fig10",
+          "source": "vector_region",
+          "bbox": [
+            301.3,
+            570.4,
+            372.6,
+            609.0
+          ],
+          "path": "images/page5_fig10.png",
+          "width": 214,
+          "height": 116
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            524.0,
+            291.0,
+            610.3
+          ],
+          "text": "introduced into the degassed reaction flask. The whole was stirred for 5 \nmin at 80 \u25e6C (until all reagents dissolved); after that, the catalyst [Pt(IPr) \n(DMS)Cl2] (1b) (43 mg, 0.059 mmol, 1 mol%) was added. The reaction \nmixture was stirred at 80 \u25e6C for 24 h, observing the formation of a white \nprecipitate. The product was purified by filtering the reaction mixture \nthrough celite. The filtrate was evaporated to dryness. The crude prod\u00ad\nuct was washed 3 times with cold n-hexane to obtain the pure product in \n95 % yield (1.158 g)."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            37.6,
+            618.2,
+            199.5,
+            631.2
+          ],
+          "text": "CRediT authorship contribution statement"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            37.6,
+            639.1,
+            291.0,
+            704.4
+          ],
+          "text": "Anna Smoczy\u00b4nska: Investigation, Funding acquisition. Sylwia \nOstrowska: Writing \u2013 review & editing, Writing \u2013 original draft, \nConceptualization. Anna Chojnacka: Investigation. Steven P. Nolan: \nWriting \u2013 review & editing, Supervision, Conceptualization. Cezary \nPietraszuk: Writing \u2013 review & editing, Writing \u2013 original draft, Su\u00ad\npervision, Conceptualization."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            306.6,
+            139.0,
+            435.2,
+            152.0
+          ],
+          "text": "Declaration of competing interest"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            306.6,
+            159.9,
+            560.0,
+            193.8
+          ],
+          "text": "The authors declare that they have no known competing financial \ninterests or personal relationships that could have appeared to influence \nthe work reported in this paper."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            306.6,
+            201.8,
+            380.4,
+            214.8
+          ],
+          "text": "Acknowledgements"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            306.6,
+            222.7,
+            560.0,
+            319.4
+          ],
+          "text": "AS, thanks for the financial support provided under the Initiative for \nExcellence \u2013 Research University (IDUB) project, project number 136// \n13/SNS/0009. CP, acknowledges the financial support of the Faculty of \nChemistry, Adam Mickiewicz University, Poznan, from the funds \nawarded by the Ministry of Science and Higher Education in the form of \na subsidy for the maintenance and development of research potential in \n2024. SPN acknowledges support from the FWO for work performed in \nGhent. The authors would like to thank Bo\u02d9zena Wyrzykiewicz (M.Sc.) \nfor carrying out and processing the NMR spectra."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            306.6,
+            327.3,
+            435.2,
+            340.3
+          ],
+          "text": "Appendix A. Supplementary data"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            306.6,
+            348.2,
+            560.0,
+            371.7
+          ],
+          "text": "Supplementary data to this article can be found online at https://doi. \norg/10.1016/j.jcat.2025.116452."
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            306.6,
+            379.6,
+            370.1,
+            392.6
+          ],
+          "text": "Data availability"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            318.6,
+            400.5,
+            458.9,
+            413.5
+          ],
+          "text": "Data will be made available on request."
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            306.6,
+            421.4,
+            347.8,
+            434.4
+          ],
+          "text": "References"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            310.0,
+            441.7,
+            542.3,
+            452.1
+          ],
+          "text": "[1] N. Miyaura, K. Yamada, A. Suzuki, Tetrahedron Lett. 20 (1979) 3437\u20133440."
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            310.0,
+            449.7,
+            557.6,
+            476.0
+          ],
+          "text": "Suzuki\u2013Miyaura seminal paper.\n[2] N. Miyaura, A. Suzuki, J. Chem. Soc. Chem. Commun. (1979) 866\u2013867.\n[3] N. Miyaura, A. Suzuki, Chem. Rev. 95 (1995) 2457\u20132483. For a seminal review on"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            310.0,
+            473.5,
+            557.6,
+            507.9
+          ],
+          "text": "the Suzuki\u2013Miyaura reaction.\n[4] B.S. Kadu, Catal. Sci. Technol. 11 (2021) 1186\u20131221.\n[5] F.-S. Han, Chem. Soc. Rev. 42 (2014) 5270\u20135298.\n[6] W.M. Czaplik, M. Mayer, J. Cvengros, A.J. von Wangelin, ChemSusChem 2 (2009)"
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            310.0,
+            505.4,
+            547.7,
+            539.8
+          ],
+          "text": "396\u2013417.\n[7] J.M. Neely, M.J. Bezdek, P.J. Chirik, ACS Cent. Sci. 2 (2016) 935\u2013942.\n[8] S.S. Bera, M. Szostak, ACS Catal. 12 (2022) 3111\u20133137.\n[9] J.-H. Li, J.-L. Li, D.-P. Wang, S.-F. Pi, Y.-X. Xie, M.-B. Zhang, X.-C. Hu, J. Org."
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            306.6,
+            537.3,
+            537.4,
+            555.7
+          ],
+          "text": "Chem. 72 (2007) 2053\u20132057.\n[10] S. Thapa, B. Shrestha, S.K. Gurung, R. Giri, Org. Biomol. Chem. 13 (2015)"
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            306.6,
+            553.2,
+            557.5,
+            571.7
+          ],
+          "text": "4816\u20134827.\n[11] M. Beller, H. Fischer, W.A. Herrmann, K. \u00a8Ofele, C. Brossmer, Angew. Chem. Int. Ed."
+        },
+        {
+          "block_id": 18,
+          "bbox": [
+            306.6,
+            569.2,
+            557.6,
+            603.5
+          ],
+          "text": "Engl. 34 (1995) 1848\u20131849.\n[12] A.F. Littke, G.C. Fu, Angew. Chem. Int. Ed. 37 (1998) 3387\u20133388.\n[13] D.W. Old, J.P. Wolfe, S.L. Buchwald, J. Am. Chem. Soc. 120 (1998) 9722\u20139723.\n[14] S. Asghar, S.B. Tailor, D. Elorriaga, R.B. Bedford, Angew. Chem. Int. Ed. 56 (2017)"
+        },
+        {
+          "block_id": 19,
+          "bbox": [
+            306.6,
+            601.1,
+            557.6,
+            619.4
+          ],
+          "text": "16367\u201316370.\n[15] S.B. Tailor, M. Manzotti, G.J. Smith, S.A. Davis, R.B. Bedford, ACS Catal. 11 (2021)"
+        },
+        {
+          "block_id": 20,
+          "bbox": [
+            306.6,
+            617.0,
+            557.6,
+            635.4
+          ],
+          "text": "3856\u20133866.\n[16] B.J.S. Rowsell, H.M. O\u2019Brien, G. Athavan, P.R. Daley-Dee, J. Krieger, E. Richards,"
+        },
+        {
+          "block_id": 21,
+          "bbox": [
+            306.6,
+            632.9,
+            557.5,
+            651.4
+          ],
+          "text": "K. Heaton, I.J.S. Fairlamb, R.B. Bedford, Nat. Catal. 7 (2024) 1186\u20131198.\n[17] A.J. Arduengo III, S.F. Camper, J.C. Calabrese, F. Davidson, J. Am. Chem. Soc. 116"
+        },
+        {
+          "block_id": 22,
+          "bbox": [
+            306.6,
+            648.9,
+            557.6,
+            667.3
+          ],
+          "text": "(1994) 4391\u20134394.\n[18] I.E. Marko, S. Sterin, O. Buisine, G. Mignani, P. Branlard, B. Tinant, J.P. Declercq,"
+        },
+        {
+          "block_id": 23,
+          "bbox": [
+            306.6,
+            664.8,
+            542.4,
+            683.2
+          ],
+          "text": "Science 298 (2002) 204\u2013206.\n[19] For review see: S. Dierick, I.E. Marko, \u201cNHC platinum(0) complexes: unique"
+        },
+        {
+          "block_id": 24,
+          "bbox": [
+            306.6,
+            680.8,
+            555.0,
+            715.1
+          ],
+          "text": "catalysts for the hydrosilylation of alkenes and alkynes\u201d, in: S.P. Nolan (Ed.), N- \nHeterocyclic Carbenes: Effective Tools for Organometallic Synthesis, Wiley-VCH, \nWeinheim, 2014, pp. 111\u2013149.\n[20] D. Brissy, M. Skander, P. Retailleau, A. Marinetti, Organometallics 26 (2007)"
+        },
+        {
+          "block_id": 25,
+          "bbox": [
+            306.6,
+            712.7,
+            509.8,
+            731.1
+          ],
+          "text": "5782\u20135785.\n[21] J.J. Hu, F. Li, T.S.A. Hor, Organometallics 28 (2009) 1212\u20131220."
+        },
+        {
+          "block_id": 26,
+          "bbox": [
+            181.9,
+            117.5,
+            413.4,
+            129.2
+          ],
+          "text": "Scheme 5. Gram-scale synthesis of 3-(4-methoxyphenyl)pyridine (4ae)."
+        },
+        {
+          "block_id": 27,
+          "bbox": [
+            37.6,
+            493.0,
+            290.8,
+            514.2
+          ],
+          "text": "Scheme 6. The proposed mechanism of Suzuki cross-coupling in the presence \nof platinum complexes, together with the catalyst initiation pathway."
+        },
+        {
+          "block_id": 28,
+          "bbox": [
+            37.6,
+            33.6,
+            560.2,
+            44.1
+          ],
+          "text": "A. Smoczy\u00b4nska et al.                                                                                                                                                                                                                           \nJournal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 29,
+          "bbox": [
+            296.2,
+            754.5,
+            301.7,
+            764.9
+          ],
+          "text": "6"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p6_fig0",
+          "source": "vector_region",
+          "bbox": [
+            225.4,
+            55.8,
+            359.8,
+            110.8
+          ],
+          "path": "images/page6_fig0.png",
+          "width": 404,
+          "height": 166
+        },
+        {
+          "image_id": "main_p6_fig1",
+          "source": "vector_region",
+          "bbox": [
+            369.1,
+            63.7,
+            473.5,
+            110.9
+          ],
+          "path": "images/page6_fig1.png",
+          "width": 314,
+          "height": 142
+        },
+        {
+          "image_id": "main_p6_fig2",
+          "source": "vector_region",
+          "bbox": [
+            121.8,
+            65.1,
+            215.5,
+            110.8
+          ],
+          "path": "images/page6_fig2.png",
+          "width": 282,
+          "height": 138
+        },
+        {
+          "image_id": "main_p6_fig3",
+          "source": "vector_region",
+          "bbox": [
+            68.6,
+            149.7,
+            257.5,
+            486.4
+          ],
+          "path": "images/page6_fig3.png",
+          "width": 568,
+          "height": 1012
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            37.6,
+            52.1,
+            288.6,
+            62.6
+          ],
+          "text": "[22] A. Yousefi, S.J. Sabounchei, S.H.M. Farida, R. Karamian, N. Rahmani, R.W. Gable,"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            37.6,
+            60.1,
+            262.4,
+            78.5
+          ],
+          "text": "J. Organomet. Chem. 890 (2019) 21\u201331.\n[23] R.B. Bedford, S.L. Hazelwood, D.A. Albisson, Organometallics 21 (2002)"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            37.6,
+            76.1,
+            280.8,
+            94.4
+          ],
+          "text": "2599\u20132600.\n[24] S. Kim, G. Varga, M. Seo, A. S\u00b4api, V. R\u00b4acz, J.F. G\u00b4omez-P\u00b4erez, D. Sebo\u030bk, J. Lee,"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            37.6,
+            92.0,
+            281.4,
+            126.3
+          ],
+          "text": "\u00b4A. Kukovecz, Z. K\u00b4onya, ACS Appl. Nano Mat. 4 (2021) 4070\u20134076.\n[25] P. \u02d9Zak, M. Bo\u0142t, M. Kubicki, C. Pietraszuk, Dalton Trans. 47 (2018) 1903\u20131910.\n[26] P. \u02d9Zak, M. Bo\u0142t, C. Pietraszuk, Eur. J. Inorg. Chem. 2019 (2019) 2455\u20132461.\n[27] B.P. Maliszewski, N.V. Tzouras, S.G. Guillet, M. Saab, M. Beli\u02c7s, K. Van Hecke,"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            37.6,
+            123.8,
+            273.1,
+            142.3
+          ],
+          "text": "F. Nahra, S.P. Nolan, Dalton Trans. 49 (2020) 14673\u201314679.\n[28] B.P. Maliszewski, T.A.C.A. Bayrakdar, P. Lambert, L. Hamdouna, X. Trivelli,"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            54.1,
+            139.8,
+            288.6,
+            158.2
+          ],
+          "text": "L. Cavallo, A. Poater, M. Beli\u02c7s, O. Lafon, K. Van Hecke, D. Ormerod, C.S.J. Cazin, \nF. Nahra, S.P. Nolan, Chem. Eur. J. 29 (2023) e202301259."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            306.6,
+            52.1,
+            556.2,
+            62.6
+          ],
+          "text": "[29] P. Zak, M. Bo\u0142t, J. Lorkowski, M. Kubicki, C. Pietraszuk, ChemCatChem 9 (2017)"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            306.6,
+            60.1,
+            548.1,
+            78.5
+          ],
+          "text": "3627\u20133631.\n[30] G. Berthon-Gelloz, M.A. Siegler, A.L. Spek, B. Tinant, J.N.H. Reek, I.E. Marko,"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            306.6,
+            76.1,
+            546.9,
+            94.4
+          ],
+          "text": "Dalton Trans. 39 (2010) 1444\u20131446.\n[31] L.N. Lewis, J. Stein, Y. Gao, R.E. Colborn, G. Hutchins, Platin. Metals Rev. 41"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            306.6,
+            92.0,
+            557.5,
+            110.4
+          ],
+          "text": "(1977) 66\u201375.\n[32] B.P. Maliszewski, E. Casillo, P. Lambert, F. Nahra, C.S.J. Cazin, S.P. Nolan, Chem."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            306.6,
+            107.9,
+            549.7,
+            150.3
+          ],
+          "text": "Commun. 59 (2023) 14017\u201314020.\n[33] V.A. Voloshkin, L.P. Zorba, S.P. Nolan, Chem. Sci. 16 (2025) 2062\u20132082.\n[34] F. Izquierdo, S. Manzini, S.P. Nolan, Chem. Commun. 50 (2014) 14926\u201314937.\n[35] E. Dabbish, F. Ponte, N. Russo, E. Sicilia, Inorg. Chem. 58 (2019) 3851\u20133860.\n[36] D. Roy, Y. Uozumi, Adv. Synth. Catal. 360 (2018) 602\u2013625."
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            37.6,
+            33.6,
+            560.2,
+            44.1
+          ],
+          "text": "A. Smoczy\u00b4nska et al.                                                                                                                                                                                                                           \nJournal of Catalysis 453 (2026) 116452"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            296.2,
+            754.5,
+            301.7,
+            764.9
+          ],
+          "text": "7"
+        }
+      ],
+      "images": []
+    }
+  ]
+}
