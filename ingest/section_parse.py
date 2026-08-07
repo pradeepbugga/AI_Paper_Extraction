@@ -276,13 +276,32 @@ def merge_boundary_paragraphs(elements):
     return merged
 
 
+def vertical_gap(caption_bbox, image_bbox):
+    """Distance between a caption and an image, whichever side it's on —
+    some publishers put the caption below the figure, others (e.g. ACS,
+    where the caption sits inside the same boxed scheme) put it above."""
+    if image_bbox[3] <= caption_bbox[1]:
+        return caption_bbox[1] - image_bbox[3]
+    if image_bbox[1] >= caption_bbox[3]:
+        return image_bbox[1] - caption_bbox[3]
+    return 0.0  # overlapping/adjacent
+
+
+def horizontal_overlap(caption_bbox, image_bbox):
+    x0 = max(caption_bbox[0], image_bbox[0])
+    x1 = min(caption_bbox[2], image_bbox[2])
+    return max(0.0, x1 - x0)
+
+
 def nearest_figure(caption, page_images):
-    above = [img for img in page_images if img["bbox"][3] <= caption["bbox"][1]]
-    if above:
-        return min(above, key=lambda img: caption["bbox"][1] - img["bbox"][3])
-    if page_images:
-        return max(page_images, key=lambda img: img["width"] * img["height"])
-    return None
+    """Nearest by vertical gap, but only among images that share a column
+    with the caption (multi-column pages can have two side-by-side figures
+    at nearly the same height — pure vertical distance would pick either)."""
+    if not page_images:
+        return None
+    same_column = [img for img in page_images if horizontal_overlap(caption["bbox"], img["bbox"]) > 0]
+    candidates = same_column or page_images
+    return min(candidates, key=lambda img: vertical_gap(caption["bbox"], img["bbox"]))
 
 
 def assemble_sections(elements):

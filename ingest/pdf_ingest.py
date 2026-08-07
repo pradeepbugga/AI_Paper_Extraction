@@ -76,12 +76,27 @@ def cluster_drawing_rects(rects, pad=8.0, min_area=2000.0):
     return [c for c in clusters if c.width * c.height >= min_area]
 
 
+def is_invisible_drawing(d, white_tol=0.02):
+    """A filled-white rect with no stroke renders no visible ink — some
+    publisher templates draw one as a full-page/column background or layout
+    guide. Left in, a single such rect can dwarf every real figure on the
+    page and drag unrelated content into its cluster."""
+    fill = d.get("fill")
+    stroke = d.get("color")
+    if stroke is not None:
+        return False
+    if fill is None:
+        return False
+    return all(abs(c - 1.0) < white_tol for c in fill)
+
+
 def extract_vector_figures(page, page_number, images_dir, zoom=3.0):
     drawings = page.get_drawings()
     if not drawings:
         return []
 
-    rects = [d["rect"] for d in drawings if d["rect"].width > 0 and d["rect"].height > 0]
+    rects = [d["rect"] for d in drawings
+             if d["rect"].width > 0 and d["rect"].height > 0 and not is_invisible_drawing(d)]
     clusters = cluster_drawing_rects(rects)
     clusters.sort(key=lambda r: (round(r.y0), r.x0))
 
