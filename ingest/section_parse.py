@@ -17,6 +17,17 @@ NUMBERED_PREFIX_RE = re.compile(r"^\d{1,3}\.\s+\S")
 TOC_LABEL_RE = re.compile(r"^(table of )?contents$", re.IGNORECASE)
 BOLD_FLAG = 1 << 4
 
+# Chemical-nomenclature terms conventionally italicized inline (stereo/locant
+# descriptors, Latin abbreviations) — kept regardless of a style mismatch with
+# the surrounding heading text, rather than relying on font/weight/size
+# coincidentally lining up the way "tert" happened to.
+CHEMISTRY_ITALIC_TERMS = {
+    "tert", "sec", "n", "iso", "neo", "cis", "trans", "ortho", "meta", "para",
+    "syn", "anti", "endo", "exo", "threo", "erythro", "rac", "meso",
+    "R", "S", "E", "Z", "Ra", "Sa", "Rp", "Sp",
+    "in situ", "in vitro", "in vivo", "et al", "vs",
+}
+
 HEADER_FRACTION = 0.05    # top of page treated as running-header territory
 FOOTER_FRACTION = 0.05    # bottom of page treated as running-footer territory
 REPEAT_FRACTION = 0.3     # line text repeated on this share of pages is furniture
@@ -27,6 +38,7 @@ MAX_HEADING_WORDS = 20     # real headings read as short phrases, not sentences
 MAX_HEADING_LEVELS = 6
 MIN_HEADING_BLOCKS = 2  # a style tier must recur across >=N distinct blocks to count as a real heading level
 MIN_RELAXED_HEADING_BLOCKS = 4  # body-size (non-strict) tiers need stronger corroboration -- it's a weaker signal
+MAX_FIGURE_DEBRIS_WORDS = 8  # only a fragment this short can plausibly be a figure-embedded label, not real prose
 COLUMN_GAP_MIN_FRACTION = 0.08  # min x-gap (as fraction of page width) to call it two columns
 
 
@@ -39,6 +51,57 @@ def dominant_span(spans):
     decorative glyph (bullet/icon) sharing the line with the real heading text."""
     non_blank = [s for s in spans if s["text"].strip()]
     return max(non_blank, key=lambda s: len(s["text"].strip()))
+
+
+def dominant_style_text(spans, dom):
+    """Text from only the spans matching the dominant span's size and bold
+    weight — occasionally a heading marker ends up on the same PDF line as
+    the tail of the previous, differently-styled sentence with no
+    separating whitespace at all (e.g. 'paper.■AUTHOR INFORMATION').
+    Reconstructing from dominant-style spans only, instead of the whole
+    line, keeps the heading's own text clean of that fused prefix/suffix.
+    Deliberately loose on font/other flags (not an exact match) so a
+    same-weight italic sub-span within a heading — e.g. the 'tert' in
+    'lithium tert-butyl aryl boronates', a standard chemical-nomenclature
+    convention — doesn't get dropped along with genuinely foreign content.
+    A known chemistry-italic term is kept even if its style doesn't match
+    at all, since relying on weight/size to coincidentally line up isn't
+    something we can count on in general."""
+    dom_bold = dom["flags"] & BOLD_FLAG
+    matching = [s for s in spans
+                if ((s["flags"] & BOLD_FLAG) == dom_bold and abs(s["size"] - dom["size"]) < 0.5)
+                or s["text"].strip() in CHEMISTRY_ITALIC_TERMS]
+    return "".join(s["text"] for s in matching).strip()
+
+
+def has_leading_marker(spans, dom):
+    """A short leading glyph (bullet, section mark, dingbat -- e.g. '■' before
+    ACS section headings) in a strikingly different style than the text that
+    follows it. The specific character varies by publisher (■, ●, ▪, §, ...)
+    so it can't be hardcoded, but the structural pattern -- a short,
+    non-alphanumeric, differently-styled span immediately preceding the real
+    heading text -- is itself a publisher-agnostic heading signal, the same
+    category as a numbered prefix or ALL CAPS. Restricted to non-alphanumeric
+    text specifically (not just "short") so a superscript affiliation number
+    or letter at a coincidental line-wrap boundary -- alphanumeric, and not a
+    decorative glyph -- doesn't get mistaken for one.
+
+    Looks for the marker immediately before wherever the dominant-style run
+    actually starts, not just at index 0 -- a heading fused onto the tail of
+    an unrelated preceding sentence with no separating whitespace (e.g.
+    'paper.■AUTHOR INFORMATION') puts that sentence's tail at index 0, with
+    the real marker one position later."""
+    non_blank = [s for s in spans if s["text"].strip()]
+    dom_bold = dom["flags"] & BOLD_FLAG
+    start_idx = next((i for i, s in enumerate(non_blank)
+                       if (s["flags"] & BOLD_FLAG) == dom_bold and abs(s["size"] - dom["size"]) < 0.5), None)
+    if not start_idx:  # None (no dominant-style span found) or 0 (nothing precedes it)
+        return False
+    marker = non_blank[start_idx - 1]
+    marker_text = marker["text"].strip()
+    if len(marker_text) > 2 or marker_text.isalnum():
+        return False
+    return marker["font"] != dom["font"] or abs(marker["size"] - dom["size"]) > 2.0
 
 
 def join_lines(texts):
@@ -94,9 +157,11 @@ def collect_raw_blocks(doc):
                 dom = dominant_span(spans)
                 lines.append({
                     "text": text,
+                    "dominant_text": dominant_style_text(spans, dom) or text,
                     "bbox": [round(v, 1) for v in line["bbox"]],
                     "size": dom["size"],
                     "bold": bool(dom["flags"] & BOLD_FLAG),
+                    "has_marker": has_leading_marker(spans, dom),
                 })
             if lines:
                 blocks.append({"bbox": bbox, "lines": lines})
@@ -107,13 +172,19 @@ def collect_raw_blocks(doc):
 
 def compute_body_size(pages):
     """Body text size = the (size, rounded) bucket with the most total
-    characters, restricted to non-bold lines so headings can't skew it."""
+    characters, across all text regardless of boldness. Bold text isn't
+    excluded: in a normal prose document it's a small enough minority of
+    total characters (compound IDs, occasional emphasis) that including it
+    doesn't move the mode, but some SI documents render *all* text bold,
+    including dense characterization data -- excluding bold there would
+    make body size reflect only a tiny, unrepresentative non-bold sliver
+    (running headers, stray captions) instead of the document's actual
+    dominant text size, and push real compound-name headings below it."""
     char_count = Counter()
     for page in pages:
         for block in page["blocks"]:
             for line in block["lines"]:
-                if not line["bold"]:
-                    char_count[round(line["size"])] += len(line["text"])
+                char_count[round(line["size"] * 2) / 2] += len(line["text"])
     if not char_count:
         return 10.0
     return char_count.most_common(1)[0][0]
@@ -171,14 +242,17 @@ def heading_style_key(line):
     document expresses every tier with a size difference -- some (e.g. an SI
     document's numbered top-level sections) use the same size as body text
     throughout and lean on other cues instead, the same way a reader also
-    picks up on enumeration ('1. ... 2. ...') or ALL CAPS as a heading
-    signal even when the font size doesn't change. Bucket first by size,
-    then by those secondary cues, so same-size tiers with different cues
-    still rank as distinct levels instead of collapsing into one."""
+    picks up on enumeration ('1. ... 2. ...'), ALL CAPS, or a leading bullet
+    glyph as a heading signal even when the font size doesn't change. Bucket
+    first by size, then by those secondary cues, so same-size tiers with
+    different cues still rank as distinct levels instead of collapsing into
+    one."""
     size_bucket = round(line["size"] * 2) / 2
-    numbered = bool(NUMBERED_PREFIX_RE.match(line["text"]))
-    all_caps = line["text"].isupper()
-    return (size_bucket, numbered, all_caps)
+    clean_text = line["dominant_text"]
+    numbered = bool(NUMBERED_PREFIX_RE.match(clean_text))
+    all_caps = clean_text.isupper()
+    marker = line["has_marker"]
+    return (size_bucket, numbered, all_caps, marker)
 
 
 def heading_eligible(line, body_size, is_first_line):
@@ -251,7 +325,7 @@ def compute_heading_levels(pages, body_size, furniture_lines):
         return MIN_HEADING_BLOCKS if size >= body_size * HEADING_SIZE_RATIO else MIN_RELAXED_HEADING_BLOCKS
 
     candidates = [key for key, blocks in blocks_by_key.items() if len(blocks) >= min_blocks_for(key)]
-    ranked = sorted(candidates, key=lambda k: (-k[0], not k[1], not k[2]))[:MAX_HEADING_LEVELS]
+    ranked = sorted(candidates, key=lambda k: (-k[0], not k[1], not k[2], not k[3]))[:MAX_HEADING_LEVELS]
     return {key: level for level, key in enumerate(ranked, start=1)}
 
 
@@ -294,11 +368,27 @@ def find_column_split(blocks, page_width):
 
 
 def parse_page(page_data, figure_bboxes, body_size, heading_levels, furniture_lines):
-    candidate_blocks = [b for b in page_data["blocks"] if not block_in_figure(b["bbox"], figure_bboxes)]
-    split_x = find_column_split(candidate_blocks, page_data["width"])
+    # Figure-region exclusion is purely geometric (Stage 1 knows nothing about
+    # text), so it's blind to the fact that neither a real heading nor a real
+    # paragraph of prose is ever actually part of a figure -- an oversized or
+    # imperfectly merged figure region can coincidentally overlap real body
+    # content nearby (even in its own, separate block with no heading in it
+    # at all, so this can't be caught by looking at what else shares a block).
+    # Column-split detection still wants figure-embedded blocks excluded
+    # (their x-positions are scattered structure-diagram noise, not the
+    # page's real text columns). But the line-level exclusion below only
+    # ever fires for *short* body lines: genuine figure debris (a compound
+    # ID, a yield percentage, a reaction condition) is essentially always a
+    # handful of words at most, categorically different in form from an
+    # actual sentence -- so a heading (kept regardless of overlap, via our
+    # own bold/marker/size/caps signals) or a real paragraph of prose (kept
+    # via this length check) never gets discarded just because it happens to
+    # sit inside a badly-drawn figure box.
+    non_figure_blocks = [b for b in page_data["blocks"] if not block_in_figure(b["bbox"], figure_bboxes)]
+    split_x = find_column_split(non_figure_blocks, page_data["width"])
 
     elements = []
-    for block in candidate_blocks:
+    for block in page_data["blocks"]:
         units = []
         first_line = True
         for line in block["lines"]:
@@ -306,10 +396,24 @@ def parse_page(page_data, figure_bboxes, body_size, heading_levels, furniture_li
                 continue
             kind = classify_line(line, body_size, heading_levels, first_line)
             first_line = False
+            # A single-letter panel label ('a', 'b', 'c', ...) inside a
+            # multi-panel scheme is sometimes bold/sized enough to pass
+            # heading classification -- too short to plausibly be a real
+            # heading regardless, so it doesn't get the heading exemption
+            # below; a real heading is always more than a couple characters.
+            is_plausible_heading = kind != "body" and len(line["dominant_text"]) > 2
+            if (not is_plausible_heading
+                    and len(line["text"].split()) <= MAX_FIGURE_DEBRIS_WORDS
+                    and block_in_figure(line["bbox"], figure_bboxes)):
+                continue  # figure-embedded content (structure labels, yields, etc.), not real body prose
+            # A heading's own text is reconstructed from only the dominant-style
+            # spans, so a marker fused onto the tail of an unrelated preceding
+            # sentence with no separating whitespace doesn't pollute it.
+            text = line["dominant_text"] if kind.startswith("heading") else line["text"]
             if units and units[-1][0] == kind:
-                units[-1][1] = join_lines([units[-1][1], line["text"]])
+                units[-1][1] = join_lines([units[-1][1], text])
             else:
-                units.append([kind, line["text"]])
+                units.append([kind, text])
         if not units:
             continue
 

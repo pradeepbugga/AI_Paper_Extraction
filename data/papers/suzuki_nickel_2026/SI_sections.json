@@ -1,0 +1,1594 @@
+{
+  "source_pdf": "SI.pdf",
+  "front_matter": [],
+  "sections": [
+    {
+      "heading": "Ni-Catalyzed Enantioselective Suzuki\u2013Miyaura-type",
+      "page_start": 1,
+      "subsections": [],
+      "records": [],
+      "preamble": "",
+      "figures": []
+    },
+    {
+      "heading": "Coupling of Styrene Oxides with Arylboronic Acids",
+      "page_start": 1,
+      "subsections": [],
+      "records": [],
+      "preamble": "Xiao-Yu Lu[a]*, Hao-Yu Dong[a], Jun-Long Zhang[a], Jin-Tao Tao[b], Si-Nan Liu[a] and Yi-Mei Wu[b]\nE-mail: xiaoyulu@mail.ustc.edu.cn.\n[a] School of Materials and Chemical Engineering, Chuzhou University, Chuzhou, Anhui, 239000, China.\n[b] Institutes of Physical Science and Information Technology, Anhui University, Hefei, Anhui, 230601, China.",
+      "figures": []
+    },
+    {
+      "heading": "Table of Contents",
+      "page_start": 1,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "IV. General Procedure for Enantioselective Suzuki Cross-Coupling",
+          "page_start": 1,
+          "text": "V\uff0eProcedure for the Synthesis of Racemic Products ..................................................... S12\nVI. Isolated Yields and Characterization of Products ..................................................... S13\nVII. Mechanism Studies ...................................................................................................... S37\na) Nonlinear relationship experiments .......................................................................... S37\nb) Investigation of ligand loading ................................................................................... S42\nc) Investigation of reaction time ..................................................................................... S48\nd) Evidence for a Stereoconvergent Mechanism. ......................................................... S54\ne) Intermediacy of Halohydrin ....................................................................................... S57\nf) Investigation of Base .................................................................................................... S59\ng) Radical trapping experiment ..................................................................................... S60\nh) Radical cyclization experiment .................................................................................. S61\ni) EPR experiment ........................................................................................................... S63",
+          "figures": []
+        },
+        {
+          "heading": "j) Evaluating alternative iodide sources and bromide salts",
+          "page_start": 2,
+          "text": "k) Investigation catalyst loading ..................................................................................... S68\nVIII\uff0eProduct Structure Determination .......................................................................... S71\nIX. NMR and HPLC Spectra ............................................................................................. S74\nX. References ..................................................................................................................... S159",
+          "figures": []
+        }
+      ],
+      "preamble": "I. General Information .......................................................................................................... S3\na) Materials ........................................................................................................................ S3\nb) Analytical Methods ....................................................................................................... S3\nII. Preparation of Substrates ................................................................................................ S5\nIII. Optimization of Reaction Conditions ............................................................................ S9",
+      "figures": []
+    },
+    {
+      "heading": "I. General Information",
+      "page_start": 3,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "a) Materials",
+          "page_start": 3,
+          "text": "The following chemicals were purchased and used as received: NiBr2(diglyme) (CAS:\n312696-09-6, Sigmaaldrich, 459674-5G); NiBr2(DME) (CAS: 28923-39-9, Sigma-Aldrich,\n406341-5G); Ni(ClO4)2.6H2O (CAS: 13637-71-3, Adamas, 016522284-250 mg); NiCl2(DME)\n(CAS: 29046-78-4, Adamas, 011144811-5G);\n(4S,4'S)-1,1'-Bis(3,5-di-tert-butylphenyl)-4,4'-diisopropyl-4,4',5,5'-tetrahydro-1H,1'H-2,2'-bii\nmidazole (CAS: 2697181-91-0, Leyan.com, 1956542);\n(4S,4'S)-4,4'-Diisopropyl-1,1'-di-m-tolyl-4,4',5,5'-tetrahydro-1H,1'H-2,2'-biimidazole (CAS:\n2374958-85-5, Leyan.com, 1507272);\n(4S,4'S)-4,4'-Di((S)-sec-butyl)-1,1'-bis(3-(tert-butyl)phenyl)-4,4',5,5'-tetrahydro-1H,1'H-2,2'-\nbiimidazole (CAS: 2697181-89-6, Leyan.com, 1507275). Chloroform-d (CAS: 865-49-6,\nEnergy-Chemical, E090003); All the other reagents and solvents mentioned in this text were\npurchased from commercial sources and used without purification.",
+          "figures": []
+        },
+        {
+          "heading": "b) Analytical Methods",
+          "page_start": 3,
+          "text": "1H NMR, 13C NMR, and 19F NMR spectra were recorded on Bruker 400 MHz and 600 MHz\nspectrometer spectrometer at 295 K in CDCl3 unless otherwise noted. Data for 1H NMR were\nreported as follows: chemical shift (\u03b4 ppm), multiplicity, coupling constant (Hz), and\nintegration. Data for 13C NMR were reported as follows: chemical shift (\u03b4 ppm), multiplicity,\nand coupling constant (Hz); Data for 19F NMR were reported as follows: chemical shift (\u03b4\nppm), multiplicity, coupling constant (Hz). Chemical shifts were reported using the residual\nsolvent CHCl3 as the internal reference for 1H NMR (\u03b4 = 7.260 ppm) and CDCl3 peak as the\ninternal reference for 13C NMR (\u03b4= 77.160 ppm). High-resolution mass spectrometry (HRMS)\nvia electrospray ionization (ESI) was performed on a Waters XEVO G2 Q-TOF (Waters\nCorporation). HPLC analysis were carried out on an Agilent system with Daicel columns.\nGas chromatographic (GC) analysis was acquired on a Shimadzu GC-2010 plus Series GC\nsystem equipped with a flame-ionization detector.\uf020X-band CW electron paramagnetic\nresonance (EPR) spectroscopy was performed using Bruker EMXplus spectrometer equipped\nwith standard resonator. Organic solutions were concentrated under reduced pressure on Buchi rotary evaporator. Column chromatographic purification of products was accomplished using forced-flow chromatography on Silica Gel (300-400 mesh).",
+          "figures": []
+        }
+      ],
+      "preamble": "",
+      "figures": []
+    },
+    {
+      "heading": "II. Preparation of Substrates",
+      "page_start": 5,
+      "subsections": [
+        {
+          "heading": "d) Chiral Ligand Synthesis",
+          "page_start": 7,
+          "subsections": [],
+          "records": [
+            {
+              "heading": "HNMR of ligand L12",
+              "page_start": 8,
+              "text": "1H NMR (600 MHz, Chloroform-d) \u03b4 7.30 (s, 2H), 6.99 (d, J = 1.7 Hz, 4H), 4.40 (td, J =\n10.1, 6.9 Hz, 2H), 4.20 (t, J = 9.9 Hz, 2H), 3.91 (t, J = 9.4 Hz, 2H), 2.11 (dt, J = 13.1, 4.8 Hz,\n4H), 1.63 \u2013 1.57 (m, 2H), 1.55 (d, J = 1.3 Hz, 36H), 1.26 (t, J = 7.3 Hz, 6H), 1.23 (d, J = 6.6\nHz, 6H).",
+              "figures": []
+            }
+          ],
+          "preamble": "The preparation of L12 was adapted according to previously published procedures.3 The\nsynthesis of L12 has been previously reported and spectral data are consistent.\nStep I: L-(+)-Isoleucinol S1 (20 mmol, 2.34 g, 2.0 equiv.) and dimethyloxalate (10 mmol,\n1.18 g, 1.0 equiv.) were dissolved in toluene (70 mL) and heated to 85 \u2103. The reaction was\nallowed to stir overnight and then cooled to room temperature with the diamide precipitating\nout of solution as a white solid, then filtered and washed with petroleum ether to get the diol\nS2 (2.73 g, 95% yield, white solid).\nStep II: The diol S2 (10 mmol) was dissolved in toluene (50 mL) and heated to 90 \u00b0C where\nupon thionyl chloride (1.72 mL, 2.4 equiv.) was added. The reaction was stirred for 8 h. After\nthe reaction is completed, it is cooled to room temperature, a large amount of petroleum ether\nis added, and then the dichloro intermediate S3 is precipitated and filtered to afford (2.91 g.\n90% yield, white solid).\nStep III: To an oven dried flask was added S3 (6.0 mmol, 1.94 g) and phosphorus\npentachloride (14.4 mmol, 2.99 g, 2.4 equiv.) in 30 mL of toluene under Ar atmosphere. The\nreaction was allowed to stir at 85 \u00b0C for 8 h before it was cooled to room temperature.\nToluene was evaporated under reduced pressure (80% yield, yellow liquid).\nTo an oven dried flask was added S4 (5 mmol), Et3N (50 mmol, 10.0 equiv.) and\n3,5-di-tert-butylaniline (20 mmol, 4.1 g, 4.0 equiv.) in 25 mL of MeCN under Ar atmosphere.\nNext, the reaction mixture was heated to reflux under Ar for 24 h. After been cooled to\nambient temperature, the volatiles were removed by rotary evaporation. the residue was\ndiluted with CH2Cl2 washed with saturated NH4Cl solution (100 mL\u00d73) and water. The\norganic layer was dried with Na2SO4, filtered and concentrated under reduced pressure. The\nresidue was purified by flash column chromatography (petroleum ether: EtOAc = 3:1) and\nthen recrystallized from hexane and EtOAc to give ligand L12.",
+          "figures": [
+            "SI_p7_fig0"
+          ]
+        }
+      ],
+      "records": [
+        {
+          "heading": "Supplementary Figure 1.",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "a) Synthesis of compounds 1a-1k",
+          "page_start": 5,
+          "text": "Compounds 1a to 1e are commercially available.\nA solution of NaH (11 mmol, 2.2 equiv.) and Me3SI (11 mmol, 2.2 equiv.) in DMSO (7\nmL) and THF (6 mL) was stirred for 30 min at room temperature in a 50 mL flask under an\nAr atmosphere. Then a solution of aldehyde (5 mmol,1.0 equiv.) in THF was added dropwise\nat 0 \u02daC. After complete addition, the mixture was warmed to room temperature and allowed\nto stir for 12 hours. The mixture was quenched with sat. NH4Cl and diluted with EtOAc.\nThen the mixture was separated and the aqueous layer was back-extracted with EtOAc. The\norganic layer was washed with brine and dried over Na2SO4. The solvent was removed under\nreduced pressure and the residue was purified by column chromatography to give the desired\nepoxides.1",
+          "figures": []
+        },
+        {
+          "heading": "b) Synthesis of compound 1l",
+          "page_start": 5,
+          "text": "A 100 mL round-bottom flask, flame-dried and equipped with a stir bar, was charged with\nstyrene (5 mmol, 1 equiv.) dissolved in DCM (30 mL). m-Chloroperbenzoic acid (10 mmol,\n2.0 equiv.) was added, and the mixture was stirred at room temperature overnight. The\nreaction was quenched with saturated aqueous NaHCO\u2083 and extracted three times with DCM.\nThe combined organic layers were washed successively with water, saturated aqueous\nNaHCO\u2083, and brine, then dried over Na\u2082SO\u2084, filtered, and concentrated under reduced\npressure. The residue was purified by column chromatography to afford the desired\nepoxides.1a",
+          "figures": [
+            "SI_p5_fig0",
+            "SI_p5_fig1",
+            "SI_p5_fig2",
+            "SI_p5_fig3",
+            "SI_p5_fig4",
+            "SI_p5_fig5"
+          ]
+        },
+        {
+          "heading": "c) Synthesis of compound 2-phenyl-1-tosylaziridine",
+          "page_start": 6,
+          "text": "A round-bottom flask was flame-dried, and the alkene (1.0 equiv.), chloramine-T\ntrihydrate (1.1 equiv.), and MeCN (5 mL per mmol of alkene) were added.\nTrimethylphenylammonium tribromide (0.1 equiv.) was then introduced, and the mixture was\nstirred at room temperature under argon overnight. The resulting mixture was filtered through\na pad of Celite, and the filtrate was concentrated. The crude product was purified by column\nchromatography.2",
+          "figures": []
+        }
+      ],
+      "preamble": "",
+      "figures": []
+    },
+    {
+      "heading": "III. Optimization of Reaction Conditions",
+      "page_start": 9,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "Entry",
+          "page_start": 9,
+          "text": "1 NiBr2(diglyme) L1 70 trace - 2 NiBr2(diglyme) L2 70 trace - 3 NiBr2(diglyme) L3 70 trace - 4 NiBr2(diglyme) L4 70 < 3 - 5 NiBr2(diglyme) L5 70 55 81 6 NiBr2(diglyme) L6 70 54 82 7 NiBr2(diglyme) L7 70 42 69 8 NiBr2(diglyme) L8 70 32 68 9 NiBr2(diglyme) L9 70 56 59 10 NiBr2(diglyme) L10 70 68 83 11 NiBr2(diglyme) L10 60 67 83 12 NiBr2(diglyme) L10 50 65 86 13 NiBr2(diglyme) L10 40 38 85 14 NiBr2(diglyme) L11 50 66 88 15 NiBr2(diglyme) L12 50 78 93 16 Ni(ClO4)2.6H2O L12 50 76 92 17 NiCl2 L12 50 63 92 18 NiCl2(DME) L12 50 72 93 19 w/o NiBr2(diglyme) L12 50 0 - 20 NiBr2(diglyme) w/o L12 50 0 - Reaction conditions: 1a (0.3 mmol, 1.5 equiv.), 2a (0.2 mmol, 1.0 equiv.), catalyst (8 mol%), ligand (10 mol%), solvent (0.8 mL, 0.4 M), 10 h, aIsolated yield. be.e. value was determined by high-performance liquid chromatography (HPLC) analysis. Reactions were carried out under an argon atmosphere.",
+          "figures": [
+            "SI_p9_fig0"
+          ]
+        }
+      ],
+      "preamble": "Supplementary Table S1. Optimization of reaction conditions for Ni-Catalyzed Enantioselective Suzuki Cross-Coupling",
+      "figures": []
+    },
+    {
+      "heading": "IV. General Procedure for Enantioselective Suzuki",
+      "page_start": 11,
+      "subsections": [],
+      "records": [],
+      "preamble": "",
+      "figures": []
+    },
+    {
+      "heading": "Cross-Coupling",
+      "page_start": 11,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "General Procedure for the Synthesis of 3a on a 4 mmol Scale (1 mol%",
+          "page_start": 11,
+          "text": "Catalyst Loading): In the air, a 100 mL Schlenk tube equipped with a magnetic stirrer\nwas charged with NiBr2(diglyme) (14.1 mg, 0.04 mmol, 1 mol%), L12 (30.5 mg, 0.048 mmol,\n1.2 mol%), 4-biphenylboronic acid (6 mmol, 1.12 g, 1.50 equiv.) and sodium iodide (15\nmol%). The Schlenk tube was evacuated and backfilled with argon three times, then EtOH\n(16 mL, 0.4 M) was added, followed by the styrene oxide (4 mmol, 0.48 g, 1.0 equiv.). Then\nthe solution was stirred at 50 \u2103 for 10 h. The resulting crude reaction was purified by\ncolumn chromatography using ethyl acetate and petroleum ether as eluent, and analyzed by\nHPLC using a chiral stationary phase (0.46 g, 42% yield, 90 % e.e.).",
+          "figures": []
+        }
+      ],
+      "preamble": "General Procedure (GP): In the air, a 10 mL Schlenk tube equipped with a magnetic\nstirrer was charged with NiBr2(diglyme) (5.6 mg, 0.016 mmol, 8 mol%), L12 (12.5 mg, 0.02\nmmol, 10 mol%), arylboronic acid (0.30 mmol, 1.50 equiv.) and sodium iodide (4.5 mg, 0.03\nmmol, 15 mol%) (Note a: If the epoxide was solid, it was also added at this step). The\nSchlenk tube was evacuated and backfilled with argon three times, then EtOH (0.8 mL, 0.4\nM) was added, followed by the epoxide (0.2 mmol, 1.0 equiv.). Then the solution was stirred\nat 50 \u2103 for 10 h. The resulting crude reaction was purified by column chromatography using\nethyl acetate and petroleum ether as eluent, and analyzed by HPLC using a chiral stationary\nphase.",
+      "figures": []
+    },
+    {
+      "heading": "VProcedure for the Synthesis of Racemic Products",
+      "page_start": 12,
+      "subsections": [],
+      "records": [],
+      "preamble": "Racemic products were needed for enantiomeric excess determination. Their synthesis\nwas carried out using the method we previously reported (Chem. Commun., 2020, 56,\n109-112). In air, NiBr2(diglyme) (10 mol%), dtbpy (12 mol%), Arylboronic acid (1.5\nequiv.) and sodium iodide (50 mol%) were added to a schlenk tube equipped with a stir\nbar. The vessel was evacuated and filled with argon (three cycles). EtOH (0.8 mL) and\nepoxide (0.3 mmol) were added in turn by syringe. The resulting reaction mixture was\nstirred vigorously at 70 \u2103 for 20 h. The mixture was purified by column\nchromatography to afford the desired products.4",
+      "figures": [
+        "SI_p12_fig0",
+        "SI_p12_fig1",
+        "SI_p12_fig2"
+      ]
+    },
+    {
+      "heading": "VI. Isolated Yields and Characterization of Products",
+      "page_start": 13,
+      "subsections": [
+        {
+          "heading": "Synthesis of 38a",
+          "page_start": 33,
+          "subsections": [],
+          "records": [
+            {
+              "heading": "(R)-1,2-dichloro-4-(1-phenylbut-3-en-1-yl)benzene",
+              "page_start": 33,
+              "text": "38a was obtained as pale-yellow liquid (43.5 mg, 63% total yield, 91% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.35 \u2013 7.26 (m, 4H), 7.23 \u2013 7.16 (m, 3H), 7.05 (dd, J = 8.3,\n2.1 Hz, 1H), 5.67 (ddt, J = 17.0, 10.2, 6.8 Hz, 1H), 5.02 (dq, J = 17.1, 1.5 Hz, 1H), 4.97 (dq, J = 10.2, 1.3 Hz, 1H), 3.95 (t, J = 7.9 Hz, 1H), 2.84 \u2013 2.66 (m, 2H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 144.92, 143.38, 136.08, 132.47, 130.44, 130.28, 130.06,\n128.78, 127.92, 127.55, 126.80, 117.10, 50.49, 39.76.\n\uff0b([M+H]+) 277.0545, found 277.0546.\nHRMS (ESI) calcd for C16H15Cl2\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (0%\niPrOH in hexane, 1.0 mL/min, 30 \u2103): 12.0 min (major), 13.2 min (minor).",
+              "figures": [
+                "SI_p33_fig0",
+                "SI_p33_fig1",
+                "SI_p33_fig2",
+                "SI_p33_fig3"
+              ]
+            },
+            {
+              "heading": "(R)-4-methyl-N-(2-(3-(methylthio)phenyl)-2-phenylethyl)benzenesulfonamide (39a)",
+              "page_start": 34,
+              "text": "Following GP, 39a was obtained as white solid (51.5 mg, 65% yield, 94% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.66 (d, J = 8.2 Hz, 2H), 7.29 (d, J = 8.2 Hz, 2H), 7.26 (t, J\n= 7.6 Hz, 2H), 7.19 (dt, J = 15.5, 7.4 Hz, 2H), 7.08 (dd, J = 7.6, 2.7 Hz, 3H), 6.95 (s, 1H), 6.86 (d,\nJ = 7.6 Hz, 1H), 4.49 (t, J = 5.8 Hz, 1H), 4.02 (t, J = 7.9 Hz, 1H), 3.56 \u2013 3.47 (m, 2H), 2.43 (s,\n3H), 2.41 (s, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 143.65, 141.55, 140.52, 139.30, 136.83, 129.88, 129.36,\n128.98, 127.99, 127.29, 127.21, 126.18, 125.05, 124.64, 50.63, 47.26, 21.65, 15.72.\n\uff0b([M+H]+) 398.1243, found 398.1243.\nHRMS (ESI) calcd for C22H24NO2S2\nHPLC analysis: The ee was determined to be 94% on a CHIRALCEL OD-H column (9%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n27.6 min (major), 43.5 min (minor).",
+              "figures": []
+            },
+            {
+              "heading": "tert-butyl (R)-3-(2-((4-methylphenyl)sulfonamido)-1-phenylethyl)benzoate (40a)",
+              "page_start": 34,
+              "text": "Following GP, 40a was obtained as white solid (55.0 mg, 61% yield, 93% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.82 (dt, J = 7.6, 1.4 Hz, 1H), 7.76 (t, J = 1.7 Hz, 1H), 7.70 \u2013 7.62 (m, 2H), 7.31 \u2013 7.24 (m, 6H), 7.23 \u2013 7.19 (m, 1H), 7.13 \u2013 7.07 (m, 2H), 4.53 (t, J = 6.2 Hz, 1H), 4.12 (t, J = 7.9 Hz, 1H), 3.63 \u2013 3.46 (m, 2H), 2.44 (s, 3H), 1.57 (s, 9H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 165.61, 143.69, 141.24, 140.42, 136.86, 132.61, 132.21,\n129.91, 129.08, 128.85, 128.82, 128.28, 128.04, 127.39, 127.21, 81.37, 77.37, 77.16, 76.95, 50.71,\n47.27, 28.27, 21.66.\n\uff0b([M+H]+) 452.1890, found 452.1893.\nHRMS (ESI) calcd for C26H30NO4S\nHPLC analysis: The ee was determined to be 93% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n5.5 min (major), 6.3 min (minor).",
+              "figures": [
+                "SI_p34_fig0",
+                "SI_p34_fig1"
+              ]
+            },
+            {
+              "heading": "methyl (R)-4-(2-((4-methylphenyl)sulfonamido)-1-phenylethyl)benzoate (41a)",
+              "page_start": 35,
+              "text": "Following GP, 41a was obtained as white solid (50.7 mg, 62% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.90 (d, J = 8.3 Hz, 2H), 7.65 (d, J = 8.2 Hz, 2H), 7.26 (t, J\n= 7.5 Hz, 4H), 7.23 \u2013 7.19 (m, 1H), 7.17 (d, J = 8.4 Hz, 2H), 7.08 (dd, J = 7.3, 1.7 Hz, 2H), 4.66\n(t, J = 6.3 Hz, 1H), 4.14 (t, J = 7.9 Hz, 1H), 3.88 (s, 3H), 3.59 \u2013 3.51 (m, 2H), 2.43 (s, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 166.80, 146.25, 143.68, 140.16, 136.78, 130.14, 129.87,\n129.07, 128.99, 128.09, 128.02, 127.44, 127.17, 52.20, 50.76, 47.10, 21.62.\n\uff0b([M+H]+) 410.1421, found 410.1423.\nHRMS (ESI) calcd for C23H24NO4S\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n8.7 min (major), 10.8 min (minor).",
+              "figures": [
+                "SI_p35_fig0"
+              ]
+            },
+            {
+              "heading": "methyl (S)-4-(1-(4-chlorophenyl)-2-((4-methylphenyl)sulfonamido)ethyl)benzoate (42a)",
+              "page_start": 36,
+              "text": "Following GP, 42a was obtained as white solid (54.0 mg, 61% yield, 88% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.91 (d, J = 8.3 Hz, 2H), 7.63 (d, J = 8.3 Hz, 2H), 7.28 \u2013\n7.25 (m, 2H), 7.21 (d, J = 8.5 Hz, 2H), 7.15 (d, J = 8.3 Hz, 2H), 7.02 (d, J = 8.5 Hz, 2H), 4.80 (t, J\n= 6.2 Hz, 1H), 4.13 (t, J = 7.8 Hz, 1H), 3.88 (s, 3H), 3.55 \u2013 3.47 (m, 2H), 2.43 (s, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 166.72, 145.77, 143.79, 138.80, 136.69, 133.26, 130.24,\n129.90, 129.41, 129.20, 129.15, 128.03, 127.12, 52.26, 50.22, 47.01, 21.64.\n\uff0b([M+H]+) 444.1031, found 444.1030.\nHRMS (ESI) calcd for C23H23ClNO4S\nHPLC analysis: The ee was determined to be 88% on a CHIRALCEL AD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n24.4 min (minor), 26.3 min (major).",
+              "figures": [
+                "SI_p36_fig0"
+              ]
+            }
+          ],
+          "preamble": "Triphenylphosphine (1.5 equiv) and iodine (1.5 equiv) were dissolved in DCM (2 mL) and\nstirred at room temperature for 10 minutes. To this reaction mixture, imidazole (2.5 equiv)\nwas added, and the mixture was stirred for an additional 10 minutes. A solution of\n2-(3,4-dichlorophenyl)-2-phenylethan-1-ol (0.25 mmol, 1.0 equiv) in DCM (1 mL) was then\nadded at 0 \u2103, and the reaction was stirred at room temperature overnight. The reaction\nmixture was evaporated to dryness, and the crude product was purified by flash column\nchromatography (PE/EtOAc = 50:1) to yield the desired product (S37) as a pale-yellow\nliquid.\nTo a stirred solution of alkyl iodide (1.0 equiv) in THF (2.0 mL) under an Ar atmosphere\nwere added copper(I) bromide-dimethyl sulfide (20 mol%),\uf020HMPA (0.3 mL). The solution is\nimmediately cooled to -25 \u2103 and stirred for 5 min. Then vinylmagnesium bromide (0.75 mL,\n1.0 M THF solution)\uf020is added dropwise over 5 min with vigorous stirring. The reaction is\nstirred at -25 \u2103 for 15 min, then quenched at -25 \u2103 by addition of sat. NH4Cl, extracted\nwith EtOAc (3 x 10 mL). The combined organic extracts are dried over NaSO4 and\nconcentrated in vacuo. The residue was purified by silica gel column chromatography\n(PE/EtOAc = 100:1) to give 38a (63% total yield).6",
+          "figures": []
+        }
+      ],
+      "records": [
+        {
+          "heading": "(R)-2-([1,1'-biphenyl]-4-yl)-2-phenylethan-1-ol (3a)",
+          "page_start": 13,
+          "text": "Following GP, 3a was obtained as white solid (42.7 mg, 78% yield, 93% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.54 (dd, J = 9.8, 7.7 Hz, 4H), 7.41 (t, J = 7.7 Hz, 2H),\n7.32 (dd, J = 7.6, 2.8 Hz, 5H), 7.28 (d, J = 7.3 Hz, 2H), 7.22 (t, J = 7.1 Hz, 1H), 4.23 (t, J =\n7.2 Hz, 1H), 4.18 (d, J = 7.3 Hz, 2H), 1.61 (s, 1H).\n13C NMR (151 MHz, CDCl3) \u03b4 141.46, 140.86, 140.61, 139.84, 128.89, 128.87, 128.83,\n128.45, 127.54, 127.35, 127.14, 127.00, 66.23, 53.44.\n\uff0b([M+H]+) 275.1430, found 275.1426.\nHRMS (ESI) calcd for C20H19O\nHPLC analysis: The ee was determined to be 93% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n9.1 min (major), 15.8 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-([1,1'-biphenyl]-3-yl)-2-phenylethan-1-ol (4a)",
+          "page_start": 13,
+          "text": "Following GP, 4a was obtained as white solid (43.8 mg, 80% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.54 (d, J = 7.2 Hz, 2H), 7.48 (s, 1H), 7.45 (d, J = 7.8 Hz,\n1H), 7.41 (t, J = 7.6 Hz, 2H), 7.37 (t, J = 7.6 Hz, 1H), 7.31 (dq, J = 13.3, 7.3 Hz, 5H), 7.23 (dd, J\n= 11.6, 5.6 Hz, 2H), 4.26 (t, J = 7.2 Hz, 1H), 4.19 (d, J = 7.7 Hz, 2H), 1.65 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 142.06, 141.80, 141.43, 141.18, 129.23, 128.87, 128.44,\n127.48, 127.40, 127.32, 127.28, 126.99, 125.83, 66.25, 53.86.\n\uff0b([M+H]+) 275.1430, found 275.1424.\nHRMS (ESI) calcd for C20H19O HPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (8% iPrOH in hexane, 0.8 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n20.4 min (major), 21.5 min (minor).",
+          "figures": [
+            "SI_p13_fig0",
+            "SI_p13_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-2-phenylethan-1-ol (5a)",
+          "page_start": 14,
+          "text": "Following GP, 5a was obtained as white solid (42.5 mg, 73% yield, 90% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.51 (d, J = 7.9 Hz, 2H), 7.42 (t, J = 7.6 Hz, 2H), 7.36 (dt,\nJ = 18.9, 7.8 Hz, 4H), 7.26 (dd, J = 17.0, 7.3 Hz, 3H), 7.12 (dd, J = 7.9, 1.4 Hz, 1H), 7.06 (dd, J =\n11.8, 1.3 Hz, 1H), 4.24 \u2013 4.20 (m, 1H), 4.17 (d, J = 6.8 Hz, 2H), 1.67 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 159.92 (d, J = 248.0 Hz), 143.26 (d, J = 7.6 Hz), 140.87,\n135.63, 130.96 (d, J = 3.8 Hz), 129.05, 129.04, 129.01, 128.56, 128.41, 127.75, 127.52 (d, J =\n12.8 Hz), 127.24, 124.39 (d, J = 3.7 Hz), 66.02, 53.23.\n19F NMR (565 MHz, CDCl3) \u03b4 -117.47.\n\uff0b([M+H]+) 293.1336, found 293.1337.\nHRMS (ESI) calcd for C20H18FO\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n7.7 min (major), 9.8 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-(3-chlorophenyl)-2-phenylethan-1-ol (6a)",
+          "page_start": 14,
+          "text": "Following GP, 6a was obtained as pale-yellow liquid (34.2 mg, 74% yield, 91% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.33 (t, J = 7.5 Hz, 3H), 7.27 \u2013 7.20 (m, 5H), 7.15 (d, J =\n7.4 Hz, 1H), 4.20 \u2013 4.11 (m, 3H), 1.60 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 143.75, 140.78, 134.64, 130.02, 128.99, 128.59, 128.40,\n127.22, 127.12, 126.66, 65.98, 53.41.\n\uff0b([M+H]+) 233.0728, found 233.0729.\nHRMS (ESI) calcd for C14H14ClO\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (5%\niPrOH in hexane, 0.55 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n43.6 min (major), 46.1 min (minor).",
+          "figures": [
+            "SI_p14_fig0",
+            "SI_p14_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-2-phenyl-2-(3-(trifluoromethyl)phenyl)ethan-1-ol (7a)",
+          "page_start": 15,
+          "text": "Following GP, 7a was obtained as pale-yellow liquid (36.1 mg, 68% yield, 91% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.53 (s, 1H), 7.50 (d, J = 7.6 Hz, 1H), 7.44 (dt, J = 15.2,\n7.7 Hz, 2H), 7.34 (t, J = 7.5 Hz, 2H), 7.27 \u2013 7.23 (m, 3H), 4.26 (t, J = 7.1 Hz, 1H), 4.21 \u2013 4.16 (m,\n2H), 1.57 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 142.73, 140.63, 131.88, 131.09 (q, J = 32.0 Hz), 129.23,\n129.07, 128.43, 127.34, 125.17 (q, J = 3.8 Hz), 124.24 (q, J = 272.5 Hz), 123.83 (q, J = 3.6 Hz),\n66.01, 53.50.\n19F NMR (565 MHz, CDCl3) \u03b4 -62.51.\n\uff0b([M+H]+) 267.0991, found 267.0988.\nHRMS (ESI) calcd for C15H14F3O\nHPLC analysis: The ee was determined to be 91% on a CHIRALCEL OD-H column (5%\niPrOH in hexane, 0.5 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n31.0 min (major), 32.6 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-(3-(benzyloxy)phenyl)-2-phenylethan-1-ol (8a)",
+          "page_start": 15,
+          "text": "Following GP, 8a was obtained as pale-yellow liquid (42.0 mg, 69% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.39 (d, J = 7.3 Hz, 2H), 7.36 (t, J = 7.5 Hz, 2H), 7.32 \u2013\n7.28 (m, 3H), 7.24 \u2013 7.20 (m, 4H), 6.89 \u2013 6.82 (m, 3H), 5.00 (s, 2H), 4.17 \u2013 4.13 (m, 1H), 4.12 \u2013\n4.10 (m, 2H), 1.58 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 159.17, 143.14, 141.34, 136.99, 129.83, 128.83, 128.70,\n128.38, 128.11, 127.70, 126.95, 121.06, 115.45, 112.87, 70.08, 66.17, 53.75.\n\uff0b([M+H]+) 305.1536, found 305.1532.\nHRMS (ESI) calcd for C21H21O2\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (7%\niPrOH in hexane, 0.8 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n30.4 min (major), 33.7 min (minor).",
+          "figures": [
+            "SI_p15_fig0",
+            "SI_p15_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-2-phenyl-2-(3-(trimethylsilyl)phenyl)ethan-1-ol (9a)",
+          "page_start": 16,
+          "text": "Following GP, 9a was obtained as pale-yellow liquid (39.4 mg, 73% yield, 90% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.46 \u2013 7.41 (m, 2H), 7.33 (dt, J = 21.6, 7.6 Hz, 5H), 7.27 \u2013\n7.24 (m, 2H), 4.25 \u2013 4.22 (m, 1H), 4.21 \u2013 4.17 (m, 2H), 1.63 (s, 1H), 0.28 (s, 9H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 141.51, 141.14, 140.56, 133.53, 132.00, 128.81, 128.66,\n128.43, 128.19, 126.90, 66.38, 53.98, -0.99.\n\uff0b([M+H]+) 271.1513, found 271.1516.\nHRMS (ESI) calcd for C17H23OSi\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (4%\niPrOH in hexane, 0.6 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n13.9 min (major), 14.4 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-(3-(methylthio)phenyl)-2-phenylethan-1-ol (10a)",
+          "page_start": 16,
+          "text": "Following GP, 10a was obtained as white solid (34.2 mg, 70% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.31 (t, J = 7.6 Hz, 2H), 7.27 \u2013 7.20 (m, 4H), 7.15 (s, 1H),\n7.11 (d, J = 7.8 Hz, 1H), 7.03 (d, J = 7.7 Hz, 1H), 4.19 \u2013 4.13 (m, 1H), 4.13 (d, J = 5.7 Hz, 2H),\n2.44 (s, 3H), 1.63 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 142.24, 141.15, 139.01, 129.25, 128.86, 128.39, 127.02,\n126.71, 125.10, 124.90, 66.11, 53.68, 15.85.\n\uff0b([M+H]+) 245.0995, found 245.0993.\nHRMS (ESI) calcd for C15H17OS\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (5%\niPrOH in hexane, 0.8 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n24.6 min (major), 26.2 min (minor).",
+          "figures": [
+            "SI_p16_fig0",
+            "SI_p16_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-3-(1-([1,1'-biphenyl]-4-yl)-2-hydroxyethyl)benzaldehyde (11a)",
+          "page_start": 17,
+          "text": "Following GP, 11a was obtained as pale-yellow liquid (36.8 mg, 61% yield, 89% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 9.99 (s, 1H), 7.85 (s, 1H), 7.76 (d, J = 7.6 Hz, 1H), 7.60 \u2013\n7.54 (m, 5H), 7.51 (t, J = 7.6 Hz, 1H), 7.43 (t, J = 7.7 Hz, 2H), 7.36 \u2013 7.32 (m, 3H), 4.34 (t, J =\n7.1 Hz, 1H), 4.28 \u2013 4.22 (m, 2H), 1.83 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 192.49, 142.97, 140.66, 140.18, 139.84, 136.84, 134.80,\n129.52, 129.24, 128.91, 128.84, 128.69, 127.71, 127.47, 127.13, 65.93, 53.07.\n\uff0b([M+H]+) 303.1380, found 303.1376.\nHRMS (ESI) calcd for C21H19O2\nHPLC analysis: The ee was determined to be 89% on a CHIRALCEL OD-H column (25%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n13.6 min (minor), 24.6 min (major).",
+          "figures": [
+            "SI_p17_fig0"
+          ]
+        },
+        {
+          "heading": "(R)-1-(3-(1-([1,1'-biphenyl]-4-yl)-2-hydroxyethyl)phenyl)ethan-1-one (12a)",
+          "page_start": 18,
+          "text": "Following GP, 12a was obtained as white solid (41.7 mg, 66% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.94 (s, 1H), 7.83 (dt, J = 7.7, 1.2 Hz, 1H), 7.59 \u2013 7.54 (m,\n4H), 7.52 (dt, J = 7.7, 1.5 Hz, 1H), 7.43 (td, J = 7.8, 2.5 Hz, 3H), 7.36 \u2013 7.32 (m, 3H), 4.32 (t, J =\n7.2 Hz, 1H), 4.27 \u2013 4.22 (m, 2H), 2.59 (s, 3H), 1.85 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 198.32, 142.36, 140.71, 140.06, 137.60, 133.31, 129.08,\n128.89, 128.80, 128.03, 127.64, 127.42, 127.17, 127.12, 66.00, 53.28, 26.80.\nHRMS (ESI) calcd for C22H21O2\uff0b([M+H]+) 317.1536, found 317.1531.\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (40%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n7.8 min (minor), 11.9 min (major).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-(4-(2-hydroxy-1-phenylethyl)phenyl)(phenyl)methanone (13a)",
+          "page_start": 18,
+          "text": "Following GP, 13a was obtained as white solid (49.5 mg, 82% yield, 94% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.80 \u2013 7.73 (m, 4H), 7.57 (t, J = 7.4 Hz, 1H), 7.45 (t, J =\n7.7 Hz, 2H), 7.38 (d, J = 8.1 Hz, 2H), 7.33 (t, J = 7.6 Hz, 2H), 7.27 \u2013 7.24 (m, 3H), 4.28 (t, J = 7.1\nHz, 1H), 4.22 \u2013 4.18 (m, 2H), 1.81 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 196.45, 146.67, 140.79, 137.69, 136.13, 132.49, 130.62,\n130.09, 128.96, 128.46, 128.39, 128.37, 127.21, 65.91, 53.73.\n\uff0b([M+H]+) 303.1380, found 303.1382.\nHRMS (ESI) calcd for C21H19O2 HPLC analysis: The ee was determined to be 94% on a CHIRALCEL OD-H column (10% iPrOH in hexane, 0.8 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n31.1 min (major), 35.3 min (minor).",
+          "figures": [
+            "SI_p18_fig0",
+            "SI_p18_fig1"
+          ]
+        },
+        {
+          "heading": "tert-butyl (R)-3-(2-hydroxy-1-phenylethyl)benzoate (14a)",
+          "page_start": 19,
+          "text": "Following GP, 14a was obtained as pale-yellow liquid (40.5 mg, 68% yield, 93% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.93 (s, 1H), 7.85 (d, J = 7.7 Hz, 1H), 7.41 (d, J = 7.7 Hz,\n1H), 7.37 \u2013 7.29 (m, 3H), 7.27 \u2013 7.21 (m, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 165.85, 141.85, 141.08, 132.61, 132.47, 129.27, 128.91,\n128.67, 128.41, 128.01, 127.08, 81.24, 66.08, 53.61, 28.29.\n\uff0b([M+Na]+) 321.1461, found 321.1459.\nHRMS (ESI) calcd for C19H22NaO3\nHPLC analysis: The ee was determined to be 93% on a CHIRALCEL OD-H column (5%\niPrOH in hexane, 0.8 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n16.4 min (major), 17.9 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-([1,1'-biphenyl]-4-yl)-2-(4-bromophenyl)ethan-1-ol (15a)",
+          "page_start": 19,
+          "text": "Following GP, 15a was obtained as pale-yellow liquid (39.4 mg, 56% yield, 89% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.57 \u2013 7.52 (m, 4H), 7.46 \u2013 7.40 (m, 4H), 7.33 (t, J = 7.4\nHz, 1H), 7.29 (d, J = 8.2 Hz, 2H), 7.17 (d, J = 8.4 Hz, 2H), 4.21 \u2013 4.13 (m, 3H), 1.60 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 140.75, 140.62, 140.11, 140.01, 131.94, 130.21, 128.92,\n128.78, 127.66, 127.46, 127.16, 120.90, 66.01, 52.80.\n\uff0b([M+H]+) 353.0536, found 353.0538.\nHRMS (ESI) calcd for C20H18BrO HPLC analysis: The ee was determined to be 89% on a CHIRALCEL OD-H column (30% iPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n7.8 min (minor), 12.6 min (major).",
+          "figures": [
+            "SI_p19_fig0",
+            "SI_p19_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-2-([1,1'-biphenyl]-4-yl)-2-(4-iodophenyl)ethan-1-ol (16a)",
+          "page_start": 20,
+          "text": "Following GP, 16a was obtained as pale-yellow liquid (36.1 mg, 45% yield, 88% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.65 (d, J = 8.0 Hz, 2H), 7.54 (t, J = 7.3 Hz, 4H), 7.42 (t, J\n= 7.5 Hz, 2H), 7.33 (t, J = 7.3 Hz, 1H), 7.28 (d, J = 7.8 Hz, 2H), 7.04 (d, J = 8.0 Hz, 2H), 4.20 \u2013\n4.12 (m, 3H), 1.59 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 141.31, 140.74, 140.10, 139.97, 137.91, 130.51, 128.92,\n128.77, 127.65, 127.45, 127.15, 92.38, 65.95, 52.90.\n\uff0b([M+H]+) 401.0397, found 401.0395.\nHRMS (ESI) calcd for C20H18IO\nHPLC analysis: The ee was determined to be 88% on a CHIRALCEL OD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n8.3 min (minor), 13.0 min (major).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-4-(2-hydroxy-1-phenylethyl)-N,N-dimethylbenzamide (17a)",
+          "page_start": 20,
+          "text": "Following GP, 17a was obtained as white solid (32.2 mg, 60% yield, 91% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.36 (d, J = 7.9 Hz, 2H), 7.34 \u2013 7.26 (m, 4H), 7.26 \u2013 7.22\n(m, 3H), 4.22 (t, J = 7.2 Hz, 1H), 4.17 \u2013 4.10 (m, 2H), 3.08 (s, 3H), 2.97 (s, 3H), 1.88 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 171.57, 143.36, 141.11, 134.76, 128.85, 128.47, 128.44,\n127.58, 127.05, 65.98, 53.55, 39.73, 35.47.\n\uff0b([M+H]+) 270.1489, found 270.1481.\nHRMS (ESI) calcd for C17H20NO2\nHPLC analysis: The ee was determined to be 91% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 0.9 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n13.9 min (major), 15.8 min (minor).",
+          "figures": [
+            "SI_p20_fig0",
+            "SI_p20_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-N-(3-(2-hydroxy-1-phenylethyl)phenyl)acetamide (18a)",
+          "page_start": 21,
+          "text": "Following GP, 18a was obtained as white solid (27.5 mg, 54% yield, 90% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.67 (s, 1H), 7.40 (d, J = 7.9 Hz, 1H), 7.37 (s, 1H), 7.28 (t,\nJ = 7.5 Hz, 2H), 7.25 \u2013 7.19 (m, 4H), 6.99 (d, J = 7.6 Hz, 1H), 4.16 \u2013 4.07 (m, 3H), 2.25 \u2013 2.14\n(m, 2H), 2.08 (s, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 168.91, 142.64, 141.36, 138.33, 129.37, 128.81, 128.39,\n126.95, 124.46, 119.99, 118.63, 66.00, 53.60, 24.57.\n\uff0b([M+H]+) 256.1332, found 256.1321.\nHRMS (ESI) calcd for C16H18NO2\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (18%\niPrOH in hexane, 0.75 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n13.9 min (minor), 15.5 min (major).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-4-(2-hydroxy-1-phenylethyl)benzamide (19a)",
+          "page_start": 21,
+          "text": "Following GP, 19a was obtained as white solid (28.0 mg, 58% yield, 94% e.e.).\n1H NMR (600 MHz, DMSO-d6) \u03b4 7.90 (s, 1H), 7.79 (d, J = 8.2 Hz, 2H), 7.36 (d, J = 8.2 Hz, 2H), 7.28 (d, J = 5.0 Hz, 4H), 7.18 (dq, J = 8.3, 4.9, 4.1 Hz, 1H), 4.85 (t, J = 5.0 Hz, 1H), 4.14 (t, J = 7.2 Hz, 1H), 4.04 \u2013 3.93 (m, 2H).\n13C NMR (151 MHz, DMSO-d6) \u03b4 167.84, 146.38, 142.55, 132.22, 128.32, 128.18, 128.04,\n127.47, 126.24, 64.20, 53.24.\n\uff0b([M+H]+) 242.1176, found 242.1174.\nHRMS (ESI) calcd for C15H16NO2\nHPLC analysis: The ee was determined to be 94% on a CHIRALCEL OD-H column (18%\niPrOH in hexane, 0.75 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n38.0 min (major), 47.8 min (minor).",
+          "figures": [
+            "SI_p21_fig0",
+            "SI_p21_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-2-(benzofuran-5-yl)-2-phenylethan-1-ol (20a)",
+          "page_start": 22,
+          "text": "Following GP, 20a was obtained as pale-yellow liquid (31.9 mg, 67% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.59 (d, J = 2.1 Hz, 1H), 7.49 (s, 1H), 7.44 (d, J = 8.5 Hz,\n1H), 7.31 (t, J = 7.5 Hz, 2H), 7.28 (d, J = 7.2 Hz, 2H), 7.24 \u2013 7.20 (m, 1H), 7.20 \u2013 7.16 (m, 1H),\n6.72 \u2013 6.67 (m, 1H), 4.31 (t, J = 7.3 Hz, 1H), 4.21 \u2013 4.17 (m, 2H), 1.61 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 154.08, 145.56, 141.92, 136.06, 128.85, 128.40, 127.91,\n126.91, 124.96, 120.71, 111.69, 106.70, 66.51, 53.58.\n\uff0b([M+H]+) 239.1067, found 239.1064.\nHRMS (ESI) calcd for C16H15O2\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (2.5%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n78.8 min (major), 84.5 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-(benzo[b]thiophen-5-yl)-2-phenylethan-1-ol (21a)",
+          "page_start": 22,
+          "text": "Following GP, 21a was obtained as pale-yellow liquid (33.5 mg, 66% yield, 91% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.80 (d, J = 8.3 Hz, 1H), 7.72 (s, 1H), 7.42 (d, J = 5.4 Hz,\n1H), 7.33 \u2013 7.27 (m, 5H), 7.24 \u2013 7.21 (m, 2H), 4.32 (t, J = 7.2 Hz, 1H), 4.21 (d, J = 7.2 Hz, 2H),\n1.64 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 141.68, 140.14, 138.39, 137.73, 128.86, 128.45, 127.07,\n126.96, 125.15, 123.92, 123.13, 122.87, 66.34, 53.58.\n\uff0b([M+H]+) 255.0838, found 255.0848.\nHRMS (ESI) calcd for C16H15OS\nHPLC analysis: The ee was determined to be 91% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n8.3 min (major), 9.2 min (minor).",
+          "figures": [
+            "SI_p22_fig0",
+            "SI_p22_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-2-(dibenzo[b,d]thiophen-2-yl)-2-phenylethan-1-ol (22a)",
+          "page_start": 23,
+          "text": "Following GP, 22a was obtained as white solid (33.4 mg, 55% yield, 90% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 8.10 \u2013 8.07 (m, 1H), 8.05 (d, J = 8.2 Hz, 1H), 7.81 (dt, J =\n7.2, 3.6 Hz, 1H), 7.73 (s, 1H), 7.44 \u2013 7.40 (m, 2H), 7.32 (t, J = 8.2 Hz, 3H), 7.28 (d, J = 7.2 Hz,\n2H), 7.25 \u2013 7.22 (m, 1H), 4.33 (t, J = 7.2 Hz, 1H), 4.22 (s, 2H), 1.65 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 141.35, 140.54, 140.08, 139.57, 135.37, 134.45, 128.93,\n128.48, 127.07, 126.70, 125.17, 124.52, 122.93, 122.39, 121.82, 121.59, 66.25, 53.78.\n\uff0b([M+H]+) 305.0995, found 305.0994.\nHRMS (ESI) calcd for C20H17OS\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (40%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n6.3 min (major), 7.1 min (minor).",
+          "figures": [
+            "SI_p23_fig0",
+            "SI_p23_fig1"
+          ]
+        },
+        {
+          "heading": "tert-butyl (R)-5-(2-hydroxy-1-phenylethyl)-1H-indole-1-carboxylate (23a)",
+          "page_start": 24,
+          "text": "Following GP, 23a was obtained as pale-yellow liquid (33.7 mg, 50% yield, 87% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 8.07 (s, 1H), 7.58 (s, 1H), 7.46 (s, 1H), 7.30 (dt, J = 15.0,\n7.4 Hz, 4H), 7.24 \u2013 7.20 (m, 2H), 6.52 (d, J = 3.7 Hz, 1H), 4.31 (t, J = 7.3 Hz, 1H), 4.21 (d, J =\n7.3 Hz, 2H), 1.65 (s, 9H), 1.58 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 149.85, 141.99, 135.82, 134.21, 131.10, 128.81, 128.42,\n126.84, 126.48, 124.87, 120.54, 115.54, 107.37, 83.85, 66.48, 53.57, 28.31.\n\uff0b([M+H]+) 338.1751, found 338.1747.\nHRMS (ESI) calcd for C21H24NO3\nHPLC analysis: The ee was determined to be 87% on a CHIRALCEL OD-H column (5%\niPrOH in hexane, 0.5 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n31.5 min (major), 33.7 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-phenyl-2-(2-(trifluoromethyl)pyridin-4-yl)ethan-1-ol (24a)",
+          "page_start": 24,
+          "text": "Following GP, 24a was obtained as pale-yellow liquid (38.0 mg, 71% yield, 90% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 8.61 (d, J = 5.1 Hz, 1H), 7.61 (s, 1H), 7.41 (d, J = 4.9 Hz,\n1H), 7.36 (t, J = 7.5 Hz, 2H), 7.29 (t, J = 7.1 Hz, 1H), 7.20 (d, J = 7.8 Hz, 2H), 4.28 \u2013 4.24 (m,\n1H), 4.20 (d, J = 6.7 Hz, 2H), 2.00 (s, 2H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 153.20, 150.19, 148.53 (q, J = 34.3 Hz), 139.13, 129.29,\n128.47, 127.84, 126.50, 121.67 (q, J = 274.5 Hz), 120.61 (q, J = 2.4 Hz), 65.24, 52.99.\n19F NMR (565 MHz, CDCl3) \u03b4 -67.87.\n\uff0b([M+H]+) 268.0944, found 268.0941.\nHRMS (ESI) calcd for C14H13F3NO\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (10%\niPrOH in hexane, 0.9 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n15.1 min (major), 16.4 min (minor).",
+          "figures": [
+            "SI_p24_fig0"
+          ]
+        },
+        {
+          "heading": "(R)-2-(1-methyl-1H-indazol-6-yl)-2-phenylethan-1-ol (25a)",
+          "page_start": 25,
+          "text": "Following GP, 25a was obtained as pale-yellow liquid (28.8 mg, 57% yield, 92% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.90 (s, 1H), 7.64 (d, J = 8.3 Hz, 1H), 7.32 (t, J = 7.5 Hz,\n2H), 7.29 (d, J = 3.8 Hz, 3H), 7.24 (d, J = 7.9 Hz, 1H), 7.05 (d, J = 8.4 Hz, 1H), 4.36 (t, J = 7.1\nHz, 1H), 4.25 (d, J = 7.1 Hz, 2H), 4.01 (s, 3H), 1.93 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 141.46, 140.35, 140.31, 132.60, 128.89, 128.42, 127.05,\n123.04, 121.73, 121.43, 108.33, 66.19, 54.07, 35.59.\n\uff0b([M+H]+) 253.1335, found 253.1335.\nHRMS (ESI) calcd for C16H17N2O\nHPLC analysis: The ee was determined to be 92% on a CHIRALCEL OD-H column (10%\niPrOH in hexane, 0.9 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n18.9 min (major), 23.3 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(R)-2-(benzo[d]thiazol-5-yl)-2-phenylethan-1-ol (26a)",
+          "page_start": 25,
+          "text": "Following GP, 26a was obtained as pale-yellow liquid (18.3 mg, 36% yield, 87% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 8.94 (s, 1H), 8.06 (d, J = 8.4 Hz, 1H), 7.87 (s, 1H), 7.43 (d,\nJ = 8.5 Hz, 1H), 7.39 \u2013 7.32 (m, 2H), 7.30 \u2013 7.23 (m, 3H), 4.38 (t, J = 7.0 Hz, 1H), 4.31 \u2013 4.20 (m,\n2H), 1.85 (s, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 154.08, 152.09, 141.19, 139.67, 134.33, 129.01, 128.48,\n127.21, 127.19, 123.68, 121.39, 66.24, 53.61.\n\uff0b([M+H]+) 256.0791, found 256.0789.\nHRMS (ESI) calcd for C15H14NOS\nHPLC analysis: The ee was determined to be 87% on a CHIRALCEL OD-H column (15%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n25.7 min (major), 30.5 min (minor).",
+          "figures": [
+            "SI_p25_fig0",
+            "SI_p25_fig1"
+          ]
+        },
+        {
+          "heading": "(S)-2-([1,1'-biphenyl]-4-yl)-2-(4-fluorophenyl)ethan-1-ol (27a)",
+          "page_start": 26,
+          "text": "Following GP, 27a was obtained as white solid (33.9 mg, 58% yield, 85% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.55 (t, J = 6.4 Hz, 4H), 7.42 (t, J = 7.6 Hz, 2H), 7.36 \u2013\n7.22 (m, 5H), 7.02 (t, J = 8.7 Hz, 2H), 4.23 (t, J = 7.1 Hz, 1H), 4.20 \u2013 4.13 (m, 2H), 1.61 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 161.87 (d, J = 245.4 Hz), 140.79, 140.40, 140.03, 137.26\n(d, J = 3.1 Hz), 129.93 (d, J = 7.6 Hz), 128.92, 128.77, 127.63, 127.44, 127.15, 115.69 (d, J =\n21.6 Hz), 66.26, 52.62.\n19F NMR (565 MHz, CDCl3) \u03b4 -115.97.\n\uff0b([M+H]+) 293.1336, found 293.1340.\nHRMS (ESI) calcd for C20H18FO\nHPLC analysis: The ee was determined to be 85% on a CHIRALCEL OD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n6.9 min (major), 11.2 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(S)-2-([1,1'-biphenyl]-4-yl)-2-(3-fluorophenyl)ethan-1-ol (28a)",
+          "page_start": 26,
+          "text": "Following GP, 28a was obtained as white solid (24.5 mg, 42% yield, 88% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.56 (dd, J = 8.1, 3.0 Hz, 4H), 7.42 (t, J = 7.5 Hz, 2H), 7.31\n(tt, J = 14.2, 7.1 Hz, 4H), 7.08 (d, J = 7.7 Hz, 1H), 7.01 (d, J = 10.1 Hz, 1H), 6.94 (td, J = 8.5, 2.4\nHz, 1H), 4.24 (t, J = 7.1 Hz, 1H), 4.18 (d, J = 7.7 Hz, 2H), 1.61 (s, 2H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 163.19 (d, J = 246.6 Hz), 144.18 (d, J = 7.0 Hz), 140.77,\n140.16, 139.93, 130.30 (d, J = 7.8 Hz), 128.92, 128.81, 127.69, 127.46, 127.17, 124.13 (d, J = 3.1 Hz), 115.41 (d, J = 21.6 Hz), 113.92 (d, J = 21.3 Hz), 66.06, 53.13.\n19F NMR (565 MHz, CDCl3) \u03b4 -112.61.\n\uff0b([M+H]+) 293.1336, found 293.1345.\nHRMS (ESI) calcd for C20H18FO\nHPLC analysis: The ee was determined to be 88% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n9.9 min (major), 20.0 min (minor).",
+          "figures": [
+            "SI_p26_fig0",
+            "SI_p26_fig1"
+          ]
+        },
+        {
+          "heading": "(S)-2-([1,1'-biphenyl]-4-yl)-2-(4-chlorophenyl)ethan-1-ol (29a)",
+          "page_start": 27,
+          "text": "Following GP, 29a was obtained as white solid (40.0 mg, 65% yield, 85% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.55 (t, J = 6.5 Hz, 4H), 7.42 (t, J = 7.6 Hz, 2H), 7.35 \u2013\n7.28 (m, 5H), 7.25 \u2013 7.21 (m, 2H), 4.23 \u2013 4.19 (m, 1H), 4.18 \u2013 4.13 (m, 2H), 1.62 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 140.75, 140.11, 140.09, 132.80, 129.82, 128.99, 128.92,\n128.78, 128.25, 127.65, 127.45, 127.15, 66.07, 52.74.\n\uff0b([M+H]+) 309.1041, found 309.1041.\nHRMS (ESI) calcd for C20H18ClO\nHPLC analysis: The ee was determined to be 85% on a CHIRALCEL OD-H column (20%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n10.0 min (major), 17.6 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(S)-2-([1,1'-biphenyl]-4-yl)-2-(3-(trifluoromethoxy)phenyl)ethan-1-ol (30a)",
+          "page_start": 27,
+          "text": "Following GP, 30a was obtained as pale-yellow liquid (37.2 mg, 52% yield, 86% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.57 (d, J = 7.9 Hz, 4H), 7.43 (t, J = 7.6 Hz, 2H), 7.35 (t, J = 8.3 Hz, 2H), 7.32 (d, J = 8.0 Hz, 2H), 7.26 \u2013 7.22 (m, 1H), 7.16 (s, 1H), 7.11 (d, J = 8.1 Hz, 1H), 4.27 (t, J = 7.0 Hz, 1H), 4.22 \u2013 4.17 (m, 2H), 1.62 (s, 0H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 149.71, 144.04, 140.74, 140.26, 139.72, 130.12, 128.94,\n128.83, 127.74, 127.50, 127.18, 126.85, 121.10, 120.61 (q, J = 257.1 Hz), 119.26, 66.05, 53.09.\n19F NMR (565 MHz, CDCl3) \u03b4 -57.67.\n\uff0b([M+H]+) 359.1253, found 359.1259.\nHRMS (ESI) calcd for C21H18F3O2\nHPLC analysis: The ee was determined to be 86% on a CHIRALCEL OD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n5.7 min (major), 10.5 min (minor).",
+          "figures": [
+            "SI_p27_fig0",
+            "SI_p27_fig1"
+          ]
+        },
+        {
+          "heading": "(S)-2-([1,1'-biphenyl]-4-yl)-2-(3-methoxyphenyl)ethan-1-ol (31a)",
+          "page_start": 28,
+          "text": "Following GP, 31a was obtained as pale-yellow liquid (42.5 mg, 70% yield, 88% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.56 \u2013 7.52 (m, 4H), 7.41 (t, J = 7.7 Hz, 2H), 7.33 (d, J =\n8.1 Hz, 3H), 7.25 (t, J = 7.9 Hz, 1H), 6.89 (d, J = 7.6 Hz, 1H), 6.84 (s, 1H), 6.78 (dd, J = 8.2, 1.8\nHz, 1H), 4.23 \u2013 4.20 (m, 1H), 4.18 \u2013 4.16 (m, 2H), 3.77 (s, 3H), 1.70 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 160.01, 143.06, 140.88, 140.46, 139.88, 129.89, 128.88,\n128.78, 127.55, 127.35, 127.14, 120.73, 114.67, 111.94, 66.19, 55.30, 53.47.\n\uff0b([M+H]+) 305.1536, found 305.1526.\nHRMS (ESI) calcd for C21H21O2\nHPLC analysis: The ee was determined to be 88% on a CHIRALCEL OD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n8.5 min (major), 13.5 min (minor).",
+          "figures": [
+            "SI_p28_fig0"
+          ]
+        },
+        {
+          "heading": "(R)-2-([1,1'-biphenyl]-4-yl)-2-(4-(tert-butyl)phenyl)ethan-1-ol (32a)",
+          "page_start": 29,
+          "text": "Following GP, 32a was obtained as white solid (44.9 mg, 68% yield, 89% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.60 \u2013 7.54 (m, 4H), 7.44 (t, J = 7.7 Hz, 2H), 7.39 \u2013 7.31\n(m, 5H), 7.27 \u2013 7.22 (m, 2H), 4.27 \u2013 4.22 (m, 1H), 4.21 (d, J = 6.4 Hz, 2H), 1.61 (s, 1H), 1.32 (s,\n9H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 149.83, 140.94, 140.80, 139.82, 138.27, 128.88, 128.84,\n128.02, 127.55, 127.33, 127.16, 125.83, 66.36, 53.09, 34.56, 31.48.\n\uff0b([M+H]+) 331.2056, found 331.2061.\nHRMS (ESI) calcd for C24H27O\nHPLC analysis: The ee was determined to be 89% on a CHIRALCEL OD-H column (30%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n5.6 min (major), 8.7 min (minor).",
+          "figures": []
+        },
+        {
+          "heading": "(S)-2-([1,1'-biphenyl]-4-yl)-2-(3-bromophenyl)ethan-1-ol (33a)",
+          "page_start": 29,
+          "text": "Following GP, 33a was obtained as pale-yellow liquid (38.7 mg, 55% yield, 83% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.58 \u2013 7.53 (m, 4H), 7.46 \u2013 7.40 (m, 3H), 7.39 \u2013 7.28 (m,\n4H), 7.25 \u2013 7.17 (m, 2H), 4.22 \u2013 4.19 (m, 1H), 4.19 \u2013 4.14 (m, 2H), 1.62 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 144.00, 140.74, 140.17, 139.81, 131.51, 130.40, 130.14,\n128.92, 128.81, 127.70, 127.46, 127.17, 127.14, 123.00, 66.00, 53.09.\n\uff0b([M+H]+) 353.0536, found 353.0541.\nHRMS (ESI) calcd for C20H18BrO\nHPLC analysis: The ee was determined to be 83% on a CHIRALCEL OD-H column (30% iPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n7.5 min (minor), 14.2 min (major).",
+          "figures": [
+            "SI_p29_fig0",
+            "SI_p29_fig1"
+          ]
+        },
+        {
+          "heading": "methyl (S)-4-(2-hydroxy-1-phenylethyl)benzoate (34a)",
+          "page_start": 30,
+          "text": "Following GP, 34a was obtained as white solid (33.8 mg, 66% yield, 87% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.97 (dd, J = 8.4, 2.1 Hz, 2H), 7.35 \u2013 7.29 (m, 4H), 7.26 \u2013\n7.15 (m, 3H), 4.24 (t, J = 7.1 Hz, 1H), 4.18 \u2013 4.11 (m, 2H), 3.87 (s, 3H), 1.87 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 167.03, 147.07, 140.82, 130.01, 128.91, 128.70, 128.47,\n128.40, 127.14, 65.85, 53.65, 52.16.\n\uff0b([M+H]+) 257.1172, found 257.1176.\nHRMS (ESI) calcd for C16H17O3\nHPLC analysis: The ee was determined to be 87% on a CHIRALCEL OD-H column (10%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n17.3 min (minor), 22.0 min (major).",
+          "figures": []
+        },
+        {
+          "heading": "(8R,9S,13S,14S)-13-methyl-17-oxo-7,8,9,11,12,13,14,15,16,17-decahydro-6H-cyclopenta[",
+          "page_start": 30,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "a]phenanthren-3-yl 4-((R)-2-hydroxy-1-(3-(methylthio)phenyl)ethyl)benzoate (35a)",
+          "page_start": 30,
+          "text": "Following GP, 35a was obtained as pale-yellow liquid (60.5 mg, 56% yield, d.r. = 94.5:5.5).\n1H NMR (600 MHz, Chloroform-d) \u03b4 8.13 (d, J = 7.6 Hz, 2H), 7.40 (d, J = 7.7 Hz, 2H), 7.32 (d, J\n= 8.5 Hz, 1H), 7.26 (d, J = 15.2 Hz, 1H), 7.14 (d, J = 8.5 Hz, 2H), 7.02 (d, J = 7.6 Hz, 1H), 6.96 (d, J = 8.5 Hz, 1H), 6.92 (s, 1H), 4.26 (t, J = 7.0 Hz, 1H), 4.19 (d, J = 7.0 Hz, 2H), 2.97 \u2013 2.88 (m, 2H), 2.54 \u2013 2.38 (m, 5H), 2.30 (td, J = 11.1, 4.1 Hz, 1H), 2.18 \u2013 2.11 (m, 1H), 2.09 \u2013 2.00 (m, 2H), 1.96 (dd, J = 12.6, 3.4 Hz, 1H), 1.80 (s, 1H), 1.68 \u2013 1.58 (m, 3H), 1.57 \u2013 1.44 (m, 3H), 0.91 (s, 3H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 221.02, 165.29, 148.90, 147.46, 141.47, 139.31, 138.16,\n137.53, 130.63, 129.39, 128.65, 128.30, 126.65, 126.55, 125.07, 125.04, 121.77, 118.94, 65.74,\n53.61, 50.52, 48.06, 44.26, 38.11, 35.96, 31.64, 29.51, 26.44, 25.87, 21.68, 15.80.\n\uff0b([M+H]+) 541.2407, found 541.2411.\nHRMS (ESI) calcd for C34H37O4S",
+          "figures": [
+            "SI_p30_fig0",
+            "SI_p30_fig1"
+          ]
+        },
+        {
+          "heading": "(R)-3-(2-hydroxy-1-phenylethyl)benzyl-2-(1-(4-chlorobenzoyl)-5-methoxy-2-methyl-1H-i",
+          "page_start": 31,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "ndol-3-yl)acetate (36a)",
+          "page_start": 31,
+          "text": "Following GP, 36a was obtained as pale-yellow liquid (71.2 mg, 63% yield, 90% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.63 (d, J = 8.5 Hz, 2H), 7.44 (d, J = 8.4 Hz, 2H), 7.31 \u2013\n7.24 (m, 3H), 7.20 (t, J = 6.2 Hz, 4H), 7.14 (d, J = 7.4 Hz, 2H), 6.95 (d, J = 2.2 Hz, 1H), 6.89 (d, J\n= 9.0 Hz, 1H), 6.67 (dd, J = 9.0, 2.4 Hz, 1H), 5.11 (s, 2H), 4.14 \u2013 4.03 (m, 3H), 3.74 (s, 3H), 3.70\n(s, 2H), 2.35 (s, 3H), 1.75 (s, 1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 170.70, 168.44, 156.12, 142.16, 141.31, 139.37, 136.23,\n136.09, 133.95, 131.28, 130.94, 130.71, 129.22, 128.95, 128.83, 128.35, 128.23, 127.96, 126.96,\n126.44, 115.07, 112.59, 111.80, 101.53, 66.72, 66.04, 55.77, 53.59, 30.55, 13.50.\n\uff0b([M+H]+) 568.1885, found 568.1882.\nHRMS (ESI) calcd for C34H31ClNO5\nHPLC analysis: The ee was determined to be 90% on a CHIRALCEL OD-H column (25%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n21.3 min (major), 24.2 min (minor).",
+          "figures": [
+            "SI_p31_fig0"
+          ]
+        },
+        {
+          "heading": "(R)-2-(3,4-dichlorophenyl)-2-phenylethan-1-ol (37a)",
+          "page_start": 32,
+          "text": "In the air, a 50 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (84 mg, 0.24 mmol, 8 mol%), L12 (187 mg, 0.3 mmol, 10 mol%),\n(3,4-dichlorophenyl)boronic acid (850 mg, 4.5 mmol, 1.50 equiv.) and sodium iodide (70 mg,\n0.45 mmol, 15 mol%). The Schlenk tube was evacuated and backfilled with argon three times,\nthen EtOH (12 mL, 0.4 M) was added, followed by the styrene oxide (342 \u03bcL, 3 mmol, 1.0\nequiv.). Then the solution was stirred at 50 \u2103 for 10 h. The resulting crude reaction was\npurified by column chromatography using ethyl acetate and petroleum ether as eluent, and\nanalyzed by HPLC using a chiral stationary phase.\nFollowing GP, 37a was obtained as pale-yellow liquid (3 mmol scale, 0.56 g, 70% yield,\n91% e.e.).\n1H NMR (600 MHz, Chloroform-d) \u03b4 7.38 \u2013 7.35 (m, 2H), 7.32 (dt, J = 13.2, 6.5 Hz, 2H), 7.27 \u2013\n7.24 (m, 1H), 7.22 \u2013 7.19 (m, 2H), 7.10 (dd, J = 8.2, 2.1 Hz, 1H), 4.23 \u2013 3.99 (m, 3H), 1.78 (s,\n1H).\n13C NMR (151 MHz, Chloroform-d) \u03b4 142.08, 140.43, 132.74, 130.62, 130.41, 129.06, 128.34,\n127.90, 127.36, 126.88, 65.80, 52.78.\n\uff0b([M+H]+) 267.0338, found 267.0341.\nHRMS (ESI) calcd for C14H13Cl2O\nHPLC analysis: The ee was determined to be 91% on a CHIRALCEL AD-H column (10%\niPrOH in hexane, 1.0 mL/min, 30 \u2103); retention times for the compound obtained using L12:\n15.1min (major), 16.2 min (minor).",
+          "figures": [
+            "SI_p32_fig0"
+          ]
+        }
+      ],
+      "preamble": "",
+      "figures": []
+    },
+    {
+      "heading": "VII. Mechanism Studies",
+      "page_start": 37,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "a) Nonlinear relationship experiments",
+          "page_start": 37,
+          "text": "In the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L11 (0.02 mmol, 10 mol%) with different\nenantiopurities (1st run: 0% ee; 2nd run: 25% ee; 3rd run: 50% ee; 4th run: 75% ee; 5th run:\n100% ee), arylboronic acid (0.30 mmol, 1.50 equiv.) and NaI (0.03 mmol, 15 mol%). The\nSchlenk tube was evacuated and backfilled with argon for three times, then EtOH (0.8 mL)\nwas added, followed by the styrene oxide (0.2 mmol, 1.0 equiv.). Then the solution was\nstirred at 50 \u2103 for 10 h. The residue was purified by flash column chromatography (PE: EA\n= 5:1) on silica gel to give the target product 3a. The ee values of the product 3a were\ndetermined by HPLC.5",
+          "figures": []
+        },
+        {
+          "heading": "ee (L11) (%)",
+          "page_start": 37,
+          "text": "0% 25% 50% 75% 100%",
+          "figures": []
+        },
+        {
+          "heading": "ee (3a) (%)",
+          "page_start": 37,
+          "text": "0% 20% 41% 60% 88% 25%ee of L11 (enantioenriched, 20% ee) 50%ee of L11 (enantioenriched, 41% ee) 75%ee of L11 (enantioenriched, 60% ee) 100%ee of L11 (enantioenriched, 88% ee)",
+          "figures": [
+            "SI_p37_raster0",
+            "SI_p37_fig0",
+            "SI_p37_fig1",
+            "SI_p38_raster0",
+            "SI_p38_raster1",
+            "SI_p39_raster0",
+            "SI_p39_raster1",
+            "SI_p40_raster0",
+            "SI_p40_raster1",
+            "SI_p41_raster0"
+          ]
+        },
+        {
+          "heading": "b) Investigation of ligand loading",
+          "page_start": 42,
+          "text": "In the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, X mol%, 100% ee), arylboronic\nacid (0.30 mmol, 1.50 equiv.) and NaI (0.03 mmol, 15 mol%). The Schlenk tube was\nevacuated and backfilled with argon for three times, then EtOH (0.8 mL) was added,\nfollowed by the styrene oxide (0.2 mmol, 1.0 equiv.). Then the solution was stirred at 50 \u2103\nfor 10 h. The residue was purified by flash column chromatography (PE: EA = 5:1) on silica\ngel to give the target product 3a. The ee values of the product 3a were determined by HPLC.\n5",
+          "figures": []
+        },
+        {
+          "heading": "L12 (X mol%)",
+          "page_start": 42,
+          "text": "5% 7.5% 10% 15% 20%",
+          "figures": []
+        },
+        {
+          "heading": "ee (3a)",
+          "page_start": 42,
+          "text": "91.5% 92.5% 93% 92.5% 92% 5 mol% of L12 (enantioenriched, 91.5% ee) 7.5 mol% of L12 (enantioenriched, 92.5% ee) 10 mol% of L12 (enantioenriched, 93% ee) 15 mol% of L12 (enantioenriched, 92.5% ee) 20 mol% of L12 (enantioenriched, 92% ee)",
+          "figures": [
+            "SI_p42_raster0",
+            "SI_p42_fig0",
+            "SI_p42_fig1",
+            "SI_p43_raster0",
+            "SI_p43_raster1",
+            "SI_p44_raster0",
+            "SI_p44_raster1",
+            "SI_p45_raster0",
+            "SI_p45_raster1",
+            "SI_p46_raster0",
+            "SI_p46_raster1",
+            "SI_p47_raster0",
+            "SI_p47_raster1"
+          ]
+        },
+        {
+          "heading": "c) Investigation of reaction time",
+          "page_start": 48,
+          "text": "In the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, X mol%, 100% ee), arylboronic\nacid (0.30 mmol, 1.50 equiv.) and NaI (0.03 mmol, 15 mol%). The Schlenk tube was\nevacuated and backfilled with argon for three times, then EtOH (0.8 mL) was added,\nfollowed by the styrene oxide (0.2 mmol, 1.0 equiv.). Then the solution was stirred at 50 \u2103\nfor 10 h. The residue was purified by flash column chromatography (PE: EA = 5:1) on silica\ngel to give the target product 3a. The yield of the product 3a were determined by olumn\nchromatography separation. The ee values of the product 3a were determined by HPLC. 5",
+          "figures": []
+        },
+        {
+          "heading": "Time (h)",
+          "page_start": 48,
+          "text": "0 1 2 4 6 10",
+          "figures": []
+        },
+        {
+          "heading": "Yield (%)",
+          "page_start": 48,
+          "text": "0 21.5 40 54 67 78",
+          "figures": []
+        },
+        {
+          "heading": "ee (3a)",
+          "page_start": 48,
+          "text": "0 91% 92% 92% 92.5% 93% 1h (enantioenriched, 91% ee) 2h (enantioenriched, 92% ee) 4 h (enantioenriched, 92% ee) 6h (enantioenriched, 92% ee) 10h (enantioenriched, 93% ee) d) Evidence for a Stereoconvergent Mechanism.\nAll reactions were performed following the standard procedure for reaction optimization GP.\n(R)-Styrene oxide and (S)-styrene oxide (purchased from Energy-Chemical) were proved to\nbe enantiopure by chiral HPLC.5",
+          "figures": [
+            "SI_p48_raster0",
+            "SI_p48_fig0",
+            "SI_p48_fig1",
+            "SI_p49_raster0",
+            "SI_p49_raster1",
+            "SI_p50_raster0",
+            "SI_p50_raster1",
+            "SI_p51_raster0",
+            "SI_p51_raster1",
+            "SI_p52_raster0",
+            "SI_p52_raster1",
+            "SI_p53_raster0",
+            "SI_p53_raster1"
+          ]
+        },
+        {
+          "heading": "Entry",
+          "page_start": 54,
+          "text": "(S)-styrene oxide (enantioenriched, 92% ee) (R)-styrene oxide (enantioenriched, 93% ee)",
+          "figures": [
+            "SI_p54_fig0",
+            "SI_p55_raster0",
+            "SI_p55_raster1",
+            "SI_p55_fig0",
+            "SI_p56_raster0",
+            "SI_p56_raster1",
+            "SI_p56_fig0"
+          ]
+        },
+        {
+          "heading": "e) Intermediacy of Halohydrin",
+          "page_start": 57,
+          "text": "In the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, 10 mol%), and arylboronic acid\n(0.30 mmol, 1.50 equiv.). The Schlenk tube was evacuated and backfilled with argon for\nthree times, then EtOH (0.8 mL) was added, followed by the styrene oxide (0.2 mmol, 1.0\nequiv.). Then the solution was stirred at 50 \u2103 for 10 h.5\nIn the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, 10 mol%), and arylboronic acid\n(0.30 mmol, 1.50 equiv.). The Schlenk tube was evacuated and backfilled with argon for\nthree times, then EtOH (0.8 mL) was added, followed by the halohydrin (0.2 mmol, 1.0\nequiv.). Then the solution was stirred at 50 \u2103 for 10 h.\nIn the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, 10 mol%), K2CO3 or EtONa (0.4\nmmol, 2 equiv.), and arylboronic acid (0.30 mmol, 1.50 equiv.). The Schlenk tube was evacuated and backfilled with argon for three times, then EtOH (0.8 mL) was added, followed by the halohydrin (0.2 mmol, 1.0 equiv.). Then the solution was stirred at 50 \u2103 for 10 h.\nIn the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, 10 mol%), and arylboronic acid\n(0.30 mmol, 1.50 equiv.). The Schlenk tube was evacuated and backfilled with argon for\nthree times, then EtOH (0.8 mL) was added, followed by the styrene oxide (0.2 mmol, 1.0\nequiv.). Then the solution was stirred at 50 \u2103 for 2 h.\nWe determined the NMR yield of compound 44a at various time points during the model reaction (using dibromomethane as the NMR internal standard).",
+          "figures": [
+            "SI_p57_fig0",
+            "SI_p57_fig1",
+            "SI_p57_fig2",
+            "SI_p57_fig3",
+            "SI_p57_fig4",
+            "SI_p57_fig5",
+            "SI_p58_raster0",
+            "SI_p58_fig0",
+            "SI_p58_fig1"
+          ]
+        },
+        {
+          "heading": "f) Investigation of Base",
+          "page_start": 59,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Base",
+          "page_start": 59,
+          "text": "Na2CO3 Cs2CO3 NaOCH3 LiOCH3 LiOtBu KOtBu K3PO4",
+          "figures": []
+        },
+        {
+          "heading": "Yield (%)",
+          "page_start": 59,
+          "text": "trace 5 6 8 13 10 trace",
+          "figures": [
+            "SI_p59_fig0"
+          ]
+        },
+        {
+          "heading": "g) Radical trapping experiment",
+          "page_start": 60,
+          "text": "In the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (0.016 mmol, 8 mol%), L12 (0.02 mmol, 10 mol%), TEMPO (0. 2 mmol),\nNaI (15 mol%), and arylboronic acid (0.30 mmol, 1.50 equiv.). The Schlenk tube was\nevacuated and backfilled with argon for three times, then EtOH (0.8 mL) was added,\nfollowed by the styrene oxide (0.2 mmol, 1.0 equiv.). Then the solution was stirred at 50 \u2103\nfor 10 h. Analyze the reaction through nuclear magnetic resonance (NMR). Then analyze\nthrough HRMS.",
+          "figures": [
+            "SI_p60_raster0",
+            "SI_p60_fig0"
+          ]
+        },
+        {
+          "heading": "h) Radical cyclization experiment",
+          "page_start": 61,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "3-(3-(methylthio)benzyl)cyclopentan-1-ol",
+          "page_start": 61,
+          "text": "1H NMR (600 MHz, Chloroform-d) \u03b4 7.21 \u2013 7.14 (m, 1H), 7.10 \u2013 7.04 (m, 2H), 6.97 \u2013 6.90 (m,\n1H), 4.39 \u2013 4.28 (m, 1H), 2.67 (d, J = 7.0 Hz, 1H), 2.58 (d, J = 7.5 Hz, 1H), 2.47 (d, J = 0.7 Hz,\n3H), 2.14 \u2013 2.05 (m, 1H), 2.03 \u2013 1.87 (m, 1H), 2.03 \u2013 1.87 (m, 1H), 1.81 \u2013 1.63 (m, 2H), 1.58 \u2013\n1.53 (m, 2H), 1.51 \u2013 1.41 (m, 1H), 1.27 \u2013 1.21 (m, 1H).\n13C NMR (151 MHz, CDCl3) \u03b4 142.61, 142.51, 138.19, 128.80, 127.13, 125.78, 124.10, 124.08,\n73.75, 73.65, 42.68, 42.57, 42.22, 42.03, 40.30, 39.22, 35.50, 35.21, 30.42, 30.27, 15.98.\n\uff0b([M+H]+) 222.1078, found 222.1082.\nHRMS (ESI) calcd for C13H18OS",
+          "figures": [
+            "SI_p61_fig0",
+            "SI_p61_fig1",
+            "SI_p61_fig2",
+            "SI_p62_fig0",
+            "SI_p62_fig1",
+            "SI_p62_fig2"
+          ]
+        },
+        {
+          "heading": "i) EPR experiment",
+          "page_start": 63,
+          "text": "In the air, a 10 mL Schlenk tube fitted with a magnetic stir bar was charged with\nNiBr\u2082(diglyme) (5.6 mg, 0.016 mmol, 8 mol%), ligand L12 (12.5 mg, 0.02 mmol, 10 mol%),\n4-biphenylboronic acid (0.30 mmol, 1.50 equiv.), and sodium iodide (4.5 mg, 0.03 mmol, 15\nmol%). The Schlenk tube was evacuated and backfilled with argon (three cycles) to establish\nan inert atmosphere. Subsequently, ethanol (EtOH, 0.8 mL, 0.4 M with respect to styrene\noxide) was added, followed by styrene oxide (0.2 mmol, 1.0 equiv.). The resulting mixture\nwas stirred at 50 \u2103 for 40 min. Then, 5,5-dimethyl-1-pyrroline-N-oxide (DMPO, 2.5 equiv.)\nwas added. Analyze the reaction through nuclear magnetic resonance (NMR,\ndibromomethane as internal standard). The mixture was stirred at room temperature (rt) for 1\nmin, and immediately transferred to an EPR tube for spectral analysis.\nEPR spectrum of the solution sample was collected at room temperature with the following\nspectrometer settings: MW frequency = 9.8 GHz, MW power = 19.73 mW, center field =\n3510 G, sweep width = 100 G, sweep time = 46 s, modulation frequency = 100 kHz,\nmodulation amplitude = 1 G, time constant =10.24 ms, conversion time = 45 ms.",
+          "figures": [
+            "SI_p63_fig0",
+            "SI_p64_raster0",
+            "SI_p64_raster1"
+          ]
+        },
+        {
+          "heading": "j) Evaluating alternative iodide sources and bromide salts",
+          "page_start": 65,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Entry",
+          "page_start": 65,
+          "text": "1 NaBr 41 92\n2 KBr 20 63\n3 KI 75 92.5\n4 TBAI 65 90\n5 CsI 71 91.5",
+          "figures": []
+        },
+        {
+          "heading": "6",
+          "page_start": 65,
+          "text": "NaI 78 93\nReaction conditions: 1a (0.3 mmol, 1.5 equiv.), 2a (0.2 mmol, 1.0 equiv.), NiBr2(diglyme) (8\nmol%), ligand (L12, 10 mol%), solvent (CH3CH2OH, 0.8 mL, 0.4 M), 10 h. Isolated yield. e.e.\nvalue was determined by high-performance liquid chromatography (HPLC) analysis. Reactions\nwere carried out under an argon atmosphere.\nNaBr as Halogen salt TBAI as Halogen salt KI as Halogen salt",
+          "figures": [
+            "SI_p65_raster0",
+            "SI_p65_raster1",
+            "SI_p65_fig0",
+            "SI_p66_raster0",
+            "SI_p66_raster1",
+            "SI_p66_raster2",
+            "SI_p66_raster3",
+            "SI_p66_fig0",
+            "SI_p67_raster0",
+            "SI_p67_raster1",
+            "SI_p67_raster2",
+            "SI_p67_raster3",
+            "SI_p67_fig0"
+          ]
+        },
+        {
+          "heading": "k) Investigation catalyst loading",
+          "page_start": 68,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Entry",
+          "page_start": 68,
+          "text": "1 1 mol% 1.2 mol% 41 88.5\n2 2.5 mol% 3 mol% 60 88.5\n3 5 mol% 6 mol% 67 90",
+          "figures": []
+        },
+        {
+          "heading": "4",
+          "page_start": 68,
+          "text": "8 mol% 10 mol% 78 93\n5 10 mol% 12 mol% 77 92.5\nIn the air, 10 mL Schlenk tube equipped with a magnetic stirrer was charged with\nNiBr2(diglyme) (1 mol%; 2.5 mol%; 5 mol%; 8 mol%; 10 mol%), L12 (1.2 mol%; 3 mol%; 6\nmol%; 10 mol%; 12 mol%), arylboronic acid (0.30 mmol, 1.50 equiv.) and NaI (0.03 mmol,\n15 mol%). The Schlenk tube was evacuated and backfilled with argon for three times, then\nEtOH (0.8 mL) was added, followed by the styrene oxide (0.2 mmol, 1.0 equiv.). Then the\nsolution was stirred at 50 \u2103 for 10 h. The residue was purified by flash column\nchromatography (PE: EA = 5:1) on silica gel to give the target product 3a. The ee values of\nthe product 3a were determined by HPLC. 5 2.5 mol% Ni 10 mol% Ni",
+          "figures": [
+            "SI_p68_fig0",
+            "SI_p68_fig1",
+            "SI_p69_raster0",
+            "SI_p69_raster1",
+            "SI_p69_raster2",
+            "SI_p69_raster3",
+            "SI_p69_fig0",
+            "SI_p70_raster0",
+            "SI_p70_raster1",
+            "SI_p70_raster2",
+            "SI_p70_raster3",
+            "SI_p70_fig0"
+          ]
+        }
+      ],
+      "preamble": "",
+      "figures": []
+    },
+    {
+      "heading": "VIIIProduct Structure Determination",
+      "page_start": 71,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "Compound 3a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 74,
+          "text": "",
+          "figures": []
+        }
+      ],
+      "preamble": "The structure of product 13a was determined by X-ray diffraction. The X-ray\ncrystallographic data have been deposited at the Cambridge Crystallographic Data Center\n(CCDC deposition number: 2486619). Method of crystallization: A solution of 13a in EA and\npetroleum ether was evaporated the solvent slowly at room temperature.\nThe suitable single crystals for X-ray structural analysis were mounted at 170 K on a\nXtaLAB Synergy R, DW system, HyPix Diffractometer. Data reduction and empirical\nabsorption correction were performed using the CrysAlisPro program. The structure was\nsolved by using SHELXT program or Olex2. All nonhydrogen atoms could be located\ndirectly from the difference Fourier maps. Framework hydrogen atoms were placed\ngeometrically and constrained using the riding model to the parent atoms. Final structure\nrefinement was done using the SHELXL program by minimizing the sum of squared\ndeviations of F2 using a full-matrix technique.\nRefined structure and crystallographic parameters are summarized as below. The Diamond\ndiagram was drawn by Olex 2-1.3\nCrystal data and structure refinement for 13a.\nTable S2.  Crystal data and structure refinement for 13a.\nIdentification code 13a\nEmpirical formula C21H18O2\nFormula weight 302.35\nTemperature 170 K\nWavelength 1.54178 \u00c5\nCrystal system Monoclinic\nSpace group P 1 21 1\nUnit cell dimensions a = 8.3333(4) \u00c5\nb = 17.6097(8) \u00c5\nc = 10.8929(5) \u00c5 = 90\u00b0.\n= 90.260(9)\u00b0.\n= 90\u00b0.\nVolume 1598.48(13) \u00c53\nZ 4\nDensity (calculated) 1.256 Mg/m3\nAbsorption coefficient 0.628 mm-1\nF(000) 640\nCrystal size 0.17 x 0.17 x 0.05 mm3\nTheta range for data collection 4.058 to 70.335\u00b0.\nIndex ranges -10<=h<=10, -21<=k<=21, -13<=l<=13\nReflections collected 28412\nIndependent reflections 6069 [R(int) = 0.0649]\nCompleteness to theta = 67.679\u00b0 100.0 %\nAbsorption correction Semi-empirical from equivalents\nMax. and min. transmission 0.7533 and 0.6708\nRefinement method Full-matrix least-squares on F2\nData / restraints / parameters 6069 / 1 / 417\nGoodness-of-fit on F2 1.056\nFinal R indices [I>2sigma(I)] R1 = 0.0406, wR2 = 0.1040\nR indices (all data) R1 = 0.0448, wR2 = 0.1079\nAbsolute structure parameter 0.09(12)\nExtinction coefficient n/a\nLargest diff. peak and hole 0.152 and -0.179 e.\u00c5-3",
+      "figures": [
+        "SI_p71_raster0",
+        "SI_p71_fig0",
+        "SI_p72_raster0",
+        "SI_p72_raster1",
+        "SI_p72_raster2"
+      ]
+    },
+    {
+      "heading": "IX. NMR and HPLC Spectra",
+      "page_start": 74,
+      "subsections": [],
+      "records": [
+        {
+          "heading": "3aenantioenriched, 93% ee",
+          "page_start": 75,
+          "text": "",
+          "figures": [
+            "SI_p75_raster0",
+            "SI_p75_raster1",
+            "SI_p75_raster2",
+            "SI_p75_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 4a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 76,
+          "text": "HPLC data of compound 4a using achiral ligand",
+          "figures": [
+            "SI_p76_fig0"
+          ]
+        },
+        {
+          "heading": "4aenantioenriched, 92% ee",
+          "page_start": 77,
+          "text": "",
+          "figures": [
+            "SI_p77_raster0",
+            "SI_p77_raster1",
+            "SI_p77_raster2",
+            "SI_p77_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 5a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 78,
+          "text": "HPLC data of compound 5a using achiral ligand",
+          "figures": [
+            "SI_p78_fig0",
+            "SI_p79_fig0"
+          ]
+        },
+        {
+          "heading": "5aenantioenriched, 90% ee",
+          "page_start": 80,
+          "text": "",
+          "figures": [
+            "SI_p80_raster0",
+            "SI_p80_raster1",
+            "SI_p80_raster2",
+            "SI_p80_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 6a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 81,
+          "text": "HPLC data of compound 6a using achiral ligand",
+          "figures": [
+            "SI_p81_fig0",
+            "SI_p81_fig1",
+            "SI_p81_fig2",
+            "SI_p81_fig3"
+          ]
+        },
+        {
+          "heading": "6aenantioenriched, 91% ee",
+          "page_start": 82,
+          "text": "",
+          "figures": [
+            "SI_p82_raster0",
+            "SI_p82_raster1",
+            "SI_p82_raster2",
+            "SI_p82_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 7a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 83,
+          "text": "HPLC data of compound 7a using achiral ligand",
+          "figures": [
+            "SI_p83_fig0",
+            "SI_p83_fig1",
+            "SI_p84_fig0"
+          ]
+        },
+        {
+          "heading": "7aenantioenriched, 91% ee",
+          "page_start": 85,
+          "text": "",
+          "figures": [
+            "SI_p85_raster0",
+            "SI_p85_raster1",
+            "SI_p85_raster2",
+            "SI_p85_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 8a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 86,
+          "text": "HPLC data of compound 8a using achiral ligand",
+          "figures": [
+            "SI_p86_fig0"
+          ]
+        },
+        {
+          "heading": "8aenantioenriched, 92% ee",
+          "page_start": 87,
+          "text": "",
+          "figures": [
+            "SI_p87_raster0",
+            "SI_p87_raster1",
+            "SI_p87_raster2",
+            "SI_p87_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 9a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 88,
+          "text": "HPLC data of compound 9a using achiral ligand",
+          "figures": [
+            "SI_p88_fig0",
+            "SI_p88_fig1"
+          ]
+        },
+        {
+          "heading": "9aenantioenriched, 90% ee",
+          "page_start": 89,
+          "text": "",
+          "figures": [
+            "SI_p89_raster0",
+            "SI_p89_raster1",
+            "SI_p89_raster2",
+            "SI_p89_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 10a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 90,
+          "text": "",
+          "figures": [
+            "SI_p90_fig0",
+            "SI_p90_fig1"
+          ]
+        },
+        {
+          "heading": "10aenantioenriched, 92% ee",
+          "page_start": 91,
+          "text": "HPLC data of compound 10a using achiral ligand",
+          "figures": [
+            "SI_p91_raster0",
+            "SI_p91_raster1",
+            "SI_p91_raster2",
+            "SI_p91_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 11a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 92,
+          "text": "HPLC data of compound 11a using achiral ligand",
+          "figures": [
+            "SI_p92_fig0",
+            "SI_p92_fig1"
+          ]
+        },
+        {
+          "heading": "11aenantioenriched, 89% ee",
+          "page_start": 93,
+          "text": "",
+          "figures": [
+            "SI_p93_raster0",
+            "SI_p93_raster1",
+            "SI_p93_raster2",
+            "SI_p93_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 12a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 94,
+          "text": "HPLC data of compound 12a using achiral ligand",
+          "figures": [
+            "SI_p94_fig0"
+          ]
+        },
+        {
+          "heading": "12aenantioenriched, 92% ee",
+          "page_start": 95,
+          "text": "",
+          "figures": [
+            "SI_p95_raster0",
+            "SI_p95_raster1",
+            "SI_p95_raster2",
+            "SI_p95_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 13a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 96,
+          "text": "HPLC data of compound 13a using chiral ligand (enantioenriched, 94% ee) HPLC data of compound 13a using achiral ligand",
+          "figures": [
+            "SI_p96_fig0",
+            "SI_p97_raster0",
+            "SI_p97_raster1",
+            "SI_p97_raster2",
+            "SI_p97_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 14a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 98,
+          "text": "",
+          "figures": [
+            "SI_p98_fig0"
+          ]
+        },
+        {
+          "heading": "14aenantioenriched, 93% ee",
+          "page_start": 99,
+          "text": "HPLC data of compound 14a using achiral ligand",
+          "figures": [
+            "SI_p99_raster0",
+            "SI_p99_raster1",
+            "SI_p99_raster2",
+            "SI_p99_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 15a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 100,
+          "text": "HPLC data of compound 15a using achiral ligand",
+          "figures": [
+            "SI_p100_fig0",
+            "SI_p100_fig1"
+          ]
+        },
+        {
+          "heading": "15aenantioenriched, 89% ee",
+          "page_start": 101,
+          "text": "",
+          "figures": [
+            "SI_p101_raster0",
+            "SI_p101_raster1",
+            "SI_p101_raster2",
+            "SI_p101_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 16a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 102,
+          "text": "HPLC data of compound 16a using achiral ligand",
+          "figures": [
+            "SI_p102_fig0"
+          ]
+        },
+        {
+          "heading": "16aenantioenriched, 88% ee",
+          "page_start": 103,
+          "text": "",
+          "figures": [
+            "SI_p103_raster0",
+            "SI_p103_raster1",
+            "SI_p103_raster2",
+            "SI_p103_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 17a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 104,
+          "text": "HPLC data of compound 17a using achiral ligand",
+          "figures": [
+            "SI_p104_fig0",
+            "SI_p104_fig1",
+            "SI_p104_fig2"
+          ]
+        },
+        {
+          "heading": "17aenantioenriched, 91% ee",
+          "page_start": 105,
+          "text": "",
+          "figures": [
+            "SI_p105_raster0",
+            "SI_p105_raster1",
+            "SI_p105_raster2",
+            "SI_p105_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 18a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 106,
+          "text": "HPLC data of compound 18a using achiral ligand",
+          "figures": [
+            "SI_p106_fig0"
+          ]
+        },
+        {
+          "heading": "18aenantioenriched, 90% ee",
+          "page_start": 107,
+          "text": "",
+          "figures": [
+            "SI_p107_raster0",
+            "SI_p107_raster1",
+            "SI_p107_raster2",
+            "SI_p107_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 19a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 108,
+          "text": "",
+          "figures": [
+            "SI_p108_fig0"
+          ]
+        },
+        {
+          "heading": "19aenantioenriched, 94% ee",
+          "page_start": 109,
+          "text": "HPLC data of compound 19a using achiral ligand",
+          "figures": [
+            "SI_p109_raster0",
+            "SI_p109_raster1",
+            "SI_p109_raster2",
+            "SI_p109_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 20a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 110,
+          "text": "",
+          "figures": [
+            "SI_p110_fig0",
+            "SI_p110_fig1"
+          ]
+        },
+        {
+          "heading": "20aenantioenriched, 92% ee",
+          "page_start": 111,
+          "text": "HPLC data of compound 20a using achiral ligand",
+          "figures": [
+            "SI_p111_raster0",
+            "SI_p111_raster1",
+            "SI_p111_raster2",
+            "SI_p111_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 21a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 112,
+          "text": "",
+          "figures": [
+            "SI_p112_fig0",
+            "SI_p112_fig1"
+          ]
+        },
+        {
+          "heading": "21aenantioenriched, 91% ee",
+          "page_start": 113,
+          "text": "HPLC data of compound 21a using achiral ligand",
+          "figures": [
+            "SI_p113_raster0",
+            "SI_p113_raster1",
+            "SI_p113_raster2",
+            "SI_p113_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 22a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 114,
+          "text": "",
+          "figures": [
+            "SI_p114_fig0",
+            "SI_p114_fig1"
+          ]
+        },
+        {
+          "heading": "22aenantioenriched, 92% ee",
+          "page_start": 115,
+          "text": "HPLC data of compound 22a using achiral ligand",
+          "figures": [
+            "SI_p115_raster0",
+            "SI_p115_raster1",
+            "SI_p115_raster2",
+            "SI_p115_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 23a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 116,
+          "text": "HPLC data of compound 23a using achiral ligand",
+          "figures": [
+            "SI_p116_fig0"
+          ]
+        },
+        {
+          "heading": "23aenantioenriched, 87% ee",
+          "page_start": 117,
+          "text": "",
+          "figures": [
+            "SI_p117_raster0",
+            "SI_p117_raster1",
+            "SI_p117_raster2",
+            "SI_p117_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 24a (H NMR, F NMR and C NMR, CDCl, 600 MHz,565 MHz and 151",
+          "page_start": 118,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "MHz respectively)",
+          "page_start": 118,
+          "text": "HPLC data of compound 24a using achiral ligand",
+          "figures": [
+            "SI_p118_raster0",
+            "SI_p118_fig0",
+            "SI_p118_fig1",
+            "SI_p119_fig0"
+          ]
+        },
+        {
+          "heading": "24aenantioenriched, 90% ee",
+          "page_start": 120,
+          "text": "",
+          "figures": [
+            "SI_p120_raster0",
+            "SI_p120_raster1",
+            "SI_p120_raster2",
+            "SI_p120_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 25a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 121,
+          "text": "HPLC data of compound 25a using achiral ligand",
+          "figures": [
+            "SI_p121_fig0"
+          ]
+        },
+        {
+          "heading": "25aenantioenriched, 92% ee",
+          "page_start": 122,
+          "text": "",
+          "figures": [
+            "SI_p122_raster0",
+            "SI_p122_raster1",
+            "SI_p122_raster2",
+            "SI_p122_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 26a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 123,
+          "text": "HPLC data of compound 26a using achiral ligand",
+          "figures": [
+            "SI_p123_raster0",
+            "SI_p123_fig0",
+            "SI_p123_fig1",
+            "SI_p123_fig2",
+            "SI_p123_fig3"
+          ]
+        },
+        {
+          "heading": "26aenantioenriched, 87% ee",
+          "page_start": 124,
+          "text": "",
+          "figures": [
+            "SI_p124_raster0",
+            "SI_p124_raster1",
+            "SI_p124_raster2",
+            "SI_p124_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 27a (H NMR,F NMR and C NMR, CDCl, 600 MHz, 565 MHz and 151",
+          "page_start": 125,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "MHz respectively)",
+          "page_start": 125,
+          "text": "",
+          "figures": [
+            "SI_p125_fig0",
+            "SI_p126_fig0",
+            "SI_p126_fig1"
+          ]
+        },
+        {
+          "heading": "27aenantioenriched, 85% ee",
+          "page_start": 127,
+          "text": "HPLC data of compound 27a using achiral ligand",
+          "figures": [
+            "SI_p127_raster0",
+            "SI_p127_raster1",
+            "SI_p127_raster2",
+            "SI_p127_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 28a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 128,
+          "text": "",
+          "figures": [
+            "SI_p128_fig0",
+            "SI_p128_fig1",
+            "SI_p129_fig0",
+            "SI_p129_fig1"
+          ]
+        },
+        {
+          "heading": "28aenantioenriched, 88% ee",
+          "page_start": 130,
+          "text": "HPLC data of compound 28a using achiral ligand",
+          "figures": [
+            "SI_p130_raster0",
+            "SI_p130_raster1",
+            "SI_p130_raster2",
+            "SI_p130_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 29a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 131,
+          "text": "HPLC data of compound 29a using achiral ligand",
+          "figures": [
+            "SI_p131_fig0"
+          ]
+        },
+        {
+          "heading": "29aenantioenriched, 85% ee",
+          "page_start": 132,
+          "text": "",
+          "figures": [
+            "SI_p132_raster0",
+            "SI_p132_raster1",
+            "SI_p132_raster2",
+            "SI_p132_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 30a (H NMR, F NMR and C NMR, CDCl, 600 MHz, 565 MHz and 151",
+          "page_start": 133,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "MHz respectively)",
+          "page_start": 133,
+          "text": "HPLC data of compound 30a using achiral ligand",
+          "figures": [
+            "SI_p133_fig0",
+            "SI_p133_fig1",
+            "SI_p133_fig2",
+            "SI_p134_fig0"
+          ]
+        },
+        {
+          "heading": "30aenantioenriched, 86% ee",
+          "page_start": 135,
+          "text": "",
+          "figures": [
+            "SI_p135_raster0",
+            "SI_p135_raster1",
+            "SI_p135_raster2",
+            "SI_p135_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 31a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 136,
+          "text": "",
+          "figures": [
+            "SI_p136_fig0"
+          ]
+        },
+        {
+          "heading": "31aenantioenriched, 88% ee",
+          "page_start": 137,
+          "text": "HPLC data of compound 31a using achiral ligand",
+          "figures": [
+            "SI_p137_raster0",
+            "SI_p137_raster1",
+            "SI_p137_raster2",
+            "SI_p137_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 32a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 138,
+          "text": "",
+          "figures": [
+            "SI_p138_fig0"
+          ]
+        },
+        {
+          "heading": "32aenantioenriched, 89% ee",
+          "page_start": 139,
+          "text": "HPLC data of compound 32a using achiral ligand",
+          "figures": [
+            "SI_p139_raster0",
+            "SI_p139_raster1",
+            "SI_p139_raster2",
+            "SI_p139_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 33a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 140,
+          "text": "HPLC data of compound 33a using achiral ligand",
+          "figures": [
+            "SI_p140_fig0",
+            "SI_p140_fig1",
+            "SI_p140_fig2"
+          ]
+        },
+        {
+          "heading": "33aenantioenriched, 83% ee",
+          "page_start": 141,
+          "text": "",
+          "figures": [
+            "SI_p141_raster0",
+            "SI_p141_raster1",
+            "SI_p141_raster2",
+            "SI_p141_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 34a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 142,
+          "text": "HPLC data of compound 34a using achiral ligand",
+          "figures": [
+            "SI_p142_fig0"
+          ]
+        },
+        {
+          "heading": "34aenantioenriched, 87% ee",
+          "page_start": 143,
+          "text": "",
+          "figures": [
+            "SI_p143_raster0",
+            "SI_p143_raster1",
+            "SI_p143_raster2",
+            "SI_p143_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 35a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 144,
+          "text": "",
+          "figures": [
+            "SI_p144_fig0",
+            "SI_p144_fig1"
+          ]
+        },
+        {
+          "heading": "Compound 36a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 145,
+          "text": "",
+          "figures": [
+            "SI_p145_fig0"
+          ]
+        },
+        {
+          "heading": "36aenantioenriched, 90% ee",
+          "page_start": 146,
+          "text": "HPLC data of compound 36a using achiral ligand",
+          "figures": [
+            "SI_p146_raster0",
+            "SI_p146_raster1",
+            "SI_p146_raster2",
+            "SI_p146_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 37a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 147,
+          "text": "",
+          "figures": [
+            "SI_p147_raster0",
+            "SI_p147_fig0",
+            "SI_p147_fig1",
+            "SI_p147_fig2"
+          ]
+        },
+        {
+          "heading": "37aenantioenriched, 91% ee",
+          "page_start": 148,
+          "text": "HPLC data of compound 37a using achiral ligand",
+          "figures": [
+            "SI_p148_raster0",
+            "SI_p148_raster1"
+          ]
+        },
+        {
+          "heading": "Compound 38a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 149,
+          "text": "",
+          "figures": [
+            "SI_p149_fig0",
+            "SI_p149_fig1"
+          ]
+        },
+        {
+          "heading": "38aenantioenriched, 91% ee",
+          "page_start": 150,
+          "text": "HPLC data of compound 38a using achiral ligand",
+          "figures": [
+            "SI_p150_raster0",
+            "SI_p150_raster1"
+          ]
+        },
+        {
+          "heading": "Compound 39a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 151,
+          "text": "HPLC data of compound 39a using achiral ligand",
+          "figures": [
+            "SI_p151_fig0"
+          ]
+        },
+        {
+          "heading": "39aenantioenriched, 94% ee",
+          "page_start": 152,
+          "text": "",
+          "figures": [
+            "SI_p152_raster0",
+            "SI_p152_raster1",
+            "SI_p152_raster2",
+            "SI_p152_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 40a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 153,
+          "text": "HPLC data of compound 40a using achiral ligand",
+          "figures": [
+            "SI_p153_fig0"
+          ]
+        },
+        {
+          "heading": "40aenantioenriched, 93% ee",
+          "page_start": 154,
+          "text": "",
+          "figures": [
+            "SI_p154_raster0",
+            "SI_p154_raster1",
+            "SI_p154_raster2",
+            "SI_p154_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 41a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 155,
+          "text": "",
+          "figures": [
+            "SI_p155_fig0"
+          ]
+        },
+        {
+          "heading": "41aenantioenriched, 92% ee",
+          "page_start": 156,
+          "text": "HPLC data of compound 41a using achiral ligand",
+          "figures": [
+            "SI_p156_raster0",
+            "SI_p156_raster1",
+            "SI_p156_raster2",
+            "SI_p156_raster3"
+          ]
+        },
+        {
+          "heading": "Compound 42a (H NMR and C NMR, CDCl, 600 MHz and 151 MHz respectively)",
+          "page_start": 157,
+          "text": "",
+          "figures": [
+            "SI_p157_fig0"
+          ]
+        },
+        {
+          "heading": "42aenantioenriched, 88% ee",
+          "page_start": 158,
+          "text": "HPLC data of compound 42a using achiral ligand",
+          "figures": [
+            "SI_p158_raster0",
+            "SI_p158_raster1"
+          ]
+        }
+      ],
+      "preamble": "HPLC data of compound 3a using achiral ligand",
+      "figures": [
+        "SI_p74_fig0"
+      ]
+    },
+    {
+      "heading": "X. References",
+      "page_start": 159,
+      "subsections": [],
+      "records": [],
+      "preamble": "1. (a) P.-B. Bai, A. Durie, G.-W. Wang and I. Larrosa, Nat. Commun., 2024, 15, 31; (b) D.\nK. Nielsen and A. G. Doyle, Angew. Chem. Int. Ed., 2011, 50, 6056\u20136059; (c) J. Qu, Z.\nYan, X. Wang, J. Deng, F. Liu and Z.-Q. Rong, Chem. Commun., 2022, 58, 9214\u20139217;\n(d) F. Teng, Z.-Q. Li, Z.-C. Mao, Z. Zhang, M. Jiang, W.-J. Xiao and J.-R. Chen, J. Am.\nChem. Soc., 2025, 147, 19400\u201319412; (e) A. Tyagi, J. Khan, N. Yadav, R. Mahato and C.\nK. Hazra, J. Org. Chem., 2022, 87, 10229\u201310240.\n2. (a) G. S. Kumar, C. Zhu, R. Kancherla, P. S. Shinde and M. Rueping, ACS Catal., 2023,\n13, 8813\u20138820; (b) B. P. Woods, M. Orlandi, C.-Y. Huang, M. S. Sigman and A. G.\nDoyle, J. Am. Chem. Soc., 2017, 139, 5688\u20135691.\n3. (a) P. Cao, W. Xiong and T. Yang, Org. Lett., 2025, 27, 1475\u20131480; (b) X. Cheng, T. Li,\nY. Liu and Z. Lu, ACS Catal., 2021, 11, 11059\u201311065.\n4. X.-Y. Lu, L.-Y. Yan, J.-S. Li, J.-M. Li, H.-p. Zhou, R.-C. Jiang, C.-C. Liu, R. Lu and R.\nHu, Chem. Commun., 2020, 56, 109\u2013112.\n5. (a) Z. Han, L. Wei, C. Nian, X. Hu, S. Liu, H. Huang and J. Sun, Sci. China Chem., 2025,\nDOI: 10.1007/s11426-025-2834-6; (b) Y. Lan, Q. Han, P. Liao, R. Chen, F. Fan, X. Zhao\nand W. Liu, J. Am. Chem. Soc., 2024, 146, 25426\u201325432; (c) L. Li, Z. Hu, S. Ren, B. A.\nArndtsen and L. Chu, J. Am. Chem. Soc., 2025, 147, 28206\u201328214.\n6. Van Dyke, A. R.; Jamison, T. F. Functionalized Templates for the Convergent Assembly\nof Polyethers: Synthesis of the HIJK Rings of Gymnocin A. Angew. Chem. Int. Ed. 2009,\n48, 4430\u20134432.",
+      "figures": []
+    }
+  ]
+}

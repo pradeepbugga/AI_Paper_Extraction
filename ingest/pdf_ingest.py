@@ -43,13 +43,24 @@ def extract_raster_images(doc, page, page_number, images_dir, doc_source):
     return images
 
 
-def cluster_drawing_rects(rects, pad=8.0, min_area=2000.0):
+def cluster_drawing_rects(rects, pad_x=8.0, pad_y=25.0, min_area=2000.0):
     """Merge nearby/overlapping vector-drawing bboxes into figure-sized regions.
 
     Journal figures (chemical structures, plots) are almost always built from
     hundreds of individual vector path ops, not one embedded image. Padding
     each rect before checking overlap lets disjoint strokes that belong to
     the same drawing (e.g. a bond line and an atom label gap) merge together.
+
+    Padding is asymmetric on purpose. A multi-panel scheme (e.g. panels a-e
+    stacked down a page, each with its own caption and generous whitespace
+    before the next) needs a generous *vertical* gap tolerance -- observed
+    gaps up to ~23pt between panels that visually belong to one figure.
+    Horizontally, that same generosity is actively harmful: on a two-column
+    page, the gap between columns is often close to that same distance, so a
+    wide pad_x can bridge across it and merge a left-column figure with
+    unrelated right-column body text. Real within-figure horizontal gaps
+    (e.g. a bond and an atom label) are much smaller than a column gutter,
+    so a tight pad_x doesn't cost us anything there.
     """
     clusters = [fitz.Rect(r) for r in rects]
     changed = True
@@ -64,7 +75,7 @@ def cluster_drawing_rects(rects, pad=8.0, min_area=2000.0):
             for j in range(i + 1, len(clusters)):
                 if used[j]:
                     continue
-                padded = fitz.Rect(base.x0 - pad, base.y0 - pad, base.x1 + pad, base.y1 + pad)
+                padded = fitz.Rect(base.x0 - pad_x, base.y0 - pad_y, base.x1 + pad_x, base.y1 + pad_y)
                 if padded.intersects(clusters[j]):
                     base |= clusters[j]
                     used[j] = True
@@ -98,6 +109,12 @@ def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0):
     rects = [d["rect"] for d in drawings
              if d["rect"].width > 0 and d["rect"].height > 0 and not is_invisible_drawing(d)]
     clusters = cluster_drawing_rects(rects)
+    # A drawing can sit partly or entirely in the page's margin/bleed area
+    # (off the visible canvas) -- rare on its own, but merging can absorb
+    # one into an otherwise-valid cluster. Clip to the page's actual bounds
+    # before rendering; drop anything that becomes degenerate as a result.
+    clusters = [bbox & page.rect for bbox in clusters]
+    clusters = [bbox for bbox in clusters if bbox.width > 0 and bbox.height > 0]
     clusters.sort(key=lambda r: (round(r.y0), r.x0))
 
     figures = []

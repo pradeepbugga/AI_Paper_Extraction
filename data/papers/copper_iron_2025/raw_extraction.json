@@ -335,56 +335,30 @@
           "image_id": "main_p1_fig0",
           "source": "vector_region",
           "bbox": [
-            53.7,
+            51.5,
             21.5,
-            211.6,
-            71.1
+            555.5,
+            93.9
           ],
           "path": "images/page1_fig0.png",
-          "width": 474,
-          "height": 150
+          "width": 1513,
+          "height": 218
         },
         {
           "image_id": "main_p1_fig1",
           "source": "vector_region",
           "bbox": [
-            51.5,
-            82.5,
-            555.5,
-            93.9
-          ],
-          "path": "images/page1_fig1.png",
-          "width": 1513,
-          "height": 35
-        },
-        {
-          "image_id": "main_p1_fig2",
-          "source": "vector_region",
-          "bbox": [
-            51.5,
-            190.0,
-            392.5,
-            212.9
-          ],
-          "path": "images/page1_fig2.png",
-          "width": 1024,
-          "height": 70
-        },
-        {
-          "image_id": "main_p1_fig3",
-          "source": "vector_region",
-          "bbox": [
             1.5,
-            222.9,
+            190.0,
             605.5,
             535.8
           ],
-          "path": "images/page1_fig3.png",
+          "path": "images/page1_fig1.png",
           "width": 1813,
-          "height": 940
+          "height": 1039
         },
         {
-          "image_id": "main_p1_fig4",
+          "image_id": "main_p1_fig2",
           "source": "vector_region",
           "bbox": [
             315.5,
@@ -392,12 +366,12 @@
             555.5,
             735.7
           ],
-          "path": "images/page1_fig4.png",
+          "path": "images/page1_fig2.png",
           "width": 721,
           "height": 186
         },
         {
-          "image_id": "main_p1_fig5",
+          "image_id": "main_p1_fig3",
           "source": "vector_region",
           "bbox": [
             51.5,
@@ -405,7 +379,7 @@
             166.2,
             781.4
           ],
-          "path": "images/page1_fig5.png",
+          "path": "images/page1_fig3.png",
           "width": 345,
           "height": 66
         }
@@ -928,24 +902,11 @@
             51.5,
             38.4,
             555.5,
-            50.5
+            272.8
           ],
           "path": "images/page4_fig0.png",
           "width": 1513,
-          "height": 37
-        },
-        {
-          "image_id": "main_p4_fig1",
-          "source": "vector_region",
-          "bbox": [
-            316.8,
-            63.7,
-            554.0,
-            272.8
-          ],
-          "path": "images/page4_fig1.png",
-          "width": 713,
-          "height": 629
+          "height": 704
         }
       ]
     },

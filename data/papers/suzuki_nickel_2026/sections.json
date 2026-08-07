@@ -1,0 +1,1227 @@
+{
+  "source_pdf": "paper.pdf",
+  "front_matter": [
+    "Ni-Catalyzed Enantioselective Suzuki\u2212Miyaura-Type Coupling of Styrene Oxides with Arylboronic Acids",
+    "Xiao-Yu Lu,* Hao-Yu Dong, Jun-Long Zhang, Jin-Tao Tao, Si-Nan Liu, and Yi-Mei Wu",
+    "as highly valuable synthetic building blocks, while the Suzuki\u2212 Miyaura cross-coupling has firmly established itself as a reliable platform for C\u2212C bond formation. These salient features have with arylboronic acids is reported. This reaction demonstrates high versatility for the late-stage modifications of bioactive molecules, and capability for synthesizing chiral drug precursors. Additionally, aryl aziridines can be employed as alternative coupling partners. Mechanistic studies confirm a stereoconvergent pathway involving radical intermediates, with in situ-generated alkoxide anions acting as the essential base. This methodology provides a practical approach for synthesizing enantioenriched diaryl alcohols and amines, which are valuable structural skeletons in pharmaceuticals and KEYWORDS: nickel catalysis, arylboronic acids, enantioselective coupling, styrene oxides, Suzuki\u2212Miyaura"
+  ],
+  "sections": [
+    {
+      "heading": "INTRODUCTION",
+      "page_start": 1,
+      "paragraphs": [
+        "Organoboron compounds stand as highly important synthetic building blocks, and the Suzuki\u2212Miyaura cross-coupling has firmly established itself as a robust methodology for C\u2212C bond formation between halides/pseudohalides and boronic acid-containing substrates.1 Compared to other transitionmetal-catalyzed cross-coupling systems, it offers distinct advantages, including the broad availability of boronic acids, straightforward reagent handling, and mild reaction conditions. These merits have driven its widespread application in the pharmaceutical industry, underpinning C\u2212C bond construction in numerous medicinal agents.2 Separately, epoxides are recognized as privileged building blocks in organic synthesis owing to their ready accessibility from olefins or ketones, as well as their unique intrinsic ring strain and versatile reactivity.3",
+        "These properties facilitate diverse transformations into highvalue alcohols and complex molecular architectures (Scheme 1a). Among the various reactions involving epoxides, asymmetric ring-opening with diverse nucleophiles emerges as a practical and attractive strategy for constructing chiral alcohols\u0001key intermediates in the synthesis of pharmaceuticals, natural products, and agrochemicals.4 Despite the maturity of this field, asymmetric ring-opening strategies often rely on stereospecific ring scission, either through kinetic resolution of racemic epoxides or desymmetrization of mesoepoxides, typically employing heteroatom-centered or soft nucleophiles.4,5 While asymmetric catalytic C\u2212C bond formation with epoxides can also be achieved using organolithium or organomagnesium reagents,6 these methodologies suffer from harsh reaction conditions and limited functional group tolerance. Thus, the development of chiral catalystcontrolled, stereoconvergent C\u2212C bond-forming reactions for racemic epoxides remains highly valuable for both synthetic utility and fundamental research.7 In recent years, transitionmetal-catalyzed asymmetric cross-electrophile ring-opening reactions involving aryl electrophiles have emerged as a powerful platform for accessing chiral diaryl or aryl-substituted alcohols. Notably, in 2015, Zhao and Weix reported the first nickel/titanocene cocatalytic system for the enantioselective reductive cross-coupling of meso-epoxides with aryl halides,8 where chiral titanocene dictated stereoselectivity through epoxides activation. Meanwhile, the Yamamoto group described a nickel-catalyzed arylation of 3,4-epoxyalcohols enabled by chiral ligands,9 delivering cross-coupled products with excellent enantio- and diastereoselectivity. In 2021, Doyle and co-workers further advanced this field with a photoinduced nickel-catalyzed reductive coupling of epoxides and (hetero)- aryl iodides,10 which afforded enantioenriched 2,2-diaryl alcohols via radical intermediates (Scheme 1b).",
+        "Additionally, in 2019, the Zhang group developed a nickelcatalyzed stereoconvergent cross-coupling reaction between specific spiroepoxyoxindoles and alkenylboronic acids (Scheme 1c).11 Despite advancements in the asymmetric ring-opening of epoxides, general protocols for the enantioselective coupling of racemic epoxides with arylboronic acids remain scarce. Therefore, the development of new transition-metal\u2212catalyzed asymmetric Suzuki\u2212Miyaura cross-coupling that addresses the unmet need for versatile methodologies targeting epoxides to access chiral scaffolds is highly desirable and scientifically significant. Building on our previous work on nickel-catalyzed Suzuki-type cross-coupling of epoxides,12 we hypothesized that incorporating a chiral nickel catalyst could establish a new paradigm for the enantioselective ring-opening of epoxides with arylboronic acids.",
+        "1 NiBr2(diglyme) L1 70 trace 2 NiBr2(diglyme) L2 70 trace 3 NiBr2(diglyme) L3 70 trace 4 NiBr2(diglyme) L4 70 <3 5 NiBr2(diglyme) L5 70 55 81 6 NiBr2(diglyme) L6 70 54 82 7 NiBr2(diglyme) L7 70 42 69 8 NiBr2(diglyme) L8 70 32 68 9 NiBr2(diglyme) L9 70 56 59 10 NiBr2(diglyme) L10 70 68 83 11 NiBr2(diglyme) L10 60 67 83 12 NiBr2(diglyme) L10 50 65 86 13 NiBr2(diglyme) L10 40 38 85 14 NiBr2(diglyme) L11 50 66 88 15 NiBr2(diglyme) L12 50 78 93 16b [Ni] L12 50 76 93 17 NiCl2 L12 50 63 92 18 NiCl2(DME) L12 50 72 93 19 w/o L12 50 0 20 NiBr2(diglyme) w/o 50 0 aReaction conditions: 1a (0.3 mmol, 1.5 equiv), 2a (0.2 mmol, 1.0 equiv), catalyst (8 mol %), ligand (10 mol %), solvent (0.8 mL, 0.4 M). Isolated yield. ee value was determined by chiral HPLC. Reactions were carried out under an argon atmosphere. b[Ni] = Ni(ClO4)2\u00b76H2O.",
+        "Herein, we report a unique combination of an epoxide electrophile, an arylboronic acid nucleophile, and an exogenous base-free, enantioselective Ni-catalyzed Suzuki-type coupling reaction (Scheme 1d). This protocol enables the efficient construction of important chiral 1,1-diarylalkane scaffolds13",
+        "with high regioselectivity and excellent enantioselectivity (Scheme 1e). Mechanistic studies reveal that the reaction proceeds via iodide-mediated nucleophilic ring-opening of epoxides, followed by stereoconvergent radical cross-coupling with arylboronic acids.10,14 Notably, this protocol operates under mild conditions and demonstrates broad functional group tolerance, making it applicable in the synthesis of pharmaceutical intermediates."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "RESULTS AND DISCUSSION",
+      "page_start": 3,
+      "paragraphs": [
+        "To develop an efficient nickel-catalyzed enantioselective ringopening of styrene oxides with arylboronic acids, we began our study by evaluating a range of chiral ligands using 4- biphenylboronic acid (1a) and styrene oxide (2a) as model coupling partners, employing conditions derived from our work (Table 1). Initial screening experiments were conducted at 70 \u00b0C using NiBr2(diglyme) as the catalyst, alongside a series of common chiral amine-derived bidentate and tridentate ligands. These studies revealed that both yield and enantioselectivity were significantly dependent on the choice of ligand. Evaluation of various ligand scaffolds demonstrated that conventional bis(oxazoline) ligands (BiOx and BOX, L1 and L2), bis(oxazolinyl)pyridyl ligand (PyBOX, L3), and pyridineoxazoline-type ligand (PyrOx, L4) were ineffective for this enantioselective ring-opening reaction (entries 1\u22124). In contrast, the chiral biimidazoline (BiIm) ligand15 (entry 5) provided a moderate yield (3a, 55%) with favorable enantioselectivity (81% ee). Encouraged by these results, we screened additional chiral BiIm ligands (entries 6\u221210, L6\u2212 L10). Notably, L10 delivered the highest yield (68%) with 83% ee, whereas ligands L6\u2212L9 yielded moderate results (32\u2212 56%) with suboptimal enantiomeric excesses (59\u221282% ee), indicating that the steric and electronic properties of the ligand significantly influence both activity and stereocontrol. We then explored the effect of temperature using L10, discovering that lowering the temperature to 50 \u00b0C further improved enantioselectivity to 86% ee (entry 12). However, reducing the temperature to 40 \u00b0C markedly decreased reactivity (entry 13, with a 38% yield). Subsequently, we tested additional BiIm ligands (L11\u2212L12) at 50 \u00b0C (entries 14\u221215). Ligand L11 provided a yield of 66% with 88% ee, while L12 enhanced both metrics to 78% yield and 93% ee. To assess the influence of the nickel source, we screened various nickel precatalysts with L12 at 50 \u00b0C (entries 16\u221218). Ni(ClO4)2\u00b76H2O and NiCl2(dimethoxyethane) afforded high yields (76 and 72%, respectively) and excellent enantioselectivities (92\u221293% ee), whereas NiCl2 alone yielded 63% with 92% ee. Control experiments confirmed the necessity of both the nickel catalyst and the chiral ligand, as no product was detected in their absence (entries 19\u221220). Through systematic optimization, the optimal conditions were identified as NiBr2(diglyme) combined with ligand L12 at 50 \u00b0C, delivering the target product in 78% yield and 93% ee.",
+        "After establishing the optimal reaction conditions, we systematically investigated the substrate scope of this asymmetric ring-opening reaction, focusing on the coupling of styrene oxides with various arylboronic acids (Table 2). A wide array of arylboronic acids containing distinct functional groups demonstrated compatibility: both electron-donating groups, such as phenyl (3a, 4a, and 5a), ether (8a), and silicon-containing group (9a), as well as electron-withdrawing groups like fluoro (5a) and trifluoromethyl (7a), reacted smoothly with styrene oxide to yield the corresponding chiral products in good yields and satisfactory enantioselectivities. Importantly, arylboronic acids featuring synthetically valuable functional groups, including thioether (10a), aldehyde (11a), ketone (12a and 13a), ester (14a), amide (17a and 18a), and amino groups (\u2212NH2, 19a), were well-tolerated under the standard conditions, producing chiral 2,2-diaryl alcohols with yields ranging from 54 to 82% and enantiomeric excesses (ee) of 89\u221294%. Additionally, arylboronic acids with halogen substituents\u0001including aryl chloride (6a), aryl bromide (15a), and aryl iodide (16a)\u0001also participated efficiently in the reaction, yielding the corresponding \u03b2,\u03b2-diaryl alcohols in moderate to good yields and high enantioselectivity. The retention of halogen groups in the products provides",
+        "aAll the reactions were carried out with arylboronic acids (0.3 mmol), epoxides (0.20 mmol), NiBr2(diglyme) (0.016 mmol), L12 (0.02 mmol), and NaI (0.03 mmol) in CH3CH2OH (0.8 mL) at 50 \u00b0C for 10 h. b4 mmol scale with 1 mol % catalyst loading.",
+        "opportunities for further late-stage derivatization via crosscoupling or other halogen-specific transformations. Heterocyclic arylboronic acids containing nitrogen, oxygen, or sulfur\u0001such as benzofuran (20a), benzothiophene (21a), dibenzothiophene (22a), indole (23a), pyridine (24a), indazole (25a), and benzothiazole (26a)\u0001also demonstrated compatibility, highlighting the protocol\u2019s potential for synthesizing bioactive molecules. Structural confirmation of the products revealed that the absolute configuration of compound 13a was unambiguously determined by X-ray single-crystal diffraction, and the configurations of all other products were assigned by analogy to that of 13a. However, vinylboronic acid substrates yielded products with only moderate enantioselectivity.10 Additionally, ortho-substituted arylboronic acids yielded only trace amounts of the target product, presumably due to steric hindrance between the ortho substituent and the catalyst or epoxide substrate.",
+        "Next, we evaluated the substrate scope of styrene oxides, with results summarized in Table 3. A diverse set of styrene",
+        "aAll the reactions were carried out with arylboronic acids (0.3 mmol), epoxides (0.20 mmol), NiBr2(diglyme) (0.016 mmol), L12 (0.02 mmol), and NaI (0.03 mmol) in CH3CH2OH (0.8 mL) at 50 \u00b0C for 10 h.",
+        "oxides bearing substituents such as fluoro (27a and 28a), chloro (29a), bromo (33a), trifluoromethoxy (30a), methoxy (31a), tert-butyl (32a), and ester (34a) groups proved compatible with the optimized protocol. These substrates underwent smooth reactions, yielding the corresponding chiral products in moderate to good yields with satisfactory enantioselectivities. However, styrene oxides bearing orthosubstituents showed limited reactivity.",
+        "To further validate the synthetic utility of this asymmetric ring-opening cross-coupling, we extended the study to structurally complex substrates derived from natural products and pharmaceuticals (Scheme 2a). For example, an estronederived styrene oxide reacted efficiently with arylboronic acid under standard conditions, affording the target product (35a) in 56% isolated yield and excellent diastereoselectivity. Similarly, an indometacin-derived arylboronic acid was successfully incorporated into the reaction (36a), maintaining high stereocontrol. Furthermore, to demonstrate the efficiency and applicability of the present methodology, we conducted a scale-up synthesis of 37a, affording the product in good synthetically useful yield alongside excellent enantiomeric excess. The product 37a was successfully converted into 38a, which could then be readily transformed into (+)-indatraline (a nonselective monoamine transporter inhibitor) and (+)-sertraline (a clinically important commercial drug for the treatment of depression, and substance dependency) following reported procedures (Scheme 2b).16",
+        "Beyond styrene oxides, styrenyl aziridines were also validated as viable coupling partners in this transformation. Specifically, several arylboronic acids reacted smoothly with styrenyl aziridines, affording the corresponding chiral products in moderate yields and satisfactory enantioselectivities (Table 4). These results underscore the broader applicability of the developed catalytic system, enabling efficient construction of diverse chemical scaffolds bearing enantioenriched 1,1-diaryl motifs. Such versatility significantly enhances the synthetic utility of this protocol for accessing chiral building blocks with varied heteroatom-containing backbones.17 To elucidate the mechanism of the ring-opening reaction, a series of control experiments were conducted. First, enantiopure (R)-2a and (S)-2a were separately subjected to the optimized asymmetric reaction conditions.10 Notably, both enantiomeric substrates afforded the target product with comparable yield and enantioselectivity (Scheme 3a). Critically, the absolute configuration of the major product enantiomer was solely dictated by the chiral ligand, rather than the stereochemistry of the starting epoxides (2a). This observation confirms that the transformation proceeds via a stereoconvergent pathway, in which the chiral catalyst overrides the intrinsic stereochemistry of the racemic starting material to generate a single enantioenriched product.",
+        "Additional control experiments were performed to probe alternative activation pathways for styrene oxides. When the reaction was conducted in the absence of NaI, no detectable product was formed, indicating that NaI plays an essential role in epoxide activation.12,18 Similarly, replacing the epoxide with presynthesized bromohydrin or iodohydrin intermediates as coupling partners failed to yield the target product; this outcome is tentatively attributed to the lack of a base required to drive the reaction forward. To validate this hypothesis, exogenous bases (e.g., K2CO3, sodium ethoxide) were introduced. Among these additives, only sodium ethoxide enabled trace formation of the target product, affording it in 9% yield. We screened a series of bases, but the reactions only afforded very low yields (see SI). It is plausible that the reaction necessitates the in situ generation of a lowconcentration iodohydrin intermediate. In addition, we detected the iodohydrin intermediate by high-resolution mass spectrometry (HRMS) (Scheme 3b).",
+        "To verify the involvement of radical intermediates, radical quenching experiments were conducted using 2,2,6,6-tetramethylpiperidinooxy (TEMPO), a well-characterized radical scavenger. Addition of TEMPO effectively inhibited the reaction, and a TEMPO-trapped adduct (38a) was further detected by HRMS, as shown in Scheme 3c. Furthermore, upon adding 5,5-dimethyl-1-pyrroline N-oxide (DMPO) to the model reaction, electron paramagnetic resonance (EPR) analysis of the mixture revealed a distinct radical signal. Based on the simulated spectrum, this signal was assigned to the trapped radical-DMPO adduct (Scheme 3d, see SI for details).19 Collectively, these results support two key mechanistic conclusions: (1) the reaction proceeds through a halohydrin intermediate, and (2) the base required for the transformation is derived from in situ-generated alkoxide anions formed during epoxide activation and ring-opening.",
+        "Nonlinear effect analysis was conducted to probe the nature of the catalytically active species, revealing a linear correlation between the enantiopurity of product 3a and that of the chiral ligand.17,20 Additionally, the reaction\u2019s enantioselectivity remained unchanged even when ligand loading was varied, including at stoichiometric excess of the ligand (Scheme 3e). Collectively, these observations indicate that the nickel center coordinates with a single chiral ligand in the active catalytic species. To further validate the reaction pathway, the",
+        "enantiomeric excess (ee) of product 3a was monitored at various conversion stages. Throughout the reaction, the ee of 3a remained consistent. This observation confirms that the transformation proceeds via an enantioconvergent pathway, with detailed data provided in the Supporting Information.",
+        "Based on the aforementioned experimental results and relevant literature reports,21 a plausible mechanism for this reaction is proposed in Scheme 4. The arylboronic acid undergoes transmetalation with an alkoxynickel(I) species (A) to generate an arylnickel(I) intermediate (B). Concurrently, the styrene oxide undergoes ring opening promoted by sodium iodide and ethanol to form an iodohydrin intermediate (C) and sodium alkoxide. This iodohydrin then undergoes oxidative addition with the arylnickel(I) catalyst, producing an alkyl radical and a nickel(II) species (D). The alkyl radical subsequently oxidizes the nickel(II) species to yield an organonickel(III) intermediate (E); reductive elimination from this organonickel(III) intermediate affords the target",
+        "oxidative addition to a nickel(0) catalyst cannot be excluded."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "CONCLUSIONS",
+      "page_start": 7,
+      "paragraphs": [
+        "alcohols and amines, which are key intermediates in the in situ-generated alkoxide anions as the essential base for"
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "MATERIALS AND METHODS",
+      "page_start": 7,
+      "paragraphs": [
+        "See the Supporting Information for complete details, including all compound characterization and analytical data.",
+        "Preparation of Epoxides",
+        "Method A. A solution of NaH (11 mmol, 2.2 equiv, 60% dispersion in mineral oil) and Me3SI (11 mmol, 2.2 equiv) in DMSO (7 mL) and THF (6 mL) was stirred for 30 min at room temperature in a 50 mL flask under an Ar atmosphere. Then a solution of aldehyde (5 mmol, 1.0 equiv) in THF was added dropwise at 0 \u00b0C. After complete addition, the mixture was warmed to room temperature and allowed to stir for 12 h. The mixture was quenched with sat. NH4Cl and diluted with ethyl acetate. Then the mixture was separated and the aqueous layer was back-extracted with ethyl acetate. The organic layer was washed with brine and dried over Na2SO4. The solvent was removed under reduced pressure and the residue was purified by column chromatography to give the desired epoxides 1a\u22121h.10",
+        "Method B. A 100 mL round-bottom flask, flame-dried and equipped with a stir bar, was charged with styrene (5 mmol, 1 equiv) dissolved in dichloromethane (30 mL). m-chloroperbenzoic acid (10 mmol, 2.0 equiv) was added, and the mixture was stirred at room temperature overnight. The reaction was quenched with saturated aqueous NaHCO3 and extracted three times with dichloromethane. The combined organic layers were washed successively with water, saturated aqueous NaHCO3, and brine, then dried over Na2SO4, filtered, and concentrated under reduced pressure. The residue was purified by column chromatography to afford the desired epoxides 1l.10",
+        "Preparation of Tosylaziridine A round-bottom flask was flame-dried, and the alkene (1.0 equiv), chloramine-T trihydrate (1.1 equiv), and acetonitrile (5 mL per mmol of alkene) were added. Trimethylphenylammonium tribromide (0.1 equiv) was then introduced, and the mixture was stirred at room temperature under argon overnight. The resulting mixture was filtered through a pad of Celite, and the filtrate was concentrated. The crude product was purified by column chromatography.17",
+        "Preparation of Chiral Ligand L-(+)-Isoleucinol S1 (20 mmol, 2.34 g, 2.0 equiv) and dimethyloxalate (10 mmol, 1.18 g, 1.0 equiv) were dissolved in toluene (70 mL) and heated to 85 \u00b0C. The reaction was allowed to stir overnight and then cooled to room temperature with the diamide precipitating out of solution as a white solid, then filtered and washed with petroleum ether to get the diol S2 (2.73 g, 95% yield, white solid).",
+        "The diol S2 (10 mmol, 1.0 equiv) was dissolved in toluene (50 mL) and heated to 90 \u00b0C where upon thionyl chloride (1.72 mL, 2.4 equiv) was added. The reaction was stirred for 8 h. After the reaction is completed, it is cooled to room temperature, a large amount of petroleum ether is added, and then the dichloro intermediate S3 is precipitated and filtered to afford (2.91 g. 90% yield, white solid).",
+        "To an oven-dried flask was added S3 (6.0 mmol, 1.94 g, 1.0 equiv) and phosphorus pentachloride (14.4 mmol, 2.99 g, 2.4 equiv) in 30 mL of toluene under Ar atmosphere. The reaction was allowed to stir at 85 \u00b0C for 8 h before it was cooled to room temperature. Toluene was evaporated under reduced pressure (80% yield, yellow liquid).",
+        "To an oven-dried flask was added S4 (5 mmol), Et3N (50 mmol, 10.0 equiv) and 3,5-ditert-butylaniline (20 mmol, 4.1 g, 4.0 equiv) in 25 mL of MeCN under Ar atmosphere. Next, the reaction mixture was heated to reflux under Ar for 24 h. After been cooled to ambient temperature, the volatiles were removed by rotary evaporation. the residue was diluted with CH2Cl2 washed with saturated NH4Cl solution (100 mL \u00d7 3) and water. The organic layer was dried with Na2SO4, filtered and concentrated under reduced pressure. The residue was purified by flash column chromatography (petroleum ether: EtOAc = 3:1) and then recrystallized from hexane and EtOAc to give ligand L12.15",
+        "General Procedure for Enantioselective Coupling In the air, a 10 mL Schlenk tube equipped with a magnetic stirrer was charged with NiBr2(diglyme) (5.6 mg, 0.016 mmol, 8 mol %), L12 (12.5 mg, 0.02 mmol, 10 mol %), arylboronic acid (0.30 mmol, 1.50 equiv) and sodium iodide (4.5 mg, 0.03 mmol, 15 mol %) (Note a: If the epoxide was solid, it was also added at this step). The Schlenk tube was evacuated and backfilled with argon three times, then ethanol (0.8 mL, 0.4 M) was added, followed by the epoxide (0.2 mmol, 1.0 equiv). Then the solution was stirred at 50 \u00b0C for 10 h. The resulting crude reaction was purified by column chromatography using ethyl acetate and petroleum ether as eluent, and analyzed by HPLC using a chiral stationary phase."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "ASSOCIATED CONTENT",
+      "page_start": 8,
+      "paragraphs": [
+        "Data Availability Statement The data underlying this study are available in the published article and its online Supporting Information. * s\u0131 Supporting Information The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acscatal.5c07500.",
+        "Details of experimental procedures and full characterization data and copies of NMR spectra; general information; reaction optimization; mechanistic studies; NMR and HPLC spectra; and crystallographic information file for 13a (PDF)",
+        "Accession Codes CCDC 2486619 contains the crystallographic data for this"
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "AUTHOR INFORMATION",
+      "page_start": 8,
+      "paragraphs": [
+        "Corresponding Author",
+        "Xiao-Yu Lu \u2212School of Materials and Chemical Engineering,",
+        "ChuZhou University, Chu Zhou 239000, China;",
+        "orcid.org/0000-0001-6069-9739; Email: xiaoyulu@ mail.ustc.edu.cn",
+        "Authors",
+        "Hao-Yu Dong \u2212School of Materials and Chemical",
+        "Engineering, ChuZhou University, Chu Zhou 239000, China Jun-Long Zhang \u2212School of Materials and Chemical",
+        "Engineering, ChuZhou University, Chu Zhou 239000, China Jin-Tao Tao \u2212Institutes of Physical Science and Information",
+        "Technology, Anhui University, Hefei, Anhui 230601, China Si-Nan Liu \u2212School of Materials and Chemical Engineering,",
+        "ChuZhou University, Chu Zhou 239000, China Yi-Mei Wu \u2212Institutes of Physical Science and Information",
+        "Technology, Anhui University, Hefei, Anhui 230601, China",
+        "Complete contact information is available at: https://pubs.acs.org/10.1021/acscatal.5c07500",
+        "Notes The authors declare no competing financial interest."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "ACKNOWLEDGMENTS",
+      "page_start": 8,
+      "paragraphs": [
+        "We gratefully acknowledge financial support from the Excellent Youth Project of University Natural Science Research of Anhui Province (2023AH030095) and the National Natural Science Foundation of China (22001029)."
+      ],
+      "subsections": []
+    }
+  ],
+  "figures": [
+    {
+      "label": "Scheme 1",
+      "caption": "Scheme 1. Enantioselective Ring-Opening Cross-Couplings of Epoxides: (a) Transition-Metal Catalyzed Coupling of Epoxides; (b) Asymmetric Reductive-Coupling of Epoxides; (c) Enantioconvergent Coupling of Spiroepoxyoxindoles with Alkenylboronic Acids; (d) This Work: Asymmetric Suzuki-Type-Coupling of Epoxides with Arylboronic Acids; (e) Representative Bioactive Compounds Containing Chiral 1,1-Diaryl Alkane",
+      "page": 2,
+      "image_id": "main_p2_fig1",
+      "image_path": "images/page2_fig1.png"
+    },
+    {
+      "label": "Table 1",
+      "caption": "Table 1. Optimization of the Reaction Conditionsa",
+      "page": 3,
+      "image_id": "main_p3_fig1",
+      "image_path": "images/page3_fig1.png"
+    },
+    {
+      "label": "Table 2",
+      "caption": "Table 2. Scope of the Enantioselective Suzuki\u2212Miyaura Coupling of Arylboronic Acidsa",
+      "page": 4,
+      "image_id": "main_p4_fig1",
+      "image_path": "images/page4_fig1.png"
+    },
+    {
+      "label": "Table 3",
+      "caption": "Table 3. Scope of the Enantioselective Coupling of Epoxidesa",
+      "page": 5,
+      "image_id": "main_p5_fig1",
+      "image_path": "images/page5_fig1.png"
+    },
+    {
+      "label": "Scheme 2",
+      "caption": "Scheme 2. Synthetic Applications: (a) Late-Stage Functionalization; (b) Derivation of Products to the Pharmaceutical Intermediates",
+      "page": 6,
+      "image_id": "main_p6_fig1",
+      "image_path": "images/page6_fig1.png"
+    },
+    {
+      "label": "Table 4",
+      "caption": "Table 4. Scope of the Enantioselective Coupling of Arylaziridines",
+      "page": 6,
+      "image_id": "main_p6_fig1",
+      "image_path": "images/page6_fig1.png"
+    },
+    {
+      "label": "Scheme 3",
+      "caption": "Scheme 3. Mechanistic Studies: (a) Stereoconvergent Mechanism; (b) Study of Activation Pathways for Styrene Oxides; (c) Radical Trapping Experiment; (d) EPR Experiment; (e) Nonlinear Effect Analysis",
+      "page": 7,
+      "image_id": "main_p7_fig1",
+      "image_path": "images/page7_fig1.png"
+    }
+  ],
+  "references": [
+    {
+      "id": "b0",
+      "title": "Advances in Transition Metal (Pd,Ni,Fe)-Catalyzed Cross-Coupling Reactions Using Alkyl-organometallics as Reaction Partners",
+      "authors": [
+        "R Jana",
+        "T P Pathak",
+        "M S Sigman"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "111",
+      "issue": null,
+      "pages": "1417-1492",
+      "year": "2011",
+      "doi": "10.1021/cr100327p?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b1",
+      "title": "Cross-Coupling Reactions of Organoboranes: An Easy Way To Construct C-C Bonds (Nobel Lecture)",
+      "authors": [
+        "A"
+      ],
+      "journal": "Angew. Chem., Int. Ed",
+      "volume": "50",
+      "issue": null,
+      "pages": "6722-6737",
+      "year": "2011",
+      "doi": "10.1002/anie.201101379",
+      "publisher": null
+    },
+    {
+      "id": "b2",
+      "title": "Transmetalation in the Suzuki\u2013Miyaura Coupling: The Fork in the Trail",
+      "authors": [
+        "Alastair J J Lennox",
+        "Guy C Lloyd\u2010jones"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "52",
+      "issue": "29",
+      "pages": "7362-7370",
+      "year": "2013-06-18",
+      "doi": "10.1002/anie.201301737",
+      "publisher": "Wiley"
+    },
+    {
+      "id": "b3",
+      "title": "Transition-metal-catalyzed Suzuki\u2013Miyaura cross-coupling reactions: a remarkable advance from palladium to nickel catalysts",
+      "authors": [
+        "F.-S Han"
+      ],
+      "journal": "Chemical Society Reviews",
+      "volume": "42",
+      "issue": "12",
+      "pages": null,
+      "year": "2013",
+      "doi": "10.1039/c3cs35521g",
+      "publisher": "Royal Society of Chemistry (RSC)"
+    },
+    {
+      "id": "b4",
+      "title": "Suzuki-Miyaura (hetero-)aryl cross-coupling: recent findings and recommendations",
+      "authors": [
+        "J W Meringdal",
+        "D Menche"
+      ],
+      "journal": "Chem. Soc. Rev",
+      "volume": "54",
+      "issue": null,
+      "pages": "5746-5765",
+      "year": "2025",
+      "doi": "10.1039/D4CS01108B",
+      "publisher": null
+    },
+    {
+      "id": "b5",
+      "title": "What is in Our Kit? An Analysis of Building Blocks Used in Medicinal Chemistry Parallel Libraries",
+      "authors": [
+        "Y Wang",
+        "I Haight",
+        "R Gupta",
+        "A Vasudevan"
+      ],
+      "journal": "J. Med. Chem",
+      "volume": "64",
+      "issue": null,
+      "pages": "17115-17122",
+      "year": "2021",
+      "doi": "10.1021/acs.jmedchem.1c01139?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b6",
+      "title": "Analysis of Past and Present Synthetic Methodologies on Medicinal Chemistry: Where Have All the New Reactions Gone?",
+      "authors": [
+        "D G Brown",
+        "J Bostr\u00f6m"
+      ],
+      "journal": "J. Med. Chem",
+      "volume": "59",
+      "issue": null,
+      "pages": "4443-4458",
+      "year": "2016",
+      "doi": "10.1021/acs.jmedchem.5b01409?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b7",
+      "title": "The Medicinal Chemist's Toolbox: An Analysis of Reactions Used in the Pursuit of Drug Candidates",
+      "authors": [
+        "S D Roughley",
+        "A M Jordan"
+      ],
+      "journal": "J. Med. Chem",
+      "volume": "54",
+      "issue": null,
+      "pages": "3451-3479",
+      "year": "2011",
+      "doi": "10.1021/jm200187y?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b8",
+      "title": "Factors Determining the Selection of Organic Reactions by Medicinal Chemists and the Use of These Reactions in Arrays (Small Focused Libraries)",
+      "authors": [
+        "Tony W J Cooper",
+        "Ian B Campbell",
+        "Simon J F Macdonald"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "49",
+      "issue": "44",
+      "pages": "8082-8091",
+      "year": "2010-09-21",
+      "doi": "10.1002/anie.201002238",
+      "publisher": "Wiley"
+    },
+    {
+      "id": "b9",
+      "title": "Synthetically Useful Reactions of Epoxides",
+      "authors": [
+        "Gorzynski Smith",
+        "J"
+      ],
+      "journal": "Synthesis",
+      "volume": null,
+      "issue": null,
+      "pages": "629-656",
+      "year": "1984",
+      "doi": "10.1055/s-1984-30921",
+      "publisher": null
+    },
+    {
+      "id": "b10",
+      "title": "The Chemistry of Transition Metals with Three-Membered Ring Heterocycles",
+      "authors": [
+        "C.-Y Huang",
+        "A G Doyle"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "114",
+      "issue": null,
+      "pages": "8153-8198",
+      "year": "2014",
+      "doi": "10.1021/cr500036t?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b11",
+      "title": "Epoxides in Complex Molecule Synthesis",
+      "authors": [
+        "Paolo Crotti",
+        "Mauro Pineschi"
+      ],
+      "journal": "Aziridines and Epoxides in Organic Synthesis",
+      "volume": null,
+      "issue": null,
+      "pages": "271-313",
+      "year": "2006-01-09",
+      "doi": "10.1002/3527607862.ch8",
+      "publisher": "Wiley"
+    },
+    {
+      "id": "b12",
+      "title": "Nickel\u2010Catalyzed Cross\u2010Coupling of Styrenyl Epoxides with Boronic Acids",
+      "authors": [
+        "Daniel K Nielsen",
+        "Abigail G Doyle"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "50",
+      "issue": "27",
+      "pages": "6056-6059",
+      "year": "2011-05-13",
+      "doi": "10.1002/anie.201101191",
+      "publisher": "Wiley"
+    },
+    {
+      "id": "b13",
+      "title": "Asymmetric Catalysis of Epoxide Ring-Opening Reactions",
+      "authors": [
+        "E N Jacobsen"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "33",
+      "issue": null,
+      "pages": "421-431",
+      "year": "2000",
+      "doi": "10.1021/ar960061v?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b14",
+      "title": "Asymmetric Ring-Opening of Epoxides Catalyzed by Metal\u2013Salen Complexes",
+      "authors": [
+        "Anna Lidskog",
+        "Yutang Li",
+        "Kenneth W\u00e4rnmark"
+      ],
+      "journal": "Catalysts",
+      "volume": "10",
+      "issue": "6",
+      "pages": null,
+      "year": "2020-06-23",
+      "doi": "10.3390/catal10060705",
+      "publisher": "MDPI AG"
+    },
+    {
+      "id": "b15",
+      "title": "Organocatalytic Asymmetric Epoxidation and Aziridination of Olefins and Their Synthetic Applications",
+      "authors": [
+        "Y Zhu",
+        "Q Wang",
+        "R G Cornwall",
+        "Y Shi"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "114",
+      "issue": null,
+      "pages": "8199-8256",
+      "year": "2014",
+      "doi": "10.1021/cr500064w?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b16",
+      "title": "Catalytic Asymmetric Epoxide Ring-opening Chemistry",
+      "authors": [
+        "L P C Nielsen",
+        "E N Jacobsen"
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": "229-269",
+      "year": "2006",
+      "doi": "10.1002/3527607862.ch7",
+      "publisher": null
+    },
+    {
+      "id": "b17",
+      "title": "Asymmetric Ring Opening of Epoxides",
+      "authors": [
+        "I M Pastor",
+        "M Yus"
+      ],
+      "journal": "Current Organic Chemistry",
+      "volume": "9",
+      "issue": "1",
+      "pages": "1-29",
+      "year": "2005-01-01",
+      "doi": "10.2174/1385272053369385",
+      "publisher": "Bentham Science Publishers Ltd."
+    },
+    {
+      "id": "b18",
+      "title": "Unlocking Epoxide Radical Anion Reactivity for Asymmetric Cross-Coupling by Copper Metallaphotoredox",
+      "authors": [
+        "F Teng",
+        "Z.-Q Li",
+        "Z.-C Mao",
+        "Z Zhang",
+        "M Jiang",
+        "W.-J Xiao",
+        "J.-R Chen"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "147",
+      "issue": null,
+      "pages": "19400-19412",
+      "year": "2025",
+      "doi": "10.1021/jacs.5c05957?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b19",
+      "title": "Chiral 2-(2hydroxyaryl)alcohols (HAROLs) with a 1,4-diol scaffold as a new family of ligands and organocatalysts",
+      "authors": [
+        "O \u0308 Dilek",
+        "M A Tezeren",
+        "T Tilki",
+        "E Erturk"
+      ],
+      "journal": "Tetrahedron",
+      "volume": "74",
+      "issue": null,
+      "pages": "268-286",
+      "year": "2018",
+      "doi": "10.1016/j.tet.2017.11.054",
+      "publisher": null
+    },
+    {
+      "id": "b20",
+      "title": "Highly enantioselective arylation of symmetrical epoxides with phenyllithium promoted by chiral schiff bases and salens",
+      "authors": [
+        "N Oguni",
+        "Y Miyagi",
+        "K Itoh"
+      ],
+      "journal": "Tetrahedron Lett",
+      "volume": "39",
+      "issue": null,
+      "pages": "9023-9026",
+      "year": "1998",
+      "doi": "10.1016/S0040-4039(98)02024-3",
+      "publisher": null
+    },
+    {
+      "id": "b21",
+      "title": "Enantioconvergent Cross-Electrophile Coupling of 2-Aryloxetanes with Aryl and Vinyl Halides, or Anhydrides",
+      "authors": [
+        "L Zhang",
+        "W Wang",
+        "C Shen",
+        "K Dong"
+      ],
+      "journal": "ACS Catal",
+      "volume": "15",
+      "issue": null,
+      "pages": "7578-7587",
+      "year": "2025",
+      "doi": "10.1021/acscatal.5c01133?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b22",
+      "title": "Quaternary Stereocenters via Catalytic Enantioconvergent Allylation of Epoxides",
+      "authors": [
+        "J Shen",
+        "Z Xu",
+        "S Yang",
+        "S Li",
+        "J Jiang",
+        "Y.-Q Zhang"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "145",
+      "issue": null,
+      "pages": "21122-21131",
+      "year": "2023",
+      "doi": "10.1021/jacs.3c08188?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b23",
+      "title": "Photoinduced Copper-Catalyzed Regio-and Enantioselective Alkynylation of Epoxides",
+      "authors": [
+        "J Li",
+        "S Li",
+        "G.-H Cui",
+        "K Yuan",
+        "C Wang",
+        "C Yang",
+        "G Zhang",
+        "R Guo"
+      ],
+      "journal": "ACS Catal",
+      "volume": "14",
+      "issue": null,
+      "pages": "7553-7561",
+      "year": "2024",
+      "doi": "10.1021/acscatal.4c00818?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b24",
+      "title": "Enantioselective Cross-Coupling of meso-Epoxides with Aryl Halides",
+      "authors": [
+        "Y Zhao",
+        "D J Weix"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "137",
+      "issue": null,
+      "pages": "3237-3240",
+      "year": "2015",
+      "doi": "10.1021/jacs.5b01909?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b25",
+      "title": "Nickel Catalyzed Regio-, Diastereo-, and Enantioselective Cross-Coupling of 3,4-Epoxyalcohol with Aryl Iodides",
+      "authors": [
+        "A Banerjee",
+        "H Yamamoto"
+      ],
+      "journal": "Org. Lett",
+      "volume": "19",
+      "issue": null,
+      "pages": "4363-4366",
+      "year": "2017",
+      "doi": "10.1021/acs.orglett.7b02076?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b26",
+      "title": "Ni/Photoredox-Catalyzed Enantioselective Cross-Electrophile Coupling of Styrene Oxides with Aryl Iodides",
+      "authors": [
+        "S H Lau",
+        "M A Borden",
+        "T J Steiman",
+        "L S Wang",
+        "M Parasram",
+        "A G Doyle"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "143",
+      "issue": null,
+      "pages": "15873-15881",
+      "year": "2021",
+      "doi": "10.1021/jacs.1c08105?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b27",
+      "title": "Ni-Catalyzed Enantioconvergent Coupling of Epoxides with Alkenylboronic Acids: Construction of Oxindoles Bearing Quaternary Carbons",
+      "authors": [
+        "L Wu",
+        "G Yang",
+        "W Zhang"
+      ],
+      "journal": "CCS Chem",
+      "volume": "2",
+      "issue": null,
+      "pages": "623-631",
+      "year": "2020",
+      "doi": "10.31635/ccschem.019.201900064",
+      "publisher": null
+    },
+    {
+      "id": "b28",
+      "title": "Base-free Ni-catalyzed Suzuki-type cross-coupling reactions of epoxides with boronic acids",
+      "authors": [
+        "X.-Y Lu",
+        "L.-Y Yan",
+        "J.-S Li",
+        "J.-M Li",
+        "H.-P Zhou",
+        "R.-C Jiang",
+        "C.-C Liu",
+        "R Lu",
+        "R Hu"
+      ],
+      "journal": "Chem. Commun",
+      "volume": "56",
+      "issue": null,
+      "pages": "109-112",
+      "year": "2020",
+      "doi": "10.1039/C9CC08079A",
+      "publisher": null
+    },
+    {
+      "id": "b29",
+      "title": "Enantioselective benzylic C-H arylation via photoredox and nickel dual catalysis",
+      "authors": [
+        "X Cheng",
+        "H Lu",
+        "Z Lu"
+      ],
+      "journal": "Nat. Commun",
+      "volume": "10",
+      "issue": null,
+      "pages": null,
+      "year": "2019",
+      "doi": "10.1038/s41467-019-11392-6",
+      "publisher": null
+    },
+    {
+      "id": "b30",
+      "title": "Nickel-Catalyzed Asymmetric Reductive Cross-Coupling to Access 1,1-Diarylalkanes",
+      "authors": [
+        "K E Poremba",
+        "N T Kadunce",
+        "N Suzuki",
+        "A H Cherney",
+        "S E Reisman"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "139",
+      "issue": null,
+      "pages": "5684-5687",
+      "year": "2017",
+      "doi": "10.1021/jacs.7b01705?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b31",
+      "title": "Synthesis, and Monoamine Transporter Binding Site Affinities of Methoxy Derivatives of Indatraline",
+      "authors": [
+        "X.-H Gu",
+        "H Yu",
+        "A E Jacobson",
+        "R B Rothman",
+        "C M Dersch",
+        "C George",
+        "J L Flippen-Anderson",
+        "K C Rice",
+        "Design"
+      ],
+      "journal": "J. Med. Chem",
+      "volume": "43",
+      "issue": null,
+      "pages": "4868-4876",
+      "year": "2000",
+      "doi": "10.1021/jm000329v?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b32",
+      "title": "Synthesis and Antimitotic and Tubulin Interaction Profiles of Novel Pinacol Derivatives of Podophyllotoxins",
+      "authors": [
+        "A Abad",
+        "J L L\u00f3pez-P\u00e9rez",
+        "E Del Olmo",
+        "L F Garc\u00eda-Fern\u00e1ndez",
+        "A Francesch",
+        "C Trigili",
+        "I Barasoain",
+        "J M Andreu",
+        "J F D\u00edaz",
+        "A San Feliciano"
+      ],
+      "journal": "J. Med. Chem",
+      "volume": "55",
+      "issue": null,
+      "pages": "6724-6737",
+      "year": "2012",
+      "doi": "10.1021/jm2017573?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b33",
+      "title": "Dihydrochalcones and Flavonolignans from Iryanthera lancifolia",
+      "authors": [
+        "D H S Silva",
+        "S C Davino",
+        "S B D M Barros",
+        "M Yoshida"
+      ],
+      "journal": "J. Nat. Prod",
+      "volume": "62",
+      "issue": null,
+      "pages": "1475-1478",
+      "year": "1999",
+      "doi": "10.1021/np980509w?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b34",
+      "title": "Chiral 1,1-diaryl compounds as important pharmacophores",
+      "authors": [
+        "D Ameen",
+        "T J Snape"
+      ],
+      "journal": "MedChemComm",
+      "volume": "4",
+      "issue": null,
+      "pages": "893-907",
+      "year": "2013",
+      "doi": "10.1039/c3md00088e",
+      "publisher": null
+    },
+    {
+      "id": "b35",
+      "title": "Nickel-Catalyzed Enantioselective Electrochemical Reductive Cross-Coupling of Aryl Aziridines with Alkenyl Bromides",
+      "authors": [
+        "X Hu",
+        "I Cheng-S\u00e1nchez",
+        "S Cuesta-Galisteo",
+        "C Nevado"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "145",
+      "issue": null,
+      "pages": "6270-6279",
+      "year": "2023",
+      "doi": "10.1021/jacs.2c12869?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b36",
+      "title": "Nickel-Catalyzed Enantioselective C(sp 3 )-C(sp 3 ) Cross-Electrophile Coupling of N-Sulfonyl Styrenyl Aziridines with Alkyl Bromides",
+      "authors": [
+        "Y Lan",
+        "Q Han",
+        "P Liao",
+        "R Chen",
+        "F Fan",
+        "X Zhao",
+        "W Liu"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "146",
+      "issue": null,
+      "pages": "25426-25432",
+      "year": "2024",
+      "doi": "10.1021/jacs.4c08435?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b37",
+      "title": "Enantiocovergent Cross-Coupling Reaction with 1,4-Dihydropyridine Derivatives via Photoinduced Nickel Catalysis",
+      "authors": [
+        "T Li",
+        "L Luo",
+        "X Cheng",
+        "Z Lu"
+      ],
+      "journal": "ACS Catal",
+      "volume": "14",
+      "issue": null,
+      "pages": "3278-3286",
+      "year": "2024",
+      "doi": "10.1021/acscatal.3c05521?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b38",
+      "title": "Chiral Imidazoline Ligands and Their Applications in Metal-Catalyzed Asymmetric Synthesis",
+      "authors": [
+        "J Li",
+        "B Yu",
+        "Z Lu"
+      ],
+      "journal": "Chin. J. Chem",
+      "volume": "39",
+      "issue": null,
+      "pages": "488-514",
+      "year": "2021",
+      "doi": "10.1002/cjoc.202000486",
+      "publisher": null
+    },
+    {
+      "id": "b39",
+      "title": "Preparation of enantiopure biimidazoline ligands and their use in asymmetric catalysis",
+      "authors": [
+        "N A Boland",
+        "M Casey",
+        "S J Hynes",
+        "J W Matthews",
+        "H Muller-Bunz",
+        "P Wilkes"
+      ],
+      "journal": "Org. Biomol. Chem",
+      "volume": "2",
+      "issue": null,
+      "pages": "1995-2002",
+      "year": "2004",
+      "doi": "10.1039/B407743C",
+      "publisher": null
+    },
+    {
+      "id": "b40",
+      "title": "Biimidazoline ligands for palladiumcatalyzed asymmetric allylic alkylation",
+      "authors": [
+        "X.-Q Hao",
+        "Y.-N Dong",
+        "B Gao",
+        "K Li",
+        "X.-M Zhao",
+        "Y Xu",
+        "M.-P Song"
+      ],
+      "journal": "Tetrahedron: Asymmetry",
+      "volume": "26",
+      "issue": null,
+      "pages": "1360-1368",
+      "year": "2015",
+      "doi": "10.1016/j.tetasy.2015.10.007",
+      "publisher": null
+    },
+    {
+      "id": "b41",
+      "title": "Enantioselective Syntheses of (+)-Sertraline and (+)-Indatraline Using Lithiation/Borylation-Protodeboronation Methodology",
+      "authors": [
+        "S Roesner",
+        "J M Casatejada",
+        "T G Elford",
+        "R P Sonawane",
+        "V K Aggarwal"
+      ],
+      "journal": "Org. Lett",
+      "volume": "13",
+      "issue": null,
+      "pages": "5740-5743",
+      "year": "2011",
+      "doi": "10.1021/ol202251p?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b42",
+      "title": "Slow-Onset, Long-Duration 3-(3',4'-Dichlorophenyl)-1-indanamine Monoamine Reuptake Blockers as Potential Medications to Treat Cocaine Abuse",
+      "authors": [
+        "M Froimowitz",
+        "K.-M Wu",
+        "A Moussa",
+        "R M Haidar",
+        "J Jurayj",
+        "C George",
+        "E L Gardner"
+      ],
+      "journal": "J. Med. Chem",
+      "volume": "43",
+      "issue": null,
+      "pages": "4981-4992",
+      "year": "2000",
+      "doi": "10.1021/jm000201d?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b43",
+      "title": "Nickel/biimidazole-catalyzed electrochemical enantioselective reductive cross-coupling of aryl aziridines with aryl iodides",
+      "authors": [
+        "Y.-Z Wang",
+        "Z.-H Wang",
+        "I L Eshel",
+        "B Sun",
+        "D Liu",
+        "Y.-C Gu",
+        "A Milo",
+        "T.-S Mei"
+      ],
+      "journal": "Nat. Commun",
+      "volume": "14",
+      "issue": null,
+      "pages": null,
+      "year": "2023",
+      "doi": "10.1038/s41467-023-37965-0",
+      "publisher": null
+    },
+    {
+      "id": "b44",
+      "title": "Photoinduced nickelcatalysed enantioconvergent sp 3 -sp 3 coupling of unactivated olefins and aziridines",
+      "authors": [
+        "L Zhang",
+        "H Wang",
+        "T G Santiago",
+        "W.-J Yue",
+        "R Martin"
+      ],
+      "journal": "Nat. Catal",
+      "volume": "8",
+      "issue": null,
+      "pages": "348-356",
+      "year": "2025",
+      "doi": "10.1038/s41929-025-01319-4",
+      "publisher": null
+    },
+    {
+      "id": "b45",
+      "title": "Nickel-catalysed enantioselective migratory reductive cross-coupling enabled by radical 1,2-amino migration",
+      "authors": [
+        "X Ren",
+        "Y Qiao",
+        "B Zhou",
+        "S Liu",
+        "Y Huang"
+      ],
+      "journal": "Nat. Synth",
+      "volume": "4",
+      "issue": null,
+      "pages": "1232-1246",
+      "year": "2025",
+      "doi": "10.1038/s44160-025-00840-5",
+      "publisher": null
+    },
+    {
+      "id": "b46",
+      "title": "Pd/NHC-Catalyzed Enantiospecific and Regioselective Suzuki-Miyaura Arylation of 2-Arylaziridines: Synthesis of Enantioenriched 2-Arylphenethylamine Derivatives",
+      "authors": [
+        "Y Takeda",
+        "Y Ikeda",
+        "A Kuroda",
+        "S Tanaka",
+        "S Minakata"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "136",
+      "issue": null,
+      "pages": "8544-8547",
+      "year": "2014",
+      "doi": "10.1021/ja5039616?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b47",
+      "title": "Nickel-Catalyzed Enantioselective Reductive Cross-Coupling of Styrenyl Aziridines",
+      "authors": [
+        "B P Woods",
+        "M Orlandi",
+        "C.-Y Huang",
+        "M S Sigman",
+        "A G Doyle"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "139",
+      "issue": null,
+      "pages": "5688-5691",
+      "year": "2017",
+      "doi": "10.1021/jacs.7b03448?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b48",
+      "title": "Pd-Catalyzed decarboxylative cross-coupling reactions of epoxides with \u03b1,\u03b2unsaturated carboxylic acids",
+      "authors": [
+        "X.-Y Lu",
+        "J.-S Li",
+        "S.-Q Wang",
+        "Y.-J Zhu",
+        "Y.-M Li",
+        "L.-Y Yan",
+        "J.-M Li",
+        "J.-Y Wang",
+        "H.-P Zhou",
+        "X.-T Ge"
+      ],
+      "journal": "Chem. Commun",
+      "volume": "55",
+      "issue": null,
+      "pages": "11123-11126",
+      "year": "2019",
+      "doi": "10.1039/C9CC04795F",
+      "publisher": null
+    },
+    {
+      "id": "b49",
+      "title": "Palladium catalyzed tandem cyclization of acryloylbenzamides and N-arylacrylamides with epoxides: access to functionalized isoquinolinediones and oxindoles",
+      "authors": [
+        "X.-Y Lu",
+        "F.-Y Shui",
+        "X Zhang",
+        "R Huang",
+        "Z.-Z Wang",
+        "Y.-W Song",
+        "F Jiang",
+        "G.-X Yang",
+        "Y.-X Sun"
+      ],
+      "journal": "Org. Chem. Front",
+      "volume": "10",
+      "issue": null,
+      "pages": "5616-5622",
+      "year": "2023",
+      "doi": "10.1039/D3QO01243C",
+      "publisher": null
+    },
+    {
+      "id": "b50",
+      "title": "NiH-Catalyzed Homobenzylic Hydroalkylation of Aryl Alkenes Using Sulfoxonium Ylides",
+      "authors": [
+        "Q Wang",
+        "H Choi",
+        "X Lyu",
+        "D Kim",
+        "S Chang"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "147",
+      "issue": null,
+      "pages": "38817-38826",
+      "year": "2025",
+      "doi": "10.1021/jacs.5c14594?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b51",
+      "title": "An ECEC Mechanism via an Electrophilic Co(II) Carbene in Reductive Cyclopropanation",
+      "authors": [
+        "B Cao",
+        "H.-D Tan",
+        "G Liu",
+        "X Leng",
+        "X.-S Xue",
+        "Z Huang"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "147",
+      "issue": null,
+      "pages": "43640-43654",
+      "year": "2025",
+      "doi": "10.1021/jacs.5c13356?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b52",
+      "title": "Multisite Proton-Coupled Electron Transfer Enables Iodanyl Radical Catalysis",
+      "authors": [
+        "P Thai",
+        "B L Frey",
+        "R F Lalisse",
+        "L Patel",
+        "P Mukherjee",
+        "Z Song",
+        "R Carmieli",
+        "O Gutierrez",
+        "D C Powers"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "147",
+      "issue": null,
+      "pages": "44336-44345",
+      "year": "2025",
+      "doi": "10.1021/jacs.5c14648?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b53",
+      "title": "Enantioselective Carbonylative Coupling Reactions: Merging Nickel-Based Selectivity and Photoredox Reactivity",
+      "authors": [
+        "L Li",
+        "Z Hu",
+        "S Ren",
+        "B A Arndtsen",
+        "L Chu"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "147",
+      "issue": null,
+      "pages": "28206-28214",
+      "year": "2025",
+      "doi": "10.1021/jacs.5c08527?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b54",
+      "title": "Nickel-Catalyzed Enantioconvergent Cross-Electrophile Coupling of Benzylic Alcohols with Alkenyl Electrophiles",
+      "authors": [
+        "J.-D Fang",
+        "X Pang",
+        "X.-Z Shu"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "147",
+      "issue": null,
+      "pages": "28313-28321",
+      "year": "2025",
+      "doi": "10.1021/jacs.5c09072?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b55",
+      "title": "Phenoxyimine)nickel-Catalyzed C(sp 2 )-C(sp 3 ) Suzuki-Miyaura Cross-Coupling: Evidence for a Recovering Radical Chain Mechanism",
+      "authors": [
+        "L R Mills",
+        "E M Simmons",
+        "H Lee",
+        "E Nester",
+        "J Kim",
+        "S R Wisniewski",
+        "M V Pecoraro",
+        "P J Chirik"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "146",
+      "issue": null,
+      "pages": "10124-10141",
+      "year": "2024",
+      "doi": "10.1021/jacs.4c01474?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b56",
+      "title": "New Directing Groups for Metal-Catalyzed Asymmetric Carbon-Carbon Bond-Forming Processes: Stereoconvergent Alkyl-Alkyl Suzuki Cross-Couplings of Unactivated Electrophiles",
+      "authors": [
+        "A Wilsily",
+        "F Tramutola",
+        "N A Owston",
+        "G C Fu"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "134",
+      "issue": null,
+      "pages": "5794-5797",
+      "year": "2012",
+      "doi": "10.1021/ja301612y?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b57",
+      "title": "Entropy effects in temperature-regulated nickelcatalyzed regiodivergent alkene hydroalkylation",
+      "authors": [
+        "D Liu",
+        "J.-W Wang",
+        "X Lu",
+        "Y Fu"
+      ],
+      "journal": "Org. Chem. Front",
+      "volume": "11",
+      "issue": null,
+      "pages": "3648-3654",
+      "year": "2024",
+      "doi": "10.1039/D4QO00486H",
+      "publisher": null
+    },
+    {
+      "id": "b58",
+      "title": "A General Copper Catalytic System for Suzuki-Miyaura Cross-Coupling of Unactivated Secondary and Primary Alkyl Halides with Arylborons",
+      "authors": [
+        "Y Zhou",
+        "L Qiu",
+        "J Li",
+        "W Xie"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "145",
+      "issue": null,
+      "pages": "28146-28155",
+      "year": "2023",
+      "doi": "10.1021/jacs.3c10628?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b59",
+      "title": "Nickel-Catalyzed Suzuki-Miyaura Cross-Coupling Reaction of Aliphatic Alcohol Derivatives",
+      "authors": [
+        "C D Wong",
+        "L C Bradford",
+        "N Hirbawi",
+        "E R Jarvo"
+      ],
+      "journal": "Angew. Chem., Int. Ed",
+      "volume": "64",
+      "issue": null,
+      "pages": null,
+      "year": "2025",
+      "doi": "10.1002/anie.202509657",
+      "publisher": null
+    },
+    {
+      "id": "b60",
+      "title": "Recent Progress on the Construction of C(sp 2 )-C(sp 3 ) Bonds via Photoredox/Nickel Dual Catalysis",
+      "authors": [
+        "G Gao",
+        "Z Li",
+        "Y Li",
+        "X Lu"
+      ],
+      "journal": "Chin. J. Org. Chem",
+      "volume": "45",
+      "issue": null,
+      "pages": "1905-1919",
+      "year": "2025",
+      "doi": "10.6023/cjoc202504001",
+      "publisher": null
+    }
+  ]
+}
