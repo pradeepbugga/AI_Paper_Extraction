@@ -48,24 +48,58 @@ Outputs `raw_extraction.json` (per-page text blocks + figure metadata) and an
 into a document structure: headings, paragraphs, and figure captions, in
 reading order.
 
-The nontrivial parts:
-- PyMuPDF's `blocks` text mode (used in Stage 1) strips font metadata, so a
-  heading and the paragraph immediately following it often land in the same
-  block with no visual gap between them. Stage 2 re-reads each page with
-  `dict` mode to get per-line font name/size, and splits blocks into
-  heading/body units by font (`HardingText-Bold` ≥10pt = top-level heading,
-  `HardingText-Semibold` = subsection heading).
-- Small text blocks that are actually chemical-structure labels sitting
-  inside a figure (not body text) are dropped by checking overlap against
-  the figure bounding boxes already found in Stage 1.
-- Running headers/footers (journal name, DOI banner, page number) are
-  filtered by page-position band plus a small text-match rule for the
-  masthead logo.
-- Figure captions (`Fig. N | ...`) are matched back to the nearest figure
-  image above them on the page.
+The first version of this hardcoded literal font names and a page-position
+band tuned to one journal (Nature Catalysis), and it silently produced an
+empty structure on a paper from a different publisher (ACS *Org. Lett.*) —
+none of the hardcoded strings matched. It's now driven by document-relative
+statistics instead of per-publisher constants:
+
+- **Heading detection**: PyMuPDF's `blocks` text mode strips font metadata,
+  so a heading and the paragraph right after it often land in the same block
+  with no visual gap. Stage 2 re-reads each page with `dict` mode for
+  per-line font size/boldness, computes the document's own body-text size
+  (the size with the most non-bold characters), and flags a line as a
+  heading candidate if it's bold and larger than that — no hardcoded font
+  names or size thresholds. A size tier only becomes a real heading *level*
+  if it recurs across ≥2 distinct blocks (a one-off large bold block, like a
+  title or byline, isn't a heading — real section headings are a family of
+  different short blocks sharing one style). A candidate is also rejected if
+  it reads like a sentence (ends in `.`/`?`/`!`, not all-caps, >3 words) or
+  runs over ~20 words, since real headings are short phrases, not emphasized
+  prose.
+- **Figure-embedded text**: small blocks that are actually chemical-structure
+  labels sitting inside a figure (not body text) are dropped by checking
+  overlap against the figure bounding boxes found in Stage 1.
+- **Running headers/footers**: filtered per-line (not per-block, since a
+  running header can end up fused into a content block on the page with no
+  gap between them) by page-position band, plus text that recurs across a
+  large share of pages — matched both verbatim and with a trailing page
+  number stripped, since footers often differ only by that number.
+- **Two-column layout**: detected per page from the actual gap in block
+  x-positions rather than assumed at the page midpoint, so it also degrades
+  gracefully to single-column pages.
+- **Cross-page/column paragraphs**: a paragraph cut off at a page or column
+  boundary (no terminal punctuation at the break) is stitched back onto the
+  next block instead of appearing as two separate paragraphs.
+- **Figure captions**: `Fig./Figure/Scheme/Table/Chart N` (case-insensitive)
+  are matched back to the nearest figure image above them on the page.
+
+Validated against two papers from different publishers with different
+typography: Rowsell et al., *Nature Catalysis* 7, 1186-1198 (2024)
+(`suzuki_iron_2024`) and Roy et al., *Org. Lett.* 28, 32-38 (2026)
+(`copper_iron_2025`).
+
+An evaluation of [GROBID](https://github.com/kermitt2/grobid) as a
+replacement for this hand-rolled parsing found it excellent for
+bibliographic metadata (title/authors/abstract/references — its 83
+cleanly-structured reference entries on the ACS paper beat anything hand-rolled
+here) but inconsistent at section/figure segmentation across publishers, so
+it's not currently integrated; worth revisiting for the references/metadata
+piece specifically.
 
 ```
 python3 ingest/section_parse.py data/papers/suzuki_iron_2024
+python3 ingest/section_parse.py data/papers/copper_iron_2025
 ```
 
 Outputs `sections.json`: front-matter paragraphs, a list of top-level

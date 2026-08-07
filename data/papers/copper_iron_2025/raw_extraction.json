@@ -1,0 +1,1446 @@
+{
+  "source_pdf": "paper.pdf",
+  "page_count": 7,
+  "pages": [
+    {
+      "page_number": 1,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            111.2,
+            541.7,
+            164.2
+          ],
+          "text": "Copper\u2212Iron-Catalyzed Cross-Coupling of ortho-Substituted\nSulfonamides with Sterically Hindered (Hetero)aryl Chlorides and\nAlkyl Halides: Synthesis of Sulfonamide Drugs"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            170.2,
+            362.5,
+            184.1
+          ],
+          "text": "Keya Roy, Anay Saha, Sampa Mondal, and Laksmikanta Adak*"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            74.6,
+            197.7,
+            384.7,
+            206.7
+          ],
+          "text": "Cite This: Org. Lett. 2026, 28, 32\u221238\nRead Online"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            229.1,
+            529.6,
+            244.1
+          ],
+          "text": "ACCESS\nMetrics & More\nArticle Recommendations\n*\ns\u0131\nSupporting Information"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            383.8,
+            555.5,
+            515.6
+          ],
+          "text": "ABSTRACT: We describe for the first time an effective copper\u2212iron-catalyzed cross-coupling strategy that enables the reaction for\na diverse array of ortho-substituted primary (hetero)aryl and aliphatic sulfonamides with challenging sterically hindered (hetero)aryl\nchlorides, bromides, and alkyl halides under solvent-minimized conditions. The developed methodology efficiently affords the\ncorresponding products, N-aryl, N-heteroaryl, and N-alkyl sulfonamides bearing highly encumbered ortho substituents, in good to\nexcellent yields with vast substrate scope (104 examples), tolerating several sensitive functionalities. In addition, selective C\u2212N\ncoupling of substrates containing multiple nucleophilic NH2 groups was effectively accomplished. This economically attractive\nprotocol was effectively utilized for the synthesis of 10 commercially available sulfonamide-based drugs and 11 drug-like molecules.\nNotably, the methodology offers several other important advantages, including gram-scale synthesis, reusability of the catalyst,\nsynthetic transformations of synthesized cross-coupled products, and elimination of conventional workup. Several spectroscopic\nexperiments were conducted to identify the oxidation state involved in the active catalytic species. To explore the reaction\nmechanistic pathway, a radical clock experiment employing a radical probe and control reactions with radical scavengers were carried\nout."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            540.1,
+            291.5,
+            594.4
+          ],
+          "text": "N-Aryl and N-heteroaryl sulfonamides represent a vital class of\ncompounds with broad applications in medicinal and agricul-\ntural chemistry.1 Beyond these areas, sulfonamide derivatives\nalso play important roles as organocatalysts,2 chiral ligands,3 and\nas key building blocks in various chemical transformations.4"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            51.5,
+            595.5,
+            291.5,
+            705.1
+          ],
+          "text": "Consequently, the development of efficient and versatile\nsynthetic strategies to construct diverse sulfonamide scaffolds\nis of considerable interest, particularly for accessing complex\nmolecules relevant to drug discovery. However, the synthesis of\nstructurally intricate sulfonamides, especially those bearing\nsterically hindered or heteroaryl substituents, remains a\nsignificant synthetic challenge. In particular, sterically congested\nN-aryl sulfonamides and N-heteroaryl sulfonamides are highly\ndesirable motifs due to their prevalence in biologically active\nmolecules.5"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            51.5,
+            706.1,
+            291.5,
+            749.4
+          ],
+          "text": "Traditional methods for synthesizing (hetero)aryl sulfona-\nmides typically rely on the condensation of amine nucleophiles\nwith reactive sulfinyl electrophiles such as arylsulfonyl halides,\nesters, azides, or hydrazides to form N\u2212S bonds.6 However,"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            315.4,
+            540.0,
+            555.5,
+            665.1
+          ],
+          "text": "these approaches often suffer from several drawbacks, including\nrestricted diversity of substrates, poor tolerance toward\nfunctional groups, harsh reaction conditions, and side reactions.\nMoreover, concerns over the potential genotoxicity7 of both\namine nucleophiles and sulfonyl halides have prompted the\ndevelopment of alternative, safer synthetic strategies. In this\ncontext, C\u2212N coupling reactions between aryl halides and\nsulfonamides catalyzed by palladium,8 nickel,9 and copper10 in\ncombination with ligands have emerged as a promising approach\nbecause of the commercial availability of both coupling partners."
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            681.2,
+            429.0,
+            723.2
+          ],
+          "text": "Received:\nOctober 18, 2025\nRevised:\nNovember 8, 2025\nAccepted:\nNovember 17, 2025\nPublished: November 30, 2025"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            51.5,
+            85.4,
+            548.5,
+            93.4
+          ],
+          "text": "Letter\npubs.acs.org/OrgLett"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            188.4,
+            763.7,
+            280.9,
+            770.0
+          ],
+          "text": "\u00a9 2025 American Chemical Society"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            299.5,
+            762.6,
+            555.4,
+            776.5
+          ],
+          "text": "32\nhttps://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            491.0,
+            769.1,
+            555.5,
+            775.1
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p1_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            515.5,
+            677.4,
+            553.3,
+            735.1
+          ],
+          "path": "images/page1_raster0.png",
+          "width": 298,
+          "height": 397
+        },
+        {
+          "image_id": "p1_raster1",
+          "source": "embedded_raster",
+          "bbox": [
+            511.0,
+            54.4,
+            555.4,
+            63.0
+          ],
+          "path": "images/page1_raster1.png",
+          "width": 740,
+          "height": 144
+        },
+        {
+          "image_id": "p1_raster2",
+          "source": "embedded_raster",
+          "bbox": [
+            -252.9,
+            376.9,
+            118.1,
+            496.9
+          ],
+          "path": "images/page1_raster2.png",
+          "width": 100,
+          "height": 100
+        },
+        {
+          "image_id": "p1_raster3",
+          "source": "embedded_raster",
+          "bbox": [
+            357.7,
+            304.7,
+            370.2,
+            317.5
+          ],
+          "path": "images/page1_raster3.png",
+          "width": 17,
+          "height": 21
+        },
+        {
+          "image_id": "p1_raster4",
+          "source": "embedded_raster",
+          "bbox": [
+            274.9,
+            274.9,
+            347.0,
+            339.4
+          ],
+          "path": "images/page1_raster4.png",
+          "width": 214,
+          "height": 192
+        },
+        {
+          "image_id": "p1_raster5",
+          "source": "embedded_raster",
+          "bbox": [
+            344.5,
+            290.2,
+            347.4,
+            329.7
+          ],
+          "path": "images/page1_raster5.png",
+          "width": 8,
+          "height": 117
+        },
+        {
+          "image_id": "p1_raster6",
+          "source": "embedded_raster",
+          "bbox": [
+            259.8,
+            274.9,
+            364.2,
+            344.4
+          ],
+          "path": "images/page1_raster6.png",
+          "width": 310,
+          "height": 207
+        },
+        {
+          "image_id": "p1_raster7",
+          "source": "embedded_raster",
+          "bbox": [
+            321.3,
+            286.2,
+            364.4,
+            333.7
+          ],
+          "path": "images/page1_raster7.png",
+          "width": 128,
+          "height": 141
+        },
+        {
+          "image_id": "p1_raster8",
+          "source": "embedded_raster",
+          "bbox": [
+            298.3,
+            272.4,
+            316.7,
+            289.6
+          ],
+          "path": "images/page1_raster8.png",
+          "width": 51,
+          "height": 48
+        },
+        {
+          "image_id": "p1_raster9",
+          "source": "embedded_raster",
+          "bbox": [
+            300.6,
+            265.2,
+            314.8,
+            277.1
+          ],
+          "path": "images/page1_raster9.png",
+          "width": 39,
+          "height": 32
+        },
+        {
+          "image_id": "p1_raster10",
+          "source": "embedded_raster",
+          "bbox": [
+            159.5,
+            273.7,
+            180.4,
+            293.3
+          ],
+          "path": "images/page1_raster10.png",
+          "width": 57,
+          "height": 55
+        },
+        {
+          "image_id": "p1_raster11",
+          "source": "embedded_raster",
+          "bbox": [
+            162.1,
+            265.6,
+            178.2,
+            279.1
+          ],
+          "path": "images/page1_raster11.png",
+          "width": 44,
+          "height": 37
+        },
+        {
+          "image_id": "p1_raster12",
+          "source": "embedded_raster",
+          "bbox": [
+            120.1,
+            259.9,
+            222.4,
+            328.9
+          ],
+          "path": "images/page1_raster12.png",
+          "width": 136,
+          "height": 284
+        },
+        {
+          "image_id": "p1_raster13",
+          "source": "embedded_raster",
+          "bbox": [
+            344.5,
+            259.9,
+            347.6,
+            275.5
+          ],
+          "path": "images/page1_raster13.png",
+          "width": 4,
+          "height": 64
+        },
+        {
+          "image_id": "p1_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            13.5,
+            555.5,
+            93.9
+          ],
+          "path": "images/page1_fig0.png",
+          "width": 1513,
+          "height": 242
+        },
+        {
+          "image_id": "p1_fig1",
+          "source": "vector_region",
+          "bbox": [
+            1.5,
+            190.0,
+            946.5,
+            1381.5
+          ],
+          "path": "images/page1_fig1.png",
+          "width": 1819,
+          "height": 1834
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            60.2,
+            291.5,
+            103.2
+          ],
+          "text": "In recent decades, palladium-catalyzed coupling reactions\nhave been widely employed to facilitate the coupling reaction of\nprimary sulphonamides with aryl halides, typically in the\npresence of bulky phosphine ligands (Scheme 1a).8a\u2212g These"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            349.2,
+            291.5,
+            425.2
+          ],
+          "text": "methodologies demonstrate excellent scope for (hetero)aryl\nbromides; however, their applicability to (hetero)aryl chlorides\nremains limited.8b\u2212i Despite their usefulness, these protocols\nface several limitations, including the use of costly palladium\ncatalysts and specialized ligands. Furthermore, the catalytic\nsystems often exhibit poor reactivity with sterically hindered or\nheteroaromatic coupling partners.8a\u2212d,f\u2212i"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            426.2,
+            291.5,
+            469.2
+          ],
+          "text": "Alternatively, cost-effective metals such as nickel with ligand\nhave been explored for these transformations (Scheme 1a).\nThese reactions are often conducted in the presence of\nexpensive phosphine ligands,9a diamine-derived ligands,9b,e\u2212g"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            465.8,
+            291.5,
+            524.2
+          ],
+          "text": "or ether-based ligands.9c,d,h While promising, these nickel-\ncatalyzed methods are largely limited to aryl bromides, iodides,\nand a narrow subset of electron-deficient or electronicallyneutral\naryl chlorides.9b,c,e\u2212h Notably, examples involving electron-rich\nor sterically hindered (hetero)aryl chlorides remain scarce."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            520.7,
+            291.5,
+            612.2
+          ],
+          "text": "Recent advances in photochemical9b\u2212d,f\u2212h and electro-\nchemical9e techniques have further expanded the utility of\nnickel catalysis for the formation of the C\u2212N bond, particularly\nfor reactions in-between aryl bromides and sulfonamides\n(Scheme 1a). These approaches often require the use of costly\nor toxic ligands, expensive photocatalysts, strong bases, or\nreactive alkoxide salts and additives, potentially limiting their\nscalability and widespread use.9"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            613.2,
+            291.5,
+            755.2
+          ],
+          "text": "Researchers have also explored copper-based catalytic\nsystems, often paired with electron-rich oxalamides10a or\nchelating 1,2-diamine ligands10b\u2212e or polydentate chelating\nligands,10f,g for N-arylation reactions of primary sulfonamides\nwith aromatic halides. These ligands play a critical role in\nstabilizing the copper center and enhancing the catalytic activity\nin homogeneous reactions. However, copper-catalyzed methods\nhave thus far been largely limited to (hetero)aryl iodides and\nbromides.10b\u2212g These protocols often rely on high-cost and\ncomplex synthesis of some ligands, which limits their\npracticality. Ma and co-workers recently reported a noteworthy\nresult through the development of a copper(I) oxide (Cu2O)-\ncatalyzed system using oxalamide ligands for the coupling"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            60.2,
+            555.5,
+            202.8
+          ],
+          "text": "reaction of primary sulfonamides with (hetero)aryl bromides\nand chlorides (Scheme 1b).10a However, the protocol still faces\nseveral major drawbacks, such as the requirement for costly\nelectron-rich oxalamide ligands, the use of strongly reactive\nalkoxide bases. Moreover, the study did not include aliphatic\nhalides, sterically hindered (hetero)aryl chlorides, and ortho-\nsubstituted sulfonamides as coupling partners, restricting its\nbroader applicability. Recently, two reports have described\nligand-free copper-catalyzed cross-coupling reactions of sulfo-\nnamides with aryl iodides and bromides.11 However, these\nmethods failed to afford any coupling product when applied to\naryl chlorides or aliphatic reactants, and were also ineffective\nwith heteroaromatic or sterically hindered coupling partners."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            315.4,
+            203.8,
+            555.5,
+            357.4
+          ],
+          "text": "Pd, Ni, and Cu catalytic systems usually require the use of\nspecific ligands and a strong base, which leads to the problems of\nfunctional group compatibility and low selectivity, particularly\nfor sulphanilamide (selective C\u2212N coupling with multiple\nnucleophilic NH2 groups).8\u221210 Furthermore, these cross-\ncoupling methods often fail to couple sterically hindered\n(hetero)aryl chlorides with ortho-substituted sulfonamides.\nNotably, the coupling of alkyl halides with sulfonamides remains\nunexplored using Pd, Ni, or Cu catalysis, despite the importance\nof N-alkyl sulfonamides in drug development,5c highlighting a\nsignificant gap in current synthetic methodologies. Thus, the\ndevelopment of a general, efficient, and sustainable method to\naccess structurally complex sulfonamides, including drug or\ndrug-like scaffolds, remains a key goal in synthetic chemistry."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            315.4,
+            358.5,
+            555.5,
+            467.9
+          ],
+          "text": "Recent developments in dual transition-metal catalysis have\nenabled effective approaches to cross-coupling reactions.12 In\nparticular, the synergistic combination of iron and copper\ncatalysts has emerged as a promising strategy, leveraging the\nearth-abundance, low toxicity, and complementary reactivity of\nboth metals, attributes that have shown great potential in cross-\ncoupling chemistry. Recently, we have developed cost-effective,\nenvironmentally benign, and readily available bimetallic systems\ncapable of efficiently facilitating C\u2212N bond construction via\ncross-coupling between primary amides and aryl halides.13"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            468.3,
+            555.5,
+            633.6
+          ],
+          "text": "Herein, we report for the first highly effective copper\u2212iron-\ncatalyzed cross-coupling reaction of a wide variety of heteroaryl\nand aryl chlorides and bromides, as well as alkyl halides, with\ndiverse primary heteroaryl-, aryl-, and aliphatic sulfonamides\nunder solvent-minimized conditions without using any exter-\nnally added ligand (Scheme 1c). This bimetallic catalytic system\nproves particularly effective for the coupling of ortho-substituted\nprimary sulfonamides with challenging, sterically hindered\n(hetero)aryl chlorides and bromides, substrates that have been\nnotoriously difficult to engage using existing transition-metal\ncatalysts (Pd, Ni, or Cu). The developed protocol is\neconomically attractive and delivers the corresponding cross-\ncoupling product, N-aryl, N-heteroaryl, and N-alkyl sulfona-\nmides bearing highly encumbered ortho substituents in good to\nexcellent yields."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            315.4,
+            634.7,
+            555.5,
+            666.8
+          ],
+          "text": "To achieve the optimized reaction conditions, a series of\nexperiments were conducted for the representative reaction\nbetween benzenesulfonamide and chlorobenzene.14a"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            315.4,
+            667.8,
+            555.5,
+            755.2
+          ],
+          "text": "To explore the reaction scope, a variety of aryl chlorides and\nbromides bearing diverse and challenging substituents, as well as\nseveral challenging sulfonamides, were initially investigated\n(Scheme 2). The coupling reaction between benzenesulfona-\nmide and both chlorobenzene and bromobenzene afforded the\ntargeted product 1 in excellent yield under standard reaction\nconditions. Subsequently, we focused on exploring the cross-\ncoupling reaction of sterically hindered partners, which"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            51.5,
+            116.2,
+            281.0,
+            137.2
+          ],
+          "text": "Scheme 1. Transition-Metal-Catalyzed Cross-Coupling of\nSulfonamides with Aryl and Alkyl Halides"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            299.5,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238\n33"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p2_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page2_fig0.png",
+          "width": 1513,
+          "height": 37
+        },
+        {
+          "image_id": "p2_fig1",
+          "source": "vector_region",
+          "bbox": [
+            -2.1,
+            105.3,
+            606.3,
+            892.6
+          ],
+          "path": "images/page2_fig1.png",
+          "width": 1820,
+          "height": 2088
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            590.4,
+            291.5,
+            755.2
+          ],
+          "text": "successfully provided the desired products (2\u22129) in high\nyields.15 The reaction of 2-chloroanisole with benzenesulfona-\nmide using a copper catalyst in the presence of a ligand was\npreviously attempted, but resulted in a trace amount of the\nproduct 3.10a This observation showcases the efficiency of our\nestablished catalytic system toward deactivated aryl chlorides.\nWe extended our protocol to more challenging conditions by\nintroducing steric bulk to both coupling partners. We were\npleased to find that our developed methodology performed with\nhigh success in reactions between coupling partners possessing\nsterically hindered ortho substituents, yielding the products 10\u2212\n20 in high yield, highlighting the exceptional compatibility of\nour method with steric challenges. Notably, several aryl\nchlorides and bromides bearing substituents at the ortho,\nmeta, and para positions successfully underwent coupling"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            315.4,
+            558.2,
+            555.5,
+            656.2
+          ],
+          "text": "reactions with meta- and para-substituted arylsulfonamides as\nwell as polyaromatic sulfonamides, yielding products 21\u221227 in\ngood to excellent yields. It is notable that 1,2-dibromobenzene\nand 1,3,5-tribromobenzene underwent selective cross-coupling\nwith aryl sulfonamides, affording products 7, 14, and 21 in\nexcellent yields. The retained bromide groups in these products\nindicate their suitability for subsequent cross-coupling pro-\ncesses, thereby broadening the possibilities for further chemical\nmodifications."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            315.4,
+            657.2,
+            555.5,
+            755.2
+          ],
+          "text": "The coupling reaction was investigated with diverse\nheteroaromatic structures for both coupling partners (Scheme\n2). (Hetero)aryl chlorides and bromides reacted successfully\nwith (hetero)arylsulfonamides, providing N-heteroaryl sulfona-\nmides 28\u221234 with 61\u221283% yield. The protocol was not\nrestricted to single heteroaromatic coupling partners, as the\noptimal reaction condition was efficiently applied for the\ncoupling reaction of heteroaromatic primary sulfonamides\nwith heteroaryl chlorides and bromides, providing highly"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            60.0,
+            291.5,
+            92.7
+          ],
+          "text": "Scheme 2. Copper\u2212Iron-Catalyzed Cross-Coupling of\n(Hetero)aryl or Aliphatic Sulfonamides with (Hetero)aryl or\nAlkyl Chlorides and Bromidesa"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            529.1,
+            291.5,
+            571.9
+          ],
+          "text": "aReaction conditions: (heteo)aryl or alkyl sulfonamides (0.5 mmol),\n(heteo)aryl or alkyl halides (0.75 mmol), Fe(acac)3 (5 mol %), CuI\n(5 mol %), K2CO3 (0.75 mmol), DMSO (100 \u03bcL for 0.5 mmol scale\nof reaction) under N2 atmosphere. Isolated yields are reported."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            315.4,
+            60.7,
+            534.6,
+            92.7
+          ],
+          "text": "Scheme 3. Synthesis of Marketed Drugs and Drug-like\nMolecules via Copper\u2212Iron-Catalyzed Cross-Coupling\nReactiona"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            488.6,
+            555.5,
+            539.6
+          ],
+          "text": "aReaction conditions: aryl or alkyl sulfonamide (0.5 mmol),\n(hetero)aryl chloride or bromide (0.75 mmol), Fe(acac)3 (5 mol\n%), CuI (5 mol %), K2CO3 (0.75 mmol), DMSO (100 \u03bcL for 0.5\nmmol scale of reaction), under N2 atmosphere. Isolated yields are\nreported."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            299.5,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238\n34"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p3_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page3_fig0.png",
+          "width": 1513,
+          "height": 37
+        },
+        {
+          "image_id": "p3_fig1",
+          "source": "vector_region",
+          "bbox": [
+            52.4,
+            98.5,
+            290.4,
+            521.2
+          ],
+          "path": "images/page3_fig1.png",
+          "width": 715,
+          "height": 1269
+        },
+        {
+          "image_id": "p3_fig2",
+          "source": "vector_region",
+          "bbox": [
+            316.5,
+            98.5,
+            554.5,
+            480.6
+          ],
+          "path": "images/page3_fig2.png",
+          "width": 715,
+          "height": 1147
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            59.5,
+            291.5,
+            181.7
+          ],
+          "text": "enriched heteroatomic structured secondary sulfonamides 35\u2212\n37 with moderate to good yield.\nThe coupling reactions are not limited to aromatic or\nheteroaromatic substrates; they also proceeded effectively with\nsterically hindered aliphatic primary sulfonamides and challeng-\ning alkyl chlorides and bromides, as well as styryl bromide, to\nproduce coupling products 38\u221246 in high yields (Scheme 2).\nThese results highlight the wide applicability and robust nature\nof this methodology."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            184.3,
+            291.5,
+            250.9
+          ],
+          "text": "Finally, to demonstrate the practicability of this novel\ncopper\u2212iron-catalyzed method and its potential application\nfor the synthesis of commercially available drugs and drug-like\nmolecules, we prepared a range of pharmaceutically established\nsecondary sulfonamide drugs5a\u2212c,9b,h,10a,16 (Scheme 3)."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            253.4,
+            291.5,
+            475.5
+          ],
+          "text": "In this study, it was observed that 4-amino benzenesulfona-\nmide underwent a highly selective C\u2212N cross-coupling reaction,\nleaving the primary amine group intact. This selectivity toward\nC\u2212N coupling in the presence of multiple nucleophilic NH2\ngroups enabled the efficient synthesis of antibiotic, antimicro-\nbial, and antimalarial drug molecules 47\u221256 with good yields.\nAryl chlorides and bromides, bearing trifluoromethyl and other\nsensitive functional groups including nitro, acyl, ester, and vinyl,\nare well tolerated, resulting in biologically and medicinally\ndemanding secondary sulfonamides (57\u221265) with yields of up\nto 89%. Furthermore, our optimal cross-coupling strategy was\neffectively employed in the synthesis of Dabrafenib (66), an\nanticancer drug, achieving an 81% yield, and Dofetilide (67), an\nantiarrhythmic drug, which was obtained in 89% yield. These\nresults highlight the practical utility of our methodology in\npharmaceutical synthesis."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            478.1,
+            291.5,
+            544.6
+          ],
+          "text": "To showcase the practical utility of the cross-coupling\nreaction, a synthesis on a gram scale was conducted under the\noptimized reaction conditions, affording the desired secondary\nsulfonamide product 13 in a comparable yield within the same\ntime period relative to the lower millimolar reaction scale.14b"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            547.2,
+            291.5,
+            755.1
+          ],
+          "text": "To assess the practical applicability of the protocol, we carried\nout several synthetic transformations using our synthesized\ncross-coupled products 1,14c 14, 31, and 54. The products 14\nand 54 (antimicrobial drug) underwent further cross-coupling\nwith benzenesulfonamides under the optimized reaction\nconditions, affording the extended cross-coupled products 68\nand 69 in 62% and 58% yield, respectively (eqs 1 and 2).\nMoreover, we employed product 31 in C\u2212H functionalization\nreactions where the quinoline moiety acts as a directing group.\nUnder cobalt catalysis, compound 31 underwent efficient\nC(sp2)\u2212H iodination, while palladium catalysis facilitated\nC(sp2)\u2212H selenylation, yielding products 70 and 71,\nrespectively, in 71% and 42% yields (eq 3). The catalyst was\nsuccessfully reused for up to five consecutive cycles without\nsignificant loss of catalytic activity.14d"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            315.4,
+            283.1,
+            555.5,
+            414.2
+          ],
+          "text": "To investigate the mechanism of the cross-coupling reaction,\npreliminary mechanistic studies were conducted. As an initial\napproach, a radical clock experiment was performed under\nstandard reaction conditions employing 1-(allyloxy)-2-chlor-\nobenzene as a radical probe (eq 4). This experiment yielded the\ndirect cross-coupling product 72 without generating a ring-\nclosed cross-coupling product, indicating that radical inter-\nmediates are not generated in the reaction. Subsequently, the\nreaction was conducted in the presence of a few radical\nscavengers, and a noteworthy amount of product 1, was still\nisolated, further supporting the conclusion that the reaction\nproceeds through a nonradical pathway.14e"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            415.2,
+            555.5,
+            513.2
+          ],
+          "text": "A series of experiments were carried out to identify the\noxidation state of the active catalytic species participating in the\nmechanistic cycle and to explore the reaction mechanism. X-ray\nphotoelectron spectroscopy (XPS) was utilized to perform the\nhigh-resolution Fe 2p spectrum of the sample.14f This\nexperiment confirms the presence of Fe(II) and Fe(III)\noxidation states in the reaction mixture.13a,17 Furthermore, the\nexperiment also suggests that Cu is present in the +1 oxidation\nstate within the active catalytic species.14g,13a,18"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            315.4,
+            514.2,
+            555.5,
+            535.2
+          ],
+          "text": "UV spectroscopy was analyzed which supports the presence of\nFe(II), Fe(III), and Cu(I) species in the reaction mixture.14h"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            315.4,
+            536.2,
+            555.5,
+            557.2
+          ],
+          "text": "Powder X-ray diffraction (PXRD) analysis of the residual\npowder, collected after extracting the organic compounds,14i"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            558.2,
+            555.5,
+            579.2
+          ],
+          "text": "indicated the existence of both Fe(II) and Fe(III) species, along\nwith Cu(I).13a,19"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            315.4,
+            580.2,
+            555.5,
+            711.2
+          ],
+          "text": "Based on mechanistic studies and prior literature re-\nports,10d\u2212f,20 a plausible mechanistic pathway is proposed in\nScheme S2. The proposed reaction mechanism proceeds\nthrough three elementary steps: (i) The aryl halide undergoes\noxidative addition to the catalytically active copper(I) species A,\ngenerating intermediate B.10d\u2212f,20 The sulfonamide substrate or\nacetylacetonate (acac) might coordinate with the active catalytic\nspecies, potentially assisting in the oxidative addition process.\n(ii) transmetalation of intermediate B with an iron-amide\nspecies to yield intermediate C;21 and (iii) reductive elimination\nfrom intermediate C to produce the cross-coupling product and\nto regenerate the involved active copper(I) species A."
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            315.4,
+            711.5,
+            555.5,
+            755.2
+          ],
+          "text": "In summary, we report the first efficient copper\u2212iron-\ncatalyzed cross-coupling reaction of sterically hindered\n(hetero)aryl chlorides and bromides with ortho-substituted\nprimary sulfonamides under solvent-minimized conditions and"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            299.5,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238\n35"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p4_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            406.4,
+            144.6,
+            433.1,
+            153.7
+          ],
+          "path": "images/page4_raster0.png",
+          "width": 100,
+          "height": 100
+        },
+        {
+          "image_id": "p4_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page4_fig0.png",
+          "width": 1513,
+          "height": 37
+        },
+        {
+          "image_id": "p4_fig1",
+          "source": "vector_region",
+          "bbox": [
+            316.8,
+            63.7,
+            554.0,
+            272.8
+          ],
+          "path": "images/page4_fig1.png",
+          "width": 713,
+          "height": 629
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            60.2,
+            291.5,
+            367.9
+          ],
+          "text": "in the absence of any externally added ligand. This method was\nsuccessfully extended to a broad range of aryl, heteroaryl, and\nalkyl chlorides and bromides, as well as various primary\nheteroaryl-, aryl-, and aliphatic sulfonamides. It demonstrates a\nwide scope of substrates with 104 examples and shows excellent\ncompatibility with various sensitive functional groups, including\n\u2212COCH3, \u2212CO2Me, \u2212CO2Et, \u2212CN, \u2212NO2, \u2212NH2, \u2212Br, \u2212Cl,\n\u2212F, \u2212CF3, \u2212OCF3, \u2212OCH3, \u2212CH2Ph, vinyl, and heterocycles.\nNotably, this approach allows for selective C\u2212N cross-coupling\nreaction despite the presence of multiple nucleophilic NH2\ngroups, preserving the primary amine functionality. Addition-\nally, the method has been effectively utilized in the synthesis of\n10 commercially available sulfonamide-based drugs and 11\npharmaceutically important scaffolds, highlighting its signifi-\ncance in medicinal chemistry. Several synthetic transformations,\nsuch as further cross-coupling and C\u2212H functionalization, were\nperformed using our synthesized cross-coupled products. The\nprotocol is also applied to gram-scale synthesis, demonstrating\nits practicality for larger-scale applications. Moreover, this\nprotocol avoids the need for conventional workup procedures,\nenhancing overall efficiency and simplicity. Importantly, the\ncatalyst employed is environmentally benign, cost-effective, and\ndemonstrates reusability for at least four reaction cycles. The\nreaction mechanism for the cross-coupling was also investigated.\n\u25a0ASSOCIATED CONTENT"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            362.7,
+            165.4,
+            372.2
+          ],
+          "text": "Data Availability Statement"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            378.7,
+            291.5,
+            414.0
+          ],
+          "text": "The data underlying this study are available in the published\narticle and its Supporting Information.\n*\ns\u0131 Supporting Information"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            420.5,
+            291.4,
+            441.9
+          ],
+          "text": "The Supporting Information is available free of charge at\nhttps://pubs.acs.org/doi/10.1021/acs.orglett.5c04324."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            449.9,
+            291.5,
+            525.0
+          ],
+          "text": "Experimental details, procedures, compound character-\nization data, and NMR spectra for all the synthesized\ncompounds (PDF)\n\u25a0AUTHOR INFORMATION"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            519.7,
+            144.7,
+            529.2
+          ],
+          "text": "Corresponding Author"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            61.5,
+            534.9,
+            291.5,
+            545.6
+          ],
+          "text": "Laksmikanta Adak \u2212Department of Chemistry, Indian Institute"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            69.4,
+            546.6,
+            288.4,
+            578.6
+          ],
+          "text": "of Engineering Science and Technology, Howrah 711103,\nIndia;\norcid.org/0000-0002-8544-7615; Email: ladak@\nchem.iiests.ac.in"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            51.5,
+            587.9,
+            84.4,
+            597.4
+          ],
+          "text": "Authors"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            61.5,
+            603.1,
+            273.0,
+            613.8
+          ],
+          "text": "Keya Roy \u2212Department of Chemistry, Indian Institute of"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            71.4,
+            614.8,
+            289.5,
+            624.8
+          ],
+          "text": "Engineering Science and Technology, Howrah 711103, India;"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            61.5,
+            625.8,
+            276.0,
+            646.8
+          ],
+          "text": "orcid.org/0000-0003-4984-1882\nAnay Saha \u2212Department of Chemistry, Indian Institute of"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            71.4,
+            647.8,
+            289.5,
+            657.8
+          ],
+          "text": "Engineering Science and Technology, Howrah 711103, India;"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            61.5,
+            658.8,
+            291.4,
+            679.8
+          ],
+          "text": "orcid.org/0009-0004-2423-1951\nSampa Mondal \u2212Department of Chemistry, Indian Institute of"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            51.5,
+            680.8,
+            291.1,
+            716.8
+          ],
+          "text": "Engineering Science and Technology, Howrah 711103, India\nComplete contact information is available at:\nhttps://pubs.acs.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            51.5,
+            729.1,
+            75.5,
+            738.6
+          ],
+          "text": "Notes"
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            51.5,
+            745.2,
+            250.8,
+            755.2
+          ],
+          "text": "The authors declare no competing financial interest."
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            315.4,
+            49.7,
+            431.5,
+            81.7
+          ],
+          "text": "\u25a0ACKNOWLEDGMENTS"
+        },
+        {
+          "block_id": 18,
+          "bbox": [
+            315.4,
+            76.2,
+            555.5,
+            210.5
+          ],
+          "text": "L.A. gratefully acknowledges Anusandhan National Research\nFoundation (ANRF, erstwhile SERB, DST, Government of\nIndia) (SRG/2020/001350), ANRF/PAIR/2025/000021/\nPAIR, and DSTBT-WB [1854 (Sanc.)/ST/P/S&T/15G-7/\n2019]. K.R. is grateful to the DST, Government of India, New\nDelhi, for the Senior Research Fellowship. A.S. and S.M. thank\nIIEST, Shibpur, for fellowships. DST-sponsored SAIF, IIESTS,\nis acknowledged for providing NMR and HRMS facilities. DST\nFIST, Department of Chemistry, IIESTS is acknowledged.\n\u25a0REFERENCES"
+        },
+        {
+          "block_id": 19,
+          "bbox": [
+            315.4,
+            204.6,
+            555.5,
+            333.9
+          ],
+          "text": "(1) (a) Drews, J. Drug Discovery: A Historical Perspective. Science\n2000, 287, 1960\u22121964. (b) Apayd\u0131n, S.; T\u00f6r\u00f6k, M. Sulfonamide\nderivatives as multi-target agents for complex diseases. Bioorg. Med.\nChem. Lett. 2019, 29, 2042\u22122050. (c) Feng, M.; Tang, B.; Liang, S.-H.;\nJiang, X. Sulfur Containing Scaffolds in Drugs: Synthesis and\nApplication in Medicinal Chemistry. Curr. Top. Med. Chem. 2016, 16,\n1200\u22121216. (d) Scozzafava, A.; Owa, T.; Mastrolorenzo, A.; Supuran,\nC. T. Anticancer and antiviral sulfonamides. Curr. Med. Chem. 2003, 10,\n925\u2212953. (e) Scott, K. A.; Njardarson, J. T. Analysis of US FDA-\nApproved Drugs Containing Sulfur Atoms. Top. Curr. Chem. 2019, 376,\n1\u221234. (f) Reitz, A. B.; Smith, G. R.; Parker, M. H. The role of sulfamide\nderivatives in medicinal chemistry: a patent review. Expert Opin. Ther.\nPat. 2009, 19, 1449\u22121453."
+        },
+        {
+          "block_id": 20,
+          "bbox": [
+            315.4,
+            334.9,
+            555.5,
+            514.3
+          ],
+          "text": "(2) (a) Zhang, X.-J.; Liu, S.-P.; Li, X.-M.; Yan, M.; Chan, A. S. C.\nHighly enantioselective conjugate addition of aldehydes to nitroolefins\ncatalyzed by chiral bifunctional sulfamides. Chem. Commun. 2009, 7,\n833\u2212835. (b) Yang, H.; Carter, R. Proline Sulfonamide Based\nOrganocatalysis: Better Late than Never. Synlett 2010, 2010, 2827\u2212\n2838.\n(3) (a) Kurosu, M.; Lin, M.-H.; Kishi, Y. Fe/Cr- and Co/Cr-Mediated\nCatalytic Asymmetric 2-Haloallylations of Aldehydes. J. Am. Chem. Soc.\n2004, 126, 12248\u221212249. (b) Guo, H.; Dong, C.-G.; Kim, D.-S.;\nUrabe, D.; Wang, J.; Kim, J. T.; Liu, X.; Sasaki, T.; Kishi, Y. Toolbox\nApproach to the Search for Effective Ligands for Catalytic Asymmetric\nCr-Mediated Coupling Reactions. J. Am. Chem. Soc. 2009, 131, 15387\u2212\n15393. (c) Ahn, K. H.; Yoo, D. J.; Kim, J. S. Asymmetric aldol reactions\nemploying a cyclic sulfamide chiral auxiliary. Tetrahedron Lett. 1992, 33,\n6661\u22126664. (d) Lu, S.; Ng, S. V. H.; Lovato, K.; Ong, J.-Y.; Poh, S. B.;\nNg, X. Q.; Ku\u0308rti, L.; Zhao, Y. Practical access to axially chiral\nsulfonamides and biaryl amino phenols via organocatalytic atropose-\nlective N-alkylation. Nat. Commun. 2019, 10, No. 3061."
+        },
+        {
+          "block_id": 21,
+          "bbox": [
+            315.4,
+            515.3,
+            555.5,
+            754.9
+          ],
+          "text": "(4) (a) Jesin, C. P. I.; Ravindra, S.; Nandi, G. C. Sulfonimidamide as a\ndirecting agent for Pd-catalyzed regioselective oxidative C\u2212H\nacyloxylation of arenes. Tetrahedron 2019, 75, No. 130622. (b) Mondal,\nS.; Malakar, S. Synthesis of sulfonamide and their synthetic and\ntherapeutic applications: Recent advances. Tetrahedron 2020, 76,\nNo. 131662. (c) Dong, Y.; Zhang, X.; Chen, J.; Zou, W.; Lin, S.; Xu, H.\nSwitching the site-selectivity of C\u2212H activation in aryl sulfonamides\ncontaining strongly coordinating N-heterocycles. Chem. Sci. 2019, 10,\n8744\u22128751.\n(5) (a) Kang, J. G.; Hur, J. H.; Choi, S. J.; Choi, G. J.; Cho, K. Y.; Ten,\nL. N.; Park, K. H.; Kang, K. Y. Antifungal Activities of N-\nArylbenzenesulfonamides against Phytopathogens and Control Effi-\ncacy on Wheat Leaf Rust and Cabbage Club Root Diseases. Biosci.\nBiotechnol. Biochem. 2002, 66, 2677\u22122682. (b) Izuchi, A. S.;\nOnoabedje, E. A.; Ekoh, O. C.; Okafor, S.; Okoro, U. C. Synthesis of\nMedicinally Relevant Phenyl Sulphonylamino Alkanamides and N-aryl\np-toluenesulphonamides. J. Med. Chem. Sci. 2019, 2, 151\u2212161.\n(c) Zhao, C.; Rakesh, K. P.; Ravidar, L.; Fang, W.-Y.; Qin, H.-L.\nPharmaceutical and medicinal significance of sulfur (SVI)-Containing\nmotifs for drug discovery: A critical review. Eur. J. Med. Chem. 2019,\n162, 679\u2212734. (d) Tac\u030cic\u0301, A.; Nikolic\u0301, V.; Nikolic\u0301, L.; Savic\u0301, I. M.\nAntimicrobial Sulfonamide Drugs. Adv. Technol. 2017, 6, 58\u221271.\n(e) Malkova, K.; Bubyrev, A.; Kalinin, S.; Dar\u2019in, D. Facile Access to 3-\nSulfonylquinolines via Knoevenagel Condensation/Aza-Wittig Reac-"
+        },
+        {
+          "block_id": 22,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 23,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 24,
+          "bbox": [
+            299.5,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238\n36"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p5_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page5_fig0.png",
+          "width": 1513,
+          "height": 37
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            59.2,
+            291.5,
+            99.2
+          ],
+          "text": "tion Cascade Involving Ortho-Azidobenzaldehydes and \u03b2-Ketosulfo-\nnamides and Sulfones. Beilstein J. Org. Chem. 2023, 19, 800\u2212807.\n(f) See Figure S1 for examples of some therapeutic agents and drug\nmolecules that contain N-aryl sulfonamide groups."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            100.1,
+            291.5,
+            189.9
+          ],
+          "text": "(6) (a) Cremlyn, R. J. An Introduction to Organosulfur Chemistry;\nWiley: Chichester, U.K., 1996; p 264. (b) Fleming, I. In Comprehensive\nOrganic Chemistry; Barton, D. H. R., Ollis, W. D., Jones, D. N., Eds.;\nPergamon Press: Oxford, U.K., 1979; Vol. 3, pp 554\u2212561. (c) DeBergh,\nJ. R.; Niljianskul, N.; Buchwald, S. L. Synthesis of Aryl Sulfonamides via\nPalladium-Catalyzed Chlorosulfonylation of Arylboronic Acids. J. Am.\nChem. Soc. 2013, 135, 10638\u221210641. (d) Caddick, S.; Wilden, J. D.;\nJudd, D. B. Direct Synthesis of Sulfonamides and Activated Sulfonate\nEsters from Sulfonic Acids. J. Am. Chem. Soc. 2004, 126, 1024\u22121025."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            190.9,
+            291.5,
+            310.9
+          ],
+          "text": "(7) (a) Rosen, B. R.; Ruble, J. C.; Beauchamp, T. J.; Navarro, A. Mild\nPd-Catalyzed N-Arylation of Methanesulfonamide and Related\nNucleophiles: Avoiding Potentially Genotoxic Reagents and By-\nproducts. Org. Lett. 2011, 13, 2564\u22122567. (b) Pierson, D. A.; Olsen,\nB. A.; Robbins, D. K.; DeVries, K. M.; Varie, D. L. Approaches to\nAssessment, Testing Decisions, and Analytical Determination of\nGenotoxic Impurities in Drug Substances. Org. Process Res. Dev.\n2009, 13, 285\u2212291. (c) Snodin, D. J. Genotoxic Impurities: From\nStructural Alerts to Qualification. Org. Process Res. Dev. 2010, 14, 960\u2212\n976. (d) Skipper, P. L.; Kim, M. Y.; Sun, H.-L. P.; Wogan, G. N.;\nTannenbaum, S. R. Monocyclic Aromatic Amines as Potential Human\nCarcinogens: Old Is New Again. Carcinogenesis 2010, 31, 50\u221258."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            311.9,
+            291.5,
+            674.2
+          ],
+          "text": "(8) (a) Laffoon, J. D.; Chan, V. S.; Fickes, M. G.; Kotecki, B.; Ickes, A.\nR.; Henle, J.; Napolitano, J. G.; Franczyk, T. S.; Dunn, T. B.; Barnes, D.\nM.; Haight, A. R.; Henry, R. F.; Shekhar, S. Pd-Catalyzed Cross-\nCoupling Reactions Promoted by Biaryl Phosphorinane Ligands. ACS\nCatal. 2019, 9, 11691\u221211708. (b) Burton, G.; Cao, P.; Li, G.; Rivero, R.\nPalladium-Catalyzed Intermolecular Coupling of Aryl Chlorides and\nSulfonamides under Microwave Irradiation. Org. Lett. 2003, 5, 4373\u2212\n4376. (c) Orooji, Y.; Pakzad, K.; Nasrollahzadeh, M.; Tajbakhsh, M.\nNovel Magnetic Lignosulfonate-Supported Pd Complex as an Efficient\nNanocatalyst for N-Arylation of 4-Methylbenzenesulfonamide. Int. J.\nBiol. Macromol. 2021, 182, 564\u2212573. (d) Crawford, S. M.; Lavery, C.\nB.; Stradiotto, M. BippyPhos: A Single Ligand with Unprecedented\nScope in the Buchwald\u2212Hartwig Amination of (Hetero)aryl Chlorides.\nChem.\u0001Eur. J. 2013, 19, 16760\u221216771. (e) Falk, F. C.; Fr\u00f6hlich, R.;\nParadies, J. Coupling of Ortho-Substituted Aryl Chlorides with Bulky\nAmides. Chem. Commun. 2011, 47, 11095\u221211097. (f) Ikawa, T.;\nBarder, T. E.; Biscoe, M. R.; Buchwald, S. L. Pd-Catalyzed Amidations\nof Aryl Chlorides Using Monodentate Biaryl Phosphine Ligands: A\nKinetic, Computational, and Synthetic Investigation. J. Am. Chem. Soc.\n2007, 129, 13001\u221213007. (g) Yin, J.; Buchwald, S. L. Palladium-\nCatalyzed Intermolecular Coupling of Aryl Halides and Amides. Org.\nLett. 2000, 2, 1101\u22121104. (h) Anjanappa, P.; Mullick, D.; Selvakumar,\nK.; Sivakumar, M. 2-(Trimethylsilyl)ethanesulfonyl Amide as a New\nAmmonia Equivalent for Palladium-Catalyzed Amination of Aryl\nHalides. Tetrahedron Lett. 2008, 49, 4585\u22124587. (i) Khalaj, M.;\nGhazanfarpour-Darjani, M.; Bavil Olyai, M. R. T.; Shamami, S. F.\nPalladium Nanoparticles as Reusable Catalyst for the Synthesis of N-\nAryl Sulfonamides under Mild Reaction Conditions. J. Sulfur Chem.\n2016, 37, 211\u2212221. (j) Steinhuebel, D.; Palucki, M.; Askin, D.; Dolling,\nU. Synthesis of N-Arylated Sultams: Palladium- and Copper-Catalyzed\nCross Coupling of Aryl Halides with 1,4-Butane and 1,3-Propane-\nsultams. Tetrahedron Lett. 2004, 45, 3305\u22123307. (k) Becica, J.;\nHruszkewycz, D. P.; Steves, J. E.; Elward, J. M.; Leitch, D. C.;\nDobereiner, G. E. High-Throughput Discovery and Evaluation of a\nGeneral Catalytic Method for N-Arylation of Weakly Nucleophilic\nSulfonamides. Org. Lett. 2019, 21, 8981\u22128986."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            675.2,
+            291.5,
+            754.9
+          ],
+          "text": "(9) (a) McGuire, R. T.; Simon, C. M.; Yadav, A. A.; Ferguson, M. J.;\nStradiotto, M. Nickel-Catalyzed Cross-Coupling of Sulfonamides with\n(Hetero)aryl Chlorides. Angew. Chem., Int. Ed. 2020, 59, 8952\u22128956.\n(b) Kim, T.; McCarver, S. J.; Lee, C.; MacMillan, D. W. C.\nSulfonamidation of Aryl and Heteroaryl Halides through Photo-\nsensitized Nickel Catalysis. Angew. Chem., Int. Ed. 2018, 57, 3488\u2212\n3492. (c) Du\u0308ker, J.; Philipp, M.; Lentner, T.; Cadge, J. A.; Lavarda, J. E.\nA.; Gschwind, R. M.; Sigman, M. S.; Ghosh, I.; K\u00f6nig, B. Cross-"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            315.4,
+            59.8,
+            555.5,
+            442.3
+          ],
+          "text": "Coupling Reactions with Nickel, Visible Light, and tert-Butylamine as a\nBifunctional Additive. ACS Catal. 2025, 15, 817\u2212827. (d) Song, G.;\nSong, J.; Dong, J.; Li, G.; Fan, J.; Xue, D. Ni-Catalyzed Photochemical\nSulfamidation of Aryl Chlorides with Soluble Organic Amine as Base.\nOrganometallics 2024, 43, 1706\u22121712. (e) Zhu, C.; Kale, A. P.; Yue, H.;\nRueping, M. Redox-Neutral Cross-Coupling Amination with Weak N-\nNucleophiles: Arylation of Anilines, Sulfonamides, Sulfoximines,\nCarbamates, and Imines via Nickelaelectrocatalysis. JACS Au 2021, 1,\n1057\u22121065. (f) Fu, W.; Yang, Y. Undirected Biocatalytic Amination of\nUnactivated C(sp3)-H Bonds. Chem. Catal 2022, 2, 3287\u22123289. (g) Li,\nZ.; Song, Y.; Shao, T.; Huang, S.; Sun, L.; Hou, J. Integrated Nickel/\nPolymer Dual Catalytic System for Visible-Light-Driven Sulfonamida-\ntion between Aryl Halides and Aryl Sulfonamides. Chem. Catal. 2022, 2,\n3546\u22123558. (h) Ghosh, I.; Shlapakov, N.; Karl, T. A.; Du\u0308ker, J.; Nikitin,\nM.; Burykina, J. V.; Ananikov, V. P.; K\u00f6nig, B. General Cross-Coupling\nReactions with Adaptive Dynamic Homogeneous Catalysis. Nature\n2023, 619, 87\u221293.\n(10) (a) Li, Q.; Xu, L.; Ma, D. Cu-Catalyzed Coupling Reactions of\nSulfonamides with (Hetero)Aryl Chlorides/Bromides. Angew. Chem.,\nInt. Ed. 2022, 61, No. e202210483. (b) Baffoe, J.; Hoe, M. Y.; Tour\u00e9, B.\nB. Copper-Mediated N-Heteroarylation of Primary Sulfonamides:\nSynthesis of Mono-N-Heteroaryl Sulfonamides. Org. Lett. 2010, 12,\n1532\u22121535. (c) Wang, X.; Guram, A.; Ronk, M.; Milne, J. E.; Tedrow,\nJ. S.; Faul, M. M. Copper-Catalyzed N-Arylation of Sulfonamides with\nAryl Bromides under Mild Conditions. Tetrahedron Lett. 2012, 53, 7\u2212\n10. (d) Deng, W.; Liu, L.; Zhang, C.; Liu, M.; Guo, Q.-X. Copper-\nCatalyzed Cross-Coupling of Sulfonamides with Aryl Iodides and\nBromides Facilitated by Amino Acid Ligands. Tetrahedron Lett. 2005,\n46, 7295\u22127298. (e) Teo, Y.-C.; Yong, F.-F.; Ithnin, I. K.; Yio, S.-H. T.;\nLin, Z. Efficient Manganese/Copper Bimetallic Catalyst for N-\nArylation of Amides and Sulfonamides under Mild Conditions in\nWater. Eur. J. Org. Chem. 2013, 2013, 515\u2212524. (f) Cristau, H.-J.;\nCellier, P. P.; Spindler, J.-F.; Taillefer, M. Highly Efficient and Mild\nCopper-Catalyzed N- and C-Arylations with Aryl Bromides and\nIodides. Chem.\u0001Eur. J. 2004, 10, 5607\u22125622. (g) Han, X. Cross\nCoupling of 3-Bromopyridine and Sulfonamides (R1NHSO2R2\u00b7R1 = H,\nMe, Alkyl; R2 = Alkyl and Aryl) Catalyzed by CuI/1,3-di(pyridin-2-\nyl)propane-1,3-dione. Tetrahedron Lett. 2010, 51, 360\u2212362."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            443.3,
+            555.5,
+            492.7
+          ],
+          "text": "(11) (a) Teo, Y.-C.; Yong, F.-F. Efficient Ligand-Free, Copper-\nCatalyzed N-Arylation of Sulfonamides. Synlett 2011, 2011, 837\u2212843.\n(b) He, H.; Wu, Y.-J. Copper-catalyzed N-arylation of sulfonamides\nwith aryl bromides and iodides using microwave heating. Tetrahedron\nLett. 2003, 44, 3385\u22123386."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            315.4,
+            493.6,
+            555.5,
+            543.0
+          ],
+          "text": "(12) (a) Kim, U. B.; Jung, D. J.; Jeon, H. J.; Rathwell, K.; Lee, S.-G.\nSynergistic dual transition metal catalysis. Chem. Rev. 2020, 120,\n13382\u221213433. (b) Rodr\u00edguez, N.; Goossen, L. J. Decarboxylative\ncoupling reactions: A modern strategy for C\u2212C bond formation. Chem.\nSoc. Rev. 2011, 40, 5030\u22125048."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            315.4,
+            544.0,
+            555.5,
+            633.8
+          ],
+          "text": "(13) (a) Roy, K.; Saha, A.; Saha, B.; Banerjee, S.; Mukhopadhyay, C.\nD.; Sahu, S. K.; Adak, L. Reusable iron\u2212copper catalyzed cross-\ncoupling of primary amides with aryl and alkyl halides: Access to N-\narylamides as potential antibacterial and anticancer agents. Chem.\u0001\nEur. J. 2025, 31, No. e202403649. (b) Saha, A.; Roy, K.; Mondal, S.;\nSaha, B.; Sumar, J.; Sahu, S. K.; Adak, L. Reusable cobalt\u2212copper\ncatalyzed cross-coupling of (hetero)aryl halides with primary amides\nunder air: Investigating a new Co0/CoII-based catalytic cycle. Org.\nBiomol. Chem. 2025, 23, 5343\u22125351."
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            634.8,
+            555.5,
+            754.8
+          ],
+          "text": "(14) (a) See Table S1 for the optimization study of reaction\nconditions. Experimental procedure: A mixture of benzenesulfonamide\n(78 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104\nmg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol %), and\nDMSO (100 \u03bcL per 0.5 mol reaction scale) was heated at 130 \u00b0C under\na nitrogen atmosphere for 15 h in an oil bath. The reaction mixture was\nthen allowed to cool and filtered through a short column using ethyl\nacetate. The filtrate was concentrated under reduced pressure, and the\nresulting crude product was purified by column chromatography over\nsilica gel (15% ethyl acetate in hexane) to afford the pure product as a\nwhite solid (107 mg, 92%). (b) See eq S1 for the gram-scale synthesis.\n(c) See eq S2 for the synthesis of tertiary sulfonamide 73 by further"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            299.5,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238\n37"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p6_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page6_fig0.png",
+          "width": 1513,
+          "height": 37
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            59.2,
+            291.5,
+            169.9
+          ],
+          "text": "reaction of the C\u2212N coupling product 1.\n(d) See Figure S2 and\nScheme S1 for details on the reusability and recovery procedure of the\ncopper\u2212iron catalyst. (e) See eq S3 for the yield of product 1 obtained\nunder the optimized conditions in the presence of 2,2,6,6-\ntetramethylpiperidine-1-oxyl, benzyl alcohol, and butylated hydrox-\nytoluene. (f) See Figure S3a for XPS study of the reaction mixture for\nthe presence of Fe(II) species. (g) See Figure S3b for the XPS study for\nthe presence of Cu(I) as an active catalytic species. (h) See Figure S4a\nfor UV spectra of the reaction mixture. (i) See Figure S4b for PXRD\nanalysis of Fe(II), Fe(III), and Cu(I) present in the residual powder left\nafter the extraction of organic compounds."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            170.8,
+            291.5,
+            210.1
+          ],
+          "text": "(15) Only a single report in the literature describes the coupling of\northo-substituted aryl chlorides with amides catalyzed by palladium in\ncombination with a costly and specialized bulky phosphine ligand (see\nref 8e)."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            211.1,
+            291.5,
+            512.9
+          ],
+          "text": "(16) (a) Kazancioglu, E. A.; Senturk, M. Synthesis of N-phenyl-\nsulfonamide derivatives and investigation of some esterase enzymes\ninhibiting properties. Bioorg. Chem. 2020, 104, No. 104279. (b) Zheng,\nX.; Oda, H.; Harada, S.; Sugimoto, Y.; Tai, A.; Sasaki, K.; Kakuta, H.\nEffect of the oral absorption of benzenesulfonanilide-type cyclo-\noxygenase-1 inhibitors on analgesic action and gastric ulcer formation. J.\nPharm. Sci. 2008, 97, 5446\u22125452. (c) Namba, K.; Zheng, X.;\nMotoshima, K.; Kobayashi, H.; Tai, A.; Takahashi, E.; Sasaki, K.;\nOkamoto, K.; Kakuta, H. Design and synthesis of benzenesulfonani-\nlides active against methicillin-resistant Staphylococcus aureus and\nvancomycin-resistant Enterococcus. Bioorg. Med. Chem. 2008, 16,\n6131\u22126144. (d) Lahtinen, M.; Kudva, J.; Hegde, P.; Bhat, K.;\nKolehmainen, E.; Nonappa, N.; Venkatesh, V.; Naral, D. Synthesis,\ncharacterization, thermal and antimicrobial studies of N-substituted\nsulfanilamide derivatives. J. Mol. Struct. 2014, 1060, 280\u2212290. (e) El-\nMekabaty, A.; Awad, H. M. Convenient synthesis of novel sulfonamide\nderivatives as promising anticancer agents. J. Heterocycl. Chem. 2020,\n57, 1123\u22121132. (f) Natarajan, A.; Guo, Y.; Harbinski, F.; Fan, Y.-H.;\nChen, H.; Luus, L.; Diercks, J.; Aktas, H.; Chorev, M.; Halperin, J. A.\nNovel arylsulfoanilide\u2212oxindole hybrid as an anticancer agent that\ninhibits translation initiation. J. Med. Chem. 2004, 47, 4979\u22124982.\n(g) Di Magno, L.; Di Pastena, F.; Puxeddu, M.; La Regina, G.; Coluccia,\nA.; Ciogli, A.; Manetto, S.; Maroder, M.; Canettieri, G.; Silvestri, R.;\nNalli, M. Sulfonamide inhibitors of \u03b2-catenin signaling as anticancer\nagents with different output on c-MYC. ChemMedChem 2020, 15,\n2264\u22122268.\n(17) Xie, W.; Shi, Y.; Wang, Y.; Zheng, Y.; Liu, H.; Hu, Q.; Wei, S.; Gu,\nH.; Guo, Z. Electrospun iron/cobalt alloy nanoparticles on carbon\nnanofibers towards exhaustive electrocatalytic degradation of tetracy-\ncline in wastewater. Chem. Eng. J. 2021, 405, No. 126585."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            513.9,
+            291.5,
+            543.1
+          ],
+          "text": "(18) Chen, X. Q.; Li, Z.; Dou, S. X. Ambient facile synthesis of gram-\nscale copper selenide nanostructures from commercial copper and\nselenium powder. ACS Appl. Mater. Interfaces 2015, 7, 13295\u221213302."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            544.1,
+            291.5,
+            573.3
+          ],
+          "text": "(19) Archana, K. M.; Yogalakshmi, D.; Rajagopal, R. Application of\ngreen synthesized nanocrystalline CuI in the removal of aqueous\nMn(VII) and Cr(VI) ions. SN Appl. Sci. 2019, 1, No. 522."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            574.3,
+            291.5,
+            694.3
+          ],
+          "text": "(20) (a) De, S.; Yin, J.; Ma, D. Copper-Catalyzed Coupling Reaction\nof (Hetero)Aryl Chlorides and Amides. Org. Lett. 2017, 19, 4864\u2212\n4867. (b) Swapna, K.; Murthy, S. N.; Nageswar, Y. V. D. Copper Iodide\nas a Recyclable Catalyst for Buchwald N-Arylation. Eur. J. Org. Chem.\n2010, 2010, 6678\u22126684. (c) Deng, W.; Wang, Y.-F.; Zou, Y.; Liu, L.;\nGuo, Q.-X. Amino acid-mediated Goldberg reactions between amides\nand aryl iodides. Tetrahedron Lett. 2004, 45, 2311\u22122315. (d) Klapars,\nA.; Huang, X.; Buchwald, S. L. Mechanistic Studies on the Copper-\nCatalyzed N-Arylation of Amides. J. Am. Chem. Soc. 2002, 124, 7421\u2212\n7428. (e) Zhang, S.-L.; Liu, L.; Fu, Y.; Guo, Q.-X. Theoretical Study on\nCopper(I)-Catalyzed Cross-Coupling between Aryl Halides and\nAmides. Organometallics 2007, 26, 4546\u22124554."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            51.5,
+            695.4,
+            291.5,
+            754.8
+          ],
+          "text": "(21) (a) Handa, S.; Jin, B.; Bora, P. P.; Wang, Y.; Zhang, X.; Gallou, F.;\nReilly, J.; Lipshutz, B. H. Sonogashira Couplings Catalyzed by Fe\nNanoparticles Containing ppm Levels of Reusable Pd, under Mild\nAqueous Micellar Conditions. ACS Catal. 2019, 9, 2423\u22122431.\n(b) Yang, J.; Shen, G.; Chen, D. Iron-Catalyzed Synthesis of 2-\nArylbenzo[b]furans.Synth.Commun.2013,43,837\u2212847.(c)Horikawa,"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            315.4,
+            59.8,
+            555.5,
+            128.9
+          ],
+          "text": "R.; Ishii, S.; Shinozaki, U.; Midorikawa, R.; Mori, T.; Kimura, M.\nPalladium-iron bimetallic-catalyzed cross-coupling reaction of alcohols\nand nitroarenes using a hydrogen-transfer redox system. Chem. Lett.\n2024, 53, No. upae094. (d) Rowsell, B. J. S.; O\u2019Brien, H. M.; Athavan,\nG.; Daley-Dee, P. R.; Krieger, J.; Richards, E.; Heaton, K.; Fairlamb, I. J.\nS.; Bedford, R. B. The iron-catalysed Suzuki coupling of aryl chlorides.\nNat. Catal. 2024, 7, 1186\u22121198."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c04324"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            299.5,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2026, 28, 32\u221238\n38"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "p7_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page7_fig0.png",
+          "width": 1513,
+          "height": 37
+        }
+      ]
+    }
+  ]
+}
