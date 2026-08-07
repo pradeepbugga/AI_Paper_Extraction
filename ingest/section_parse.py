@@ -6,6 +6,8 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
+from grobid_client import fetch_references
+
 CAPTION_RE = re.compile(r"^(Fig(?:ure)?|Scheme|Table|Chart)\.?\s*\d+\s*[\.\|:]", re.IGNORECASE)
 HYPHEN_WRAP_RE = re.compile(r"(?<=[a-z])-$")
 TERMINAL_PUNCT_RE = re.compile(r"[.?!:;]$")
@@ -352,6 +354,17 @@ def parse_captions(elements, images_by_page):
     return captions
 
 
+def pop_references_section(sections):
+    """Pull the prose 'References' section out of the tree by heading text
+    (stripped of ACS-style '■' markers), so it can be replaced with GROBID's
+    structured bibliography or, on failure, reinserted at the same spot."""
+    for i, s in enumerate(sections):
+        heading = (s.get("heading") or "").strip("■ ").strip()
+        if heading.lower() == "references":
+            return sections.pop(i), i
+    return None, None
+
+
 def parse_sections(pdf_path: Path, raw_extraction: dict, output_dir: Path):
     doc = fitz.open(pdf_path)
     pages = collect_raw_blocks(doc)
@@ -375,11 +388,21 @@ def parse_sections(pdf_path: Path, raw_extraction: dict, output_dir: Path):
     )
     figures = parse_captions(all_elements, images_by_page)
 
+    ref_node, ref_idx = pop_references_section(sections)
+    structured_refs = fetch_references(pdf_path)
+    if structured_refs is not None:
+        references = structured_refs
+    else:
+        references = []
+        if ref_node is not None:
+            sections.insert(ref_idx, ref_node)
+
     result = {
         "source_pdf": pdf_path.name,
         "front_matter": front_matter,
         "sections": sections,
         "figures": figures,
+        "references": references,
     }
 
     output_path = output_dir / "sections.json"
@@ -409,3 +432,4 @@ if __name__ == "__main__":
     print(f"Figures with captions: {len(result['figures'])}")
     for fig in result["figures"]:
         print(f"  - {fig['label']} (page {fig['page']}) -> {fig['image_id']}")
+    print(f"References: {len(result['references'])}")

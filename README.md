@@ -82,20 +82,20 @@ statistics instead of per-publisher constants:
   boundary (no terminal punctuation at the break) is stitched back onto the
   next block instead of appearing as two separate paragraphs.
 - **Figure captions**: `Fig./Figure/Scheme/Table/Chart N` (case-insensitive)
-  are matched back to the nearest figure image above them on the page.
+  are matched to the nearest figure image on the page — checking both above
+  and below the caption (publishers differ on which side it's on), and
+  restricted to images sharing the caption's column first, so a two-column
+  page doesn't grab a same-height figure from the other column.
+- **References**: parsed by [GROBID](https://github.com/kermitt2/grobid)
+  (`ingest/grobid_client.py`, `/api/processReferences`) into structured
+  entries (authors, journal, volume, pages, year, DOI) instead of a prose
+  paragraph blob — see below. Falls back to the prose "References" section
+  if GROBID isn't running.
 
 Validated against two papers from different publishers with different
 typography: Rowsell et al., *Nature Catalysis* 7, 1186-1198 (2024)
 (`suzuki_iron_2024`) and Roy et al., *Org. Lett.* 28, 32-38 (2026)
 (`copper_iron_2025`).
-
-An evaluation of [GROBID](https://github.com/kermitt2/grobid) as a
-replacement for this hand-rolled parsing found it excellent for
-bibliographic metadata (title/authors/abstract/references — its 83
-cleanly-structured reference entries on the ACS paper beat anything hand-rolled
-here) but inconsistent at section/figure segmentation across publishers, so
-it's not currently integrated; worth revisiting for the references/metadata
-piece specifically.
 
 ```
 python3 ingest/section_parse.py data/papers/suzuki_iron_2024
@@ -103,5 +103,24 @@ python3 ingest/section_parse.py data/papers/copper_iron_2025
 ```
 
 Outputs `sections.json`: front-matter paragraphs, a list of top-level
-sections (each with paragraphs and nested subsections), and a list of
-figures with captions linked to their `image_id`/`image_path` from Stage 1.
+sections (each with paragraphs and nested subsections), a list of figures
+with captions linked to their `image_id`/`image_path` from Stage 1, and a
+list of structured references.
+
+### References via GROBID
+
+An evaluation of GROBID as a full replacement for the hand-rolled section
+parsing above found it excellent for bibliographic metadata but inconsistent
+at section/figure segmentation across publishers (it missed nearly all
+structure on the ACS paper and found zero figures there), so it's used
+narrowly for just the one thing it's clearly better at: parsing the
+reference list. GROBID runs as a local Docker container:
+
+```
+docker run -d --name grobid -p 8070:8070 grobid/grobid:0.8.1
+```
+
+`fetch_references()` posts the PDF to GROBID's `processReferences` endpoint
+and parses the returned TEI XML `biblStruct` entries. If GROBID isn't
+reachable, `references` comes back empty and the prose "References" section
+stays in the section tree instead of being silently dropped.
