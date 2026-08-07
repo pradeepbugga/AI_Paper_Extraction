@@ -11,6 +11,7 @@ from grobid_client import fetch_references
 CAPTION_RE = re.compile(r"^(Fig(?:ure)?|Scheme|Table|Chart)\.?\s*\d+\s*[\.\|:]", re.IGNORECASE)
 HYPHEN_WRAP_RE = re.compile(r"(?<=[a-z])-$")
 TERMINAL_PUNCT_RE = re.compile(r"[.?!:;]$")
+SENTENCE_END_RE = re.compile(r"[.?!]$")
 TRAILING_PAGE_NUM_RE = re.compile(r"\s*\d{1,4}$")
 BOLD_FLAG = 1 << 4
 
@@ -189,11 +190,15 @@ def compute_heading_levels(pages, body_size, furniture_lines):
 
 
 def is_sentence_like(text):
-    """A short bold fragment that reads as a sentence (terminal punctuation,
-    not all-caps, more than a few words) is more likely emphasis inside a
-    paragraph than an actual heading."""
+    """A short bold fragment that reads as a sentence (ends in . ? ! , not
+    all-caps, more than a few words) is more likely emphasis inside a
+    paragraph than an actual heading. A trailing colon is deliberately
+    excluded -- unlike . ? ! it doesn't end a declarative sentence, it
+    introduces something, which is exactly what a heading/label does
+    ('Synthesis of ... (14):') -- so it should never count against a line
+    being a heading."""
     words = text.split()
-    return (TERMINAL_PUNCT_RE.search(text.strip()) is not None
+    return (SENTENCE_END_RE.search(text.strip()) is not None
             and not text.isupper()
             and len(words) > 3)
 

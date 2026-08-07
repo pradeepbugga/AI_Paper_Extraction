@@ -1,0 +1,1630 @@
+{
+  "source_pdf": "SI.pdf",
+  "front_matter": [],
+  "sections": [
+    {
+      "heading": "Supporting Information",
+      "page_start": 1,
+      "preamble": "",
+      "records": [],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "Copper-Iron Catalyzed Cross-Coupling of ortho-Substituted Sulfonamides with Sterically Hindered (Hetero)aryl Chlorides",
+      "page_start": 1,
+      "preamble": "",
+      "records": [],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "and Alkyl Halides: Synthesis of Sulfonamide Drugs",
+      "page_start": 1,
+      "preamble": "Keya Roy,a Anay Saha,a Sampa Mondal,a and Laksmikanta Adak a,*\naDepartment of Chemistry, Indian Institute of Engineering Science and Technology,\nShibpur, Botanic Garden, Howrah 711103, India\nE-mail: ladak@chem.iiests.ac.in / ladak.chem@faculty.iiests.ac.in",
+      "records": [],
+      "subsections": [
+        {
+          "heading": "Table of Contents",
+          "page_start": 1,
+          "preamble": "1. General experimental                                                                                           S2\n2. Representative examples of sulfonamide drugs and therapeutic compounds       S3\n3. Optimization of reaction conditions                                                                      S3 4. A comparison between the present method and previously reported approaches for the cross-coupling of sulfonamides with aryl chlorides                                  S5 5. Gram Scale synthesis                                                                                            S6 6. Experimental procedure for catalyst reusability                                                   S6\n7. Synthesis of tertiary sulfonamides by further reacting the C\u2013N coupling product S7\n8. Reaction with TEMPO, BnOH, and BHT                                                             S7\n9. XPS, UV, PXRD analysis                                                                                     S7\n10. Plausible mechanistic pathway                                                                             S9\n11. Failed experiments                                                                                                S10 12. Experimental procedures and characterization data of products                          S11\n13. 1H and 13C NMR Spectra                                                                                     S36\n1",
+          "records": [],
+          "subsections": [],
+          "figures": []
+        }
+      ],
+      "figures": []
+    },
+    {
+      "heading": "1. General experimental",
+      "page_start": 2,
+      "preamble": "All reactions were performed in a dry reaction vessel under a positive nitrogen atmosphere. Air- and moisture-sensitive compounds were transferred using syringes or spatulas under a nitrogen atmosphere. Analytical TLC was performed using TLC Silica gel 60 F254 plates (Merck,1.05554.0007), with visualization achieved by exposure to UV light at 254 nm, followed by treatment in an iodine chamber. The crude product was passed through a short column using ethyl acetate to extract the organic components, which were then concentrated under reduced pressure using a rotary evaporator (BUCHI Rotavapor R-100). Final purification was carried out by column chromatography on 60-120 mesh silica gel (Spectrochem) with an EtOAc/hexane mixture in the desired ratio.",
+      "records": [
+        {
+          "heading": "Instrumentation",
+          "page_start": 2,
+          "text": "NMR spectroscopy\nThe 1H NMR (400 MHz) and 13C NMR (100 MHz) spectra were recorded on a Bruker Avance-400 spectrometer. The proton chemical shift values are expressed in parts per million (ppm, \u03b4 scale) downfield from tetramethylsilane (TMS) and are referenced to TMS (\u03b4 0.0) and CHCl3 (\u03b4 7.26). The chemical shifts for carbon are presented in parts per million (ppm, \u03b4 scale) downfield from TMS and referenced to the carbon resonance of CDCl3 (\u03b4 77.16). The NMR data are reported as chemical shift, multiplicity (s = singlet, d = doublet, t = triplet, q = quartet, quint = quintet, sext = sextet, sept = septet, m = multiplet or multiple resonances, br = broad), coupling constant in hertz (Hz), and signal area integration in natural numbers.\nIR analysis The IR spectra were recorded using an Agilent Cary 630 FTIR spectrometer, and the characteristic absorption bands are reported in cm\u207b\u00b9.\nHRMS\nHigh-resolution mass spectra (HRMS) were obtained using fast atom bombardment (FAB) ionization on a Q-TOF mass spectrometer (serial no. YA 263).",
+          "figures": []
+        },
+        {
+          "heading": "Materials",
+          "page_start": 2,
+          "text": "All reactions were carried out in a dry, round-bottom glass flask connected to a nitrogen atmosphere on a magnetic stirrer in an oil bath. All the reactants, including benzenesulfonamides, bromobenzene, chlorobenzene, potassium carbonate, and DMSO, were purchased from Spectrochem Pvt. Ltd., Sisco Research Laboratory Pvt. Ltd., Merck Co., and other suppliers. All other chemicals were also purchased from the same sources. The used catalysts Fe(acac)3 (powder, \u2265 99.999%) and copper iodide (powder, 99.999%) were purchased from Sigma-Aldrich Co. The solvents used for column chromatography were purchased from RANKEM Co. and other commercial vendors and were purified prior to use when necessary.\n2",
+          "figures": []
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "2. Representative examples of drugs and therapeutic compounds bearing N-aryl",
+      "page_start": 3,
+      "preamble": "",
+      "records": [
+        {
+          "heading": "sulfonamide groups:",
+          "page_start": 3,
+          "text": "Figure S1. Examples of some therapeutic agents and drug molecules that contain N-aryl sulfonamide groups. Note: The references indicated within the figure S1 (5a, 5b, 5c, 5d, 5e and 10a) correspond to the references cited in the main manuscript.",
+          "figures": []
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "3. Optimization of reaction conditions:",
+      "page_start": 3,
+      "preamble": "In order to establish standardized reaction conditions, numerous experiments were conducted by varying parameters such as solvent, base, catalyst, and temperature, using the representative reaction between benzenesulfonamide and chlorobenzene. The experimental findings are summarized in Table 1. When various organic solvents were employed in combination with the Fe(acac)\u2083/CuI catalyst system and potassium carbonate as a base, at 130\u202f\u00b0C for 24 hours under argon atmosphere on an oil bath, the desired N-phenylbenzenesulfonamide product 1 was obtained from 30% to 79% yield (entries 1\u20133). However, the desired product was not formed when toluene was used as the solvent (entry 2). The reaction was additionally conducted in the absence of solvent (neat) conditions, affording product 1 in 76% yield (entry 4). This yield is comparable to that achieved with DMSO as the solvent (entry 1). In light of this observation, the reaction was conducted using a reduced volume of DMSO (100 \u00b5L for a 0.5 mmol scale), resulting in an improved yield of 84% (entry 5). Using this reaction condition, sodium carbonate as the base was also examined, but it failed to enhance the product\u2019s yield (entry 6). When base like KOH was employed, no desired product was obtained (entry 7). Variations of Fe(III) catalysts, including FeF\u2083 and FeCl\u2083, were investigated, but both failed to deliver satisfactory product formation (entries 8 and 9). The reaction carried out with Fe(acac)\u2082 afforded the desired product in 53% yield (entry 10), which is satisfactory but lower than the yield obtained using Fe(acac)\u2083 (entry 5). As part of the optimization, the reaction was carried out by sequentially omitting CuI, Fe(acac)\u2083, and then both catalysts. Under each of these conditions, only trace amounts or no desired product were observed (entries 11\u201313). This observation indicates that both catalysts play an essential role in the reaction system. During optimization (entries 14 and 15), we examined the effect of conducting the reaction under either an inert atmosphere or open air. The nitrogen atmosphere afforded higher yields compared to both argon and open air conditions. Lower reaction temperatures showed no enhancement in yield or conversion (entry 16). The catalyst loading was optimized to 5 mol% for each catalyst, 3 resulting in an 88% yield of the product (entry 17). Reducing the reaction time to 15 hours resulted in the highest yield of product 1, reaching 92% (entry 18). Decreasing the reaction time beyond 15 hours resulted in lower product yields (entry 19).",
+      "records": [
+        {
+          "heading": "Table S1. Optimization study for reaction conditionsa",
+          "page_start": 4,
+          "text": "Cl\ncatalyst\nbase, solvent NH2\n+\ntemp., time",
+          "figures": []
+        },
+        {
+          "heading": "1",
+          "page_start": 4,
+          "text": "Entry Catalyst Base Solvent Temperature (oC) Time (h) Yield (%)b\n1 Fe(acac)3/ CuI K2CO3 DMSO 24 79\n2 Fe(acac)3/ CuI K2CO3 Toluene 24 NR\n3 Fe(acac)3/ CuI K2CO3 24 DMF\n4 Fe(acac)3/ CuI K2CO3 24 76\n5c Fe(acac)3/ CuI K2CO3 24 84 DMSO\n6c Fe(acac)3/ CuI Na2CO3 24 64 DMSO\n7c Fe(acac)3/ CuI KOH 24 NR DMSO\n8c FeF3/ CuI K2CO3 24 12 DMSO\n9c FeCl3/ CuI K2CO3 24 8 DMSO\n10c Fe(acac)2/ CuI K2CO3 24 53 DMSO\n11c Fe(acac)3/ K2CO3 24 NR DMSO\n12c / CuI K2CO3 24 7 DMSO\n13c / K2CO3 24 NR DMSO\n14c,d Fe(acac)3/ CuI K2CO3 24 88 DMSO\n15c,e Fe(acac)3/ CuI K2CO3 24 NR DMSO\n16c,d Fe(acac)3/ CuI K2CO3 24 51 DMSO\n17c,d,f Fe(acac)3/ CuI K2CO3 24 88 DMSO",
+          "figures": []
+        },
+        {
+          "heading": "18c,d,f Fe(acac)3/ CuI K2CO3 15 92 DMSO",
+          "page_start": 4,
+          "text": "19c,d,f Fe(acac)3/ CuI K2CO3 8 75 DMSO\naReaction conditions: Benzenesulfonamide (0.5 mmol), Chlorobenzene (0.75 mmol), Fe-catalyst (10 mol%), CuI (10 mol%), base (0.75 mmol), solvent (1 ml) under argon atmosphere. bIsolated yields. cDMSO was used 100 \u00b5L for 0.5 mmol scale of reaction. dReaction was performed under N2 atm. eReaction was performed in open air. f\nFe(acac)3 (5 mol%) and CuI (5 mol%) were used.\n4 4. Table S2. A comparison between the present method and previously reported approaches for the cross-coupling of sulfonamides with aryl chlorides employing palladium, nickel, or copper catalysts.\northosubstituted both coupling\nSelective coupling with multiple\nSolvent (mL for 0.5 mmol scale of reaction ) Entry\nSterically hindarded aryl chloride\nConventional\northosubstituted sulfonamide\nSynthetic\nHeteroaryl\nchloride Base Ligand/ Additive\nSubstrate\nscope Mechanistic\nstudy Reusability\nHeteroaryl sulfonamide\nAlkyl sulfonamide\nDrugs synthesis\nGram-scale\nCatalyst\nworkup required\nAlkyl halide\nutility of product\nRef.\nof catalyst\nsynthesis\nnucleophilic NH\u2082\npartners\ngroups\n1 1 1 Steric\n2 Non-steric\n2 No No Cu2O (Cl) CuI (Br)\nN-(2,6-dimethylphenyl)-N\u2019-(pyridin2-ylmethyl)oxalamide (DMPPO) (Cl) 2-methylnaphthalen1-amine derived amide (Br)\nCs2CO3 (Br) tBuONa (Cl)\nYes (2) No No No yes 56 48\nNo No\n.\n8 7 5 1 Steric\n2 Non-steric\n1 No No (L)NiCl(o-tol) PhPAd-DalPhos No No No 36 Ni(COD)2/L\nNaOtBu No No\nNo\nNo\nNo\n.\n1 Steric\nNon-steric\nNo No bisphosphine/ Pd complex\nNo No No 1 33 Cs2CO3 No No bisphosphine\nNo\nNo\n1 Steric\nNon-steric\n2 No No No No No 5 32 K2CO3 No Yes BippyPhos BippyPhos /[Pd(cinna myl)Cl]2\nNo\n.\n12 8 4 3 Steric\n3 Non-steric\n8 No No No No No 72 43 TBAI Yes (2) Yes d-Mebpy NiCl2\u00b7glyme\nNo\nYes\n.\nSteric\nNon-steric\nNo No Yes No No 31 K2CO3 No Yes triethylenetetramine FLT-Pd complex\nNo\nNo\nNo\n.\nSteric\nNon-steric\nNo No No No No 1 34 K2CO3 No No biaryl monophosphine ligands/ 3 A molecular sieves\nPd2dba3\nNo\nNo\n.\nSteric\nNon-steric\nNo No Yes No No 27 37 TBAA No Yes Pd(OAc)2\nNo\nNo No No Yes Yes 32 44 No Yes NiCl2\u00b7dme dtbbpy Et3N\nNo\n.\nSteric\nNon-steric\nNo\ntert-butylamine tert-butylamine\n.\nSteric\nNon-steric\nNo No No No No 1 42 No Yes NiBr2\u00b7 glyme\nNo\nNo\n4CzIPN\nNo\n6 No No No No No 16 No No Pd(dba)3 hemilabile N, P Ligand Cs2CO3\n11. .\n13 2 Steric\nNon-steric\nNo\nNo\n12. .\n7 4 Steric\nNon-steric\n13 No No No No No 36 No Yes Pd(OAc)2 Xantphos Cs2CO3\nNo\nNo\n1 No No No No Yes 29 No Yes Pd(dba)3 biaryl phosphorinanes\n13. .\n1 Steric\n1 Non-steric\nCs2CO3\nNo\nNo\n3 No No No No Yes 19 25 Yes (1) Yes [Pd(allyl)Cl2] t-Buxphos K2CO3\n14. .\n1 Steric\nNon-steric\nNo",
+          "figures": []
+        },
+        {
+          "heading": "8 Yes Yes Yes 99 Our Work Yes (10) No Conventional",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "K2CO3 Yes Yes",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "15. .",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "18 13 35 7 Steric",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "9 Non-steric",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "4 Yes",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "21 Yes",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Work-up Fe(acac)3",
+          "page_start": 5,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "CuI",
+          "page_start": 5,
+          "text": "5",
+          "figures": [
+            "SI_p5_fig0"
+          ]
+        }
+      ],
+      "subsections": [],
+      "figures": [
+        "SI_p3_fig0"
+      ]
+    },
+    {
+      "heading": "5. Gram scale synthesis:",
+      "page_start": 6,
+      "preamble": "To showcase the practical utility of the cross-coupling reaction, a synthesis on a gram-scale was conducted employing 2-methylbenzenesulfonamide and methyl 2-chlorobenzoate as representative substrates under the optimized reaction conditions. The reaction progressed efficiently, affording the desired secondary sulfonamide product 13 in a comparable yield within the same time period relative to the lower millimolar reaction scale.\nCl\nNH2 +\n130 oC, 15 h\n2.56 g (15 mmol) 2.50 g, 82% yield\n1.71 g (10 mmol)",
+      "records": [],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "6. Experimental procedure for catalyst recovery:",
+      "page_start": 6,
+      "preamble": "Once the model reaction between benzenesulfonamide and chlorobenzene had finished, the mixture was cooled to room temperature. Subsequently, diethyl ether (10 mL) was introduced into the mixture and stirred for 10 minutes to aid in releasing the product from the catalyst. The catalyst was then allowed to settle, and the upper diethyl ether layer, containing the organic portion, was transferred into a separate round-bottom flask. This process was repeated at least three times to ensure complete extraction of the organic component, as confirmed by TLC analysis. Afterward, the reaction vessel containing the catalyst was thoroughly dried under high vacuum to obtain the powdered catalyst (Scheme S1), which was subsequently reused in successive reactions (Figure S2).",
+      "records": [
+        {
+          "heading": "Scheme S1. Photographic illustrations showing various stages of the experimental",
+          "page_start": 6,
+          "text": "procedure for catalyst recovery.",
+          "figures": []
+        },
+        {
+          "heading": "Reaction mixture",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Reaction mixture after",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Initial look of the",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "after 7 hr",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "complete reaction",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "reaction mixture",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Recovered catalyst",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Recovered catalyst",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "after 1st reaction",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "after 2nd reaction",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "cycle",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "cycle",
+          "page_start": 6,
+          "text": "6 (S1) COOCH3",
+          "figures": []
+        },
+        {
+          "heading": "13",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "After precipitation of",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "the catalyst",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "View of the recovered catalyst from the above",
+          "page_start": 6,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "of the reaction vessel",
+          "page_start": 6,
+          "text": "Figure S2. Reusability of the copper-iron catalyst.",
+          "figures": [
+            "SI_p6_raster0",
+            "SI_p6_raster1",
+            "SI_p6_raster2",
+            "SI_p6_raster3",
+            "SI_p6_raster4",
+            "SI_p6_raster5",
+            "SI_p6_raster6",
+            "SI_p6_raster7",
+            "SI_p6_fig0"
+          ]
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "7. Synthesis of tertiary sulfonamides by further reacting the C\u2013N coupling product:",
+      "page_start": 7,
+      "preamble": "The reaction was carried out using N-phenylbenzenesulfonamide (1) with either 1-chloro-4- methylbenzene or 1-bromo-4-methylbenzene as model substrates under the optimized conditions, providing the desired tertiary sulfonamide 73 in moderate yield.",
+      "records": [],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "8. Reaction with TEMPO, BnOH, and BHT:",
+      "page_start": 7,
+      "preamble": "The reaction was conducted in the presence of a few radical scavengers such as 2,2,6,6- tetramethylpiperidine-1-oxyl (TEMPO), benzyl alcohol (BnOH), and butylated hydroxytoluene (BHT), and a noteworthy amount of product, N-phenylbenzenesulfonamide (1) was still isolated, further supporting the conclusion that radical species are not involved in the reaction mechanism. These findings collectively indicate that the reaction proceeds through a non-radical pathway.",
+      "records": [],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "9. XPS, UV, PXRD analysis:",
+      "page_start": 7,
+      "preamble": "",
+      "records": [
+        {
+          "heading": "X-ray photoelectron spectroscopy (XPS) study",
+          "page_start": 7,
+          "text": "A series of experiments were carried out to identify the oxidation state of the active catalytic species participating in the mechanistic cycle and to explore the reaction mechanism. X-ray X",
+          "figures": []
+        },
+        {
+          "heading": "Fe(acac)3 (5 mol%)",
+          "page_start": 7,
+          "text": "(S2)\nCuI (5 mol%)\nK2CO3, DMSO (100 \uf06dL)\n+",
+          "figures": []
+        },
+        {
+          "heading": "1",
+          "page_start": 7,
+          "text": "130 oC, 15 h\nCH3",
+          "figures": []
+        },
+        {
+          "heading": "X = Cl, Br",
+          "page_start": 7,
+          "text": "CH3",
+          "figures": []
+        },
+        {
+          "heading": "73",
+          "page_start": 7,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "34% (X = Cl) 41% (X = Br)",
+          "page_start": 7,
+          "text": "NH2 +\n(S3)",
+          "figures": []
+        },
+        {
+          "heading": "1",
+          "page_start": 7,
+          "text": "130 oC, 15 h\n77% (TEMPO) 81% (BnOH) 71% (BHT))\n7 photoelectron spectroscopy (XPS) was utilized to perform the high-resolution Fe 2p spectrum of the sample. Figure S3a presents the high-resolution XPS spectra of the Fe 2p core level, depicting characteristic peaks at 709.7 eV and 723.2 eV, which correspond to the Fe 2p\u2083/\u2082 and 2p\u2081/\u2082 signals, respectively. These features confirm the presence of Fe (II) as an active catalytic species in the reaction mixture. In addition, the two peaks at 726.3 eV and 713.9 eV correspond to the Fe (III) oxidation state in the reaction mixture.\nFigure S3. XPS study of the reaction mixture\nFigure S3b presents the X-ray photoelectron spectroscopy (XPS) analysis of copper in the reaction mixture. This scan confirms the presence of copper. The analysis revealed peaks at binding energies corresponding to Cu 2p\u2083/\u2082 and Cu 2p\u2081/\u2082, observed at approximately 931.6 eV and 951.9 eV, respectively. These findings indicate that Cu exists in the +1oxidation state within the active catalytic species.",
+          "figures": [
+            "SI_p7_raster0",
+            "SI_p7_fig0",
+            "SI_p7_fig1",
+            "SI_p7_fig2"
+          ]
+        },
+        {
+          "heading": "UV spectroscopy and Powder X-ray diffraction (PXRD) study:",
+          "page_start": 8,
+          "text": "UV spectroscopy was analyzed from the reaction mixture between benzenesulfonamide and chlorobenzene in DMSO at standard conditions. Spectra of Fe(acac)\u2083, Fe(acac)\u2082, and CuI in DMSO were recorded to serve as references for comparison. The reaction mixture after 1 h and 15 h showed a peak resembling that of Fe(acac)2 at around 275 nm, which indicates the formation of iron (II) species in the reaction mixture (Figure S4a). Furthermore, the reaction mixture, both after 1 h and 15 h showed another peak similar to CuI at around 270 nm, which suggests the formation of Cu(I) species in the reaction mixture (Figure S4a). Additionally, after one hour of analysis, an additional peak at 305 nm appeared in the reaction mixture. This peak may arise from the formation of another iron intermediate generated during the catalytic cycle.\nPowder X-ray diffraction (PXRD) analysis of the residual powder, collected after extracting the organic compounds, indicated the existence of both Fe(II) and Fe(III) species, along with Cu(I) (Figure S4b). This solid preserved its catalytic efficiency through four consecutive cycles, showing no appreciable decrease in activity (Figure S2).\n8 Figure S4. (a) UV spectra of the reaction mixture. (b) PXRD analysis of Fe(II), Fe(III), and Cu(I) present in the residual powder left after the extraction of organic compounds",
+          "figures": [
+            "SI_p8_raster0"
+          ]
+        },
+        {
+          "heading": "Powder X-ray diffraction (PXRD) of CuI:",
+          "page_start": 9,
+          "text": "",
+          "figures": []
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "10. Plausible mechanistic pathway:",
+      "page_start": 9,
+      "preamble": "Based on mechanistic studies and prior literature reports, a plausible mechanistic pathway is proposed in Scheme S2. The proposed reaction mechanism proceeds through three elementary steps: (i) The aryl halide undergoes oxidative addition to the catalytically active copper(I) species A, generating intermediate B. The sulfonamide substrate or acetylacetonate (acac) might coordinate with the active catalytic species, potentially assisting in the oxidative addition process. (ii) transmetalation of intermediate B with an iron-amide species to yield intermediate C; and (iii) reductive elimination from intermediate C to produce the cross-coupling product and to regenerate the involved active copper(I) species A.\nFigure S5. X-ray diffraction (XRD) analysis of CuI.\n9 Scheme S2. Plausible mechanistic pathway.\nI Cu",
+      "records": [
+        {
+          "heading": "A",
+          "page_start": 10,
+          "text": "R\nAr\nIII Cu\nCu\nX",
+          "figures": []
+        },
+        {
+          "heading": "C",
+          "page_start": 10,
+          "text": "NH2\nReduction facilated by K2CO3\n+ BH X\n+\nB:\nR\nNH3",
+          "figures": []
+        }
+      ],
+      "subsections": [],
+      "figures": [
+        "SI_p9_raster0",
+        "SI_p9_raster1",
+        "SI_p9_raster2"
+      ]
+    },
+    {
+      "heading": "11. Failed experiments:",
+      "page_start": 10,
+      "preamble": "A few cross-coupling partners did not produce the desired products under the optimized reaction conditions (Scheme S3).",
+      "records": [
+        {
+          "heading": "Scheme S3. Copper-iron catalyzed cross-coupling of aryl sulfonamides with aryl chlorides and bromides.a",
+          "page_start": 10,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "Fe(acac)3 (5 mol%)",
+          "page_start": 10,
+          "text": "+\nR2\nCuI (5 mol%) R2 X\nNH2\nR1\nR1\nK2CO3, DMSO (100 \uf06dL)\n130 oC, 15 h",
+          "figures": []
+        },
+        {
+          "heading": "X = Cl, Br",
+          "page_start": 10,
+          "text": "HO\nSotalol Tolinase",
+          "figures": []
+        },
+        {
+          "heading": "0% (X = Br)",
+          "page_start": 10,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "0% (X = Cl)",
+          "page_start": 10,
+          "text": "",
+          "figures": []
+        },
+        {
+          "heading": "0% (X = Br)",
+          "page_start": 10,
+          "text": "a Reaction conditions: Aryl or alkyl sulfonamides (0.5 mmol); aryl or, alkyl halides (0.75 mmol); Fe(acac)3 (5 mol%); CuI (5 mol%); K2CO3 (0.75 mmol); DMSO (100 \u00b5L for 0.5 mmol scale of reaction) under N2 atmosphere. b Isolated yield.",
+          "figures": [
+            "SI_p10_fig0",
+            "SI_p10_fig1",
+            "SI_p10_fig2",
+            "SI_p10_fig3"
+          ]
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "12. Experimental procedures and characterization data of products",
+      "page_start": 11,
+      "preamble": "",
+      "records": [
+        {
+          "heading": "General Procedure A: synthesis of N-arylsulfonamides and N-alkylsulfonamides: Representative Experimental Procedure for the synthesis of N- phenylbenzenesulfonamide (1):",
+          "page_start": 11,
+          "text": "A mixture of benzenesulfonamide (78 mg, 0.5 mmol), Chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction) was heated at 130 \u00b0C under a nitrogen atmosphere for 15 h (TLC) on an oil bath. Then, the reaction mixture was allowed to cool and filtered through a short column using ethyl acetate. Then the organic part was evaporated under reduced pressure to purify the crude product by column chromatography over silica gel (15% ethyl acetate in hexane) to provide the pure product as a white solid (107 mg, 92%).1\nWhite solid; mp 100-102 \u2103; IR (neat, cm\u20131) \u03bd 3257, 2919, 2850, 1599, 1446, 1329, 1153, 1085; 1H NMR (400 MHz, CDCl3) \u03b4 7.85 (d, J = 7.2 Hz, 2H), 7.76 (s, 1H), 7.50 (td, J = 7.2, 0.8 Hz, 1H), 7.40 (t, J = 8.0 Hz, 2H), 7.21 (t, J = 8.0 Hz, 2H), 7.16-7.06 (m, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 138.9, 136.6, 133.1, 129.3 (2C), 129.1 (2C), 127.3 (2C), 125.3, 121.6 (2C); HRMS (EI+) m/z [M]+ Calcd for C12H11NO2S: 233.0510, Found 233.0510. All analytical data are in good accordance with those reported in the literature.1",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(o-tolyl)benzenesulfonamide (2):",
+          "page_start": 11,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1-chloro-2- methylbenzene (95 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (76 mg, 61% yield) was obtained as a white solid. 1 White solid; mp 105-107 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.72 (d, J = 7.2 Hz, 2H), 7.55 (t, J = 7.2 Hz, 1H), 7.43 (t, J = 8.0 Hz, 2H), 7.30 (d, J = 7.6 Hz, 1H), 7.12-7.17 (m, 1H), 7.08 (d, J = 4.4 Hz, 2H), 6.41 (s, 1H), 1.97 (s. 3H); 13C NMR (100 MHz, CDCl3) \u03b4 139.7, 134.4, 133.1, 131.6, 130.9, 129.2 (2C), 127.2 (2C),  127.1, 126.6, 124.7, 17.6. All analytical data are in good accordance with those reported in the literature. 1\nCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-methoxyphenyl)benzenesulfonamide (3):",
+          "page_start": 11,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1-chloro-2- methyoxybenzene (107 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (90 mg, 68% yield) was obtained as a white solid.2 White solid; mp 112-114 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.75 (d, J = 7.2 Hz, 2H), 7.54- 7.47 (m, 2H), 7.34 (t, J = 7.2 Hz, 2H), 7.06 -7.01 (m, 2H), 6.89 (td, J = 8.0, 1.2 Hz, 1H), 6.71 (dd, J = 8.0, 0.8 Hz, 1H), 3.60 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 149.8, 139.3, 132.9, 128.8 (2C), 127.3 (2C), 125.8, 125.7, 121.6, 121.2, 110.7, 55.7. All analytical data are in good accordance with those reported in the literature.2\nOCH3\n11",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-methoxy-6-methylphenyl)benzenesulfonamide (4):",
+          "page_start": 12,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 2-chloro-1- methoxy-3-methylbenzene (118 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (47 mg, 32% yield) was obtained as a white solid. White solid; mp 182-184 \u00b0C; IR (neat, cm\u20131) \u03bd 3150, 2811, 1756, 1602, 1311, 1236, 1180, 1049; 1H NMR (400 MHz, CDCl3) \u03b4 7.84 (d, J = 7.6 Hz, 1H), 7.80 (d, J = 7.6 Hz, 1H),  7.60- 7.54 (m, 1H), 7.52-7.47 (m, 2H), 7.43 (t, J = 7.6 Hz, 1H), 7.16-7.08 (m, 1H), 6.46 (d, J = 8.8 Hz, 1H), 6.39 (s, 1H), 3.54 (s, 3H), 2.62 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 155.2, 141.1, 138.8, 133.8, 132.7, 132.3, 129.2, 128.3, 127.9, 127.2, 114.0, 104.3, 55.7, 29.3; HRMS (EI+) m/z [M]+ Calcd for C14H15NO3S: 277.0773, Found 277.0775.\nH3C\nOCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of ethyl 2-(phenylsulfonamido)benzoate (5):",
+          "page_start": 12,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), ethyl 2- chlorobenzoate (144 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (119 mg, 78% yield) was obtained as a white solid. White solid; mp 114-116 \u00b0C; IR (neat, cm\u20131) \u03bd 3075, 2928, 2851, 1719, 1599, 1450, 1358, 1290, 1164, 1079, 1015; 1H NMR (400 MHz, CDCl3) \u03b4 8.09 (d, J = 7.6 Hz, 1H), 7.96 (d, J = 8.0 Hz, 1H), 7.72-7.59 (m, 3H), 7.52 (t, J = 7.6 Hz, 1H), 7.46-7.39 (m, 3H), 7.29 (t, J = 7.2 Hz, 1H), 4.08 (q, J = 7.2 Hz, 2H), 1.23 (q, J = 5.2 Hz, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 140.8, 139.3, 132.7, 131.6 (2C), 131.5 (2C), 130.1, 128.6, 128.4, 128.0, 127.5, 166.7, 61.3, 13.9; HRMS (EI+) m/z [M]+ Calcd for C15H15NO4S: 305.0722, Found 305.0719.\nCO2Et",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-nitrophenyl)benzenesulfonamide (6):",
+          "page_start": 12,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1-chloro-2- nitrobenzene (118 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (120 mg, 86% yield) was obtained as a white solid. 3 Yellow solid, mp 190-192 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 9.86 (s, 1H), 8.09 (dd, J = 8.4, 1.6 Hz, 1H), 7.86-7.82 (m, 3H), 7.61-7.55 (m, 2H), 7.49-7.45 (m, 2H), 7.16 (td, J = 7.2, 1.2 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 138.7, 137.3, 136.0, 133.9, 129.5 (3C), 127.3 (2C), 126.3, 124.1, 121.2. All analytical data are in good accordance with those reported in the literature. 3\nNO2\n12",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-bromophenyl)benzenesulfonamide (7):",
+          "page_start": 13,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1,2-dibromobenzene (177 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (123 mg, 79% yield) was obtained as a white solid. 4 White solid; mp 126-128 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.76-7.74 (m, 2H), 7.66 (dd, J = 8.4, 1.6 Hz, 1H), 7.55-7.50 (m, 1H), 7.43-7.37 (m, 3H), 7.28-7.24 (m, 1H), 7.03 (s, 1H), 6.96 (td, J = 8.0, 1.6 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 138.4, 134.6, 133.4, 132.7, 129.1 (2C), 128.7, 127.3 (2C), 126.6, 123.1, 116.1. All analytical data are in good accordance with those reported in the literature. 4\nBr",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 2-methyl-N-phenylbenzenesulfonamide (8):",
+          "page_start": 13,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using 2-methylbenzenesulfonamide (86 mg, mmol), Chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (95 mg, 77% yield) was obtained as a white solid. 5 White solid; mp 106-108 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.97 (d, J = 8.4 Hz, 1H), 7.41 (t, J = 7.6 Hz, 1H), 7.18 (t, J = 8.0 Hz, 2H), 7.03 (t, J = 8.0 Hz, 3H), 2.65 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 137.4, 137.3, 136.6, 133.3, 132.7, 130.1, 129.4 (2C), 126.4, 124.9, 120.5 (2C), 20.5. All analytical data are in good accordance with those reported in the literature. 5\nCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-phenyl-2-(trifluoromethoxy)benzenesulfonamide (9):",
+          "page_start": 13,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (135 mg, 85% yield) was obtained as a white solid. 6 White solid; mp 116-118 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.94 (dd, J = 8.0, 1.6 Hz, 1H), 7.57 (td, J = 8.0, 2.0 Hz, 1H), 7.37 (d, J = 8.4 Hz, 1H), 7.31 (td, J = 7.2, 0.8 Hz, 1H), 7.21 (t, J = 8.0 Hz, 2H), 7.07-7.10 (m, 3H), 6.84 (s, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 146.0, 135.8, 135.0, 131.9, 130.7, 129.5 (2C), 126.6, 125.9, 121.5 (2C), 119.9 (q, 1JC-F = 2.0 Hz, 1C), 119.2. All analytical data are in good accordance with those reported in the literature. 6\nOCF3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(o-tolyl)-2-(trifluoromethoxy)benzenesulfonamide (10):",
+          "page_start": 13,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), 1-chloro-2-methylbenzene (95 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (118 mg, 71% yield) was obtained as a white solid.\nOCF3\nCH3\n13 White solid; mp 153-155 \u00b0C; IR (neat, cm\u20131) \u03bd 3280, 2965, 2857, 1588, 1485, 1330, 1244, 1158, 1079, 1044; 1H NMR (400 MHz, CDCl3) \u03b4 7.95 (dd, J = 8.0, 1.6 Hz, 1H), 7.61 (td, J = 8.4, 1.6 Hz, 1H), 7.40 (d, J = 8.4 Hz, 1H), 7.34 (d, J = 8.0 Hz, 1H), 7.14-7.12 (m, 2H), 7.05- 7.03 (m, 2H), 6.60 (s, 1H), 2.24 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 146.1, 146.0, 134.9, 134.1, 131.7, 131.6, 131.2, 127.0, 126.7, 126.2, 122.7, 121.7, 120.1 (q, 1JC-F = 2.0 Hz, 1C), 17.6; HRMS (EI+) m/z [M]+ Calcd for C14H12F3NO3S: 331.0490, Found 331.0493.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2,6-dimethylphenyl)-2-(trifluoromethoxy)benzenesulfonamide (11):",
+          "page_start": 14,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), 2,6-dimethyl bromobenzene (139 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (17% ethyl acetate in hexane), the title compound (60 mg, 35% yield) was obtained as a white solid. White solid; mp 176-178 \u00b0C; IR (neat, cm\u20131) \u03bd 3276, 2946, 2871, 1789, 1590, 1361, 1320, 1238, 1151, 1087; 1H NMR (400 MHz, CDCl3) \u03b4 8.04 (dd, J = 8.4, 1.6 Hz, 1H), 7.66-7.58 (m, 2H), 7.44-7.38 (m, 2H), 7.20-7.15 (m, 1H), 7.09 (d, J = 8.4 Hz, 1H), 7.02 (d, J = 7.6 Hz, 1H), 2.68 (s, 3H), 2.11 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 146.3, 138.2, 135.3, 134.6 (2C), 130.1, 127.5, 126.8 (q, 1JC-F = 284.0 Hz, 1C), 126.7 (2C), 126.4, 120.2, 119.8 (q, 2JC-F = 2.0 Hz, 1C), 29.4, 18.9; HRMS (EI+) m/z [M]+ Calcd for C15H14F3NO3S: 345.0646, Found 345.0648.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-methoxyphenyl)-2-(trifluoromethoxy)benzenesulfonamide (12):",
+          "page_start": 14,
+          "text": "Me\nOCF3\nMe\nThe reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), 1-chloro-2-methoxybenzene (107 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (140 mg, 83% yield) was obtained as a yellow liquid.\nOCF3\nOCH3\nYellow liquid;  IR (neat, cm\u20131) \u03bd 3261, 2914, 2861, 1581, 1416, 1351, 1262, 1448, 1080, 1027; 1H NMR (400 MHz, CDCl3) \u03b4 7.94 (dd, J = 8.0, 1.6 Hz, 1H), 7.53 (td, J = 8.4, 1.6 Hz, 1H), 7.46 (dd, J = 8.0, 1.6 Hz, 1H), 7.40 (s, 1H), 7.32-7.29 (m, 1H), 7.26 (t, J = 8.0 Hz, 1H), 6.99 (td, J = 8.0, 1.6 Hz, 1H), 6.82 (td, J = 8.0, 1.2 Hz, 1H), 6.75 (dd J = 8.4, 1.2 Hz, 1H), 3.72 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 149.4, 146.2, 134.8, 131.8, 130.4, 125.9, 125.4, 125.3, 121.6, 121.0, 120.4, 118.9 (q, 1JC-F = 1.0 Hz, 1C), 110.5, 55.6; HRMS (EI+) m/z [M]+ Calcd for C14H12F3NO4S: 347.0439, Found 347.0439.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of methyl 2-((2-methylphenyl)sulfonamido)benzoate (13):",
+          "page_start": 14,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylbenzenesulfonamide (86 mg, 0.5 mmol), methyl 4-chlorobenzoate (128 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (22%\nCH3\nCOOCH3\n14 ethyl acetate in hexane), the title compound (129 mg, 84% yield) was obtained as a white solid.\n7 White solid; mp 152-154 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 8.00 (d, J = 8.0 Hz, 1H), 7.86 (d, J = 7.6 Hz, 1H), 7.69 (dd, J = 7.6, 0.8 Hz, 2H), 7.48 (t, J = 7.6 Hz, 3H), 7.35 (t, J = 7.2 Hz, 1H), 7.29 (t, J = 7.2 Hz, 1H), 3.63 (s, 3H), 2.30 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 167.3, 140.5, 140.4, 139.3, 132.9, 132.8, 132.7, 132.0, 131.2, 130.8, 130.7, 127.7, 126.0, 52.3, 21.3. All analytical data are in good accordance with those reported in the literature. 7",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-bromophenyl)-2-(trifluoromethoxy)benzenesulfonamide (14):",
+          "page_start": 15,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), 1,2-dibromobenzene (177 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (141 mg, 71% yield) was obtained as a white solid. White solid; mp 184-186 \u00b0C; IR (neat, cm\u20131) \u03bd 3260, 2919, 1592, 1475, 1341, 1221, 1158, 1079, 1021; 1H NMR (400 MHz, CDCl3) \u03b4 8.00 (dd, J = 8.0, 1.6 Hz, 1H), 7.62-7.55 (m, 2H), 7.43 (d, J = 8.0 Hz, 1H), 7.34 (t, J = 7.6 Hz, 3H), 7.20 (t, J = 7.6 Hz, 1H),  6.92 (td, J = 8.4, 1.2 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 146.3, 135.3, 134.4, 132.9, 131.6, 130.6, 128.6, 126.4, 126.1, 121.0, 120.3 (q, 1JC-F = 260.0 Hz, 1C), 119.9 (q, 2JC-F = 2.0 Hz, 1C), 114.5; HRMS (EI+) m/z [M]+ Calcd for C13H9BrF3NO3S: 394.9439, Found 394.9437.\nOCF3\nBr",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of methyl N-(anthracen-9-yl)-2-methylbenzenesulfonamide (15):",
+          "page_start": 15,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylbenzenesulfonamide (86 mg, 0.5 mmol), 9- chloroanthracene (160 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (150 mg, 86% yield) was obtained as a white solid. White solid; mp 164-166 \u00b0C; IR (neat, cm\u20131) \u03bd 3314, 2930, 2845, 1668, 1553, 1450, 1383, 1293, 1155, 1057; 1H NMR (400 MHz, CDCl3) \u03b4  8.56-8.58 (m, 2H), 8.28-8.32 (m, 3H),  8.11 (d, J = 7.2 Hz, 1H),  7.73-7.82 (m, 5H), 7.51 (td, J = 7.6, 0.8 Hz, 1H),  7.34-7.39 (m, 2H), 2.73 (m, 3H);13C NMR (100 MHz, CDCl3) \u03b4 165.7, 148.5, 142.2, 140.4, 138.7, 136.5, 135.9, 134.8, 130.7, 129.3, 129.0, 128.7, 128.3, 127.8, 127.6, 126.4, 125.9, 124.5, 121.9, 116.8, 21.7; HRMS (EI+) m/z [M]+ Calcd for C21H17NO2S: 347.0980, Found 347.0982.\nCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(anthracen-9-yl)-2-(trifluoromethoxy)benzenesulfonamide (16):",
+          "page_start": 15,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), 9-chloroanthracene (160 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (159 mg, 76% yield) was obtained as a white solid.\nOCF3\n15 White solid; mp 175-177 \u00b0C; IR (neat, cm\u20131) \u03bd 3318, 2919, 2860, 1670, 1553, 1461, 1309, 1280, 1152, 1065, 1027; 1H NMR (400 MHz, DMSO-d6) \u03b4 7.95-7.92 (2H), 7.48-7.46 (m, 3H), 7.08-6.85 (m, 7H), 6.12 (s, 2H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 145.3, 134.8, 133.8, 133.3, 131.6, 130.0, 128.8, 128.2, 127.7, 126.9 (q, 1JC-F = 5.9 Hz, 1C), 126.0, 125.3, 121.6, 119.6, 118.6; HRMS (FAB+) m/z [M+H]+ Calcd for C21H15F3NO3S: 418.0719, Found 418.0719.",
+          "figures": [
+            "SI_p15_fig0",
+            "SI_p15_fig1"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-(2,6-difluorophenyl)-2-methylbenzenesulfonamide (17):",
+          "page_start": 16,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylbenzenesulfonamide (86 mg, 0.5 mmol), 2,6- difluorobromobenzene (144 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (47 mg, 33% yield) was obtained as a yellow liquid. Yellow liquid; IR (neat, cm\u20131) \u03bd 3156, 2900, 1798, 1710, 1594, 1492, 1381, 1320, 1238, 1173, 1099; 1H NMR (400 MHz, CDCl3) \u03b4 7.98 (d, J = 9.6 Hz, 1H), 7.46 (t, J = 7.6 Hz, 1H), 7.28 (t, J = 8.4 Hz, 3H), 7.19-7.13 (m, 1H), 6.93 (t, J = 8.4 Hz, 1H), 6.81 (t, J = 8.4 Hz, 1H), 2.69 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 138.4, 137.6, 136.8, 136.6, 133.8, 131.7 (d, 1JC-F = 275.0 Hz, 1C), 130.3, 129.2, 126.3 (d, 2JC-F = 32.0 Hz, 2C), 115.1, 111.8 (dd, 2JC-F = 22.0, 3.0 Hz, 1C), 20.6; HRMS (EI+) m/z [M]+ Calcd for  C13H11F2NO2S: 283.0479, Found 283.0479.\nF\nCH3\nF",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(naphthalen-1-yl)-2-(trifluoromethoxy)benzenesulfonamide (18):",
+          "page_start": 16,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-(trifluoromethoxy)benzenesulfonamide (121 mg, 0.5 mmol), 1-bromonaphthalene (155 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (138 mg, 75% yield) was obtained as a yellow solid. Yellow solid; mp 148-150 \u00b0C; IR (neat, cm\u20131) \u03bd 3269, 2919, 2860, 1588, 1417, 1349, 1261, 1144, 1079, 1036; 1H NMR (400 MHz, CDCl3) \u03b4 8.05 (d, J = 8.0, 1H), 7.85 (d, J = 8.0 Hz, 1H), 7.80 (d, J = 7.6 Hz, 1H), 7.69 (d, J = 7.2 Hz, 1H), 7.56-7.46 (m, 3H), 7.38 (d, J = 8.0 Hz, 1H), 7.32-7.20 (m, 4H); 13C NMR (100 MHz, CDCl3) \u03b4 146.1, 134.9, 134.3, 131.6, 131.4, 131.0, 129.2, 128.5, 127.6, 126.9, 126.6, 126.5, 125.4, 122.1, 121.6, 120.0 (q, 1JC-F = 1.0 Hz, 1C), 119.1; HRMS (FAB+) m/z [M+H]+ Calcd for C17H13F3NO3S: 368.0563, Found 368.0566.\nOCF3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(anthracen-9-yl)naphthalene-1-sulfonamide (19):",
+          "page_start": 16,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using naphthalene-1-sulfonamide (104 mg, 0.5 mmol), 9- chloroanthracene (160 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (14% ethyl acetate in hexane), the title compound (138 mg, 72% yield) was obtained as a yellow solid.\n16 Yellow solid; mp 180-182 \u00b0C; IR (neat, cm\u20131) \u03bd 3055, 2928, 2850, 1680, 1592, 1455, 1290, 1124, 1075, 1016; 1H NMR (400 MHz, DMSO-d6) \u03b4 7.59 (s, 2H), 7.33 (d, J = 8.4 Hz, 1H), 7.16 (q, J = 3.7 Hz, 3H), 7.03-6.92 (m, 4H), 6.78-6.68 (m, 3H), 6.62 (q, J = 3.2 Hz, 3H), 6.50 (t, J = 7.6 Hz, 1H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 133.3, 130.5, 130.4, 130.3, 128.8, 128.7 (2C), 127.2 (2C), 127.1, 126.9 (2C), 126. 3, 125.7, 125.6, 125.2, 124.9 (2C), 124.8, 124.3 (2C), 121.2 (2C), 121.1; HRMS (EI+) m/z [M]+ Calcd for C24H17NO2S: 383.0980, Found 383.0980.",
+          "figures": [
+            "SI_p16_fig0",
+            "SI_p16_fig1",
+            "SI_p16_fig2"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-(2-methoxyphenyl)naphthalene-1-sulfonamide (20):",
+          "page_start": 17,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using naphthalene-1-sulfonamide (104 mg, 0.5 mmol), 1- chloro-2-methoxybenzene (107 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (110 mg, 70% yield) was obtained as a yellow solid. Yellow solid; mp 142-144 \u00b0C; IR (neat, cm\u20131) \u03bd 3298, 2919, 2860, 1592, 1495, 1329, 1250, 1163, 1075, 1027; 1H NMR (400 MHz, CDCl3) \u03b4 8.33 (s, 1H), 7.88-7.83 (m, 3H), 7.74 (dd, J = 8.8, 1.6 Hz, 1H), 7.62-7.54 (m, 3H), 7.00 (td, J = 7.6, 1.2 Hz, 1H), 6.89 (td, J = 7.2, 1.2 Hz, 1H), 6.66 (dd, J = 8.4, 1.2 Hz, 1H), 3.54 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 149.7, 136.3, 135.0, 132.1, 129.7, 129.4, 129.1, 128.9, 127.9, 127.5, 126.0, 125.6, 122.5, 121.4, 121.2, 110.7, 55.7; HRMS (EI+) m/z [M]+ Calcd for C17H15NO3S: 313.0773, Found 313.0775.\nOCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(3,5-dibromophenyl)benzenesulfonamide (21):",
+          "page_start": 17,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1,3,5- tribromobenzene (236 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (162 mg, 83% yield) was obtained as a white solid. 8 White solid; mp 142-144 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.97(s, 1H), 7.85 (d, J = 7.2 Hz, 2H), 7.55 (t, J = 7.2 Hz, 1H), 7.46 (t, J = 8.0 Hz, 2H), 7.29 (s, 1H), 7.22 (d, J = 1.2 Hz, 2H); 13C NMR (100 MHz, CDCl3) \u03b4 138.9, 138.2, 133.8, 130.6, 129.5 (2C), 127.2 (2C), 123.3 (2C), 122.0 (2C). All analytical data are in good accordance with those reported in the literature. 8\nBr\nBr",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(4-fluorophenyl)benzenesulfonamide (22):",
+          "page_start": 17,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1-chloro-4- fluorobenzene (98 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (16% ethyl acetate in hexane), the title compound (98 mg, 78% yield) was obtained as a white solid. 7 White solid; mp 130-132 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.81 (d, J = 7.2 Hz, 2H), 7.74 (s, 1H), 7.54 (t, J = 7.2 Hz, 1H), 7.43 (t, J = 8.0 Hz, 2H), 7.13-7.09 (m, 2H), 6.93-6.89 (m, 2H);\nF\n17 13C NMR (100 MHz, CDCl3) \u03b4 160.6 (d, 1JC-F = 243.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.36 \u01fa), 138.6, 133.2, 132.4 (d, 4JC-F = 3.0 Hz, 1C), 129.1 (2C), 127.3 (2C), 124.6 (d, 3JC-F = 9.0 Hz, 2C), 116.1 (d, 2JC-F = 23.0 Hz, 2C).All analytical data are in good accordance with those reported in the literature. 7",
+          "figures": [
+            "SI_p17_fig0"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-(4-cyanophenyl)benzenesulfonamide (23):",
+          "page_start": 18,
+          "text": "The reaction was carried out according to the general procedure A for 8 h, using benzenesulfonamide (78 mg, 0.5 mmol), 4- chlorobenzonitrile (103 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5l per 0.5 mmol scale of reaction). After silica gel column chromatography (17% ethyl acetate in hexane), the title compound (85 mg, 66% yield) was obtained as a white solid. 2 White solid; mp 124-126 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.93 (d, J = 7.6 Hz, 1H), 7.85 (dd, J = 8.4, 1.2 Hz, 1H), 7.59-7.45 (m, 6H), 7.19 (dd, J = 6.8, 2.0 Hz, 2H); 13C NMR (100 MHz, CDCl3) \u03b4 141.3, 138.7, 133.6 (2C), 132.0, 129.5 (2C), 129.1, 127.3 (2C), 126.7, 119.4 (2C); All analytical data are in good accordance with those reported in the literature. 2\nCN",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-fluoro-N-phenylbenzenesulfonamide (24):",
+          "page_start": 18,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-fluorobenzenesulfonamide (88 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (113 mg, 90% yield) was obtained as a white solid.9 White solid; mp 131-133 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.83-7.77 (m, 2H), 7.27-7.22 (m, 3H), 7.14-7.07 (m, 5H); 13C NMR (100 MHz, CDCl3) \u03b4 165.4 (d, 1JC-F = 253.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.36 \u01fa), 136.3, 135.0, 130.1 (d, 2JC-F = 9.0 Hz, 2C), 129.6 (2C), 125.8, 121.9 (2C), 116.5 (d, 2JC-F = 9.0 Hz, 2C). All analytical data are in good accordance with those reported in the literature. 9\nF",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-phenylnaphthalene-2-sulfonamide (25):",
+          "page_start": 18,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using naphthalene-2-sulfonamide (104 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (126 mg, 89% yield) was obtained as a white solid. 5 White solid; mp 134-136 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 8.43 (s, 1H), 7.85 (t, J = 11.6 Hz, 4H), 7.52-7.68 (m, 3H), 7.18-7.22 (m, 4H), 7.06 (td, J = 5.6, 2.0 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 136.6, 135.9, 135.0, 132.1, 129.6, 129.5 (2C), 129.4, 129.1, 129.0, 127.9, 127.6, 125.4, 122.3, 121.6 (2C). All analytical data are in good accordance with those reported in the literature. 5\n18",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-fluoro-N-(2-nitrophenyl)benzenesulfonamide (26):",
+          "page_start": 19,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-fluorobenzenesulfonamide (88 mg, 0.5 mmol), 1- chloro-2-nitrobenzene (118 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (120 mg, 81% yield) was obtained as a yellow solid. 10 Yellow solid; mp 183-185 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 9.81 (s, 1H), 8.07 (d, J = 8.4 Hz, 1H), 7.86 (q, J = 5.2 Hz, 2H), 7.79 (d, J = 8.4 Hz, 1H), 7.59 (td, J = 8.4, 1.2 Hz, 1H), 7.19-7.10 (m, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 165.4 (d, 1JC-F = 256.0 Hz, 1C, bond distance for C\u2013 F coupling constant is around 1.36 \u01fa), 137.2, 136.0, 134.6 (d, 4JC-F = 3.0 Hz, 1C), 133.4,  130.1 (d, 3JC-F = 10.0 Hz, 2C), 126.3, 124.3, 121.1, 116.7 (d, 2JC-F = 22.0 Hz, 2C). All analytical data are in good accordance with those reported in the literature. 10\nF NO2",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 3-cyano-N-(4-(trifluoromethyl)phenyl)benzenesulfonamide (27):",
+          "page_start": 19,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 3-cyanobenzenesulfonamide (91 mg, 0.5 mmol), 1- chloro-4-(trifluoromethyl)benzene (135 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (19% ethyl acetate in hexane), the title compound (145 mg, 89% yield) was obtained as a white solid. White solid; mp 164-166 \u00b0C; IR (neat, cm\u20131) \u03bd 3367, 2928, 2850, 1709, 1602, 1455, 1329, 1261, 1163, 1075; 1H NMR (400 MHz, CDCl3) \u03b4 7.67 (d, J = 8.8 Hz, 1H),  7.56-7.49 (m, 1H), 7.44 (q, J = 2.8 Hz, 1H),  7.41 (s, 1H), 7.36 (t, J = 7.6 Hz, 1H), 7.16 (d, J = 7.6 Hz, 1H), 7.05- 6.99 (m, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 147.0, 142.8, 135.4, 130.7, 130.2 (2C), 124.1, 123.8 (q, 1JC-F = 274.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.32 \u01fa), 122.2, 119.3 (2C), 117.6, 114.0 (q, 2JC-F = 37.0 Hz, 1C), 113.2; HRMS (EI+) m/z [M]+ Calcd for C14H9F3N2O2S: 326.0337, Found 326.0339.\nCF3\nCN",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 2-methyl-N-(thiophen-2-yl)benzenesulfonamide (28):",
+          "page_start": 19,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylbenzenesulfonamide (86 mg, 0.5 mmol), 2- chlorothiophene (89 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (16% ethyl acetate in hexane), the title compound (79 mg, 62% yield) was obtained as a yellow solid. Yellow solid; mp 120-122 \u00b0C; IR (neat, cm\u20131) \u03bd 3110, 2923, 2857, 1725, 1553, 1456, 1310, 1220, 1147, 1016; 1H NMR (400 MHz, CDCl3) \u03b4 8.15 (d, J = 7.6 Hz, 1H), 7.69 (dd, J = 3.6, 1.2 Hz, 1H), 7.64 (dd, J = 4.8, 1.2 Hz, 1H), 7.51-7.47 (m, 1H),  7.38 (t, J = 7.6 Hz, 1H), 7.33- 7.27 (m, 1H), 7.11-7.08 (m, 2H), 2.61 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 139.9, 138.2, 133.8, 133.6, 133.5, 132.9, 129.2, 127.6, 126.8, 125.9, 20.5; HRMS (EI+) m/z [M]+ Calcd for C11H11NO2S2: 253.0231, Found 253.0231.\nCH3\n19",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(1\u03bb3,3\u03bb2-thiazol-2-yl)benzenesulfonamide (29):",
+          "page_start": 20,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (79 mg, 0.5 mmol), 2-chloro-1\u03bb3,3\u03bb2- thiazole (90 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (19% ethyl acetate in hexane), the title compound (85 mg, 71% yield) was obtained as a white solid.\nWhite solid; mp 115-117 \u00b0C; IR (neat, cm\u20131) \u03bd 3256, 2923, 2849, 1505, 1448, 1358, 1293, 1138, 1090; 1H NMR (400 MHz, CDCl3) \u03b4 8.10 (d, J = 4.8 Hz, 1H), 8.04-8.02 (m, 1H), 7.57- 7.53 (m, 2H), 7.51-7.47 (m, 2H), 7.24 (d, J = 3.6 Hz, 1H), 6.63 (d, J = 5.2 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 141.5, 138.2, 132.7, 129.0, 126.7 (2C), 124.0, 118.4, 107.6; HRMS (EI+) m/z [M]+ Calcd for C9H8N2O2S2:  240.0027, Found 240.0026.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(quinolin-3-yl)benzenesulfonamide (30):",
+          "page_start": 20,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (79 mg, 0.5 mmol), 3- chloroquinoline (123 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (104 mg, 73% yield) was obtained as a yellow solid. 11 Yellow solid; mp 186-188 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 8.60 (s, 1H), 8.07 (s, 1H), 8.01 (d, J = 8.0 Hz, 1H), 7.81 (d, J = 7.2 Hz, 2H), 7.74 (d, J = 8.0 Hz, 1H), 7.63 (t, J = 6.8 Hz, 1H), 7.55-7.47 (m, 3H), 7.39 (t, J = 7.6 Hz, 2H);13C NMR (100MHz, CDCl3) \u03b4 145.7, 145.6, 139.0, 133.5, 130.6, 129.4 (2C), 129.3, 128.9, 128.1, 127.8, 127.7, 127.3 (2C), 126.8.  All analytical data are in good accordance with those reported in the literature. 11",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(quinolin-8-yl)naphthalene-1-sulfonamide (31):",
+          "page_start": 20,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using naphthalene-1-sulfonamide (104 mg, 0.5 mmol), 8- chloroquinoline (123 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (137 mg, 82% yield) was obtained as a yellow solid. 12 Yellow solid; mp 183-185 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 9.55 (s, 1H), 8.83 (d, J = 8.4 Hz, 1H), 8.68 (dd, J = 4.4, 1.6 Hz, 1H), 8.37 (dd, J = 7.2, 1.2 Hz, 1H), 7.99 (dd, J = 8.4, 1.6 Hz, 1H),  7.94 (d, J = 8.4 Hz, 1H), 7.80 (d, J = 8.0 Hz, 1H), 7.72-7.65 (m, 2H), 7.53-7.43 (m, 2H), 7.35-7.31 (m, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 148.6, 138.3 (2C), 136.2, 134.7, 134.3, 134.0, 130.3, 129.0, 128.5, 128.3, 128.2, 127.0, 126.9, 124.7, 124.0, 122.0, 121.8, 114.3. All analytical data are in good accordance with those reported in the literature. 12",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-phenylthiophene-2-sulfonamide (32):",
+          "page_start": 20,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using thiophene-2-sulfonamide (82 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (90 mg, 75% yield) was obtained as a white solid. 13 White solid; mp 116-118 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.53-7.50 (m, 2H), 7.28 (t, J = 8.4 Hz, 2H), 7.16 (t, J = 6.4 Hz, 3H), 7.09 (s, 1H), 6.99 (q, J = 3.6 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 139.4, 136.3, 133.1, 132.6, 129.5 (2C), 127.5, 126.0, 122.0 (2C). All analytical data are in good accordance with those reported in the literature. 13",
+          "figures": [
+            "SI_p20_fig0",
+            "SI_p20_fig1"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-phenylpyridine-2-sulfonamide (33):",
+          "page_start": 21,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using pyridine-2-sulfonamide (79 mg, 0.5 mmol), bromobenzene (118 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (17% ethyl acetate in hexane), the title compound (77 mg, 66% yield) was obtained as a yellow solid. 14 Yellow solid; mp 121-123 \u00b0C; 1H NMR (400 MHz, CDCl3 and DMSO-d6) \u03b4 7.80-7.66 (m, 2H), 7.27-7.24 (m, 2H), 7.08-6.99 (m, 3H), 6.24-6.17 (m, 2H), 4.51 (s, 1H); 13C NMR (100 MHz, CDCl3 and DMSO-d6) \u03b4 159.3, 149.6, 137.9, 131.3 (2C), 130.0 (2C), 126.8, 126.3, 122.3, 120.6. All analytical data are in good accordance with those reported in the literature. 14",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(4-(trifluoromethyl)phenyl)pyridine-2-sulfonamide (34):",
+          "page_start": 21,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using pyridine-2-sulfonamide (79 mg, 0.5 mmol), 1- chloro-4-(trifluoromethyl)benzene (135 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (18% ethyl acetate in hexane), the title compound (92 mg, 61% yield) was obtained as a white solid. 15 White solid; mp 130-132 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 8.72 (d, J = 4.8 Hz, 1H), 8.22 (s, 1H), 7.98 (d, J = 8.0 Hz, 1H),  7.89 (td, J = 8.0, 1.6 Hz, 1H), 7.46-7.52 (m, 3H), 7.32 (d, J = 8.4 Hz, 2H); 13C NMR (100 MHz, CDCl3) \u03b4 156.1, 153.2, 150.3, 149.9 (q, 2JC-F = 34.0 Hz, 1C), 139.8, 138.5, 128.6 (q, 1JC-F = 295.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.32 \u01fa), 126.6 (q, 3JC-F = 4.0 Hz, 2C), 123.2, 121.2 (2C). All analytical data are in good accordance with those reported in the literature. 15\nCF3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(pyridin-2-yl)thiophene-2-sulfonamide (35):",
+          "page_start": 21,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using thiophene-2-sulfonamide (82 mg, 0.5 mmol), 2- chloropyridine (85 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (18% ethyl acetate in hexane), the title compound (87 mg, 72% yield) was obtained as a yellow liquid. 16 Yellow liquid; 1H NMR (400 MHz, CDCl3) \u03b4 8.42 (d, J = 4.0 Hz, 1H), 7.76-7.69 (m, 2H), 7.63- 7.56 (m, 1H), 7.30 (d, J = 8.1 Hz, 1H), 7.18 (t, J = 5.2 Hz, 1H), 7.04 (t, J = 4.0 Hz; 1H); 13C\n21 NMR (100 MHz, CDCl3) \u03b4 153.3, 148.9, 143.3, 138.4, 134.6, 133.3, 126.9, 122.2, 121.4. All analytical data are in good accordance with those reported in the literature. 16",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(thiazol-2-yl)thiophene-2-sulfonamide (36):",
+          "page_start": 22,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using thiophene-2-sulfonamide (82 mg, 0.5 mmol), 2-bromothiazole (123 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (84 mg, 68% yield) was obtained as a yellow liquid. Yellow liquid; IR (neat, cm\u20131) \u03bd 3250, 2927, 2852, 1509, 1439, 1354, 1290, 1131, 1080; 1H NMR (400 MHz, DMSO-d6) \u03b4 7.52-7.41 (m, 3H), 7.24 (q, J = 4.8 Hz, 1H), 6.96-6.92 (m, 1H), 6.46 (s, 1H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 144.6, 142.9, 136.0, 130.7, 130.6, 127.0, 123.1. HRMS (EI+) m/z [M]+ Calcd for C7H6N2O2S3: 245.9591, Found 245.9591.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(5-acetylthiophen-2-yl)thiophene-2-sulfonamide (37):",
+          "page_start": 22,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using thiophene-2-sulfonamide (82 mg, 0.5 mmol), 1-(5- bromothiophen-2-yl)ethan-1-one (154 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (22% ethyl acetate in hexane), the title compound (106 mg, 74% yield) was obtained as a yellow liquid. Yellow liquid; IR (neat, cm\u20131) \u03bd 3102, 2930, 2857, 1708, 1611, 1440, 1317, 1220, 1155, 1016; 1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 10.92 (brs, 1H), 7.52-7.47 (m, 2H), 7.35- 7.28 (m, 1H), 6.98-6.94 (m, 1H), 6.66-6.62 (m, 1H), 2.37 (s, 3H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 190.2, 148.1, 139.1, 136.8, 132.8, 132.5, 132.3, 127.3, 117.0, 25.9; HRMS (EI+) m/z [M]+ Calcd for C10H9NO3S3: 286.9745, Found 286.9748.\nCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-bromophenyl)-2-methylpropane-2-sulfonamide (38):",
+          "page_start": 22,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylpropane-2-sulfonamide (69 mg, 0.5 mmol), 1,2- dibromobenzene (177 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (121 mg, 83% yield) was obtained as a white solid. White solid; mp 126-128 \u00b0C; IR (neat, cm\u20131) \u03bd 3289, 2923, 2857, 1587, 1472, 1399, 1310, 1207, 1130, 1025; 1H NMR (400 MHz, CDCl3) \u03b4 7.88 (dd, J = 8.4, 1.2 Hz, 1H), 7.55 (dd, J =  8.0, 1.2 Hz, 1H), 7.32-7.28 (m, 1H), 7.00 (td, J = 8.0, 1.2 Hz, 1H), 6.60 (s, 1H), 1.44 (s, 9H); 13C NMR (100 MHz, CDCl3) \u03b4 136.9, 132.8, 128.8, 125.6, 121.4, 113.8, 62.6, 24.8 (3C); HRMS (EI+) m/z [M]+ Calcd for C10H14BrNO2S: 290.9929, Found 290.9927.\nBr\n22",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(anthracen-9-yl)-2-methylpropane-2-sulfonamide (39):",
+          "page_start": 23,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylpropane-2-sulfonamide (69 mg, 0.5 mmol), 9- chloroanthracene (160 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (118 mg, 75% yield) was obtained as a white solid. White solid; mp 142-144 \u00b0C; IR (neat, cm\u20131) \u03bd 3285, 2925, 2855, 1581, 1468, 1391, 1308, 1261, 1205, 1132, 1027; 1H NMR (400 MHz, CDCl3) \u03b4 8.15 (d, J = 1.6 Hz, 1H), 8.13 (d, J = 0.4, Hz, 1H), 7.50-7.46 (m, 2H), 7.43-7.40 (m, 5H), 3.87 (s, 1H), 0.8 (s, 9H); 13C NMR (100 MHz, CDCl3) \u03b4 186.9 (2C), 143.1 (2C), 134.5 (2C), 130.9 (2C), 130.2 (2C), 127.1 (2C), 126.8 (2C), 55.2, 28.3 (3C); HRMS (EI+) m/z [M]+ Calcd for C18H19NO2S:  313.1136, Found 313.1138.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 2-methyl-N-phenylpropane-2-sulfonamide (40):",
+          "page_start": 23,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylpropane-2-sulfonamide (69 mg, mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (76 mg, 71% yield) was obtained as a white solid. 17 White solid; mp 113-115 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 9.92 (s, 1H), 7.83 (d, J = 8.0 Hz, 2H), 7.38 (d, J = 8.0 Hz, 3H), 1.45 (s, 9H); 13C NMR (100 MHz, CDCl3) \u03b4 129.5 (2C), 129.2, 124.8, 120.6 (2C), 62.1, 24.9 (3C). All analytical data are in good accordance with those reported in the literature. 17",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-phenylmethanesulfonamide (41):",
+          "page_start": 23,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using methanesulfonamide (48 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (35 mg, 41% yield) was obtained as a white solid. 18 White solid; mp 98-100 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.39-7.37 (m, 5H), 7.37-7.27 (m, 1H), 3.16 (s, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 141.4, 129.7 (2C), 127.7 (2C), 127.4, 40.2. All analytical data are in good accordance with those reported in the literature. 18",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-benzyl-2-methylpropane-2-sulfonamide (42):",
+          "page_start": 23,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylpropane-2-sulfonamide (69 mg, 0.5 mmol), (chloromethyl)benzene (95 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (82 mg, 72% yield) was obtained as a white solid. 19\n23 White solid; mp 104-106 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.89 (d, J = 7.2 Hz, 1H), 7.66- 7.52 (m, 2H), 7.40-7.33 (m, 2H), 7.20-7.09 (m, 1H), 4.35 (t, J = 11.6 Hz, 2H), 1.45 (s, 9H); 13C NMR (100 MHz, CDCl3) \u03b4 136.6, 134.6, 129.9 (2C), 129.2 (2C), 59.2, 29.8, 24.3 (3C). All analytical data are in good accordance with those reported in the literature. 19",
+          "figures": [
+            "SI_p23_fig0"
+          ]
+        },
+        {
+          "heading": "Synthesis of methyl 4-((1,1-dimethylethyl)sulfonamido)butanoate (43):",
+          "page_start": 24,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-methylpropane-2-sulfonamide (69 mg, 0.5 mmol), methyl 4-chlorobutanoate (102 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (61 mg, 51% yield) was obtained as a yellow solid. Yellow solid; mp 134-136 \u00b0C; IR (neat, cm\u20131) \u03bd 3280, 2923, 2849, 1716, 1423, 1367, 1293, 1106, 1080, 1025; 1H NMR (400 MHz, CDCl3) \u03b4 3.93 (s 1H), 2.87 (s, 3H), 1.70-1.57 (m, 2H), 1.40 (s, 9H), 0.92-0.82 (m, 4H); 13C NMR (100 MHz, CDCl3) \u03b4 193.4, 60.3, 32.1, 29.8, 24.5 (3C), 22.8, 14.3; HRMS (EI+) m/z [M]+ Calcd for C9H19NO4S: 237.1035, Found 237.1037.\n(CH2)3\nOMe",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-dodecylbenzenesulfonamide (44):",
+          "page_start": 24,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1- Bromododecane (187 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (129 mg, 79% yield) was obtained as a pale brown solid.\n(CH2)11CH3\nPale brown solid; mp 138-140 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.87 (d, J = 7.2 Hz, 2H), 7.58-7.48 (m, 3H), 4.79 (t, J = 6.0 Hz, 1H), 3.63 (t, J = 6.8 Hz, 1H), 2.93 (q, J = 6.8 Hz, 2H), 1.59-1.52 (m, 2H), 1.47-1.40 (m, 2H), 1.30-1.19 (m, 13H), 0.87 (t, J = 6.8 Hz, 5H); 13C NMR (100 MHz, CDCl3) \u03b4 140.2, 132.6, 129.2 (2C), 127.2 (2C), 63.2, 43.4, 32.9, 32.0, 29.7, 29.6, 29.5, 29.2, 26.6, 25.9, 22.8, 14.2. All analytical data are in good accordance with those reported in the literature. 20",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-isopropylbenzenesulfonamide (45):",
+          "page_start": 24,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 2- chloropropane (157 mg, 2 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (25% ethyl acetate in hexane), the title compound (66 mg, 62% yield) was obtained as a pale white solid. 21 White solid; mp 115-117 \u00b0C; 1H NMR (400 MHz, CDCl3) \u03b4 7.65-7.58 (m, 2H), 6.63 (d, J = 8.4 Hz, 1H), 6.52 (d, J = 8.4 Hz, 1H), 5.11 (s, 2H), 3.67-3.60 (m, 1H), 1.19 (d, J = 6.4 Hz, 6H); 13C NMR (100 MHz, CDCl3) \u03b4 129.2 (2C), 128.6 (2C), 114.2, 112.1, 44.2, 23.8, 22.7. All analytical data are in good accordance with those reported in the literature. 21\nH2N\n24",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of (E)-N-styrylbenzenesulfonamide (46):",
+          "page_start": 25,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (79 mg, 0.5 mmol), (E)-(2- bromovinyl)benzene (137 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (18% ethyl acetate in hexane), the title compound (88 mg, 68% yield) was obtained as a white solid. White solid; mp 110-112\u00b0C; IR (neat, cm\u20131) \u03bd 3029, 2923, 2849, 1652, 1594, 1488, 1448, 1285, 1277, 1065, 1025; 1H NMR (400 MHz, CDCl3) \u03b4 8.02 (d, J = 7.8 Hz, 1H), 7.58-7.57 (m, 2H), 7.49 (t, J = 7.4 Hz, 2H), 7.43-7.36 (m, 4H), 7.13 (d, J = 16.3 Hz, 1H), 6.78 (d, J = 11.9 Hz, 1H), 6.47 (d, J = 16.2 Hz, 1H), 6.01 (d, J = 11.9 Hz, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 141.4, 138.8, 136.4, 131.7, 131.6, 128.9, 128.7, 128.6, 128.5, 128.4, 128.3, 126.4, 108.3, 107.5; HRMS (EI+) m/z [M]+ Calcd for C14H13NO2S: 259.0667, Found 259.0667.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(thiazol-2-yl)benzenesulfonamide (Sulfothiazole, antimicrobial drug, 47):",
+          "page_start": 25,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 2-bromothiazole (123 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (30% ethyl acetate in hexane), the title compound (66 mg, 52% yield) was obtained as a yellow solid. 22 Yellow solid; mp >200 \u00b0C; IR (neat, cm\u20131) \u03bd 3556, 3341, 3189, 2924, 2850, 1507, 1450, 1360, 1287, 1132, 1080; 1H NMR (400 MHz, DMSO-d6) \u03b4 7.25-7.29 (m, 2H), 7.01-7.05 (m, 1H), 6.32 (t, J = 8.4 Hz, 2H), 5.69-5.75 (m, 1H), 4.17 (s, 3H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 150.4, 142.4, 135.4, 130.3, 127.5 (2C), 122.8, 113.1 (2C); HRMS (EI+) m/z [M]+ Calcd for C9H9N3O2S2: 255.0136, Found 255.0136. All analytical data are in good accordance with those reported in the literature. 22\nH2N",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(pyridin-2-yl)benzenesulfonamide (Sulfapyridine, antibiotic drug, 48):",
+          "page_start": 25,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 2-chloropyridine (85 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (30% ethyl acetate in hexane), the title compound (98 mg, 79% yield) was obtained as a yellow solid.\nH2N\n23 Yellow solid; mp 190-192 \u00b0C; IR (neat, cm\u20131) \u03bd 3451, 3326, 3178, 2854, 1513, 1442, 1358, 1294, 1135, 1080; 1H NMR (400 MHz, CDCl3) \u03b4 8.37 (d, J = 3.2 Hz, 1H), 7.77 (d, J = 8.8 Hz, 2H), 7.67 (td, J = 7.6, 1.6 Hz, 2H), 7.28 (d, J = 8.4 Hz, 2H), 7.12 (t, J = 5.2 Hz, 2H), 6.55 (s, 2H); 13C NMR (100 MHz, CDCl3) \u03b4 153.5, 151.2, 148.8, 138.3, 130.9, 127.8, 121.7 (2C), 121.2 (2C), 113.7. HRMS (EI+) m/z [M]+ Calcd for C11H11N3O2S: 249.0572, Found 249.0570. All analytical data are in good accordance with those reported in the literature. 23\n25",
+          "figures": []
+        },
+        {
+          "heading": "4-amino-N-(5-methyl-1\u03bb3,2\u03bb2-isoxazol-3-yl)benzenesulfonamide (Sulfamethoxazole, antibiotic drug, 49):",
+          "page_start": 26,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 3-chloro-5-methyl-1\u03bb3,2\u03bb2-isoxazole (88 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (35% ethyl acetate in hexane), the title compound (92 mg, 73% yield) was obtained as a yellow solid. 24 Yellow solid; mp 184-186 \u00b0C; IR (neat, cm\u20131) \u03bd 3556, 3362, 3223, 2881, 1497, 1401, 1280, 1143, 1069; 1H NMR (400 MHz, CDCl3) \u03b4 7.63 (d, J = 8.0 Hz, 2H), 6.69 (d, J = 8.8 Hz, 3H), 4.23-4.11 (m, 3H), 2.62 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 150.7, 149.3, 130.3, 129.7, 129.6 (2C), 128.0, 127.1, 114.2 (2C), 29.8; HRMS (EI+) m/z [M]+ Calcd for C10H11N3O3S: 253.0521, Found  253.0523. All analytical data are in good accordance with those reported in the literature. 24\nCH3\nH2N",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(6-methoxypyrimidin-4-yl)benzenesulfonamide (Diuretic, Sulphamonomethoxine, antibiotic drug, 50):",
+          "page_start": 26,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 4- chloro-6-methoxypyrimidine (108 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (35% ethyl acetate in hexane), the title compound (109 mg, 82% yield) was obtained as a yellow solid. 25 Yellow solid; mp 161-163 \u00b0C; IR (neat, cm\u20131) \u03bd 3461, 3380, 3249, 2870, 1502, 1288, 1160, 1052; 1H NMR (400 MHz, CDCl3) \u03b4 8.60 (d, J = 8.8 Hz, 3H), 8.34-8.24 (m, 4H), 5.52 (s, 1H), 3.39 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 149.8, 139.3, 132.9, 128.8 (2C), 127.3 (2C), 121.6, 121.1, 110.6, 55.6; HRMS (EI+) m/z [M]+ Calcd for C11H11N3O3S: 265.0521, Found 265.0520. All analytical data are in good accordance with those reported in the literature. 25\nOCH3",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(pyrimidin-2-yl)benzenesulfonamide (Sulfadiazine, antibiotic drug, 51):",
+          "page_start": 26,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 2-chloropyrimidine (86 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (32% ethyl acetate in hexane), the title compound (64 mg, 51% yield) was obtained as a yellow solid.\nH2N\n26 Yellow solid; mp >200 \u00b0C; IR (neat, cm\u20131) \u03bd 3496, 3403, 3283, 2791, 1490, 1390, 1282, 1069; 1H NMR (400 MHz, DMSO-d6) \u03b4 8.52 (d, J = 4.8 Hz, 1H), 7.89 (d, J = 8.8 Hz, 1H), 7.71 (d, J = 8.8 Hz, 1H), 7.44 (d, J = 8.8 Hz, 1H), 7.19 (s, 1H), 6.92 (t, J = 4.0 Hz, 2H), 6.59 (d, J = 8.4 Hz, 1H), 5.76 (s, 2H); 13C NMR (100 MHz, DMSO-d6) \u03b4 158.4, 152.1, 143.8, 136.2, 130.1,\n26 127.7, 126.8, 118.1, 113.8, 112.8; HRMS (EI+) m/z [M]+ Calcd for C10H10N4O2S: 250.0524, Found 250.0526. All analytical data are in good accordance with those reported in the literature.26",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(5-methyl-1,3,4-thiadiazol-2-yl)benzenesulfonamide (Anticancer, 52):",
+          "page_start": 27,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 2-chloro-5-methyl-1,3,4-thiadiazole (101 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (35% ethyl acetate in hexane), the title compound (98 mg, 72% yield) was obtained as a yellow solid. Yellow solid; mp 181-183 \u00b0C; IR (neat, cm\u20131) \u03bd 3456, 3360, 3263, 2880, 1568, 1280, 1149; 1H NMR (400 MHz, DMSO-d6 and CDCl3 mixture) \u03b4 7.40 (d, J = 8.0 Hz, 2H), 6.43 (d, J = 8.8 Hz, 2H), 5.91 (s, 1H), 4.48 (s, 2H), 1.80 (s, 3H); 13C NMR (100 MHz, DMSO-d6 and CDCl3 mixture) \u03b4 150.5, 150.4, 130.3, 130.2, 127.5 (2C), 113.0 (2C), 49.3. HRMS (EI+) m/z [M]+\nH2N\nCalcd for C9H10N4O2S2: 270.0245, Found 270.0247. All analytical data are in good accordance with those reported in the literature.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(5,6-dimethoxypyrimidin-4-yl)benzenesulfonamide (Sulphadozin, Antimalaria, antibiotic drug, 53):",
+          "page_start": 27,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), 4-chloro-5,6-dimethoxypyrimidine (131 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (45% ethyl acetate in hexane), the title compound (99 mg, 64% yield) was obtained as a yellow solid. 27 Yellow solid; mp >200 \u00b0C; IR (neat, cm\u20131) \u03bd 3456, 3381, 3227, 2880, 2645, 1697, 1451, 1290, 1133, 1041; 1H NMR (400 MHz, CDCl3) \u03b4 7.88 (s, 1H), 7.19 (d, J = 8.4 Hz, 2H), 6.25 (d,  J = 8.4 Hz, 2H), 6.03 (s, 2H), 4.58 (s, 1H), 3.67 (s, 3H), 3.50 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 162.7, 150.5, 150.4, 137.3, 130.1, 127.1 (2C), 113.0, 112.6 (2C), 59.8, 54.1; HRMS (EI+) m/z [M]+ Calcd for C12H14N4O4S: 310.0736, Found 310.0738. All analytical data are in good accordance with those reported in the literature. 27\nH2N",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(5,6-dimethoxypyrimidin-4-yl)benzenesulfonamide (Antimicrobial drug, COX-1 selective inhibitors, 54):",
+          "page_start": 27,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), para-dichlorobenzene (110 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (25% ethyl acetate in hexane), the title compound (100 mg, 71% yield) was obtained as a pale white solid.22\nH2N CH3 OCH3 OCH3 Cl 27 White solid; mp 194-196 \u00b0C; IR (neat, cm\u20131) \u03bd 3452, 3378, 2884, 1703, 1458, 1293, 1134, 1045; 1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 9.42 (s, 1H), 7.29 (d, J = 8.8 Hz, 2H), 6.67 (q, J = 9.2 Hz, 4H), 6.15 (d, J = 8.8 Hz, 2H), 4.70 (brs, 2H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 151.3, 136.3, 128.1 (2C), 127.9 (2C), 127.6, 124.6, 120.7 (2C), 112.4 (2C); HRMS (EI+) m/z [M]+ Calcd for  C12H11ClN2O2S: 282.0230, Found 282.0230. All analytical data are in good accordance with those reported in the literature. 22",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2,6-dimethoxypyrimidin-4-yl)benzenesulfonamide (Sulfadimethoxine, antibiotic drug, 55):",
+          "page_start": 28,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 4- bromo-2,6-dimethoxypyrimidine (164 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (30% ethyl acetate in hexane), the title compound (99 mg, 67% yield) was obtained as a yellow solid. 28 Yellow solid; mp 158-160 \u00b0C; IR (neat, cm\u20131) \u03bd 3383, 3230, 2884, 2648, 1641, 1455, 1294, 1136, 1045; 1H NMR (400 MHz, CDCl3) \u03b4 8.27 (d, J = 7.2 Hz, 2H), 7.35 (d, J = 8.0 Hz, 3H), 5.75 (s, 1H), 5.04 (s, 1H), 3.25 (s, 3H), 3.24 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 151.3, 150.7, 130.0 (2C), 129.5, 126.4, 123.5, 114.1 (2C), 89.7, 54.8, 54.2; HRMS (EI+) m/z [M]+\nOCH3\nOCH3\nCalcd for  C12H13N3O4S: 295.0627, Found 295.0629. All analytical data are in good accordance with those reported in the literature. 28",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-phenylbenzenesulfonamide (Antimicrobial activities, 56):",
+          "page_start": 28,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-aminobenzenesulfonamide (86 mg, 0.5 mmol), bromobenzene (118 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (25% ethyl acetate in hexane), the title compound (86 mg, 69% yield) was obtained as a white solid.\nH2N\n22 White solid; mp 170-172 \u00b0C; IR (neat, cm\u20131) \u03bd 3455, 3384, 2886, 1658, 1460, 1294, 1140, 1048; 1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 8.77 (s, 1H), 7.41 (d, J = 8.4 Hz, 2H), 7.06 (t, J = 7.6 Hz, 2H), 7.00 (d, J = 7.6 Hz, 2H), 6.89 (t, J = 6.8 Hz, 1H), 6.46 (d, J = 8.8 Hz, 2H), 4.32 (s, 2H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 150.9, 137.9, 129.1 (2C), 128.9 (2C), 127.2, 123.9, 120.6 (2C), 113.6 (2C); HRMS (EI+) m/z [M]+ Calcd for C12H12N2O2S: 248.0619, Found 248.0620. All analytical data are in good accordance with those reported in the literature. 22",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-nitro-N-phenylbenzenesulfonamide (Antifungal agent, 57):",
+          "page_start": 28,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-nitrobenzenesulfonamide (101 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (22% ethyl acetate in hexane), the title compound (109 mg, 78% yield) was obtained as a yellow solid. 29\nO2N\n28 Yellow solid; mp 193-195 \u00b0C; IR (neat, cm\u20131) \u03bd 3386, 2925, 1664, 1471, 1302, 1144, 1052; 1H NMR (400 MHz, CDCl3) \u03b4 8.12 (d, J = 9.2 Hz, 2H), 7.39 (t, J = 8.0 Hz, 2H), 7.22-7.15 (m, 3H), 6.94 (d, J = 9.2 Hz, 2H), 6.27 (s, 1H); 13C NMR (100MHz, CDCl3) \u03b4 150.3, 139.9, 139.6, 129.9 (2C), 126.4 (2C), 124.8, 122.1 (2C), 113.8 (2C); HRMS (EI+) m/z [M]+ Calcd for C12H10N2O4S: 278.0361, Found 278.0361. All analytical data are in good accordance with those reported in the literature. 29",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-nitro-N-(4-nitrophenyl)benzenesulfonamide (Antifungal agent, 58):",
+          "page_start": 29,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-nitrobenzenesulfonamide (101 mg, 0.5 mmol), 1-bromo-4-nitrobenzene (152 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (28% ethyl acetate in hexane), the title compound (92 mg, 57% yield) was obtained as a yellow solid. 29 Yellow solid; mp 196-198 \u00b0C; IR (neat, cm\u20131) \u03bd 3390, 2930, 2807, 1667, 1473, 1305, 1150, 1062; 1H NMR (400 MHz, DMSO-d6) \u03b4 8.27 (dd, J = 8.8, 2.4 Hz, 2H), 8.04 (d, J = 8.8 Hz, 2H), 7.87 (dd, J = 6.8, 2.0 Hz, 1H), 7.57-7.54 (m, 2H), 7.49-7.44 (m, 2H);  13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 148.2, 147.9, 146.4, 132.4, 130.3 (2C), 126.9, 126.0 (2C), 124.4, 124.1, 122.7; HRMS (EI+) m/z [M]+ Calcd for C12H9N3O6S: 323.0212, Found 323.0210. All analytical data are in good accordance with those reported in the literature. 29\nNO2\nO2N",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(4-(trifluoromethyl)phenyl)benzenesulfonamide (Antifungal agent, 59):",
+          "page_start": 29,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1-chloro4-(trifluoromethyl)benzene (108 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (133 mg, 88% yield) was obtained as a white solid.\nCF3\n29 White solid; mp 140-142 \u00b0C; IR (neat, cm\u20131) \u03bd 3167, 2930, 2855, 1715, 1612, 1460, 1335, 1265, 1166, 1079; 1H NMR (400 MHz, CDCl3) \u03b4 8.09 (s, 1H), 7.86 (d, J = 7.6 Hz, 2H), 7.51 (t, J = 7.6 Hz, 1H), 7.42 (t, J = 7.6 Hz, 4H), 7.19 (d, J = 8.4 Hz, 2H); 13C NMR (100 MHz, CDCl3) \u03b4 140.0, 138.7, 133.7, 129.5 (2C), 127.3 (2C), 126.7 (q, 3JC-F = 3.0 Hz, 2C), 126.6 (q, 2JC-F = 33.0 Hz, 1C), 124.0 (q, 1JC-F = 270.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.32 \u01fa), 119.9 (2C); HRMS (EI+) m/z [M]+ Calcd for C13H10F3NO2S: 301.0384, Found 301.0382. All analytical data are in good accordance with those reported in the literature.\n29",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(4-acetylphenyl)benzenesulfonamide (Anticancer agent, 60):",
+          "page_start": 29,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1- (4-chlorophenyl)ethan-1-one (116 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction).\nCH3\n29 After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (116 mg, 84% yield) was obtained as a white solid. 30 White solid; mp 138-140 \u00b0C; IR (neat, cm\u20131) \u03bd 3170, 2940, 2658, 1725, 1640, 1380, 1360, 1275, 1180, 1081; 1H NMR (400 MHz, CDCl3) \u03b4 8.03 (brs, 1H), 7.94 (d, J = 7.2 Hz, 1H), 7.88- 7.81 (m, 3H), 7.57-7.43 (m, 3H), 7.18 (d, J = 8.4 Hz, 2H), 2.52 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 197.3, 142.1, 141.4, 138.9, 133.6, 130.1, 129.4, 129.3, 127.3, 126.5, 119.1, 26.5; HRMS (EI+) m/z [M]+ Calcd for C14H13NO3S: 275.0616, Found 275.0618. All analytical data are in good accordance with those reported in the literature. 30",
+          "figures": [
+            "SI_p29_fig0"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-(4-vinylphenyl)methanesulfonamide (ABT072 Precursor, 61):",
+          "page_start": 30,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using methanesulfonamide (48 mg, 0.5 mmol), 1-bromo-4- vinylbenzene (137 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (67 mg, 68% yield) was obtained as a white solid. 31 White solid; mp 110-112 \u00b0C; IR (neat, cm\u20131) \u03bd 3251, 2841, 1619, 1483, 1372, 1298, 1135, 1073; 1H NMR (400 MHz, CDCl3) \u03b4 7.39 (d, J = 8.8 Hz, 2H), 7.18 (d, J = 8.4 Hz, 2H), 6.68 (q, J = 10.8 Hz, 1H), 6.57 (s, 1H), 5.71 (d, J = 17.6 Hz, 1H), 5.25 (d, J =10.8 Hz, 1H), 3.00 (s, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 136.2, 135.8, 135.2, 127.7 (2C), 120.9 (2C), 114.2, 22.8; HRMS (EI+) m/z [M]+ Calcd for C9H11NO2S: 197.0510, Found  197.0512. All analytical data are in good accordance with those reported in the literature. 31",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-(tert-butyl)-N-phenylbenzenesulfonamide (Anticancer, 62):",
+          "page_start": 30,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-(tert-butyl)benzenesulfonamide (121 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (117 mg, 81% yield) was obtained as a white solid. 32 White solid; mp 120-122 \u00b0C; IR (neat, cm\u20131) \u03bd 3187, 2730, 2650, 1835, 1618, 1468, 1336, 1263, 1167, 1049; 1H NMR (400 MHz, CDCl3) \u03b4 7.77 (d, J = 8.4 Hz, 2H), 7.63 (s, 1H), 7.43 (d, J = 8.8 Hz, 2H), 7.22 (t, J = 7.6 Hz, 2H), 7.14 (d, J = 8.0 Hz, 2H), 7.08 (t, J = 7.2 Hz, 1H), 1.29 (s, 9H); 13C NMR (100 MHz, CDCl3) \u03b4 156.9, 136.9, 136.1, 129.4(2C), 127.2(2C), 126.2 (2C), 125.0, 121.2 (2C), 35.2, 31.1; HRMS (EI+) m/z [M]+ Calcd for C16H19NO2S: 289.1136, Found 289.1138. All analytical data are in good accordance with those reported in the literature.32",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-bromo-N-phenylbenzenesulfonamide (Anticancer, 63):",
+          "page_start": 30,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-bromobenzenesulfonamide (118 mg, 0.5 mmol), chlorobenzene (84 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (15% ethyl acetate in hexane), the title compound (116 mg, 74% yield) was obtained as a pale yellow solid. 33\nBr Pale yellow solid; mp 126-128 \u00b0C; IR (neat, cm\u20131) \u03bd 3169, 2950, 2889, 1762, 1689, 1478, 1382, 1212, 1188, 1078; 1H NMR (400 MHz, CDCl3) \u03b4 7.65-7.62 (m, 2H), 7.57-7.55 (m, 2H), 7.27-7.23 (m, 2H), 7.16-7.02 (m, 4H); 13C NMR (100 MHz, CDCl3) \u03b4 138.1, 136.1, 132.5 (2C), 129.6 (2C), 128.9 (2C), 128.3, 126.0, 122.0 (2C); HRMS (EI+) m/z [M]+ Calcd for C12H10BrNO2S: 310.9616, Found 310.9616. All analytical data are in good accordance with those reported in the literature. 33",
+          "figures": [
+            "SI_p30_fig0"
+          ]
+        },
+        {
+          "heading": "Synthesis of 2-nitro-N-(4-nitrophenyl)benzenesulfonamide (Antifungal agent, 64):",
+          "page_start": 31,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2-nitrobenzenesulfonamide (101 mg, 0.5 mmol), 1-bromo-4-nitrobenzene (152 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (28% ethyl acetate in hexane), the title compound (105 mg, 65% yield) was obtained as a yellow solid. 29 Yellow solid; mp 195-197 \u00b0C; IR (neat, cm\u20131) \u03bd 3277, 2990, 2745, 1779, 1682, 1469, 1360, 1269, 1161, 1072; 1H NMR (400 MHz, DMSO-d6) \u03b4 8.27 (dd, J = 8.8, 2.4 Hz, 2H), 8.04 (d, J = 8.8 Hz, 2H), 7.87 (dd, J = 6.8, 2.0 Hz, 1H), 7.57-7.54 (m, 3H), 7.49-7.44 (m, 1H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 148.2, 147.9, 146.4, 132.4, 130.3 (2C), 126.9, 126.1 124.4, (2C), 124.2, 122.8; HRMS (EI+) m/z [M]+ Calcd for C12H9N3O6S: 323.0212, Found 323.0212. All analytical data are in good accordance with those reported in the literature.29\nNO2\nNO2",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of ethyl 2-((4-bromophenyl)sulfonamido)benzoate (Anticancer, 65):",
+          "page_start": 31,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 4-bromobenzenesulfonamide (118 mg, 0.5 mmol), ethyl 2-chlorobenzoate (138 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (140 mg, 73% yield) was obtained as a white solid. 34 White solid; mp 176-178 \u00b0C; IR (neat, cm\u20131) \u03bd 3160, 2932, 2755, 1760, 1712, 1619, 1510, 1334, 1269, 1213, 1101; 1H NMR (400 MHz, CDCl3) \u03b4 10.70 (s, 1H), 7.93 (dd, J = 8.0, 1.2 Hz, 1H), 7.70-7.67 (m, 3H), 7.60 (s, 1H), 7.54 (s, 1H), 7.46 (td, J = 8.4, 1.2 Hz, 1H), 7.07 (td, J = 8.0, 0.8 Hz, 1H), 4.32 (q, J = 6.8 Hz, 2H), 1.36 (t, J = 7.2 Hz, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 168.0, 140.2, 138.6, 135.0, 132.4 (2C), 131.4, 128.9 (2C), 128.2, 123.5, 119.6, 116.7, 61.9, 14.2; HRMS (EI+) m/z [M]+ Calcd for C15H14BrNO4S: 382.9827, Found 382.9828. All analytical data are in good accordance with those reported in the literature. 34\nBr COOEt\n31",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(3-(5-(2-aminopyrimidin-4-yl)-2-(tert-butyl)-1\u03bb3, 3\u03bb2-thiazol-4-yl)-2- fluorophenyl)-2,6-difluorobenzenesulfonamide (Dabrafenib) (Anticancer, 66):",
+          "page_start": 32,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using 2,6- difluorobenzenesulfonamide (97 mg, 0.5 mmol),                4- (4-(3-Bromo-2-fluorophenyl)-2-(tert-butyl)thiazol-5- yl)pyrimidin-2-amine1 (263 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (45% ethyl acetate in hexane), the title compound (210 mg, 81% yield) was obtained as a colourless solid. 2\nF\nF O O\nNH2\nColourless solid; mp >200 \u00b0C; IR (neat, cm\u20131) \u03bd 3566, 3374, 3258, 2889, 2657, 1588, 1490, 1411, 1257, 1137, 1009; 1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 7.93 (t, J = 8.0 Hz, 1H), 7.56-7.51 (m, 1H), 7.38 (s, 1H), 7.34 (td, J = 8.0, 4.0 Hz, 1H),  7.21 (s, 1H), 7.19- 7.16 (m, 1H), 6.89 (s, 1H), 6.87 (s, 1H), 6.85 (s, 2H), 5.39 (s, 1H), 1.10 (s, 9H); 13C NMR (100 MHz, DMSO-d6) \u03b4 180.2, 165.8 (d, 1JC-F = 254.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.36 \u01fa), 165.7 (d, 1JC-F = 255.0 Hz, 1C, bond distance for C\u2013F coupling constant is around 1.36 \u01fa), 162.4 (d, 1JC-F = 262.0 Hz, 2C, bond distance for C\u2013F coupling constant is around 1.36 \u01fa), 151.0, 143.1 (d, 3JC-F = 9.0 Hz, 1C), 142.7, 140.7, 140.6 (d, 2JC-F = 23.0 Hz, 1C), 133.1 (d, 4JC-F = 2.0 Hz, 1C), 131.8 (d, 4JC-F = 4.0 Hz, 1C), 128.4, 125.5 (dd, 2JC-\nF = 16.5, 5.0 Hz, 1C), 120.0 (d, 2JC-F = 23.0 Hz, 2C), 119.9 (d, 2JC-F = 24.0 Hz, 2C), 117.8, 110.9, 36.5, 28.2; HRMS (EI+) m/z [M]+ Calcd for C23H20F3N5O2S2: 519.1011, Found 519.1011. All analytical data are in good accordance with those reported in the literature. 2",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(4-(2-(methyl(2-(4- (methylsulfonamido)phenoxy)ethyl)amino)ethyl)phenyl) methanesulfonamide (Dofetilide) (Antiarrhythmic, 67):",
+          "page_start": 32,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using methanesulfonamide (48 mg, 0.5 mmol), N-(4-chlorophenethyl)-2-(4- chlorophenoxy)-N-methylethan-1- amine31 (310 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (25% ethyl acetate in hexane), the title compound (196 mg, 89% yield) was obtained as a colourless solid. 2\nMe\nMe\nColourless solid; mp 155-157 \u00b0C; IR (neat, cm\u20131) \u03bd 3451, 3322, 3274, 2871, 2612, 2603, 1492, 1467, 1289, 1139, 1027; 1H NMR (400 MHz, CDCl3) \u03b4 9.43 (s, 1H), 7.93-7.82 (m, 2H), 7.41- 7.29 (m, 4H), 7.16-7.10 (m, 2H), 3.34-3.27 (m, 2H), 2.89-2.86 (m, 3H), 2.82-2.75 (m, 5H), 2.58-2.44 (m, 3H), 2.32-2.26 (m, 2H), 1.97-1.89 (m, 2H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 31.2, 36.3, 39.0, 43.0, 43.8, 49.2, 63.5, 110.6, 119.8, 125.3, 130.4, 131.2 (2C), 138.6 (2C), 139.7 (2C), 162.4 (2C); HRMS (EI+) m/z [M]+ Calcd for C19H27N3O5S2:\nN S\nMe\n32 441.1392, Found 441.1392. All analytical data are in good accordance with those reported in the literature. 2",
+          "figures": [
+            "SI_p32_fig0",
+            "SI_p32_fig1"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-(2-(phenylsulfonamido)phenyl)-2-(trifluoromethoxy)benzenesulfonamide (68):",
+          "page_start": 33,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (79 mg, 0.5 mmol), N-(2- bromophenyl)-2-(trifluoromethoxy)benzenesulfonamide (29 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (22% ethyl acetate in hexane), the title compound (146 mg, 62% yield) was obtained as a white solid.\nOCF3\nHN\nS O\nWhite solid; mp 140-142 \u00b0C; IR (neat, cm\u20131) \u03bd 3265, 2917, 1584, 1471, 1339, 1220, 1160, 1071; 1H NMR (400 MHz, DMSO-d6) \u03b4 7.90 (d, J = 8.0 Hz, 1H), 7.52-7.46 (m, 4H), 7.29-7.21 (m, 2H), 7.18-7.11 (m, 4H), 7.08-7.05 (m, 2H), 6.25 (s, 2H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) \u03b4 145.7, 134.8, 134.0, 133.7, 133.6 (2C), 129.6, 129.1, 128.5 (2C), 128.4, 126.3, 126.3, 124.6, 124.1, 121.5, 119.9, 119.8, 118.9; HRMS (EI+) m/z [M]+ Calcd for C19H15F3N2O5S2: 472.0374, Found 472.0374.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 4-amino-N-(4-(phenylsulfonamido)phenyl)benzenesulfonamide (69):",
+          "page_start": 33,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (79 mg, mmol), 4-amino-N-(4- chlorophenyl)benzenesulfonamide (212 mg, mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (40% ethyl acetate in hexane), the title compound (117 mg, 58% yield) was obtained as a white solid. The 13C NMR spectra of this compound was taken in a mixture of solvents (CDCl3 and DMSO-d6 mixture) due to solubility issues. White solid; mp >200 \u00b0C; IR (neat, cm\u20131) \u03bd 3314, 2923, 2849, 1717, 1587, 1464, 1350, 1261, 1155, 1090, 1025; 1H NMR (400 MHz, CDCl3) \u03b4 12.58 (d, J = 7.6 Hz, 1H), 12.23-12.15 (m, 1H), 11.84-11.38 (m, 1H), 10.06 (s, 2H), 9.27 (s, 2H), 7.92 (s, 8H), 5.92 (s, 1H), 4.74 (s, 1H); 13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture due to solubility issues) \u03b4 143.4, 143.3, 140.7, 137.4, 131.4 (2C), 128.6 (2C), 128.4 (2C), 126.5, 125.6 (2C), 123.9 (2C), 123.8 (2C), 120.3; HRMS (EI+) m/z [M]+ Calcd for C18H17N3O4S2: 403.0660, Found 403.0662.\nO O\nNH\nH2N",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of 2-iodo-N-(quinolin-8-yl)naphthalene-1-sulfonamide (70):",
+          "page_start": 33,
+          "text": "A mixture of N-(quinolin-8-yl)naphthalene-1-sulfonamide (167 mg, 0.5 mmol), I2 (127 mg, 2equiv.), K2S2O8  (676 mg, 5equiv.), NaOAc (123 mg, 3equiv.), Co(OAc)2.4H2O (37 mg, 30 mol%), and DCE (1mL) was heated at 120\u00b0C under an argon atmosphere for 36 h (TLC). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (163 mg, 71% yield) was obtained as a white solid.\n33 White solid; mp 178-180 \u00b0C; IR (neat, cm\u20131) \u03bd 3256, 2923, 2857, 1717, 1587, 1497, 1358, 1196, 1155, 1065, 1032; 1H NMR (400 MHz, CHCl3) \u03b4 9.57 (s, 1H), 8.80 (d, J = 8.4 Hz, 1H), 8.65 (d, J = 4.0 Hz, 1H), 8.36 (d, J = 6.8 Hz, 1H), 8.16 (dd, J = 8.4, 1.2 Hz,  1H), 7.96 (d, J = 8.4 Hz, 1H), 7.86 (d, J = 8.0 Hz, 1H), 7.81 (d, J = 8.0 Hz, 1H), 7.67 (td, J = 8.4, 1.2 Hz,  1H), 7.53-7.44 (m, 3H), 7.39 (q, J = 4H, 1H); 13C NMR (100 MHz, CDCl3) \u03b4 149.2, 140.6, 138.7, 137.6, 134.9, 134.8, 134.3, 133.9, 130.4, 129.9, 129.1, 128.6, 128.1, 127.0, 124.5, 124.0, 123.6, 115.4, 89.7; HRMS (EI+) m/z [M]+ Calcd for C19H13IN2O2S: 459.9742, Found 459.9742.",
+          "figures": [
+            "SI_p33_fig0",
+            "SI_p33_fig1"
+          ]
+        },
+        {
+          "heading": "Synthesis of 2-(phenylselanyl)-N-(quinolin-8-yl)naphthalene-1-sulfonamide (71):",
+          "page_start": 34,
+          "text": "A mixture of N-(quinolin-8-yl)naphthalene-1-sulfonamide (167 mg, 0.5 mmol), diphenyl diselenide (155 mg, 0.5 mmol), Pd(OAc)2 ( 15 mg, 5 mol%), CuBr2 (30 mg, 33 mol%), and DMF (3.75mL) was heated at 100\u00b0C under an argon atmosphere for 24 h (TLC). After silica gel column chromatography (20% ethyl acetate in hexane), the title compound (103 mg, 42% yield) was obtained as a yellow gummy liquid.\nSePh\nYellow gummy liquid; IR (neat, cm\u20131) \u03bd 3232, 2923, 2857, 1717, 1570, 1472, 1375, 1203, 1155, 1081, 1016; 1H NMR (400 MHz, CDCl3) \u03b4 9.56 (s, 1H), 8.84 (d, J = 8.4 Hz, 1H), 8.69 (dd, J = 4.4, 1.6 Hz, 1H), 8.37 (dd, J = 7.2, 1.6 Hz, 1H), 8.00 (dd, J = 8.0, 1.6 Hz, 1H), 7.95 (d, J = 8.4, 1H), 7.81 (d, J = 8.4, 1H), 7.72-7.65 (m, 2H), 7.62-7.60 (m, 2H), 7.52 (td, J = 7.2, 0.8 Hz, 1H), 7.46 (t, J = 8.0 Hz, 1H), 7.36-7.33 (m, 2H), 7.29-7.24 (m, 3H); 13C NMR (100 MHz, CDCl3) \u03b4 148.6, 138.3, 136.3, 134.7, 134.4, 134.3, 133.9, 131.6 (2C), 131.0, 130.3, 129.3, 129.0, 128.5, 128.3, 128.2, 127.9, 127.0, 126.9, 124.7, 124.0, 122.0, 121.9, 114.3; HRMS (EI+) m/z [M]+ Calcd for C25H18N2O2SSe: 490.0254, Found 490.0251.",
+          "figures": []
+        },
+        {
+          "heading": "Synthesis of N-(2-(allyloxy)phenyl)benzenesulfonamide (72):",
+          "page_start": 34,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using benzenesulfonamide (78 mg, 0.5 mmol), 1-(allyloxy)-2- chlorobenzene (126.5 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (17% ethyl acetate in hexane), the title compound (100 mg, 69% yield) was obtained as a white solid. White solid; mp 175-177 \u00b0C; IR (neat, cm\u20131) \u03bd 3256, 2914, 2857, 1717, 1594, 1497, 1399, 1326, 1236, 1155, 1090; 1H NMR (400 MHz, CDCl3) \u03b4 7.73 (d, J = 7.4 Hz, 2H), 7.56 (dd, J = 8.0, 1.5 Hz, 1H), 7.47-7.51 (m, 1H),  7.38 (t, J = 7.6 Hz, 2H), 7.00-7.04 (m, 2H), 6.91 (td, J = 7.6, 0.7 Hz, 1H), 6.70 (dd, J = 8.2, 0.7 Hz, 1H), 5.76-5.85 (m, 1H), 5.22 (td, J = 10.5, 1.2 Hz, 2H), 4.31 (t, J = 5.4 Hz, 2H); 13C NMR (100 MHz, CDCl3) \u03b4 148.9, 139.3, 132.9, 132.5, 128.9 (2C), 127.4 (2C), 126.1, 125.8, 122.2, 121.5, 118.5, 111.9, 69.5; HRMS (EI+) m/z [M]+ Calcd for C15H15NO3S: 289.0773, Found 289.0773.\n34",
+          "figures": [
+            "SI_p34_fig0",
+            "SI_p34_fig1"
+          ]
+        },
+        {
+          "heading": "Synthesis of N-phenyl-N-(p-tolyl)benzenesulfonamide (73):",
+          "page_start": 35,
+          "text": "The reaction was carried out according to the general procedure A for 15 h, using N-phenylbenzenesulfonamide 1 (116 mg, 0.5 mmol), 4- chlorotoluene (95 mg, 0.75 mmol), K2CO3 (104 mg, 0.75 mmol), Fe(acac)3 (9 mg, 5 mol%), CuI (5 mg, 5 mol%) and DMSO (100 \u00b5L per 0.5 mmol scale of reaction). After silica gel column chromatography (10% ethyl acetate in hexane), the title compound (55 mg, 34% yield) was obtained as a white solid. White solid; mp 165-167 \u00b0C; IR (neat, cm\u20131) \u03bd 2921, 2819, 1702, 1574, 1487, 1326, 1276, 1152; 1H NMR (400 MHz, CDCl3) \u03b4 7.72 (d, J = 7.2 Hz, 1H), 7.62-7.57 (m, 2H), 7.52-7.46 (m, 2H), 7.34-7.27 (m, 6H), 7.18-7.10 (m, 3H), 2.35 (s, 3H); 13C NMR (100MHz, CDCl3) \u03b4 141.8, 141.6, 140.7, 138.9, 137.9, 132.9, 132.8, 130.1, 129.4, 129.0, 128.9, 128.6, 128.2, 128.0, 127.9, 127.5, 127.4, 126.8, 21.2; HRMS (EI+) m/z [M]+ Calcd for  C19H17NO2S: 323.0980, Found 323.0980.\nCH3 35",
+          "figures": [
+            "SI_p35_fig0"
+          ]
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    },
+    {
+      "heading": "13. 1H and 13C NMR Spectra",
+      "page_start": 36,
+      "preamble": "",
+      "records": [
+        {
+          "heading": "N-phenylbenzenesulfonamide (1)",
+          "page_start": 36,
+          "text": "121.55 125.33 129.08 129.33 133.08 136.56 138.89\n210 36",
+          "figures": [
+            "SI_p36_fig0",
+            "SI_p36_fig1"
+          ]
+        },
+        {
+          "heading": "N-(o-tolyl)benzenesulfonamide (2)",
+          "page_start": 37,
+          "text": "124.70 126.55 129.15 130.93 131.61 133.12 134.41 139.70\n17.63\nCH3\n37",
+          "figures": [
+            "SI_p37_raster0",
+            "SI_p37_fig0"
+          ]
+        },
+        {
+          "heading": "N-(2-methoxyphenyl)benzenesulfonamide (3)",
+          "page_start": 38,
+          "text": "OCH3\n110.70\n121.20 121.66 125.71 125.88 128.81 132.92\n139.28\n149.81\n55.68\nOCH3\n38",
+          "figures": [
+            "SI_p38_fig0",
+            "SI_p38_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2-methoxy-6-methylphenyl)benzenesulfonamide (4):",
+          "page_start": 39,
+          "text": "H3C\nOCH3\n104.342\n113.981\n128.296 129.150 132.294 132.711 133.785 138.808 141.100\n155.229\n29.324\n55.685\nH3C\nOCH3\n210\n39",
+          "figures": [
+            "SI_p39_fig0",
+            "SI_p39_fig1"
+          ]
+        },
+        {
+          "heading": "ethyl 2-(phenylsulfonamido)benzoate (5)",
+          "page_start": 40,
+          "text": "CO2Et\n128.02 128.43 128.58 130.06 130.40 131.46 131.64 132.69 139.29 140.76\n166.66\nCO2Et 13.92 61.32",
+          "figures": [
+            "SI_p40_fig0",
+            "SI_p40_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2-nitrophenyl)benzenesulfonamide (6)",
+          "page_start": 41,
+          "text": "11.0\n121.20 124.10 126.29 129.52 133.85 136.01 137.25 138.72 NO2 41",
+          "figures": [
+            "SI_p41_fig0",
+            "SI_p41_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2-bromophenyl)benzenesulfonamide (7)",
+          "page_start": 42,
+          "text": "Br\n123.05 126.61 128.66 129.12 132.69 133.39 134.62 138.84\nBr\n13C NMR (400 MHz, CDCl3) spectrum of Compound 7 116.10 42",
+          "figures": [
+            "SI_p42_fig0",
+            "SI_p42_fig1"
+          ]
+        },
+        {
+          "heading": "2-methyl-N-phenylbenzenesulfonamide (8)",
+          "page_start": 43,
+          "text": "CH3\n120.49 124.95 126.39 129.43 130.10 132.72 133.26 136.59 137.34 137.44\n20.51\nCH3\n43",
+          "figures": [
+            "SI_p43_fig0",
+            "SI_p43_fig1"
+          ]
+        },
+        {
+          "heading": "N-phenyl-2-(trifluoromethoxy)benzenesulfonamide (9)",
+          "page_start": 44,
+          "text": "119.15 119.82 119.84 119.86 119.87 121.52 125.87 126.62 129.52 130.68 131.85 134.99 135.82\n146.02\nOCF3 OCF3 44",
+          "figures": [
+            "SI_p44_fig0",
+            "SI_p44_fig1"
+          ]
+        },
+        {
+          "heading": "N-(o-tolyl)-2-(trifluoromethoxy)benzenesulfonamide (10)",
+          "page_start": 45,
+          "text": "119.14 120.06 120.08 120.10 120.22 121.74 122.68 126.23 126.65 131.16 131.69 131.71 134.13 134.92 146.06 146.08 17.58 45",
+          "figures": [
+            "SI_p45_raster0",
+            "SI_p45_fig0",
+            "SI_p45_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2,6-dimethylphenyl)-2-(trifluoromethoxy)benzenesulfonamide  (11)",
+          "page_start": 46,
+          "text": "46",
+          "figures": [
+            "SI_p46_raster0",
+            "SI_p46_raster1"
+          ]
+        },
+        {
+          "heading": "N-(2-methoxyphenyl)-2-(trifluoromethoxy)benzenesulfonamide (12)",
+          "page_start": 47,
+          "text": "OCF3\nOCH3\n110.54 118.81 118.95 118.96 119.05 120.38 121.01 121.64 125.33 125.41 125.93 130.40 131.75 134.80\n146.21\n149.35 55.55 OCF3 OCH3 47",
+          "figures": [
+            "SI_p47_fig0",
+            "SI_p47_fig1"
+          ]
+        },
+        {
+          "heading": "methyl 2-((2-methylphenyl)sulfonamido)benzoate (13)",
+          "page_start": 48,
+          "text": "CH3\nCOOCH3\n125.98 130.67 130.78 131.17 132.04 132.71 132.79 132.91 139.30 140.42 140.52\n167.34\nCH3\nCOOCH3 21.33 52.27 48",
+          "figures": [
+            "SI_p48_fig0",
+            "SI_p48_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2-bromophenyl)-2-(trifluoromethoxy)benzenesulfonamide (14)",
+          "page_start": 49,
+          "text": "114.49 116.39 118.99 119.75 119.93 119.95 120.16 120.95 121.59 124.19 126.08 126.37 128.62 130.60 131.61 132.90 134.35 135.32 146.26\nOCF3\nBr\n210 OCF3 Br 49",
+          "figures": [
+            "SI_p49_fig0",
+            "SI_p49_fig1"
+          ]
+        },
+        {
+          "heading": "methyl N-(anthracen-9-yl)-2-methylbenzenesulfonamide (15)",
+          "page_start": 50,
+          "text": "116.77 121.88 124.51 125.90 126.44 128.25 128.68 128.99 129.30 130.68 135.92 136.54\n148.49\n165.71\nCH3 21.68",
+          "figures": [
+            "SI_p50_raster0",
+            "SI_p50_fig0",
+            "SI_p50_fig1",
+            "SI_p50_fig2"
+          ]
+        },
+        {
+          "heading": "N-(anthracen-9-yl)-2-(trifluoromethoxy)benzenesulfonamide (16)",
+          "page_start": 51,
+          "text": "OCF3\n1H NMR (400 MHz, DMSO-d6) spectrum of Compound 16\n118.57 119.64 121.62 125.29 126.04 126.73 126.91 126.97 128.20 128.78 129.99 131.64 133.32 133.77 134.75 145.34\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 16 38.85 39.06 39.27 39.48 39.69 39.90 40.10 51",
+          "figures": [
+            "SI_p51_fig0",
+            "SI_p51_fig1",
+            "SI_p51_fig2"
+          ]
+        },
+        {
+          "heading": "N-(2,6-difluorophenyl)-2-methylbenzenesulfonamide (17)",
+          "page_start": 52,
+          "text": "52",
+          "figures": [
+            "SI_p52_raster0",
+            "SI_p52_fig0"
+          ]
+        },
+        {
+          "heading": "N-(naphthalen-1-yl)-2-(trifluoromethoxy)benzenesulfonamide (18)",
+          "page_start": 53,
+          "text": "OCF3\n119.14 119.85 119.97 119.98 120.11 121.60 122.09 125.37 126.53 126.55 126.89 128.47 129.15 130.98 131.37 131.55 134.34 134.87 146.12\n53 OCF3",
+          "figures": [
+            "SI_p53_fig0",
+            "SI_p53_fig1",
+            "SI_p53_fig2",
+            "SI_p53_fig3"
+          ]
+        },
+        {
+          "heading": "N-(anthracen-9-yl)naphthalene-1-sulfonamide (19)",
+          "page_start": 54,
+          "text": "1H NMR (400 MHz, DMSO-d6) spectrum of Compound 19\n121.14 121.19 124.29 124.84 124.89 125.19 125.55 125.68 126.33 126.89 128.71 128.76 130.30 130.47 130.48 133.33\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 19 38.10 38.31 38.52 38.73 38.94 39.15 39.36 54",
+          "figures": [
+            "SI_p54_fig0",
+            "SI_p54_fig1",
+            "SI_p54_fig2",
+            "SI_p54_fig3"
+          ]
+        },
+        {
+          "heading": "N-(2-methoxyphenyl)naphthalene-1-sulfonamide (20)",
+          "page_start": 55,
+          "text": "OCH3\n110.69 121.24 121.40 122.50 125.60 125.97 128.91 129.11 129.36 129.65 132.05 134.98 136.28\n149.70 55.66 OCH3 55",
+          "figures": [
+            "SI_p55_fig0",
+            "SI_p55_fig1",
+            "SI_p55_fig2",
+            "SI_p55_fig3"
+          ]
+        },
+        {
+          "heading": "N-(3,5-dibromophenyl)benzenesulfonamide (21)",
+          "page_start": 56,
+          "text": "122.03 123.34 129.50 130.56 133.77 138.22 138.87 Br Br Br 56",
+          "figures": [
+            "SI_p56_fig0",
+            "SI_p56_fig1"
+          ]
+        },
+        {
+          "heading": "N-(4-fluorophenyl)benzenesulfonamide (22)",
+          "page_start": 57,
+          "text": "F\n115.98 116.21\n124.54 124.63 129.14 132.35 132.38 133.20 138.56\n159.42 161.85\nF\n57",
+          "figures": [
+            "SI_p57_fig0",
+            "SI_p57_fig1"
+          ]
+        },
+        {
+          "heading": "N-(4-cyanophenyl)benzenesulfonamide (23)",
+          "page_start": 58,
+          "text": "58",
+          "figures": [
+            "SI_p58_raster0",
+            "SI_p58_raster1"
+          ]
+        },
+        {
+          "heading": "4-fluoro-N-phenylbenzenesulfonamide (24)",
+          "page_start": 59,
+          "text": "F\n116.34 116.57\n121.94 125.82 129.56 130.10 130.19 134.99 136.28\n164.10 166.63\nF\n59",
+          "figures": [
+            "SI_p59_fig0",
+            "SI_p59_fig1"
+          ]
+        },
+        {
+          "heading": "N-phenylnaphthalene-2-sulfonamide (25)",
+          "page_start": 60,
+          "text": "121.609 122.319 125.412 129.014 129.032 129.389 129.415 129.545 132.076 134.983 135.936 136.560",
+          "figures": [
+            "SI_p60_fig0",
+            "SI_p60_fig1"
+          ]
+        },
+        {
+          "heading": "4-fluoro-N-(2-nitrophenyl)benzenesulfonamide (26)",
+          "page_start": 61,
+          "text": "F NO2\n11.0 11.5\n116.64 116.86 121.06 124.26 126.25 130.06 130.16 133.44 134.62 134.65 136.01 137.23\n164.30 166.86\nF NO2\n61",
+          "figures": [
+            "SI_p61_fig0",
+            "SI_p61_fig1"
+          ]
+        },
+        {
+          "heading": "3-cyano-N-(4-(trifluoromethyl)phenyl)benzenesulfonamide (27)",
+          "page_start": 62,
+          "text": "62",
+          "figures": [
+            "SI_p62_raster0",
+            "SI_p62_raster1"
+          ]
+        },
+        {
+          "heading": "2-methyl-N-(thiophen-2-yl)benzenesulfonamide (28)",
+          "page_start": 63,
+          "text": "63",
+          "figures": [
+            "SI_p63_raster0",
+            "SI_p63_raster1"
+          ]
+        },
+        {
+          "heading": "N-(1\u03bb3,3\u03bb2-thiazol-2-yl)benzenesulfonamide (29)",
+          "page_start": 64,
+          "text": "107.58\n118.38\n124.01 126.72 128.98 132.72\n138.23\n141.45\n64",
+          "figures": [
+            "SI_p64_fig0",
+            "SI_p64_fig1"
+          ]
+        },
+        {
+          "heading": "N-(quinolin-3-yl)benzenesulfonamide (30)",
+          "page_start": 65,
+          "text": "126.81 128.11 128.93 129.29 129.41 130.55 133.48 138.98\n145.58 145.65 65",
+          "figures": [
+            "SI_p65_fig0",
+            "SI_p65_fig1"
+          ]
+        },
+        {
+          "heading": "N-(quinolin-8-yl)naphthalene-1-sulfonamide (31)",
+          "page_start": 66,
+          "text": "11.0 11.5 12.0\n114.26 121.84 122.03 123.99 124.73 126.85 126.97 128.20 128.45 129.01 130.25 134.31 134.66 136.23\n148.62 66",
+          "figures": [
+            "SI_p66_fig0",
+            "SI_p66_fig1",
+            "SI_p66_fig2",
+            "SI_p66_fig3"
+          ]
+        },
+        {
+          "heading": "N-phenylthiophene-2-sulfonamide (32)",
+          "page_start": 67,
+          "text": "122.03 125.95 129.50 132.59 133.06 136.26 139.44\n67",
+          "figures": [
+            "SI_p67_fig0",
+            "SI_p67_fig1"
+          ]
+        },
+        {
+          "heading": "N-phenylpyridine-2-sulfonamide (33)",
+          "page_start": 68,
+          "text": "1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 33\n120.62 122.26 126.33 126.80 129.95 131.33\n137.92\n149.58\n159.28\n-10\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 33 39.21 39.42 39.62 39.83 40.04 40.25 40.46 68",
+          "figures": [
+            "SI_p68_raster0",
+            "SI_p68_fig0"
+          ]
+        },
+        {
+          "heading": "N-(4-(trifluoromethyl)phenyl)pyridine-2-sulfonamide (34)",
+          "page_start": 69,
+          "text": "69",
+          "figures": [
+            "SI_p69_raster0",
+            "SI_p69_raster1"
+          ]
+        },
+        {
+          "heading": "N-(pyridin-2-yl)thiophene-2-sulfonamide (35)",
+          "page_start": 70,
+          "text": "",
+          "figures": [
+            "SI_p70_raster0",
+            "SI_p70_raster1"
+          ]
+        },
+        {
+          "heading": "N-(thiazol-2-yl)thiophene-2-sulfonamide (36)",
+          "page_start": 71,
+          "text": "1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 36\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 36 71",
+          "figures": [
+            "SI_p71_raster0",
+            "SI_p71_raster1"
+          ]
+        },
+        {
+          "heading": "N-(5-acetylthiophen-2-yl)thiophene-2-sulfonamide (37)",
+          "page_start": 72,
+          "text": "CH3\n-0.5 11.5 12.5 13.5\n1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 37\n117.04\n132.30 132.46 132.84 136.81 139.10\n148.05\n190.24\n210\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 37\n72 25.89 39.45 39.66 39.86 40.07 40.29 40.50",
+          "figures": [
+            "SI_p72_fig0",
+            "SI_p72_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2-bromophenyl)-2-methylpropane-2-sulfonamide (38)",
+          "page_start": 73,
+          "text": "113.80\n121.35 125.62 128.83 132.79 136.93\n73 24.80 62.58",
+          "figures": [
+            "SI_p73_fig0",
+            "SI_p73_fig1"
+          ]
+        },
+        {
+          "heading": "N-(anthracen-9-yl)-2-methylpropane-2-sulfonamide (39)",
+          "page_start": 74,
+          "text": "126.81 130.21 130.92 134.50\n143.06\n186.93\n-10 210 28.31 55.24 74",
+          "figures": [
+            "SI_p74_fig0",
+            "SI_p74_fig1"
+          ]
+        },
+        {
+          "heading": "2-methyl-N-phenylpropane-2-sulfonamide (40)",
+          "page_start": 75,
+          "text": "75",
+          "figures": [
+            "SI_p75_raster0",
+            "SI_p75_raster1"
+          ]
+        },
+        {
+          "heading": "N-phenylmethanesulfonamide (41)",
+          "page_start": 76,
+          "text": "129.68\n141.43\n40.18\n76",
+          "figures": [
+            "SI_p76_fig0",
+            "SI_p76_fig1"
+          ]
+        },
+        {
+          "heading": "N-benzyl-2-methylpropane-2-sulfonamide (42)",
+          "page_start": 77,
+          "text": "77",
+          "figures": [
+            "SI_p77_raster0",
+            "SI_p77_raster1"
+          ]
+        },
+        {
+          "heading": "methyl 4-((1,1-dimethylethyl)sulfonamido)butanoate (43)",
+          "page_start": 78,
+          "text": "78",
+          "figures": [
+            "SI_p78_raster0",
+            "SI_p78_fig0"
+          ]
+        },
+        {
+          "heading": "N-dodecylbenzenesulfonamide (44)",
+          "page_start": 79,
+          "text": "(CH2)11CH3\n13.28\n129.17 132.63\n140.19\n14.22\n22.79 25.87 26.62 29.17 29.54 29.62 29.72 32.02 32.92\n43.36\n63.17\n(CH2)11CH3\n79",
+          "figures": [
+            "SI_p79_fig0",
+            "SI_p79_fig1"
+          ]
+        },
+        {
+          "heading": "4-amino-N-isopropylbenzenesulfonamide (45)",
+          "page_start": 80,
+          "text": "",
+          "figures": [
+            "SI_p80_raster0",
+            "SI_p80_raster1"
+          ]
+        },
+        {
+          "heading": "(E)-N-styrylbenzenesulfonamide (46)",
+          "page_start": 81,
+          "text": "81",
+          "figures": [
+            "SI_p81_raster0",
+            "SI_p81_fig0"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(thiazol-2-yl)benzenesulfonamide (Sulfothiazole, antimicrobial drug, 47)",
+          "page_start": 82,
+          "text": "1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 47\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 47 113.10 122.80 130.29 135.44 142.44 150.39 38.77 38.98 39.19 39.40 39.61 39.82 40.02 82",
+          "figures": [
+            "SI_p82_fig0",
+            "SI_p82_fig1"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(pyridin-2-yl)benzenesulfonamide (Sulfapyridine, antibiotic drug, 48)",
+          "page_start": 83,
+          "text": "113.68\n121.22 121.68\n130.88\n138.27\n148.84 151.27 153.52\nH2N\n83",
+          "figures": [
+            "SI_p83_raster0",
+            "SI_p83_fig0"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(5-methyl-1\u03bb3,2\u03bb2-isoxazol-3-yl)benzenesulfonamide(Sulfomethoxazole, antibiotic drug, 49)",
+          "page_start": 84,
+          "text": "13CNMR (100 MHz, CDCl3) spectrum of Compound 49 84",
+          "figures": [
+            "SI_p84_raster0",
+            "SI_p84_raster1"
+          ]
+        },
+        {
+          "heading": "N-(6-methoxypyrimidin-4-yl)benzenesulfonamide (Sulphamonomethoxine, antibiotic drug, 50)",
+          "page_start": 85,
+          "text": "85",
+          "figures": [
+            "SI_p85_raster0",
+            "SI_p85_raster1"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(pyrimidin-2-yl)benzenesulfonamide (Sulfadiazine, antibiotic drug, 51)",
+          "page_start": 86,
+          "text": "1H NMR (400 MHz, DMSO-d6) spectrum of Compound 51\n112.82 113.78 118.11\n126.79 130.14\n136.20\n143.83\n152.13\n158.42\n38.77 38.97 39.18 39.39 39.60 39.81 40.02\n13C NMR (100 MHz, DMSO-d6) spectrum of Compound 51\n86",
+          "figures": [
+            "SI_p86_raster0",
+            "SI_p86_fig0"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(5-methyl-1,3,4-thiadiazol-2-yl)benzenesulfonamide (Anticancer, 52)",
+          "page_start": 87,
+          "text": "13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 52 113.015 130.218 130.275 150.422 150.480 38.760 38.972 39.181 39.391 39.600 39.808 40.020 49.278 CH3 H2N 87",
+          "figures": [
+            "SI_p87_raster0",
+            "SI_p87_fig0"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(5,6-dimethoxypyrimidin-4-yl)benzenesulfonamide (Sulphadozin, Antimalaria, antibiotic drug, 53)",
+          "page_start": 88,
+          "text": "OCH3 OCH3\nH2N\n1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 53\n112.58 112.97\n130.01\n137.29\n150.42 150.53\n162.71\n38.61 38.82 39.03 39.24 39.45 39.65 39.86\n54.09\n59.84\nOCH3 OCH3\nH2N\n-20 -10 210\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 53\n88",
+          "figures": [
+            "SI_p88_fig0",
+            "SI_p88_fig1"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(5,6-dimethoxypyrimidin-4-yl)benzenesulfonamide (COX-1 selective inhibitors, antimicrobial drug, 54)",
+          "page_start": 89,
+          "text": "Cl\nH2N\n11.0\n1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 54\n112.44\n120.65 124.62 128.07\n136.31\n151.32\n38.30 38.51 38.72 38.93 39.14 39.35 39.56\nCl\nH2N\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 54\n89",
+          "figures": [
+            "SI_p89_fig0",
+            "SI_p89_fig1"
+          ]
+        },
+        {
+          "heading": "N-(2,6-dimethoxypyrimidin-4-yl)benzenesulfonamide (Sulfadimethoxine, antibiotic drug, 55)",
+          "page_start": 90,
+          "text": "",
+          "figures": [
+            "SI_p90_raster0",
+            "SI_p90_raster1"
+          ]
+        },
+        {
+          "heading": "4-amino-N-phenylbenzenesulfonamide (Antimicrobial activities, 56)",
+          "page_start": 91,
+          "text": "H2N\n1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 56\n113.61\n120.58 123.90 128.85 129.05\n137.85\n150.89\n39.30 39.50 39.71 39.92 40.13 40.34 40.55\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 56\n91",
+          "figures": [
+            "SI_p91_fig0",
+            "SI_p91_fig1"
+          ]
+        },
+        {
+          "heading": "4-nitro-N-phenylbenzenesulfonamide (Antifungal agent, 57)",
+          "page_start": 92,
+          "text": "O2N\n113.82\n122.06 124.81 126.39 129.89\n139.62 139.91\n150.29\nO2N\n92",
+          "figures": [
+            "SI_p92_fig0",
+            "SI_p92_fig1"
+          ]
+        },
+        {
+          "heading": "4-nitro-N-(4-nitrophenyl)benzenesulfonamide (Antifungal agent, 58)",
+          "page_start": 93,
+          "text": "1H NMR (400 MHz, DMSO-d6) spectrum of Compound 58\n122.75 124.16 126.05 126.92 130.32 132.43\n147.87 148.20\nNO2\nO2N\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 58 37.55 37.76 37.97 38.18 38.38 38.59 38.80 93",
+          "figures": [
+            "SI_p93_raster0",
+            "SI_p93_fig0"
+          ]
+        },
+        {
+          "heading": "N-(4-(trifluoromethyl)phenyl)benzenesulfonamide (Antifungal agent, 59)",
+          "page_start": 94,
+          "text": "119.86 119.95 122.66 125.36 126.30 126.63 126.67 126.71 126.74 126.78 126.96 128.06 129.47 133.68 138.66 140.00 CF3 CF3 94",
+          "figures": [
+            "SI_p94_fig0",
+            "SI_p94_fig1"
+          ]
+        },
+        {
+          "heading": "N-(4-acetylphenyl)benzenesulfonamide (Anticancer agent, 60)",
+          "page_start": 95,
+          "text": "CH3\n119.05 126.46 129.29 129.39 130.12 133.55\n138.91 141.40 142.07\n197.30\n26.53\nCH3\n210\n95",
+          "figures": [
+            "SI_p95_fig0",
+            "SI_p95_fig1"
+          ]
+        },
+        {
+          "heading": "N-(4-vinylphenyl)methanesulfonamide (ABT072 Precursor, 61)",
+          "page_start": 96,
+          "text": "96",
+          "figures": [
+            "SI_p96_raster0",
+            "SI_p96_raster1"
+          ]
+        },
+        {
+          "heading": "4-(tert-butyl)-N-phenylbenzenesulfonamide (anticancer, 62)",
+          "page_start": 97,
+          "text": "121.15 125.04 126.15 129.35\n136.14 136.85\n156.85\n97 31.09 35.20",
+          "figures": [
+            "SI_p97_fig0",
+            "SI_p97_fig1"
+          ]
+        },
+        {
+          "heading": "4-bromo-N-phenylbenzenesulfonamide (anticancer, 63)",
+          "page_start": 98,
+          "text": "Br\n122.02 125.95 128.27 128.88 129.60 132.47 136.12 138.06\nBr\n98",
+          "figures": [
+            "SI_p98_fig0",
+            "SI_p98_fig1"
+          ]
+        },
+        {
+          "heading": "2-nitro-N-(4-nitrophenyl)benzenesulfonamide (Antifungal agent, 64)",
+          "page_start": 99,
+          "text": "122.75 124.16 124.37 126.05 126.92 130.32 132.43\n146.38 147.87 148.20\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 64 37.55 37.76 37.97 38.18 38.38 38.59 38.80 99",
+          "figures": [
+            "SI_p99_raster0",
+            "SI_p99_fig0"
+          ]
+        },
+        {
+          "heading": "ethyl 2-((4-bromophenyl)sulfonamido)benzoate (anticancer, 65)",
+          "page_start": 100,
+          "text": "Br COOEt\n116.67 119.57 123.48 128.15 128.88 131.37 132.38 134.59 138.56 140.16\n167.98\n14.21\n61.86\nBr COOEt",
+          "figures": [
+            "SI_p100_fig0",
+            "SI_p100_fig1"
+          ]
+        },
+        {
+          "heading": "N-(3-(5-(2-aminopyrimidin-4-yl)-2-(tert-butyl)-1\u03bb3, 3\u03bb2-thiazol-4-yl)-2-fluorophenyl)-2,6- difluorobenzenesulfonamide (Dabrafenib) (anticancer, 66)",
+          "page_start": 101,
+          "text": "1H NMR (400 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 66\n110.89 119.78 119.82 120.02 120.05\n125.38 125.58 131.94 133.09 133.11\n140.65 140.76 142.70 143.01 143.10\n151.01\n161.01 163.63 164.52 164.57 167.07 167.11\n180.17\n28.18\n36.53\nF\nF O O\nNH2\n13C NMR (100 MHz, DMSO-d6) spectrum of Compound 66\n101",
+          "figures": [
+            "SI_p101_raster0",
+            "SI_p101_fig0",
+            "SI_p101_fig1",
+            "SI_p101_fig2"
+          ]
+        },
+        {
+          "heading": "N-(4-(2-(methyl(2-(4-(methylsulfonamido)phenoxy)ethyl)amino)ethyl)phenyl) methanesulfonamide (Dofetilide) (Antiarrhythmic, 67)",
+          "page_start": 102,
+          "text": "N S\nMe\nMe\nMe\n11.0 11.5\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 67\n102",
+          "figures": [
+            "SI_p102_raster0",
+            "SI_p102_fig0",
+            "SI_p102_fig1",
+            "SI_p102_fig2"
+          ]
+        },
+        {
+          "heading": "N-(2-(phenylsulfonamido)phenyl)-2-(trifluoromethoxy)benzenesulfonamide (68)",
+          "page_start": 103,
+          "text": "11.0\n1H NMR (400 MHz, DMSO-d6) spectrum of Compound 68\n118.88 119.81 119.83 121.47 124.06 124.55 126.27 126.34 128.40 128.46 129.11 129.61 133.60 133.69 133.97 134.78 145.69\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture) spectrum of Compound 68\n103 OCF3 HN S O 39.27 39.48 39.68 39.89 40.10 40.31 40.52",
+          "figures": [
+            "SI_p103_fig0",
+            "SI_p103_fig1"
+          ]
+        },
+        {
+          "heading": "4-amino-N-(4-(phenylsulfonamido)phenyl)benzenesulfonamide (69)",
+          "page_start": 104,
+          "text": "11.379 11.419 11.476 11.543 11.662 11.730 11.779 11.799 11.843 12.145 12.163 12.181 12.193 12.210 12.228 12.575 12.594\nO O\nNH\nH2N\n1 2 3 4 5 6 7 8 9 11 12 13 14 15 16\n13C NMR (100 MHz, CDCl3 and DMSO-d6 mixture due to solubility issues) spectrum of Compound 69\n104",
+          "figures": [
+            "SI_p104_raster0",
+            "SI_p104_fig0"
+          ]
+        },
+        {
+          "heading": "2-iodo-N-(quinolin-8-yl)naphthalene-1-sulfonamide (70)",
+          "page_start": 105,
+          "text": "105",
+          "figures": [
+            "SI_p105_raster0",
+            "SI_p105_raster1",
+            "SI_p105_fig0",
+            "SI_p105_fig1",
+            "SI_p105_fig2",
+            "SI_p105_fig3"
+          ]
+        },
+        {
+          "heading": "2-(phenylselanyl)-N-(quinolin-8-yl)naphthalene-1-sulfonamide (71)",
+          "page_start": 106,
+          "text": "11.0 11.5 12.0 SePh 106",
+          "figures": [
+            "SI_p106_raster0",
+            "SI_p106_fig0",
+            "SI_p106_fig1",
+            "SI_p106_fig2",
+            "SI_p106_fig3",
+            "SI_p106_fig4"
+          ]
+        },
+        {
+          "heading": "N-(2-(allyloxy)phenyl)benzenesulfonamide(72)",
+          "page_start": 107,
+          "text": "107",
+          "figures": [
+            "SI_p107_raster0",
+            "SI_p107_raster1"
+          ]
+        },
+        {
+          "heading": "N-phenyl-N-(p-tolyl)benzenesulfonamide (73)",
+          "page_start": 108,
+          "text": "108",
+          "figures": [
+            "SI_p108_raster0",
+            "SI_p108_raster1",
+            "SI_p108_fig0",
+            "SI_p108_fig1"
+          ]
+        },
+        {
+          "heading": "References:",
+          "page_start": 109,
+          "text": "(1) Kim, T.; McCarver, S. J.; Lee, C.; MacMillan, D. W. C. Sulfonamidation of Aryl and Heteroaryl Halides through Photosensitized Nickel Catalysis. Angew. Chem. Int. Ed. 2018, 57, 3488\u20133492.\n(2) Li, Q.; Xu, L.; Ma, D. Cu-Catalyzed Coupling Reactions of Sulfonamides with (Hetero)Aryl Chlorides/Bromides. Angew. Chem. Int. Ed. 2022, 61, e202210483.\n(3) Khalaj, M.; Ghazanfarpour-Darjani, M.; Bavil Olyai, M. R. T.; Shamami, S. F. Palladium Nanoparticles as Reusable Catalyst for the Synthesis of N-Aryl Sulfonamides under Mild Reaction Conditions. J. Sulfur Chem. 2016, 37, 211\u2013221.\n(4) Das, P. J.; Sarmah, B. A convenient and benign synthesis of sulphonamides in PEG-400. Asian J. Chem. 2015, 27, 189\u2013191.\n(5) Teo, Y.-C.; Yong, F.-F. Efficient Ligand-Free, Copper-Catalyzed N-Arylation of Sulfonamides. Synlett 2011, 2011 (6), 837\u2013843.\n(6) Zhang, K.; Zhang, Y.; Liu, Q.; He, D.; Tian, J.; Zhou, H. Metal-free one-pot synthesis of sulfonamides from nitroarenes and arylsulfonyl chlorides in water. ChemistrySelect 2019, 4, 7413\u2013 7415.\n(7) Li, Z.; Song, Y.; Shao, T.; Huang, S.; Sun, L.; Hou, J. Integrated Nickel/Polymer Dual Catalytic System for Visible-Light-Driven Sulfonamidation between Aryl Halides and Aryl Sulfonamides. Chem. Catal. 2022, 2, 3546\u20133558.\n(8) Johnson, S. M.; Connelly, S.; Wilson, I. A.; Kelly, J. W. Toward optimization of the linker substructure common to transthyretin amyloidogenesis inhibitors using biochemical and structural studies. J. Med. Chem. 2008, 51, 6348\u20136358.\n(9) Gatarz, S. E.; Griffiths, O. M.; Esteves, H. A.; Jiao, W.; Morse, P.; Fisher, E. L.; Blakemore, D. C.; Ley, S. V. Nitro-sulfinate reductive coupling to access (hetero)aryl sulfonamides. J. Org. Chem. 2024, 89, 1898\u20131909.\n(10) Camargo-Ordonez, A.; Moreno-Reyes, C.; Olazaran-Santibanez, F.; Martinez-Hernandez, S.; Bocanegra-Garcia, V.; Rivera, G. Efficient synthesis of sulfonamide derivatives on solid supports catalyzed using solvent-free and microwave-assisted methods. Quim. Nova 2011, 34, 787\u2013791.\n(11) Bano, B.; Arshia; Khan, K. M.; Kanwal; Fatima, B.; Taha, M.; Ismail, N. H.; Wadood, A.; Ghufran, M.; Perveen, S. Synthesis, in vitro \u03b2-glucuronidase inhibitory potential and molecular docking studies of quinolines. Eur. J. Med. Chem. 2017, 139, 849\u2013864.\n(12) Thrimurtulu, N.; Nallagonda, R.; Volla, C. M. R. Cobalt-catalyzed aryl C\u2013H activation and highly regioselective intermolecular annulation of sulfonamides with allenes. Chem. Commun. 2017, 53, 1872\u20131875.\n(13) Chen, K.; Chen, W.; Han, B.; Chen, W.; Liu, M.; Wu, H. Sequential C\u2212S and S\u2212N coupling approach to sulfonamides. Org. Lett. 2020, 22, 1841\u20131845.\n(14) Ye, S.; Li, Y.; Wu, J.; Li, Z. Thiourea dioxide as a source of sulfonyl groups: photoredox generation of sulfones and sulfonamides from heteroaryl/aryl halides. Chem. Commun. 2019, 55, 2489\u20132492.\n(15) Urones, B.; Mart\u00ednez, \u00c1. M.; Rodr\u00edguez, N.; G\u00f3mez Array\u00e1s, R.; Carretero, J. C. Copper-catalyzed ortho-halogenation of protected anilines. Chem. Commun. 2013, 49, 11044\u201311046.\n109 (16) Barney, J. L.; Wolfram, A. J.; Litvak, R.; Nacsa, E. D. A general amino\u2013(hetero)arylation of simple olefins with (hetero)aryl sulfonamides enabled by an N-triazinyl group. ACS Catal. 2025, 15, 2139\u2013 2149.\n(17) Li, C.; Zhang, K.; Ma, H.; Wu, S.; Huang, Y.; Duan, Y.; Luo, Y.; Yan, J.; Yang, G. An Optimized Ni-Catalyzed Chan\u2013Lam Type Coupling: Enantioretentive Access to Chiral N-Aryl Sulfinamides. Chem. Eur. J. 2022, 28, e202202190.\n(18) Crawford, S. M.; Lavery, C. B.; Stradiotto, M. BippyPhos: A Single Ligand with Unprecedented Scope in the Buchwald\u2013Hartwig Amination of (Hetero)aryl Chlorides. Chem. Eur. J. 2013, 19, 16760\u2013 16771.\n(19) Reed-Berendt, B. G.; Morrill, L. C. Manganese-Catalyzed N Alkylation of Sulfonamides Using Alcohols. J. Org. Chem. 2019, 84, 3715\u20133724.\n(20) Pettit, G. R.; Kadunce, R. E. Desulphurization with Raney Nickel III. Benzyl N Alkyl N Benzenesulphonylcarbamates. Can. J. Chem. 1963, 41, 2695\u20132698.\n(21) Ilizirov, Y.; Formanovsky, A.; Mikhura, I.; Paitan, Y.; Nakonechny, F.; Nisnevitch, M. Effect of Photodynamic Antibacterial Chemotherapy Combined with Antibiotics on Gram-Positive and GramNegative Bacteria. Molecules 2018, 23, 3152.\n(22) Song, G.; Song, J.; Dong, J.; Li, G.; Fan, J.; Xue, D. Ni-Catalyzed Photochemical Sulfamidation of Aryl Chlorides with Soluble Organic Amine as Base. Organometallics 2024, 43, 1706\u20131712.\n(23) Amaral, T. C.; Glanzmann, N.; da Silva, A. D.; Pereira, G. M.; Corbi, P. P.; Canales, C. S. C.; Pavan, F. R.; Oliveira, K. A. D.; Cuin, A. Synthesis, Spectroscopic and Structural Characterizations and in Vitro Antimycobacterial Activity of Silver(I) Complexes with Sulfapyridine (SPY) and Sulfamerazine (SM). J. Mol. Struct. 2024, 1300, 137234.\n(24) Refat, M. S.; El-Korashy, S. A.; El-Deen, I. M.; El-Sayed, S. M. Charge-Transfer Complexes of Sulfamethoxazole Drug with Different Classes of Acceptors. J. Mol. Struct. 2010, 980, 124\u2013136.\n(25) Yakovishin, L. A.; Grishkovets, V. I. Ivy and Licorice Triterpene Glycosides: Promising Molecular Containers for Some Drugs and Biomolecules. In Studies in Natural Products Chemistry; Atta-urRahman, Ed.; Elsevier: Amsterdam, 2017; Vol. 55, pp 351\u2013383.\n(26) Vree, T. B.; Schoondermark-van de Ven, E.; Vervey-van Wissen, C. P. W. G. M.; Baars, A. M.; Swolfs, A.; van Galen, P. M.; Amatdjais-Groenen, H. Isolation, Identification and Determination of Sulfadiazine and Its Hydroxy Metabolites and Conjugates from Man and Rhesus Monkey by HighPerformance Liquid Chromatography. J. Chromatogr. B 1995, 670, 111\u2013123.\n(27) Kushwaha, A. K.; Kamal, A.; Kumari, P.; Singh, S. Metal-Free Photoredox-Catalyzed Sulfonylation of Phenylhydrazines with Thiols. Org. Lett. 2024, 26, 3796\u20133800.\n(28) Yang, L.; Zhang, C.-P. Additive-Free Visible-Light-Mediated Hydro-/Deuterodediazoniation of Arenediazonium Tetrafluoroborates in THF/THF-d8. Asian J. Org. Chem. 2021, 10, 2157\u20132160.\n(29) Kang, J. G.; Hur, J. H.; Choi, S. J.; Choi, G. J.; Cho, K. Y.; Ten, L. N.; Park, K. H.; Kang, K. Y. Antifungal Activities of N-Arylbenzenesulfonamides against Phytopathogens and Control Efficacy on Wheat Leaf Rust and Cabbage Club Root Diseases. Biosci. Biotechnol. Biochem. 2002, 66, 2677\u20132682.\n(30) Li, R.; Ning, X.; Zhou, S.; Lin, Z.; Wu, X.; Chen, H.; Bai, X.; Wang, X.; Ge, Z.; Li, R.; Yin, Y. Discovery and Structure\u2013Activity Relationship of Novel 4-Hydroxy-Thiazolidine-2-Thione Derivatives as Tumor Cell Specific Pyruvate Kinase M2 Activators. Eur. J. Med. Chem. 2018, 143, 48\u201365.\n(31) Shagufta; Guo, D.; Klaasse, E.; de Vries, H.; Brussee, J.; Nalos, L.; Rook, M. B.; Vos, M. A.; van der Heyden, M. A. G.; IJzerman, A. P. Exploring Chemical Substructures Essential for hERG K\u207a Channel Blockade by Synthesis and Biological Evaluation of Dofetilide Analogues. ChemMedChem 2009, 4, 1722\u20131732.\n(32) Natarajan, A.; Guo, Y.; Harbinski, F.; Fan, Y.-H.; Chen, H.; Luus, L.; Diercks, J.; Aktas, H.; Chorev, M.; Halperin, J. A. Novel arylsulfoanilide\u2013oxindole hybrid as an anticancer agent that inhibits translation initiation. J. Med. Chem. 2004, 47, 4979\u20134982.\n(33) Jiang, J.; Zeng, S.; Chen, D.; Cheng, C.; Deng, W.; Xiang, J. Synthesis of N-Arylsulfonamides via Fe-Promoted Reaction of Sulfonyl Halides with Nitroarenes in an Aqueous Medium. . Org. Biomol. Chem. 2018, 16, 5016\u20135020.\n(34) Di Magno, L.; Di Pastena, F.; Puxeddu, M.; La Regina, G.; Coluccia, A.; Ciogli, A.; Manetto, S.; Maroder, M.; Canettieri, G.; Silvestri, R.; Nalli, M. Sulfonamide inhibitors of \u03b2-catenin signaling as anticancer agents with different output on c-MYC. ChemMedChem 2020, 15, 2264\u20132268.\n111",
+          "figures": []
+        }
+      ],
+      "subsections": [],
+      "figures": []
+    }
+  ]
+}

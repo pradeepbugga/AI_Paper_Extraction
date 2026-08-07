@@ -8,9 +8,11 @@ from chemistry/materials literature — text, figures, and tables.
 
 Early build, in progress. Working through the pipeline one stage at a time:
 
-1. **PDF ingestion** (done) — parse text blocks and figures out of raw PDFs.
-2. **Section/layout parsing** (in progress) — group raw text blocks into
-   headings/paragraphs/figure captions and assemble a document structure.
+1. **PDF ingestion** (done) — parse text blocks and figures out of raw PDFs,
+   including Supporting Information.
+2. **Section/layout parsing** (done) — group raw text blocks into
+   headings/paragraphs/figure captions and assemble a document structure,
+   for both the main text and SI.
 3. Figure understanding (classification, structure recognition)
 4. Table extraction
 5. Schema-driven LLM extraction
@@ -150,4 +152,59 @@ docker run -d --name grobid -p 8070:8070 grobid/grobid:0.8.1
 `fetch_references()` posts the PDF to GROBID's `processReferences` endpoint
 and parses the returned TEI XML `biblStruct` entries. If GROBID isn't
 reachable, `references` comes back empty and the prose "References" section
+stays in the section tree instead of being silently dropped.
+
+## Stage 2b: SI section parsing
+
+`ingest/si_parse.py` parses `SI_raw_extraction.json` the same way, but SI
+documents have a different shape than the main text: instead of a handful of
+prose sections, they're organized around dozens to hundreds of repeating
+*compound records* (a compound name or procedure label, followed by its
+characterization data and NMR spectra). Forcing that into the main text's
+prose section/subsection tree would lose the thing that actually matters
+here — "text blob and spectra per compound" — so the output is a section
+tree where each section holds a flat `records` list instead of only
+paragraphs.
+
+Two SI documents, two different heading conventions, discovered by testing
+against both rather than assumed up front:
+
+- **Nature's SI** uses genuine font-size-tiered headings, same as its main
+  text (`Supplementary Methods` at 16pt containing `General Considerations`
+  at 14pt, both clearly larger than 11pt body) — real nesting, up to 4 levels
+  deep in practice (`Supplementary Methods` → `Preparation of Boronic
+  Esters...` → `General Procedure 1` → per-compound record).
+- **ACS's SI** uses flat body-size-bold headings distinguished only by
+  numbering (`1. General experimental`, `12. Experimental procedures...`,
+  all at the same size as body text) — no size signal available at all.
+
+`classify_si_line` tries the size-tier signal first (reusing the same
+document-relative heading-level machinery as the main text); if a bold line
+doesn't belong to any size tier, it falls back to a numbered-list-prefix
+check. Anything bold-and-short that's neither is a compound/procedure record
+rather than a top-level section. Figures are attached to whichever
+section/record is "open" at a given page (the most recent heading at or
+before it) — coarse, but matches how these documents are laid out: a
+compound's structure and spectra sit on or right after its own heading.
+
+One bug this surfaced in the shared `is_sentence_like` heading-suppression
+check: it treated a trailing colon as "looks like end of a sentence, reject
+as heading," which silently swallowed every ACS compound header (`Synthesis
+of ... (14):`) into body text — colons introduce something, they don't end a
+declarative sentence, so they were never a valid signal for "not a heading"
+in the first place. Fixed at the source since it's shared with main-text
+parsing.
+
+```
+python3 ingest/si_parse.py data/papers/suzuki_iron_2024
+python3 ingest/si_parse.py data/papers/copper_iron_2025
+```
+
+Outputs `SI_sections.json`. Validated on both SI documents: 458 records
+(Suzuki, including 75 clean NMR-data records each linked to their spectrum
+images) and 197 records (copper-iron, 73 experimental-procedure records + 74
+NMR records each linked to exactly its 1H/13C spectra). Known limitation,
+out of scope for this stage: dense comparison tables and reaction-scheme
+labels fragment into spurious low-content "records" — real table extraction
+is Stage 4, not something this layout-level parsing is expected to solve.
 stays in the section tree instead of being silently dropped.
