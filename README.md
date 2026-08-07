@@ -314,3 +314,30 @@ limitation: two figures vertically close together on the same page (e.g. a
 scheme and a table six lines apart) can still merge into one region and
 share a caption match — lower priority, since it degrades gracefully (both
 captions still resolve to *a* relevant image) rather than losing content.
+
+## Validated against a fourth paper (same publisher family)
+
+A fourth paper (Daley-Dee et al., *Org. Lett.* 27, 197-201 (2025),
+`miyaura_iron_2025` — main text + 83-page SI) is the same publisher as
+`copper_iron_2025`, used as a check on whether the generalization actually
+holds within a family rather than being tuned to one example of it. It did,
+with no code changes needed: main text (3/3 real sections, 4 figures, 46
+references via GROBID) and SI (10 sections, 120 records — including a
+decimal-numbered convention, `3.2.3 Precatalyst screen`, not seen before and
+not matched by `NUMBERED_PREFIX_RE`, correctly nested anyway via the size/
+marker signals) both parsed correctly on the first run.
+
+One thing this surfaced worth noting as a genuine document-type difference,
+not a detection gap: *Organic Letters* is a short-communication format with
+a strict length limit, so a paper like this one has no `RESULTS AND
+DISCUSSION` heading at all — the whole body is continuous discussion prose,
+with only the standardized back-matter sections formally headed. Two
+`General Procedure for...` subheadings inside that prose (9.5pt, just under
+10pt body size, occurring only twice) don't get elevated to heading status —
+the procedure text itself is preserved in the body, just not organized under
+them. Investigated and left as-is rather than risk a regression: loosening
+either the size threshold or the recurrence requirement to catch a
+twice-occurring, unmarked, non-numbered, non-caps heading would also let
+back in the earlier false positive (a bold "label lead-in" phrase in
+boilerplate prose, e.g. "Correspondence and requests..."), which looks
+identical by every signal currently available.

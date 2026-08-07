@@ -1,0 +1,938 @@
+{
+  "source_pdf": "paper.pdf",
+  "front_matter": [
+    "Iron-Catalyzed Miyaura Borylation of Aryl Chlorides and Triflates",
+    "Patrick Daley-Dee, James Clarke, Sebastien Monfette, and Robin B. Bedford*",
+    "the borylating reagent and a catalyst formed in situ from iron(II) IMes, gives significantly improved activity and a much broader scope than previously reported iron-based catalysts. Iron triflate is also a good precatalyst for the borylation of aryl triflates\u0001a previously unreported transformation\u0001and in these cases the IMes ligand is not required.",
+    "O",
+    "rganoboronic esters are indispensable reagents in organic synthesis that are applied to Suzuki\u2212Miyaura couplings and numerous other applications.1 Traditional methods of synthesis include transmetalation of organolithiums or Grignard reagents2,3 or hydroboration and subsequent derivatization of the products.4 The former suffers from limited functional group tolerance due to the nucleophilicity of the organometallic reagents, while the latter requires suitable unsaturated starting materials and can be limited by regioselectivity.5 Catalytic C\u2212H borylation is an attractive alternative6\u22129 but can also suffer from regioselectivity issues. By contrast, the transition-metal-catalyzed borylation of organohalides (Scheme 1), first described by Miyaura,10 has",
+    "proven to be a powerful method for the synthesis of boronic esters, often boasting milder reaction conditions and higher selectivity, and can even be applied to telescoped one-pot coupling processes.11,12",
+    "While the Miyaura borylation of aryl electrophiles typically employes palladium-based catalysts,13\u221216 those based on more Earth-abundant transition metals such as copper,17\u221219",
+    "nickel,20\u221225 cobalt,26,27 and Zn28,29 have recently been shown to be effective. Of all the transition metals that could be exploited, iron is the most attractive target: it is highly abundant, it is inexpensive, and its production has a far lower carbon footprint than palladium\u2019s (1.5 vs 3,880 kg CO2-eq/ kg).30 Additionally, it has relatively low toxicity, making it better suited to late-stage pharmaceutical synthesis in which trace metal impurities often require additional removal procedures.31 Notably the arylB(pin) products themselves are of immediate use in the recently reported iron-catalyzed Suzuki biaryl coupling reaction,32 meaning both steps could potentially be catalyzed by iron.",
+    "The iron-catalyzed borylation of aryl electrophiles was first demonstrated with arene diazonium salts as substrates33 and has more recently been extended to aryl pyridone ethers,34 aryl carboxylic acids,35 and aryl fluorides.36,37 With regard to the iron-catalyzed borylation of aryl halide substrates, we reported the first examples using Li[B(tBu)pin-Bpin], 1, as the borylating reagent.38 In comparison with the results obtained with allyl and alkyl halides, the yields obtained with the limited number of aryl halides tested were poor. Subsequently, Nakamura disclosed the borylation of aryl chlorides in the presence of potassium tert-butoxide base, catalyzed by the readily available precatalyst Fe(acac)3.39 While good results were obtained with fused-ring and 4-aryl-substituted aryl substrates, yields were comparatively poor for simpler aryl substrates.40",
+    "Herein, we report an improved method for the ironcatalyzed borylation of simple aryl chlorides as well as the first example of iron-catalyzed borylation of aryl triflates.",
+    "We began by reoptimizing the reaction we reported previously,38 using chlorobenzene 2a as the substrate, 1 as the borylating reagent, and [FeCl2(dppe)] as the precatalyst. Note, 1 is prepared using tBuLi: Caution! tert-Butyllithium is extremely pyrophoric. It must be handled using proper needle and syringe techniques. Modifications such as decreasing the reaction volume from 8 to 2 mL of THF, increasing the temperature from 40 to 60 \u00b0C while performing the reactions in 7 mL screw-top vials, rather than in a Schlenk tube, and heating with an aluminum block inside the glovebox gave a modest improvement in yield from 5 to 18% of desired product 3a.",
+    "\u00a9 2024 The Authors. Published by Conversely, no improvement in yield was obtained on increasing the reaction time beyond 1 h.",
+    "Under these conditions, we screened a range of catalysts made in situ from FeCl2 and a variety of phosphines and N- heterocyclic carbenes (NHCs) (see Table S2). Interestingly, the catalyst formed in situ with dppe gave poorer activity than a control with no added ligand. This proved to be the case with most of the diphosphine ligands explored (Table S2). The ligands that gave comparable or improved yields of 3a relative to the coligand-free control were selected for further screening against a range of iron salts, and the results of this screen are summarized in Figure 1.",
+    "The precatalyst screen revealed Fe(OTf)2 and FeF3 to be the best iron sources of those tested, while the best performing ligands were the chelating bisphosphine, tBuXantphos, and the N-heterocyclic carbenes IMes and 6Mes. For reasons of cost and availability, a combination of Fe(OTf)2 and IMes was chosen for further study. A range of different additives were examined (Table S3), but none improved the 64% yield of 3a. In some cases in the optimization screenings, we observed the major side product to be benzene, deriving from either hydrodehalogenation of 2a or protodeborylation of the product 3a, with only trace amounts (<1%) of biphenyl formed by a homocoupling reaction of 2a. Subsequent solvent screening (Table S4) showed THF to be optimal. While DMA or 2-MeTHF could also be used, most other solvents tested shut down the reaction. With THF as solvent, we noticed that better yields were obtained when both the ligand and magnesium bromide were added as stock solutions rather than as solids (Table S4).",
+    "Tuning the loadings of the reaction components showed the best results were obtained with 1.2 equiv of 1 with respect to 2a using 3 mol % of Fe(OTf)2 and 1.5 mol % of IMes. Under these conditions, 3a was obtained in 70% yield. The rather unusual metal to ligand ratio may indicate the requirement for differently speciated iron intermediates in the catalytic manifold, or it may be, more prosaically, due to solubility issues associated with the iron salt. Attempts to isolate welldefined iron complexes from this mixture have so far proved fruitless.",
+    "With the optimized conditions in hand, we next explored the application of the methodology to a range of aryl chloride substrates. Figure 2 summarizes the results where >20% spectroscopic yield of the desired product 3 was obtained, while poorer performing and unsuccessful reactions are summarized in Figure S2.",
+    "The reaction performed well with ortho-, meta-, and paratolyl chlorides (3b\u2212d). As might be anticipated, both 1- and 2- naphthyl chlorides gave good yields (3h,i) since substrates such as these with more extensive \u03c0-systems have shown a propensity to react particularly well in iron-catalyzed transformations in numerous instances, not least borylation reactions.34,37,39,41",
+    "Pleasingly, N-alkyl anilines (3k), esters (3l), and amides (3m) were well tolerated, as were 6-chloroquinolines and 3- chloropyridine (products 3o\u2212q), the latter giving the highest spectroscopic yield of the substrates tested (92%), although isolating the pure product proved problematic. Interestingly, diborylation of 1,4-dichlorobenzene was readily achieved with 2 equiv of 1, giving the 1,4-diboronic ester 3t in 66% yield. Disappointingly, some substrates performed particularly poorly, including 4-fluorochlorobenzene (2f) and 1-chloro-3- 5-dimethoxybenzene (2j), as well as those listed in Figure S2. Comparing the yields obtained on varying 4-substituted aryl chlorides (products 3d\u2212g, u), no clear trend is observed on changing electronic properties, in line with observations for the iron-catalyzed Suzuki biaryl coupling of aryl chlorides.32",
+    "We next turned our attention to the use of aryl triflates as substrates. Pleasingly, phenyl triflate performed essentially identically with chlorobenzene under the same reaction conditions. Notably, leaving out the NHC ligand gave only a slight drop in yield (Table S5); accordingly, we employed coligand free Fe(OTf)2 as a precatalyst in the borylation of a range of aryl triflates, as summarized in Figure 3.",
+    "With electron-rich aryl-triflate substrates, the performance was generally similar to that observed with the aryl chlorides, with p-tolyl and p-methoxyphenyl triflate giving slightly lower yields of 3d and e, respectively, as obtained with the chloride counterparts. However, o-tolyl triflate furnished 3b in noticeably poorer yield than the corresponding chloride, suggesting that steric bulk is less well tolerated here. Substrates with",
+    "extended conjugation again exhibited higher yields, as illustrated by the formation of naphthyl and biphenyl products (3h and 3u). Interestingly, the electron-deficient triflates tested outperformed the respective aryl chlorides, with both 3f and g being formed in significantly higher yields.",
+    "With regard to the possible mechanism, we have yet to undertake a detailed study, but the following points are noted. First, we have previously shown that the borylating reagent 1 is capable of reducing iron precatalysts to iron(I) species,38 and it is anticipated that this may occur here, although it should be noted that, to the best of our knowledge, such reductions to Fe(I) have not been demonstrated with iron fluoride or triflate precursors\u0001the systems that fare best here.",
+    "addition of aryl chloride substrates to Fe(I) is far more facile than the equivalent reaction at Fe(0), both with32 and from boron to iron has been calculated to be challenging;32",
+    "accordingly, it is likely that transmetalation of a boryl may be",
+    "involvement of radicals. Addition of 1 equiv of TEMPO to the borylation of 2a shuts down the reaction, with less than 1% of product 3a observed, but GC-MS analysis of the crude reaction mixture did not reveal the formation of any adducts formed between TEMPO and either phenyl or BPin radicals. Similarly, the addition of 1,1-diphenylethene to the borylation of 2a gave only 4% of 3a and a small amount (17%) of the hydroboration product.43 Again, no adducts formed from an aryl radical were observed.",
+    "In summary, we have extended the iron-catalyzed borylation of aryl chlorides to simple substrates that have previously shown poor performance. In addition, we have extended the reaction to the first examples, to the best of our knowledge, of the iron-catalyzed borylation of aryl triflates. Ongoing efforts are targeted toward replacing 1 as the borylating reagent with less air- and moisture-sensitive analogues and to probing the mechanism of the catalytic reaction. Aryl Chlorides weighed into an oven-dried 7 mL vial, followed by IMes (2.3 mg, 7.5 \u03bcmol) dispensed from a 0.015 M stock solution in suspension was stirred at 60 \u00b0C for 30 min, during which time a darkening of the color was observed. The appropriate aryl chloride 2 (0.5 mmol) was then added, along with MgBr2\u00b7OEt2 (6.4 mg, 0.05 mmol) dispensed from a 0.1 M stock solution in reaction mixture was stirred for a further 15 min at 60 \u00b0C. The boronate 1 was added and rinsed into the vial with another 2 mL of THF (total volume = 4 mL), and the resultant reaction mixture was stirred at 60 \u00b0C for 1 h. The vial was then removed from the glovebox and allowed to cool to room temperature. The reaction was then quenched by exposure to air, followed by addition of an internal standard (either 1,3,5- trimethoxybenzene or mesitylene, 0.5 mmol, SI for details) from a stock solution in dichloromethane (0.5 M) and immediate filtration through a pad of Celite, eluting with hexane. An aliquot was taken for analysis by spectroscopy to determine the spectroscopic yield. The NMR sample was then recombined with the crude mixture, which was then transferred to a Schlenk tube. Volatiles were removed under vacuum and heating at 35 \u00b0C to ensure removal of the tBuBpin byproduct. The desired product 3 was then purified by column chromatography on silica (SI for details).",
+    "Aryl Triflates",
+    "weighed into an oven-dried 7 mL vial, and THF (1 mL) was added. The appropriate aryl triflate 4 (0.5 mmol) was then added, along with MgBr2\u00b7OEt2 (6.4 mg, 0.05 mmol) dispensed from a 0.1 M stock solution in THF (0.5 mL). Another 0.5 mL of THF was added and the reaction stirred for 15 min at 60 \u00b0C. The boronate 1 was added and rinsed into the vial with a further 2 mL of THF (total volume = 4 mL), and the resultant reaction mixture was stirred at 60 \u00b0C for 1 h. The vial was then removed from the glovebox and allowed to cool to room temperature. The reaction was then quenched by exposure to air, followed by addition of internal standard (either 1,3,5- trimethoxybenzene or mesitylene, 0.5 mmol, SI for details) from a stock solution in dichloromethane (0.5 M) and immediate filtration through a pad of Celite, eluting with hexane. An aliquot was taken for analysis by spectroscopy to determine the spectroscopic yield. The NMR sample was then recombined with the crude mixture, which was then transferred to a Schlenk tube. Volatiles were removed under vacuum and heating at 35 \u00b0C to ensure removal of the tBuBpin byproduct. The desired product 3 was then purified by column chromatography on silica (SI for details)."
+  ],
+  "sections": [
+    {
+      "heading": "ASSOCIATED CONTENT",
+      "page_start": 4,
+      "paragraphs": [
+        "Data Availability Statement",
+        "The data underlying this study are openly available in data.bris, at 10.5523/bris.3nt2av52pzf8h1y93y4b8bonas. s\u0131 Supporting Information",
+        "The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acs.orglett.4c04171.",
+        "Full experimental details and characterization of new compounds (PDF)"
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "AUTHOR INFORMATION",
+      "page_start": 4,
+      "paragraphs": [
+        "Corresponding Author",
+        "Robin B. Bedford \u2212School of Chemistry, University of Bristol,",
+        "Bristol BS8 1TS, U.K.; orcid.org/0000-0002-8021-8768; Email: r.bedford@bristol.ac.uk",
+        "Authors",
+        "Patrick Daley-Dee \u2212School of Chemistry, University of",
+        "Bristol, Bristol BS8 1TS, U.K. James Clarke \u2212Pfizer Chemical Research and Development,",
+        "Pfizer Inc., Kent CT13 9NJ, U.K.; Present Address: Pfizer Ireland Pharmaceuticals, Ballintaggart, Ringaskiddy, Co. Cork, Ireland; orcid.org/0009-0008-4111-2427 Sebastien Monfette \u2212Pfizer Chemical Research and",
+        "Development, Pfizer Inc., Groton, Connecticut 06340, United States",
+        "Complete contact information is available at: https://pubs.acs.org/10.1021/acs.orglett.4c04171",
+        "Author Contributions The manuscript was written through contributions of all authors. All authors have given approval to the final version of the manuscript. Notes The authors declare no competing financial interest."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "ACKNOWLEDGMENTS",
+      "page_start": 4,
+      "paragraphs": [
+        "We thank the Technology Enhanced Chemical Synthesis Centre for Doctoral Training, funded by EPSRC (EP/ S024107/1), Pfizer and the University of Bristol, for the provision of a PhD studentship."
+      ],
+      "subsections": []
+    }
+  ],
+  "figures": [
+    {
+      "label": "Scheme 1",
+      "caption": "Scheme 1. Miyaura Borylation of Aryl Halides and Triflates",
+      "page": 1,
+      "image_id": "main_p1_fig2",
+      "image_path": "images/page1_fig2.png"
+    },
+    {
+      "label": "Figure 1",
+      "caption": "Figure 1. Screening of selected ligands with varying Fe precursors in the Fe-catalyzed borylation of aryl chlorides.",
+      "page": 2,
+      "image_id": "main_p2_raster0",
+      "image_path": "images/page2_raster0.png"
+    },
+    {
+      "label": "Figure 2",
+      "caption": "Figure 2. Fe-catalyzed borylation of selected aryl chlorides. Conditions: 1 (0.6 mmol), 2 (0.5 mmol), MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), IMes (0.008 mmol), THF, 60 \u00b0C, 1 h. Yields were determined by 1H NMR spectroscopy (1,3,5-trimethoxybenzene or mesitylene internal standard). Isolated yields shown in parentheses. a1.0 mmol scale. bPurification was not attempted. cCatalyst loading increased to 5 mol % Fe(OTf)2 and 2.5 mol % IMes. dCould not be separated. e2 equiv of 1.",
+      "page": 3,
+      "image_id": "main_p3_fig0",
+      "image_path": "images/page3_fig0.png"
+    },
+    {
+      "label": "Figure 3",
+      "caption": "Figure 3. Fe-catalyzed borylation of aryl triflates. Conditions: 1 (0.6 mmol), 4 (0.5 mmol), MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), THF, 60 \u00b0C, 1 h. Yields determined by",
+      "page": 3,
+      "image_id": "main_p3_fig0",
+      "image_path": "images/page3_fig0.png"
+    }
+  ],
+  "references": [
+    {
+      "id": "b0",
+      "title": "Bedford -School of Chemistry",
+      "authors": [
+        "Robin B"
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": null,
+      "doi": null,
+      "publisher": "Pfizer Ireland Pharmaceuticals, Ballintaggart"
+    },
+    {
+      "id": "b1",
+      "title": "",
+      "authors": [
+        "Sebastien Monfette -Pfizer"
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": null,
+      "doi": "10.1021/acs.orglett.4c04171?ref=pdf",
+      "publisher": "Pfizer Inc"
+    },
+    {
+      "id": "b2",
+      "title": "Stereospecific functionalizations and transformations of secondary and tertiary boronic esters",
+      "authors": [
+        "Christopher Sandford",
+        "Varinder K Aggarwal"
+      ],
+      "journal": "Chemical Communications",
+      "volume": "53",
+      "issue": "40",
+      "pages": "5481-5494",
+      "year": "2017",
+      "doi": "10.1039/c7cc01254c",
+      "publisher": "Royal Society of Chemistry (RSC)"
+    },
+    {
+      "id": "b3",
+      "title": "Die Wirkung Der Magnesiumorganischen Verbindungen Auf Die Borsa\u00fcreester",
+      "authors": [
+        "E Khotinsky",
+        "M Melamed"
+      ],
+      "journal": "Ber. Dtsch. Chem. Ges",
+      "volume": "42",
+      "issue": "3",
+      "pages": "3090-3096",
+      "year": "1909",
+      "doi": "10.1002/cber.19090420327",
+      "publisher": null
+    },
+    {
+      "id": "b4",
+      "title": "Convenient Procedures for the Synthesis of Alkyl-and Alkenylboronic Acids and Esters",
+      "authors": [
+        "H C Brown",
+        "N G Bhat",
+        "V Somayaji",
+        "Organoboranes"
+      ],
+      "journal": "Organometallics",
+      "volume": "2",
+      "issue": "10",
+      "pages": "1311-1316",
+      "year": "1983",
+      "doi": "10.1021/om50004a008?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b5",
+      "title": "New General Synthesis of Alkyldihaloboranes via Hydroboration of Alkenes with Dihaloborane-Dimethyl Sulfide Complexes. Unusual Trends in the Reactivities and Directive Effects",
+      "authors": [
+        "H C Brown",
+        "N Ravindran",
+        "S U Kulkarni",
+        "Hydroboration"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "45",
+      "issue": "3",
+      "pages": "384-389",
+      "year": "1980",
+      "doi": "10.1021/jo01291a003?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b6",
+      "title": "Expanding the Limits of Organoboron Chemistry: Synthesis of Functionalized Arylboronates",
+      "authors": [
+        "Pedro Merino",
+        "Tom\u00e1s Tejero"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "49",
+      "issue": "40",
+      "pages": "7164-7165",
+      "year": "2010-07-29",
+      "doi": "10.1002/anie.201003191",
+      "publisher": "Wiley"
+    },
+    {
+      "id": "b7",
+      "title": "Borylation and Silylation of C-H Bonds: A Platform for Diverse C-H Bond Functionalizations",
+      "authors": [
+        "J F Hartwig"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "45",
+      "issue": "6",
+      "pages": "864-873",
+      "year": "2012",
+      "doi": "10.1021/ar200206a?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b8",
+      "title": "C-H Activation for the Construction of C-B Bonds",
+      "authors": [
+        "I A I Mkhalid",
+        "J H Barnard",
+        "T B Marder",
+        "J M Murphy",
+        "J F Hartwig"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "110",
+      "issue": "2",
+      "pages": "890-931",
+      "year": "2010",
+      "doi": "10.1021/cr900206p?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b9",
+      "title": "Functional Group Directed C-H Borylation",
+      "authors": [
+        "A Ros",
+        "R Fern\u00e1ndez",
+        "J M Lassaletta"
+      ],
+      "journal": "Chem. Soc. Rev",
+      "volume": "43",
+      "issue": "10",
+      "pages": "3229-3243",
+      "year": "2014",
+      "doi": "10.1039/C3CS60418G",
+      "publisher": null
+    },
+    {
+      "id": "b10",
+      "title": "Metal-Free Directed Sp2-C-H Borylation",
+      "authors": [
+        "J Lv",
+        "X Chen",
+        "X.-S Xue",
+        "B Zhao",
+        "Y Liang",
+        "M Wang",
+        "L Jin",
+        "Y Yuan",
+        "Y Han",
+        "Y Zhao",
+        "Y Lu",
+        "J Zhao",
+        "W.-Y Sun",
+        "K N Houk",
+        "Z Shi"
+      ],
+      "journal": "Nature",
+      "volume": "575",
+      "issue": "7782",
+      "pages": "336-340",
+      "year": "2019",
+      "doi": "10.1038/s41586-019-1640-2",
+      "publisher": null
+    },
+    {
+      "id": "b11",
+      "title": "Palladium(0)-Catalyzed Cross-Coupling Reaction of Alkoxydiboron with Haloarenes: A Direct Procedure for Arylboronic Esters",
+      "authors": [
+        "T Ishiyama",
+        "M Murata",
+        "N Miyaura"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "60",
+      "issue": "23",
+      "pages": "7508-7510",
+      "year": "1995",
+      "doi": "10.1021/jo00128a024?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b12",
+      "title": "Manufacture of the PI3K \u03b2-Sparing Inhibitor Taselisib. Part 2: Development of a Highly Efficient and Regioselective Late-Stage Process",
+      "authors": [
+        "F St-Jean",
+        "T Remarchuk",
+        "R Angelaud",
+        "D E Carrera",
+        "D Beaudry",
+        "S Malhotra",
+        "A Mcclory",
+        "A Kumar",
+        "G Ohlenbusch",
+        "A M Schuster",
+        "F Gosselin"
+      ],
+      "journal": "Org. Process Res. Dev",
+      "volume": "23",
+      "issue": "5",
+      "pages": "783-793",
+      "year": "2019",
+      "doi": "10.1021/acs.oprd.9b00050?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b13",
+      "title": "Development of an Efficient Synthesis of (2-Aminopyrimidin-5-Yl) Boronic Acid",
+      "authors": [
+        "N D Patel",
+        "Y Zhang",
+        "J Gao",
+        "K Sidhu",
+        "J C Lorenz",
+        "K R Fandrick",
+        "J A Mulder",
+        "M A Herbage",
+        "Z Li",
+        "S Ma",
+        "H Lee",
+        "N Grinberg",
+        "J J Song",
+        "C A Busacca",
+        "N K Yee",
+        "C H Senanayake"
+      ],
+      "journal": "Org. Process Res. Dev",
+      "volume": "20",
+      "issue": "1",
+      "pages": "95-99",
+      "year": "2016",
+      "doi": "10.1021/acs.oprd.5b00360?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b14",
+      "title": "Lithium Aminoborohydrides 17. Palladium Catalyzed Borylation of Aryl Iodides, Bromides, and Triflates with Diisopropylaminoborane Prepared from Lithium Diisopropylaminoborohydride",
+      "authors": [
+        "D Haddenham",
+        "C L Bailey",
+        "C Vu",
+        "G Nepomuceno",
+        "S Eagon",
+        "L Pasumansky",
+        "B Singaram"
+      ],
+      "journal": "Tetrahedron",
+      "volume": "67",
+      "issue": "3",
+      "pages": "576-583",
+      "year": "2011",
+      "doi": "10.1016/j.tet.2010.11.065",
+      "publisher": null
+    },
+    {
+      "id": "b15",
+      "title": "Scope of the Palladium-Catalyzed Aryl Borylation Utilizing Bis-Boronic Acid",
+      "authors": [
+        "G A Molander",
+        "S L J Trice",
+        "S M Kennedy",
+        "S D Dreher",
+        "M T Tudge"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "134",
+      "issue": "28",
+      "pages": "11667-11673",
+      "year": "2012",
+      "doi": "10.1021/ja303181m?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b16",
+      "title": "Sterically Demanding Aryl Chlorides: No Longer a Problem for Borylations",
+      "authors": [
+        "C M Vogels",
+        "S A Westcott"
+      ],
+      "journal": "ChemCatChem",
+      "volume": "4",
+      "issue": "1",
+      "pages": "47-49",
+      "year": "2012",
+      "doi": "10.1002/cctc.201100249",
+      "publisher": null
+    },
+    {
+      "id": "b17",
+      "title": "Palladium-Catalyzed Borylation of Aryl Halides or Triflates with Dialkoxyborane: A Novel and Facile Synthetic Route to Arylboronates",
+      "authors": [
+        "M Murata",
+        "T Oyama",
+        "S Watanabe",
+        "Y Masuda"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "65",
+      "issue": "1",
+      "pages": "164-168",
+      "year": "2000",
+      "doi": "10.1021/jo991337q?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b18",
+      "title": "Copper-catalysed borylation of aryl chlorides",
+      "authors": [
+        "Laura Kuehn",
+        "Mingming Huang",
+        "Udo Radius",
+        "Todd B Marder"
+      ],
+      "journal": "Organic & Biomolecular Chemistry",
+      "volume": "17",
+      "issue": "27",
+      "pages": "6601-6606",
+      "year": "2019",
+      "doi": "10.1039/c9ob01244c",
+      "publisher": "Royal Society of Chemistry (RSC)"
+    },
+    {
+      "id": "b19",
+      "title": "A Bicyclic N-Heterocyclic Carbene as a Bulky but Accessible Ligand: Application to the Copper-Catalyzed Borylations of Aryl Halides",
+      "authors": [
+        "S Ando",
+        "H Matsunaga",
+        "T Ishizuka"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "80",
+      "issue": "19",
+      "pages": "9671-9681",
+      "year": "2015",
+      "doi": "10.1021/acs.joc.5b01721?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b20",
+      "title": "A Facile Route to Aryl Boronates: Room-Temperature, Copper-Catalyzed Borylation of Aryl Halides with Alkoxy Diboron Reagents",
+      "authors": [
+        "C Kleeberg",
+        "L Dang",
+        "Z Lin",
+        "T B Marder"
+      ],
+      "journal": "Angew. Chem., Int. Ed",
+      "volume": "48",
+      "issue": "29",
+      "pages": "5350-5354",
+      "year": "2009",
+      "doi": "10.1002/anie.200901879",
+      "publisher": null
+    },
+    {
+      "id": "b21",
+      "title": "Stoichiometric and Catalytic Aryl\u2212Cl Activation and Borylation using NHC\u2010stabilized Nickel(0) Complexes",
+      "authors": [
+        "Laura Kuehn",
+        "Dominik G Jammal",
+        "Katharina Lubitz",
+        "Todd B Marder",
+        "Udo Radius"
+      ],
+      "journal": "Chemistry \u2013 A European Journal",
+      "volume": "25",
+      "issue": "40",
+      "pages": "9514-9521",
+      "year": "2019-04-11",
+      "doi": "10.1002/chem.201900937",
+      "publisher": "Wiley"
+    },
+    {
+      "id": "b22",
+      "title": "Ni-Catalyzed Borylation of Aryl Fluorides via C-F Cleavage",
+      "authors": [
+        "X.-W Liu",
+        "J Echavarren",
+        "C Zarate",
+        "R Martin"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "137",
+      "issue": "39",
+      "pages": "12470-12473",
+      "year": "2015",
+      "doi": "10.1021/jacs.5b08103?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b23",
+      "title": "Visible-Light-Induced Ni-Catalyzed Radical Borylation of Chloroarenes",
+      "authors": [
+        "Y.-M Tian",
+        "X.-N Guo",
+        "I Krummenacher",
+        "Z Wu",
+        "J Nitsch",
+        "H Braunschweig",
+        "U Radius",
+        "T B Marder"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "142",
+      "issue": "42",
+      "pages": "18231-18242",
+      "year": "2020",
+      "doi": "10.1021/jacs.0c08834?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b24",
+      "title": "Nickel-Catalyzed Borylation of Halides and Pseudohalides with Tetrahydroxydiboron [B2(OH)4",
+      "authors": [
+        "G A Molander",
+        "L N Cavalcanti",
+        "C Garc\u00eda-Garc\u00eda"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "78",
+      "issue": "13",
+      "pages": "6427-6439",
+      "year": "2013",
+      "doi": "10.1021/jo401104y?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b25",
+      "title": "Ni/Cu-Catalyzed Defluoroborylation of Fluoroarenes for Diverse C-F Bond Functionalizations",
+      "authors": [
+        "T Niwa",
+        "H Ochiai",
+        "Y Watanabe",
+        "T Hosoya"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "137",
+      "issue": "45",
+      "pages": "14313-14318",
+      "year": "2015",
+      "doi": "10.1021/jacs.5b10119?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b26",
+      "title": "Preparing (Multi)Fluoroarenes as Building Blocks for Synthesis: Nickel-Catalyzed Borylation of Polyfluoroarenes via C-F Bond Cleavage",
+      "authors": [
+        "J Zhou",
+        "M W Kuntze-Fechner",
+        "R Bertermann",
+        "U S D Paul",
+        "J H J Berthel",
+        "A Friedrich",
+        "Z Du",
+        "T B Marder",
+        "U Radius"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "138",
+      "issue": "16",
+      "pages": "5250-5253",
+      "year": "2016",
+      "doi": "10.1021/jacs.6b02337?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b27",
+      "title": "Efficient Synthesis of Aryl Boronates via Cobalt-Catalyzed Borylation of Aryl Chlorides and Bromides",
+      "authors": [
+        "P K Verma",
+        "S Mandal",
+        "K Geetharani"
+      ],
+      "journal": "ACS Catal",
+      "volume": "8",
+      "issue": "5",
+      "pages": "4049-4054",
+      "year": "2018",
+      "doi": "10.1021/acscatal.8b00536?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b28",
+      "title": "Cobalt-Catalyzed Borylation of Aryl Halides and Pseudohalides",
+      "authors": [
+        "W Yao",
+        "H Fang",
+        "S Peng",
+        "H Wen",
+        "L Zhang",
+        "A Hu",
+        "Z Huang"
+      ],
+      "journal": "Organometallics",
+      "volume": "35",
+      "issue": "10",
+      "pages": "1559-1564",
+      "year": "2016",
+      "doi": "10.1021/acs.organomet.6b00161?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b29",
+      "title": "Generation, and Synthetic Application of Borylzincate: Borylation of Aryl Halides and Borylzincation of Benzynes/Terminal Alkyne",
+      "authors": [
+        "Y Nagashima",
+        "R Takita",
+        "K Yoshida",
+        "K Hirano",
+        "M Uchiyama",
+        "Design"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "135",
+      "issue": "50",
+      "pages": "18730-18733",
+      "year": "2013",
+      "doi": "10.1021/ja409748m?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b30",
+      "title": "Efficient Synthesis of Aryl Boronates via Zinc-Catalyzed Cross-Coupling of Alkoxy Diboron Reagents with Aryl Halides at Room Temperature",
+      "authors": [
+        "S K Bose",
+        "T B Marder"
+      ],
+      "journal": "Org. Lett",
+      "volume": "16",
+      "issue": "17",
+      "pages": "4562-4565",
+      "year": "2014",
+      "doi": "10.1021/ol502120q?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b31",
+      "title": "Life Cycle Assessment of Metals: A Scientific Synthesis",
+      "authors": [
+        "P Nuss",
+        "M J Eckelman"
+      ],
+      "journal": "PLoS One",
+      "volume": "9",
+      "issue": "7",
+      "pages": null,
+      "year": "2014",
+      "doi": "10.1371/journal.pone.0101298",
+      "publisher": null
+    },
+    {
+      "id": "b32",
+      "title": "Toxicity of Metal Compounds: Knowledge and Myths",
+      "authors": [
+        "K S Egorova",
+        "V P Ananikov"
+      ],
+      "journal": "Organometallics",
+      "volume": "36",
+      "issue": "21",
+      "pages": "4071-4090",
+      "year": "2017",
+      "doi": "10.1021/acs.organomet.7b00605?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b33",
+      "title": "The Iron-Catalysed Suzuki Coupling of Aryl Chlorides",
+      "authors": [
+        "B J S Rowsell",
+        "H M O'brien",
+        "G Athavan",
+        "P R Daley-Dee",
+        "J Krieger",
+        "E Richards",
+        "K Heaton",
+        "I J S Fairlamb",
+        "R B Bedford"
+      ],
+      "journal": "Nat. Catal",
+      "volume": "7",
+      "issue": null,
+      "pages": "1186-1198",
+      "year": "2024",
+      "doi": "10.1038/s41929-024-01234-0",
+      "publisher": null
+    },
+    {
+      "id": "b34",
+      "title": "Iron-Catalysed Borylation of Arenediazonium Salts to Give Access to Arylboron Derivatives via Aryl(Amino)Boranes at Room Temperature",
+      "authors": [
+        "L D Marciasini",
+        "N Richy",
+        "M Vaultier",
+        "M Pucheault"
+      ],
+      "journal": "Adv. Synth. Catal",
+      "volume": "355",
+      "issue": "6",
+      "pages": "1083-1088",
+      "year": "2013",
+      "doi": "10.1002/adsc.201200942",
+      "publisher": null
+    },
+    {
+      "id": "b35",
+      "title": "Iron-Catalyzed Borylation of Aryl Ethers via Cleavage of C-O Bonds",
+      "authors": [
+        "X Zeng",
+        "Y Zhang",
+        "Z Liu",
+        "S Geng",
+        "Y He",
+        "Z Feng"
+      ],
+      "journal": "Org. Lett",
+      "volume": "22",
+      "issue": "8",
+      "pages": "2950-2955",
+      "year": "2020",
+      "doi": "10.1021/acs.orglett.0c00679?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b36",
+      "title": "A One-Pot Protocol for Iron-Catalyzed Decarbonylative Borylation of Aryl and Alkyl Carboxylic Acids",
+      "authors": [
+        "M Bai",
+        "S Geng",
+        "S Chen",
+        "Z Liu",
+        "Z Feng"
+      ],
+      "journal": "STAR Protocols",
+      "volume": "3",
+      "issue": "4",
+      "pages": null,
+      "year": "2022",
+      "doi": "10.1016/j.xpro.2022.101909",
+      "publisher": null
+    },
+    {
+      "id": "b37",
+      "title": "LiHMDS-Promoted Palladium or Iron-Catalyzed Ipso-Defluoroborylation of Aryl Fluorides",
+      "authors": [
+        "X Zhao",
+        "M Wu",
+        "Y Liu",
+        "S Cao"
+      ],
+      "journal": "Org. Lett",
+      "volume": "20",
+      "issue": "18",
+      "pages": "5564-5568",
+      "year": "2018",
+      "doi": "10.1021/acs.orglett.8b02228?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b38",
+      "title": "Iron-Catalyzed C-F Bond Silylation and Borylation of Fluoroarenes",
+      "authors": [
+        "M Sun",
+        "M Tao",
+        "L Zhao",
+        "W Li",
+        "Z Liu",
+        "C.-Y He",
+        "Z Feng"
+      ],
+      "journal": "Org. Chem. Front",
+      "volume": "8",
+      "issue": "19",
+      "pages": "5322-5327",
+      "year": "2021",
+      "doi": "10.1039/D1QO00839K",
+      "publisher": null
+    },
+    {
+      "id": "b39",
+      "title": "Iron-Catalyzed Borylation of Alkyl, Allyl, and Aryl Halides: Isolation of an Iron(I) Boryl Complex",
+      "authors": [
+        "R B Bedford",
+        "P B Brenner",
+        "E Carter",
+        "T Gallagher",
+        "D M Murphy",
+        "D R Pye"
+      ],
+      "journal": "Organometallics",
+      "volume": "33",
+      "issue": "21",
+      "pages": "5940-5943",
+      "year": "2014",
+      "doi": "10.1021/om500847j?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b40",
+      "title": "Iron-Catalyzed Borylation of Aryl Chlorides in the Presence of Potassium t -Butoxide",
+      "authors": [
+        "T Yoshida",
+        "L Ilies",
+        "E Nakamura"
+      ],
+      "journal": "ACS Catal",
+      "volume": "7",
+      "issue": "5",
+      "pages": "3199-3203",
+      "year": "2017",
+      "doi": "10.1021/acscatal.7b00310?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    },
+    {
+      "id": "b41",
+      "title": "We note that the biaryl-4-chloride substrates used were themselves synthesized using palladium-catalyzed Suzuki-Miyaura coupling, raising questions as to whether activity in these cases may be",
+      "authors": [],
+      "journal": "Tetrahedron Lett",
+      "volume": "50",
+      "issue": "45",
+      "pages": "6110-6111",
+      "year": "2009",
+      "doi": "10.1016/j.tetlet.2009.08.022",
+      "publisher": null
+    },
+    {
+      "id": "b42",
+      "title": "Identifying Palladium Culprits in Amine Catalysis",
+      "authors": [
+        "M Avanthay",
+        "R B Bedford",
+        "C S Begg",
+        "D B\u00f6se",
+        "J Clayden",
+        "S A Davis",
+        "J.-C Eloi",
+        "G P Goryunov",
+        "I V Hartung",
+        "J Heeley",
+        "K A Khaikin",
+        "M O Kitching",
+        "J Krieger",
+        "P S Kulyabin",
+        "A J J Lennox",
+        "R Nolla-Saltiel",
+        "N E Pridmore",
+        "B J S Rowsell",
+        "H A Sparkes",
+        "D V Uborsky",
+        "A Z Voskoboynikov",
+        "M P Walsh",
+        "H J Wilkinson"
+      ],
+      "journal": "Nat. Catal",
+      "volume": "4",
+      "issue": null,
+      "pages": "994-998",
+      "year": "2021",
+      "doi": "10.1038/s41929-021-00710-1",
+      "publisher": null
+    },
+    {
+      "id": "b43",
+      "title": "Iron-Catalyzed Cross-Electrophile Coupling of Inert C-O Bonds with Alkyl Bromides",
+      "authors": [
+        "S Chen",
+        "Z Wang",
+        "S Geng",
+        "H Zhu",
+        "Z Liu",
+        "Y He",
+        "Q Peng",
+        "Z Feng"
+      ],
+      "journal": "CCS Chem",
+      "volume": "5",
+      "issue": "7",
+      "pages": "1674-1685",
+      "year": "2023",
+      "doi": "10.31635/ccschem.022.202202234",
+      "publisher": null
+    },
+    {
+      "id": "b44",
+      "title": "Mechanistic Investigation of Iron-Catalyzed Coupling Reactions",
+      "authors": [
+        "J Kleimark",
+        "A Hedstr\u00f6m",
+        "P.-F Larsson",
+        "C Johansson",
+        "P.-O Norrby"
+      ],
+      "journal": "ChemCatChem",
+      "volume": "1",
+      "issue": "1",
+      "pages": "152-161",
+      "year": "2009",
+      "doi": "10.1002/cctc.200900061",
+      "publisher": null
+    },
+    {
+      "id": "b45",
+      "title": "FeCl2-Catalyzed Hydroboration of Aryl Alkenes with Bis(Pinacolato)Diboron",
+      "authors": [
+        "Y Liu",
+        "Y Zhou",
+        "H Wang",
+        "J Qu"
+      ],
+      "journal": "RSC Adv",
+      "volume": "5",
+      "issue": "90",
+      "pages": "197-201",
+      "year": "2015",
+      "doi": "10.1021/acs.orglett.4c04171?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as",
+      "publisher": null
+    }
+  ]
+}
