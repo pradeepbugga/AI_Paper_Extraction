@@ -13,16 +13,20 @@ HYPHEN_WRAP_RE = re.compile(r"(?<=[a-z])-$")
 TERMINAL_PUNCT_RE = re.compile(r"[.?!:;]$")
 SENTENCE_END_RE = re.compile(r"[.?!]$")
 TRAILING_PAGE_NUM_RE = re.compile(r"\s*\d{1,4}$")
+NUMBERED_PREFIX_RE = re.compile(r"^\d{1,3}\.\s+\S")
+TOC_LABEL_RE = re.compile(r"^(table of )?contents$", re.IGNORECASE)
 BOLD_FLAG = 1 << 4
 
 HEADER_FRACTION = 0.05    # top of page treated as running-header territory
 FOOTER_FRACTION = 0.05    # bottom of page treated as running-footer territory
 REPEAT_FRACTION = 0.3     # line text repeated on this share of pages is furniture
-HEADING_SIZE_RATIO = 1.02  # heading candidate must be strictly larger than body size
+HEADING_SIZE_RATIO = 1.02   # a line at least this much larger than body is a heading candidate at ANY position
+RELAXED_SIZE_RATIO = 0.98   # a bold line down to ~body size is still a candidate, but only if it *starts* its block
 MAX_HEADING_LEN = 120
 MAX_HEADING_WORDS = 20     # real headings read as short phrases, not sentences
 MAX_HEADING_LEVELS = 6
-MIN_HEADING_BLOCKS = 2  # a size tier must recur across >=N distinct blocks to count as a real heading level
+MIN_HEADING_BLOCKS = 2  # a style tier must recur across >=N distinct blocks to count as a real heading level
+MIN_RELAXED_HEADING_BLOCKS = 4  # body-size (non-strict) tiers need stronger corroboration -- it's a weaker signal
 COLUMN_GAP_MIN_FRACTION = 0.08  # min x-gap (as fraction of page width) to call it two columns
 
 
@@ -161,32 +165,94 @@ def is_furniture_line(line, page_height, furniture_lines):
     return text in texts or furniture_key(text) in keys
 
 
-def compute_heading_levels(pages, body_size, furniture_lines):
-    """Rank the distinct sizes seen among bold, larger-than-body lines
-    (document-relative, so it adapts to whatever the source PDF's heading
-    typography actually is) into up to MAX_HEADING_LEVELS tiers.
+def heading_style_key(line):
+    """A heading's font size is the primary signal, same as a human reader's
+    first read on hierarchy ('bigger = more important'). But not every
+    document expresses every tier with a size difference -- some (e.g. an SI
+    document's numbered top-level sections) use the same size as body text
+    throughout and lean on other cues instead, the same way a reader also
+    picks up on enumeration ('1. ... 2. ...') or ALL CAPS as a heading
+    signal even when the font size doesn't change. Bucket first by size,
+    then by those secondary cues, so same-size tiers with different cues
+    still rank as distinct levels instead of collapsing into one."""
+    size_bucket = round(line["size"] * 2) / 2
+    numbered = bool(NUMBERED_PREFIX_RE.match(line["text"]))
+    all_caps = line["text"].isupper()
+    return (size_bucket, numbered, all_caps)
 
-    A size tier only counts as a heading level if it recurs across multiple
-    distinct blocks — a one-off large bold block (title, byline) reads the
-    same as a heading by font alone, but real section headings are a family
-    of *different* short blocks sharing one style, not a single wrapped one."""
-    blocks_by_size = {}
+
+def heading_eligible(line, body_size, is_first_line):
+    text = line["text"]
+    if (not line["bold"] or len(text) >= MAX_HEADING_LEN or len(text.split()) > MAX_HEADING_WORDS
+            or is_sentence_like(text)):
+        return False
+    if line["size"] >= body_size * HEADING_SIZE_RATIO:
+        return True
+    # Below the "clearly bigger than body" bar: still eligible down to ~body
+    # size, but only where a real heading could plausibly sit -- the very
+    # start of a block. A stray bold fragment that happens to be the whole
+    # of a coincidentally short wrapped line, deep inside a paragraph, isn't
+    # gated out by size here, so it's gated out by position instead.
+    return is_first_line and line["size"] >= body_size * RELAXED_SIZE_RATIO
+
+
+def compute_heading_levels(pages, body_size, furniture_lines):
+    """Rank the distinct heading styles seen (document-relative, so it
+    adapts to whatever the source PDF's heading typography actually is)
+    into up to MAX_HEADING_LEVELS tiers, ranked by size first and the
+    secondary cues in heading_style_key as tie-breakers within equal sizes.
+
+    A style tier only counts as a heading level if it recurs across
+    multiple distinct blocks — a one-off large bold block (title, byline)
+    reads the same as a heading by font alone, but real section headings
+    are a family of *different* short blocks sharing one style, not a
+    single wrapped one. Page 1 doesn't count toward that recurrence: a
+    title page routinely has two or three unrelated large-bold lines
+    (title, byline, a 'Table of Contents' label) that coincidentally share
+    a style without being genuine siblings in the document's structure —
+    counting them together can validate a level that then never legitimately
+    closes for the rest of the document. A real structural tier still has
+    enough occurrences elsewhere; something whose only instances are on the
+    title page doesn't, and rightly stops being a heading level at all
+    (still gets classified fine if it also appears on page 1, once the tier
+    is validated by its non-title-page occurrences).
+
+    A dedicated Table of Contents page is excluded outright, wherever it
+    falls (not just page 1) — its entries are an index of headings that
+    appear again later, not a genuine parent/child relationship, and no
+    typographic signal can tell the two apart; a TOC is common enough as a
+    document convention (not tied to either publisher here) that detecting
+    it directly is no more "overfit" than recognizing numbered lists or
+    figure-caption prefixes as conventions."""
+    toc_pages = set()
     for page in pages:
         for block in page["blocks"]:
+            for line in block["lines"]:
+                if line["bold"] and TOC_LABEL_RE.match(line["text"].strip()):
+                    toc_pages.add(page["page_number"])
+
+    blocks_by_key = {}
+    for page in pages:
+        if page["page_number"] in toc_pages:
+            continue
+        for block in page["blocks"]:
             block_key = (page["page_number"], tuple(block["bbox"]))
+            first_line = True
             for line in block["lines"]:
                 if is_furniture_line(line, page["height"], furniture_lines):
                     continue
-                text = line["text"]
-                if (line["bold"] and line["size"] >= body_size * HEADING_SIZE_RATIO
-                        and len(text) < MAX_HEADING_LEN and len(text.split()) <= MAX_HEADING_WORDS
-                        and not is_sentence_like(text)):
-                    bucket = round(line["size"] * 2) / 2
-                    blocks_by_size.setdefault(bucket, set()).add(block_key)
+                if heading_eligible(line, body_size, first_line) and page["page_number"] > 1:
+                    key = heading_style_key(line)
+                    blocks_by_key.setdefault(key, set()).add(block_key)
+                first_line = False
 
-    sizes = [size for size, blocks in blocks_by_size.items() if len(blocks) >= MIN_HEADING_BLOCKS]
-    ranked = sorted(sizes, reverse=True)[:MAX_HEADING_LEVELS]
-    return {size: level for level, size in enumerate(ranked, start=1)}
+    def min_blocks_for(key):
+        size = key[0]
+        return MIN_HEADING_BLOCKS if size >= body_size * HEADING_SIZE_RATIO else MIN_RELAXED_HEADING_BLOCKS
+
+    candidates = [key for key, blocks in blocks_by_key.items() if len(blocks) >= min_blocks_for(key)]
+    ranked = sorted(candidates, key=lambda k: (-k[0], not k[1], not k[2]))[:MAX_HEADING_LEVELS]
+    return {key: level for level, key in enumerate(ranked, start=1)}
 
 
 def is_sentence_like(text):
@@ -203,17 +269,11 @@ def is_sentence_like(text):
             and len(words) > 3)
 
 
-def classify_line(line, body_size, heading_levels):
-    text = line["text"]
-    words = text.split()
-    if (not line["bold"] or len(text) >= MAX_HEADING_LEN or len(words) > MAX_HEADING_WORDS
-            or is_sentence_like(text)):
+def classify_line(line, body_size, heading_levels, is_first_line):
+    if not heading_eligible(line, body_size, is_first_line):
         return "body"
-    bucket = round(line["size"] * 2) / 2
-    level = heading_levels.get(bucket)
-    if level is None or line["size"] < body_size * HEADING_SIZE_RATIO:
-        return "body"
-    return f"heading{level}"
+    level = heading_levels.get(heading_style_key(line))
+    return f"heading{level}" if level is not None else "body"
 
 
 def find_column_split(blocks, page_width):
@@ -240,10 +300,12 @@ def parse_page(page_data, figure_bboxes, body_size, heading_levels, furniture_li
     elements = []
     for block in candidate_blocks:
         units = []
+        first_line = True
         for line in block["lines"]:
             if is_furniture_line(line, page_data["height"], furniture_lines):
                 continue
-            kind = classify_line(line, body_size, heading_levels)
+            kind = classify_line(line, body_size, heading_levels, first_line)
+            first_line = False
             if units and units[-1][0] == kind:
                 units[-1][1] = join_lines([units[-1][1], line["text"]])
             else:

@@ -1,121 +1,43 @@
 import json
-import re
 import sys
 from pathlib import Path
 
 import fitz  # PyMuPDF
 
 from section_parse import (
-    HEADING_SIZE_RATIO, MAX_HEADING_LEN,
     collect_raw_blocks, compute_body_size, compute_furniture_lines,
-    compute_heading_levels, is_furniture_line, find_column_split, join_lines,
-    is_sentence_like, block_in_figure, merge_boundary_paragraphs,
+    compute_heading_levels, parse_page, merge_boundary_paragraphs,
+    assemble_sections,
 )
 
-SECTION_NUM_RE = re.compile(r"^\d{1,3}\.\s+\S")
-MAX_BOUNDARY_WORDS = 20
 
+def restructure_as_records(node):
+    """SI documents are organized around dozens to hundreds of repeating
+    compound/procedure records rather than narrative prose subsections, so
+    a leaf heading (one with no headings nested under it) is recast as a
+    'record' — a flat name + text blob — instead of a subsection with a
+    single paragraph list. This uses no SI-specific detection at all: it's
+    a shape transform applied after the exact same heading/paragraph tree
+    the main text produces, via the same document-relative heading-level
+    logic (see section_parse.compute_heading_levels)."""
+    real_subsections = []
+    records = []
+    for sub in node["subsections"]:
+        restructure_as_records(sub)
+        if not sub["subsections"] and not sub["records"]:
+            records.append({
+                "heading": sub["heading"],
+                "page_start": sub["page_start"],
+                "text": sub["preamble"],
+                "figures": [],
+            })
+        else:
+            real_subsections.append(sub)
 
-def classify_si_line(line, body_size, heading_levels):
-    """SI documents split into two conventions we've seen so far: genuine
-    font-size-tiered headings just like the main text (Nature's SI has
-    'Supplementary Methods' at 16pt containing 'General Considerations' at
-    14pt, both clearly larger than 11pt body), and flat body-size-bold
-    headings distinguished only by numbering (ACS's '1. General
-    experimental', '12. Experimental procedures...', all at the same 12pt
-    as body text). Try the size-tier signal first (reusing the same
-    document-relative logic as main-text parsing); if a bold line doesn't
-    belong to any size tier, fall back to the numbering pattern. Anything
-    bold-and-short that's neither is a record (compound name, procedure
-    label) rather than a top-level section."""
-    text = line["text"]
-    if (not line["bold"] or len(text.split()) > MAX_BOUNDARY_WORDS
-            or is_sentence_like(text) or len(text) >= MAX_HEADING_LEN):
-        return "body"
-
-    bucket = round(line["size"] * 2) / 2
-    level = heading_levels.get(bucket)
-    if level is not None and line["size"] >= body_size * HEADING_SIZE_RATIO:
-        return f"section{level}"
-
-    if SECTION_NUM_RE.match(text):
-        return "section1"
-
-    return "record"
-
-
-def parse_si_page(page_data, figure_bboxes, body_size, heading_levels, furniture_lines):
-    candidate_blocks = [b for b in page_data["blocks"] if not block_in_figure(b["bbox"], figure_bboxes)]
-    split_x = find_column_split(candidate_blocks, page_data["width"])
-
-    elements = []
-    for block in candidate_blocks:
-        units = []
-        for line in block["lines"]:
-            if is_furniture_line(line, page_data["height"], furniture_lines):
-                continue
-            kind = classify_si_line(line, body_size, heading_levels)
-            if units and units[-1][0] == kind:
-                units[-1][1] = join_lines([units[-1][1], line["text"]])
-            else:
-                units.append([kind, line["text"]])
-        if not units:
-            continue
-        column = 0 if split_x is None or block["bbox"][0] < split_x else 1
-        for kind, text in units:
-            elements.append({"type": kind, "text": text, "page": page_data["page_number"],
-                              "column": column, "bbox": block["bbox"]})
-
-    elements.sort(key=lambda e: (e["column"], e["bbox"][1]))
-    return elements
-
-
-def assemble_records(elements):
-    """Compound-record-oriented structure: sections can nest (some SI docs
-    have real sub-headings), and each holds a flat list of records (compound
-    names, 'Synthesis of ...' procedure headers, general-procedure blocks).
-    Flat records are a more useful shape for downstream schema extraction
-    than forcing SI into the same nested prose tree used for the main text
-    -- the goal here is "text blob per compound," not narrative structure."""
-    front_matter = []
-    sections = []
-    stack = []  # (level, section_dict), outermost first
-    current_record = None
-
-    def container_for(level):
-        while stack and stack[-1][0] >= level:
-            stack.pop()
-        return stack[-1][1] if stack else None
-
-    for el in elements:
-        m = re.fullmatch(r"section(\d+)", el["type"])
-        if m:
-            level = int(m.group(1))
-            parent = container_for(level)
-            node = {"heading": el["text"], "page_start": el["page"], "preamble": [],
-                    "records": [], "subsections": [], "figures": []}
-            if parent is None:
-                sections.append(node)
-            else:
-                parent["subsections"].append(node)
-            stack.append((level, node))
-            current_record = None
-        elif el["type"] == "record":
-            if stack:
-                current_record = {"heading": el["text"], "page_start": el["page"],
-                                   "text": [], "figures": []}
-                stack[-1][1]["records"].append(current_record)
-            else:
-                current_record = None  # a record needs a section to live in
-        elif el["type"] == "body":
-            if current_record is not None:
-                current_record["text"].append(el["text"])
-            elif stack:
-                stack[-1][1]["preamble"].append(el["text"])
-            else:
-                front_matter.append(el["text"])
-
-    return front_matter, sections
+    node["subsections"] = real_subsections
+    node["records"] = records
+    node["preamble"] = "\n".join(node.pop("paragraphs"))
+    node["figures"] = []
 
 
 def collect_timeline(sections):
@@ -169,22 +91,17 @@ def parse_si(si_path: Path, si_raw_extraction: dict, output_dir: Path):
     all_elements = []
     for page_data in pages:
         figure_bboxes = [img["bbox"] for img in images_by_page.get(page_data["page_number"], [])]
-        all_elements.extend(parse_si_page(page_data, figure_bboxes, body_size, heading_levels, furniture_lines))
+        all_elements.extend(parse_page(page_data, figure_bboxes, body_size, heading_levels, furniture_lines))
 
     all_elements = merge_boundary_paragraphs(all_elements)
 
-    front_matter, sections = assemble_records(all_elements)
-    attach_figures(sections, images_by_page)
-
-    def flatten_text(node):
-        node["preamble"] = "\n".join(node["preamble"])
-        for rec in node["records"]:
-            rec["text"] = "\n".join(rec["text"])
-        for sub in node["subsections"]:
-            flatten_text(sub)
+    front_matter, sections = assemble_sections(
+        [e for e in all_elements if e["type"] != "figure_caption"]
+    )
 
     for sec in sections:
-        flatten_text(sec)
+        restructure_as_records(sec)
+    attach_figures(sections, images_by_page)
 
     result = {
         "source_pdf": si_path.name,

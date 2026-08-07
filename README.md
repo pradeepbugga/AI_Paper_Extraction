@@ -87,15 +87,20 @@ statistics instead of per-publisher constants:
   so a heading and the paragraph right after it often land in the same block
   with no visual gap. Stage 2 re-reads each page with `dict` mode for
   per-line font size/boldness, computes the document's own body-text size
-  (the size with the most non-bold characters), and flags a line as a
-  heading candidate if it's bold and larger than that — no hardcoded font
-  names or size thresholds. A size tier only becomes a real heading *level*
-  if it recurs across ≥2 distinct blocks (a one-off large bold block, like a
-  title or byline, isn't a heading — real section headings are a family of
-  different short blocks sharing one style). A candidate is also rejected if
-  it reads like a sentence (ends in `.`/`?`/`!`, not all-caps, >3 words) or
-  runs over ~20 words, since real headings are short phrases, not emphasized
-  prose.
+  (the size with the most non-bold characters), and ranks heading tiers the
+  way a human reader would: font size first, then a numbered-list prefix or
+  ALL CAPS as a tie-breaker when two tiers share the same size (needed once
+  SI documents entered the picture — see Stage 2b below — since not every
+  document expresses every heading tier with a size difference). A style
+  tier only becomes a real heading *level* if it recurs across ≥2 distinct
+  blocks (a one-off large bold block, like a title or byline, isn't a
+  heading — real section headings are a family of different short blocks
+  sharing one style); same-as-body-size tiers need ≥4, since that's a
+  weaker signal, and are only eligible at the very start of a block, so a
+  coincidentally bold-and-short wrapped line mid-paragraph can't qualify. A
+  candidate is also rejected if it reads like a sentence (ends in
+  `.`/`?`/`!`, not all-caps, >3 words) or runs over ~20 words, since real
+  headings are short phrases, not emphasized prose.
 - **Figure-embedded text**: small blocks that are actually chemical-structure
   labels sitting inside a figure (not body text) are dropped by checking
   overlap against the figure bounding boxes found in Stage 1.
@@ -162,49 +167,81 @@ prose sections, they're organized around dozens to hundreds of repeating
 *compound records* (a compound name or procedure label, followed by its
 characterization data and NMR spectra). Forcing that into the main text's
 prose section/subsection tree would lose the thing that actually matters
-here — "text blob and spectra per compound" — so the output is a section
-tree where each section holds a flat `records` list instead of only
-paragraphs.
+here — "text blob and spectra per compound" — so `si_parse.py` reuses
+`section_parse.py`'s `parse_page`/`assemble_sections` unmodified to build the
+same kind of heading tree as the main text, then does one SI-specific thing:
+any *leaf* heading (nothing nested under it) is recast as a flat `record`
+(name + text blob + linked figures) instead of a subsection with a single
+paragraph. No SI-specific parsing logic exists anymore — it's a shape
+transform on top of the exact same document-relative heading detection used
+everywhere else.
 
-Two SI documents, two different heading conventions, discovered by testing
-against both rather than assumed up front:
+That heading detection had to generalize further to get here. The original
+version required a heading to be *strictly larger* than body text — true for
+every main-text heading tier seen so far, but SI documents don't always
+follow it:
 
-- **Nature's SI** uses genuine font-size-tiered headings, same as its main
-  text (`Supplementary Methods` at 16pt containing `General Considerations`
-  at 14pt, both clearly larger than 11pt body) — real nesting, up to 4 levels
-  deep in practice (`Supplementary Methods` → `Preparation of Boronic
-  Esters...` → `General Procedure 1` → per-compound record).
+- **Nature's SI** uses genuine font-size-tiered headings, same convention as
+  its main text (`Supplementary Methods` at 16pt containing `General
+  Considerations` at 14pt, both clearly larger than 11pt body) — real
+  nesting, up to 4 levels deep in practice.
 - **ACS's SI** uses flat body-size-bold headings distinguished only by
   numbering (`1. General experimental`, `12. Experimental procedures...`,
-  all at the same size as body text) — no size signal available at all.
+  all at the exact same size as body text) — no size signal at all.
 
-`classify_si_line` tries the size-tier signal first (reusing the same
-document-relative heading-level machinery as the main text); if a bold line
-doesn't belong to any size tier, it falls back to a numbered-list-prefix
-check. Anything bold-and-short that's neither is a compound/procedure record
-rather than a top-level section. Figures are attached to whichever
-section/record is "open" at a given page (the most recent heading at or
-before it) — coarse, but matches how these documents are laid out: a
-compound's structure and spectra sit on or right after its own heading.
+`compute_heading_levels`/`classify_line` now rank heading tiers the way a
+human reader would: font size first, then secondary cues (a numbered prefix,
+ALL CAPS) as tie-breakers within equal sizes — so a same-size tier
+distinguished only by numbering still ranks as its own level instead of
+collapsing into body text. The relaxed (non-strictly-larger) tier is gated
+more conservatively than the strict one, since it's a weaker signal:
+eligible only at the very start of a block (so a coincidentally-short,
+coincidentally-bold last line of a wrapped paragraph — e.g. a chemistry
+compound ID like `3a` sitting alone at a line break — can't qualify; a real
+heading always starts a new block), and requires more repetitions across the
+document before being trusted as a real level (a bold "label lead-in" phrase
+in boilerplate prose, like "Correspondence and requests... :", can
+coincidentally repeat 2-3 times without being a heading).
 
-One bug this surfaced in the shared `is_sentence_like` heading-suppression
-check: it treated a trailing colon as "looks like end of a sentence, reject
-as heading," which silently swallowed every ACS compound header (`Synthesis
-of ... (14):`) into body text — colons introduce something, they don't end a
-declarative sentence, so they were never a valid signal for "not a heading"
-in the first place. Fixed at the source since it's shared with main-text
-parsing.
+Two more general fixes came out of validating this against both SI
+documents:
+
+- **Trailing colon ≠ end of a sentence.** The shared sentence-suppression
+  check (used to reject a bold-but-prose-like fragment as "not a heading")
+  treated a trailing colon as terminal punctuation, which silently swallowed
+  every ACS compound header (`Synthesis of ... (14):`) into body text. A
+  colon introduces something, it doesn't end a declarative sentence — never
+  a valid "reject as heading" signal in the first place.
+- **A Table of Contents page isn't a real container.** Its entries are an
+  index of headings that appear again later, not genuine children of "Table
+  of Contents" — no typographic signal can tell a TOC's structure apart from
+  real nesting, so without an explicit check, a TOC page could validate a
+  heading level that then never legitimately closes for the rest of the
+  document (everything after it nests one level deeper, forever). Detecting
+  a dedicated TOC page and excluding it from heading-level validation is no
+  more publisher-specific than recognizing numbered lists or figure-caption
+  prefixes as conventions — it's a standard document convention independent
+  of either paper here.
+
+Figures are attached to whichever section/record is "open" at a given page
+(the most recent heading at or before it) — coarse, but matches how these
+documents are laid out: a compound's structure and spectra sit on or right
+after its own heading.
 
 ```
 python3 ingest/si_parse.py data/papers/suzuki_iron_2024
 python3 ingest/si_parse.py data/papers/copper_iron_2025
 ```
 
-Outputs `SI_sections.json`. Validated on both SI documents: 458 records
-(Suzuki, including 75 clean NMR-data records each linked to their spectrum
-images) and 197 records (copper-iron, 73 experimental-procedure records + 74
-NMR records each linked to exactly its 1H/13C spectra). Known limitation,
-out of scope for this stage: dense comparison tables and reaction-scheme
-labels fragment into spurious low-content "records" — real table extraction
-is Stage 4, not something this layout-level parsing is expected to solve.
-stays in the section tree instead of being silently dropped.
+Outputs `SI_sections.json`. Validated on both SI documents: 249 records
+(Suzuki) and 152 records (copper-iron) — fewer than an earlier hand-rolled,
+SI-specific version, but a quality improvement, not a regression: verified
+zero orphaned figures (144/144 images in Suzuki's NMR section attached to a
+record) and confirmed the drop is entirely from removing noise a
+publisher-specific heuristic had let through (raw DFT-coordinate-dump
+fragments misread as headings, and NMR sub-spectra like `11B NMR` that used
+to spuriously split off from their parent compound now correctly merge back
+in). Known limitation, out of scope for this stage: dense comparison tables
+and reaction-scheme labels still fragment into spurious low-content records
+— real table extraction is Stage 4, not something this layout-level parsing
+is expected to solve.
