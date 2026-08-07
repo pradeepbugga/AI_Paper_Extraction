@@ -1,0 +1,1139 @@
+{
+  "source_pdf": "paper.pdf",
+  "front_matter": [
+    "A General Redox-Neutral Platform for Radical Cross-Coupling",
+    "Authors: \u00c1ron P\u00e9ter,1\u2020 Jiawei Sun,1\u2020 Jiayan He,1\u00a7 Jet Tsien,1\u00a7 Haoxiang Zhang,1\u00a7 Benjamin P.",
+    "Vokits,2 David S. Peters,3 Michael D. Mandler,4 Maximilian D. Palkowitz,5 Yu Kawamata,1 Phil",
+    "S. Baran*1",
+    "Affiliations:",
+    "1Department of Chemistry, Scripps Research, 10550 North Torrey Pines Road, La Jolla, CA, 92037, United States.",
+    "2Bristol Myers Squibb Research and Development, P.O. Box 4000, Princeton, New Jersey 08534, United States",
+    "3Small Molecule Drug Discovery, Bristol Myers Squibb Research & Early Development, 10300 Campus Point",
+    "Drive, 92121 San Diego, CA, United States.",
+    "4Small Molecule Drug Discovery, Bristol Myers Squibb Research & Early Development, Route 206 & Province",
+    "Line Road, Princeton, NJ 08543 USA",
+    "5Small Molecule Drug Discovery, Bristol Myers Squibb, 250 Water Street, Cambridge, Massachusetts 02141,",
+    "United States",
+    "\u2020These authors contributed equally to this work.",
+    "\u00a7These authors contributed equally to this work.",
+    "*Correspondence to: pbaran@scripps.edu"
+  ],
+  "sections": [
+    {
+      "heading": "Abstract:",
+      "page_start": 1,
+      "paragraphs": [
+        "Sulfonyl hydrazides are disclosed as versatile radical precursors as exemplified with seven new",
+        "C\u2013C bond forming, redox-neutral cross-couplings with: (1) activated olefins, (2) alkyl halides, (3)",
+        "redox active esters, (4) aryl halides, (5) alkenyl halides, (6) alkynyl halides, and (7) a",
+        "trifluoromethylating reagent to forge C(sp3)-C(sp3), C(sp3)-C(sp2), and C(sp3)-C(sp) bonds.",
+        "Sulfonyl hydrazides are stable and usually crystalline substances that can be accessed in a variety",
+        "of ways including transiently from hydrazones to achieve a net reductive arylation of carbonyl",
+        "compounds. Exogenous redox (chemical, photo/electrochemical) additives are not necessary as",
+        "these functional groups serve the dual role of radical precursor and electron donor. The operational",
+        "simplicity (homogeneous, water tolerant, dump-and-stir) and practicality of the method are",
+        "demonstrated as well as applications to streamlining synthesis and mild late-stage",
+        "functionalization."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Introduction:",
+      "page_start": 2,
+      "paragraphs": [
+        "The use of radical cross-coupling in retrosynthetic analysis has experienced a renaissance",
+        "over the past decade (1-4). This is due to the simple, convergent disconnections of challenging C\u2013",
+        "C bonds leading back to ever-present functional groups such as halides, acids, amines, alcohols,",
+        "and olefins (Figure 1A) (4-12). In practice, all of these widely employed radical precursors require",
+        "some sort of exogenous redox activation mode. Regardless of the choice of oxidative or reductive",
+        "activation, this generally requires stoichiometric chemical additives, catalysts to facilitate photo-",
+        "induced electron transfer, or electrochemistry (5, 8, 13). A simpler means to achieve radical cross-",
+        "coupling without the use of exogenous redox methods would be highly attractive based on first",
+        "principles reasoning as it would reduce cost and the complexity of reaction setup. Alkyl diazenes",
+        "are a prime candidate for radical precursors that could achieve such an objective (14, 15). These",
+        "species have been invoked since the late 1930's (16, 17) yet their use in organic synthesis has been",
+        "sporadic and mainly relegated to 2e\u2013-defunctionalization methods such as the classic Wolff\u2013",
+        "Kishner reduction and related reactions (17-21) (Figure 1B, left). A provocative report on the use",
+        "of in situ derived diazenes from sulfonyl hydrazides was reported by Taber in 1993 wherein the",
+        "radical cyclization of ketone 1 to octahydroindane 2 was achieved (Figure 1B, right) (22). Building",
+        "on this precedent, we wondered if free radicals derived without redox-initiation from these",
+        "intermediates could be enlisted in metal catalyzed cross-coupling events. Herein we disclose a",
+        "remarkably general platform for redox-neutral radical cross-couplings driven by in situ derived",
+        "alkyl diazenes to forge a variety of C\u2013C bonds. Alkyl sulfonyl hydrazides are easily derived from",
+        "carbonyl compounds and alcohols (N-sulfonyl regioisomers can be used interchangeably); these",
+        "stable, crystalline substances can now be employed to generate a variety of useful sp3-sp3, sp3-sp2,",
+        "and sp3-sp linkages in a practical, \"dump and stir\" fashion, obviating the need for any external",
+        "redox-activation.",
+        "C. This work: General redox-neutral radical cross-couplings using sulfonyl hydrazides",
+        "coupling; (C) realization of broadly general redox-neutral cross coupling using sulfonyl hydrazide precursors.",
+        "Table 1 vividly illustrates the versatility of sulfonyl hydrazides as redox-neutral coupling",
+        "partners in six valuable C\u2013C bond forming events. Each of these methods could warrant their own",
+        "separate disclosure to describe their optimization and development. For the sake of brevity, this",
+        "initial report describes an inaugural scope for each new reaction. A discussion of their optimization",
+        "can be found in the Supplementary Materials and a detailed mechanistic study for each will be",
+        "forthcoming. The simplest of radical couplings, namely Giese-type additions to unsaturated",
+        "species was demonstrated first (Table 1A, top). For this reaction, dtbbpy was employed in concert",
+        "with Ni(dme)Cl2 along with Et3N (3.0 equiv.) to furnish five representative adducts in 35-65%",
+        "yield (3\u20137). Interestingly, the yield of this reaction was significantly reduced in the absence of a",
+        "Ni/L system. Next, the direct formation of C(sp3)-C(sp3) linkages was explored using both alkyl",
+        "halides and alkyl redox-active esters (RAEs) as coupling partners (Table 1A, bottom) (23-25).",
+        "Using a near stoichiometric ratio of coupling partners (1.5 equiv. of sulfonyl hydrazide and 1.0",
+        "equiv. of alkyl halide or RAE) in the presence of Ni(dme)Cl2, 2,6-bis(pyrazol-1-yl)pyridine (bpp),",
+        "and Et3N (3.0 equiv.) at 60 \u00b0C in DMF provided a range of secondary-secondary (10\u201312, 15, and",
+        "16) and secondary-primary adducts (9, 13, and 14) in good yield. From an operational standpoint this reaction represents perhaps the most simple and inexpensive means of forming saturated C\u2013C bonds (especially challenging 2\u00b0-2\u00b0 linkages) (3, 26). A notable aspect of this coupling approach is that no exogenous redox chemistry is necessary even though RAEs and alkyl halides have historically required reductive radical generation (27, 28).",
+        "Turning to C(sp3)-C(sp2) and C(sp3)-C(sp) linkages, an array of viable coupling partners",
+        "was identified to access broad regions of chemical space (Table 1B) (29-34). Alkenyl donors",
+        "(bromides, iodides, and triflates), aryl halides (chlorides and bromides), and alkynyl bromides",
+        "were all easily coupled with sulfonyl hydrazides (23\u201329, and 34; 17\u201322, and 33; 30\u201332 and 35,",
+        "respectively) using similar conditions to that described above with the notable exception that the",
+        "unique, but commercial, dNH2-bpy ligand often led to higher yields. Notably, unlike the majority",
+        "of reductive modes of accomplishing such transformations, protodehalogenation and/or",
+        "homodimerization of the sp2-halide substrate is greatly suppressed, thereby simplifying product",
+        "isolation. The ability to utilize C(sp2)-chlorides and triflates is of great utility and the deletion of",
+        "pyrophoric reagents (Negishi and Kumada type) (35-37), palladium, or redox-focused reaction",
+        "setups (photo/electrochemistry) (3) will reduce the barrier to employing radical cross-couplings.",
+        "The aforementioned reactions all rely on Ni-catalysis to facilitate productive C\u2013C bond",
+        "formation. However, the use of sulfonyl hydrazides is not limited to Ni as exemplified in Table 1C",
+        "with the direct trifluoromethylation of these species (36\u201342) using Grushin's commercial Cu-based",
+        "reagent (38), Cu(bpy)(CF3)3 (easily prepared on gram scale from TMSCF3 and CuI). Unlike the",
+        "related trifluoromethylation of alkyl halides or alcohols with the same reagent (39, 40), no",
+        "exogenous redox activation is required. To the best of our knowledge, this method for alkyl-CF3",
+        "bond formation is perhaps the most operationally simple option currently available.",
+        "C. Trifluoromethylation of ketones and primary alcohols via sulfonyl hydrazides",
+        "with alkyl halides and RAEs; (B) cross-coupling with C(sp2) and C(sp) halides to create aryl-, alkenyl-, and alkynyl-",
+        "alkyl linkages; and (C) Trifluoromethylation with Grushin's reagent. aThe corresponding Ts hydrazide was used",
+        "instead of the depicted difluorinated. bNaI (2.0 equiv.) was added. cCalibrated UPLC yield against PhNHAc as internal",
+        "standard, ran as duplicate, average shown (84%, and 82% yield). dPempidine was used as the base instead of Et3N.",
+        "eCrude NMR yield against mesitylene or dibromomethane as internal standard. fdtbbpy was used as ligand instead of",
+        "dNH2-bpy. g1.0 equiv. of ArBr was used instead of 1.5 equiv.",
+        "In general, it was found that the 3,5-difluorophenylsulfonyl hydrazides exhibited the",
+        "optimum reactivity for secondary cyclic radicals, but in many cases, such as primary derived",
+        "radicals, the simple tosyl-substituted hydrazide can be employed (33\u201335, and 38\u201342). However,",
+        "in the case of arylation, simple tosyl hydrazides performed well (17\u201322). As a general matter, the",
+        "byproducts resulting from hydrazide immolation are easily removed (N2 gas and a sulfinate salt)",
+        "upon aqueous workup. These reactions are ideal for parallel screening workflows as they can be",
+        "conducted on very small scale. As discussed below they can also be scaled up with ease due to",
+        "their homogeneity.  Explorations thus far have revealed the majority of 2\u00b0-cyclic sulfonyl",
+        "hydrazides to be bench stable substances, particularly in the case of tosyl hydrazides. 2\u00b0-acyclic",
+        "and 1\u00b0-tosyl hydrazides obtained after hydrazone reduction should be used shortly after",
+        "preparation whereas 1\u00b0 hydrazides prepared through Mitsunobu (different NSO2Ar regioisomer,",
+        "Table 2B, box) are more stable (several days on a benchtop).  A user guide based on current data",
+        "is provided in the Supplementary Materials.",
+        "From an operational perspective it may be desirable to proceed directly from a hydrazone",
+        "to obtain a coupled product without isolation of the corresponding sulfonyl hydrazide, analogous",
+        "to the widely employed Barluenga coupling (41-43). In that reaction, a sulfonyl hydrazone is",
+        "simply combined with a sp2-boronic acid to deliver useful sp2-sp3 linkages by way of a diazo-",
+        "intermediate. After extensive exploration, a simple silane (PhSiMe2H, ca. $2/gram) could be added",
+        "in situ to the standard reaction conditions thereby enabling the equivalent of a reductive Barluenga",
+        "coupling using more convenient (hetero)aryl halides as illustrated in Table 2.  Dozens of substrates",
+        "were evaluated across a range of different hydrazones and aryl halides revealing the remarkable",
+        "versatility of this method. In terms of the experimental protocol, it is operationally trivial to",
+        "conduct as sulfonyl hydrazone formation is quantitative and isolation is optional. In cases where a",
+        "hydrazone is used without purification, residual quantities of MeOH present after evaporation does",
+        "not significantly impact the ensuing coupling. With the hydrazone in hand (isolated or used after",
+        "evaporation of MeOH), the remaining materials are added (ArX, Ni(dme)Cl2, dNH2-bpy),",
+        "followed by DMF under N2 or Ar (pre-stirring until homogenous), followed by base and silane.",
+        "The reaction is heated to 75 \u00b0C overnight (16-18 h) followed by standard aqueous workup. In terms of the aryl electrophile scope, the trend is what one would expect based on known rates of Nioxidative addition into such systems. Using a highly electron rich ligand (dNH2-bpy) and elevated temperature helps to extend this scope even further. Thus, electron-rich aryl bromides are competent (43 and 44), but electron-poor aryl bromides work better (45 and 47). Electron deficient aryl chlorides are suitable coupling partners (17, 18, 54, 58, 60, and 63\u201367) as are aryl triflates (18).  A wide variety of functional groups are tolerated including valuable handles for further functionalization: Bpin (46), polyhalogenated arenes (50), free glutarimide NH (76), free amino pyridine (55), aryl fluorides (54), SMe (59), tetrazole (48), benzylic CHF2 groups (68\u201372, 74, and 79), nitriles (45, 52, and 57), esters (65\u201371, 73, 74, and 77\u201379), amides (51), ortho substituents (52), and challenging heterocycles such as pyrimidines (58\u201360), pyrazines (65\u201367), indazoles (61), and azaindole (62).",
+        "The array of suitable carbonyl coupling partners appears to be vast. Cyclic ketones with",
+        "ring sizes ranging from 4 to 6 are easily employed and it is anticipated that any ring size would be",
+        "potentially suitable. Adjacent heteroatoms are tolerated (63, 71, 72, 78, and 79) and good to high",
+        "d.r. is observed with ketones bearing pre-existing stereocenters (68 and 69).  Complex bridged",
+        "ketones also provide useful quantities of product in high diastereoselectivity (67, 70, 71, 73, and",
+        "74). Finally, aldehydes can be enlisted (77\u201379).",
+        "The ability to employ simple carbonyl groups in complex cross-couplings as outlined",
+        "above opens a new opportunity for retrosynthetic planning as carbonyl groups are often used to",
+        "generate carbon skeletons. Traditionally, the go-to strategy for such systems involves a sequence",
+        "of vinyl-triflate or vinyl-boronic acid synthesis, Suzuki coupling, and hydrogenation which aside",
+        "from being laborious (for example furan 72) and non-chemoselective, is impossible to employ on",
+        "non-enolizable systems such as 70. Another popular approach is to convert a carbonyl group into",
+        "a halide and employ it in conventional or reductive cross-coupling approaches; however, this",
+        "multistep process suffers from limitations in the halogenation of certain alcohols. In some cases,",
+        "it is desirable to employ a sulfonyl hydrazide directly rather than coupling a hydrazone directly",
+        "(see Supplementary Materials for more details). Unlike the direct arylation of sulfonyl hydrazides",
+        "presented in Table 1B, there are more byproducts observed using hydrazones with in situ reduction",
+        "stemming from protodehalogenation and products resulting from reaction with reduced sulfinate",
+        "(see Supplementary Materials for more details). The arylation method of Table 2 is thus better for",
+        "rapid screening campaigns in medicinal chemistry where isolated yields are less important.",
+        "Ni-catalysed cross-coupling of sulfonyl hydrazones with (hetero)aryl halides via in situ generated hydrazides",
+        "reduction with an inexpensive silane. aNMR yield against 1,3,5-trimethoxybenzene or mesitylene as internal standard.",
+        "bNaCl (1.0 equiv.) was added.",
+        "Redox-neutral radical cross-couplings of alkyl sulfonyl hydrazides can dramatically",
+        "simplify access to all sorts of useful building blocks. For instance, hydroxyethylated pyridine 80",
+        "(Figure 2A) is commercially available yet prohibitively expensive (ca. $500-1000/g).",
+        "Retrosynthetically, numerous options can be envisaged using a variety of hydroxyethyl surrogates",
+        "such as ethylene oxide (82), b-hydroxy acid/RAE (83), Katritzky salt 84, boronic acid donor 85,",
+        "stannane 86, and chloroethanol 87 (44, 45). Most of these building blocks are either unsuitable, unstable (83), inaccessible (85 and 86), or inconvenient to employ (82). In stark contrast, commercial hydrazine 88 ($0.2/g) and chloropyridine 81 ($4-5/g) can be combined in a singlestep process (chloropyridine 81, TsCl, Ni(dme)Cl2, and dNH2-bpy are dissolved in DMF under Ar, then hydrazine 88 and Et3N are added, stirred at r.t. for 30 min followed by heating to 75 \u00b0C for 6 hours) in 68% yield. The generally high chemoselectivity encountered in radical cross-couplings can be further leveraged for mild late-stage modifications such as in the case of the direct functionalization of Ticagrelor (Figure 2B). Without any protecting group chemistry, 89 can be subjected to Mitsunobu with TsNHNH2 to install the sulfonyl hydrazide followed immediately (after aqueous workup) by radical cross-coupling to deliver arylated adduct 90 in 33% yield over 2 steps (along with ca. 20% recovered tosyl hydrazide). It is difficult to conceive of a more direct and simple way to achieve such a transformation.",
+        "The utility of these reactions will likely extend beyond a medicinal chemistry setting as its",
+        "simple and homogenous nature bodes well for large scale applications. To exemplify this, gram-",
+        "scale preparation of substrates 17 and 92 were performed by reacting sulfonyl hydrazide 8 with",
+        "aryl bromide 93 and RAE 91, respectively, in good yields. The clear advantage of eliminating",
+        "exogenous redox in radical cross-coupling reach beyond reaction simplicity (no need for e-chem",
+        "or photochem setups or expensive sensitizers), it can also facilitate transformations that are",
+        "difficult to scale up or unworkable. For instance, as illustrated in Figure 2C, 1,4-trans substituted",
+        "cyclohexanes 96 and 100 can be easily accessed in \"dump-and-stir\" homogenous reactions using",
+        "sulfonyl hydrazide donor 94a with arenes 95 and 99, respectively (reactions run one time with no",
+        "optimization). In the former case, an inconvenient flow photochemical scale-up is required for",
+        "decarboxylative coupling and in the latter case the reaction did not proceed, necessitating a",
+        "laborious workaround (46).",
+        "Although the Ni-catalyst loading reported in this disclosure is usually 20 mol%, no",
+        "deliberate effort was made to reduce the loading. In the case of gram scale coupling of 8 and 93, a",
+        "10 mol% loading was employed (delivering 17 in 80% yield), suggesting that much lower loadings",
+        "of Ni are possible.",
+        "D. Evidence for radical intermediacy and proposed catalytic cycles",
+        "application to late-stage functionalization and gram-scale examples; (C) A case study to compare simplified redox-",
+        "neutral cross-coupling with conventional photo-induced electron transfer based decarboxylative coupling; and (D)",
+        "current mechanistic working hypothesis and supporting studies. a94b was used instead of 94a in the photochemical",
+        "conditions.",
+        "The seven reaction classes disclosed in this report can each be individually studied to",
+        "unearth their guiding mechanistic principles. As such, a definitive mechanism for redox-neutral",
+        "radical cross-coupling using sulfonyl hydrazides is beyond the scope of this work. Nevertheless,",
+        "we provide a general mechanistic picture focusing on C(sp2)-C(sp3) bond formation that is",
+        "consistent with findings made thus far, and literature precedent, as outlined in Figure 2D (left). As",
+        "is well precedented in the literature (47-49), mild base undoubtedly liberates a diazine species 103",
+        "from the starting hydrazide 102 (generated in situ from hydrazone 101 by PhSiMe2H reduction",
+        "which is perhaps mediated by a Ni-H species). The exact order of events following diazine",
+        "liberation is currently unclear. For instance, it is conceivable that the diazene decomposes via",
+        "homolysis-driven N2 extrusion to an alkyl radical 107 (either thermally or mediated by Ni(II)",
+        "species 104 via a discreet intermediate such as 105) that is captured by a Ni-oxidative addition",
+        "complex 108 giving high-valent Ni species 109. Since Ni(II) is used and no exogenous reducing",
+        "agent is present, it is possible that the hydrazide itself aids in the reduction of Ni(II) 104 to a",
+        "catalytically competent low-valent species 106 that perpetuates the cycle (Figure 2D, top). Formal",
+        "oxidative addition of low-valent Ni(I) into (Het)Ar-X bonds is well established in literature (from",
+        "106 to 110), as is the comproportionation with 106 into 104 and 108 (25, 50). Radical capture of",
+        "107 has been shown to lead to high-valent Ni complexes such as 109 (51). Reductive elimination",
+        "from 109 delivers the product and returns low-valent species 106 which, in turn, restarts the cycle.",
+        "An alternative two-electron pathway to initiate the cycle can be imagined from 105 to Ni(0) species",
+        "111 via deprotonation and loss of N2 gas (Figure 2D, bottom; details are currently unclear). This",
+        "species can then engage in oxidative addition to give 108 directly thereby entering the catalytic",
+        "cycle. As proposed, the alkyl radical 107 is generated in close proximity to Ni, therefore one could",
+        "speculate a stabilizing associative equilibrium between Ni(I) 106 and the alkyl radical 107 to",
+        "generate 112. Various experiments in support of radical intermediacy are presented (Figure 2D,",
+        "right). In accordance with findings in the literature, TEMPO trapped the radical generated from a",
+        "hydrazide even in the absence of a Ni-catalyst (8 to 113). Further support of this hypothesis can",
+        "be seen with cyclopropane opening/coupling of 114 with 93 to deliver linear adduct 115 and 5-",
+        "exo-trig cyclization/coupling of 116 with 93 to afford cyclopentyl substrate 117 (52). In the latter",
+        "case, the 5-exo-trig cyclisation was only partially complete before coupling resulting in a mixture",
+        "of cyclized product 117 and its linear counterpart (not shown) in a 1:1.4 ratio, respectively.  The Giese reaction depicted in Table 1A to access 3 from 8 was facilitated with added Ni but in the absence of catalyst it was also observed in lower yield (46% vs. 23%, respectively)."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "CONCLUSION",
+      "page_start": 12,
+      "paragraphs": [
+        "Radical cross-coupling chemistry has had a profound impact on the practice of organic synthesis",
+        "and has enabled simplifying radical retrosynthetic disconnections that did not exist a decade ago.",
+        "Despite great strides in this field, the use of exogenous catalysts, stoichiometric",
+        "reductants/oxidants, and photo/electrochemical setups diminishes its practical utility compared to",
+        "conventional, redox-neutral C\u2013C bond forming cross-couplings such as the venerable Suzuki",
+        "reaction. The fundamental advance of this disclosure is the discovery that sulfonyl hydrazides can",
+        "serve not only as versatile radical progenitors but serve as their own electron donors, driven by",
+        "the loss of N2, to facilitate a metal mediated catalytic cycle thereby obviating the need for external",
+        "redox stimuli. From a practical perspective, sulfonyl hydrazides are generally stable, crystalline",
+        "substances that do not need to be purified by chromatography and can often be used in crude form.",
+        "Curiously, these groups are not very polar and are well-behaved on silica gel (nice round spots on",
+        "TLC, see Supplementary Materials for pictures). Catalysis is demonstrated with Ni, but the same",
+        "principle should be applicable to many other organometallic systems. In fact, preliminary",
+        "experiments suggest that other metals such as Cu, Co, Pd, and Fe, can provide varying levels of",
+        "product in C(sp3)-C(sp2) coupling (see Supplementary Materials). This study outlines the invention",
+        "of seven new transformations (Table 1), but a vast array of new reactions is now conceivable.",
+        "Since easily prepared sulfonyl hydrazides divorce redox chemistry from radical cross-couplings,",
+        "reaction setup is dramatically simplified (arguably as simple as a classic Suzuki coupling). Future",
+        "studies will include applications to tertiary radical coupling, interfacing sulfonyl hydrazides with",
+        "other organometallic reaction modes, further extending the scope to C\u2013heteroatom bond cross",
+        "coupling, and a deeper mechanistic inquiry. It is likely that these new C\u2013C bond forming reactions",
+        "will find application in nearly all branches of chemical synthesis when targeting novel materials,",
+        "chemical biology probes, nucleic acids, peptides, sugars, natural products, agrochemicals, and",
+        "medicines."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Acknowledgements",
+      "page_start": 16,
+      "paragraphs": [
+        "This project is financially supported by NIH (GM-118176). \u00c1.P. acknowledges the European",
+        "Union\u2019s Horizon Europe research and innovation programme for a Marie Sk\u0142odowska-Curie",
+        "postdoctoral fellowship (MSCA-GF Grant No. 101110288). H. Z. acknowledges Nankai",
+        "University for its financial support. We also thank L. Pasternack and G. J. Kroon for assistance",
+        "with NMR spectroscopy; the Scripps Automated Synthesis Facility and The Scripps Center for",
+        "Metabolomics and Mass Spectrometry for assistance with HRMS; N. Raheja for help with ligand",
+        "synthesis; D. Cagan for in-depth discussions on the proposed mechanism; M. Constantini, L.",
+        "Massaro, F. Schneider, A. Pollatos for helpful discussions. We thank A. Pollatos and G. Barnes",
+        "for proofreading."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Corresponding Author",
+      "page_start": 16,
+      "paragraphs": [
+        "*pbaran@scripps.edu"
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Author contributions",
+      "page_start": 16,
+      "paragraphs": [
+        "\u00c1.P. developed the in situ protocol described in Table 2 using hydrazones, project initiation, and",
+        "underlying reactivity studies. J.S. developed coupling of sulfonyl hydrazides with aryl halides,",
+        "redox active esters, alkyl halides, Giese addition, and related reactivity studies. J.H. developed the",
+        "Cu-mediated trifluoromethylation of sulfonyl hydrazides. J.T. developed the coupling of sulfonyl",
+        "hydrazides with alkenyl and alkynyl halides. H.Z. assisted with all aspects of the work. B.P.V.",
+        "D.S.P., M.D.M. and M.D.P. contributed to field testing reactions in a medicinal chemistry setting",
+        "and adding numerous substrates to the scope. Y.K. assisted in experimental design. All authors",
+        "contributed to writing the paper. P.S.B. helped to conceptualize the project, write the paper and",
+        "secure funding."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Competing interest",
+      "page_start": 16,
+      "paragraphs": [
+        "The authors declare no competing financial interest."
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Supporting Information",
+      "page_start": 16,
+      "paragraphs": [
+        "Experimental procedures including graphical guides; materials and methods; optimization studies;",
+        "useful information including a user guide."
+      ],
+      "subsections": []
+    }
+  ],
+  "figures": [
+    {
+      "label": "Figure 1",
+      "caption": "Figure 1. (A) Common radical cross coupling precursors; (B) alkyl diazenes as potential leads for redox-neutral cross-",
+      "page": 3,
+      "image_id": "main_p3_fig0",
+      "image_path": "images/page3_fig0.png"
+    },
+    {
+      "label": "Table 1",
+      "caption": "Table 1. Seven new classes of redox-neutral reactions with sulfonyl hydrazides: (A) Giese addition and cross coupling",
+      "page": 5,
+      "image_id": "main_p5_fig0",
+      "image_path": "images/page5_fig0.png"
+    },
+    {
+      "label": "Table 2",
+      "caption": "Table 2. A one-pot protocol for sulfonyl hydrazide couplings with aryl halides via hydrazones through in situ",
+      "page": 8,
+      "image_id": "main_p8_fig0",
+      "image_path": "images/page8_fig0.png"
+    },
+    {
+      "label": "Figure 2",
+      "caption": "Figure 2. (A) Seemingly trivial hydroxyethylation of an aryl chloride can now be accomplished with ease; (B)",
+      "page": 10,
+      "image_id": "main_p10_fig0",
+      "image_path": "images/page10_fig0.png"
+    }
+  ],
+  "references": [
+    {
+      "id": "b0",
+      "title": "Radical Retrosynthesis",
+      "authors": [
+        "Joel M Smith",
+        "Stephen J Harwood",
+        "Phil S Baran"
+      ],
+      "journal": "Accounts of Chemical Research",
+      "volume": "51",
+      "issue": "8",
+      "pages": "1807-1817",
+      "year": "2018-08-02",
+      "doi": "10.1021/acs.accounts.8b00209",
+      "publisher": "American Chemical Society (ACS)"
+    },
+    {
+      "id": "b1",
+      "title": "Radicals: Reactive Intermediates with Translational Potential",
+      "authors": [
+        "Ming Yan",
+        "Julian C Lo",
+        "Jacob T Edwards",
+        "Phil S Baran"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "volume": "138",
+      "issue": "39",
+      "pages": "12692-12714",
+      "year": "2016-09-26",
+      "doi": "10.1021/jacs.6b08856",
+      "publisher": "American Chemical Society (ACS)"
+    },
+    {
+      "id": "b2",
+      "title": "A Paradigm Shift in Catalysis: Electro-and Photomediated Nickel-Catalyzed Cross-Coupling Reactions",
+      "authors": [
+        "M D Palkowitz",
+        "M A Emmanuel",
+        "M S Oderinde"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "56",
+      "issue": null,
+      "pages": "2851-2865",
+      "year": "2023",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b3",
+      "title": "Decarboxylative Cross-Coupling: A Radical Tool in Medicinal Chemistry",
+      "authors": [
+        "Gabriele Laudadio",
+        "Maximilian D Palkowitz",
+        "Tamara El-Hayek Ewing",
+        "Phil S Baran"
+      ],
+      "journal": "ACS Medicinal Chemistry Letters",
+      "volume": "13",
+      "issue": "9",
+      "pages": "1413-1420",
+      "year": "2022-08-10",
+      "doi": "10.1021/acsmedchemlett.2c00286",
+      "publisher": "American Chemical Society (ACS)"
+    },
+    {
+      "id": "b4",
+      "title": "Insights into Recent Nickel-Catalyzed Reductive and Redox C-C Coupling of Electrophiles, C (sp 3 )-H Bonds and Alkenes",
+      "authors": [
+        "Y Gong",
+        "J Hu",
+        "C Qiu",
+        "H Gong"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "57",
+      "issue": null,
+      "pages": "1149-1162",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b5",
+      "title": "Enantioselective C (sp 2 )-C (sp 3 ) Bond Construction by Ni Catalysis",
+      "authors": [
+        "L.-M Chen",
+        "S E Reisman"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "57",
+      "issue": null,
+      "pages": "751-762",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b6",
+      "title": "Carboxylic acids as adaptive functional groups in metallaphotoredox catalysis",
+      "authors": [
+        "S B Beil",
+        "T Q Chen",
+        "N E Intermaggio",
+        "D W Macmillan"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "55",
+      "issue": null,
+      "pages": "3481-3494",
+      "year": "2022",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b7",
+      "title": "Metallaphotoredox: the merger of photoredox and transition metal catalysis",
+      "authors": [
+        "A Y Chan"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "122",
+      "issue": null,
+      "pages": "1485-1542",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b8",
+      "title": "Pyridinium salts as redox-active functional group transfer reagents",
+      "authors": [
+        "S L R\u00f6ssler"
+      ],
+      "journal": "Angew. Chem. Int. Ed",
+      "volume": "59",
+      "issue": null,
+      "pages": "9264-9280",
+      "year": "2020",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b9",
+      "title": "Alcohols as Substrates in Transition-Metal-Catalyzed Arylation, Alkylation, and Related Reactions",
+      "authors": [
+        "A Cook",
+        "S G Newman"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "124",
+      "issue": null,
+      "pages": "6078-6144",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b10",
+      "title": "Transition metal-catalyzed alkyl-alkyl bond formation: Another dimension in cross-coupling chemistry",
+      "authors": [
+        "J Choi",
+        "G C Fu"
+      ],
+      "journal": "Science",
+      "volume": "356",
+      "issue": null,
+      "pages": null,
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b11",
+      "title": "Methods and mechanisms for cross-electrophile coupling of Csp 2 halides with alkyl electrophiles",
+      "authors": [
+        "D J Weix"
+      ],
+      "journal": "Acc. Chem. Res",
+      "volume": "48",
+      "issue": null,
+      "pages": "1767-1775",
+      "year": "2015",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b12",
+      "title": "The electrochemical coupling reactions of organic halides compound in a valuable and practical manner for CC and C-heteroatom formation: An overview",
+      "authors": [
+        "S Payamifar",
+        "L Behrouzi",
+        "A P Marjani"
+      ],
+      "journal": "Arabian Journal of Chemistry",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b13",
+      "title": "J. Am. Chem. Soc",
+      "authors": [
+        "E M Kosower",
+        "T Tsuji",
+        "Diazenes Vi",
+        "Alkyldiazenes"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "93",
+      "issue": null,
+      "pages": "1992-1999",
+      "year": "1971",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b14",
+      "title": "J. Am. Chem. Soc",
+      "authors": [
+        "T Tsuji",
+        "E M Kosower",
+        "Alkyldiazenes"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "92",
+      "issue": null,
+      "pages": "1429-1430",
+      "year": "1970",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b15",
+      "title": "Mechanism of the Decomposition of Hydrazones and the Theory of Multiplets. Kinetics of the Catalytic Decomposition of Cyclohexylidene-Hydrazine Hydrate",
+      "authors": [
+        "A A Balandin",
+        "D N Vaskevich"
+      ],
+      "journal": "Zh. Obshch. Khim",
+      "volume": "6",
+      "issue": null,
+      "pages": "1878-1891",
+      "year": "1936",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b16",
+      "title": "The Wolff-Kishner Reduction and Related Reactions: Discovery and Development",
+      "authors": [
+        "D E Lewis"
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": "2019",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b17",
+      "title": "Electrophilic substitution at saturated carbon. XIX. Nitrogen as leaving group from an alkyl diimide",
+      "authors": [
+        "D J Cram",
+        "J S Bradshaw"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "85",
+      "issue": null,
+      "pages": "1108-1118",
+      "year": "1963",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b18",
+      "title": "An efficient method for the reductive transposition of allylic alcohols",
+      "authors": [
+        "A G Myers",
+        "B Zheng"
+      ],
+      "journal": "Tetrahedron Lett",
+      "volume": "37",
+      "issue": null,
+      "pages": "4841-4844",
+      "year": "1996",
+      "doi": "10.26434/chemrxiv-2024-40szn",
+      "publisher": null
+    },
+    {
+      "id": "b19",
+      "title": "Acyclic 1, 4-Stereocontrol via the Allylic Diazene Rearrangement: Development, Applications, and the Essential Role of Kinetic E Stereoselectivity in Tosylhydrazone Formation",
+      "authors": [
+        "M L Shrestha",
+        "W Qi",
+        "M C Mcintosh"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "82",
+      "issue": null,
+      "pages": "8359-8370",
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b20",
+      "title": "Catalytic generation of carbanions through carbonyl umpolung",
+      "authors": [
+        "S Wang",
+        "B K\u00f6nig"
+      ],
+      "journal": "Angew. Chem. Int. Ed",
+      "volume": "60",
+      "issue": null,
+      "pages": "21624-21634",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b21",
+      "title": "Alkyl radical generation by reduction of a ketone tosylhydrazone",
+      "authors": [
+        "D F Taber",
+        "Y Wang",
+        "S J Stachel"
+      ],
+      "journal": "Tetrahedron Lett",
+      "volume": "34",
+      "issue": null,
+      "pages": "6209-6210",
+      "year": "1993",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b22",
+      "title": "A general alkyl-alkyl cross-coupling enabled by redox-active esters and alkylzinc reagents",
+      "authors": [
+        "T Qin"
+      ],
+      "journal": "Science",
+      "volume": "352",
+      "issue": null,
+      "pages": "801-805",
+      "year": "2016",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b23",
+      "title": "A decarbonylative approach to alkylnickel intermediates and C(sp 3 )-C (sp 3 ) bond formation",
+      "authors": [
+        "Z Huang",
+        "M E Akana",
+        "K M Sanders",
+        "D J Weix"
+      ],
+      "journal": "Science",
+      "volume": "385",
+      "issue": null,
+      "pages": "1331-1337",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b24",
+      "title": "Reductive alkyl-alkyl coupling from isolable nickel-alkyl complexes",
+      "authors": [
+        "S",
+        "Al Zubaydi"
+      ],
+      "journal": "Nature",
+      "volume": "634",
+      "issue": null,
+      "pages": "585-591",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b25",
+      "title": "Carbon quaternization of redox active esters and olefins by decarboxylative coupling",
+      "authors": [
+        "X.-C Gan"
+      ],
+      "journal": "Science",
+      "volume": "384",
+      "issue": null,
+      "pages": "113-118",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b26",
+      "title": "Applications of halogen-atom transfer (XAT) for the generation of carbon radicals in synthetic photochemistry and photocatalysis",
+      "authors": [
+        "F Juli\u00e1",
+        "T Constantin",
+        "D Leonori"
+      ],
+      "journal": "Chem. Rev",
+      "volume": "122",
+      "issue": null,
+      "pages": "2292-2352",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b27",
+      "title": "Merging Halogen-Atom transfer with transition metal catalysis",
+      "authors": [
+        "J.-J Chen",
+        "H.-M Huang"
+      ],
+      "journal": "Tetrahedron Lett",
+      "volume": "102",
+      "issue": null,
+      "pages": null,
+      "year": "2022",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b28",
+      "title": "Merging photoredox with nickel catalysis: Coupling of \u03b1-carboxyl sp3carbons with aryl halides",
+      "authors": [
+        "Z Zuo"
+      ],
+      "journal": "Science",
+      "volume": "345",
+      "issue": null,
+      "pages": "437-440",
+      "year": "2014",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b29",
+      "title": "Single-electron transmetalation in organoboron cross-coupling by photoredox/nickel dual catalysis",
+      "authors": [
+        "J C Tellis",
+        "D N Primer",
+        "G A Molander"
+      ],
+      "journal": "Science",
+      "volume": "345",
+      "issue": null,
+      "pages": "433-436",
+      "year": "2014",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b30",
+      "title": "Controlling Ni redox states by dynamic ligand exchange for electroreductive Csp3-Csp2 coupling",
+      "authors": [
+        "T B Hamby",
+        "M J Lalama",
+        "C S Sevov"
+      ],
+      "journal": "Science",
+      "volume": "376",
+      "issue": null,
+      "pages": "410-416",
+      "year": "2022",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b31",
+      "title": "Quinone-mediated hydrogen anode for non-aqueous reductive electrosynthesis",
+      "authors": [
+        "J Twilton"
+      ],
+      "journal": "Nature",
+      "volume": "623",
+      "issue": null,
+      "pages": "71-76",
+      "year": "2023",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b32",
+      "title": "Nickel-catalyzed reductive coupling of aryl bromides with tertiary alkyl halides",
+      "authors": [
+        "X Wang",
+        "S Wang",
+        "W Xue",
+        "H Gong"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "137",
+      "issue": null,
+      "pages": "11562-11565",
+      "year": "2015",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b33",
+      "title": "Ni-catalyzed reductive coupling of electron-rich aryl iodides with tertiary alkyl halides",
+      "authors": [
+        "X Wang"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "140",
+      "issue": null,
+      "pages": "14490-14497",
+      "year": "2018",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b34",
+      "title": "Decarboxylative alkenylation",
+      "authors": [
+        "J T Edwards"
+      ],
+      "journal": "Nature",
+      "volume": "545",
+      "issue": null,
+      "pages": "213-218",
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b35",
+      "title": "Decarboxylative alkynylation",
+      "authors": [
+        "J M Smith"
+      ],
+      "journal": "Angew. Chem. Int. Ed",
+      "volume": "56",
+      "issue": null,
+      "pages": "11906-11910",
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b36",
+      "title": "Practical Ni-catalyzed aryl-alkyl cross-coupling of secondary redoxactive esters",
+      "authors": [
+        "J Cornella"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "138",
+      "issue": null,
+      "pages": "2174-2177",
+      "year": "2016",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b37",
+      "title": "Distinct mechanism of oxidative trifluoromethylation with a welldefined Cu(II) fluoride promoter: hidden catalysis",
+      "authors": [
+        "N Nebra",
+        "V V Grushin"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "136",
+      "issue": null,
+      "pages": "16998-17001",
+      "year": "2014",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b38",
+      "title": "Trifluoromethylation of alkyl radicals in aqueous solution",
+      "authors": [
+        "H Shen"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "139",
+      "issue": null,
+      "pages": "9843-9846",
+      "year": "2017",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b39",
+      "title": "Interrupting the Barton-McCombie Reaction: Aqueous Deoxygenative Trifluoromethylation of O-Alkyl Thiocarbonates",
+      "authors": [
+        "Z.-Y Liu",
+        "S P Cook"
+      ],
+      "journal": "Org. Lett",
+      "volume": "23",
+      "issue": null,
+      "pages": "808-813",
+      "year": "2021",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b40",
+      "title": "Metal-free carbon-carbon bondforming reductive coupling between boronic acids and tosylhydrazones",
+      "authors": [
+        "J Barluenga",
+        "M Tom\u00e1s-Gamasa",
+        "F Aznar",
+        "C Vald\u00e9s"
+      ],
+      "journal": "Nat. Chem",
+      "volume": "1",
+      "issue": null,
+      "pages": "494-499",
+      "year": "2009",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b41",
+      "title": "Metal-free coupling of saturated heterocyclic sulfonylhydrazones with boronic acids",
+      "authors": [
+        "D M Allwood",
+        "D C Blakemore",
+        "A D Brown",
+        "S V Ley"
+      ],
+      "journal": "J. Org. Chem",
+      "volume": "79",
+      "issue": null,
+      "pages": "328-338",
+      "year": "2014",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b42",
+      "title": "A general C(sp 3 )-C(sp 3 ) cross-coupling of benzyl sulfonylhydrazones with alkyl boronic acids",
+      "authors": [
+        "R R Merchant",
+        "J A Lopez"
+      ],
+      "journal": "Org. Lett",
+      "volume": "22",
+      "issue": null,
+      "pages": "2271-2275",
+      "year": "2020",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b43",
+      "title": "Deaminative reductive cross-electrophile couplings of alkylpyridinium salts and aryl bromides",
+      "authors": [
+        "J Liao"
+      ],
+      "journal": "Org. Lett",
+      "volume": "21",
+      "issue": null,
+      "pages": "2941-2946",
+      "year": "2019",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b44",
+      "title": "Nickel-catalyzed cross-electrophile coupling of aryl chlorides with primary alkyl chlorides",
+      "authors": [
+        "S Kim",
+        "M J Goldfogel",
+        "M M Gilbert",
+        "D J Weix"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "142",
+      "issue": null,
+      "pages": "9902-9907",
+      "year": "2020",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b45",
+      "title": "Unveiling the Stereoselectivity Aspects of Metallaphotoredox Decarboxylative Arylation",
+      "authors": [
+        "R Nallagonda"
+      ],
+      "journal": "ACS Catalysis",
+      "volume": "14",
+      "issue": null,
+      "pages": "13439-13450",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b46",
+      "title": "Mechanistic studies of the free-radical fragmentation of monoalkyl diazenes",
+      "authors": [
+        "A G Myers",
+        "M Movassaghi",
+        "B Zheng"
+      ],
+      "journal": "Tetrahedron Lett",
+      "volume": "38",
+      "issue": null,
+      "pages": "6569-6572",
+      "year": "1997",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b47",
+      "title": "Highly efficient methodology for the reductive coupling of aldehyde tosylhydrazones with alkyllithium reagents",
+      "authors": [
+        "A G Myers",
+        "M Movassaghi"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "120",
+      "issue": null,
+      "pages": "8891-8892",
+      "year": "1998",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b48",
+      "title": "Single-step process for the reductive deoxygenation of unhindered alcohols",
+      "authors": [
+        "A G Myers",
+        "M Movassaghi",
+        "B Zheng"
+      ],
+      "journal": "J. Am. Chem. Soc",
+      "volume": "119",
+      "issue": null,
+      "pages": "8572-8573",
+      "year": "1997",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b49",
+      "title": "Mechanisms of Photoredox Catalysis Featuring Nickel-Bipyridine Complexes",
+      "authors": [
+        "D A Cagan",
+        "D B\u00edm",
+        "N P Kazmierczak",
+        "R G Hadt"
+      ],
+      "journal": "ACS catalysis",
+      "volume": "14",
+      "issue": null,
+      "pages": "9055-9076",
+      "year": "2024",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b50",
+      "title": "Carbon-centered radical capture at nickel (II) complexes: Spectroscopic evidence, rates, and selectivity",
+      "authors": [
+        "Q Lin",
+        "E H Spielvogel",
+        "T Diao"
+      ],
+      "journal": "Chem",
+      "volume": "9",
+      "issue": null,
+      "pages": "1295-1308",
+      "year": "2023",
+      "doi": null,
+      "publisher": null
+    },
+    {
+      "id": "b51",
+      "title": "Radical kinetics and clocks",
+      "authors": [
+        "M Newcomb"
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": "2012",
+      "doi": null,
+      "publisher": "Biology and Materials"
+    }
+  ]
+}

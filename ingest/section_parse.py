@@ -380,7 +380,24 @@ def classify_line(line, body_size, heading_levels, is_first_line):
     if not heading_eligible(line, body_size, is_first_line):
         return "body"
     level = heading_levels.get(heading_style_key(line))
-    return f"heading{level}" if level is not None else "body"
+    if level is not None:
+        return f"heading{level}"
+    # Passed the typographic bar (bold, plausible size/position) but its
+    # specific style tier never accumulated enough recurrence to validate on
+    # its own -- an exact match against a standard section name (Conclusion,
+    # References, ...) is high-confidence enough to rescue it here, since the
+    # full line has to equal a known section title, not just contain one.
+    # This is deliberately gated behind heading_eligible, not a blanket
+    # bypass of it: a vocabulary word rendered at sub-heading size (e.g.
+    # ACS's 'Corresponding Author'/'Authors'/'Notes' sub-labels, nested
+    # under 'Author Information', smaller than body text) must stay a
+    # candidate that legitimately failed, not get force-promoted just for
+    # matching a word on the list -- only a genuine one-off styling gap like
+    # the sole ALL-CAPS heading in an otherwise Title-Case document is meant
+    # to be rescued here.
+    if is_top_level_section_name(line["dominant_text"]):
+        return "heading1"
+    return "body"
 
 
 def find_column_split(blocks, page_width):
