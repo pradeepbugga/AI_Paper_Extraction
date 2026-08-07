@@ -233,10 +233,11 @@ python3 ingest/si_parse.py data/papers/suzuki_iron_2024
 python3 ingest/si_parse.py data/papers/copper_iron_2025
 ```
 
-Outputs `SI_sections.json`. Validated on both SI documents: 249 records
-(Suzuki) and 152 records (copper-iron) — fewer than an earlier hand-rolled,
-SI-specific version, but a quality improvement, not a regression: verified
-zero orphaned figures (144/144 images in Suzuki's NMR section attached to a
+Outputs `SI_sections.json`. Validated on all three SI documents so far: 250
+records (Suzuki), 152 records (copper-iron), 159 records (`suzuki_nickel_2026`,
+see below) — fewer than an earlier hand-rolled, SI-specific version for the
+first two, but a quality improvement, not a regression: verified zero
+orphaned figures (144/144 images in Suzuki's NMR section attached to a
 record) and confirmed the drop is entirely from removing noise a
 publisher-specific heuristic had let through (raw DFT-coordinate-dump
 fragments misread as headings, and NMR sub-spectra like `11B NMR` that used
@@ -245,3 +246,71 @@ in). Known limitation, out of scope for this stage: dense comparison tables
 and reaction-scheme labels still fragment into spurious low-content records
 — real table extraction is Stage 4, not something this layout-level parsing
 is expected to solve.
+
+## Validated against a third publisher
+
+A third paper (Lu et al., *ACS Catal.* 16, 2417-2426 (2026),
+`suzuki_nickel_2026` — main text + 159-page SI) surfaced new conventions none
+of the first two papers had, each fixed as a further generalization of the
+existing document-relative signals rather than a new special case:
+
+- **Leading marker glyph as a heading signal.** ACS section headings are
+  preceded by a bullet-like glyph (`■`) in a completely different font/size
+  than the heading text. This is now a positive signal in
+  `heading_style_key`, ranked alongside a numbered prefix and ALL CAPS — the
+  specific character varies by publisher and can't be hardcoded, but "a
+  short, non-alphanumeric, differently-styled span immediately before the
+  heading text" is a generic convention. It's found relative to wherever the
+  dominant-style run of the line actually starts, not just at index 0, so it
+  survives the same fused-line pollution (`paper.■AUTHOR INFORMATION`, an
+  unrelated preceding sentence's tail landing on the same PDF line with zero
+  separating whitespace) that the marker itself needs to be robust to.
+  Restricted to non-alphanumeric text specifically so a superscript
+  affiliation number at a coincidental line-wrap point isn't mistaken for a
+  decorative bullet.
+- **A controlled vocabulary for chemistry-nomenclature italics.** Terms like
+  `tert`, `sec`, `cis`, `trans`, `R`/`S`/`E`/`Z` are conventionally
+  italicized inline (`lithium tert-butyl aryl boronates`) and are now kept
+  verbatim when reconstructing a heading's clean text, rather than relying on
+  their weight/size happening to match the surrounding heading style, which
+  isn't something to count on in general.
+- **Figure-region exclusion made length-aware.** Stage 1's figure detection
+  is purely geometric — it has no idea what text is nearby, so an oversized
+  or badly-merged figure region can coincidentally overlap real headings and
+  even whole paragraphs of body prose. `block_in_figure` now only ever
+  excludes short fragments (≤8 words for body text, ≤2 characters for
+  anything already classified as a heading): genuine figure debris (a
+  compound ID, a yield, a single-letter panel label) is always short;
+  a real heading or a real sentence never is, regardless of geometric
+  overlap with a bad figure box. This fixed two headings (`CONCLUSIONS`,
+  `MATERIALS AND METHODS`) that a badly-merged figure region had been
+  silently swallowing whole.
+- **Asymmetric figure-clustering padding.** `cluster_drawing_rects` (Stage 1)
+  now pads 25pt vertically but only 8pt horizontally. A multi-panel scheme
+  (5 sub-panels stacked down a page with generous whitespace between them)
+  needs a wide vertical gap tolerance to merge into one region; the same
+  tolerance horizontally risks bridging across a two-column page's gutter
+  and merging a figure with unrelated text in the other column. This also
+  surfaced and fixed a crash: a drawing rect extending into the page's
+  negative-coordinate margin/bleed area (previously too small on its own to
+  matter) became part of a larger, otherwise-valid cluster after the wider
+  vertical merge, and PyMuPDF's renderer rejects an out-of-bounds clip
+  region — fixed by clipping cluster bounding boxes to the page's actual
+  visible bounds before rendering.
+- **Body size computed across all text, not just non-bold.** This SI
+  document's characterization data — normally the clearest non-bold prose in
+  a document — renders entirely bold, including the data itself, not just
+  compound-name headers. Excluding bold text left the body-size estimate
+  reflecting only a small, unrepresentative non-bold sliver (running
+  headers, stray captions), well below the real compound-name headings —
+  they never qualified as headings at all. Bold text is a small enough share
+  of total characters in a normal prose document that including it doesn't
+  move the mode; it only matters when, as here, it's the majority of the
+  page.
+
+The two earlier papers were re-validated against every change in this batch
+and show zero regressions from their existing baselines. Known remaining
+limitation: two figures vertically close together on the same page (e.g. a
+scheme and a table six lines apart) can still merge into one region and
+share a caption match — lower priority, since it degrades gracefully (both
+captions still resolve to *a* relevant image) rather than losing content.
