@@ -15,6 +15,28 @@ SENTENCE_END_RE = re.compile(r"[.?!]$")
 TRAILING_PAGE_NUM_RE = re.compile(r"\s*\d{1,4}$")
 NUMBERED_PREFIX_RE = re.compile(r"^\d{1,3}\.\s+\S")
 TOC_LABEL_RE = re.compile(r"^(table of )?contents$", re.IGNORECASE)
+
+
+def is_purely_parenthetical(text):
+    """True only if the whole string is a single parenthetical group
+    spanning start to end (e.g. '(Left)', an inline photo-caption label) --
+    not just bookended by a '(' and a ')' that belong to unrelated groups,
+    which a naive '^\\(.*\\)$' match would wrongly catch. A compound name
+    like '(R)-2-(...)-...-ol (3a)' starts with '(' and ends with ')' too,
+    but its first group ('(R)') closes long before the string does, so it's
+    correctly left alone."""
+    text = text.strip()
+    if not text.startswith("(") or not text.endswith(")"):
+        return False
+    depth = 0
+    for i, ch in enumerate(text):
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0 and i != len(text) - 1:
+                return False
+    return depth == 0
 BOLD_FLAG = 1 << 4
 
 # Standard IMRaD/back-matter section names, common across journals and
@@ -287,7 +309,7 @@ def heading_style_key(line):
 def heading_eligible(line, body_size, is_first_line):
     text = line["text"]
     if (not line["bold"] or len(text) >= MAX_HEADING_LEN or len(text.split()) > MAX_HEADING_WORDS
-            or is_sentence_like(text)):
+            or is_sentence_like(text) or is_purely_parenthetical(text)):
         return False
     if line["size"] >= body_size * HEADING_SIZE_RATIO:
         return True
