@@ -1,8 +1,10 @@
+import io
 import json
 import sys
 from pathlib import Path
 
 import fitz  # PyMuPDF
+from PIL import Image
 
 
 def extract_text_blocks(page):
@@ -31,23 +33,99 @@ def is_decorative_raster(bbox):
     return bbox.width < MIN_RASTER_DIMENSION_PT and bbox.height < MIN_RASTER_DIMENSION_PT
 
 
-def extract_raster_images(doc, page, page_number, images_dir, doc_source):
-    images = []
+STRIP_ASPECT_RATIO = 2.0  # a fragment must be at least this much wider than tall
+MIN_STRIP_CLUSTER_SIZE = 3
+STRIP_TOLERANCE_PT = 2.0
+
+
+def _find_strip_clusters(entries):
+    """Detects raster fragments that are one taller image sliced into
+    horizontal strips on export -- same x-extent, y-ranges tiling
+    contiguously with no gap, each strip much wider than tall. Seen in SI
+    spectra pages (a landscape chart rotated + sliced into bands on
+    embedding); never in main text, since publishers don't ship sideways
+    figures there. Purely geometric, no format/rotation metadata needed --
+    see pdf_ingest.py's investigation of this exact case, which found no
+    such metadata exists to detect it from."""
+    used = set()
+    clusters = []
+    ordered = sorted(range(len(entries)), key=lambda i: entries[i]["bbox"].y0)
+
+    for idx in ordered:
+        if idx in used:
+            continue
+        bbox = entries[idx]["bbox"]
+        if bbox.width < bbox.height * STRIP_ASPECT_RATIO:
+            continue
+
+        group = [idx]
+        group_used = {idx}
+        cur_y1 = bbox.y1
+        for j in ordered:
+            if j in group_used or j in used:
+                continue
+            ob = entries[j]["bbox"]
+            same_x = abs(ob.x0 - bbox.x0) < STRIP_TOLERANCE_PT and abs(ob.x1 - bbox.x1) < STRIP_TOLERANCE_PT
+            contiguous_y = abs(ob.y0 - cur_y1) < STRIP_TOLERANCE_PT
+            if same_x and contiguous_y:
+                group.append(j)
+                group_used.add(j)
+                cur_y1 = ob.y1
+
+        if len(group) >= MIN_STRIP_CLUSTER_SIZE:
+            clusters.append(group)
+            used |= group_used
+
+    return clusters, used
+
+
+def extract_raster_images(doc, page, page_number, images_dir, doc_source, zoom=3.0):
+    entries = []
     for img_index, img in enumerate(page.get_images(full=True)):
         xref = img[0]
         rects = page.get_image_rects(xref)
         if not rects:
             continue
-        bbox = rects[0]
+        entries.append({"img_index": img_index, "xref": xref, "bbox": rects[0]})
+
+    strip_clusters, used_in_strips = ([], set())
+    if doc_source == "SI":
+        strip_clusters, used_in_strips = _find_strip_clusters(entries)
+
+    images = []
+    matrix = fitz.Matrix(zoom, zoom)
+
+    for cluster_index, group in enumerate(strip_clusters):
+        union_bbox = fitz.Rect(entries[group[0]]["bbox"])
+        for i in group[1:]:
+            union_bbox |= entries[i]["bbox"]
+        pix = page.get_pixmap(matrix=matrix, clip=union_bbox)
+        pil_image = Image.open(io.BytesIO(pix.tobytes("png"))).rotate(-90, expand=True)
+        image_filename = f"page{page_number}_rasterstrip{cluster_index}.png"
+        pil_image.save(images_dir / image_filename)
+        images.append({
+            "image_id": f"{doc_source}_p{page_number}_rasterstrip{cluster_index}",
+            "source": "embedded_raster_strip_merged",
+            "bbox": [round(union_bbox.x0, 1), round(union_bbox.y0, 1), round(union_bbox.x1, 1), round(union_bbox.y1, 1)],
+            "path": f"{images_dir.name}/{image_filename}",
+            "width": pil_image.width,
+            "height": pil_image.height,
+        })
+        pix = None
+
+    for i, entry in enumerate(entries):
+        if i in used_in_strips:
+            continue
+        bbox = entry["bbox"]
         if is_decorative_raster(bbox):
             continue
-        pix = fitz.Pixmap(doc, xref)
+        pix = fitz.Pixmap(doc, entry["xref"])
         if pix.n - pix.alpha >= 4:  # CMYK -> RGB
             pix = fitz.Pixmap(fitz.csRGB, pix)
-        image_filename = f"page{page_number}_raster{img_index}.png"
+        image_filename = f"page{page_number}_raster{entry['img_index']}.png"
         pix.save(images_dir / image_filename)
         images.append({
-            "image_id": f"{doc_source}_p{page_number}_raster{img_index}",
+            "image_id": f"{doc_source}_p{page_number}_raster{entry['img_index']}",
             "source": "embedded_raster",
             "bbox": [round(bbox.x0, 1), round(bbox.y0, 1), round(bbox.x1, 1), round(bbox.y1, 1)],
             "path": f"{images_dir.name}/{image_filename}",

@@ -1,0 +1,1086 @@
+{
+  "source_pdf": "paper.pdf",
+  "source": "main",
+  "page_count": 5,
+  "pages": [
+    {
+      "page_number": 1,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            111.2,
+            538.1,
+            146.2
+          ],
+          "text": "Direct, Convergent \u03b1\u2011Amidation of \u03b2\u2011Keto Esters via Nickelocene\nCatalysis"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            152.2,
+            419.1,
+            166.1
+          ],
+          "text": "Kimberly R. Sharp, Sara Y. Siddiqui, Emily G. Nikas, and Brian M. Stoltz*"
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            75.2,
+            179.7,
+            385.9,
+            188.7
+          ],
+          "text": "Cite This: Org. Lett. 2025, 27, 6380\u22126384\nRead Online"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            211.1,
+            529.8,
+            226.1
+          ],
+          "text": "ACCESS\nMetrics & More\nArticle Recommendations\n*\ns\u0131\nSupporting Information"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            238.3,
+            306.5,
+            326.0
+          ],
+          "text": "ABSTRACT: \u03b1-Amidation of carbonyl-containing compounds\nwithout prefunctionalization of starting materials represents a\ncontinuing challenge within the scientific community. Here,\nnickelocene is used catalytically to effect an amidation of \u03b2-keto\nesters. Broad substrate tolerance on both coupling partners is\nachieved, enabling the application toward a convergent synthetic\nstrategy. Initial mechanistic investigations suggest complex\nactivation pathways."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            348.1,
+            73.5,
+            378.1
+          ],
+          "text": "N"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            51.5,
+            349.9,
+            291.5,
+            505.1
+          ],
+          "text": "itrogen functionality \u03b1 to carbonyl groups, beyond the\n20 naturally occurring amino acids, is found in many\nnatural products and pharmacologically active materials\n(Figure 1A).1,2 To enable a desirable synthetic strategy for\naccess to this class of compounds, introduction of an amine or\namide functionality at a late stage may be appealing. However,\nmost methods to do so currently rely on either prefunction-\nalization of the carbonyl moiety3 or require introducing\nnitrogen in a higher oxidation state,4 subsequently necessitat-\ning reduction and lengthening a synthetic sequence. Avoiding\nthis additional manipulation through the development of\nmethods to directly amidate unfunctionalized carbonyl-\ncontaining compounds is thus of importance to the synthetic\ncommunity."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            51.5,
+            505.4,
+            291.5,
+            671.6
+          ],
+          "text": "Advances have been made in the area of \u03b1-amination, with\nexamples utilizing both transition metal catalysis and\nbiocatalysis, although these strategies struggle to accommodate\nelectron-withdrawing substituents.5 Recent advances over-\ncoming this challenge have enabled the incorporation of\ncarbamates and N-tosylates by leveraging active intermediates,\nsuch as nitrenes,6,7 N-centered radicals,8 or reaction with \u03b1-\noxidized carbonyl compounds.9 While these methods all\nrepresent key advances in the strategy for the direct\nintroduction of nitrogen \u03b1 to carbonyls, further sequential\ntransformations would be necessary to introduce complexity\non the nitrogen moiety. In an ideal convergent coupling\nstrategy, a functionalized amide could be brought in directly,\nforging this key bond in a more advantageous fashion for\nsynthetic efficiency (Figure 1B)."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            51.5,
+            672.7,
+            291.5,
+            749.4
+          ],
+          "text": "To this end, methodology has been disclosed by the groups\nof Yu and Bao,10 Zong, Jiang, and Qiu,11 and Chang12 using\niron catalysis, which in conjunction with photochemistry can\nachieve \u03b1-amidation (Figure 1C). This reaction manifold,\nhowever, suffers from challenges, largely revolving around\nsterics at the \u03b1 position; either reactivity is limited when \u03b1\nsubstitution is included, or \u03b1 substitution is needed to prevent"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            350.6,
+            555.5,
+            428.3
+          ],
+          "text": "double amidation. Additionally, a broad substrate tolerance on\nboth coupling partners was a challenge in all reports. As a\nresult, an alternate catalytic system allowing for selective yet\nreactive amidation is thus desirable. Here, we demonstrate a\nsystem capable of achieving selective amidation of \u03b2-keto esters\nwith broad functional group tolerance on both coupling\npartners (Figure 1D)."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            315.4,
+            429.4,
+            555.5,
+            665.1
+          ],
+          "text": "We began our investigations by turning to a previous report\nfrom our group in which we leveraged a proposed nitrene\nintermediate as an electrophilic amide source for the synthesis\nof hydrazides.13 We hypothesized that trapping this inter-\nmediate with an enolate would forge the desired bond under\nnickel catalysis. In an effort to develop a reaction capable of\nforming fully substituted carbon centers, the reactivity between\nethyl 2-methyl-3-oxobutanoate (1a) and N-(benzoyloxy)-\nbenzamide (2a) was explored. To our delight, the initial\ninvestigation using nickel half-sandwich catalyst14 4a and\nlithium tert-butoxide as a base resulted in the formation of the\ndesired amidated product 3a, albeit in a low yield (Table 1,\nentry 1). Reinvestigation of half-sandwich catalysts revealed\nthat compound 4b, with bulkier NHC substitution, improved\nthe yield to 36% (entry 2). The solvent mixture of\ndichloromethane and tetrahydrofuran (THF), while vital for\nachieving high yields in previous nickel chemistry,13 was no\nlonger optimal in this system, and 1,4-dioxane was found to\nboth improve the yield and reaction time (entry 4). Alternate\nbases were investigated (entries 5 and 6), although lithium tert-\nbutoxide remained optimal. Interestingly, a counterion effect"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            315.4,
+            681.2,
+            409.6,
+            723.2
+          ],
+          "text": "Received:\nApril 22, 2025\nRevised:\nMay 14, 2025\nAccepted:\nMay 27, 2025\nPublished: June 5, 2025"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            51.5,
+            85.4,
+            548.5,
+            93.4
+          ],
+          "text": "Letter\npubs.acs.org/OrgLett"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            186.7,
+            763.7,
+            280.9,
+            770.0
+          ],
+          "text": "\u00a9 2025 American Chemical Society"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            295.4,
+            762.6,
+            555.4,
+            776.5
+          ],
+          "text": "6380\nhttps://doi.org/10.1021/acs.orglett.5c01621"
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            477.1,
+            769.1,
+            555.5,
+            775.1
+          ],
+          "text": "Org. Lett. 2025, 27, 6380\u22126384"
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            356.8,
+            68.5,
+            505.4,
+            78.1
+          ],
+          "text": "This article is licensed under CC-BY-NC-ND 4.0"
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            582.5,
+            175.5,
+            590.0,
+            625.5
+          ],
+          "text": "Downloaded from http://pubs.acs.org/orlef7/article-pdf/27/24/6380/66112885/acs.orglett.5c01621.pdf by guest on 10 August 2026"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p1_raster10",
+          "source": "embedded_raster",
+          "bbox": [
+            315.4,
+            238.1,
+            555.4,
+            310.1
+          ],
+          "path": "images/page1_raster10.png",
+          "width": 1000,
+          "height": 300
+        },
+        {
+          "image_id": "main_p1_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            21.5,
+            555.5,
+            93.9
+          ],
+          "path": "images/page1_fig0.png",
+          "width": 1513,
+          "height": 218
+        },
+        {
+          "image_id": "main_p1_fig1",
+          "source": "vector_region",
+          "bbox": [
+            1.5,
+            172.0,
+            605.5,
+            346.3
+          ],
+          "path": "images/page1_fig1.png",
+          "width": 1813,
+          "height": 524
+        },
+        {
+          "image_id": "main_p1_fig2",
+          "source": "vector_region",
+          "bbox": [
+            315.5,
+            673.9,
+            555.5,
+            735.7
+          ],
+          "path": "images/page1_fig2.png",
+          "width": 721,
+          "height": 186
+        },
+        {
+          "image_id": "main_p1_fig3",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            759.7,
+            166.2,
+            781.4
+          ],
+          "path": "images/page1_fig3.png",
+          "width": 345,
+          "height": 66
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            525.2,
+            291.5,
+            590.2
+          ],
+          "text": "was observed for the base, with potassium tert-butoxide failing\nto generate more than a small amount of product. Alternate\nsilane reductants were explored (entries 7 and 8), although\nphenylsilane proved superior. Further investigation of\nadditives, including equivalents of silane,15 can be found in\nthe Supporting Information."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            591.2,
+            291.5,
+            711.2
+          ],
+          "text": "At this stage, a few general reaction mechanisms were\nexplored. To examine if this reaction proceeds through an\nuncatalyzed SN2 reaction at nitrogen, precedented for alternate\nN\u2212O species,16 the catalyst was omitted (entry 9). As no\nproduct was observed in the absence of a nickel catalyst, this\npathway was rejected. The possibility of nickel acting as a\nLewis acid to activate the starting materials was also explored;\nreplacing the nickel catalyst with catalytic amounts of a variety\nof Lewis acids resulted in no product formation (see the\nSupporting Information), leading to nickel catalysis being\nfavored as the most likely manifold."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            712.2,
+            291.5,
+            755.2
+          ],
+          "text": "Further mechanistic analysis revealed key differences\nbetween this transformation and our previous report on the\nnickel-catalyzed synthesis of hydrazides.13 Previously, a Ni(I)\nactive catalyst was proposed, with the role of phenylsilane"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            315.4,
+            333.7,
+            555.5,
+            403.2
+          ],
+          "text": "hypothesized to be reduction of the Ni(II) precatalyst.17 In the\ncurrent study, however, upon preparing Ni(I) catalyst 4c and\nsubjecting it to reaction conditions in the absence of\nphenylsilane, no reaction was observed (entry 10). Addition-\nally, throughout the optimization of this amidation reaction,\nside products analogous to compound 5 were observed,18"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            315.4,
+            404.2,
+            555.5,
+            458.2
+          ],
+          "text": "presumed to arise through a deleterious side reaction between\nthe starting material and catalyst. Despite this use of the same\nhydroxamic ester and catalyst in our previous report,13 these\nside products were never observed, further suggesting\nmechanistic divergence."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            315.4,
+            459.2,
+            555.5,
+            711.2
+          ],
+          "text": "Following several unsuccessful attempts to induce enantio-\nselectivity through the inclusion of asymmetric ligands, we\nbegan to consider the possibility of off-metal redox activation.\nWe were drawn to previous reports suggesting that ferrocene is\ncapable of N\u2212O bond cleavage through single-electron transfer\nfrom ferrocene, generating imidyl19 and amidyl20 radicals, as\nwell as a precedent for amidyl radicals as intermediates in \u03b1\namidation.8,10 As metallocene catalysts were an appealing\nalternative to avoid the observed NHC\u2212hydroxamate adduct\n(5), nickelocene was investigated for its competence in the\nreaction. Gratifyingly, nickelocene led to similar yields (Table\n2, entry 1), with lower catalyst loadings now preferred (entry\n2). Notably, in comparison to half-sandwich catalysis, markedly\nshorter reaction times were observed for other \u03b2-keto ester\nsubstrates (Supporting Information). Decreasing the base\nloading slightly and increasing the temperature led to a now\noptimal 82% yield (entry 3); performing this reaction on a 1.0\nmmol scale led to a similar yield of 78% (entry 4),\ndemonstrating good scalability. Furthermore, while ferrocene\nand cobaltocene both led to product formation, they were\nslower and less effective than nickelocene (entries 5 and 6).\nThis represents a rare example of nickelocene in catalysis,\ndespite its longstanding study in inorganic chemistry literature."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            712.2,
+            555.5,
+            755.2
+          ],
+          "text": "The scope of the reaction was then investigated (Scheme 1).\nThe \u03b1 substituent could be replaced with an ethyl with no\ndecrease in the yield observed (3b). \u03b2-Keto esters with no \u03b1-\nsubstitution also performed well (3c and 3d), with good yields"
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            51.5,
+            473.5,
+            291.5,
+            513.1
+          ],
+          "text": "Figure 1. (A) Natural products and pharmaceuticals displaying the \u03b1-\namino or amido motif. (B) Idealized umpolung amidation trans-\nformation. (C) Current strategies for the direct amidation of carbonyl\ncompounds. (D) Our strategy toward \u03b1-amidation."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            315.4,
+            60.0,
+            550.4,
+            81.7
+          ],
+          "text": "Table 1. Optimization of \u03b1-Amidation Using Nickel Half-\nSandwich Complexes"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            307.9,
+            374.1,
+            318.8
+          ],
+          "text": "aRequiring 24 h."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c01621"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            295.4,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2025, 27, 6380\u22126384\n6381"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            582.5,
+            175.5,
+            590.0,
+            625.5
+          ],
+          "text": "Downloaded from http://pubs.acs.org/orlef7/article-pdf/27/24/6380/66112885/acs.orglett.5c01621.pdf by guest on 10 August 2026"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p2_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            316.3,
+            87.4,
+            554.6,
+            302.9
+          ],
+          "path": "images/page2_raster0.png",
+          "width": 1986,
+          "height": 1796
+        },
+        {
+          "image_id": "main_p2_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            463.9
+          ],
+          "path": "images/page2_fig0.png",
+          "width": 1513,
+          "height": 1277
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            271.1,
+            291.5,
+            336.8
+          ],
+          "text": "of the singly amidated product. Aryl \u03b2-keto esters also formed\nthe product in a high yield (3e). Inclusion of a chiral auxiliary\nresulted in product formation with some diastereocontrol (3f).\nCyclic \u03b2-keto esters also performed well, with 5- through 7-\nmembered rings resulting in good yields (3g\u22123i). While both\nwere electronically differentiated from the standard material, \u03b2-"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            315.4,
+            60.2,
+            555.4,
+            81.3
+          ],
+          "text": "keto amides (3j) and malonates (3k and 3l) were competent\nin the reaction."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            315.4,
+            82.3,
+            555.5,
+            336.8
+          ],
+          "text": "On the hydroxamate starting material, electron-donating and\nelectron-withdrawing substituents could be added with little\nimpact on the yield (6a\u22126c). Substitution including halogens,\neither p-Cl (6d) or p-CF3 (6e), did lead to a decrease, though\ngood yields were still produced. Styrenyl substitution could\nadditionally be included (6f), with no competing side reactivity\nobserved. Alkenyl and aliphatic substituents were also\ncompetent in the reaction (6g\u22126l). Notably, benzyl sub-\nstitution (6h) is well-tolerated in this reaction, contrasting with\nour group\u2019s previous report where the starting material was\ninert to reaction conditions13 as well as further indicating\nselectivity against benzylic functionalization. Cyclic alkyl\nsubstituents displayed a dependence on ring sizes, with smaller\ncyclopropyl hydroxamates outperforming cyclopentyl (6j and\n6k) (vide infra).\nTo further investigate the mechanism of this reaction, we\nexplored two main reaction manifolds proposed for prior iron-\ncatalyzed transformations, either a nitrene pathway11,12 or a\nradical pathway.10 Beginning by exposing the reaction\nconditions to triphenylphosphine to intercept a potential\nnitrene intermediate (Scheme 2A), different outcomes were\nobserved depending on the inclusion or exclusion of \u03b2-keto\nester 1a. In the absence of compound 1a, no iminophosphor-"
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            60.0,
+            285.8,
+            81.7
+          ],
+          "text": "Table 2. Optimization of \u03b1-Amidation Using Metallocene\nCatalysts"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            215.5,
+            291.5,
+            236.5
+          ],
+          "text": "a2.0 equiv LiOt-Bu, 30 \u00b0C. bOn a 1.0 mmol scale. cRequiring 24 h.\ndRequiring 48 h."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            349.8,
+            272.3,
+            359.8
+          ],
+          "text": "Scheme 1. Substrate Scope of the Amidation Reaction"
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            51.5,
+            743.9,
+            167.5,
+            754.9
+          ],
+          "text": "aRequiring 5 h. bRequiring 24 h."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c01621"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            295.4,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2025, 27, 6380\u22126384\n6382"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            582.5,
+            175.5,
+            590.0,
+            625.5
+          ],
+          "text": "Downloaded from http://pubs.acs.org/orlef7/article-pdf/27/24/6380/66112885/acs.orglett.5c01621.pdf by guest on 10 August 2026"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p3_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            51.7,
+            365.6,
+            555.2,
+            728.2
+          ],
+          "path": "images/page3_raster0.png",
+          "width": 4196,
+          "height": 3022
+        },
+        {
+          "image_id": "main_p3_raster1",
+          "source": "embedded_raster",
+          "bbox": [
+            52.4,
+            87.4,
+            290.5,
+            210.5
+          ],
+          "path": "images/page3_raster1.png",
+          "width": 1984,
+          "height": 1026
+        },
+        {
+          "image_id": "main_p3_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page3_fig0.png",
+          "width": 1513,
+          "height": 37
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            311.2,
+            291.5,
+            410.5
+          ],
+          "text": "ane 7 was observed, although upon inclusion of \u03b2-keto ester\n1a, compound 7 was formed in 18% yield, alongside a small\namount of amidated product 3a. This contrasting activity may\nsuggest a role for the \u03b2-keto ester in the formation of a reactive\nnitrogen species. Additionally, while the formation of an\niminophosphorane is traditionally associated with trapping of\nan active nitrene intermediate,21 a recently proposed\nmechanism for its formation involves interception of a N-\ncentered radical with phosphorus, followed by oxidation,22"
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            411.6,
+            291.4,
+            432.7
+          ],
+          "text": "suggesting that the formation of this side product is\ninconclusive."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            433.7,
+            291.5,
+            587.7
+          ],
+          "text": "In an attempt to trap a key radical intermediate, TEMPO\nwas included in the reaction conditions (Scheme 2B). While\nthe resulting species was too unstable for isolation, the mass of\nthe potential TEMPO adduct formed with a N-centered radical\noriginating from hydroxamate 2a was observed via high-\nresolution mass spectrometry (HRMS) analysis. These experi-\nments taken alongside precedented analogous reactivity with\nferrocene led us to hypothesize the intermediacy of a N-\ncentered radical species. Such an intermediate would also\nsuggest an explanation for the different outcomes observed for\nthe formation of compounds 6i and 6j vs compound 6k, as the\ncyclopentyl substrate is large enough to potentially undergo a\ndeleterious 1,5-hydrogen atom transfer inaccessible to either\nthe isopropyl or cyclopropyl starting materials."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            588.7,
+            291.5,
+            723.4
+          ],
+          "text": "In conclusion, we have developed a nickel-catalyzed\namidation of \u03b2-keto esters, enabling the convenient and\nconvergent synthesis of \u03b1-amidated materials. Both aliphatic\nand aromatic substituents are well-tolerated on either coupling\npartner. The use of nickelocene in catalysis is disclosed, with\nfavorable reactivity in comparison to other metallocenes. A N-\ncentered radical is hypothesized as a reactive intermediate from\nthe initial mechanistic investigation. Further experimental and\ncomputational investigations into the mechanism are ongoing.\n\u25a0ASSOCIATED CONTENT"
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            718.2,
+            166.6,
+            727.7
+          ],
+          "text": "Data Availability Statement"
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            734.1,
+            291.5,
+            755.2
+          ],
+          "text": "The data underlying this study are available in the published\narticle and its Supporting Information."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            56.9,
+            555.4,
+            94.9
+          ],
+          "text": "*\ns\u0131 Supporting Information\nThe Supporting Information is available free of charge at\nhttps://pubs.acs.org/doi/10.1021/acs.orglett.5c01621."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            315.4,
+            99.6,
+            555.5,
+            147.5
+          ],
+          "text": "Experimental procedures and spectroscopic data (PDF)\n\u25a0AUTHOR INFORMATION\nCorresponding Author"
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            325.5,
+            151.9,
+            537.5,
+            162.6
+          ],
+          "text": "Brian M. Stoltz \u2212The Warren and Katharine Schlinger"
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            333.5,
+            163.6,
+            555.4,
+            217.6
+          ],
+          "text": "Laboratory for Chemistry and Chemical Engineering,\nDivision of Chemistry and Chemical Engineering, California\nInstitute of Technology, Pasadena, California 91125, United\nStates;\norcid.org/0000-0001-9837-1528; Email: stoltz@\ncaltech.edu"
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            315.4,
+            225.7,
+            348.4,
+            235.2
+          ],
+          "text": "Authors"
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            325.5,
+            239.6,
+            550.6,
+            250.3
+          ],
+          "text": "Kimberly R. Sharp \u2212The Warren and Katharine Schlinger"
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            325.5,
+            251.3,
+            555.5,
+            305.3
+          ],
+          "text": "Laboratory for Chemistry and Chemical Engineering,\nDivision of Chemistry and Chemical Engineering, California\nInstitute of Technology, Pasadena, California 91125, United\nStates;\norcid.org/0000-0002-5718-3552\nSara Y. Siddiqui \u2212The Warren and Katharine Schlinger"
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            325.5,
+            306.3,
+            555.5,
+            360.3
+          ],
+          "text": "Laboratory for Chemistry and Chemical Engineering,\nDivision of Chemistry and Chemical Engineering, California\nInstitute of Technology, Pasadena, California 91125, United\nStates\nEmily G. Nikas \u2212The Warren and Katharine Schlinger"
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            335.5,
+            361.3,
+            555.5,
+            404.3
+          ],
+          "text": "Laboratory for Chemistry and Chemical Engineering,\nDivision of Chemistry and Chemical Engineering, California\nInstitute of Technology, Pasadena, California 91125, United\nStates"
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            315.4,
+            409.3,
+            505.6,
+            430.3
+          ],
+          "text": "Complete contact information is available at:\nhttps://pubs.acs.org/10.1021/acs.orglett.5c01621"
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            315.4,
+            441.5,
+            555.5,
+            633.0
+          ],
+          "text": "Notes\nThe authors declare no competing financial interest.\n\u25a0ACKNOWLEDGMENTS\nThe National Institutes of Health (NIH)\u2212National Institute of\nGeneral Medical Sciences (NIGMS) (R35GM145239),\nHeritage Medical Research Investigators Program, and Caltech\nare thanked for the support of our research program. The\nauthors also thank Dr. David VanderVelde (Caltech) for his\nNMR expertise, Dr. Scott C. Virgil (Caltech) for his\ninstrumentation support, and Jay Barbor (Caltech) for helpful\ndiscussions. Kimberly R. Sharp and Sara Y. Siddiqui thank the\nNational Science Foundation (NSF) Graduate Research\nFellowship Program (GRFP) for funding.\n\u25a0REFERENCES"
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            315.4,
+            625.9,
+            555.5,
+            754.9
+          ],
+          "text": "(1) For reviews on the topic, see (a) Allen, L. A. T.; Raclea, R.-C.;\nNatho, P.; Parsons, P. J. Recent advances in the synthesis of \u03b1-amino\nketones. Org. Biomol. Chem. 2021, 19, 498\u2212513. (b) Concell\u00f3n, J. M.;\nRodr\u00edguez-Solla, H. Synthesis and Synthetic Applications of \u03b1-Amino\nKetones Derived from Natural \u03b1-Amino Acids. Curr. Org. Chem.\n2008, 12, 524\u2212543.\n(2) For selected examples of applications involving this motif, see\n(a) Blough, B. E.; Landavazo, A.; Partilla, J. S.; Baumann, M. H.;\nDecker, A. M.; Page, K. M.; Rothman, R. B. Hybrid Dopamine\nUptake Blocker\u2212Serotonin Releaser Ligands: A New Twist on\nTransporter-Focused Therapeutics. ACS Med. Chem. Lett. 2014, 5,\n623\u2212627. (b) Meltzer, P. C.; Butler, D.; Deschamps, J. R.; Madras, B.\nK. 1-(4-Methylphenyl)-2-pyrrolidin-1-yl-pentan-1-one (Pyrovalerone)"
+        },
+        {
+          "block_id": 18,
+          "bbox": [
+            51.5,
+            60.7,
+            186.6,
+            70.7
+          ],
+          "text": "Scheme 2. Trapping Experiments"
+        },
+        {
+          "block_id": 19,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 20,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c01621"
+        },
+        {
+          "block_id": 21,
+          "bbox": [
+            295.4,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2025, 27, 6380\u22126384\n6383"
+        },
+        {
+          "block_id": 22,
+          "bbox": [
+            582.5,
+            175.5,
+            590.0,
+            625.5
+          ],
+          "text": "Downloaded from http://pubs.acs.org/orlef7/article-pdf/27/24/6380/66112885/acs.orglett.5c01621.pdf by guest on 10 August 2026"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p4_raster0",
+          "source": "embedded_raster",
+          "bbox": [
+            51.5,
+            76.5,
+            291.5,
+            274.9
+          ],
+          "path": "images/page4_raster0.png",
+          "width": 1000,
+          "height": 827
+        },
+        {
+          "image_id": "main_p4_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page4_fig0.png",
+          "width": 1513,
+          "height": 37
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "source": "main",
+      "text_blocks": [
+        {
+          "block_id": 0,
+          "bbox": [
+            51.5,
+            59.8,
+            291.5,
+            179.9
+          ],
+          "text": "Analogues: A Promising Class of Monoamine Uptake Inhibitors. J.\nMed. Chem. 2006, 49, 1420\u22121432. (c) Myers, M. C.; Wang, J.; Iera, J.\nA.; Bang, J.-K.; Hara, T.; Saito, S.; Zambetti, G. P.; Appella, D. H. A\nNew Family of Small Molecules To Probe the Reactivation of Mutant\np53. J. Am. Chem. Soc. 2005, 127, 6152\u22126153. (d) Lee, A.; Huang, L.;\nEllman, J. A. General Solid-Phase Method for the Preparation of\nMechanism-Based Cysteine Protease Inhibitors. J. Am. Chem. Soc.\n1999, 121, 9907\u22129914. (e) Rano, T. A.; Timkey, T.; Peterson, E. P.;\nRotonda, J.; Nicholson, D. W.; Becker, J. W.; Chapman, K. T.;\nThornberry, N. A. A combinatorial approach for determining protease\nspecificities: application to interleukin-1\u03b2 converting enzyme (ICE).\nChem. Biol. 1997, 4, 149\u2212155."
+        },
+        {
+          "block_id": 1,
+          "bbox": [
+            51.5,
+            180.3,
+            291.5,
+            311.1
+          ],
+          "text": "(3) For examples of \u03b1-amidation reliant on prefunctionalization of\nthe carbonyl moiety, see (a) Liang, J.-L.; Yu, X.-Q.; Che, C.-M.\nAmidation of silyl enol ethers and cholesteryl acetates with chiral\nruthenium (II) Schiff-base catalysts: catalytic and enantioselective\nstudies. Chem. Commun. 2002, 2, 124\u2212125. (b) da Silva Gomes, R.;\nCorey, E. J. A Method for the Catalytic Enantioselective Synthesis of\nChiral \u03b1-Azido and \u03b1-Amino Ketones from Racemic \u03b1-Bromo\nKetones, and Its Generalization to the Formation of Bonds to C,\nO, and S. J. Am. Chem. Soc. 2019, 141, 20058\u221220061.\n(c) Ramakrishna, I.; Bhajammanavar, V.; Mallik, S.; Baidya, M.\nAdvanced Nitroso Aldol Reaction: Metal-Free Cross-Coupling of\nAnilines with Silyl Enol Ethers En Route to \u03b1-Amino Ketones. Org.\nLett. 2017, 19, 516\u2212519."
+        },
+        {
+          "block_id": 2,
+          "bbox": [
+            51.5,
+            311.5,
+            291.5,
+            654.1
+          ],
+          "text": "(4) For examples of \u03b1-amidation using higher oxidation nitrogen\nspecies, see (a) Trost, B. M.; Tracy, J. S.; Lin, E. Y. Asymmetric\nElectrophilic Amination and Hydrazination of Acyclic \u03b1-Branched\nKetones for the Formation of \u03b1-Tertiary Amines and Hydrazines. ACS\nCatal. 2019, 9, 11082\u221211087. (b) List, B. Direct Catalytic\nAsymmetric \u03b1-Amination of Aldehydes. J. Am. Chem. Soc. 2002,\n124, 5656\u22125657. (c) Kumaragurubaran, N.; Juhl, K.; Zhuang, W.;\nB\u00f8gevig, A.; J\u00f8rgensen, K. A. Direct l-Proline-Catalyzed Asymmetric\n\u03b1-Amination of Ketones. J. Am. Chem. Soc. 2002, 124, 6254\u22126255.\n(d) Evans, D. A.; Nelson, S. G. Chiral Magnesium Bis(sulfonamide)\nComplexes as Catalysts for the Merged Enolization and Enantiose-\nlective Amination of N-Acyloxazolidinones. A Catalytic Approach to\nthe Synthesis of Arylglycines. J. Am. Chem. Soc. 1997, 119, 6452\u2212\n6453. (e) Fisher, D. J.; Burnett, G. L.; Velasco, R.; de Alaniz, J. R.\nSynthesis of hindered \u03b1-amino carbonyls: copper-catalyzed radical\naddition with nitroso compounds. J. Am. Chem. Soc. 2015, 137,\n11614\u221211617.\n(5) For examples of \u03b1-amination, see (a) Evans, R. W.; Zbieg, J. R.;\nZhu, S.; Li, W.; MacMillan, D. W. C. Simple catalytic mechanism for\nthe direct coupling of \u03b1-carbonyls with functionalized amines: a one-\nstep synthesis of Plavix. J. Am. Chem. Soc. 2013, 135, 16074\u221216077.\n(b) Ohmatsu, K.; Ando, Y.; Nakashima, T.; Ooi, T. A modular\nstrategy for the direct catalytic asymmetric \u03b1-amination of carbonyl\ncompounds. Chem. 2016, 1, 802\u2212810. (c) Alfonzo, E.; Hanley, D.; Li,\nZ.-Q.; Sicinski, K. M.; Gao, S.; Arnold, F. H. Biocatalytic Synthesis of\n\u03b1-Amino Esters via Nitrene C\u2212H Insertion. J. Am. Chem. Soc. 2024,\n146, 27267\u221227273.\n(6) (a) Lee, M.; Jung, H.; Kim, D.; Park, J.-W.; Chang, S. Modular\ntuning of electrophilic reactivity of iridium nitrenoids for the\nintermolecular selective \u03b1-amidation of \u03b2-keto esters. J. Am. Chem.\nSoc. 2020, 142, 11999\u221212004. (b) Hwang, Y.; Baek, S. B.; Kim, D.;\nChang, S. Chain walking as a strategy for iridium-catalyzed migratory\namidation of alkenyl alcohols to access \u03b1-amino ketones. J. Am. Chem.\nSoc. 2022, 144, 4277\u22124285."
+        },
+        {
+          "block_id": 3,
+          "bbox": [
+            51.5,
+            655.2,
+            291.5,
+            684.3
+          ],
+          "text": "(7) Ye, C.-X.; Dansby, D. R.; Chen, S.; Meggers, E. Expedited\nsynthesis of \u03b1-amino acids by single-step enantioselective \u03b1-amination\nof carboxylic acids. Nat. Synth. 2023, 2, 645\u2212652."
+        },
+        {
+          "block_id": 4,
+          "bbox": [
+            51.5,
+            685.3,
+            291.5,
+            714.6
+          ],
+          "text": "(8) Yang, C.; Liu, Y.; Yang, J.-D.; Li, Y.-H.; Li, X.; Cheng, J.-P.\nAmination of 3-Substituted Benzofuran-2(3H)-ones Triggered by\nSingle-Electron Transfer. Org. Lett. 2016, 18, 1036\u22121039."
+        },
+        {
+          "block_id": 5,
+          "bbox": [
+            51.5,
+            715.5,
+            291.5,
+            754.8
+          ],
+          "text": "(9) (a) Song, F.; Park, S. H.; Wu, C.; Strom, A. E. Iron-Catalyzed\nOxidative \u03b1-Amination of Ketones with Primary and Secondary\nSulfonamides. J. Org. Chem. 2023, 88, 3353\u22123358. (b) Parrales, G.\nM.; Hollin, N. C.; Song, F.; Lyu, Y.; Martin, A.-M. O.; Strom, A. E."
+        },
+        {
+          "block_id": 6,
+          "bbox": [
+            315.4,
+            59.2,
+            555.4,
+            78.9
+          ],
+          "text": "Mechanism of Iron-Catalyzed Oxidative \u03b1-Amination of Ketones with\nSulfonamides. J. Org. Chem. 2024, 89, 12462\u221212466."
+        },
+        {
+          "block_id": 7,
+          "bbox": [
+            315.4,
+            79.8,
+            555.5,
+            148.9
+          ],
+          "text": "(10) Tang, J.-J.; Yu, X.; Wang, Y.; Yamamoto, Y.; Bao, M.\nInterweaving Visible-Light and Iron Catalysis for Nitrene Formation\nand Transformation with Dioxazolones. Angew. Chem., Int. Ed. 2021,\n60, 16426\u221216435.\n(11) Hou, M.; Zhang, Z.; Lai, X.; Zong, Q.; Jiang, X.; Guan, M.; Qi,\nR.; Qiu, G. Photoredox/Iron dual-catalyzed insertion of acyl nitrenes\ninto C\u2212H bonds. Org. Lett. 2022, 24, 4114\u22124118."
+        },
+        {
+          "block_id": 8,
+          "bbox": [
+            315.4,
+            149.9,
+            555.5,
+            178.9
+          ],
+          "text": "(12) Hore, S.; Jeong, J.; Kim, D.; Chang, S. Visible-light-promoted\nenantioselective \u03b1-amidation of aldehydes by harnessing organo-iron\ndual catalysis. J. Am. Chem. Soc. 2024, 146, 22172\u221222179."
+        },
+        {
+          "block_id": 9,
+          "bbox": [
+            315.4,
+            179.9,
+            555.5,
+            218.8
+          ],
+          "text": "(13) Barbor, J. P.; Nair, V. N.; Sharp, K. R.; Lohrey, T. D.; Dibrell, S.\nE.; Shah, T. K.; Walsh, M. J.; Reisman, S. E.; Stoltz, B. M.\nDevelopment of a nickel-catalyzed N\u2212N coupling for the synthesis of\nhydrazides. J. Am. Chem. Soc. 2023, 145, 15071\u221215077."
+        },
+        {
+          "block_id": 10,
+          "bbox": [
+            315.4,
+            219.9,
+            555.5,
+            308.9
+          ],
+          "text": "(14) For a review of nickel half-sandwich catalysis, see Banach, \u0141.;\nGun\u0301ka, P. A.; Zachara, J.; Buchowicz, W. Half-sandwich Ni (II)\ncomplexes [Ni (Cp)(X)(NHC)]: From an underestimated discovery\nto a new chapter in organonickel chemistry. Coord. Chem. Rev. 2019,\n389, 19\u221258.\n(15) The silane potentially plays multiple roles in the catalytic cycle;\nwe have hypothesized that these may include enforcing a resting\noxidation state of the nickel, activating the \u03b2-keto ester, and assisting\nthe cleavage of the benzoate group."
+        },
+        {
+          "block_id": 11,
+          "bbox": [
+            315.4,
+            309.8,
+            555.5,
+            348.8
+          ],
+          "text": "(16) Fang, W.; Luo, Z.-W.; Wang, Y.-C.; Zhou, W.; Li, L.; Chen, Y.;\nZhang, X.; Dai, M.; Dai, J.-J. SN2 Reaction at the Amide Nitrogen\nCenter Enables Hydrazide Synthesis. Angew. Chem., Int. Ed. 2024, 63,\nNo. e202317570."
+        },
+        {
+          "block_id": 12,
+          "bbox": [
+            315.4,
+            349.9,
+            555.5,
+            448.8
+          ],
+          "text": "(17) For examples of bimetallic H2 reductive elimination, see\n(a) Jeon, J.; Lee, C.; Seo, H.; Hong, S. NiH-catalyzed proximal-\nselective hydroamination of unactivated alkenes. J. Am. Chem. Soc.\n2020, 142, 20470\u221220480. (b) Schaefer, B. A.; Margulieux, G. W.;\nSmall, B. L.; Chirik, P. J. Evaluation of cobalt complexes bearing\ntridentate pincer ligands for catalytic C\u2212H borylation. Organometallics\n2015, 34, 1307\u22121320. (c) Gu, N. X.; Oyala, P. H.; Peters, J. C. An S\n= 1/2 Iron Complex Featuring N2, Thiolate, and Hydride Ligands:\nReductive Elimination of H2 and Relevant Thermochemical Fe\u2212H\nParameters. J. Am. Chem. Soc. 2018, 140, 6374\u22126382."
+        },
+        {
+          "block_id": 13,
+          "bbox": [
+            315.4,
+            449.9,
+            555.5,
+            498.8
+          ],
+          "text": "(18) Compound 5 was independently synthesized and examined for\nits catalytic competence as a potential on-cycle species, although no\nproduct (3a) was observed. Side products analogous to compound 5\nwere observed throughout optimization, corresponding to the NHC\non the half-sandwich catalyst employed."
+        },
+        {
+          "block_id": 14,
+          "bbox": [
+            315.4,
+            499.9,
+            555.5,
+            528.8
+          ],
+          "text": "(19) Foo, K.; Sella, E.; Thom\u00e9, I.; Eastgate, M. D.; Baran, P. S. A\nmild, ferrocene-catalyzed C\u2212H imidation of (hetero) arenes. J. Am.\nChem. Soc. 2014, 136, 5279\u22125282."
+        },
+        {
+          "block_id": 15,
+          "bbox": [
+            315.4,
+            529.9,
+            555.5,
+            628.8
+          ],
+          "text": "(20) Sun, W.; Au, C.-M.; Wong, K.-W.; Chan, K. L.; Ngai, C. K.;\nLee, H. K.; Lin, Z.; Yu, W.-Y. Intramolecular Arene C(sp2)\u2212H\nAmidation Enabled by Ferrocenium-Mediated Decomposition of\n1,4,2-Dioxazol-5-ones as Amidyl Radical Precursors. ACS Catal. 2023,\n13, 11389\u221211398.\n(21) While this premise is found often in metal nitrenoid literature,\nan early example is cited here: Sleiman, H. F.; Mercer, S.; McElwee-\nWhite, L. Trapping of the low-valent nitrene complex (CO)5W\u0001NPh\nwith triphenylphosphine. Formation of the phenylnitrene transfer\nproduct PhN\u0001PPh3. J. Am. Chem. Soc. 1989, 111, 8007\u22128009."
+        },
+        {
+          "block_id": 16,
+          "bbox": [
+            315.4,
+            629.9,
+            555.5,
+            668.9
+          ],
+          "text": "(22) Mdluli, V.; Lehnherr, D.; Lam, Y.-h.; Chaudhry, M. R.;\nNewman, J. A.; DaSilva, J. O.; Regalado, E. L. Electrosynthesis of\niminophosphoranes and applications in nickel catalysis. Chem. Sci.\n2024, 15, 5980\u22125992."
+        },
+        {
+          "block_id": 17,
+          "bbox": [
+            51.5,
+            39.4,
+            548.5,
+            49.4
+          ],
+          "text": "Organic Letters\npubs.acs.org/OrgLett\nLetter"
+        },
+        {
+          "block_id": 18,
+          "bbox": [
+            446.6,
+            765.8,
+            555.4,
+            771.8
+          ],
+          "text": "https://doi.org/10.1021/acs.orglett.5c01621"
+        },
+        {
+          "block_id": 19,
+          "bbox": [
+            295.4,
+            764.7,
+            555.5,
+            778.4
+          ],
+          "text": "Org. Lett. 2025, 27, 6380\u22126384\n6384"
+        },
+        {
+          "block_id": 20,
+          "bbox": [
+            582.5,
+            175.5,
+            590.0,
+            625.5
+          ],
+          "text": "Downloaded from http://pubs.acs.org/orlef7/article-pdf/27/24/6380/66112885/acs.orglett.5c01621.pdf by guest on 10 August 2026"
+        }
+      ],
+      "images": [
+        {
+          "image_id": "main_p5_fig0",
+          "source": "vector_region",
+          "bbox": [
+            51.5,
+            38.4,
+            555.5,
+            50.5
+          ],
+          "path": "images/page5_fig0.png",
+          "width": 1513,
+          "height": 37
+        }
+      ]
+    }
+  ]
+}
