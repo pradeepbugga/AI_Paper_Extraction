@@ -13,7 +13,7 @@ HYPHEN_WRAP_RE = re.compile(r"(?<=[a-z])-$")
 TERMINAL_PUNCT_RE = re.compile(r"[.?!:;]$")
 SENTENCE_END_RE = re.compile(r"[.?!]$")
 TRAILING_PAGE_NUM_RE = re.compile(r"\s*\d{1,4}$")
-NUMBERED_PREFIX_RE = re.compile(r"^\d{1,3}\.\s+\S")
+NUMBERED_PREFIX_RE = re.compile(r"^\d{1,3}(\.\d{1,3})*\.?\s+[A-Z]")
 TOC_LABEL_RE = re.compile(r"^(table of )?contents$", re.IGNORECASE)
 
 
@@ -308,7 +308,14 @@ def heading_style_key(line):
 
 def heading_eligible(line, body_size, is_first_line):
     text = line["text"]
-    if (not line["bold"] or len(text) >= MAX_HEADING_LEN or len(text.split()) > MAX_HEADING_WORDS
+    # Bold is the usual distinguishing cue, but some documents (e.g. an SI's
+    # numbered procedure headings) render subsection headings at plain body
+    # weight and lean on numbering instead -- same size, same weight as the
+    # surrounding prose, distinguished only by "N.N ..." and a capitalized
+    # word following it (unlike a numbered quantity mid-sentence, e.g.
+    # "3.5 equivalents of...", which continues lowercase).
+    distinguishing_weight = line["bold"] or bool(NUMBERED_PREFIX_RE.match(line["dominant_text"]))
+    if (not distinguishing_weight or len(text) >= MAX_HEADING_LEN or len(text.split()) > MAX_HEADING_WORDS
             or is_sentence_like(text) or is_purely_parenthetical(text)):
         return False
     if line["size"] >= body_size * HEADING_SIZE_RATIO:
