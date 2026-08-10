@@ -528,6 +528,83 @@ def merge_boundary_paragraphs(elements):
     return merged
 
 
+MAX_SPLIT_HEADING_GAP_PT = 12.0  # a genuine line-wrap continuation sits just
+                                  # below the previous line -- measured at
+                                  # ~7-8pt in this document's normal line
+                                  # spacing (12pt font), vs. ~23-30pt for a
+                                  # real paragraph/section break; 12pt sits
+                                  # with a wide margin on both sides
+
+
+CHEMICAL_FRAGMENT_RE = re.compile(r"\d-|-\d|[()\[\]]")
+MAX_CHEMICAL_FRAGMENT_WORDS = 2  # a wrapped compound-name fragment reads as
+                                  # one (occasionally two) unbroken hyphenated
+                                  # token(s), not multiple separate words
+
+
+def looks_like_chemical_name_fragment(text):
+    """A wrapped IUPAC-style compound name fragment (locant hyphens like
+    "2-", nested brackets, no spaces) vs. anything else short and
+    punctuation-free that can coincidentally sandwich between two same-level
+    headings -- table column headers ("Entry", "Yield of 3a"), a TOC line,
+    or a real sentence truncated at a page boundary. All of those read as
+    multiple ordinary English words; a chemical fragment reads as one long
+    hyphen/bracket-dense token. Checked directly against every false
+    positive found in this pipeline's own SI documents before being kept
+    this narrow."""
+    words = text.split()
+    return len(words) <= MAX_CHEMICAL_FRAGMENT_WORDS and bool(CHEMICAL_FRAGMENT_RE.search(text))
+
+
+def merge_split_headings(elements):
+    """A heading long enough to wrap across several physical lines can get
+    split by PyMuPDF into separate blocks mid-heading -- observed on a long
+    hyphenated chemical name spanning 3 lines, where PyMuPDF grouped lines
+    1-2 into one block and line 3 into a new block. The middle line then
+    fails heading eligibility (it isn't the first line of its -- spurious --
+    block), so it's classified as body text sandwiched between two heading
+    fragments of the same level.
+
+    Detected by: heading, then a body line that looks like a chemical-name
+    fragment specifically (see looks_like_chemical_name_fragment), then
+    another heading of the same level, all immediately adjacent with only
+    line-wrap-sized vertical gaps between them. Deliberately narrow, not a
+    general "adjacent same-level headings are one heading" rule -- an
+    earlier, looser version of this check (short + no terminal punctuation)
+    wrongly merged real table column headers ("Entry"/"Deviation from
+    standard reaction"/"Yield of 3a") and a real orphaned sentence fragment
+    between two genuinely separate main-text headings ("CONCLUSIONS"/
+    "MATERIALS AND METHODS") -- both share "short, no terminal punctuation"
+    with a real wrapped chemical name, but not its hyphen/bracket density."""
+    merged = []
+    i = 0
+    while i < len(elements):
+        el = elements[i]
+        if (el["type"].startswith("heading") and i + 2 < len(elements)
+                and elements[i + 2]["type"] == el["type"]):
+            body, nxt = elements[i + 1], elements[i + 2]
+            same_page = el["page"] == body["page"] == nxt["page"]
+            wrapped_fragment = body["type"] == "body" and looks_like_chemical_name_fragment(body["text"])
+            close_gap = (same_page and wrapped_fragment
+                         and vertical_gap(el["bbox"], body["bbox"]) < MAX_SPLIT_HEADING_GAP_PT
+                         and vertical_gap(body["bbox"], nxt["bbox"]) < MAX_SPLIT_HEADING_GAP_PT)
+            if close_gap:
+                combined = dict(el)
+                combined["text"] = join_lines([el["text"], body["text"], nxt["text"]])
+                combined["bbox"] = [
+                    min(el["bbox"][0], body["bbox"][0], nxt["bbox"][0]),
+                    min(el["bbox"][1], body["bbox"][1], nxt["bbox"][1]),
+                    max(el["bbox"][2], body["bbox"][2], nxt["bbox"][2]),
+                    max(el["bbox"][3], body["bbox"][3], nxt["bbox"][3]),
+                ]
+                merged.append(combined)
+                i += 3
+                continue
+        merged.append(el)
+        i += 1
+    return merged
+
+
 def vertical_gap(caption_bbox, image_bbox):
     """Distance between a caption and an image, whichever side it's on —
     some publishers put the caption below the figure, others (e.g. ACS,
@@ -637,6 +714,14 @@ def parse_sections(pdf_path: Path, raw_extraction: dict, output_dir: Path):
         all_elements.extend(parse_page(page_data, figure_bboxes, body_size, heading_levels, furniture_lines))
 
     all_elements = merge_boundary_paragraphs(all_elements)
+    # merge_split_headings is deliberately SI-only (called from si_parse.py,
+    # not here) -- main-text section headings ("CONCLUSIONS", "MATERIALS AND
+    # METHODS") are short, common English phrases, exactly the shape that
+    # can coincidentally sandwich a real orphaned paragraph fragment between
+    # two genuinely separate headings (confirmed: this merged "CONCLUSIONS"
+    # and "MATERIALS AND METHODS" into one bogus heading on a real paper).
+    # SI compound names are long, hyphenated, low-word-count chemical tokens
+    # that don't share this ambiguity with real body prose the same way.
 
     front_matter, sections = assemble_sections(
         [e for e in all_elements if e["type"] != "figure_caption"]

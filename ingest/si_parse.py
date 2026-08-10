@@ -7,7 +7,7 @@ import fitz  # PyMuPDF
 from section_parse import (
     collect_raw_blocks, compute_body_size, compute_furniture_lines,
     compute_heading_levels, parse_page, merge_boundary_paragraphs,
-    assemble_sections,
+    merge_split_headings, assemble_sections,
 )
 
 
@@ -94,6 +94,7 @@ def parse_si(si_path: Path, si_raw_extraction: dict, output_dir: Path):
         all_elements.extend(parse_page(page_data, figure_bboxes, body_size, heading_levels, furniture_lines))
 
     all_elements = merge_boundary_paragraphs(all_elements)
+    all_elements = merge_split_headings(all_elements)
 
     front_matter, sections = assemble_sections(
         [e for e in all_elements if e["type"] != "figure_caption"]
