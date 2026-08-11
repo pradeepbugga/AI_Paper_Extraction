@@ -19,6 +19,35 @@ Early build, in progress. Working through the pipeline one stage at a time:
 6. Entity normalization (canonical IDs)
 7. Provenance-linked knowledge graph
 
+## Environment
+
+This project uses a dedicated conda environment, **not** `base` — always
+activate it before running anything here:
+
+```
+conda activate paper_extraction
+```
+
+If it doesn't exist yet:
+
+```
+conda create -n paper_extraction python=3.13 -y
+conda activate paper_extraction
+pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch torchvision
+pip install open_clip_torch pymupdf requests decimer "tensorflow[and-cuda]"
+```
+
+Notes:
+- `torch`/`torchvision` are pinned to the CPU build deliberately (via the
+  PyTorch CPU wheel index) — `pip install torch` alone silently pulls a
+  GPU-linked build that doesn't match this setup; only `tensorflow` (for
+  DECIMER) uses the GPU here.
+- `tensorflow[and-cuda]` needs an actual NVIDIA GPU + driver to matter;
+  falls back to (slow) CPU otherwise, no code changes required either way.
+- `pip check` should report nothing beyond pre-existing, unrelated conda
+  tooling warnings — if it reports anything about `torch`, `tensorflow`,
+  `open_clip_torch`, `decimer`, or `pymupdf`, the environment is broken.
+
 ## Stage 1: PDF ingestion
 
 `ingest/pdf_ingest.py` extracts, per page:
