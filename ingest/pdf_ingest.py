@@ -194,14 +194,88 @@ def is_invisible_drawing(d, white_tol=0.02):
     return all(abs(c - 1.0) < white_tol for c in fill)
 
 
-def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0):
+DEFAULT_PAD_X = 8.0
+SINGLE_COLUMN_PAD_X = 12.0  # no column gutter to guard against at all -- see measure_column_gutter's None case
+PAD_X_SAFETY_BUFFER_PT = 6.0  # stay this far clear of a document's own measured gutter, never just barely under it
+MAX_PAD_X = 20.0
+
+
+def measure_column_gutter(doc, sample_pages=8):
+    """Finds the narrowest real gap between two-column body text across a
+    sample of pages, so extract_vector_figures can widen its horizontal
+    merge tolerance (pad_x) up to -- but staying safely clear of -- what
+    this specific document's own layout actually uses as a column gutter,
+    instead of guessing one fixed constant for every document.
+
+    Returns None if no multi-column page is found in the sample. This
+    matters beyond "nothing to stay clear of": SI documents in this corpus
+    are commonly single-column, one-compound-per-page (name, structure,
+    two spectra stacked vertically) -- confirmed directly on a real case
+    where a structure's own colored sub-groups (a two-tone ChemDraw
+    highlight) sat 9.1pt apart, just past the then-fixed 8.0 default, and
+    fragmented into separate images that DECIMER Segmentation then
+    mis-cropped further downstream. There the two spectra are raster
+    images (a separate extraction path entirely) and the two repeated
+    structure instances sit ~280pt apart vertically -- far past pad_y's
+    reach -- so a wider pad_x here has nothing false to merge with. That
+    won't hold for every single-column layout (a main-text scope table
+    packs many distinct compounds' vector structures onto one page, where
+    over-merging is a real risk), so this is a modest, evidence-sized
+    bump (SINGLE_COLUMN_PAD_X), not the same generous ceiling a confirmed
+    real gutter earns.
+
+    Splitting blocks at a fixed x (e.g. page-width midpoint) breaks the
+    moment one block straddles that line -- one early attempt at this
+    picked up a block that started just left of the true column edge but
+    ran on across most of the right column, which corrupted the whole
+    page's measurement into a large negative "gap." Finding the actual
+    empty band between merged block intervals sidesteps that -- it never
+    assumes where the split is.
+
+    Two more filters, both earned by checking a real false positive rather
+    than guessed upfront: narrow blocks only (< 0.55 * page width) drops a
+    full-width block (a caption, a table spanning both columns) that would
+    otherwise report a fake zero/negative gap where it overlaps both
+    halves; a minimum height (> 24pt, roughly two text lines) drops both
+    individual chemical-shift/atom-label fragments (each its own tiny
+    single-line text block in this corpus) and, less obviously, multi-line
+    reaction-scheme annotation labels ("S / O", "Cl / S / O" stacked
+    vertically) -- tall enough to clear a naive line-count check despite
+    not being body prose at all. Neither filter alone was enough; both
+    were added only after a specific real page produced a wrong gutter
+    without it.
+    """
+    gutters = []
+    for page in list(doc)[:sample_pages]:
+        page_width = page.rect.width
+        blocks = [
+            b for b in page.get_text("blocks")
+            if b[6] == 0 and (b[2] - b[0]) < page_width * 0.55 and (b[3] - b[1]) > 24
+        ]
+        intervals = sorted((b[0], b[2]) for b in blocks)
+        if not intervals:
+            continue
+        merged = [list(intervals[0])]
+        for x0, x1 in intervals[1:]:
+            if x0 <= merged[-1][1]:
+                merged[-1][1] = max(merged[-1][1], x1)
+            else:
+                merged.append([x0, x1])
+        if len(merged) < 2:
+            continue
+        page_gap = max(merged[i + 1][0] - merged[i][1] for i in range(len(merged) - 1))
+        gutters.append(page_gap)
+    return min(gutters) if gutters else None
+
+
+def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0, pad_x=DEFAULT_PAD_X):
     drawings = page.get_drawings()
     if not drawings:
         return []
 
     rects = [d["rect"] for d in drawings
              if d["rect"].width > 0 and d["rect"].height > 0 and not is_invisible_drawing(d)]
-    clusters = cluster_drawing_rects(rects)
+    clusters = cluster_drawing_rects(rects, pad_x=pad_x)
     # A drawing can sit partly or entirely in the page's margin/bleed area
     # (off the visible canvas) -- rare on its own, but merging can absorb
     # one into an otherwise-valid cluster. Clip to the page's actual bounds
@@ -234,13 +308,29 @@ def ingest_pdf(pdf_path: Path, output_dir: Path, doc_source: str = "main", image
     with independent page numbering, so paths/image_ids/output files are kept
     in source-specific namespaces to avoid collisions (both start at page 1)."""
     images_dir = output_dir / images_dirname
+    if images_dir.exists():
+        # Re-running extraction can change how many figures a page produces
+        # (e.g. a clustering fix that merges what used to be split into
+        # several images down to one). Without clearing first, the extra
+        # files from a previous run's higher count linger on disk and look
+        # like current output -- found by hitting exactly this after a
+        # clustering change actually worked.
+        for stale in images_dir.glob("*.png"):
+            stale.unlink()
     images_dir.mkdir(parents=True, exist_ok=True)
 
     doc = fitz.open(pdf_path)
+
+    gutter = measure_column_gutter(doc)
+    if gutter is None:
+        pad_x = SINGLE_COLUMN_PAD_X
+    else:
+        pad_x = min(MAX_PAD_X, max(DEFAULT_PAD_X, gutter - PAD_X_SAFETY_BUFFER_PT))
+
     pages = []
     for page_number, page in enumerate(doc, start=1):
         raster_images = extract_raster_images(doc, page, page_number, images_dir, doc_source)
-        vector_figures = extract_vector_figures(page, page_number, images_dir, doc_source)
+        vector_figures = extract_vector_figures(page, page_number, images_dir, doc_source, pad_x=pad_x)
         pages.append({
             "page_number": page_number,
             "source": doc_source,

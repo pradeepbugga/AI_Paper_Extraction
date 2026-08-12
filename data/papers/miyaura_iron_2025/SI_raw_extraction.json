@@ -907,12 +907,38 @@
           "image_id": "SI_p3_fig0",
           "source": "vector_region",
           "bbox": [
+            299.3,
+            191.1,
+            465.9,
+            218.6
+          ],
+          "path": "images_SI/page3_fig0.png",
+          "width": 500,
+          "height": 83
+        },
+        {
+          "image_id": "SI_p3_fig1",
+          "source": "vector_region",
+          "bbox": [
+            282.4,
+            473.2,
+            448.9,
+            500.6
+          ],
+          "path": "images_SI/page3_fig1.png",
+          "width": 500,
+          "height": 83
+        },
+        {
+          "image_id": "SI_p3_fig2",
+          "source": "vector_region",
+          "bbox": [
             210.2,
             582.4,
             253.7,
             754.4
           ],
-          "path": "images_SI/page3_fig0.png",
+          "path": "images_SI/page3_fig2.png",
           "width": 132,
           "height": 517
         }
@@ -1637,6 +1663,19 @@
           "path": "images_SI/page5_raster0.png",
           "width": 1140,
           "height": 1180
+        },
+        {
+          "image_id": "SI_p5_fig0",
+          "source": "vector_region",
+          "bbox": [
+            298.8,
+            145.4,
+            465.1,
+            172.6
+          ],
+          "path": "images_SI/page5_fig0.png",
+          "width": 500,
+          "height": 82
         }
       ]
     },
@@ -1862,28 +1901,15 @@
           "bbox": [
             251.3,
             150.7,
-            305.1,
-            232.3
-          ],
-          "path": "images_SI/page6_fig0.png",
-          "width": 163,
-          "height": 245
-        },
-        {
-          "image_id": "SI_p6_fig1",
-          "source": "vector_region",
-          "bbox": [
-            315.4,
-            154.1,
             365.9,
             234.0
           ],
-          "path": "images_SI/page6_fig1.png",
-          "width": 152,
-          "height": 241
+          "path": "images_SI/page6_fig0.png",
+          "width": 345,
+          "height": 251
         },
         {
-          "image_id": "SI_p6_fig2",
+          "image_id": "SI_p6_fig1",
           "source": "vector_region",
           "bbox": [
             144.4,
@@ -1891,7 +1917,7 @@
             211.7,
             219.8
           ],
-          "path": "images_SI/page6_fig2.png",
+          "path": "images_SI/page6_fig1.png",
           "width": 203,
           "height": 112
         }
@@ -2112,7 +2138,21 @@
           "text": "1\nnone\n38\n75\n2\nLiF\n44\n81\n3\nNaF\n49\n87\n4\nKF\n36\n60\n5\nLiCl\n25\n64\n6\nNaCl\n58\n87\n7\nKCl\n44\n70\n8\nMgCl2\n44\n83\n9\nAlCl3\n53\n89\n10\nZnCl2\n57\n80\n11\nTMAC\n42\n67\n12\nTEAC\n6\n77\n13\nTBAC\n45\n68\n14\nLiBr\n57\n78\n15\nNaBr\n54\n93\n16\nKBr\n32\n60\n17\nMgBr2\n41\n79\n18\nMgBr2\u00b7OEt2\n64\n88\n19\nAlBr3\n33\n73\n20\nGaBr3\n7\n40\n21\nTMAB\n34\n67\n22\nTEAB\n35\n68\n23\nTBAB\n15\n49\n24\nNaI\n44\n79\n25\nKI\n16\n49\nConditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol dispensed \nfrom 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), THF (2 mL total), \ntemperature = 60 \u00b0C, time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019-ditertbutylbiphenyl as \ninternal standard."
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p7_fig0",
+          "source": "vector_region",
+          "bbox": [
+            298.8,
+            125.5,
+            465.4,
+            152.7
+          ],
+          "path": "images_SI/page7_fig0.png",
+          "width": 501,
+          "height": 82
+        }
+      ]
     },
     {
       "page_number": 8,
@@ -2349,7 +2389,21 @@
           "text": "1\nTHF\n60\n48\n83\n2\n2-MeTHF\n60\n25\n66\n3\nMeCN\n60\n0\n34\n4\nToluene\n60\n0\nn/ab\n5\nDCE\n60\n1\n35\n6\nMTBE\n60\n5\n36\n7\n1,4-dioxane\n60\n3\n40\n8\nDMA\n60\n32\n73\n9\nDMA\n100\n38\n84\n10\nDMA\n120\n41\n87\nConditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol), MgBr2\u00b7OEt2 \n(0.05 mmol), solvent (2 mL total), time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019-\nditertbutylbiphenyl as internal standard.  All reagents weighed manually. bUnable to obtain accurate data due to \npeak overlap with solvent in HPLC-MS."
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p8_fig0",
+          "source": "vector_region",
+          "bbox": [
+            299.1,
+            127.3,
+            465.7,
+            154.5
+          ],
+          "path": "images_SI/page8_fig0.png",
+          "width": 500,
+          "height": 83
+        }
+      ]
     },
     {
       "page_number": 9,
@@ -2566,7 +2620,21 @@
           "text": "1\nNo Fe or ligand\n1\n33\n2\nIMes only\n1\n32\n3\nBoronate weighed in air\n44\n84\n4\nIn air\n12\n68\n5\n0.25 eq IMes (vs Fe)\n59b\nN/A\n6\n0.33 eq IMes (vs Fe)\n57b\nN/A\n7\n0.5 eq IMes (vs Fe)\n68b,c\n78\n8\n0.75 eq IMes (vs Fe)\n57b\nN/A\n9\n10% MgBr2\u00b7OEt2\n56\n82\n10\n20% MgBr2\u00b7OEt2\n50\n82\n11\n25% MgBr2\u00b7OEt2\n47\n80\n12\n1% Fe, 0.5 % IMes\n9b\nN/A\n13\n3% Fe, 1.5 % IMes\n70b\nN/A\n14\n10% Fe, 5% IMes\n47b\nN/A\n15\n1.0 eq 1\n53b\nN/A\n16\n1.2 eq 1\n61b\nN/A\n17\n1.6 eq 1\n47b\nN/A\n18\n1.8 eq 1\n55b\nN/A\n19\n2.0 eq 1\n58b\nN/A\n20\nArX = Phenyl triflate\n72b\nN/A\n21\nArX = Phenyl triflate, no ligand\n69b\nN/A\nConditions: chlorobenzene (0.25 mmol), 1, Fe(OTf)2 IMes, MgBr2\u00b7OEt2 (amounts specified above), solvent (2 \nmL total), time = 1h. aDetermined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. \nbDetermined by 1H NMR with 1,3,5-trimethoxybenzene as internal standard. cAverage across 2 runs."
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p9_fig0",
+          "source": "vector_region",
+          "bbox": [
+            241.1,
+            148.1,
+            456.1,
+            184.0
+          ],
+          "path": "images_SI/page9_fig0.png",
+          "width": 646,
+          "height": 108
+        }
+      ]
     },
     {
       "page_number": 10,
@@ -3253,7 +3321,34 @@
           "text": "Conditions: 1 (0.6 mmol),  2 or 4 (0.5 mmol), MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 \nmmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture \nwith 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation \nproduct shown."
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p10_fig0",
+          "source": "vector_region",
+          "bbox": [
+            297.3,
+            158.3,
+            455.2,
+            187.1
+          ],
+          "path": "images_SI/page10_fig0.png",
+          "width": 475,
+          "height": 88
+        },
+        {
+          "image_id": "SI_p10_fig1",
+          "source": "vector_region",
+          "bbox": [
+            390.2,
+            560.9,
+            482.6,
+            589.7
+          ],
+          "path": "images_SI/page10_fig1.png",
+          "width": 278,
+          "height": 88
+        }
+      ]
     },
     {
       "page_number": 11,
@@ -4002,7 +4097,21 @@
           "text": "N\nTfO"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p15_fig0",
+          "source": "vector_region",
+          "bbox": [
+            84.3,
+            563.6,
+            176.0,
+            591.5
+          ],
+          "path": "images_SI/page15_fig0.png",
+          "width": 276,
+          "height": 85
+        }
+      ]
     },
     {
       "page_number": 16,
@@ -5767,14 +5876,53 @@
           "image_id": "SI_p23_fig0",
           "source": "vector_region",
           "bbox": [
+            262.4,
+            129.0,
+            455.6,
+            155.9
+          ],
+          "path": "images_SI/page23_fig0.png",
+          "width": 580,
+          "height": 81
+        },
+        {
+          "image_id": "SI_p23_fig1",
+          "source": "vector_region",
+          "bbox": [
             346.3,
             346.5,
             492.3,
             502.3
           ],
-          "path": "images_SI/page23_fig0.png",
+          "path": "images_SI/page23_fig1.png",
           "width": 439,
           "height": 468
+        },
+        {
+          "image_id": "SI_p23_fig2",
+          "source": "vector_region",
+          "bbox": [
+            193.3,
+            360.0,
+            315.3,
+            382.2
+          ],
+          "path": "images_SI/page23_fig2.png",
+          "width": 368,
+          "height": 68
+        },
+        {
+          "image_id": "SI_p23_fig3",
+          "source": "vector_region",
+          "bbox": [
+            192.6,
+            465.4,
+            315.7,
+            487.6
+          ],
+          "path": "images_SI/page23_fig3.png",
+          "width": 371,
+          "height": 67
         }
       ]
     },

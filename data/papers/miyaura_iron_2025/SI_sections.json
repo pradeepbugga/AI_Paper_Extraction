@@ -45,7 +45,7 @@
                   "figures": []
                 }
               ],
-              "preamble": "Table S1. Aryl halide and pseudohalide screen\n[FeCl2(dppe) (5 mol%) MgBr2\u00b7OEt2 (20 mol%)\nO\nBpin B\nO Li\n+ B\nX\nO\nTHF, 60 \u00b0C\nO\n1h\n1 (1.4 eq.)\n2\nEntry Halide/pseudohalide Yield of 3a\n(%)a",
+              "preamble": "Table S1. Aryl halide and pseudohalide screen\nBpin B\nO Li\n+\nX\nO\n1 (1.4 eq.)\n2\nEntry Halide/pseudohalide Yield of 3a",
               "figures": []
             },
             {
@@ -56,9 +56,11 @@
                 {
                   "heading": "2a",
                   "page_start": 3,
-                  "text": "(%)a\n(%)a\n1 none none 7 99 2 dppe none 4 49 3 dcpe none 8 53 4 dmpe none 7 98 5 depe none 1 99\n6 Xantphos\nnone 2 99\n7 dppbz\nnone 1 99\n8 dppp none 1 99 9 dppeb none 2 50\n10 PPh3\nPh none 2 48\n3 11 P(4-MeOPh)3 12 1,8-dppn 13 dClpbz 14 dippa 15 cis-dppe none 3 26 16 trans-dppe",
+                  "text": "(%)a\n(%)a\nnone 2 99\nnone 1 99\n3 11 P(4-MeOPh)3 12 1,8-dppn 13 dClpbz 14 dippa 15 cis-dppe none 3 26 16 trans-dppe",
                   "figures": [
-                    "SI_p3_fig0"
+                    "SI_p3_fig0",
+                    "SI_p3_fig1",
+                    "SI_p3_fig2"
                   ]
                 },
                 {
@@ -106,7 +108,7 @@
                   ]
                 }
               ],
-              "preamble": "Table S2. Preliminary ligand Screen\nFeCl2 (5 mol%) Ligand (5 mol%) MgBr2\u00b7OEt2 (20 mol%)\nO\nBpin B\nO Li\n+ B\nCl\nO\nO\nTHF, 60 \u00b0C\n1h\n1 (1.4 eq.)\n3a 2a\nConsumption of\nEntry Ligand Base Yield of 3a",
+              "preamble": "Table S2. Preliminary ligand Screen\nBpin B\nO Li\n+\nCl\nO\n1 (1.4 eq.)\n3a 2a\nEntry Ligand Base Yield of 3a\n1 none none 7 99 2 dppe none 4 49 3 dcpe none 8 53 4 dmpe none 7 98 5 depe none 1 99\n6 Xantphos\n7 dppbz\n8 dppp none 1 99 9 dppeb none 2 50\n10 PPh3\nPh none 2 48 [FeCl2(dppe) (5 mol%) 1h (%)a FeCl2 (5 mol%) Ligand (5 mol%) 1h Consumption of",
               "figures": []
             },
             {
@@ -117,11 +119,13 @@
                 {
                   "heading": "1",
                   "page_start": 8,
-                  "text": "THF 60 48 83 2 2-MeTHF 60 25 66 3 MeCN 60 0 34 4 Toluene 60 0 n/ab 5 DCE 60 1 35 6 MTBE 60 5 36 7 1,4-dioxane 60 3 40 8 DMA 60 32 73 9 DMA 100 38 84 10 DMA 120 41 87 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol), MgBr2\u00b7OEt2 (0.05 mmol), solvent (2 mL total), time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019- ditertbutylbiphenyl as internal standard.  All reagents weighed manually. bUnable to obtain accurate data due to peak overlap with solvent in HPLC-MS.\nO\nO\nConsumption of 2a\n(%)a\n8",
-                  "figures": []
+                  "text": "THF 60 48 83 2 2-MeTHF 60 25 66 3 MeCN 60 0 34 4 Toluene 60 0 n/ab 5 DCE 60 1 35 6 MTBE 60 5 36 7 1,4-dioxane 60 3 40 8 DMA 60 32 73 9 DMA 100 38 84 10 DMA 120 41 87 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol), MgBr2\u00b7OEt2 (0.05 mmol), solvent (2 mL total), time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019- ditertbutylbiphenyl as internal standard.  All reagents weighed manually. bUnable to obtain accurate data due to peak overlap with solvent in HPLC-MS.\n8",
+                  "figures": [
+                    "SI_p8_fig0"
+                  ]
                 }
               ],
-              "preamble": "Table S4. Solvent and temperature screen\nFe(OTf)2 (5 mol%)\nIMes (5 mol%) MgBr2\u00b7OEt2 (20 mol%)\nBpin B\nO Li\n+ B\nCl\nO\nSolvent Temperature\n1h\n1 (1.4 eq.)\n3a 2a\nEntry Solvent Temperature\nYield of 3a\n(\u00b0C)\n(%)a",
+              "preamble": "Table S4. Solvent and temperature screen\nFe(OTf)2 (5 mol%)\nIMes (5 mol%)\nBpin B\nO Li\n+\nCl\nO\nTemperature\n1h\n1 (1.4 eq.)\n3a 2a\nEntry Solvent Temperature\nYield of 3a\nConsumption of 2a\n(\u00b0C)\n(%)a\n(%)a",
               "figures": []
             },
             {
@@ -136,21 +140,15 @@
                   "figures": []
                 },
                 {
+                  "heading": "conditions",
+                  "page_start": 9,
+                  "text": "1 No Fe or ligand 1 33 2 IMes only 1 32 3 Boronate weighed in air 44 84 4 In air 12 68 5 0.25 eq IMes (vs Fe) 59b N/A 6 0.33 eq IMes (vs Fe) 57b N/A 7 0.5 eq IMes (vs Fe) 68b,c 78 8 0.75 eq IMes (vs Fe) 57b N/A 9 10% MgBr2\u00b7OEt2 56 82 10 20% MgBr2\u00b7OEt2 50 82 11 25% MgBr2\u00b7OEt2 47 80 12 1% Fe, 0.5 % IMes 9b N/A 13 3% Fe, 1.5 % IMes 70b N/A 14 10% Fe, 5% IMes 47b N/A 15 1.0 eq 1 53b N/A 16 1.2 eq 1 61b N/A 17 1.6 eq 1 47b N/A 18 1.8 eq 1 55b N/A 19 2.0 eq 1 58b N/A 20 ArX = Phenyl triflate 72b N/A 21 ArX = Phenyl triflate, no ligand 69b N/A Conditions: chlorobenzene (0.25 mmol), 1, Fe(OTf)2 IMes, MgBr2\u00b7OEt2 (amounts specified above), solvent (2 mL total), time = 1h. aDetermined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. bDetermined by 1H NMR with 1,3,5-trimethoxybenzene as internal standard. cAverage across 2 runs.",
+                  "figures": []
+                },
+                {
                   "heading": "Yield of 3a",
                   "page_start": 9,
                   "text": "",
-                  "figures": []
-                },
-                {
-                  "heading": "conditions",
-                  "page_start": 9,
-                  "text": "",
-                  "figures": []
-                },
-                {
-                  "heading": "(%)",
-                  "page_start": 9,
-                  "text": "1 No Fe or ligand 1 33 2 IMes only 1 32 3 Boronate weighed in air 44 84 4 In air 12 68 5 0.25 eq IMes (vs Fe) 59b N/A 6 0.33 eq IMes (vs Fe) 57b N/A 7 0.5 eq IMes (vs Fe) 68b,c 78 8 0.75 eq IMes (vs Fe) 57b N/A 9 10% MgBr2\u00b7OEt2 56 82 10 20% MgBr2\u00b7OEt2 50 82 11 25% MgBr2\u00b7OEt2 47 80 12 1% Fe, 0.5 % IMes 9b N/A 13 3% Fe, 1.5 % IMes 70b N/A 14 10% Fe, 5% IMes 47b N/A 15 1.0 eq 1 53b N/A 16 1.2 eq 1 61b N/A 17 1.6 eq 1 47b N/A 18 1.8 eq 1 55b N/A 19 2.0 eq 1 58b N/A 20 ArX = Phenyl triflate 72b N/A 21 ArX = Phenyl triflate, no ligand 69b N/A Conditions: chlorobenzene (0.25 mmol), 1, Fe(OTf)2 IMes, MgBr2\u00b7OEt2 (amounts specified above), solvent (2 mL total), time = 1h. aDetermined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. bDetermined by 1H NMR with 1,3,5-trimethoxybenzene as internal standard. cAverage across 2 runs.\nO\nO",
                   "figures": []
                 },
                 {
@@ -162,11 +160,19 @@
                 {
                   "heading": "(%)",
                   "page_start": 9,
-                  "text": "9",
+                  "text": "",
                   "figures": []
+                },
+                {
+                  "heading": "(%)",
+                  "page_start": 9,
+                  "text": "9",
+                  "figures": [
+                    "SI_p9_fig0"
+                  ]
                 }
               ],
-              "preamble": "Note: due an issue with the HPLC-MS instrument, some reactions had to be analysed by 1H NMR (Table S5, entries 12-19).\nTable S5. Further optimization of the reaction conditions\nFe(OTf)2 (5%)\nIMes (5%) MgBr2\u00b7OEt2 (20%)\nBpin B\n60 \u00b0C, THF, 1h + B\nCl\nO Li\nO\n1.2 eq\n1 3a",
+              "preamble": "Note: due an issue with the HPLC-MS instrument, some reactions had to be analysed by 1H NMR (Table S5, entries 12-19).\nTable S5. Further optimization of the reaction conditions\n+\nCl\nLi\n1.2 eq\n1 3a",
               "figures": []
             }
           ],
@@ -174,19 +180,21 @@
             {
               "heading": "3.2.3 Precatalyst screen",
               "page_start": 5,
-              "text": "Fe salt (5 mol%) Ligand (5 mol%) MgBr2\u00b7OEt2 (20 mol%)\nBpin B\nO Li\n+ B\nCl\nO\nTHF, 60 \u00b0C\n1h\n1 (1.4 eq.)\n3a 2a O O 5 Cy2P PCy2 dcpe Me2P PMe2 dmpe PtBu2 PtBu2 tBuXantPhos SciOPP Figure S1. Precatalyst screen. Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), iron salt (0.013 mmol), ligand (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), 4,4\u2019-ditertbutylbiphenyl (0.25 mmol dispensed from 0.5 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. Yields determined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. Note: 6Mes\u00b7HBF4 deprotonated in situ by addition of LiHMDS (0.125 mmol).\nN N Mes Mes N N Mes Mes\nIMes 6Mes\ntBu\ntBu\ntBu\ntBu\nNMe2\nPtBu2\ntBu\ntBu\nL-PN\ntBu tBu\n6",
+              "text": "Bpin B\nO Li\n+\nCl\nO\n1 (1.4 eq.)\n3a 2a Fe salt (5 mol%) Ligand (5 mol%) 1h 5 Cy2P PCy2 dcpe Me2P PMe2 dmpe PtBu2 PtBu2 tBuXantPhos SciOPP Figure S1. Precatalyst screen. Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), iron salt (0.013 mmol), ligand (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), 4,4\u2019-ditertbutylbiphenyl (0.25 mmol dispensed from 0.5 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. Yields determined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. Note: 6Mes\u00b7HBF4 deprotonated in situ by addition of LiHMDS (0.125 mmol).\nN N Mes Mes N N Mes Mes\nIMes 6Mes\ntBu\ntBu\ntBu\ntBu\nNMe2\nPtBu2\ntBu\ntBu\nL-PN\ntBu tBu\n6",
               "figures": [
                 "SI_p5_raster0",
+                "SI_p5_fig0",
                 "SI_p6_fig0",
-                "SI_p6_fig1",
-                "SI_p6_fig2"
+                "SI_p6_fig1"
               ]
             },
             {
               "heading": "3.2.4 Additive screen",
               "page_start": 7,
-              "text": "Table S3. Additive screen\nFe(OTf)2 (5 mol%)\nIMes (5 mol%) Additive (20 mol%)\nBpin B\nO Li\n+ B\nCl\nO\nTHF, 60 \u00b0C\n1h\n1 (1.4 eq.)\n3a 2a\nEntry Additive Yield of 3a\n(%)a\n1 none 38 75 2 LiF 44 81 3 NaF 49 87 4 KF 36 60 5 LiCl 25 64 6 NaCl 58 87 7 KCl 44 70 8 MgCl2 44 83 9 AlCl3 53 89 10 ZnCl2 57 80 11 TMAC 42 67 12 TEAC 6 77 13 TBAC 45 68 14 LiBr 57 78 15 NaBr 54 93 16 KBr 32 60 17 MgBr2 41 79 18 MgBr2\u00b7OEt2 64 88 19 AlBr3 33 73 20 GaBr3 7 40 21 TMAB 34 67 22 TEAB 35 68 23 TBAB 15 49 24 NaI 44 79 25 KI 16 49 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019-ditertbutylbiphenyl as internal standard.\nO\nO\nConsumption of 2a\n(%)a\n7",
-              "figures": []
+              "text": "Bpin B\nO Li\nO\n1 (1.4 eq.)\nEntry Additive Yield of 3a\n1 none 38 75 2 LiF 44 81 3 NaF 49 87 4 KF 36 60 5 LiCl 25 64 6 NaCl 58 87 7 KCl 44 70 8 MgCl2 44 83 9 AlCl3 53 89 10 ZnCl2 57 80 11 TMAC 42 67 12 TEAC 6 77 13 TBAC 45 68 14 LiBr 57 78 15 NaBr 54 93 16 KBr 32 60 17 MgBr2 41 79 18 MgBr2\u00b7OEt2 64 88 19 AlBr3 33 73 20 GaBr3 7 40 21 TMAB 34 67 22 TEAB 35 68 23 TBAB 15 49 24 NaI 44 79 25 KI 16 49 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019-ditertbutylbiphenyl as internal standard.\nTable S3. Additive screen\nFe(OTf)2 (5 mol%)\nIMes (5 mol%)\n+\nCl\n1h\n3a 2a\nConsumption of 2a\n(%)a\n(%)a\n7",
+              "figures": [
+                "SI_p7_fig0"
+              ]
             }
           ],
           "preamble": "",
@@ -326,11 +334,14 @@
         {
           "heading": "OTf",
           "page_start": 10,
-          "text": "Br OTf\nO\nBr\n0%\n0%\n0% 0%\nConditions: 1 (0.6 mmol),  2 or 4 (0.5 mmol), MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 mmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture with 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation product shown.\n10",
-          "figures": []
+          "text": "Br OTf\nBr\n0%\n0%\n0% 0%\nConditions: 1 (0.6 mmol),  2 or 4 (0.5 mmol), MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 mmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture with 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation product shown.\n10",
+          "figures": [
+            "SI_p10_fig0",
+            "SI_p10_fig1"
+          ]
         }
       ],
-      "preamble": "Figure S2. Substrates that gave little or no desired producta\nFe(OTf)2 (3 mol %)\nIMes (1.5 mol %) MgBr2\u00b7OEt2 (10 mol%)\ntBu\nX + Bpin B\nBpin\nO Li\nO\nTHF, 60\u00b0C\nR R\n1h",
+      "preamble": "Figure S2. Substrates that gave little or no desired producta\nFe(OTf)2 (3 mol %)\nIMes (1.5 mol %)\ntBu\nX + Bpin B\nBpin\nO Li\nO\nR R\n1h",
       "figures": []
     },
     {
@@ -436,14 +447,16 @@
             {
               "heading": "4-(4-bromophenoxy)phenyl trifluoromethanesulfonate (see Figure S2)",
               "page_start": 15,
-              "text": "OTf\nBr\nO\nPrepared from 4-bromophenol (265 mg, 1 mmol) according to general procedure A. Purified by flash column chromatography (5% EtOAc in hexane). Clear oil (255 mg, 96%). Novel compound.\n1H NMR (400 MHz, CDCl3) \u03b4 7.51 \u2013 7.45 (m, 2H), 7.28 \u2013 7.21 (m, 2H), 7.06 \u2013 6.99 (m, 2H), 6.95 \u2013 6.89 (m, 2H). 13C NMR (101 MHz, CDCl3) \u03b4 156.9, 155.5, 144.9, 133.2, 123.0, 121.3, 119.7, 118.90 (q, J = 320.8 Hz), 117.1. 19F NMR (377 MHz, CDCl3) \u03b4 -72.64. HRMS (EI) m/z: M+ Calcd for C13H8BrF3O4S 395.9273; Found 395.9268",
+              "text": "OTf\nBr\nPrepared from 4-bromophenol (265 mg, 1 mmol) according to general procedure A. Purified by flash column chromatography (5% EtOAc in hexane). Clear oil (255 mg, 96%). Novel compound.\n1H NMR (400 MHz, CDCl3) \u03b4 7.51 \u2013 7.45 (m, 2H), 7.28 \u2013 7.21 (m, 2H), 7.06 \u2013 6.99 (m, 2H), 6.95 \u2013 6.89 (m, 2H). 13C NMR (101 MHz, CDCl3) \u03b4 156.9, 155.5, 144.9, 133.2, 123.0, 121.3, 119.7, 118.90 (q, J = 320.8 Hz), 117.1. 19F NMR (377 MHz, CDCl3) \u03b4 -72.64. HRMS (EI) m/z: M+ Calcd for C13H8BrF3O4S 395.9273; Found 395.9268",
               "figures": []
             },
             {
               "heading": "quinolin-7-yl trifluoromethanesulfonate (see Figure S2)",
               "page_start": 15,
               "text": "N TfO\n15 Prepared from 7-hydroxyquinoline (290 mg, 2mmol) according to general procedure A to afford a yellow solid (405 mg, 73%). Crude product of sufficient purity to be used immediately. Spectroscopic data consistent with literature.11 1H NMR (400 MHz, CDCl3) \u03b4 9.00 (dd, J = 4.2, 1.7 Hz, 1H), 8.23 (dd, J = 8.4, 1.0 Hz, 1H), 8.04 (d, J = 2.5 Hz, 1H), 7.93 (d, J = 9.0 Hz, 1H), 7.53 \u2013 7.46 (m, 2H). 13C NMR (101 MHz, CDCl3) \u03b4 152.2, 149.8, 148.3, 136.3, 130.4, 127.7, 122.4, 121.3, 120.9, 118.9 (q, J = 320.9, 320.2 Hz). 19F NMR (376 MHz, CDCl3) \u03b4 -72.52. MS (EI) m/z: M+ Calcd for C10H6F3NO3S 277.0; Found 277.0.",
-              "figures": []
+              "figures": [
+                "SI_p15_fig0"
+              ]
             },
             {
               "heading": "1-bromonaphthalen-2-yl trifluoromethanesulfonate (see Figure S2)",
@@ -721,9 +734,12 @@
         {
           "heading": "General procedure for radical probe experiments",
           "page_start": 23,
-          "text": "Fe(OTf)2 (3 mol%) MgBr2\u00b7OEt2 (10 mol%)\ntBu\nCl Bpin radical\nIMes (1.5 mol%)\n+ + B\nOO Bpin\nLi\nprobe\nTHF, 60\u00b0C\n1h 1 eq. 1 eq. 1.2 eq.\n3a\nInside an argon-filled glovebox, a 7 mL vial fitted with a stirrer bar was charged with Fe(OTf)2 (5.3 mg, 0.015 mmol, 0.03 equiv.), IMes (2.6 mg, 0.008 mmol, 0.015 equiv.) and THF (1 mL) and stirred at 60 \u00b0C (aluminium heating block, external temperature) for 30 mins. Chlorobenzene (56 mg, 0.25 mmol, 1 equiv.), MgBr2\u00b7OEt2 (13 mg, 0.05 mmol, 0.1 equiv.), the appropriate radical probe (0.5 mmol, 1 equiv.) and THF (2 mL) were added and the reaction stirred at 60 \u00b0C for a further 15 min. The boronate 1 (190 mg, 0.5 mmol, 1.2 equiv.) was added along with a further 1 mL THF (total reaction volume = 4 mL, 0.125 M wrt chlorobenzene) and the reaction stirred for 1h at 60 \u00b0C. The vial was then removed from the glovebox and cooled to room temperature. Mesitylene (60 mg, 0.5 mmol, 1 equiv.) or 1,3,5-trimethoxybenzene (84 mg, 0.5 mmol, 1 equiv.) was added as internal standard and an aliquot was filtered through a celite pad, which washed with hexane. The combined organics were dried in vacuo and the sample analyzed by 1H NMR spectroscopy and GCMS.\n1 (1.2 eq.) Fe(OTf)2 (3 mol%) MgBr2\u00b7OEt2 (10 mol%)\nIMes (1.5 mol%)\nBpin\nCl\nTEMPO (1 eq.)\na)\nTHF, 60\u00b0C\n1h\n3a (<1%)\n2a\n1 (1.2 eq.) Fe(OTf)2 (3 mol %)\nIMes (1.5 mol %) MgBr2\u00b7OEt2 (10 mol%)\nBpin\nCl\n1,1-DPE\nb) +\nTHF, 60\u00b0C\n2a\n1h 3a (4%)\nScheme S1. Radical probe experiments with a) (2,2,6,6-Tetramethylpiperidin-1-yl)oxyl (TEMPO) b) 1,1- diphenylethylene (1,1-DPE). Conditions: 1 (0.6 mmol),  2 (0.5 mmol), appropriate radical probe (0.5 mmol) MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 mmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture with 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation product shown.\n23",
+          "text": "Fe(OTf)2 (3 mol%) MgBr2\u00b7OEt2 (10 mol%)\ntBu\nCl Bpin radical\n+ +\nBpin\nLi\nprobe\n1h 1 eq. 1 eq. 1.2 eq.\n3a\nInside an argon-filled glovebox, a 7 mL vial fitted with a stirrer bar was charged with Fe(OTf)2 (5.3 mg, 0.015 mmol, 0.03 equiv.), IMes (2.6 mg, 0.008 mmol, 0.015 equiv.) and THF (1 mL) and stirred at 60 \u00b0C (aluminium heating block, external temperature) for 30 mins. Chlorobenzene (56 mg, 0.25 mmol, 1 equiv.), MgBr2\u00b7OEt2 (13 mg, 0.05 mmol, 0.1 equiv.), the appropriate radical probe (0.5 mmol, 1 equiv.) and THF (2 mL) were added and the reaction stirred at 60 \u00b0C for a further 15 min. The boronate 1 (190 mg, 0.5 mmol, 1.2 equiv.) was added along with a further 1 mL THF (total reaction volume = 4 mL, 0.125 M wrt chlorobenzene) and the reaction stirred for 1h at 60 \u00b0C. The vial was then removed from the glovebox and cooled to room temperature. Mesitylene (60 mg, 0.5 mmol, 1 equiv.) or 1,3,5-trimethoxybenzene (84 mg, 0.5 mmol, 1 equiv.) was added as internal standard and an aliquot was filtered through a celite pad, which washed with hexane. The combined organics were dried in vacuo and the sample analyzed by 1H NMR spectroscopy and GCMS.\n1 (1.2 eq.) Fe(OTf)2 (3 mol%) MgBr2\u00b7OEt2 (10 mol%)\nIMes (1.5 mol%)\nBpin\nCl\na)\n1h\n3a (<1%)\n2a\n1 (1.2 eq.) Fe(OTf)2 (3 mol %)\nIMes (1.5 mol %) MgBr2\u00b7OEt2 (10 mol%)\nBpin\nCl\nb) +\nTHF, 60\u00b0C\n2a\n1h 3a (4%)\nScheme S1. Radical probe experiments with a) (2,2,6,6-Tetramethylpiperidin-1-yl)oxyl (TEMPO) b) 1,1- diphenylethylene (1,1-DPE). Conditions: 1 (0.6 mmol),  2 (0.5 mmol), appropriate radical probe (0.5 mmol) MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 mmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture with 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation product shown.\n23",
           "figures": [
-            "SI_p23_fig0"
+            "SI_p23_fig0",
+            "SI_p23_fig1",
+            "SI_p23_fig2",
+            "SI_p23_fig3"
           ]
         }
       ],

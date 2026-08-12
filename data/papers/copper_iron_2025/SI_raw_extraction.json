@@ -3398,13 +3398,13 @@
           "image_id": "SI_p7_fig0",
           "source": "vector_region",
           "bbox": [
-            360.5,
+            221.6,
             351.3,
             435.3,
             410.3
           ],
           "path": "images_SI/page7_fig0.png",
-          "width": 225,
+          "width": 642,
           "height": 178
         },
         {
@@ -4403,13 +4403,13 @@
           "image_id": "SI_p10_fig0",
           "source": "vector_region",
           "bbox": [
-            155.8,
+            130.2,
             109.7,
-            377.9,
+            427.6,
             404.1
           ],
           "path": "images_SI/page10_fig0.png",
-          "width": 667,
+          "width": 893,
           "height": 884
         },
         {
@@ -4582,7 +4582,47 @@
           "text": "H\nOCH3"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p11_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.1,
+            144.1,
+            163.6,
+            193.1
+          ],
+          "path": "images_SI/page11_fig0.png",
+          "width": 269,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p11_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.2,
+            390.0,
+            163.3,
+            439.0
+          ],
+          "path": "images_SI/page11_fig1.png",
+          "width": 268,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p11_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            583.8,
+            164.2,
+            632.9
+          ],
+          "path": "images_SI/page11_fig2.png",
+          "width": 270,
+          "height": 148
+        }
+      ]
     },
     {
       "page_number": 12,
@@ -4749,7 +4789,47 @@
           "text": "H3C"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p12_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.3,
+            106.3,
+            163.8,
+            155.8
+          ],
+          "path": "images_SI/page12_fig0.png",
+          "width": 270,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p12_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.3,
+            305.6,
+            163.9,
+            354.7
+          ],
+          "path": "images_SI/page12_fig1.png",
+          "width": 270,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p12_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.2,
+            521.0,
+            164.2,
+            570.2
+          ],
+          "path": "images_SI/page12_fig2.png",
+          "width": 271,
+          "height": 148
+        }
+      ]
     },
     {
       "page_number": 13,
@@ -4966,7 +5046,60 @@
           "text": "O\nN\nH\nBr"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p13_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            94.4,
+            164.3,
+            143.6
+          ],
+          "path": "images_SI/page13_fig0.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p13_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            284.6,
+            164.7,
+            333.9
+          ],
+          "path": "images_SI/page13_fig1.png",
+          "width": 272,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p13_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.2,
+            474.9,
+            167.5,
+            524.2
+          ],
+          "path": "images_SI/page13_fig2.png",
+          "width": 281,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p13_fig3",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            674.6,
+            166.3,
+            723.4
+          ],
+          "path": "images_SI/page13_fig3.png",
+          "width": 276,
+          "height": 148
+        }
+      ]
     },
     {
       "page_number": 14,
@@ -5183,7 +5316,47 @@
           "text": "OCF3"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p14_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            214.8,
+            161.8,
+            264.8
+          ],
+          "path": "images_SI/page14_fig0.png",
+          "width": 263,
+          "height": 151
+        },
+        {
+          "image_id": "SI_p14_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            437.5,
+            164.0,
+            486.7
+          ],
+          "path": "images_SI/page14_fig1.png",
+          "width": 269,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p14_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.1,
+            676.9,
+            163.7,
+            725.8
+          ],
+          "path": "images_SI/page14_fig2.png",
+          "width": 270,
+          "height": 148
+        }
+      ]
     },
     {
       "page_number": 15,
@@ -5415,26 +5588,39 @@
           "image_id": "SI_p15_fig0",
           "source": "vector_region",
           "bbox": [
-            118.5,
-            420.2,
-            178.6,
-            491.8
+            74.4,
+            211.3,
+            167.2,
+            260.6
           ],
           "path": "images_SI/page15_fig0.png",
-          "width": 181,
-          "height": 216
+          "width": 279,
+          "height": 149
         },
         {
           "image_id": "SI_p15_fig1",
           "source": "vector_region",
           "bbox": [
-            118.2,
+            74.6,
+            420.2,
+            178.6,
+            491.8
+          ],
+          "path": "images_SI/page15_fig1.png",
+          "width": 313,
+          "height": 216
+        },
+        {
+          "image_id": "SI_p15_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.1,
             651.1,
             178.8,
             722.6
           ],
-          "path": "images_SI/page15_fig1.png",
-          "width": 183,
+          "path": "images_SI/page15_fig2.png",
+          "width": 315,
           "height": 215
         }
       ]
@@ -5649,40 +5835,40 @@
           "image_id": "SI_p16_fig0",
           "source": "vector_region",
           "bbox": [
-            133.5,
-            410.1,
-            178.9,
-            460.2
+            74.6,
+            199.6,
+            164.8,
+            249.2
           ],
           "path": "images_SI/page16_fig0.png",
-          "width": 137,
-          "height": 151
+          "width": 272,
+          "height": 150
         },
         {
           "image_id": "SI_p16_fig1",
           "source": "vector_region",
           "bbox": [
-            128.8,
-            641.3,
-            189.4,
-            712.8
+            74.2,
+            410.1,
+            178.9,
+            460.2
           ],
           "path": "images_SI/page16_fig1.png",
-          "width": 183,
-          "height": 216
+          "width": 315,
+          "height": 151
         },
         {
           "image_id": "SI_p16_fig2",
           "source": "vector_region",
           "bbox": [
             74.6,
-            662.1,
-            119.8,
-            712.2
+            641.3,
+            189.4,
+            712.8
           ],
           "path": "images_SI/page16_fig2.png",
-          "width": 137,
-          "height": 151
+          "width": 346,
+          "height": 216
         }
       ]
     },
@@ -5898,12 +6084,38 @@
           "bbox": [
             74.4,
             209.5,
-            119.6,
+            176.8,
             259.6
           ],
           "path": "images_SI/page17_fig0.png",
-          "width": 136,
+          "width": 308,
           "height": 151
+        },
+        {
+          "image_id": "SI_p17_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            468.0,
+            172.0,
+            517.3
+          ],
+          "path": "images_SI/page17_fig1.png",
+          "width": 294,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p17_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            648.4,
+            172.1,
+            697.7
+          ],
+          "path": "images_SI/page17_fig2.png",
+          "width": 294,
+          "height": 148
         }
       ]
     },
@@ -6082,7 +6294,47 @@
           "text": "H\nF"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p18_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            162.8,
+            172.1,
+            212.1
+          ],
+          "path": "images_SI/page18_fig0.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p18_fig1",
+          "source": "vector_region",
+          "bbox": [
+            81.9,
+            337.2,
+            179.5,
+            386.5
+          ],
+          "path": "images_SI/page18_fig1.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p18_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.2,
+            530.2,
+            188.9,
+            579.4
+          ],
+          "path": "images_SI/page18_fig2.png",
+          "width": 345,
+          "height": 149
+        }
+      ]
     },
     {
       "page_number": 19,
@@ -6279,7 +6531,47 @@
           "text": "CH3\nS"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p19_fig0",
+          "source": "vector_region",
+          "bbox": [
+            81.8,
+            90.2,
+            179.5,
+            139.7
+          ],
+          "path": "images_SI/page19_fig0.png",
+          "width": 294,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p19_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.3,
+            302.6,
+            172.0,
+            352.1
+          ],
+          "path": "images_SI/page19_fig1.png",
+          "width": 294,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p19_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.5,
+            546.7,
+            162.2,
+            591.9
+          ],
+          "path": "images_SI/page19_fig2.png",
+          "width": 264,
+          "height": 136
+        }
+      ]
     },
     {
       "page_number": 20,
@@ -6551,27 +6843,53 @@
           "image_id": "SI_p20_fig0",
           "source": "vector_region",
           "bbox": [
-            74.6,
-            504.0,
-            119.8,
-            554.0
+            74.5,
+            99.3,
+            162.1,
+            144.3
           ],
           "path": "images_SI/page20_fig0.png",
-          "width": 137,
-          "height": 150
+          "width": 264,
+          "height": 136
         },
         {
           "image_id": "SI_p20_fig1",
           "source": "vector_region",
           "bbox": [
-            143.9,
-            504.6,
+            74.4,
+            302.1,
+            189.2,
+            351.4
+          ],
+          "path": "images_SI/page20_fig1.png",
+          "width": 345,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p20_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            504.0,
             189.4,
             554.6
           ],
-          "path": "images_SI/page20_fig1.png",
-          "width": 138,
-          "height": 151
+          "path": "images_SI/page20_fig2.png",
+          "width": 346,
+          "height": 152
+        },
+        {
+          "image_id": "SI_p20_fig3",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            712.2,
+            168.9,
+            755.8
+          ],
+          "path": "images_SI/page20_fig3.png",
+          "width": 284,
+          "height": 132
         }
       ]
     },
@@ -6820,7 +7138,47 @@
           "text": "N"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p21_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.1,
+            221.0,
+            169.6,
+            271.3
+          ],
+          "path": "images_SI/page21_fig0.png",
+          "width": 287,
+          "height": 151
+        },
+        {
+          "image_id": "SI_p21_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            403.9,
+            178.1,
+            454.3
+          ],
+          "path": "images_SI/page21_fig1.png",
+          "width": 312,
+          "height": 152
+        },
+        {
+          "image_id": "SI_p21_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            624.2,
+            168.9,
+            667.8
+          ],
+          "path": "images_SI/page21_fig2.png",
+          "width": 284,
+          "height": 132
+        }
+      ]
     },
     {
       "page_number": 22,
@@ -7047,7 +7405,47 @@
           "text": "CH3\nO"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p22_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.7,
+            130.8,
+            166.9,
+            170.6
+          ],
+          "path": "images_SI/page22_fig0.png",
+          "width": 277,
+          "height": 120
+        },
+        {
+          "image_id": "SI_p22_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.4,
+            321.3,
+            174.9,
+            382.0
+          ],
+          "path": "images_SI/page22_fig1.png",
+          "width": 302,
+          "height": 183
+        },
+        {
+          "image_id": "SI_p22_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.1,
+            529.9,
+            161.9,
+            575.9
+          ],
+          "path": "images_SI/page22_fig2.png",
+          "width": 264,
+          "height": 139
+        }
+      ]
     },
     {
       "page_number": 23,
@@ -7229,14 +7627,53 @@
           "image_id": "SI_p23_fig0",
           "source": "vector_region",
           "bbox": [
-            110.8,
+            74.0,
             97.4,
             172.7,
             168.3
           ],
           "path": "images_SI/page23_fig0.png",
-          "width": 186,
+          "width": 296,
           "height": 213
+        },
+        {
+          "image_id": "SI_p23_fig1",
+          "source": "vector_region",
+          "bbox": [
+            73.9,
+            313.8,
+            159.9,
+            359.0
+          ],
+          "path": "images_SI/page23_fig1.png",
+          "width": 259,
+          "height": 137
+        },
+        {
+          "image_id": "SI_p23_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.3,
+            505.0,
+            144.9,
+            533.4
+          ],
+          "path": "images_SI/page23_fig2.png",
+          "width": 213,
+          "height": 87
+        },
+        {
+          "image_id": "SI_p23_fig3",
+          "source": "vector_region",
+          "bbox": [
+            74.0,
+            682.6,
+            173.1,
+            711.1
+          ],
+          "path": "images_SI/page23_fig3.png",
+          "width": 298,
+          "height": 87
         }
       ]
     },
@@ -7435,7 +7872,21 @@
           "text": "(CH2)11CH3\nO"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p24_fig0",
+          "source": "vector_region",
+          "bbox": [
+            94.6,
+            595.7,
+            187.6,
+            636.8
+          ],
+          "path": "images_SI/page24_fig0.png",
+          "width": 280,
+          "height": 125
+        }
+      ]
     },
     {
       "page_number": 25,
@@ -7612,7 +8063,47 @@
           "text": "N\nH\nO"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p25_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.1,
+            90.1,
+            192.6,
+            138.9
+          ],
+          "path": "images_SI/page25_fig0.png",
+          "width": 356,
+          "height": 147
+        },
+        {
+          "image_id": "SI_p25_fig1",
+          "source": "vector_region",
+          "bbox": [
+            94.1,
+            331.5,
+            197.1,
+            376.3
+          ],
+          "path": "images_SI/page25_fig1.png",
+          "width": 310,
+          "height": 135
+        },
+        {
+          "image_id": "SI_p25_fig2",
+          "source": "vector_region",
+          "bbox": [
+            93.7,
+            560.6,
+            198.9,
+            609.0
+          ],
+          "path": "images_SI/page25_fig2.png",
+          "width": 316,
+          "height": 146
+        }
+      ]
     },
     {
       "page_number": 26,
@@ -7819,7 +8310,47 @@
           "text": "CH3"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p26_fig0",
+          "source": "vector_region",
+          "bbox": [
+            94.1,
+            126.0,
+            206.6,
+            170.4
+          ],
+          "path": "images_SI/page26_fig0.png",
+          "width": 338,
+          "height": 135
+        },
+        {
+          "image_id": "SI_p26_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.3,
+            362.3,
+            179.4,
+            410.4
+          ],
+          "path": "images_SI/page26_fig1.png",
+          "width": 317,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p26_fig2",
+          "source": "vector_region",
+          "bbox": [
+            94.1,
+            593.2,
+            201.3,
+            639.5
+          ],
+          "path": "images_SI/page26_fig2.png",
+          "width": 322,
+          "height": 140
+        }
+      ]
     },
     {
       "page_number": 27,
@@ -8036,7 +8567,47 @@
           "text": "OCH3\nOCH3"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p27_fig0",
+          "source": "vector_region",
+          "bbox": [
+            93.8,
+            168.3,
+            196.7,
+            221.2
+          ],
+          "path": "images_SI/page27_fig0.png",
+          "width": 310,
+          "height": 160
+        },
+        {
+          "image_id": "SI_p27_fig1",
+          "source": "vector_region",
+          "bbox": [
+            93.9,
+            398.8,
+            207.1,
+            447.2
+          ],
+          "path": "images_SI/page27_fig1.png",
+          "width": 341,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p27_fig2",
+          "source": "vector_region",
+          "bbox": [
+            93.6,
+            643.7,
+            206.9,
+            692.1
+          ],
+          "path": "images_SI/page27_fig2.png",
+          "width": 341,
+          "height": 146
+        }
+      ]
     },
     {
       "page_number": 28,
@@ -8233,7 +8804,47 @@
           "text": "O\nN\nH\nO2N"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p28_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            213.2,
+            179.6,
+            270.5
+          ],
+          "path": "images_SI/page28_fig0.png",
+          "width": 316,
+          "height": 173
+        },
+        {
+          "image_id": "SI_p28_fig1",
+          "source": "vector_region",
+          "bbox": [
+            93.7,
+            427.6,
+            198.9,
+            476.0
+          ],
+          "path": "images_SI/page28_fig1.png",
+          "width": 316,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p28_fig2",
+          "source": "vector_region",
+          "bbox": [
+            94.3,
+            667.0,
+            191.7,
+            716.3
+          ],
+          "path": "images_SI/page28_fig2.png",
+          "width": 294,
+          "height": 149
+        }
+      ]
     },
     {
       "page_number": 29,
@@ -8455,14 +9066,40 @@
           "image_id": "SI_p29_fig0",
           "source": "vector_region",
           "bbox": [
-            138.3,
-            676.3,
-            192.5,
-            713.5
+            94.6,
+            191.5,
+            207.3,
+            239.8
           ],
           "path": "images_SI/page29_fig0.png",
-          "width": 164,
-          "height": 113
+          "width": 339,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p29_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            416.1,
+            172.3,
+            465.5
+          ],
+          "path": "images_SI/page29_fig1.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p29_fig2",
+          "source": "vector_region",
+          "bbox": [
+            74.3,
+            676.3,
+            192.5,
+            733.4
+          ],
+          "path": "images_SI/page29_fig2.png",
+          "width": 355,
+          "height": 173
         }
       ]
     },
@@ -8636,14 +9273,40 @@
           "image_id": "SI_p30_fig0",
           "source": "vector_region",
           "bbox": [
-            74.2,
-            448.7,
-            131.8,
-            484.7
+            74.1,
+            219.6,
+            169.7,
+            248.1
           ],
           "path": "images_SI/page30_fig0.png",
-          "width": 174,
-          "height": 109
+          "width": 287,
+          "height": 87
+        },
+        {
+          "image_id": "SI_p30_fig1",
+          "source": "vector_region",
+          "bbox": [
+            74.2,
+            427.7,
+            188.9,
+            484.7
+          ],
+          "path": "images_SI/page30_fig1.png",
+          "width": 345,
+          "height": 172
+        },
+        {
+          "image_id": "SI_p30_fig2",
+          "source": "vector_region",
+          "bbox": [
+            85.5,
+            668.0,
+            184.6,
+            717.2
+          ],
+          "path": "images_SI/page30_fig2.png",
+          "width": 298,
+          "height": 149
         }
       ]
     },
@@ -8782,7 +9445,34 @@
           "text": "NO2"
         }
       ],
-      "images": []
+      "images": [
+        {
+          "image_id": "SI_p31_fig0",
+          "source": "vector_region",
+          "bbox": [
+            74.6,
+            191.4,
+            178.3,
+            243.2
+          ],
+          "path": "images_SI/page31_fig0.png",
+          "width": 312,
+          "height": 156
+        },
+        {
+          "image_id": "SI_p31_fig1",
+          "source": "vector_region",
+          "bbox": [
+            85.5,
+            433.6,
+            184.6,
+            483.1
+          ],
+          "path": "images_SI/page31_fig1.png",
+          "width": 298,
+          "height": 150
+        }
+      ]
     },
     {
       "page_number": 32,
@@ -9044,27 +9734,27 @@
           "image_id": "SI_p32_fig0",
           "source": "vector_region",
           "bbox": [
-            128.8,
+            74.5,
             106.3,
             209.4,
             198.1
           ],
           "path": "images_SI/page32_fig0.png",
-          "width": 243,
+          "width": 406,
           "height": 277
         },
         {
           "image_id": "SI_p32_fig1",
           "source": "vector_region",
           "bbox": [
-            175.6,
-            518.6,
-            280.8,
+            89.4,
+            508.7,
+            311.4,
             558.6
           ],
           "path": "images_SI/page32_fig1.png",
-          "width": 317,
-          "height": 121
+          "width": 667,
+          "height": 150
         }
       ]
     },
@@ -9308,27 +9998,27 @@
           "image_id": "SI_p33_fig0",
           "source": "vector_region",
           "bbox": [
-            133.1,
+            75.6,
             144.2,
             178.6,
             237.0
           ],
           "path": "images_SI/page33_fig0.png",
-          "width": 137,
+          "width": 310,
           "height": 279
         },
         {
           "image_id": "SI_p33_fig1",
           "source": "vector_region",
           "bbox": [
-            161.2,
+            93.6,
             391.4,
             245.6,
-            464.9
+            485.8
           ],
           "path": "images_SI/page33_fig1.png",
-          "width": 254,
-          "height": 221
+          "width": 457,
+          "height": 284
         },
         {
           "image_id": "SI_p33_fig2",
@@ -9336,25 +10026,12 @@
           "bbox": [
             74.2,
             670.2,
-            134.4,
-            719.8
-          ],
-          "path": "images_SI/page33_fig2.png",
-          "width": 182,
-          "height": 150
-        },
-        {
-          "image_id": "SI_p33_fig3",
-          "source": "vector_region",
-          "bbox": [
-            143.5,
-            670.8,
             188.9,
             720.4
           ],
-          "path": "images_SI/page33_fig3.png",
-          "width": 137,
-          "height": 150
+          "path": "images_SI/page33_fig2.png",
+          "width": 345,
+          "height": 152
         }
       ]
     },
@@ -9490,37 +10167,24 @@
           "bbox": [
             74.4,
             209.7,
-            120.4,
-            259.8
+            189.1,
+            260.4
           ],
           "path": "images_SI/page34_fig0.png",
-          "width": 139,
-          "height": 151
+          "width": 345,
+          "height": 153
         },
         {
           "image_id": "SI_p34_fig1",
           "source": "vector_region",
           "bbox": [
-            143.7,
-            210.3,
-            189.1,
-            260.4
-          ],
-          "path": "images_SI/page34_fig1.png",
-          "width": 137,
-          "height": 152
-        },
-        {
-          "image_id": "SI_p34_fig2",
-          "source": "vector_region",
-          "bbox": [
-            128.3,
+            74.4,
             455.3,
             175.1,
             526.6
           ],
-          "path": "images_SI/page34_fig2.png",
-          "width": 141,
+          "path": "images_SI/page34_fig1.png",
+          "width": 303,
           "height": 215
         }
       ]
@@ -9595,13 +10259,13 @@
           "image_id": "SI_p35_fig0",
           "source": "vector_region",
           "bbox": [
-            115.5,
+            74.6,
             97.1,
             165.2,
             168.5
           ],
           "path": "images_SI/page35_fig0.png",
-          "width": 150,
+          "width": 273,
           "height": 215
         }
       ]
@@ -9776,17 +10440,43 @@
           "image_id": "SI_p36_fig0",
           "source": "vector_region",
           "bbox": [
+            394.6,
+            172.9,
+            484.1,
+            221.9
+          ],
+          "path": "images_SI/page36_fig0.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p36_fig1",
+          "source": "vector_region",
+          "bbox": [
             82.6,
             312.0,
             512.0,
             388.6
           ],
-          "path": "images_SI/page36_fig0.png",
+          "path": "images_SI/page36_fig1.png",
           "width": 1290,
           "height": 230
         },
         {
-          "image_id": "SI_p36_fig1",
+          "image_id": "SI_p36_fig2",
+          "source": "vector_region",
+          "bbox": [
+            121.4,
+            471.0,
+            264.5,
+            543.9
+          ],
+          "path": "images_SI/page36_fig2.png",
+          "width": 430,
+          "height": 220
+        },
+        {
+          "image_id": "SI_p36_fig3",
           "source": "vector_region",
           "bbox": [
             89.8,
@@ -9794,7 +10484,7 @@
             505.5,
             703.5
           ],
-          "path": "images_SI/page36_fig1.png",
+          "path": "images_SI/page36_fig3.png",
           "width": 1248,
           "height": 393
         }
@@ -9943,12 +10633,25 @@
           "image_id": "SI_p37_fig0",
           "source": "vector_region",
           "bbox": [
+            268.1,
+            173.2,
+            357.2,
+            222.2
+          ],
+          "path": "images_SI/page37_fig0.png",
+          "width": 268,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p37_fig1",
+          "source": "vector_region",
+          "bbox": [
             77.4,
             519.5,
             518.0,
             699.7
           ],
-          "path": "images_SI/page37_fig0.png",
+          "path": "images_SI/page37_fig1.png",
           "width": 1322,
           "height": 542
         }
@@ -10204,17 +10907,43 @@
           "image_id": "SI_p38_fig0",
           "source": "vector_region",
           "bbox": [
+            178.3,
+            166.3,
+            268.1,
+            215.5
+          ],
+          "path": "images_SI/page38_fig0.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p38_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             246.8,
             519.5,
             374.9
           ],
-          "path": "images_SI/page38_fig0.png",
+          "path": "images_SI/page38_fig1.png",
           "width": 1331,
           "height": 385
         },
         {
-          "image_id": "SI_p38_fig1",
+          "image_id": "SI_p38_fig2",
+          "source": "vector_region",
+          "bbox": [
+            232.5,
+            516.1,
+            322.2,
+            565.3
+          ],
+          "path": "images_SI/page38_fig2.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p38_fig3",
           "source": "vector_region",
           "bbox": [
             83.2,
@@ -10222,7 +10951,7 @@
             512.1,
             698.7
           ],
-          "path": "images_SI/page38_fig1.png",
+          "path": "images_SI/page38_fig3.png",
           "width": 1288,
           "height": 282
         }
@@ -10528,17 +11257,43 @@
           "image_id": "SI_p39_fig0",
           "source": "vector_region",
           "bbox": [
+            153.1,
+            195.0,
+            242.6,
+            244.4
+          ],
+          "path": "images_SI/page39_fig0.png",
+          "width": 269,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p39_fig1",
+          "source": "vector_region",
+          "bbox": [
             80.1,
             328.4,
             515.2,
             385.8
           ],
-          "path": "images_SI/page39_fig0.png",
+          "path": "images_SI/page39_fig1.png",
           "width": 1306,
           "height": 173
         },
         {
-          "image_id": "SI_p39_fig1",
+          "image_id": "SI_p39_fig2",
+          "source": "vector_region",
+          "bbox": [
+            155.7,
+            531.6,
+            245.2,
+            581.0
+          ],
+          "path": "images_SI/page39_fig2.png",
+          "width": 270,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p39_fig3",
           "source": "vector_region",
           "bbox": [
             95.2,
@@ -10546,7 +11301,7 @@
             499.5,
             693.7
           ],
-          "path": "images_SI/page39_fig1.png",
+          "path": "images_SI/page39_fig3.png",
           "width": 1214,
           "height": 74
         }
@@ -10802,17 +11557,43 @@
           "image_id": "SI_p40_fig0",
           "source": "vector_region",
           "bbox": [
+            170.2,
+            184.9,
+            259.8,
+            234.0
+          ],
+          "path": "images_SI/page40_fig0.png",
+          "width": 270,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p40_fig1",
+          "source": "vector_region",
+          "bbox": [
             78.6,
             301.9,
             516.7,
             393.3
           ],
-          "path": "images_SI/page40_fig0.png",
+          "path": "images_SI/page40_fig1.png",
           "width": 1316,
           "height": 276
         },
         {
-          "image_id": "SI_p40_fig1",
+          "image_id": "SI_p40_fig2",
+          "source": "vector_region",
+          "bbox": [
+            172.9,
+            531.0,
+            262.5,
+            580.2
+          ],
+          "path": "images_SI/page40_fig2.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p40_fig3",
           "source": "vector_region",
           "bbox": [
             93.5,
@@ -10820,7 +11601,7 @@
             501.8,
             704.5
           ],
-          "path": "images_SI/page40_fig1.png",
+          "path": "images_SI/page40_fig3.png",
           "width": 1226,
           "height": 156
         }
@@ -10996,17 +11777,30 @@
           "image_id": "SI_p41_fig0",
           "source": "vector_region",
           "bbox": [
+            362.2,
+            149.7,
+            452.2,
+            198.9
+          ],
+          "path": "images_SI/page41_fig0.png",
+          "width": 271,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p41_fig1",
+          "source": "vector_region",
+          "bbox": [
             79.0,
             303.5,
             515.7,
             370.4
           ],
-          "path": "images_SI/page41_fig0.png",
+          "path": "images_SI/page41_fig1.png",
           "width": 1312,
           "height": 202
         },
         {
-          "image_id": "SI_p41_fig1",
+          "image_id": "SI_p41_fig2",
           "source": "vector_region",
           "bbox": [
             76.7,
@@ -11014,7 +11808,7 @@
             518.3,
             701.6
           ],
-          "path": "images_SI/page41_fig1.png",
+          "path": "images_SI/page41_fig2.png",
           "width": 1325,
           "height": 615
         }
@@ -11180,17 +11974,43 @@
           "image_id": "SI_p42_fig0",
           "source": "vector_region",
           "bbox": [
+            171.5,
+            176.1,
+            261.5,
+            225.2
+          ],
+          "path": "images_SI/page42_fig0.png",
+          "width": 271,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p42_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             300.6,
             519.2,
             368.4
           ],
-          "path": "images_SI/page42_fig0.png",
+          "path": "images_SI/page42_fig1.png",
           "width": 1330,
           "height": 205
         },
         {
-          "image_id": "SI_p42_fig1",
+          "image_id": "SI_p42_fig2",
+          "source": "vector_region",
+          "bbox": [
+            114.0,
+            481.5,
+            204.0,
+            530.6
+          ],
+          "path": "images_SI/page42_fig2.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p42_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -11198,7 +12018,7 @@
             519.2,
             700.9
           ],
-          "path": "images_SI/page42_fig1.png",
+          "path": "images_SI/page42_fig3.png",
           "width": 1330,
           "height": 349
         }
@@ -11414,17 +12234,43 @@
           "image_id": "SI_p43_fig0",
           "source": "vector_region",
           "bbox": [
+            200.1,
+            178.9,
+            290.4,
+            228.1
+          ],
+          "path": "images_SI/page43_fig0.png",
+          "width": 272,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p43_fig1",
+          "source": "vector_region",
+          "bbox": [
             85.6,
             287.9,
             509.7,
             363.6
           ],
-          "path": "images_SI/page43_fig0.png",
+          "path": "images_SI/page43_fig1.png",
           "width": 1274,
           "height": 228
         },
         {
-          "image_id": "SI_p43_fig1",
+          "image_id": "SI_p43_fig2",
+          "source": "vector_region",
+          "bbox": [
+            268.3,
+            503.3,
+            358.6,
+            552.6
+          ],
+          "path": "images_SI/page43_fig2.png",
+          "width": 272,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p43_fig3",
           "source": "vector_region",
           "bbox": [
             77.3,
@@ -11432,7 +12278,7 @@
             518.0,
             693.3
           ],
-          "path": "images_SI/page43_fig1.png",
+          "path": "images_SI/page43_fig3.png",
           "width": 1324,
           "height": 69
         }
@@ -11638,17 +12484,43 @@
           "image_id": "SI_p44_fig0",
           "source": "vector_region",
           "bbox": [
+            250.8,
+            168.7,
+            344.1,
+            218.0
+          ],
+          "path": "images_SI/page44_fig0.png",
+          "width": 281,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p44_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             301.2,
             506.0,
             367.1
           ],
-          "path": "images_SI/page44_fig0.png",
+          "path": "images_SI/page44_fig1.png",
           "width": 1292,
           "height": 199
         },
         {
-          "image_id": "SI_p44_fig1",
+          "image_id": "SI_p44_fig2",
+          "source": "vector_region",
+          "bbox": [
+            173.0,
+            507.3,
+            266.3,
+            556.5
+          ],
+          "path": "images_SI/page44_fig2.png",
+          "width": 280,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p44_fig3",
           "source": "vector_region",
           "bbox": [
             76.0,
@@ -11656,7 +12528,7 @@
             512.3,
             690.8
           ],
-          "path": "images_SI/page44_fig1.png",
+          "path": "images_SI/page44_fig3.png",
           "width": 1309,
           "height": 241
         }
@@ -12080,6 +12952,32 @@
           "path": "images_SI/page46_raster1.png",
           "width": 1088,
           "height": 760
+        },
+        {
+          "image_id": "SI_p46_fig0",
+          "source": "vector_region",
+          "bbox": [
+            147.2,
+            176.2,
+            234.4,
+            226.1
+          ],
+          "path": "images_SI/page46_fig0.png",
+          "width": 263,
+          "height": 151
+        },
+        {
+          "image_id": "SI_p46_fig1",
+          "source": "vector_region",
+          "bbox": [
+            134.2,
+            511.4,
+            221.4,
+            561.3
+          ],
+          "path": "images_SI/page46_fig1.png",
+          "width": 263,
+          "height": 151
         }
       ]
     },
@@ -12343,17 +13241,43 @@
           "image_id": "SI_p47_fig0",
           "source": "vector_region",
           "bbox": [
+            169.8,
+            170.2,
+            259.4,
+            219.4
+          ],
+          "path": "images_SI/page47_fig0.png",
+          "width": 270,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p47_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             292.4,
             510.2,
             369.7
           ],
-          "path": "images_SI/page47_fig0.png",
+          "path": "images_SI/page47_fig1.png",
           "width": 1303,
           "height": 233
         },
         {
-          "image_id": "SI_p47_fig1",
+          "image_id": "SI_p47_fig2",
+          "source": "vector_region",
+          "bbox": [
+            274.6,
+            520.7,
+            364.2,
+            569.9
+          ],
+          "path": "images_SI/page47_fig2.png",
+          "width": 270,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p47_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -12361,7 +13285,7 @@
             512.8,
             698.1
           ],
-          "path": "images_SI/page47_fig1.png",
+          "path": "images_SI/page47_fig3.png",
           "width": 1311,
           "height": 68
         }
@@ -12627,17 +13551,43 @@
           "image_id": "SI_p48_fig0",
           "source": "vector_region",
           "bbox": [
+            123.6,
+            175.6,
+            213.3,
+            224.5
+          ],
+          "path": "images_SI/page48_fig0.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p48_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             291.4,
             519.2,
             383.8
           ],
-          "path": "images_SI/page48_fig0.png",
+          "path": "images_SI/page48_fig1.png",
           "width": 1330,
           "height": 278
         },
         {
-          "image_id": "SI_p48_fig1",
+          "image_id": "SI_p48_fig2",
+          "source": "vector_region",
+          "bbox": [
+            135.5,
+            509.9,
+            225.2,
+            558.8
+          ],
+          "path": "images_SI/page48_fig2.png",
+          "width": 270,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p48_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -12645,7 +13595,7 @@
             514.4,
             706.6
           ],
-          "path": "images_SI/page48_fig1.png",
+          "path": "images_SI/page48_fig3.png",
           "width": 1316,
           "height": 167
         }
@@ -12881,17 +13831,43 @@
           "image_id": "SI_p49_fig0",
           "source": "vector_region",
           "bbox": [
+            256.7,
+            158.8,
+            349.5,
+            208.0
+          ],
+          "path": "images_SI/page49_fig0.png",
+          "width": 279,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p49_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             317.6,
             519.2,
             368.4
           ],
-          "path": "images_SI/page49_fig0.png",
+          "path": "images_SI/page49_fig1.png",
           "width": 1330,
           "height": 154
         },
         {
-          "image_id": "SI_p49_fig1",
+          "image_id": "SI_p49_fig2",
+          "source": "vector_region",
+          "bbox": [
+            128.6,
+            486.6,
+            221.5,
+            535.9
+          ],
+          "path": "images_SI/page49_fig2.png",
+          "width": 280,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p49_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -12899,7 +13875,7 @@
             519.2,
             688.0
           ],
-          "path": "images_SI/page49_fig1.png",
+          "path": "images_SI/page49_fig3.png",
           "width": 1330,
           "height": 203
         }
@@ -13108,26 +14084,26 @@
           "image_id": "SI_p50_fig0",
           "source": "vector_region",
           "bbox": [
-            230.4,
+            186.5,
             158.8,
             290.4,
             230.3
           ],
           "path": "images_SI/page50_fig0.png",
-          "width": 181,
+          "width": 313,
           "height": 216
         },
         {
           "image_id": "SI_p50_fig1",
           "source": "vector_region",
           "bbox": [
-            174.0,
+            130.1,
             505.8,
             234.1,
             577.4
           ],
           "path": "images_SI/page50_fig1.png",
-          "width": 181,
+          "width": 313,
           "height": 216
         },
         {
@@ -13405,13 +14381,13 @@
           "image_id": "SI_p51_fig0",
           "source": "vector_region",
           "bbox": [
-            224.8,
+            180.7,
             155.2,
             285.3,
             226.7
           ],
           "path": "images_SI/page51_fig0.png",
-          "width": 183,
+          "width": 316,
           "height": 216
         },
         {
@@ -13655,12 +14631,25 @@
           "image_id": "SI_p52_fig0",
           "source": "vector_region",
           "bbox": [
+            151.4,
+            162.3,
+            241.6,
+            211.9
+          ],
+          "path": "images_SI/page52_fig0.png",
+          "width": 271,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p52_fig1",
+          "source": "vector_region",
+          "bbox": [
             91.9,
             429.3,
             503.4,
             676.4
           ],
-          "path": "images_SI/page52_fig0.png",
+          "path": "images_SI/page52_fig1.png",
           "width": 1236,
           "height": 743
         }
@@ -13856,13 +14845,13 @@
           "image_id": "SI_p53_fig0",
           "source": "vector_region",
           "bbox": [
-            287.9,
+            228.6,
             171.2,
             333.3,
             221.3
           ],
           "path": "images_SI/page53_fig0.png",
-          "width": 137,
+          "width": 315,
           "height": 151
         },
         {
@@ -13882,13 +14871,13 @@
           "image_id": "SI_p53_fig2",
           "source": "vector_region",
           "bbox": [
-            424.5,
+            365.2,
             498.4,
             469.9,
             548.4
           ],
           "path": "images_SI/page53_fig2.png",
-          "width": 137,
+          "width": 315,
           "height": 151
         },
         {
@@ -14119,30 +15108,17 @@
           "image_id": "SI_p54_fig1",
           "source": "vector_region",
           "bbox": [
-            180.7,
+            126.5,
             493.1,
             241.3,
             564.6
           ],
           "path": "images_SI/page54_fig1.png",
-          "width": 182,
+          "width": 345,
           "height": 215
         },
         {
           "image_id": "SI_p54_fig2",
-          "source": "vector_region",
-          "bbox": [
-            126.5,
-            513.9,
-            171.7,
-            564.0
-          ],
-          "path": "images_SI/page54_fig2.png",
-          "width": 137,
-          "height": 151
-        },
-        {
-          "image_id": "SI_p54_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -14150,7 +15126,7 @@
             516.0,
             699.2
           ],
-          "path": "images_SI/page54_fig3.png",
+          "path": "images_SI/page54_fig2.png",
           "width": 1321,
           "height": 290
         }
@@ -14411,11 +15387,11 @@
           "bbox": [
             241.5,
             519.9,
-            286.7,
+            343.9,
             569.9
           ],
           "path": "images_SI/page55_fig1.png",
-          "width": 137,
+          "width": 308,
           "height": 151
         },
         {
@@ -14907,17 +15883,43 @@
           "image_id": "SI_p57_fig0",
           "source": "vector_region",
           "bbox": [
+            281.0,
+            176.2,
+            378.4,
+            225.5
+          ],
+          "path": "images_SI/page57_fig0.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p57_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             321.4,
             502.6,
             364.0
           ],
-          "path": "images_SI/page57_fig0.png",
+          "path": "images_SI/page57_fig1.png",
           "width": 1281,
           "height": 128
         },
         {
-          "image_id": "SI_p57_fig1",
+          "image_id": "SI_p57_fig2",
+          "source": "vector_region",
+          "bbox": [
+            280.2,
+            503.5,
+            377.7,
+            552.8
+          ],
+          "path": "images_SI/page57_fig2.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p57_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -14925,7 +15927,7 @@
             515.4,
             693.1
           ],
-          "path": "images_SI/page57_fig1.png",
+          "path": "images_SI/page57_fig3.png",
           "width": 1319,
           "height": 241
         }
@@ -15062,6 +16064,32 @@
           "path": "images_SI/page58_raster1.png",
           "width": 1336,
           "height": 933
+        },
+        {
+          "image_id": "SI_p58_fig0",
+          "source": "vector_region",
+          "bbox": [
+            279.3,
+            159.1,
+            377.0,
+            208.4
+          ],
+          "path": "images_SI/page58_fig0.png",
+          "width": 295,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p58_fig1",
+          "source": "vector_region",
+          "bbox": [
+            186.6,
+            492.1,
+            284.3,
+            541.4
+          ],
+          "path": "images_SI/page58_fig1.png",
+          "width": 294,
+          "height": 149
         }
       ]
     },
@@ -15275,17 +16303,30 @@
           "image_id": "SI_p59_fig0",
           "source": "vector_region",
           "bbox": [
+            275.1,
+            164.4,
+            372.8,
+            213.7
+          ],
+          "path": "images_SI/page59_fig0.png",
+          "width": 294,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p59_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             295.8,
             509.0,
             350.5
           ],
-          "path": "images_SI/page59_fig0.png",
+          "path": "images_SI/page59_fig1.png",
           "width": 1299,
           "height": 165
         },
         {
-          "image_id": "SI_p59_fig1",
+          "image_id": "SI_p59_fig2",
           "source": "vector_region",
           "bbox": [
             76.0,
@@ -15293,7 +16334,7 @@
             508.2,
             681.0
           ],
-          "path": "images_SI/page59_fig1.png",
+          "path": "images_SI/page59_fig2.png",
           "width": 1297,
           "height": 586
         }
@@ -15509,17 +16550,43 @@
           "image_id": "SI_p60_fig0",
           "source": "vector_region",
           "bbox": [
+            273.1,
+            169.8,
+            387.8,
+            219.1
+          ],
+          "path": "images_SI/page60_fig0.png",
+          "width": 345,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p60_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             324.1,
             519.2,
             356.5
           ],
-          "path": "images_SI/page60_fig0.png",
+          "path": "images_SI/page60_fig1.png",
           "width": 1330,
           "height": 98
         },
         {
-          "image_id": "SI_p60_fig1",
+          "image_id": "SI_p60_fig2",
+          "source": "vector_region",
+          "bbox": [
+            349.9,
+            477.0,
+            464.6,
+            526.3
+          ],
+          "path": "images_SI/page60_fig2.png",
+          "width": 345,
+          "height": 148
+        },
+        {
+          "image_id": "SI_p60_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -15527,7 +16594,7 @@
             519.2,
             694.5
           ],
-          "path": "images_SI/page60_fig1.png",
+          "path": "images_SI/page60_fig3.png",
           "width": 1330,
           "height": 169
         }
@@ -15743,17 +16810,43 @@
           "image_id": "SI_p61_fig0",
           "source": "vector_region",
           "bbox": [
+            290.0,
+            169.4,
+            387.7,
+            218.9
+          ],
+          "path": "images_SI/page61_fig0.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p61_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             313.8,
             512.5,
             371.4
           ],
-          "path": "images_SI/page61_fig0.png",
+          "path": "images_SI/page61_fig1.png",
           "width": 1310,
           "height": 174
         },
         {
-          "image_id": "SI_p61_fig1",
+          "image_id": "SI_p61_fig2",
+          "source": "vector_region",
+          "bbox": [
+            283.1,
+            536.3,
+            380.8,
+            585.8
+          ],
+          "path": "images_SI/page61_fig2.png",
+          "width": 294,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p61_fig3",
           "source": "vector_region",
           "bbox": [
             76.0,
@@ -15761,7 +16854,7 @@
             511.4,
             699.7
           ],
-          "path": "images_SI/page61_fig1.png",
+          "path": "images_SI/page61_fig3.png",
           "width": 1307,
           "height": 139
         }
@@ -15938,6 +17031,32 @@
           "path": "images_SI/page62_raster1.png",
           "width": 1088,
           "height": 760
+        },
+        {
+          "image_id": "SI_p62_fig0",
+          "source": "vector_region",
+          "bbox": [
+            296.6,
+            172.8,
+            394.3,
+            222.3
+          ],
+          "path": "images_SI/page62_fig0.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p62_fig1",
+          "source": "vector_region",
+          "bbox": [
+            109.8,
+            495.7,
+            207.5,
+            545.2
+          ],
+          "path": "images_SI/page62_fig1.png",
+          "width": 294,
+          "height": 149
         }
       ]
     },
@@ -16092,6 +17211,32 @@
           "path": "images_SI/page63_raster1.png",
           "width": 1360,
           "height": 949
+        },
+        {
+          "image_id": "SI_p63_fig0",
+          "source": "vector_region",
+          "bbox": [
+            246.5,
+            162.8,
+            334.2,
+            208.0
+          ],
+          "path": "images_SI/page63_fig0.png",
+          "width": 264,
+          "height": 137
+        },
+        {
+          "image_id": "SI_p63_fig1",
+          "source": "vector_region",
+          "bbox": [
+            116.9,
+            501.2,
+            204.6,
+            546.4
+          ],
+          "path": "images_SI/page63_fig1.png",
+          "width": 264,
+          "height": 137
         }
       ]
     },
@@ -16385,17 +17530,43 @@
           "image_id": "SI_p64_fig0",
           "source": "vector_region",
           "bbox": [
+            385.7,
+            144.5,
+            473.3,
+            189.5
+          ],
+          "path": "images_SI/page64_fig0.png",
+          "width": 264,
+          "height": 136
+        },
+        {
+          "image_id": "SI_p64_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             324.1,
             519.2,
             368.4
           ],
-          "path": "images_SI/page64_fig0.png",
+          "path": "images_SI/page64_fig1.png",
           "width": 1330,
           "height": 134
         },
         {
-          "image_id": "SI_p64_fig1",
+          "image_id": "SI_p64_fig2",
+          "source": "vector_region",
+          "bbox": [
+            392.7,
+            505.0,
+            480.3,
+            549.9
+          ],
+          "path": "images_SI/page64_fig2.png",
+          "width": 263,
+          "height": 136
+        },
+        {
+          "image_id": "SI_p64_fig3",
           "source": "vector_region",
           "bbox": [
             76.0,
@@ -16403,7 +17574,7 @@
             517.2,
             699.2
           ],
-          "path": "images_SI/page64_fig1.png",
+          "path": "images_SI/page64_fig3.png",
           "width": 1324,
           "height": 48
         }
@@ -16619,17 +17790,30 @@
           "image_id": "SI_p65_fig0",
           "source": "vector_region",
           "bbox": [
+            266.8,
+            142.7,
+            381.6,
+            192.0
+          ],
+          "path": "images_SI/page65_fig0.png",
+          "width": 345,
+          "height": 150
+        },
+        {
+          "image_id": "SI_p65_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             330.4,
             508.9,
             368.9
           ],
-          "path": "images_SI/page65_fig0.png",
+          "path": "images_SI/page65_fig1.png",
           "width": 1299,
           "height": 116
         },
         {
-          "image_id": "SI_p65_fig1",
+          "image_id": "SI_p65_fig2",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -16637,7 +17821,7 @@
             519.2,
             697.9
           ],
-          "path": "images_SI/page65_fig1.png",
+          "path": "images_SI/page65_fig2.png",
           "width": 1330,
           "height": 633
         }
@@ -17087,17 +18271,43 @@
           "image_id": "SI_p67_fig0",
           "source": "vector_region",
           "bbox": [
+            226.5,
+            186.8,
+            320.9,
+            230.4
+          ],
+          "path": "images_SI/page67_fig0.png",
+          "width": 284,
+          "height": 132
+        },
+        {
+          "image_id": "SI_p67_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             289.3,
             519.2,
             368.4
           ],
-          "path": "images_SI/page67_fig0.png",
+          "path": "images_SI/page67_fig1.png",
           "width": 1330,
           "height": 239
         },
         {
-          "image_id": "SI_p67_fig1",
+          "image_id": "SI_p67_fig2",
+          "source": "vector_region",
+          "bbox": [
+            209.8,
+            508.9,
+            304.1,
+            552.4
+          ],
+          "path": "images_SI/page67_fig2.png",
+          "width": 284,
+          "height": 132
+        },
+        {
+          "image_id": "SI_p67_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -17105,7 +18315,7 @@
             516.6,
             699.7
           ],
-          "path": "images_SI/page67_fig1.png",
+          "path": "images_SI/page67_fig3.png",
           "width": 1322,
           "height": 290
         }
@@ -17344,12 +18554,25 @@
           "image_id": "SI_p68_fig0",
           "source": "vector_region",
           "bbox": [
+            223.7,
+            166.9,
+            319.2,
+            217.2
+          ],
+          "path": "images_SI/page68_fig0.png",
+          "width": 287,
+          "height": 152
+        },
+        {
+          "image_id": "SI_p68_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             446.6,
             519.1,
             695.0
           ],
-          "path": "images_SI/page68_fig0.png",
+          "path": "images_SI/page68_fig1.png",
           "width": 1330,
           "height": 746
         }
@@ -17546,6 +18769,32 @@
           "path": "images_SI/page69_raster1.png",
           "width": 1331,
           "height": 929
+        },
+        {
+          "image_id": "SI_p69_fig0",
+          "source": "vector_region",
+          "bbox": [
+            331.7,
+            151.5,
+            435.1,
+            201.9
+          ],
+          "path": "images_SI/page69_fig0.png",
+          "width": 311,
+          "height": 152
+        },
+        {
+          "image_id": "SI_p69_fig1",
+          "source": "vector_region",
+          "bbox": [
+            394.4,
+            514.7,
+            497.8,
+            565.1
+          ],
+          "path": "images_SI/page69_fig1.png",
+          "width": 311,
+          "height": 152
         }
       ]
     },
@@ -17720,6 +18969,32 @@
           "path": "images_SI/page70_raster1.png",
           "width": 1360,
           "height": 949
+        },
+        {
+          "image_id": "SI_p70_fig0",
+          "source": "vector_region",
+          "bbox": [
+            328.9,
+            170.7,
+            423.3,
+            214.2
+          ],
+          "path": "images_SI/page70_fig0.png",
+          "width": 284,
+          "height": 131
+        },
+        {
+          "image_id": "SI_p70_fig1",
+          "source": "vector_region",
+          "bbox": [
+            361.5,
+            509.9,
+            455.8,
+            553.5
+          ],
+          "path": "images_SI/page70_fig1.png",
+          "width": 284,
+          "height": 132
         }
       ]
     },
@@ -17914,6 +19189,32 @@
           "path": "images_SI/page71_raster1.png",
           "width": 1360,
           "height": 949
+        },
+        {
+          "image_id": "SI_p71_fig0",
+          "source": "vector_region",
+          "bbox": [
+            232.8,
+            170.9,
+            324.7,
+            210.1
+          ],
+          "path": "images_SI/page71_fig0.png",
+          "width": 277,
+          "height": 119
+        },
+        {
+          "image_id": "SI_p71_fig1",
+          "source": "vector_region",
+          "bbox": [
+            137.4,
+            518.4,
+            229.2,
+            557.6
+          ],
+          "path": "images_SI/page71_fig1.png",
+          "width": 276,
+          "height": 118
         }
       ]
     },
@@ -18237,17 +19538,30 @@
           "image_id": "SI_p72_fig0",
           "source": "vector_region",
           "bbox": [
+            184.3,
+            183.5,
+            284.7,
+            244.2
+          ],
+          "path": "images_SI/page72_fig0.png",
+          "width": 303,
+          "height": 183
+        },
+        {
+          "image_id": "SI_p72_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             303.6,
             511.8,
             370.7
           ],
-          "path": "images_SI/page72_fig0.png",
+          "path": "images_SI/page72_fig1.png",
           "width": 1308,
           "height": 203
         },
         {
-          "image_id": "SI_p72_fig1",
+          "image_id": "SI_p72_fig2",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -18255,7 +19569,7 @@
             513.9,
             700.0
           ],
-          "path": "images_SI/page72_fig1.png",
+          "path": "images_SI/page72_fig2.png",
           "width": 1314,
           "height": 572
         }
@@ -18910,6 +20224,32 @@
           "path": "images_SI/page75_raster1.png",
           "width": 1295,
           "height": 904
+        },
+        {
+          "image_id": "SI_p75_fig0",
+          "source": "vector_region",
+          "bbox": [
+            184.1,
+            157.9,
+            270.1,
+            203.2
+          ],
+          "path": "images_SI/page75_fig0.png",
+          "width": 259,
+          "height": 137
+        },
+        {
+          "image_id": "SI_p75_fig1",
+          "source": "vector_region",
+          "bbox": [
+            162.9,
+            508.8,
+            248.9,
+            554.0
+          ],
+          "path": "images_SI/page75_fig1.png",
+          "width": 259,
+          "height": 137
         }
       ]
     },
@@ -19103,17 +20443,30 @@
           "image_id": "SI_p76_fig0",
           "source": "vector_region",
           "bbox": [
+            262.5,
+            171.5,
+            333.1,
+            199.9
+          ],
+          "path": "images_SI/page76_fig0.png",
+          "width": 213,
+          "height": 86
+        },
+        {
+          "image_id": "SI_p76_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             325.6,
             511.4,
             375.6
           ],
-          "path": "images_SI/page76_fig0.png",
+          "path": "images_SI/page76_fig1.png",
           "width": 1307,
           "height": 151
         },
         {
-          "image_id": "SI_p76_fig1",
+          "image_id": "SI_p76_fig2",
           "source": "vector_region",
           "bbox": [
             95.9,
@@ -19121,7 +20474,7 @@
             498.9,
             697.3
           ],
-          "path": "images_SI/page76_fig1.png",
+          "path": "images_SI/page76_fig2.png",
           "width": 1210,
           "height": 548
         }
@@ -19238,6 +20591,32 @@
           "path": "images_SI/page77_raster1.png",
           "width": 1360,
           "height": 949
+        },
+        {
+          "image_id": "SI_p77_fig0",
+          "source": "vector_region",
+          "bbox": [
+            220.7,
+            186.2,
+            319.8,
+            214.6
+          ],
+          "path": "images_SI/page77_fig0.png",
+          "width": 298,
+          "height": 86
+        },
+        {
+          "image_id": "SI_p77_fig1",
+          "source": "vector_region",
+          "bbox": [
+            164.9,
+            508.6,
+            264.0,
+            537.0
+          ],
+          "path": "images_SI/page77_fig1.png",
+          "width": 298,
+          "height": 87
         }
       ]
     },
@@ -19990,6 +21369,32 @@
           "path": "images_SI/page80_raster1.png",
           "width": 1324,
           "height": 924
+        },
+        {
+          "image_id": "SI_p80_fig0",
+          "source": "vector_region",
+          "bbox": [
+            202.3,
+            163.2,
+            295.3,
+            204.3
+          ],
+          "path": "images_SI/page80_fig0.png",
+          "width": 280,
+          "height": 124
+        },
+        {
+          "image_id": "SI_p80_fig1",
+          "source": "vector_region",
+          "bbox": [
+            262.3,
+            507.1,
+            355.3,
+            548.2
+          ],
+          "path": "images_SI/page80_fig1.png",
+          "width": 280,
+          "height": 124
         }
       ]
     },
@@ -20206,14 +21611,40 @@
           "image_id": "SI_p81_fig0",
           "source": "vector_region",
           "bbox": [
+            281.6,
+            165.3,
+            400.2,
+            214.2
+          ],
+          "path": "images_SI/page81_fig0.png",
+          "width": 357,
+          "height": 147
+        },
+        {
+          "image_id": "SI_p81_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             285.5,
             510.3,
             363.0
           ],
-          "path": "images_SI/page81_fig0.png",
+          "path": "images_SI/page81_fig1.png",
           "width": 1304,
           "height": 233
+        },
+        {
+          "image_id": "SI_p81_fig2",
+          "source": "vector_region",
+          "bbox": [
+            299.5,
+            489.2,
+            418.0,
+            538.0
+          ],
+          "path": "images_SI/page81_fig2.png",
+          "width": 357,
+          "height": 148
         }
       ]
     },
@@ -20764,12 +22195,38 @@
           "image_id": "SI_p83_fig0",
           "source": "vector_region",
           "bbox": [
+            309.4,
+            150.2,
+            414.6,
+            198.6
+          ],
+          "path": "images_SI/page83_fig0.png",
+          "width": 316,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p83_fig1",
+          "source": "vector_region",
+          "bbox": [
+            284.2,
+            506.3,
+            389.5,
+            554.7
+          ],
+          "path": "images_SI/page83_fig1.png",
+          "width": 317,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p83_fig2",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             683.4,
             503.3,
             696.0
           ],
-          "path": "images_SI/page83_fig0.png",
+          "path": "images_SI/page83_fig2.png",
           "width": 1283,
           "height": 38
         }
@@ -20926,6 +22383,32 @@
           "path": "images_SI/page84_raster1.png",
           "width": 1088,
           "height": 760
+        },
+        {
+          "image_id": "SI_p84_fig0",
+          "source": "vector_region",
+          "bbox": [
+            259.9,
+            174.4,
+            372.4,
+            218.8
+          ],
+          "path": "images_SI/page84_fig0.png",
+          "width": 339,
+          "height": 134
+        },
+        {
+          "image_id": "SI_p84_fig1",
+          "source": "vector_region",
+          "bbox": [
+            136.7,
+            528.0,
+            249.2,
+            572.4
+          ],
+          "path": "images_SI/page84_fig1.png",
+          "width": 338,
+          "height": 135
         }
       ]
     },
@@ -21080,6 +22563,32 @@
           "path": "images_SI/page85_raster1.png",
           "width": 1088,
           "height": 760
+        },
+        {
+          "image_id": "SI_p85_fig0",
+          "source": "vector_region",
+          "bbox": [
+            154.6,
+            183.7,
+            259.8,
+            231.8
+          ],
+          "path": "images_SI/page85_fig0.png",
+          "width": 317,
+          "height": 145
+        },
+        {
+          "image_id": "SI_p85_fig1",
+          "source": "vector_region",
+          "bbox": [
+            196.1,
+            515.2,
+            301.3,
+            563.3
+          ],
+          "path": "images_SI/page85_fig1.png",
+          "width": 316,
+          "height": 145
         }
       ]
     },
@@ -21306,12 +22815,25 @@
           "image_id": "SI_p86_fig0",
           "source": "vector_region",
           "bbox": [
+            226.9,
+            184.0,
+            332.2,
+            232.4
+          ],
+          "path": "images_SI/page86_fig0.png",
+          "width": 317,
+          "height": 147
+        },
+        {
+          "image_id": "SI_p86_fig1",
+          "source": "vector_region",
+          "bbox": [
             75.8,
             528.2,
             481.8,
             697.4
           ],
-          "path": "images_SI/page86_fig0.png",
+          "path": "images_SI/page86_fig1.png",
           "width": 1219,
           "height": 509
         }
@@ -21540,12 +23062,38 @@
           "image_id": "SI_p87_fig0",
           "source": "vector_region",
           "bbox": [
+            187.5,
+            178.4,
+            290.4,
+            231.4
+          ],
+          "path": "images_SI/page87_fig0.png",
+          "width": 310,
+          "height": 160
+        },
+        {
+          "image_id": "SI_p87_fig1",
+          "source": "vector_region",
+          "bbox": [
+            190.9,
+            529.4,
+            293.8,
+            582.3
+          ],
+          "path": "images_SI/page87_fig1.png",
+          "width": 310,
+          "height": 159
+        },
+        {
+          "image_id": "SI_p87_fig2",
+          "source": "vector_region",
+          "bbox": [
             94.4,
             624.1,
             501.0,
             698.2
           ],
-          "path": "images_SI/page87_fig0.png",
+          "path": "images_SI/page87_fig2.png",
           "width": 1220,
           "height": 223
         }
@@ -21941,17 +23489,43 @@
           "image_id": "SI_p88_fig0",
           "source": "vector_region",
           "bbox": [
+            146.9,
+            201.1,
+            260.1,
+            249.4
+          ],
+          "path": "images_SI/page88_fig0.png",
+          "width": 341,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p88_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             297.0,
             507.6,
             375.5
           ],
-          "path": "images_SI/page88_fig0.png",
+          "path": "images_SI/page88_fig1.png",
           "width": 1295,
           "height": 237
         },
         {
-          "image_id": "SI_p88_fig1",
+          "image_id": "SI_p88_fig2",
+          "source": "vector_region",
+          "bbox": [
+            143.4,
+            534.2,
+            256.6,
+            582.6
+          ],
+          "path": "images_SI/page88_fig2.png",
+          "width": 340,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p88_fig3",
           "source": "vector_region",
           "bbox": [
             75.8,
@@ -21959,7 +23533,7 @@
             481.1,
             699.0
           ],
-          "path": "images_SI/page88_fig1.png",
+          "path": "images_SI/page88_fig3.png",
           "width": 1217,
           "height": 186
         }
@@ -22245,17 +23819,43 @@
           "image_id": "SI_p89_fig0",
           "source": "vector_region",
           "bbox": [
+            206.0,
+            176.6,
+            319.3,
+            225.0
+          ],
+          "path": "images_SI/page89_fig0.png",
+          "width": 340,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p89_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             260.3,
             512.8,
             374.7
           ],
-          "path": "images_SI/page89_fig0.png",
+          "path": "images_SI/page89_fig1.png",
           "width": 1311,
           "height": 344
         },
         {
-          "image_id": "SI_p89_fig1",
+          "image_id": "SI_p89_fig2",
+          "source": "vector_region",
+          "bbox": [
+            107.9,
+            501.6,
+            221.2,
+            550.0
+          ],
+          "path": "images_SI/page89_fig2.png",
+          "width": 341,
+          "height": 147
+        },
+        {
+          "image_id": "SI_p89_fig3",
           "source": "vector_region",
           "bbox": [
             75.9,
@@ -22263,7 +23863,7 @@
             492.1,
             702.8
           ],
-          "path": "images_SI/page89_fig1.png",
+          "path": "images_SI/page89_fig3.png",
           "width": 1250,
           "height": 228
         }
@@ -22440,6 +24040,32 @@
           "path": "images_SI/page90_raster1.png",
           "width": 1088,
           "height": 760
+        },
+        {
+          "image_id": "SI_p90_fig0",
+          "source": "vector_region",
+          "bbox": [
+            126.3,
+            174.6,
+            231.3,
+            231.8
+          ],
+          "path": "images_SI/page90_fig0.png",
+          "width": 316,
+          "height": 173
+        },
+        {
+          "image_id": "SI_p90_fig1",
+          "source": "vector_region",
+          "bbox": [
+            122.5,
+            522.9,
+            227.4,
+            580.2
+          ],
+          "path": "images_SI/page90_fig1.png",
+          "width": 316,
+          "height": 173
         }
       ]
     },
@@ -22703,17 +24329,30 @@
           "image_id": "SI_p91_fig0",
           "source": "vector_region",
           "bbox": [
+            151.5,
+            156.4,
+            256.7,
+            204.7
+          ],
+          "path": "images_SI/page91_fig0.png",
+          "width": 317,
+          "height": 146
+        },
+        {
+          "image_id": "SI_p91_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             327.5,
             512.8,
             371.4
           ],
-          "path": "images_SI/page91_fig0.png",
+          "path": "images_SI/page91_fig1.png",
           "width": 1311,
           "height": 133
         },
         {
-          "image_id": "SI_p91_fig1",
+          "image_id": "SI_p91_fig2",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -22721,7 +24360,7 @@
             512.8,
             701.0
           ],
-          "path": "images_SI/page91_fig1.png",
+          "path": "images_SI/page91_fig2.png",
           "width": 1311,
           "height": 736
         }
@@ -22967,17 +24606,43 @@
           "image_id": "SI_p92_fig0",
           "source": "vector_region",
           "bbox": [
+            161.1,
+            164.0,
+            258.6,
+            213.3
+          ],
+          "path": "images_SI/page92_fig0.png",
+          "width": 293,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p92_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             296.1,
             519.2,
             363.3
           ],
-          "path": "images_SI/page92_fig0.png",
+          "path": "images_SI/page92_fig1.png",
           "width": 1330,
           "height": 202
         },
         {
-          "image_id": "SI_p92_fig1",
+          "image_id": "SI_p92_fig2",
+          "source": "vector_region",
+          "bbox": [
+            144.6,
+            515.8,
+            242.1,
+            565.1
+          ],
+          "path": "images_SI/page92_fig2.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p92_fig3",
           "source": "vector_region",
           "bbox": [
             82.6,
@@ -22985,7 +24650,7 @@
             512.2,
             699.9
           ],
-          "path": "images_SI/page92_fig1.png",
+          "path": "images_SI/page92_fig3.png",
           "width": 1290,
           "height": 235
         }
@@ -23164,12 +24829,25 @@
           "image_id": "SI_p93_fig0",
           "source": "vector_region",
           "bbox": [
+            175.9,
+            161.3,
+            275.3,
+            204.0
+          ],
+          "path": "images_SI/page93_fig0.png",
+          "width": 299,
+          "height": 129
+        },
+        {
+          "image_id": "SI_p93_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             483.8,
             503.8,
             679.7
           ],
-          "path": "images_SI/page93_fig0.png",
+          "path": "images_SI/page93_fig1.png",
           "width": 1285,
           "height": 589
         }
@@ -23385,17 +25063,43 @@
           "image_id": "SI_p94_fig0",
           "source": "vector_region",
           "bbox": [
+            255.2,
+            160.2,
+            352.9,
+            209.5
+          ],
+          "path": "images_SI/page94_fig0.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p94_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             289.3,
             519.2,
             368.4
           ],
-          "path": "images_SI/page94_fig0.png",
+          "path": "images_SI/page94_fig1.png",
           "width": 1330,
           "height": 238
         },
         {
-          "image_id": "SI_p94_fig1",
+          "image_id": "SI_p94_fig2",
+          "source": "vector_region",
+          "bbox": [
+            327.6,
+            510.5,
+            425.3,
+            559.9
+          ],
+          "path": "images_SI/page94_fig2.png",
+          "width": 294,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p94_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -23403,7 +25107,7 @@
             515.7,
             699.7
           ],
-          "path": "images_SI/page94_fig1.png",
+          "path": "images_SI/page94_fig3.png",
           "width": 1320,
           "height": 200
         }
@@ -23682,12 +25386,25 @@
           "image_id": "SI_p95_fig1",
           "source": "vector_region",
           "bbox": [
+            111.7,
+            505.5,
+            220.2,
+            558.0
+          ],
+          "path": "images_SI/page95_fig1.png",
+          "width": 326,
+          "height": 158
+        },
+        {
+          "image_id": "SI_p95_fig2",
+          "source": "vector_region",
+          "bbox": [
             76.1,
             585.5,
             513.9,
             700.3
           ],
-          "path": "images_SI/page95_fig1.png",
+          "path": "images_SI/page95_fig2.png",
           "width": 1314,
           "height": 345
         }
@@ -23804,6 +25521,32 @@
           "path": "images_SI/page96_raster1.png",
           "width": 1088,
           "height": 759
+        },
+        {
+          "image_id": "SI_p96_fig0",
+          "source": "vector_region",
+          "bbox": [
+            158.3,
+            182.6,
+            253.8,
+            211.1
+          ],
+          "path": "images_SI/page96_fig0.png",
+          "width": 288,
+          "height": 87
+        },
+        {
+          "image_id": "SI_p96_fig1",
+          "source": "vector_region",
+          "bbox": [
+            155.6,
+            523.0,
+            251.2,
+            551.4
+          ],
+          "path": "images_SI/page96_fig1.png",
+          "width": 288,
+          "height": 87
         }
       ]
     },
@@ -24251,17 +25994,43 @@
           "image_id": "SI_p98_fig0",
           "source": "vector_region",
           "bbox": [
+            174.4,
+            155.6,
+            273.5,
+            204.9
+          ],
+          "path": "images_SI/page98_fig0.png",
+          "width": 298,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p98_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             324.3,
             509.3,
             362.3
           ],
-          "path": "images_SI/page98_fig0.png",
+          "path": "images_SI/page98_fig1.png",
           "width": 1300,
           "height": 115
         },
         {
-          "image_id": "SI_p98_fig1",
+          "image_id": "SI_p98_fig2",
+          "source": "vector_region",
+          "bbox": [
+            201.2,
+            489.5,
+            300.4,
+            538.8
+          ],
+          "path": "images_SI/page98_fig2.png",
+          "width": 299,
+          "height": 149
+        },
+        {
+          "image_id": "SI_p98_fig3",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -24269,7 +26038,7 @@
             519.2,
             687.4
           ],
-          "path": "images_SI/page98_fig1.png",
+          "path": "images_SI/page98_fig3.png",
           "width": 1330,
           "height": 203
         }
@@ -24468,12 +26237,25 @@
           "image_id": "SI_p99_fig0",
           "source": "vector_region",
           "bbox": [
+            201.6,
+            158.8,
+            305.3,
+            210.5
+          ],
+          "path": "images_SI/page99_fig0.png",
+          "width": 312,
+          "height": 156
+        },
+        {
+          "image_id": "SI_p99_fig1",
+          "source": "vector_region",
+          "bbox": [
             76.0,
             501.7,
             502.8,
             674.5
           ],
-          "path": "images_SI/page99_fig0.png",
+          "path": "images_SI/page99_fig1.png",
           "width": 1282,
           "height": 519
         }
@@ -24729,17 +26511,43 @@
           "image_id": "SI_p100_fig0",
           "source": "vector_region",
           "bbox": [
+            192.2,
+            160.9,
+            282.7,
+            206.0
+          ],
+          "path": "images_SI/page100_fig0.png",
+          "width": 273,
+          "height": 137
+        },
+        {
+          "image_id": "SI_p100_fig1",
+          "source": "vector_region",
+          "bbox": [
             75.9,
             275.3,
             500.6,
             363.9
           ],
-          "path": "images_SI/page100_fig0.png",
+          "path": "images_SI/page100_fig1.png",
           "width": 1275,
           "height": 267
         },
         {
-          "image_id": "SI_p100_fig1",
+          "image_id": "SI_p100_fig2",
+          "source": "vector_region",
+          "bbox": [
+            228.1,
+            505.6,
+            316.8,
+            549.9
+          ],
+          "path": "images_SI/page100_fig2.png",
+          "width": 267,
+          "height": 134
+        },
+        {
+          "image_id": "SI_p100_fig3",
           "source": "vector_region",
           "bbox": [
             76.0,
@@ -24747,7 +26555,7 @@
             512.0,
             691.4
           ],
-          "path": "images_SI/page100_fig1.png",
+          "path": "images_SI/page100_fig3.png",
           "width": 1308,
           "height": 287
         }
@@ -25056,13 +26864,13 @@
           "image_id": "SI_p101_fig0",
           "source": "vector_region",
           "bbox": [
-            221.8,
+            172.5,
             162.0,
             295.1,
             245.4
           ],
           "path": "images_SI/page101_fig0.png",
-          "width": 221,
+          "width": 369,
           "height": 252
         },
         {
@@ -25071,25 +26879,38 @@
           "bbox": [
             400.1,
             440.1,
-            410.2,
+            447.5,
             704.1
           ],
           "path": "images_SI/page101_fig1.png",
-          "width": 31,
+          "width": 143,
           "height": 793
         },
         {
           "image_id": "SI_p101_fig2",
           "source": "vector_region",
           "bbox": [
-            209.4,
+            155.1,
             491.2,
             290.1,
             582.9
           ],
           "path": "images_SI/page101_fig2.png",
-          "width": 243,
+          "width": 406,
           "height": 276
+        },
+        {
+          "image_id": "SI_p101_fig3",
+          "source": "vector_region",
+          "bbox": [
+            143.5,
+            644.2,
+            269.0,
+            704.1
+          ],
+          "path": "images_SI/page101_fig3.png",
+          "width": 377,
+          "height": 181
         }
       ]
     },
@@ -25486,14 +27307,14 @@
           "image_id": "SI_p102_fig0",
           "source": "vector_region",
           "bbox": [
-            203.5,
-            194.7,
-            308.6,
+            117.2,
+            184.8,
+            339.2,
             234.7
           ],
           "path": "images_SI/page102_fig0.png",
-          "width": 316,
-          "height": 121
+          "width": 667,
+          "height": 151
         },
         {
           "image_id": "SI_p102_fig1",
@@ -25512,14 +27333,14 @@
           "image_id": "SI_p102_fig2",
           "source": "vector_region",
           "bbox": [
-            213.7,
-            542.4,
-            318.8,
+            127.4,
+            532.5,
+            349.4,
             582.4
           ],
           "path": "images_SI/page102_fig2.png",
-          "width": 316,
-          "height": 121
+          "width": 667,
+          "height": 151
         }
       ]
     },
@@ -25803,13 +27624,13 @@
           "image_id": "SI_p103_fig0",
           "source": "vector_region",
           "bbox": [
-            397.8,
+            340.4,
             152.6,
             443.3,
             245.4
           ],
           "path": "images_SI/page103_fig0.png",
-          "width": 137,
+          "width": 309,
           "height": 280
         },
         {
@@ -26183,14 +28004,14 @@
           "image_id": "SI_p104_fig0",
           "source": "vector_region",
           "bbox": [
-            417.4,
+            349.7,
             135.6,
             501.8,
-            209.1
+            230.1
           ],
           "path": "images_SI/page104_fig0.png",
-          "width": 254,
-          "height": 222
+          "width": 457,
+          "height": 285
         },
         {
           "image_id": "SI_p104_fig1",
@@ -26209,14 +28030,14 @@
           "image_id": "SI_p104_fig2",
           "source": "vector_region",
           "bbox": [
-            430.2,
+            362.5,
             459.8,
             514.6,
-            533.3
+            554.3
           ],
           "path": "images_SI/page104_fig2.png",
-          "width": 254,
-          "height": 221
+          "width": 457,
+          "height": 284
         }
       ]
     },
@@ -26338,51 +28159,25 @@
           "bbox": [
             177.3,
             197.6,
-            237.5,
-            247.3
+            292.0,
+            247.8
           ],
           "path": "images_SI/page105_fig0.png",
-          "width": 182,
-          "height": 150
+          "width": 346,
+          "height": 152
         },
         {
           "image_id": "SI_p105_fig1",
           "source": "vector_region",
           "bbox": [
-            246.6,
-            198.2,
-            292.0,
-            247.8
-          ],
-          "path": "images_SI/page105_fig1.png",
-          "width": 138,
-          "height": 150
-        },
-        {
-          "image_id": "SI_p105_fig2",
-          "source": "vector_region",
-          "bbox": [
             169.0,
             528.1,
-            229.2,
-            577.7
-          ],
-          "path": "images_SI/page105_fig2.png",
-          "width": 182,
-          "height": 150
-        },
-        {
-          "image_id": "SI_p105_fig3",
-          "source": "vector_region",
-          "bbox": [
-            238.3,
-            528.7,
             283.7,
             578.3
           ],
-          "path": "images_SI/page105_fig3.png",
-          "width": 138,
-          "height": 150
+          "path": "images_SI/page105_fig1.png",
+          "width": 346,
+          "height": 151
         }
       ]
     },
@@ -26581,28 +28376,15 @@
           "bbox": [
             300.5,
             160.1,
-            346.5,
-            210.2
-          ],
-          "path": "images_SI/page106_fig0.png",
-          "width": 139,
-          "height": 151
-        },
-        {
-          "image_id": "SI_p106_fig1",
-          "source": "vector_region",
-          "bbox": [
-            369.8,
-            160.7,
             415.3,
             210.8
           ],
-          "path": "images_SI/page106_fig1.png",
-          "width": 137,
-          "height": 151
+          "path": "images_SI/page106_fig0.png",
+          "width": 345,
+          "height": 153
         },
         {
-          "image_id": "SI_p106_fig2",
+          "image_id": "SI_p106_fig1",
           "source": "vector_region",
           "bbox": [
             76.1,
@@ -26610,35 +28392,22 @@
             515.7,
             366.2
           ],
-          "path": "images_SI/page106_fig2.png",
+          "path": "images_SI/page106_fig1.png",
           "width": 1320,
           "height": 324
         },
         {
-          "image_id": "SI_p106_fig3",
+          "image_id": "SI_p106_fig2",
           "source": "vector_region",
           "bbox": [
             391.6,
             488.3,
-            437.6,
-            538.4
-          ],
-          "path": "images_SI/page106_fig3.png",
-          "width": 139,
-          "height": 152
-        },
-        {
-          "image_id": "SI_p106_fig4",
-          "source": "vector_region",
-          "bbox": [
-            460.9,
-            488.9,
             506.3,
             539.0
           ],
-          "path": "images_SI/page106_fig4.png",
-          "width": 138,
-          "height": 152
+          "path": "images_SI/page106_fig2.png",
+          "width": 346,
+          "height": 154
         }
       ]
     },
@@ -26758,26 +28527,26 @@
           "image_id": "SI_p107_fig0",
           "source": "vector_region",
           "bbox": [
-            445.7,
+            391.8,
             139.0,
             492.5,
             210.2
           ],
           "path": "images_SI/page107_fig0.png",
-          "width": 141,
+          "width": 303,
           "height": 215
         },
         {
           "image_id": "SI_p107_fig1",
           "source": "vector_region",
           "bbox": [
-            240.0,
+            186.1,
             481.1,
             286.8,
             552.4
           ],
           "path": "images_SI/page107_fig1.png",
-          "width": 141,
+          "width": 303,
           "height": 215
         }
       ]
@@ -26918,26 +28687,26 @@
           "image_id": "SI_p108_fig0",
           "source": "vector_region",
           "bbox": [
-            212.8,
+            171.9,
             155.0,
             262.5,
             226.5
           ],
           "path": "images_SI/page108_fig0.png",
-          "width": 150,
+          "width": 273,
           "height": 215
         },
         {
           "image_id": "SI_p108_fig1",
           "source": "vector_region",
           "bbox": [
-            207.6,
+            166.7,
             513.8,
             257.4,
             585.2
           ],
           "path": "images_SI/page108_fig1.png",
-          "width": 151,
+          "width": 273,
           "height": 215
         }
       ]
