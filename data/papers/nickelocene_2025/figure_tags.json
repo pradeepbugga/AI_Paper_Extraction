@@ -2,61 +2,61 @@
   "images/page2_fig0.png": {
     "has_structures": [
       1,
-      "vision_margin=+0.1183"
+      "vision_margin=+0.1104"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0515"
+      "vision_margin=-0.0453"
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.0532"
+      "vision_margin=-0.0399"
     ],
     "is_computed": [
-      0,
-      "vision_margin=-0.0096"
+      1,
+      "vision_margin=+0.0012"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0295"
+      "vision_margin=-0.0230"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.2261"
+      "vision_margin=-0.2369"
     ],
     "is_spectrum": [
-      0,
-      "vision_margin=-0.1988"
+      1,
+      "vision_margin=+0.0275"
     ]
   },
-  "images/page3_raster1.png": {
+  "images/page3_fig0.png": {
     "has_structures": [
-      1,
-      "vision_margin=+0.0901"
+      0,
+      "vision_margin=-0.1172"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0598"
+      "vision_margin=+0.0058"
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.0513"
+      "vision_margin=-0.0056"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0259"
+      "vision_margin=-0.0583"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0411"
+      "vision_margin=-0.0484"
     ],
     "is_photo": [
-      0,
-      "vision_margin=-0.1899"
+      1,
+      "vision_margin=+0.0675"
     ],
     "is_spectrum": [
       1,
-      "vision_margin=+0.1139"
+      "vision_margin=+0.0049"
     ]
   },
   "images/page3_raster0.png": {
@@ -89,400 +89,490 @@
       "vision_margin=-0.1626"
     ]
   },
-  "images/page4_raster0.png": {
+  "images/page4_fig0.png": {
     "has_structures": [
-      1,
-      "vision_margin=+0.1602"
+      0,
+      "vision_margin=-0.1172"
     ],
     "has_grid_layout": [
       0,
+      "vision_margin=+0.0058"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0056"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0583"
+    ],
+    "is_3d": [
+      0,
       "vision_margin=-0.0484"
+    ],
+    "is_photo": [
+      1,
+      "vision_margin=+0.0675"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0049"
+    ]
+  },
+  "images_SI/page4_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0020"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0453"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0365"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0384"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0496"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1312"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0770"
+    ]
+  },
+  "images_SI/page4_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0708"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0403"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0527"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0333"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0470"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1873"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.1158"
+    ]
+  },
+  "images_SI/page5_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0147"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0537"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0397"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0349"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0478"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1497"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0694"
+    ]
+  },
+  "images_SI/page5_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0426"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0848"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0639"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0431"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0310"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1623"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0733"
+    ]
+  },
+  "images_SI/page5_fig2.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0575"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0906"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0622"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0339"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0272"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1689"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0704"
+    ]
+  },
+  "images_SI/page6_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0610"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0802"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0545"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0278"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0253"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1786"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0430"
+    ]
+  },
+  "images_SI/page6_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0670"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0727"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0459"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0137"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0230"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1884"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0640"
+    ]
+  },
+  "images_SI/page6_fig2.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.1003"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0422"
     ],
     "has_plotted_data": [
       0,
       "vision_margin=-0.0503"
     ],
     "is_computed": [
-      1,
-      "vision_margin=+0.0004"
+      0,
+      "vision_margin=-0.0185"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0218"
+      "vision_margin=-0.0360"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.2583"
+      "vision_margin=-0.2298"
     ],
     "is_spectrum": [
       0,
-      "vision_margin=-0.2504"
-    ]
-  },
-  "images_SI/page4_fig0.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1362"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=+0.0051"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0142"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0949"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0672"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0447"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0836"
-    ]
-  },
-  "images_SI/page4_fig1.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1383"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0016"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0221"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0988"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0698"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0505"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0887"
-    ]
-  },
-  "images_SI/page5_fig0.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1265"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=+0.0021"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0128"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0926"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0712"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0309"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0741"
-    ]
-  },
-  "images_SI/page5_fig1.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1453"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=+0.0084"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0105"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0962"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0730"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0561"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0929"
-    ]
-  },
-  "images_SI/page5_fig2.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1322"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0026"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0194"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0896"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0663"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0755"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0870"
-    ]
-  },
-  "images_SI/page6_fig0.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1359"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=+0.0016"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0209"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.1003"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0702"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0585"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0885"
-    ]
-  },
-  "images_SI/page6_fig1.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.1448"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=+0.0072"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0078"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0950"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0765"
-    ],
-    "is_photo": [
-      1,
-      "vision_margin=+0.0494"
-    ],
-    "is_spectrum": [
-      1,
-      "vision_margin=+0.0922"
-    ]
-  },
-  "images_SI/page6_fig2.png": {
-    "has_structures": [
-      0,
-      "vision_margin=-0.0630"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0345"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.0091"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0429"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0321"
-    ],
-    "is_photo": [
-      0,
-      "vision_margin=-0.0986"
-    ],
-    "is_spectrum": [
-      0,
-      "vision_margin=-0.0397"
+      "vision_margin=-0.1901"
     ]
   },
   "images_SI/page7_fig0.png": {
     "has_structures": [
-      0,
-      "vision_margin=-0.0712"
+      1,
+      "vision_margin=+0.0358"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0172"
+      "vision_margin=-0.0627"
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.0207"
+      "vision_margin=-0.0736"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0667"
+      "vision_margin=-0.0723"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0427"
+      "vision_margin=-0.0337"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.0745"
+      "vision_margin=-0.1301"
     ],
     "is_spectrum": [
       0,
-      "vision_margin=-0.0114"
+      "vision_margin=-0.1154"
     ]
   },
   "images_SI/page7_fig1.png": {
     "has_structures": [
-      0,
-      "vision_margin=-0.0686"
+      1,
+      "vision_margin=+0.0878"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0480"
+      "vision_margin=-0.0792"
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.0231"
+      "vision_margin=-0.1071"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0617"
+      "vision_margin=-0.0632"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0351"
+      "vision_margin=-0.0124"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.0825"
+      "vision_margin=-0.1903"
     ],
     "is_spectrum": [
       0,
-      "vision_margin=-0.0182"
+      "vision_margin=-0.1795"
     ]
   },
-  "images_SI/page12_fig0.png": {
+  "images_SI/page7_fig2.png": {
     "has_structures": [
-      1,
-      "vision_margin=+0.1052"
+      0,
+      "vision_margin=-0.0669"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0715"
+      "vision_margin=-0.0267"
     ],
     "has_plotted_data": [
-      0,
-      "vision_margin=-0.0906"
+      1,
+      "vision_margin=+0.0007"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0381"
+      "vision_margin=-0.0490"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0052"
+      "vision_margin=-0.0503"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.2173"
+      "vision_margin=-0.0808"
     ],
     "is_spectrum": [
       0,
-      "vision_margin=-0.2122"
+      "vision_margin=-0.0075"
     ]
   },
-  "images_SI/page15_fig0.png": {
+  "images_SI/page7_fig3.png": {
     "has_structures": [
-      1,
-      "vision_margin=+0.0465"
+      0,
+      "vision_margin=-0.0093"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0879"
+      "vision_margin=-0.0528"
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.1049"
+      "vision_margin=-0.0371"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0739"
+      "vision_margin=-0.0439"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0123"
+      "vision_margin=-0.0473"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.1528"
+      "vision_margin=-0.1144"
     ],
     "is_spectrum": [
       0,
-      "vision_margin=-0.1547"
+      "vision_margin=-0.0824"
     ]
   },
-  "images_SI/page16_fig0.png": {
+  "images_SI/page8_fig0.png": {
+    "has_structures": [
+      0,
+      "vision_margin=-0.0749"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0598"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0451"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0692"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0477"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.0392"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0030"
+    ]
+  },
+  "images_SI/page9_fig0.png": {
     "has_structures": [
       1,
-      "vision_margin=+0.0426"
+      "vision_margin=+0.0070"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0633"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0542"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0434"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0300"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1280"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1141"
+    ]
+  },
+  "images_SI/page10_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0017"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0561"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0588"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0601"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0465"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1037"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.1053"
+    ]
+  },
+  "images_SI/page10_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0495"
     ],
     "has_grid_layout": [
       0,
@@ -490,187 +580,67 @@
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.1022"
+      "vision_margin=-0.1023"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0730"
+      "vision_margin=-0.0583"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0116"
+      "vision_margin=-0.0047"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.1526"
+      "vision_margin=-0.1631"
     ],
     "is_spectrum": [
-      0,
-      "vision_margin=-0.1513"
-    ]
-  },
-  "images_SI/page16_fig1.png": {
-    "has_structures": [
-      1,
-      "vision_margin=+0.0426"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0892"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.1045"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0749"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0115"
-    ],
-    "is_photo": [
-      0,
-      "vision_margin=-0.1521"
-    ],
-    "is_spectrum": [
-      0,
-      "vision_margin=-0.1498"
-    ]
-  },
-  "images_SI/page17_fig0.png": {
-    "has_structures": [
-      1,
-      "vision_margin=+0.0433"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0877"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.1030"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0739"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0114"
-    ],
-    "is_photo": [
       0,
       "vision_margin=-0.1537"
-    ],
-    "is_spectrum": [
-      0,
-      "vision_margin=-0.1507"
     ]
   },
-  "images_SI/page17_fig1.png": {
+  "images_SI/page11_fig0.png": {
     "has_structures": [
       1,
-      "vision_margin=+0.0448"
+      "vision_margin=+0.0456"
     ],
     "has_grid_layout": [
-      0,
-      "vision_margin=-0.0876"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.1022"
-    ],
-    "is_computed": [
-      0,
-      "vision_margin=-0.0720"
-    ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0102"
-    ],
-    "is_photo": [
-      0,
-      "vision_margin=-0.1562"
-    ],
-    "is_spectrum": [
-      0,
-      "vision_margin=-0.1534"
-    ]
-  },
-  "images_SI/page18_fig0.png": {
-    "has_structures": [
-      1,
-      "vision_margin=+0.0468"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0889"
-    ],
-    "has_plotted_data": [
-      0,
-      "vision_margin=-0.1152"
-    ],
-    "is_computed": [
       0,
       "vision_margin=-0.0879"
     ],
-    "is_3d": [
-      0,
-      "vision_margin=-0.0181"
-    ],
-    "is_photo": [
-      0,
-      "vision_margin=-0.1426"
-    ],
-    "is_spectrum": [
-      0,
-      "vision_margin=-0.1461"
-    ]
-  },
-  "images_SI/page21_fig0.png": {
-    "has_structures": [
-      1,
-      "vision_margin=+0.0535"
-    ],
-    "has_grid_layout": [
-      0,
-      "vision_margin=-0.0890"
-    ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.1148"
+      "vision_margin=-0.0941"
     ],
     "is_computed": [
       0,
-      "vision_margin=-0.0878"
+      "vision_margin=-0.0633"
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0257"
+      "vision_margin=-0.0108"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.1413"
+      "vision_margin=-0.1469"
     ],
     "is_spectrum": [
-      1,
-      "vision_margin=+0.0984"
+      0,
+      "vision_margin=-0.1517"
     ]
   },
-  "images_SI/page21_fig1.png": {
+  "images_SI/page11_fig1.png": {
     "has_structures": [
-      0,
-      "vision_margin=-0.0539"
+      1,
+      "vision_margin=+0.0606"
     ],
     "has_grid_layout": [
       0,
-      "vision_margin=-0.0117"
+      "vision_margin=-0.0918"
     ],
     "has_plotted_data": [
       0,
-      "vision_margin=-0.0238"
+      "vision_margin=-0.1071"
     ],
     "is_computed": [
       0,
@@ -678,15 +648,765 @@
     ],
     "is_3d": [
       0,
-      "vision_margin=-0.0524"
+      "vision_margin=-0.0109"
     ],
     "is_photo": [
       0,
-      "vision_margin=-0.0534"
+      "vision_margin=-0.1716"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1634"
+    ]
+  },
+  "images_SI/page11_fig2.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0596"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0896"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1128"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0775"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0112"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1725"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1532"
+    ]
+  },
+  "images_SI/page12_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0944"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0788"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1088"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0669"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0153"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1897"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1919"
+    ]
+  },
+  "images_SI/page12_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0747"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0800"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0915"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0498"
+    ],
+    "is_3d": [
+      1,
+      "vision_margin=+0.0016"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.2024"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1824"
+    ]
+  },
+  "images_SI/page14_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0717"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0844"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1122"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0730"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0125"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1708"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1761"
+    ]
+  },
+  "images_SI/page14_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0618"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0908"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1079"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0722"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0103"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1760"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1610"
+    ]
+  },
+  "images_SI/page15_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0603"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0857"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1055"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0735"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0138"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1741"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1604"
+    ]
+  },
+  "images_SI/page15_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0564"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0943"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1087"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0691"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0058"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1720"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1591"
+    ]
+  },
+  "images_SI/page15_fig2.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0702"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0879"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1030"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0649"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0068"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1782"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1795"
+    ]
+  },
+  "images_SI/page16_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0629"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0812"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1081"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0788"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0139"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1725"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1586"
+    ]
+  },
+  "images_SI/page16_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0732"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0959"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1083"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0624"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0017"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1827"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1814"
+    ]
+  },
+  "images_SI/page17_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0710"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0868"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1045"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0670"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0089"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1777"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1781"
+    ]
+  },
+  "images_SI/page17_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0703"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0824"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1029"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0695"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0113"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1768"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1760"
+    ]
+  },
+  "images_SI/page18_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0560"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0839"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1029"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0754"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0118"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1648"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1570"
+    ]
+  },
+  "images_SI/page18_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0514"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0870"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1014"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0720"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0078"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1632"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1578"
+    ]
+  },
+  "images_SI/page19_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0483"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0875"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0906"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0604"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0073"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1619"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1617"
+    ]
+  },
+  "images_SI/page19_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0420"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0828"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0873"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0602"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0033"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1551"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1590"
+    ]
+  },
+  "images_SI/page19_fig2.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0470"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0899"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0945"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0635"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0054"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1563"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1625"
+    ]
+  },
+  "images_SI/page20_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0490"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0878"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0990"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0706"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0053"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1618"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1577"
+    ]
+  },
+  "images_SI/page20_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0648"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0940"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1059"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0710"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0134"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1634"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1732"
+    ]
+  },
+  "images_SI/page21_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0713"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0945"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.1025"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0632"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0244"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1747"
     ],
     "is_spectrum": [
       1,
-      "vision_margin=+0.0107"
+      "vision_margin=+0.0929"
+    ]
+  },
+  "images_SI/page21_fig1.png": {
+    "has_structures": [
+      0,
+      "vision_margin=-0.0068"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0460"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0571"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0655"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0469"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1075"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0803"
+    ]
+  },
+  "images_SI/page22_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0503"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0769"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0841"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0639"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0402"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1581"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0810"
+    ]
+  },
+  "images_SI/page22_fig1.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0490"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0837"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0731"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0448"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0124"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1773"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1595"
+    ]
+  },
+  "images_SI/page22_fig2.png": {
+    "has_structures": [
+      0,
+      "vision_margin=-0.0124"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0365"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0181"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0174"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0354"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1215"
+    ],
+    "is_spectrum": [
+      1,
+      "vision_margin=+0.0607"
+    ]
+  },
+  "images_SI/page23_fig0.png": {
+    "has_structures": [
+      1,
+      "vision_margin=+0.0789"
+    ],
+    "has_grid_layout": [
+      0,
+      "vision_margin=-0.0903"
+    ],
+    "has_plotted_data": [
+      0,
+      "vision_margin=-0.0764"
+    ],
+    "is_computed": [
+      0,
+      "vision_margin=-0.0312"
+    ],
+    "is_3d": [
+      0,
+      "vision_margin=-0.0156"
+    ],
+    "is_photo": [
+      0,
+      "vision_margin=-0.1923"
+    ],
+    "is_spectrum": [
+      0,
+      "vision_margin=-0.1592"
     ]
   },
   "images_SI/page25_rasterstrip0.png": {

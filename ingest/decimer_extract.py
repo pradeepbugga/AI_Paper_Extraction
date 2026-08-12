@@ -59,44 +59,173 @@ KNOWN_MISSING_ABBREVIATIONS is a small, explicitly-verified list (currently
 just "Ts") of labels confirmed absent from DECIMER's training vocabulary --
 not a guess. See docs/decimer_abbreviation_gaps.md for how to verify and
 add more.
+
+DECIMER Segmentation's `expand` option only dilates the detection mask to
+pull in nearby disconnected ink -- it does not add any whitespace margin
+around the final crop, so segments come out with only a couple pixels
+between the structure and the image edge, and DECIMER's OCSR model (trained
+on RanDepict images with generous margins) can hallucinate on a bond
+sitting right at that boundary. **Tried white-padding every crop before
+OCSR to fix this, then reverted it.** It did fix a real case
+(`copper_iron_2025/page4_fig0_seg1.png`, a chlorobenzene crop: tight-crop
+read `C1=CC=C(C=C1)[Cl]I` at 0.816 confidence, padded read `Cl` correctly
+at 0.897) -- but checking the *original* unpadded confidence on that same
+crop and on every other "fixed" case in a 40-image sample showed all of
+them were already below MEAN_CONFIDENCE_THRESHOLD and therefore already
+correctly flagged for review. Padding added zero net coverage; it only
+recomputed confidence on a modified image, which in one case (a genuine
+R-group scope-table scaffold) pushed a hallucinated
+`...C2=CC=CC=C2.[Pt].[Pt]` above the review threshold -- inventing two
+platinum atoms with no basis in the image and removing a correctly-flagged
+crop from review. Not worth doubling inference cost for a fix the existing
+confidence gate already provides.
+
+GENERIC_SUBSTITUENT_TOKENS catches a different, common case: substrate-scope
+and summary-scheme figures routinely draw one scaffold with a generic
+substituent (R, R1, R2, ..., X, Z) standing in for "varies across the
+table," not a real compound. DECIMER has explicit vocabulary for this --
+it emits a genuine bracket atom like [R] or [R2] rather than
+mis-recognizing it as something else, so this is a plain regex check on
+the SMILES output, no OCR needed. Deliberately excludes Y and Ar even
+though they show up the same way in scheme legends: both are also real
+element symbols (Yttrium, Argon) that legitimately appear in this corpus's
+organometallic structures, so flagging them would false-positive on real
+compounds. This is reported as its own field
+(`has_generic_substituent`), not folded into need_human_review -- these
+crops aren't wrong extractions to correct, they're not real compounds at
+all (a human/schema layer, not a compound inventory, is the right
+consumer of what scaffold+conditions a scheme describes), so downstream
+code should be able to route them differently once that schema layer
+exists rather than presenting them for the same kind of review as a
+misread structure. They still count toward need_human_review for now
+since there's nowhere else to route them yet.
+
+RDKit parseability (`Chem.MolFromSmiles(smiles) is not None`) catches a
+real, separate failure category: syntactically/valence-broken SMILES --
+unrecognized bracket atoms, impossible interhalogens, illegal ring
+closures -- the kind of output that isn't a coherent molecule at all, not
+just a wrong one. Confirmed at corpus scale before adding this: of 1,687
+already-extracted structures, 161 (9.5%) fail to parse, and 103 of those
+were previously accepted silently (only 58 were already caught by the
+other checks) -- essentially free coverage, since this only re-parses the
+SMILES DECIMER already produced, no extra inference.
+
+It is NOT a general correctness check, though -- confirmed directly this
+doesn't catch chemically-valid-but-wrong hallucinations, since RDKit has
+no way to know a result doesn't match the source image: the
+`...C2=CC=CC=C2.[Pt].[Pt]` hallucination from the padding experiment above
+parses fine (bare disconnected atoms are legal), as does an implausible
+280-carbon degenerate chain. Both are individually valid molecules by
+valence rules alone. So this check is a floor (rejects outputs that
+aren't even coherent chemistry), not a ceiling (doesn't validate that a
+valid-looking structure is the *right* one).
+
+The Ts-detection OCR check above has two real gaps, both found by tracing
+a confirmed silent wrong-answer (a Ts-containing structure DECIMER read as
+`C1CN(CCC1C(F)(F)F)[Si]`, reproduced independently on the public web app,
+at 0.934 confidence -- well above the review threshold, and undetected by
+this check). First: it only ran one OCR pass on the whole image. That's
+fine for a tight single-structure crop (what it was originally validated
+against), but the zero-segment fallback path (batch_decimer_extract.py
+runs OCSR on the original uncropped figure when DECIMER Segmentation
+finds nothing) can hand this a much larger, busier image where the label
+is too small relative to the whole frame for one pass to read at all --
+confirmed directly: a 541x401 fallback image's whole-image OCR found
+nothing resembling "Ts", but tiling it 3x3 (same tiling pattern as
+figure_classify.py's LOCAL_TAGS, for the same reason -- recovering
+detail a whole-frame pass downsamples away) read "TsN" at 90% confidence
+in one tile. Second, and more fundamental: the match required an *exact*
+token equal to "ts", but the label routinely fuses with the adjacent atom
+in the source drawing with no separating space (TsN, OTs, NTs, ...), so
+tesseract naturally tokenizes it as one merged word -- "tsn." never equals
+"ts", so even a perfect OCR read on that word would have been silently
+discarded. Switched to substring matching, which would have caught this
+same case even without the tiling fix.
 """
 
 from DECIMER import predict_SMILES
 from PIL import Image
+from rdkit import Chem
+from rdkit import RDLogger
 import pytesseract
+import re
+
+RDLogger.DisableLog("rdApp.*")  # RDKit logs a warning to stderr per parse failure otherwise
 
 MEAN_CONFIDENCE_THRESHOLD = 0.85
 OCR_MIN_CONFIDENCE = 50
 OCR_UPSCALE = 4
+OCR_TILE_THRESHOLD_PX = 400  # see _detected_missing_abbreviations docstring
+OCR_TILE_GRID = (3, 3)
 KNOWN_MISSING_ABBREVIATIONS = {"ts"}
+GENERIC_SUBSTITUENT_PATTERN = re.compile(r"\[(?:R\d*|X|Z)\]")
+
+
+def _has_generic_substituent(smiles):
+    return bool(GENERIC_SUBSTITUENT_PATTERN.search(smiles))
+
+
+def _is_rdkit_valid(smiles):
+    return Chem.MolFromSmiles(smiles) is not None
+
+
+def _ocr_abbreviation_matches(img):
+    """OCRs one image (already cropped to whatever region is being
+    checked) and returns the set of KNOWN_MISSING_ABBREVIATIONS confirmed
+    present via substring match -- see module docstring for why exact
+    token equality silently misses labels fused with an adjacent atom
+    (TsN, OTs, ...)."""
+    scaled = img.resize((img.width * OCR_UPSCALE, img.height * OCR_UPSCALE), Image.LANCZOS)
+    data = pytesseract.image_to_data(scaled, config="--psm 6", output_type=pytesseract.Output.DICT)
+    found = set()
+    for w, c in zip(data["text"], data["conf"]):
+        token = w.strip().lower()
+        if not token or c < OCR_MIN_CONFIDENCE:
+            continue
+        for abbrev in KNOWN_MISSING_ABBREVIATIONS:
+            if abbrev in token:
+                found.add(abbrev)
+    return found
 
 
 def _detected_missing_abbreviations(image_path):
-    img = Image.open(image_path)
-    img = img.resize((img.width * OCR_UPSCALE, img.height * OCR_UPSCALE), Image.LANCZOS)
-    data = pytesseract.image_to_data(img, config="--psm 6", output_type=pytesseract.Output.DICT)
-    return sorted(
-        {
-            w.strip().lower()
-            for w, c in zip(data["text"], data["conf"])
-            if w.strip().lower() in KNOWN_MISSING_ABBREVIATIONS and c >= OCR_MIN_CONFIDENCE
-        }
-    )
+    img = Image.open(image_path).convert("RGB")
+    found = _ocr_abbreviation_matches(img)
+
+    if max(img.size) >= OCR_TILE_THRESHOLD_PX:
+        w, h = img.size
+        rows, cols = OCR_TILE_GRID
+        tile_w, tile_h = w // cols, h // rows
+        for r in range(rows):
+            for c in range(cols):
+                x0, y0 = c * tile_w, r * tile_h
+                x1 = w if c == cols - 1 else x0 + tile_w
+                y1 = h if r == rows - 1 else y0 + tile_h
+                found |= _ocr_abbreviation_matches(img.crop((x0, y0, x1, y1)))
+
+    return sorted(found)
 
 
 def extract_structure(image_path):
     """Returns {"smiles": str, "mean_confidence": float,
-    "need_human_review": bool, "detected_missing_abbreviations": [str]}."""
+    "need_human_review": bool, "detected_missing_abbreviations": [str],
+    "has_generic_substituent": bool, "rdkit_valid": bool}."""
     smiles, tokens_with_confidence = predict_SMILES(image_path, confidence=True)
     confidences = [c for _, c in tokens_with_confidence]
     mean_confidence = float(sum(confidences) / len(confidences)) if confidences else 0.0
 
     detected_missing_abbreviations = _detected_missing_abbreviations(image_path)
+    has_generic_substituent = _has_generic_substituent(smiles)
+    rdkit_valid = _is_rdkit_valid(smiles)
 
     return {
         "smiles": smiles,
         "mean_confidence": mean_confidence,
         "need_human_review": mean_confidence < MEAN_CONFIDENCE_THRESHOLD
-        or bool(detected_missing_abbreviations),
+        or bool(detected_missing_abbreviations)
+        or has_generic_substituent
+        or not rdkit_valid,
         "detected_missing_abbreviations": detected_missing_abbreviations,
+        "has_generic_substituent": has_generic_substituent,
+        "rdkit_valid": rdkit_valid,
     }

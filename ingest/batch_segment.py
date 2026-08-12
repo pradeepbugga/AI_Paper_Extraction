@@ -19,6 +19,7 @@ import time
 from pathlib import Path
 
 import cv2
+from tqdm import tqdm
 from decimer_segmentation import segment_chemical_structures
 
 PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
@@ -42,11 +43,13 @@ def run_paper(paper_dir):
     segments_dir.mkdir(exist_ok=True)
 
     manifest = {}
-    for i, image_path in enumerate(targets, 1):
+    pbar = tqdm(targets, desc=paper_dir.name, unit="fig", mininterval=1.0)
+    for image_path in pbar:
         full_path = paper_dir / image_path
         if not full_path.exists():
-            print(f"  [{i}/{len(targets)}] MISSING {image_path}")
+            tqdm.write(f"  MISSING {image_path}")
             continue
+        pbar.set_postfix_str(image_path[-40:])
         start = time.time()
         img = cv2.imread(str(full_path))
         segments = segment_chemical_structures(img, expand=True)
@@ -60,7 +63,7 @@ def run_paper(paper_dir):
             seg_paths.append(f"segments/{seg_filename}")
 
         manifest[image_path] = seg_paths
-        print(f"  [{i}/{len(targets)}] {image_path} -> {len(seg_paths)} segment(s) ({elapsed:.1f}s)")
+        tqdm.write(f"  {image_path} -> {len(seg_paths)} segment(s) ({elapsed:.1f}s)")
 
     return manifest
 

@@ -18,6 +18,25 @@ routine synthesis prose in nearly every procedure, photographed or not.
 Tags not covered here (has_structures, has_plotted_data) stay vision-only
 on purpose -- captions in this corpus don't reliably describe composition,
 and has_structures in particular is already working well from vision alone.
+
+is_mechanism_related has no vision counterpart at all -- it's caption-only,
+flagging figures that belong to a paper's mechanistic-investigation
+discussion (proposed catalytic cycles, intermediates, DFT pathways), which
+routinely contain theoretical/partial structures DECIMER isn't equipped
+to read (dangling ligand bonds, transition states). Checked against real
+caption/context text before adding: raw "mechanis*" matches 32 figures
+corpus-wide, mostly noise from one shared block of SI procedural text
+reused across ~20 consecutive figures -- but restricted to has_structures=1
+(the only population this tag matters for), it's 13 matches, 0 confirmed
+false positives (spot-checked a sample: a real proposed Fe-NHC
+intermediate, plus ordinary real reagents/products cited as supporting
+evidence in the same mechanistic section -- both legitimately belong to
+"the mechanism discussion" even though only the former is itself a
+theoretical structure). Deliberately not gated on has_structures the way
+has_grid_layout is -- false positives at has_structures=0 are inert (the
+tag is simply unused there), so there's no correctness reason to force it
+off, unlike has_grid_layout where an ungated false positive would be a
+real semantic contradiction.
 """
 
 import re
@@ -33,6 +52,7 @@ MS_MZ_RE = re.compile(r"\bMS\b\s*\(m/z\)", re.IGNORECASE)
 IR_NEAT_RE = re.compile(r"\bIR\b\s*\(neat\)", re.IGNORECASE)
 SCOPE_RE = re.compile(r"substrate scope|\bscope\b", re.IGNORECASE)
 PHOTOGRAPH_RE = re.compile(r"photograph", re.IGNORECASE)
+MECHANISM_RE = re.compile(r"mechanis", re.IGNORECASE)
 
 
 def classify_from_caption(text):
@@ -62,5 +82,8 @@ def classify_from_caption(text):
 
     if PHOTOGRAPH_RE.search(text):
         results["is_photo"] = 1
+
+    if MECHANISM_RE.search(text):
+        results["is_mechanism_related"] = 1
 
     return results

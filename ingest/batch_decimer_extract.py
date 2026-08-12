@@ -2,7 +2,12 @@
 (DECIMER Segmentation's Mask R-CNN) and writes one decimer_results.json per
 paper: {image_path: [{"smiles": str, "mean_confidence": float,
 "need_human_review": bool, "detected_missing_abbreviations": [str],
-"segment_path": str}, ...]}.
+"has_generic_substituent": bool, "rdkit_valid": bool, "segment_path": str},
+...]}. See decimer_extract.py's docstring for what has_generic_substituent
+catches (scope-table/scheme scaffolds with a placeholder R/X/Z group, not a
+real compound -- kept as its own field, not folded silently into
+need_human_review) and what rdkit_valid catches (syntactically/valence-
+broken SMILES -- a floor on coherence, not a correctness check).
 
 A figure normally produces exactly one segment (the isolated structure,
 composite spectrum/labels dropped by the segmentation model), but a
@@ -20,6 +25,8 @@ separate decimer_seg conda env -- see that script's docstring for why).
 import json
 import time
 from pathlib import Path
+
+from tqdm import tqdm
 
 from decimer_extract import extract_structure
 
@@ -44,7 +51,9 @@ def run_paper(paper_dir):
 
     targets = [path for path, tags in all_tags.items() if has_structures(tags)]
     results = {}
-    for i, image_path in enumerate(targets, 1):
+    pbar = tqdm(targets, desc=paper_dir.name, unit="fig", mininterval=1.0)
+    for image_path in pbar:
+        pbar.set_postfix_str(image_path[-40:])
         segment_paths = manifest.get(image_path, [])
         if not segment_paths:
             segment_paths = [image_path]  # nothing segmented -- fall back to the original
@@ -59,8 +68,8 @@ def run_paper(paper_dir):
             result["segment_path"] = segment_path
             elapsed = time.time() - start
             flag = " NEEDS REVIEW" if result["need_human_review"] else ""
-            print(
-                f"  [{i}/{len(targets)}] {image_path} ({segment_path}) "
+            tqdm.write(
+                f"  {image_path} ({segment_path}) "
                 f"conf={result['mean_confidence']:.3f} ({elapsed:.1f}s){flag}"
             )
             entries.append(result)

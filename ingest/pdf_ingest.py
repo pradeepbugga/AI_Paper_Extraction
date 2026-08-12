@@ -268,18 +268,87 @@ def measure_column_gutter(doc, sample_pages=8):
     return min(gutters) if gutters else None
 
 
+CROP_MARGIN_PT = 5.0  # see extract_vector_figures docstring for why this exists
+
+# Atom labels (S, O, N-H, CO2Me, ...) are frequently real embedded PDF text,
+# not vector-drawn glyphs -- page.get_drawings() never sees them, so a crop
+# built purely from vector paths can slice a label in half at the crop edge.
+# Confirmed directly: N-phenylmethanesulfonamide's second "O" (a 3-line text
+# block "N\nH\nO") got cut mid-glyph because the vector-only cluster ended
+# right where that text block did, sized only for its own bond geometry.
+# Checked across a 30-page sample before picking these thresholds: height is
+# a reliable signal (short label-style text blocks top out at 33.4pt in that
+# sample; real prose runs to many more lines), width has a long tail even
+# for short text (a handful of characters can still span 200+pt depending on
+# spacing), so it's capped tighter and backed by an explicit char/line-count
+# gate rather than relied on alone.
+LABEL_TEXT_MAX_WIDTH_PT = 60.0
+LABEL_TEXT_MAX_HEIGHT_PT = 35.0
+LABEL_TEXT_MAX_CHARS = 20
+LABEL_TEXT_MAX_LINES = 5
+
+
+def _label_text_rects(page):
+    rects = []
+    for block in page.get_text("blocks"):
+        x0, y0, x1, y1, text, _, block_type = block
+        if block_type != 0:
+            continue
+        if x1 - x0 > LABEL_TEXT_MAX_WIDTH_PT or y1 - y0 > LABEL_TEXT_MAX_HEIGHT_PT:
+            continue
+        stripped = text.strip()
+        if not stripped or len(stripped) > LABEL_TEXT_MAX_CHARS:
+            continue
+        if text.count("\n") > LABEL_TEXT_MAX_LINES:
+            continue
+        rects.append(fitz.Rect(x0, y0, x1, y1))
+    return rects
+
+
 def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0, pad_x=DEFAULT_PAD_X):
+    """pad_x/pad_y (via cluster_drawing_rects) only ever decide whether two
+    nearby vector-drawing rects get merged into the same cluster -- they are
+    a clustering *tolerance*, never applied to the resulting bbox. A cluster
+    that never merges with anything (a small, isolated, standalone
+    structure -- no neighbor within reach to test against) keeps the exact
+    tight bounding box of its own ink, zero margin, no matter how generous
+    pad_x/pad_y are. Confirmed as the root cause of two separate downstream
+    symptoms discovered independently: DECIMER OCSR misreading a bond that
+    sits exactly on the crop edge (page4_fig0_seg1.png, a chlorobenzene
+    misread as containing a nonexistent iodine), and DECIMER Segmentation
+    detecting zero structures at all on some isolated compounds (15 of 18
+    zero-segment figures corpus-wide traced to this same zero-margin
+    pattern). Fixed at the source here -- a small fixed margin added to
+    every rendered crop -- rather than patched separately in each
+    downstream consumer.
+
+    Small label-style text blocks (see _label_text_rects) are folded into
+    the same clustering pass as the vector rects, for the separate reason
+    above -- atom labels can be real text, not vector paths, and a crop
+    sized only from vector geometry can truncate one. A cluster is kept
+    only if at least one real vector rect intersects it, so a stray small
+    text fragment elsewhere on the page (a footnote marker, a page number)
+    can never form a "figure" on text alone -- it only ever extends an
+    already-real structure cluster.
+    """
     drawings = page.get_drawings()
     if not drawings:
         return []
 
-    rects = [d["rect"] for d in drawings
-             if d["rect"].width > 0 and d["rect"].height > 0 and not is_invisible_drawing(d)]
-    clusters = cluster_drawing_rects(rects, pad_x=pad_x)
+    vector_rects = [d["rect"] for d in drawings
+                     if d["rect"].width > 0 and d["rect"].height > 0 and not is_invisible_drawing(d)]
+    label_rects = _label_text_rects(page)
+    clusters = cluster_drawing_rects(vector_rects + label_rects, pad_x=pad_x)
+    clusters = [c for c in clusters if any(c.intersects(v) for v in vector_rects)]
+    clusters = [
+        fitz.Rect(c.x0 - CROP_MARGIN_PT, c.y0 - CROP_MARGIN_PT, c.x1 + CROP_MARGIN_PT, c.y1 + CROP_MARGIN_PT)
+        for c in clusters
+    ]
     # A drawing can sit partly or entirely in the page's margin/bleed area
-    # (off the visible canvas) -- rare on its own, but merging can absorb
-    # one into an otherwise-valid cluster. Clip to the page's actual bounds
-    # before rendering; drop anything that becomes degenerate as a result.
+    # (off the visible canvas) -- rare on its own, but merging (or the
+    # margin above) can push a cluster there. Clip to the page's actual
+    # bounds before rendering; drop anything that becomes degenerate as a
+    # result.
     clusters = [bbox & page.rect for bbox in clusters]
     clusters = [bbox for bbox in clusters if bbox.width > 0 and bbox.height > 0]
     clusters.sort(key=lambda r: (round(r.y0), r.x0))
