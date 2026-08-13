@@ -220,14 +220,54 @@ JUNK_NUMBER_TOKEN_RE = re.compile(r"^\d{1,3}[a-z]?$")
 JUNK_NUMBER_MIN_CONFIDENCE = 85
 JUNK_MASK_PADDING_PX = 2
 OCR_PAD_PX = 20
+# See _has_too_many_fragments docstring for how this was picked -- corpus-
+# scale sizing at the time: >=10 added 25 new flags, >=8 added 47, >=6
+# added 103, on top of the 659 already flagged by everything else.
+MAX_DISCONNECTED_FRAGMENTS = 8
 
 
 def _has_generic_substituent(smiles):
     return bool(GENERIC_SUBSTITUENT_PATTERN.search(smiles))
 
 
-def _is_rdkit_valid(smiles):
-    return Chem.MolFromSmiles(smiles) is not None
+def _has_too_many_fragments(smiles, mol):
+    """Flags a SMILES with more disconnected fragments than a real single
+    compound (plus maybe one real counterion) would plausibly have -- a
+    cheap, deterministic backstop for a failure mode confirmed by two real
+    cases DECIMER Segmentation can't currently avoid: several compounds
+    packed too tightly for it to detect as separate structures (a dense
+    scope-table row -- copper_iron_2025/page3_fig1_seg13.png and _seg20.png,
+    each 3 real compounds merged into one segment, neither a whitespace nor
+    a vector-geometry gap exists between them at the source PDF level to
+    re-split on), and a milder, more common pattern of DECIMER appending
+    1-2 spurious bare-element fragments ([B], [V], [K], ...) to an
+    otherwise-correctly-read single compound on the same scope-table page.
+    Both produce a SMILES RDKit accepts as syntactically valid (disconnected
+    bare atoms are legal by valence rules alone -- see rdkit_valid's
+    docstring above for the same caveat), so neither is caught by the
+    existing checks; both cases the pipeline actually hit scored 0.90-0.91
+    confidence, comfortably above MEAN_CONFIDENCE_THRESHOLD too.
+
+    MAX_DISCONNECTED_FRAGMENTS=8 was picked by checking the corpus-wide
+    fragment-count distribution among currently-*unflagged* results before
+    trusting a threshold: legitimate single compounds with one real
+    counterion or generic-substituent placeholder cluster at 1-2 fragments
+    (930 of 1358 then-unflagged entries), while the two confirmed seg13/
+    seg20 merge cases sit at 10-12 fragments. 8 was chosen as a margin
+    below the real merge cases without reaching into the much larger
+    population of 2-3 fragment cases, most of which are ordinary salts/
+    placeholders rather than merge artifacts.
+
+    This does NOT fix the underlying DECIMER Segmentation under-splitting
+    (still one crop, one review item covering N real compounds) -- it only
+    ensures the result is never silently accepted as a single correct
+    compound. Falls back to counting "." in the raw SMILES when mol is
+    None (already-invalid SMILES), so an unparseable, heavily-fragmented
+    string doesn't dodge this check just because rdkit_valid already
+    failed it a different way."""
+    if mol is not None:
+        return len(Chem.GetMolFrags(mol)) >= MAX_DISCONNECTED_FRAGMENTS
+    return smiles.count(".") + 1 >= MAX_DISCONNECTED_FRAGMENTS
 
 
 def _ocr_abbreviation_matches(img):
@@ -312,7 +352,8 @@ def _detected_missing_abbreviations(image_path):
 def extract_structure(image_path):
     """Returns {"smiles": str, "mean_confidence": float,
     "need_human_review": bool, "detected_missing_abbreviations": [str],
-    "has_generic_substituent": bool, "rdkit_valid": bool}."""
+    "has_generic_substituent": bool, "rdkit_valid": bool,
+    "too_many_fragments": bool}."""
     original = Image.open(image_path).convert("RGB")
     cleaned = _strip_annotation_text(original)
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
@@ -330,7 +371,9 @@ def extract_structure(image_path):
     # no reason to make it depend on the stripping step succeeding.
     detected_missing_abbreviations = _detected_missing_abbreviations(image_path)
     has_generic_substituent = _has_generic_substituent(smiles)
-    rdkit_valid = _is_rdkit_valid(smiles)
+    mol = Chem.MolFromSmiles(smiles)
+    rdkit_valid = mol is not None
+    too_many_fragments = _has_too_many_fragments(smiles, mol)
 
     return {
         "smiles": smiles,
@@ -338,8 +381,10 @@ def extract_structure(image_path):
         "need_human_review": mean_confidence < MEAN_CONFIDENCE_THRESHOLD
         or bool(detected_missing_abbreviations)
         or has_generic_substituent
-        or not rdkit_valid,
+        or not rdkit_valid
+        or too_many_fragments,
         "detected_missing_abbreviations": detected_missing_abbreviations,
         "has_generic_substituent": has_generic_substituent,
+        "too_many_fragments": too_many_fragments,
         "rdkit_valid": rdkit_valid,
     }
