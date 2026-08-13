@@ -141,10 +141,62 @@ tesseract naturally tokenizes it as one merged word -- "tsn." never equals
 "ts", so even a perfect OCR read on that word would have been silently
 discarded. Switched to substring matching, which would have caught this
 same case even without the tiling fix.
+
+_strip_annotation_text addresses a different, bigger problem than any of
+the above: DECIMER's OCSR isn't robust to *anything* sharing the frame
+besides the structure itself. Found by manually testing a real, confirmed
+example -- a correct core structure with a hallucinated garbage fragment
+appended after a "." -- against the public DECIMER web app: clipping out
+only the nearby "70% (X = Br)" reaction-condition-variant annotation text
+(nothing else changed) took it from a nonsense read
+(`...NC2=NC=CS2.Cl[X1].[Cl-].[Cl-]...`, conf 0.876, RDKit-invalid) to the
+correct structure alone at conf 0.994. The scope-table margin-expansion
+fix above makes this worse, not better, by design -- it was built to
+recover truncated substituent labels, but the same generous margin also
+reliably pulls in this kind of nearby annotation text. So both problems
+share one fix: separate "real chemistry label" text (element symbols,
+substituent abbreviations -- keep) from "incidental annotation" text
+(yield percentages, "(X = Cl)"-style condition variants, compound-ID
+numbers, descriptive words like "Anticancer" -- paint over) before
+DECIMER ever sees the crop, rather than trying to make OCSR itself robust
+to it.
+
+JUNK_ANNOTATION_TOKEN_RE encodes that split as a content pattern, not a
+position, since a rule like "text outside the original tight detection
+box" would also strip real recovered labels (the whole point of the
+margin fix). Checked against real OCR output from the two confirmed cases
+above before trusting it: yield percentages contain "%"; condition
+variants tokenize with stray "(", ")", "=" characters DECIMER's own
+OCSR vocabulary never produces mid-structure; descriptive words are long
+pure-alphabetic runs no real substituent abbreviation matches (COOCH3,
+OCH3, NHBoc all mix in digits or fail the length+pure-alpha test);
+compound-ID numbers are 1-3 digits with an optional *lowercase* letter
+suffix (this corpus's own numbering convention: 3a, 4b, 5d) --
+deliberately excludes an uppercase suffix so a real isotope label like
+13C or 13CH3 is never touched. Applied unconditionally to every crop
+(not just ones already suspected of having extra content) since the
+regex is conservative by construction -- verified directly against every
+real chemistry token seen so far in this corpus (OMe, Cl, H2N, NH2, Br,
+Ts, R2, X1, 13CH3, COOCH3, OCH3) and none of them match.
+
+The bare-digit compound-ID pattern gets a separate, higher confidence bar
+(JUNK_NUMBER_MIN_CONFIDENCE) than everything else, found necessary by a
+real collateral-damage case: a spurious OCR token "4" (conf 62), actually
+a misread fragment of the structure's own "S" ring atom glyph, physically
+overlapped a real "CH3" label's bounding box and masking it corrupted the
+adjacent real label into an unreadable split "C   H3". Every genuine
+compound-ID number seen so far reads at 90+ confidence (29, 52, 5b all
+96); this spurious one didn't clear that bar. The other junk patterns
+(%, parens, =, long words) don't carry this risk the same way -- they
+don't collide with single-glyph misreads of bond/atom line-art the way a
+bare 1-2 digit token can.
 """
 
+import tempfile
+from pathlib import Path
+
 from DECIMER import predict_SMILES
-from PIL import Image
+from PIL import Image, ImageDraw
 from rdkit import Chem
 from rdkit import RDLogger
 import pytesseract
@@ -159,6 +211,15 @@ OCR_TILE_THRESHOLD_PX = 400  # see _detected_missing_abbreviations docstring
 OCR_TILE_GRID = (3, 3)
 KNOWN_MISSING_ABBREVIATIONS = {"ts"}
 GENERIC_SUBSTITUENT_PATTERN = re.compile(r"\[(?:R\d*|X|Z)\]")
+JUNK_ANNOTATION_TOKEN_RE = re.compile(r"%|=|[()]|^[A-Za-z]{6,}$")
+# Compound-ID numbers (3a, 4b, 52, ...) get their own pattern, checked
+# separately at a higher confidence bar -- see _strip_annotation_text
+# docstring for why a bare digit match needs more evidence than the other
+# junk patterns before it's trusted enough to paint over.
+JUNK_NUMBER_TOKEN_RE = re.compile(r"^\d{1,3}[a-z]?$")
+JUNK_NUMBER_MIN_CONFIDENCE = 85
+JUNK_MASK_PADDING_PX = 2
+OCR_PAD_PX = 20
 
 
 def _has_generic_substituent(smiles):
@@ -188,6 +249,48 @@ def _ocr_abbreviation_matches(img):
     return found
 
 
+def _strip_annotation_text(img):
+    """Paints over OCR-detected annotation text (see module docstring) so
+    DECIMER's OCSR only ever sees the structure itself.
+
+    Pads before OCR -- confirmed directly this matters here for the same
+    reason it mattered for DECIMER OCSR and DECIMER Segmentation earlier:
+    annotation text sitting right at the crop's edge (no margin, since it's
+    often the last thing before the original figure's own boundary) reads
+    as unrecognizable noise ("70% (X = Br)" -> "(VA","BT]","ee","ul"...,
+    nothing matching a junk pattern) without padding, and mostly-cleanly
+    with it. The mask coordinates are computed in the padded image's
+    space, so OCR_PAD_PX is subtracted back off before drawing on the
+    unpadded image actually returned."""
+    padded = Image.new("RGB", (img.width + 2 * OCR_PAD_PX, img.height + 2 * OCR_PAD_PX), (255, 255, 255))
+    padded.paste(img, (OCR_PAD_PX, OCR_PAD_PX))
+    scaled = padded.resize((padded.width * OCR_UPSCALE, padded.height * OCR_UPSCALE), Image.LANCZOS)
+    data = pytesseract.image_to_data(scaled, config="--psm 11", output_type=pytesseract.Output.DICT)
+
+    cleaned = img.copy()
+    draw = ImageDraw.Draw(cleaned)
+    for i in range(len(data["text"])):
+        token = data["text"][i].strip()
+        conf = data["conf"][i]
+        if not token:
+            continue
+        is_junk = (conf >= OCR_MIN_CONFIDENCE and JUNK_ANNOTATION_TOKEN_RE.search(token)) or (
+            conf >= JUNK_NUMBER_MIN_CONFIDENCE and JUNK_NUMBER_TOKEN_RE.search(token)
+        )
+        if not is_junk:
+            continue
+        x = data["left"][i] // OCR_UPSCALE - OCR_PAD_PX
+        y = data["top"][i] // OCR_UPSCALE - OCR_PAD_PX
+        w = data["width"][i] // OCR_UPSCALE
+        h = data["height"][i] // OCR_UPSCALE
+        draw.rectangle(
+            [x - JUNK_MASK_PADDING_PX, y - JUNK_MASK_PADDING_PX,
+             x + w + JUNK_MASK_PADDING_PX, y + h + JUNK_MASK_PADDING_PX],
+            fill="white",
+        )
+    return cleaned
+
+
 def _detected_missing_abbreviations(image_path):
     img = Image.open(image_path).convert("RGB")
     found = _ocr_abbreviation_matches(img)
@@ -210,10 +313,21 @@ def extract_structure(image_path):
     """Returns {"smiles": str, "mean_confidence": float,
     "need_human_review": bool, "detected_missing_abbreviations": [str],
     "has_generic_substituent": bool, "rdkit_valid": bool}."""
-    smiles, tokens_with_confidence = predict_SMILES(image_path, confidence=True)
+    original = Image.open(image_path).convert("RGB")
+    cleaned = _strip_annotation_text(original)
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        cleaned.save(tmp.name)
+        tmp_path = tmp.name
+    try:
+        smiles, tokens_with_confidence = predict_SMILES(tmp_path, confidence=True)
+    finally:
+        Path(tmp_path).unlink(missing_ok=True)
     confidences = [c for _, c in tokens_with_confidence]
     mean_confidence = float(sum(confidences) / len(confidences)) if confidences else 0.0
 
+    # The Ts check runs on the original, unstripped image -- "Ts" is a real
+    # structural label JUNK_ANNOTATION_TOKEN_RE never touches, but there's
+    # no reason to make it depend on the stripping step succeeding.
     detected_missing_abbreviations = _detected_missing_abbreviations(image_path)
     has_generic_substituent = _has_generic_substituent(smiles)
     rdkit_valid = _is_rdkit_valid(smiles)
