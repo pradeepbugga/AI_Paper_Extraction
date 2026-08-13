@@ -11,6 +11,51 @@ multi-compound figure can legitimately produce several, and an image with
 no detected structure produces an empty list (batch_decimer_extract.py
 falls back to the original image in that case). Segment crops are written
 alongside the originals under a "segments/" subfolder.
+
+apply_mask (in the decimer_segmentation library) crops to the *exact* tight
+bounding box of its (already mask-expanded) detection -- `image[y:y+h,
+x:x+w]`, zero margin beyond whatever the mask itself covers. Checked
+corpus-wide before trusting this was a real problem, not a one-off: 45.6%
+of all segments had zero margin on the right edge specifically, and a
+20-image visual sample against each one's Stage 1 source found roughly
+70-80% of those were genuine content loss, not just tight-but-complete
+crops -- severity ranged from a clipped subscript (NH2 -> NH) to a
+substituent label disappearing entirely, leaving a dangling unlabeled bond
+(OMe, MeO, F), to a case that reads as a completely different, wrong
+molecule if OCSR'd as-is (a cyano/chlorine-substituted compound whose
+segment showed plain unlabeled methyl stubs instead). None of this is
+visible downstream -- a mis-cropped molecule still parses as valid
+chemistry and can score high OCSR confidence, since the model is reading
+exactly what it was shown.
+
+Fixed by re-cropping ourselves: segment_chemical_structures(...,
+return_bboxes=True) also returns each detection's bounding box in the
+*original* image's coordinate space, so PADDED_BBOX_MARGIN_PX is added on
+every side (clipped to the source image's own bounds -- this can only
+recover real nearby content that Stage 1 already captured, never invent
+new canvas) and the segment is re-cropped from the original image
+ourselves rather than trusting the library's tight crop. Confirmed
+directly on two real truncation cases before picking the margin size: 20px
+only partially recovered a label ("MeO" missing its "M"), 45px fully
+recovered both a missing "MeO" and a missing "Cl". Some cases still don't
+fully recover even then, but not because the margin was too small --
+found one where the expanded crop already exactly matched the full Stage
+1 source image (nothing further to reveal) and the missing content was a
+separate, Stage-1-level left-edge truncation, out of scope here.
+
+A flat 45px margin on every detection is not free on a dense scope-table
+page: two real compounds only ~33px apart (compound 48/49 on
+copper_iron_2025's page3_fig2.png) would get expanded crops that overlap
+by ~57px, bleeding a neighbor's stray fragment into each other's edges.
+Confirmed visually this doesn't corrupt the core structure (it reads
+cleanly; the bleed is peripheral text/ring fragments at the crop's edge),
+but it's needless risk when it's avoidable. compute_safe_margin clamps
+each of the 4 sides independently to at most half the gap to the nearest
+*other* detection that overlaps this one on the perpendicular axis (a true
+row/column neighbor, not a diagonal one a rectangular crop wouldn't
+actually reach) -- so two adjacent detections' expanded crops can touch
+but never overlap, while a detection with no nearby neighbor still gets
+the full margin.
 """
 
 import json
@@ -23,11 +68,40 @@ from tqdm import tqdm
 from decimer_segmentation import segment_chemical_structures
 
 PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PADDED_BBOX_MARGIN_PX = 45
 
 
 def has_structures(tags):
     tag = tags.get("has_structures")
     return bool(tag) and tag[0] == 1
+
+
+def compute_safe_margin(index, bboxes, max_margin):
+    """Returns (left, right, top, bottom) margins for bboxes[index], each
+    independently clamped to at most half the gap to the nearest other
+    detection that's a true row/column neighbor (overlaps this one on the
+    perpendicular axis) in that direction -- see module docstring."""
+    y0, x0, y1, x1 = bboxes[index]
+    left = right = top = bottom = max_margin
+
+    for j, (oy0, ox0, oy1, ox1) in enumerate(bboxes):
+        if j == index:
+            continue
+        vertical_overlap = oy0 <= y1 and oy1 >= y0
+        horizontal_overlap = ox0 <= x1 and ox1 >= x0
+
+        if vertical_overlap:
+            if ox1 <= x0:
+                left = min(left, (x0 - ox1) / 2)
+            if ox0 >= x1:
+                right = min(right, (ox0 - x1) / 2)
+        if horizontal_overlap:
+            if oy1 <= y0:
+                top = min(top, (y0 - oy1) / 2)
+            if oy0 >= y1:
+                bottom = min(bottom, (oy0 - y1) / 2)
+
+    return int(left), int(right), int(top), int(bottom)
 
 
 def run_paper(paper_dir):
@@ -52,12 +126,21 @@ def run_paper(paper_dir):
         pbar.set_postfix_str(image_path[-40:])
         start = time.time()
         img = cv2.imread(str(full_path))
-        segments = segment_chemical_structures(img, expand=True)
+        img_h, img_w = img.shape[:2]
+        _, bboxes = segment_chemical_structures(img, expand=True, return_bboxes=True)
         elapsed = time.time() - start
 
         stem = Path(image_path).stem.replace("/", "_")
         seg_paths = []
-        for seg_idx, seg in enumerate(segments):
+        for seg_idx, (y0, x0, y1, x1) in enumerate(bboxes):
+            m_left, m_right, m_top, m_bottom = compute_safe_margin(seg_idx, bboxes, PADDED_BBOX_MARGIN_PX)
+            py0 = max(0, y0 - m_top)
+            px0 = max(0, x0 - m_left)
+            py1 = min(img_h, y1 + m_bottom)
+            px1 = min(img_w, x1 + m_right)
+            seg = img[py0:py1, px0:px1]
+            if seg.shape[0] == 0 or seg.shape[1] == 0:
+                continue
             seg_filename = f"{stem}_seg{seg_idx}.png"
             cv2.imwrite(str(segments_dir / seg_filename), seg)
             seg_paths.append(f"segments/{seg_filename}")
