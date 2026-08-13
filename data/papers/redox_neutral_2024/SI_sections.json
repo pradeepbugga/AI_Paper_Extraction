@@ -238,9 +238,11 @@
               ]
             }
           ],
-          "preamble": "(pseudo)halides or alkynyl bromides\n0.1 mmol (1.0 equiv.)\nTo a flame-dried reaction tube containing a stirrer bar, the sulfonyl hydrazide (1.0 equiv., 0.10\nmmol), the vinyl halide (iodo, bromo, or triflate, if solid, 1.5 equiv., 0.15 mmol), NiCl2\u2022DME (20 mol%,\n0.02 mmol, 4.4 mg), and dNH2-bipy (20 mol%, 0.02 mmol, 3.7 mg) were added. The vial was capped\nwith a septa cap, then evacuated and backfilled with an inert gas three times. The vinyl halide (iodo,\nbromo, and triflate, if liquid, 1.5 equiv., 0.15 mmol) was added, followed by dry DMF (0.5 mL), then\nthe mixture was stirred (600 rpm) at room temperature for 10 min to dissolve all the solids. Next, while\nstirring, triethylamine (3.6 equiv., 0.36 mmol, 0.05 mL) were added. The reaction mixture was again\nstirred (600 rpm) at room temperature to achieve a homogenous solution (usually less than 2 min), the\nheadspace of the tube was purged with a gentle stream of argon for approximately 10 seconds to remove\nthe air. The tube was tightly sealed, and the reaction was transferred to a stirred (600 rpm), pre-heated\noil bath at 60 \u00b0C and stirred for 3 to 12 hours at 600 rpm.\nAfter TLC analysis showed total consumption of the sulfonyl hydrazides, the reaction was quenched\nwith saturated NH4Cl solution (3 mL) and extracted with diethyl ether (1.5 mL) four times. The organic\nphases were combined, washed with water (10 mL), dried, and evaporated to yield the crude product.\nThe crude product was purified by column chromatography or pTLC on silica gel to give the cross-\ncoupled product.\n21 NiCl2\u2022DME (20 mol%) R4 dNH2-bpy (20 mol%) R2 R4 DMF (0.2 M) X R5 R1 R5 Et3N (3.0 equiv.), 60 \u00b0C R3 R3 3-12 h, Ar (0.1 mmol scale) 0.15 mmol (1.5 equiv.)",
+          "preamble": "(pseudo)halides or alkynyl bromides\nTo a flame-dried reaction tube containing a stirrer bar, the sulfonyl hydrazide (1.0 equiv., 0.10\nmmol), the vinyl halide (iodo, bromo, or triflate, if solid, 1.5 equiv., 0.15 mmol), NiCl2\u2022DME (20 mol%,\n0.02 mmol, 4.4 mg), and dNH2-bipy (20 mol%, 0.02 mmol, 3.7 mg) were added. The vial was capped\nwith a septa cap, then evacuated and backfilled with an inert gas three times. The vinyl halide (iodo,\nbromo, and triflate, if liquid, 1.5 equiv., 0.15 mmol) was added, followed by dry DMF (0.5 mL), then\nthe mixture was stirred (600 rpm) at room temperature for 10 min to dissolve all the solids. Next, while\nstirring, triethylamine (3.6 equiv., 0.36 mmol, 0.05 mL) were added. The reaction mixture was again\nstirred (600 rpm) at room temperature to achieve a homogenous solution (usually less than 2 min), the\nheadspace of the tube was purged with a gentle stream of argon for approximately 10 seconds to remove\nthe air. The tube was tightly sealed, and the reaction was transferred to a stirred (600 rpm), pre-heated\noil bath at 60 \u00b0C and stirred for 3 to 12 hours at 600 rpm.\nAfter TLC analysis showed total consumption of the sulfonyl hydrazides, the reaction was quenched\nwith saturated NH4Cl solution (3 mL) and extracted with diethyl ether (1.5 mL) four times. The organic\nphases were combined, washed with water (10 mL), dried, and evaporated to yield the crude product.\nThe crude product was purified by column chromatography or pTLC on silica gel to give the cross-\ncoupled product.\n21 NiCl2\u2022DME (20 mol%) R2 R4 R1 R5 R3",
           "figures": [
-            "SI_p21_fig0"
+            "SI_p21_fig0",
+            "SI_p21_fig1",
+            "SI_p21_fig2"
           ]
         },
         {
@@ -257,9 +259,11 @@
               ]
             }
           ],
-          "preamble": "R\n+\nBr\n0.1 mmol (1.0 equiv.)\n0.15 mmol (1.5 equiv.)\nTo a flame-dried reaction tube containing a stirrer bar, the sulfonyl hydrazide (1.0 equiv., 0.10\nmmol), the alkynyl halide (iodo or bromo, if solid, 1.5 equiv., 0.15 mmol), NiCl2\u2022DME (20 mol%, 0.02\nmmol, 4.4 mg), and dNH2-bipy (20 mol%, 0.02 mmol, 3.7 mg) were added. The vial was capped with\na septa cap, then evacuated and backfilled with an inert gas three times. The alkynyl bromide (if liquid,\n1.5 equiv., 0.15 mmol) was added, followed by dry DMF (0.5 mL), then the mixture was stirred (600\nrpm) at room temperature for 10 min to dissolve all the solids. Next, while stirring, triethylamine (3.6\nequiv., 0.36 mmol, 0.05 mL) were added. The reaction mixture was again stirred (600 rpm) at room\ntemperature to achieve a homogenous solution (usually less than 2 min), the headspace of the tube was\npurged with a gentle stream of argon for approximately 10 seconds to remove the air. The tube was\ntightly sealed, and the reaction was transferred to a stirred (600 rpm), pre-heated oil bath at 60 \u00b0C and\nstirred for 3 hours at 600 rpm.\nAfter TLC analysis showed total consumption of the sulfonyl hydrazides, the reaction was\nquenched with saturated NH4Cl solution (3 mL) and extracted with diethyl ether (1.5 mL) four times.\nThe organic phases were combined, washed with water (10 mL), dried, and evaporated to yield the\ncrude product. The crude product was purified by column chromatography or pTLC on silica gel to give\nthe cross-coupled product.\n23 Ni(dme)Cl2 (20 mol%) dNH2-bpy (20 mol%) R2 DMF (0.2 M) R1 Et3N (3.0 equiv.), 60 \u00b0C R3 3 h, Ar (0.1 mmol scale) C(sp2)\u2013C(sp3) coupled product",
+          "preamble": "Ni(dme)Cl2 (20 mol%)\nR\n+\nBr\n0.15 mmol (1.5 equiv.)\nTo a flame-dried reaction tube containing a stirrer bar, the sulfonyl hydrazide (1.0 equiv., 0.10\nmmol), the alkynyl halide (iodo or bromo, if solid, 1.5 equiv., 0.15 mmol), NiCl2\u2022DME (20 mol%, 0.02\nmmol, 4.4 mg), and dNH2-bipy (20 mol%, 0.02 mmol, 3.7 mg) were added. The vial was capped with\na septa cap, then evacuated and backfilled with an inert gas three times. The alkynyl bromide (if liquid,\n1.5 equiv., 0.15 mmol) was added, followed by dry DMF (0.5 mL), then the mixture was stirred (600\nrpm) at room temperature for 10 min to dissolve all the solids. Next, while stirring, triethylamine (3.6\nequiv., 0.36 mmol, 0.05 mL) were added. The reaction mixture was again stirred (600 rpm) at room\ntemperature to achieve a homogenous solution (usually less than 2 min), the headspace of the tube was\npurged with a gentle stream of argon for approximately 10 seconds to remove the air. The tube was\ntightly sealed, and the reaction was transferred to a stirred (600 rpm), pre-heated oil bath at 60 \u00b0C and\nstirred for 3 hours at 600 rpm.\nAfter TLC analysis showed total consumption of the sulfonyl hydrazides, the reaction was\nquenched with saturated NH4Cl solution (3 mL) and extracted with diethyl ether (1.5 mL) four times.\nThe organic phases were combined, washed with water (10 mL), dried, and evaporated to yield the\ncrude product. The crude product was purified by column chromatography or pTLC on silica gel to give\nthe cross-coupled product.\n23",
           "figures": [
-            "SI_p23_fig0"
+            "SI_p23_fig0",
+            "SI_p23_fig1",
+            "SI_p23_fig2"
           ]
         },
         {
@@ -515,12 +519,10 @@
         {
           "heading": "5.2 Optimization on alkenylation of sulfonyl hydrazides",
           "page_start": 41,
-          "text": "C(sp2)\u2013C(sp3) coupled product 0.1 mmol (1.0 equiv.)\n0.15 mmol (1.5 equiv.)\nstandard pimperidine, 75 \u00b0C pimperidine instead of Et3N (60 \u00b0C)\nbpy instead of dNH2-bpy dtbbpy instead of dNH2-bipy dMeO-bipy instead of dNH2-bipy Bathophenoroline instead of dNH2-bipy 2,6-di(1-pyrazolyl)pyridine  instead of dNH2-bipy Ts instead of SO2Ar (3,5-dF-Ph)\nr.t. instead of 60 \u00b0C vinyl iodide (1.0 eq.), hydrazide (1.5 eq.)\nSI-xxa SI-xxb SI-xxc SI-xxd\nCompounds SI-xxa, SI-xxb, SI-xxc and SI-xxd were prepared through previous literatures:\na. S. J. Harwood et al., Science 375, 745\u2013752 (2022).\nb. Milner E. E. B. Lasonolide A: Synthetic explorations[M]. The University of North\nCarolina at Chapel Hill, 2007.\nc. Kremsmair, A.; Skotnitzki, J.; Knochel, P. Chem. Eur. J. 26, 11971\u221211973 (2020).\nd. Golling, S.; Leroux, F. R.; Donnard, M. Org. Lett. 23, 8093\u22128097 (2021).\ne. Y, Ni et al. Org. Lett. 26, 7398\u22127402 (2024).\n41 (0.1 mmol scale) 66% (65% isolated) 56% (55% isolated) 57% 51% n.d. 53% 48% 21% 34% 29% 61% TfO SI-xxe",
+          "text": "pimperidine instead of Et3N (60 \u00b0C)\nbpy instead of dNH2-bpy dtbbpy instead of dNH2-bipy dMeO-bipy instead of dNH2-bipy Bathophenoroline instead of dNH2-bipy 2,6-di(1-pyrazolyl)pyridine  instead of dNH2-bipy Ts instead of SO2Ar (3,5-dF-Ph)\nr.t. instead of 60 \u00b0C vinyl iodide (1.0 eq.), hydrazide (1.5 eq.)\nSI-xxa SI-xxb SI-xxc SI-xxd\nCompounds SI-xxa, SI-xxb, SI-xxc and SI-xxd were prepared through previous literatures:\na. S. J. Harwood et al., Science 375, 745\u2013752 (2022).\nb. Milner E. E. B. Lasonolide A: Synthetic explorations[M]. The University of North\nCarolina at Chapel Hill, 2007.\nc. Kremsmair, A.; Skotnitzki, J.; Knochel, P. Chem. Eur. J. 26, 11971\u221211973 (2020).\nd. Golling, S.; Leroux, F. R.; Donnard, M. Org. Lett. 23, 8093\u22128097 (2021).\ne. Y, Ni et al. Org. Lett. 26, 7398\u22127402 (2024).\n41 57% 51% n.d. 53% 48% 21% 34% 29% 61% TfO SI-xxe",
           "figures": [
             "SI_p41_fig0",
-            "SI_p41_fig1",
-            "SI_p41_fig2",
-            "SI_p41_fig3"
+            "SI_p41_fig1"
           ]
         }
       ],
@@ -782,7 +784,7 @@
             {
               "heading": "tert-butyl 4-(6-cyano-2-methylpyridin-3-yl)piperidine-1-carboxylate (52)",
               "page_start": 50,
-              "text": "CN\nFollowing General Procedure B on 0.5 mmol scale with hydrazide and vinyl iodide. Purification by\npTLC (hexanes: ethyl acetate, 15:1) and afforded 55.4 mg (37%) of the title compound 52.\nPhysical State: colorless oil.\n1H NMR (400 MHz, CDCl3): \u03b4 7.56 (d, J = 8.0 Hz, 1H), 7.51 (d, J = 8.0 Hz, 1H), 4.28 (s, 2H), 2.93 \u2013\n2.71 (m, 3H), 2.61 (s, 3H), 1.76 (dt, J = 13.3, 2.6 Hz, 2H), 1.56 (qt, J = 12.7, 5.7 Hz, 2H), 1.46 (s, 9H)\nppm.\n13C NMR (101 MHz, CDCl3): \u03b4 158.53, 154.76, 143.34, 134.00, 130.68, 126.61, 117.57, 79.93, 44.27,\n38.49, 31.90, 28.54, 22.31 ppm.\nTsCl (2.0 equiv.) Ni(dme)Cl2 (20 mol%)\nN Cl CF3\nH N HO +\nN CF3 NH2\nHO\n0.2 mmol (2.0 equiv.)\n0.1 mmol (1.0 equiv.)",
+              "text": "Following General Procedure B on 0.5 mmol scale with hydrazide and vinyl iodide. Purification by\npTLC (hexanes: ethyl acetate, 15:1) and afforded 55.4 mg (37%) of the title compound 52.\nPhysical State: colorless oil.\n1H NMR (400 MHz, CDCl3): \u03b4 7.56 (d, J = 8.0 Hz, 1H), 7.51 (d, J = 8.0 Hz, 1H), 4.28 (s, 2H), 2.93 \u2013\n2.71 (m, 3H), 2.61 (s, 3H), 1.76 (dt, J = 13.3, 2.6 Hz, 2H), 1.56 (qt, J = 12.7, 5.7 Hz, 2H), 1.46 (s, 9H)\nppm.\n13C NMR (101 MHz, CDCl3): \u03b4 158.53, 154.76, 143.34, 134.00, 130.68, 126.61, 117.57, 79.93, 44.27,\n38.49, 31.90, 28.54, 22.31 ppm.\nN CF3\nHO",
               "figures": []
             }
           ],
@@ -801,7 +803,9 @@
               "figures": [
                 "SI_p50_fig0",
                 "SI_p50_fig1",
-                "SI_p50_fig2"
+                "SI_p50_fig2",
+                "SI_p50_fig3",
+                "SI_p50_fig4"
               ]
             },
             {
@@ -1473,7 +1477,7 @@
         {
           "heading": "Compound 29 H NMR",
           "page_start": 115,
-          "text": "f1 (ppm)\n115 7.26 CDCl3 0.97 0.98 0.98 2.39 2.39 2.39 2.40 2.46 2.49 2.49 3.38 3.38 3.39 3.95 3.95 4.64 6.80 6.82 6.82",
+          "text": "f1 (ppm)\n115",
           "figures": [
             "SI_p115_fig0",
             "SI_p115_fig1",
@@ -1577,7 +1581,7 @@
         {
           "heading": "Compound 36 H NMR",
           "page_start": 129,
-          "text": "f1 (ppm)\n129 7.260 CDCl3",
+          "text": "f1 (ppm)\n129",
           "figures": [
             "SI_p129_raster0",
             "SI_p129_fig0"

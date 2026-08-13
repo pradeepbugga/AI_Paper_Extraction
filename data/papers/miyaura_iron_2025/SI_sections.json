@@ -56,7 +56,7 @@
                 {
                   "heading": "2a",
                   "page_start": 3,
-                  "text": "(%)a\n(%)a\nnone 2 99\nnone 1 99\nnone 2 48\n3 11 P(4-MeOPh)3 12 1,8-dppn 13 dClpbz 14 dippa 15 cis-dppe none 3 26 16 trans-dppe",
+                  "text": "(%)a\n(%)a\nnone 2 99\nnone 1 99\nnone 2 48\n3 none 5 28 none 3 26 none 1 17 LiHMDSc 6 47 LiHMDSc 4 39 LiHMDSc 11 39 LiHMDSc 5 59 LiHMDSc 23 59 LiHMDSc 3 38 LiHMDSc 8 34 LiHMDSc 8 35 none 15 39 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), FeCl2 (0.013 mmol dispensed from 0.025 M stock solution), ligand (0.013 mmol, manually weighed), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), 4,4\u2019-ditertbutylbiphenyl (0.25 mmol dispensed from 0.5 M stock solution), THF (2 mL total) temperature = 60 \u00b0C, time = 1h.  aDetermined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. bdppe (0.025 mmol). cBase LiHMDS (0.0125 mmol) added as base to enable formation of the free ligand.\nThe ligands highlighted in bold were carried forward for further screening (see ligand/precatalyst screen below Figure S1) none 3 44 none 2 21 none 3 26",
                   "figures": [
                     "SI_p3_fig0",
                     "SI_p3_fig1",
@@ -64,30 +64,6 @@
                     "SI_p3_fig3",
                     "SI_p3_fig4"
                   ]
-                },
-                {
-                  "heading": "17",
-                  "page_start": 4,
-                  "text": "tBu-Xantphos",
-                  "figures": []
-                },
-                {
-                  "heading": "18",
-                  "page_start": 4,
-                  "text": "SciOPP",
-                  "figures": []
-                },
-                {
-                  "heading": "19",
-                  "page_start": 4,
-                  "text": "L-PN\n20 SIMes.HCl\n21 SIPr.HCl\n22 IMes.HCl\n23 Ipr.HCl",
-                  "figures": []
-                },
-                {
-                  "heading": "24",
-                  "page_start": 4,
-                  "text": "6Mes.HBF4\n25 7Mes.HBF4\n26 8Mes.HBF4\n27 6IPr.HBF4\n28 IMes none 15 39\nConditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), FeCl2 (0.013 mmol dispensed from 0.025 M stock solution), ligand (0.013 mmol, manually weighed), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), 4,4\u2019-ditertbutylbiphenyl (0.25 mmol dispensed from 0.5 M stock solution), THF (2 mL total) temperature = 60 \u00b0C, time = 1h.  aDetermined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. bdppe (0.025 mmol). cBase LiHMDS (0.0125 mmol) added as base to enable formation of the free ligand.\nThe ligands highlighted in bold were carried forward for further screening (see ligand/precatalyst screen below Figure S1) none 3 44 none 2 21 none 3 26 none 5 28 none 1 17",
-                  "figures": []
                 },
                 {
                   "heading": "none",
@@ -104,13 +80,13 @@
                 {
                   "heading": "none",
                   "page_start": 4,
-                  "text": "6 31\nLiHMDSc 6 47\nLiHMDSc 4 39\nLiHMDSc 11 39\nLiHMDSc 5 59\nLiHMDSc 23 59\nLiHMDSc 3 38\nLiHMDSc 8 34\nLiHMDSc 8 35\n4",
+                  "text": "6 31\n4",
                   "figures": [
                     "SI_p4_fig0"
                   ]
                 }
               ],
-              "preamble": "Entry Ligand Base Yield of 3a\n1 none none 7 99 2 dppe none 4 49 3 dcpe none 8 53 4 dmpe none 7 98 5 depe none 1 99\n6 Xantphos\n7 dppbz\n8 dppp none 1 99 9 dppeb none 2 50\n10 PPh3 Table S1. Aryl halide and pseudohalide screen + X 2 (%)a Table S2. Preliminary ligand Screen FeCl2 (5 mol%) + Cl 3a 2a Consumption of",
+              "preamble": "Entry Ligand Base Yield of 3a\n1 none none 7 99 2 dppe none 4 49 3 dcpe none 8 53 4 dmpe none 7 98 5 depe none 1 99\n6 Xantphos\n7 dppbz\n8 dppp none 1 99 9 dppeb none 2 50\n10 PPh3 Table S1. Aryl halide and pseudohalide screen + X 2 (%)a Table S2. Preliminary ligand Screen + Cl 3a 2a Consumption of",
               "figures": []
             },
             {
@@ -121,7 +97,7 @@
                 {
                   "heading": "1",
                   "page_start": 8,
-                  "text": "THF 60 48 83 2 2-MeTHF 60 25 66 3 MeCN 60 0 34 4 Toluene 60 0 n/ab 5 DCE 60 1 35 6 MTBE 60 5 36 7 1,4-dioxane 60 3 40 8 DMA 60 32 73 9 DMA 100 38 84 10 DMA 120 41 87 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol), MgBr2\u00b7OEt2 (0.05 mmol), solvent (2 mL total), time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019- ditertbutylbiphenyl as internal standard.  All reagents weighed manually. bUnable to obtain accurate data due to peak overlap with solvent in HPLC-MS.\nTable S4. Solvent and temperature screen\nFe(OTf)2 (5 mol%)\n+\nCl\n2a\n8",
+                  "text": "THF 60 48 83 2 2-MeTHF 60 25 66 3 MeCN 60 0 34 4 Toluene 60 0 n/ab 5 DCE 60 1 35 6 MTBE 60 5 36 7 1,4-dioxane 60 3 40 8 DMA 60 32 73 9 DMA 100 38 84 10 DMA 120 41 87 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol), MgBr2\u00b7OEt2 (0.05 mmol), solvent (2 mL total), time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019- ditertbutylbiphenyl as internal standard.  All reagents weighed manually. bUnable to obtain accurate data due to peak overlap with solvent in HPLC-MS.\nTable S4. Solvent and temperature screen\n+\nCl\n2a\n8",
                   "figures": [
                     "SI_p8_fig0",
                     "SI_p8_fig1"
@@ -183,19 +159,18 @@
             {
               "heading": "3.2.3 Precatalyst screen",
               "page_start": 5,
-              "text": "Fe salt (5 mol%)\n+\nCl\n3a 2a 5 Cy2P PCy2 dcpe Me2P PMe2 dmpe PtBu2 PtBu2 tBuXantPhos SciOPP Figure S1. Precatalyst screen. Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), iron salt (0.013 mmol), ligand (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), 4,4\u2019-ditertbutylbiphenyl (0.25 mmol dispensed from 0.5 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. Yields determined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. Note: 6Mes\u00b7HBF4 deprotonated in situ by addition of LiHMDS (0.125 mmol).\nN N Mes Mes N N Mes Mes\nIMes 6Mes\n6",
+              "text": "+\nCl\n3a 2a 5 tBuXantPhos SciOPP Figure S1. Precatalyst screen. Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), iron salt (0.013 mmol), ligand (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), 4,4\u2019-ditertbutylbiphenyl (0.25 mmol dispensed from 0.5 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. Yields determined by HPLC-MS calibrated against 4,4\u2019-di-tert-butylbiphenyl as internal standard. Note: 6Mes\u00b7HBF4 deprotonated in situ by addition of LiHMDS (0.125 mmol).\n6",
               "figures": [
                 "SI_p5_raster0",
                 "SI_p5_fig0",
                 "SI_p5_fig1",
-                "SI_p6_fig0",
-                "SI_p6_fig1"
+                "SI_p6_fig0"
               ]
             },
             {
               "heading": "3.2.4 Additive screen",
               "page_start": 7,
-              "text": "Entry Additive Yield of 3a\n1 none 38 75 2 LiF 44 81 3 NaF 49 87 4 KF 36 60 5 LiCl 25 64 6 NaCl 58 87 7 KCl 44 70 8 MgCl2 44 83 9 AlCl3 53 89 10 ZnCl2 57 80 11 TMAC 42 67 12 TEAC 6 77 13 TBAC 45 68 14 LiBr 57 78 15 NaBr 54 93 16 KBr 32 60 17 MgBr2 41 79 18 MgBr2\u00b7OEt2 64 88 19 AlBr3 33 73 20 GaBr3 7 40 21 TMAB 34 67 22 TEAB 35 68 23 TBAB 15 49 24 NaI 44 79 25 KI 16 49 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019-ditertbutylbiphenyl as internal standard.\nTable S3. Additive screen\nFe(OTf)2 (5 mol%)\n+\nCl\n3a 2a\nConsumption of 2a\n(%)a\n(%)a\n7",
+              "text": "Entry Additive Yield of 3a\n1 none 38 75 2 LiF 44 81 3 NaF 49 87 4 KF 36 60 5 LiCl 25 64 6 NaCl 58 87 7 KCl 44 70 8 MgCl2 44 83 9 AlCl3 53 89 10 ZnCl2 57 80 11 TMAC 42 67 12 TEAC 6 77 13 TBAC 45 68 14 LiBr 57 78 15 NaBr 54 93 16 KBr 32 60 17 MgBr2 41 79 18 MgBr2\u00b7OEt2 64 88 19 AlBr3 33 73 20 GaBr3 7 40 21 TMAB 34 67 22 TEAB 35 68 23 TBAB 15 49 24 NaI 44 79 25 KI 16 49 Conditions: chlorobenzene (0.25 mmol), 1 (0.35 mmol), Fe(OTf)2 (0.013 mmol), IMes (0.013 mmol dispensed from 0.025 M stock solution), MgBr2\u00b7OEt2 (0.05 mmol dispensed from 0.1 M stock solution), THF (2 mL total), temperature = 60 \u00b0C, time = 1h. aYields determined by HPLC-MS calibrated against 4,4\u2019-ditertbutylbiphenyl as internal standard.\nTable S3. Additive screen\n+\nCl\n3a 2a\nConsumption of 2a\n(%)a\n(%)a\n7",
               "figures": [
                 "SI_p7_fig0",
                 "SI_p7_fig1"
@@ -226,12 +201,6 @@
           "heading": "1",
           "page_start": 10,
           "text": "2 or 4",
-          "figures": []
-        },
-        {
-          "heading": "Cl",
-          "page_start": 10,
-          "text": "N\n10%",
           "figures": []
         },
         {
@@ -385,11 +354,12 @@
             {
               "heading": "quinolin-7-yl trifluoromethanesulfonate (see Figure S2)",
               "page_start": 15,
-              "text": "N TfO\n15 Prepared from 7-hydroxyquinoline (290 mg, 2mmol) according to general procedure A to afford a yellow solid (405 mg, 73%). Crude product of sufficient purity to be used immediately. Spectroscopic data consistent with literature.11 1H NMR (400 MHz, CDCl3) \u03b4 9.00 (dd, J = 4.2, 1.7 Hz, 1H), 8.23 (dd, J = 8.4, 1.0 Hz, 1H), 8.04 (d, J = 2.5 Hz, 1H), 7.93 (d, J = 9.0 Hz, 1H), 7.53 \u2013 7.46 (m, 2H). 13C NMR (101 MHz, CDCl3) \u03b4 152.2, 149.8, 148.3, 136.3, 130.4, 127.7, 122.4, 121.3, 120.9, 118.9 (q, J = 320.9, 320.2 Hz). 19F NMR (376 MHz, CDCl3) \u03b4 -72.52. MS (EI) m/z: M+ Calcd for C10H6F3NO3S 277.0; Found 277.0.",
+              "text": "15 Prepared from 7-hydroxyquinoline (290 mg, 2mmol) according to general procedure A to afford a yellow solid (405 mg, 73%). Crude product of sufficient purity to be used immediately. Spectroscopic data consistent with literature.11 1H NMR (400 MHz, CDCl3) \u03b4 9.00 (dd, J = 4.2, 1.7 Hz, 1H), 8.23 (dd, J = 8.4, 1.0 Hz, 1H), 8.04 (d, J = 2.5 Hz, 1H), 7.93 (d, J = 9.0 Hz, 1H), 7.53 \u2013 7.46 (m, 2H). 13C NMR (101 MHz, CDCl3) \u03b4 152.2, 149.8, 148.3, 136.3, 130.4, 127.7, 122.4, 121.3, 120.9, 118.9 (q, J = 320.9, 320.2 Hz). 19F NMR (376 MHz, CDCl3) \u03b4 -72.52. MS (EI) m/z: M+ Calcd for C10H6F3NO3S 277.0; Found 277.0.",
               "figures": [
                 "SI_p15_fig0",
                 "SI_p15_fig1",
-                "SI_p15_fig2"
+                "SI_p15_fig2",
+                "SI_p15_fig3"
               ]
             },
             {
@@ -425,7 +395,7 @@
             {
               "heading": "4,4,5,5-tetramethyl-2-(m-tolyl)-1,3,2-dioxaborolane (3c)",
               "page_start": 17,
-              "text": "Bpin Me\nIsolated as a white solid, purified by column chromatography - general procedure B (2% Et2O in petroleum ether): 51 mg (47%). General procedure C (2% Et2O in petroleum ether): 44 mg (40%). Spectroscopic data consistent with literature.15\n1H NMR (400 MHz, CDCl3) \u03b4 7.70 \u2013 7.57 (m, 2H), 7.29 (m, 2H), 2.37 (s, 3H), 1.36 (s, 12H). 13C NMR (101 MHz, CDCl3) \u03b4 137.3, 135.5, 132.2, 131.9, 127.8, 83.8, 25.0, 21.4. 11B NMR (128 MHz, CDCl3) \u03b4 29.77. MS (EI) m/z: M+ Calcd for C13H19BO2 218.15; Found 218.1.",
+              "text": "Isolated as a white solid, purified by column chromatography - general procedure B (2% Et2O in petroleum ether): 51 mg (47%). General procedure C (2% Et2O in petroleum ether): 44 mg (40%). Spectroscopic data consistent with literature.15\n1H NMR (400 MHz, CDCl3) \u03b4 7.70 \u2013 7.57 (m, 2H), 7.29 (m, 2H), 2.37 (s, 3H), 1.36 (s, 12H). 13C NMR (101 MHz, CDCl3) \u03b4 137.3, 135.5, 132.2, 131.9, 127.8, 83.8, 25.0, 21.4. 11B NMR (128 MHz, CDCl3) \u03b4 29.77. MS (EI) m/z: M+ Calcd for C13H19BO2 218.15; Found 218.1.",
               "figures": []
             },
             {
@@ -434,7 +404,8 @@
               "text": "Isolated as a clear oil, purified by column chromatography - general procedure B (2% Et2O in petroleum ether): 69 mg (63%). General procedure C (2% Et2O in petroleum ether): 60 mg (55%). Spectroscopic data consistent with literature.14\n17 1H NMR (400 MHz, CDCl3) \u03b4 7.73 (d, J = 7.9 Hz, 2H), 7.20 (d, J = 7.5 Hz, 2H), 2.38 (s, 3H), 1.35 (s, 12H). 13C NMR (101 MHz, CDCl3) \u03b4 141.5, 134.9, 128.6, 83.7, 25.0, 21.8. 11B NMR (128 MHz, CDCl3) \u03b4 29.98. MS (EI) m/z: M+ Calcd for C13H19BO2 218.15; Found 218.1.",
               "figures": [
                 "SI_p17_fig0",
-                "SI_p17_fig1"
+                "SI_p17_fig1",
+                "SI_p17_fig2"
               ]
             },
             {
@@ -481,7 +452,7 @@
             {
               "heading": "N,N-dimethyl-3-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)aniline (3k)",
               "page_start": 19,
-              "text": "Bpin Me2N\nIsolated as a clear oil, purified by column chromatography (5-20% EtOAC in hexane) \u2013 general procedure B: 41 mg (33%). Spectroscopic data consistent with literature.19\n1H NMR (400 MHz, CDCl3) \u03b4 7.27 (t, J = 7.6 Hz, 1H), 7.23 \u2013 7.16 (m, 2H), 6.87 (m, 2H), 2.97 (s, 6H), 1.35 (s, 12H). 13C NMR (101 MHz, CDCl3) \u03b4 150.3, 128.6, 123.4, 118.8, 115.9, 83.7, 40.9, 25.0. 11B NMR (128 MHz, CDCl3) \u03b4 30.00. MS (ESI) m/z: [M+H]+ Calcd for C14H23BNO2 247.17; Found 248.18",
+              "text": "Isolated as a clear oil, purified by column chromatography (5-20% EtOAC in hexane) \u2013 general procedure B: 41 mg (33%). Spectroscopic data consistent with literature.19\n1H NMR (400 MHz, CDCl3) \u03b4 7.27 (t, J = 7.6 Hz, 1H), 7.23 \u2013 7.16 (m, 2H), 6.87 (m, 2H), 2.97 (s, 6H), 1.35 (s, 12H). 13C NMR (101 MHz, CDCl3) \u03b4 150.3, 128.6, 123.4, 118.8, 115.9, 83.7, 40.9, 25.0. 11B NMR (128 MHz, CDCl3) \u03b4 30.00. MS (ESI) m/z: [M+H]+ Calcd for C14H23BNO2 247.17; Found 248.18",
               "figures": []
             },
             {
@@ -491,7 +462,8 @@
               "figures": [
                 "SI_p19_fig0",
                 "SI_p19_fig1",
-                "SI_p19_fig2"
+                "SI_p19_fig2",
+                "SI_p19_fig3"
               ]
             },
             {
@@ -605,7 +577,7 @@
                 {
                   "heading": "intensity, ion)",
                   "page_start": 24,
-                  "text": "3.449 112.0 (100, M+) 77.05 (65, [M-Cl]+)\n3.479 85.2 (9), 59.1 (100) 18.82 Pinacol Figure S3.3 3.951 125.99 (100), 70.10 (71)\n4.061 169.1(76, [M-Me]+), 129.1 (50), 83.09 (100)\n4.142 120.1 (38), 105.12 (100)\n4.995 140.8 (19), 119.2 (24), 69.41 (52), 56.4(27), 55.01 (100)\n5.718 205.1 (11), 181.2 (11), 142.27 (100),\n58.9 (49)\n5.949 189.2 (58, [M-Me]+), 147.2 (49), 118.04 (100)\n6.492 142.4 (60), 142.1\nCounts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500\nFigure S3.2. Mass-spectrum of the peak at 3.449 min (see Figure S3.1)",
+                  "text": "3.449 112.0 (100, M+) 77.05 (65, [M-Cl]+)\n3.479 85.2 (9), 59.1 (100) 18.82 Pinacol Figure S3.3 3.951 125.99 (100), 70.10 (71)\nCounts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500\nFigure S3.2. Mass-spectrum of the peak at 3.449 min (see Figure S3.1)",
                   "figures": []
                 },
                 {
@@ -617,7 +589,7 @@
                 {
                   "heading": "Identity of compound",
                   "page_start": 24,
-                  "text": "Mass spectrum\n(%)\n66.56 Chlorobenzene Figure S3.2\n17.79 Tetramethylpiperidine Figure S3.4\n100 tBuBpin Figure S3.5\n50.21 Mesitylene (NMR\nFigure S3.6\ninternal standard)\n4.07 Not determined Figure S3.7\n1.68 Not determined Figure S3.8\n1.25 Phenyl Bpin 3a Figure S3.9\n27.69 TEMPOH24 Figure S3.10\n24 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.3. Mass-spectrum of the peak at 3.479 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.4. Mass-spectrum of the peak at 3.951 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.5. Mass-spectrum of the peak at 4.061 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.6. Mass-spectrum of the peak at 4.142 min (see Figure S3.1) 25 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.7. Mass-spectrum of the peak at 4.995 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.8. Mass-spectrum of the peak at 5.718 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.9. Mass-spectrum of the peak at 5.949 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.10. Mass-spectrum of the peak at 6.492 min (see Figure S3.1) 26 Figure S4. 1H NMR spectrum of the crude reaction mixture from the reaction in the presence of TEMPO. Internal standard (mesitylene, \u201c\u25aa\u201d, 2H) and phenyl Bpin 3a (\u201c*\u201d, 2H) highlighted.",
+                  "text": "Mass spectrum\n(%)\n66.56 Chlorobenzene Figure S3.2\n17.79 Tetramethylpiperidine Figure S3.4\n24 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.3. Mass-spectrum of the peak at 3.479 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.4. Mass-spectrum of the peak at 3.951 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.5. Mass-spectrum of the peak at 4.061 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.6. Mass-spectrum of the peak at 4.142 min (see Figure S3.1) 25 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.7. Mass-spectrum of the peak at 4.995 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.8. Mass-spectrum of the peak at 5.718 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.9. Mass-spectrum of the peak at 5.949 min (see Figure S3.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S3.10. Mass-spectrum of the peak at 6.492 min (see Figure S3.1) 26 Figure S4. 1H NMR spectrum of the crude reaction mixture from the reaction in the presence of TEMPO. Internal standard (mesitylene, \u201c\u25aa\u201d, 2H) and phenyl Bpin 3a (\u201c*\u201d, 2H) highlighted.",
                   "figures": [
                     "SI_p24_fig0",
                     "SI_p24_fig1",
@@ -661,12 +633,11 @@
                 {
                   "heading": "Identity of compound",
                   "page_start": 27,
-                  "text": "Mass spectrum\n(%)\n39.73 Chlorobenzene Figure S5.1\n5.21 Not determined Figure S5.3\n27 4.061 169.2 (54, [M-Me]+), 129.1 (53), 83.1 (100) 14.81 tBuBpin Figure S5.4 4.172 129.0 (100), 84.9 (21), 59.0 (34) 5.959 204.1 (25, M+), 188.9 (53), 105.1 (100) 6.09 154.1 (100, M+), 97.2 (31), 57.3 (34) 6.14 167.90 (58, M+), 139.0 (100) 78.69 1,3,5- trimethoxybenzene 6.592 180.1 (80, M+), 179.1 (100, [M-H]+), 165.2 (94), 77.1 (22, [Ph]+) 7.014 194.9 (90), 165.1 (100), 105.1 (78) 8.37 308.3 (M+) , 208.1 (6), 167.1 (100, [M- CH2Bpin]+), 84.1 (36) 8.46 306.2 (45), 190.1 (100), 165.2 (14), 103.0 (19) 9.555 306.1 (100), 206.9 (47), 167.\nCounts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500\nFigure S5.2. Mass-spectrum of the peak at 3.448 min (see Figure S5.1) 4.8 Not determined Figure S5.5 2.25 Phenyl Bpin 3a Figure S5.6 n.d. biphenyl Figure S5.7 Figure S5.8 (NMR internal standard) 100 1,1-DPE Figure S5.9 n.d. Not determined Figure S5.10 14.48 Hydroboration product Figure S5.11 2.87 Not determined Figure S5.12 n.d. Not determined Figure S5.13 28 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.3. Mass-spectrum of the peak at 3.499 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.4. Mass-spectrum of the peak at 3.971 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.5. Mass-spectrum of the peak at 4.061 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.6. Mass-spectrum of the peak at 4.182 min (see Figure S5.1) 29 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.7. Mass-spectrum of the peak at 5.959 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.8. Mass-spectrum of the peak at 6.090 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.9. Mass-spectrum of the peak at 6.130 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.10. Mass-spectrum of the peak at 6.592 min (see Figure S5.1) 30 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.11. Mass-spectrum of the peak at 7.014 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.12. Mass-spectrum of the peak at 8.370 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.13. Mass-spectrum of the peak at 8.460 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.14. Mass-spectrum of the peak at 9.555 min (see Figure S5.1) 31 Figure S6. 1H NMR spectrum of the crude reaction mixture from the reaction in the presence of 1,1-DPE. Peaks arising due to internal standard (1,3,5-trimethoxybenzene, \u201c\u2022\u201d, 3H), phenyl Bpin 2a (\u201c*\u201d, 2H) and the hydroboration product25 (\u201c#\u201d, 1H) are highlighted.",
+                  "text": "Mass spectrum\n(%)\n39.73 Chlorobenzene Figure S5.1\n5.21 Not determined Figure S5.3\n27 4.061 169.2 (54, [M-Me]+), 129.1 (53), 83.1 (100) 14.81 tBuBpin Figure S5.4 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.2. Mass-spectrum of the peak at 3.448 min (see Figure S5.1) 28 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.3. Mass-spectrum of the peak at 3.499 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.4. Mass-spectrum of the peak at 3.971 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.5. Mass-spectrum of the peak at 4.061 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.6. Mass-spectrum of the peak at 4.182 min (see Figure S5.1) 29 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.7. Mass-spectrum of the peak at 5.959 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.8. Mass-spectrum of the peak at 6.090 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.9. Mass-spectrum of the peak at 6.130 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.10. Mass-spectrum of the peak at 6.592 min (see Figure S5.1) 30 Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.11. Mass-spectrum of the peak at 7.014 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.12. Mass-spectrum of the peak at 8.370 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.13. Mass-spectrum of the peak at 8.460 min (see Figure S5.1) Counts vs. Mass-to-Charge (m/z) 100 125 150 175 200 225 250 275 300 325 350 375 400 425 450 475 500 Figure S5.14. Mass-spectrum of the peak at 9.555 min (see Figure S5.1) 31 Figure S6. 1H NMR spectrum of the crude reaction mixture from the reaction in the presence of 1,1-DPE. Peaks arising due to internal standard (1,3,5-trimethoxybenzene, \u201c\u2022\u201d, 3H), phenyl Bpin 2a (\u201c*\u201d, 2H) and the hydroboration product25 (\u201c#\u201d, 1H) are highlighted.",
                   "figures": [
                     "SI_p27_raster0",
                     "SI_p27_fig0",
                     "SI_p28_fig0",
-                    "SI_p28_fig1",
                     "SI_p29_fig0",
                     "SI_p29_fig1",
                     "SI_p29_fig2",
@@ -695,7 +666,7 @@
         {
           "heading": "General procedure for radical probe experiments",
           "page_start": 23,
-          "text": "Inside an argon-filled glovebox, a 7 mL vial fitted with a stirrer bar was charged with Fe(OTf)2 (5.3 mg, 0.015 mmol, 0.03 equiv.), IMes (2.6 mg, 0.008 mmol, 0.015 equiv.) and THF (1 mL) and stirred at 60 \u00b0C (aluminium heating block, external temperature) for 30 mins. Chlorobenzene (56 mg, 0.25 mmol, 1 equiv.), MgBr2\u00b7OEt2 (13 mg, 0.05 mmol, 0.1 equiv.), the appropriate radical probe (0.5 mmol, 1 equiv.) and THF (2 mL) were added and the reaction stirred at 60 \u00b0C for a further 15 min. The boronate 1 (190 mg, 0.5 mmol, 1.2 equiv.) was added along with a further 1 mL THF (total reaction volume = 4 mL, 0.125 M wrt chlorobenzene) and the reaction stirred for 1h at 60 \u00b0C. The vial was then removed from the glovebox and cooled to room temperature. Mesitylene (60 mg, 0.5 mmol, 1 equiv.) or 1,3,5-trimethoxybenzene (84 mg, 0.5 mmol, 1 equiv.) was added as internal standard and an aliquot was filtered through a celite pad, which washed with hexane. The combined organics were dried in vacuo and the sample analyzed by 1H NMR spectroscopy and GCMS.\nb)\nScheme S1. Radical probe experiments with a) (2,2,6,6-Tetramethylpiperidin-1-yl)oxyl (TEMPO) b) 1,1- diphenylethylene (1,1-DPE). Conditions: 1 (0.6 mmol),  2 (0.5 mmol), appropriate radical probe (0.5 mmol) MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 mmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture with 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation product shown.\nCl Bpin radical\n+ +\nprobe\n1 eq. 1 eq.\n1 (1.2 eq.) Fe(OTf)2 (3 mol%)\nCl\n2a\n23",
+          "text": "Bpin\nInside an argon-filled glovebox, a 7 mL vial fitted with a stirrer bar was charged with Fe(OTf)2 (5.3 mg, 0.015 mmol, 0.03 equiv.), IMes (2.6 mg, 0.008 mmol, 0.015 equiv.) and THF (1 mL) and stirred at 60 \u00b0C (aluminium heating block, external temperature) for 30 mins. Chlorobenzene (56 mg, 0.25 mmol, 1 equiv.), MgBr2\u00b7OEt2 (13 mg, 0.05 mmol, 0.1 equiv.), the appropriate radical probe (0.5 mmol, 1 equiv.) and THF (2 mL) were added and the reaction stirred at 60 \u00b0C for a further 15 min. The boronate 1 (190 mg, 0.5 mmol, 1.2 equiv.) was added along with a further 1 mL THF (total reaction volume = 4 mL, 0.125 M wrt chlorobenzene) and the reaction stirred for 1h at 60 \u00b0C. The vial was then removed from the glovebox and cooled to room temperature. Mesitylene (60 mg, 0.5 mmol, 1 equiv.) or 1,3,5-trimethoxybenzene (84 mg, 0.5 mmol, 1 equiv.) was added as internal standard and an aliquot was filtered through a celite pad, which washed with hexane. The combined organics were dried in vacuo and the sample analyzed by 1H NMR spectroscopy and GCMS.\nCl\nb)\n2a\nScheme S1. Radical probe experiments with a) (2,2,6,6-Tetramethylpiperidin-1-yl)oxyl (TEMPO) b) 1,1- diphenylethylene (1,1-DPE). Conditions: 1 (0.6 mmol),  2 (0.5 mmol), appropriate radical probe (0.5 mmol) MgBr2\u00b7OEt2 (0.1 mmol), Fe(OTf)2 (0.015 mmol), ligand (0.008 mmol), THF, 60 \u00b0C, 1h (after addition of boronate 1). Yields determined by 1H NMR of the crude reaction mixture with 1,3,5-trimethoxybenzene (0.5 mmol) or mesitylene (0.50 mmol) as internal standard. aYield of borylation product shown.\n23",
           "figures": [
             "SI_p23_fig0",
             "SI_p23_fig1",
