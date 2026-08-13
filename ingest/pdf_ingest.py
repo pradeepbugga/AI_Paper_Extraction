@@ -285,23 +285,56 @@ CROP_MARGIN_PT = 5.0  # see extract_vector_figures docstring for why this exists
 LABEL_TEXT_MAX_WIDTH_PT = 60.0
 LABEL_TEXT_MAX_HEIGHT_PT = 35.0
 LABEL_TEXT_MAX_CHARS = 20
-LABEL_TEXT_MAX_LINES = 5
+
+# Block-level pre-filter, applied before the per-line checks below. A real
+# label cluster (atom labels scattered around one structure) stays within
+# a modest width and a handful of lines even when PyMuPDF's block
+# segmentation bundles several of them together (confirmed: the H2N case
+# below is 91.1pt / 4 lines). Real prose blocks are much wider (a title or
+# SI-procedure paragraph measured 451-454pt in this corpus) -- checked
+# first, because per-line dimensions alone aren't enough to tell the two
+# apart (see _label_text_rects docstring).
+LABEL_BLOCK_MAX_WIDTH_PT = 150.0
+LABEL_BLOCK_MAX_LINES = 6
 
 
 def _label_text_rects(page):
+    """Operates on individual text *lines* (page.get_text("dict")), not
+    whole blocks -- PyMuPDF's block segmentation can bundle several
+    unrelated, spatially-separated labels into one wide block. Confirmed
+    directly on copper_iron_2025/page89 (SI): "N", "H", "O" (the amide
+    N-H, next to the S=O) and "H2N" (a separate amino group ~66pt further
+    left, on the opposite side of the structure) landed in one PyMuPDF
+    block spanning 91.1pt -- comfortably over LABEL_TEXT_MAX_WIDTH_PT, so
+    a block-level-only check discarded all four labels at once, including
+    "H2N", which was the only text anchoring the crop's left edge.
+
+    Per-line dimensions alone are NOT a safe replacement for the block
+    check, though -- confirmed by a real regression on copper_iron_2025/
+    page32 (SI): narrow-column justified paragraph text (an SI procedure
+    write-up wrapping around a structure) breaks into individual lines
+    like "procedure ", "for ", "15 h," that are each well under the
+    line-level width/char thresholds on their own, even though the parent
+    block is obviously prose (15 lines, 454pt wide). So LABEL_BLOCK_MAX_*
+    gates the enclosing block first (comfortably wider/more-lines than any
+    real label cluster, comfortably narrower/shorter than the observed
+    prose blocks), and only lines within a block that passes get checked
+    individually and kept."""
     rects = []
-    for block in page.get_text("blocks"):
-        x0, y0, x1, y1, text, _, block_type = block
-        if block_type != 0:
+    for block in page.get_text("dict")["blocks"]:
+        if block.get("type") != 0:
             continue
-        if x1 - x0 > LABEL_TEXT_MAX_WIDTH_PT or y1 - y0 > LABEL_TEXT_MAX_HEIGHT_PT:
+        bx0, by0, bx1, by1 = block["bbox"]
+        if bx1 - bx0 > LABEL_BLOCK_MAX_WIDTH_PT or len(block["lines"]) > LABEL_BLOCK_MAX_LINES:
             continue
-        stripped = text.strip()
-        if not stripped or len(stripped) > LABEL_TEXT_MAX_CHARS:
-            continue
-        if text.count("\n") > LABEL_TEXT_MAX_LINES:
-            continue
-        rects.append(fitz.Rect(x0, y0, x1, y1))
+        for line in block["lines"]:
+            x0, y0, x1, y1 = line["bbox"]
+            if x1 - x0 > LABEL_TEXT_MAX_WIDTH_PT or y1 - y0 > LABEL_TEXT_MAX_HEIGHT_PT:
+                continue
+            text = "".join(span["text"] for span in line["spans"]).strip()
+            if not text or len(text) > LABEL_TEXT_MAX_CHARS:
+                continue
+            rects.append(fitz.Rect(x0, y0, x1, y1))
     return rects
 
 
