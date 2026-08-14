@@ -2,54 +2,52 @@
   "images/page5_fig0.png": [
     {
       "segment_path": "segments/page5_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
-      "panel_label": "A",
+      "panel_label": null,
       "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page5_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
-      "panel_label": "A",
+      "panel_label": null,
       "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page5_fig0_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "3",
       "yield_percent": "46%",
       "conditions": null,
       "panel_label": "A",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg3.png",
+      "is_scoped_product": true,
       "compound_id": "4",
       "yield_percent": "35%",
       "conditions": null,
       "panel_label": "A",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg4.png",
+      "is_scoped_product": true,
       "compound_id": "5",
       "yield_percent": "65%",
       "conditions": null,
       "panel_label": "A",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg5.png",
-      "compound_id": "6",
-      "yield_percent": "45%",
-      "conditions": "a,e",
-      "panel_label": "A",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg6.png",
+      "is_scoped_product": true,
       "compound_id": "6",
       "yield_percent": "45%",
       "conditions": "a,e",
@@ -57,111 +55,134 @@
       "flag": "multi_compound_merge"
     },
     {
-      "segment_path": "segments/page5_fig0_seg7.png",
+      "segment_path": "segments/page5_fig0_seg6.png",
+      "is_scoped_product": true,
       "compound_id": "7",
       "yield_percent": "57%",
       "conditions": null,
       "panel_label": "A",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg7.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "A",
+      "flag": "multi_compound_merge; appears to be duplicate/overlap region between compounds 6 and 7"
     },
     {
       "segment_path": "segments/page5_fig0_seg8.png",
-      "compound_id": "8",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "A",
-      "flag": null
+      "flag": "reagent/starting material sulfonyl hydrazide 8"
     },
     {
       "segment_path": "segments/page5_fig0_seg9.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "A",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - NHPI reagent template"
     },
     {
       "segment_path": "segments/page5_fig0_seg10.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "X = Br or I",
+      "conditions": null,
       "panel_label": "A",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - alkyl halide reagent template"
     },
     {
       "segment_path": "segments/page5_fig0_seg11.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "A",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - product template"
     },
     {
       "segment_path": "segments/page5_fig0_seg12.png",
-      "compound_id": "bpp",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "A",
-      "flag": null
+      "flag": "ligand bpp structure box"
     },
     {
       "segment_path": "segments/page5_fig0_seg13.png",
+      "is_scoped_product": true,
       "compound_id": "9",
       "yield_percent": "65%",
       "conditions": null,
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg14.png",
+      "is_scoped_product": true,
       "compound_id": "10",
       "yield_percent": "51%",
       "conditions": null,
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg15.png",
+      "is_scoped_product": true,
       "compound_id": "11",
       "yield_percent": "47%",
       "conditions": null,
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg16.png",
+      "is_scoped_product": true,
       "compound_id": "12",
       "yield_percent": "35%",
       "conditions": null,
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg17.png",
+      "is_scoped_product": true,
       "compound_id": "13",
-      "yield_percent": "61% (X = I), 55% (X = Br)b",
+      "yield_percent": "61% (X = I), 55% (X = Br)",
       "conditions": "X = I / X = Br",
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg18.png",
+      "is_scoped_product": true,
       "compound_id": "14",
       "yield_percent": "33%",
-      "conditions": "X = Br, b",
+      "conditions": "X = Br",
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg19.png",
+      "is_scoped_product": true,
       "compound_id": "15",
       "yield_percent": "49%",
       "conditions": "X = I",
       "panel_label": "A",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg20.png",
+      "is_scoped_product": true,
       "compound_id": "16",
       "yield_percent": "64%",
       "conditions": "X = I",
@@ -170,254 +191,286 @@
     },
     {
       "segment_path": "segments/page5_fig0_seg21.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "B",
-      "flag": null
+      "flag": "reagent/starting material sulfonyl hydrazide"
     },
     {
       "segment_path": "segments/page5_fig0_seg22.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "X = Cl or Br",
+      "conditions": null,
       "panel_label": "B",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - aryl halide reagent template"
     },
     {
       "segment_path": "segments/page5_fig0_seg23.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "X = Br, I, or OTf",
+      "conditions": null,
       "panel_label": "B",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - alkenyl reagent template"
     },
     {
       "segment_path": "segments/page5_fig0_seg24.png",
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
+      "is_scoped_product": true,
+      "compound_id": "17",
+      "yield_percent": "83%",
+      "conditions": "X = Cl",
       "panel_label": "B",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg25.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "B",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - product template"
     },
     {
       "segment_path": "segments/page5_fig0_seg26.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "B",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - alkynyl bromide reagent template"
     },
     {
       "segment_path": "segments/page5_fig0_seg27.png",
-      "compound_id": "17",
-      "yield_percent": "83%",
-      "conditions": "X = Cl, a,c,d",
+      "is_scoped_product": true,
+      "compound_id": "18",
+      "yield_percent": "85%",
+      "conditions": "X = Cl",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg28.png",
-      "compound_id": "18",
-      "yield_percent": "85%",
-      "conditions": "X = Cl, a,d,e",
+      "is_scoped_product": true,
+      "compound_id": "19",
+      "yield_percent": "37%",
+      "conditions": "X = Br",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg29.png",
-      "compound_id": "19",
-      "yield_percent": "37%",
-      "conditions": "X = Br, a,d,e",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
       "panel_label": "B",
-      "flag": null
+      "flag": "appears misaligned/no label visible at this location"
     },
     {
       "segment_path": "segments/page5_fig0_seg30.png",
+      "is_scoped_product": true,
       "compound_id": "20",
       "yield_percent": "56%",
-      "conditions": "X = Br, a,f,g",
+      "conditions": "X = Br",
       "panel_label": "B",
-      "flag": null
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg31.png",
+      "is_scoped_product": true,
       "compound_id": "21",
       "yield_percent": "63%",
-      "conditions": "X = Br, a,f,g",
+      "conditions": "X = Br",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg32.png",
+      "is_scoped_product": true,
       "compound_id": "22",
       "yield_percent": "76%",
-      "conditions": "X = Br, a,f,g",
+      "conditions": "X = Br",
       "panel_label": "B",
       "flag": null
     },
     {
       "segment_path": "segments/page5_fig0_seg33.png",
+      "is_scoped_product": true,
       "compound_id": "23",
       "yield_percent": "54%",
       "conditions": "X = Br",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg34.png",
+      "is_scoped_product": true,
       "compound_id": "24",
       "yield_percent": "45%",
-      "conditions": "X = I, d",
+      "conditions": "X = I",
       "panel_label": "B",
-      "flag": null
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg35.png",
+      "is_scoped_product": true,
       "compound_id": "25",
       "yield_percent": "23%",
       "conditions": "X = Br",
       "panel_label": "B",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg36.png",
+      "is_scoped_product": true,
       "compound_id": "26",
       "yield_percent": "48%",
       "conditions": "X = I",
       "panel_label": "B",
-      "flag": null
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg37.png",
+      "is_scoped_product": true,
       "compound_id": "27",
       "yield_percent": "65%",
       "conditions": "X = I",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg38.png",
+      "is_scoped_product": true,
       "compound_id": "28",
       "yield_percent": "48%",
       "conditions": "X = OTf",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg39.png",
+      "is_scoped_product": true,
       "compound_id": "29",
       "yield_percent": "53%",
-      "conditions": "X = I, a",
+      "conditions": "X = I",
       "panel_label": "B",
-      "flag": "too_many_fragments"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg40.png",
+      "is_scoped_product": true,
       "compound_id": "30",
       "yield_percent": "40%",
       "conditions": null,
       "panel_label": "B",
-      "flag": null
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg41.png",
+      "is_scoped_product": true,
       "compound_id": "31",
       "yield_percent": "29%",
       "conditions": null,
       "panel_label": "B",
-      "flag": null
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg42.png",
+      "is_scoped_product": true,
       "compound_id": "32",
       "yield_percent": "38%",
       "conditions": null,
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg43.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "via Mitsunobu from alcohol",
+      "conditions": null,
       "panel_label": "B",
-      "flag": null
+      "flag": "Mitsunobu precursor alcohol/tosylhydrazide intermediate, not a numbered product"
     },
     {
       "segment_path": "segments/page5_fig0_seg44.png",
+      "is_scoped_product": true,
       "compound_id": "33",
       "yield_percent": "83%",
-      "conditions": "X = Br, f,g",
+      "conditions": "X = Br",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg45.png",
+      "is_scoped_product": true,
       "compound_id": "34",
       "yield_percent": "73%",
       "conditions": "X = I",
       "panel_label": "B",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg46.png",
+      "is_scoped_product": true,
       "compound_id": "35",
       "yield_percent": "35%",
-      "conditions": "h",
-      "panel_label": "B",
-      "flag": "too_many_fragments"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg47.png",
-      "compound_id": "F",
-      "yield_percent": null,
       "conditions": null,
-      "panel_label": "C",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg48.png",
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": "from ketones",
-      "panel_label": "C",
-      "flag": "too_many_fragments"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg49.png",
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": "from 1\u00b0 alcohols",
-      "panel_label": "C",
+      "panel_label": "B",
       "flag": "multi_compound_merge"
     },
     {
+      "segment_path": "segments/page5_fig0_seg47.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "C",
+      "flag": "reagent/starting material sulfonyl hydrazide"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg48.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "C",
+      "flag": "copper reagent structure box, multi_compound_merge"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg49.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "C",
+      "flag": "generic_scaffold - reaction scheme product template"
+    },
+    {
       "segment_path": "segments/page5_fig0_seg50.png",
+      "is_scoped_product": true,
       "compound_id": "36",
       "yield_percent": "43%",
       "conditions": null,
       "panel_label": "C",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg51.png",
+      "is_scoped_product": true,
       "compound_id": "37",
       "yield_percent": "42%",
       "conditions": null,
       "panel_label": "C",
-      "flag": "generic_scaffold"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg52.png",
+      "is_scoped_product": true,
       "compound_id": "38",
       "yield_percent": "57%",
       "conditions": null,
@@ -426,152 +479,171 @@
     },
     {
       "segment_path": "segments/page5_fig0_seg53.png",
+      "is_scoped_product": true,
       "compound_id": "39",
       "yield_percent": "52%",
       "conditions": null,
       "panel_label": "C",
-      "flag": null
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg54.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "C",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - primary alcohol/tosylhydrazide reagent template"
     },
     {
       "segment_path": "segments/page5_fig0_seg55.png",
-      "compound_id": "40",
-      "yield_percent": "52%",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
       "conditions": null,
       "panel_label": "C",
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - product from alcohols template"
     },
     {
       "segment_path": "segments/page5_fig0_seg56.png",
+      "is_scoped_product": true,
       "compound_id": "40",
       "yield_percent": "52%",
       "conditions": null,
       "panel_label": "C",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg57.png",
+      "is_scoped_product": true,
       "compound_id": "41",
       "yield_percent": "49%",
       "conditions": null,
       "panel_label": "C",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig0_seg58.png",
+      "is_scoped_product": true,
       "compound_id": "42",
       "yield_percent": "51%",
       "conditions": null,
       "panel_label": "C",
-      "flag": null
+      "flag": "smiles_misread"
     }
   ],
   "images/page8_fig0.png": [
     {
       "segment_path": "segments/page8_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - starting ketone template, not a product"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page8_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "reaction arrow/conditions text, not a compound"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page8_fig0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - sulfonyl hydrazone intermediate template"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page8_fig0_seg3.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - in situ hydrazide template"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page8_fig0_seg4.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - coupled product template"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page8_fig0_seg5.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "dNH2-bpy ligand structure, not a scope entry"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page8_fig0_seg6.png",
+      "is_scoped_product": true,
       "compound_id": "43",
       "yield_percent": "38%",
-      "conditions": "X = Br (a)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg7.png",
+      "is_scoped_product": true,
       "compound_id": "44",
       "yield_percent": "38%",
-      "conditions": "X = Br (a)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg8.png",
+      "is_scoped_product": true,
       "compound_id": "45",
       "yield_percent": "79%",
-      "conditions": "X = Br (a)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg9.png",
+      "is_scoped_product": true,
       "compound_id": "46",
       "yield_percent": "35%",
-      "conditions": "X = Br (a)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg10.png",
+      "is_scoped_product": true,
       "compound_id": "47",
       "yield_percent": "47%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg11.png",
+      "is_scoped_product": true,
       "compound_id": "48",
       "yield_percent": "21%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg12.png",
+      "is_scoped_product": true,
       "compound_id": "49",
       "yield_percent": "44%",
       "conditions": "X = Br",
@@ -580,14 +652,16 @@
     },
     {
       "segment_path": "segments/page8_fig0_seg13.png",
+      "is_scoped_product": true,
       "compound_id": "18",
       "yield_percent": "65% (X = Cl) or 48% (X = OTf)",
-      "conditions": "X = Cl or X = OTf (a)",
+      "conditions": "X = Cl or X = OTf",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg14.png",
+      "is_scoped_product": true,
       "compound_id": "50",
       "yield_percent": "46%",
       "conditions": "X = Br",
@@ -596,419 +670,467 @@
     },
     {
       "segment_path": "segments/page8_fig0_seg15.png",
+      "is_scoped_product": true,
       "compound_id": "51",
       "yield_percent": "28%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg16.png",
+      "is_scoped_product": true,
       "compound_id": "52",
       "yield_percent": "37%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": "too_many_fragments in SMILES but structure clearly matches 52"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg17.png",
+      "is_scoped_product": true,
       "compound_id": "53",
       "yield_percent": "43%",
-      "conditions": "X = Br (b)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg18.png",
+      "is_scoped_product": true,
       "compound_id": "54",
       "yield_percent": "70%",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg19.png",
+      "is_scoped_product": true,
       "compound_id": "55",
       "yield_percent": "41%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg20.png",
+      "is_scoped_product": true,
       "compound_id": "56",
       "yield_percent": "40%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg21.png",
+      "is_scoped_product": true,
       "compound_id": "57",
       "yield_percent": "49%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg22.png",
+      "is_scoped_product": true,
       "compound_id": "58",
       "yield_percent": "65%",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg23.png",
+      "is_scoped_product": true,
       "compound_id": "59",
       "yield_percent": "52%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg24.png",
+      "is_scoped_product": true,
       "compound_id": "60",
       "yield_percent": "22%",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg25.png",
+      "is_scoped_product": true,
       "compound_id": "61",
       "yield_percent": "52%",
-      "conditions": "X = Br (a,b)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": "too_many_fragments in SMILES but structure matches 61"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg26.png",
+      "is_scoped_product": true,
       "compound_id": "62",
       "yield_percent": "55%",
-      "conditions": "X = Br (a)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg27.png",
+      "is_scoped_product": true,
       "compound_id": "17",
       "yield_percent": "67%",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg28.png",
+      "is_scoped_product": true,
       "compound_id": "63",
       "yield_percent": "51%",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg29.png",
+      "is_scoped_product": true,
       "compound_id": "64",
       "yield_percent": "57%",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": "generic_scaffold flagged in SMILES but panel shows real compound 64"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg30.png",
+      "is_scoped_product": true,
       "compound_id": "65",
       "yield_percent": "27% NMR",
       "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg31.png",
+      "is_scoped_product": true,
       "compound_id": "66",
       "yield_percent": "15%",
-      "conditions": "X = Cl (a)",
+      "conditions": "X = Cl",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg32.png",
+      "is_scoped_product": true,
       "compound_id": "67",
-      "yield_percent": "26% (>10:1 d.r.)",
-      "conditions": "X = Cl",
+      "yield_percent": "26%",
+      "conditions": ">10:1 d.r., X = Cl",
       "panel_label": null,
-      "flag": "generic_scaffold flagged in SMILES but panel shows real compound 67"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg33.png",
+      "is_scoped_product": true,
       "compound_id": "68",
-      "yield_percent": "28% (10:1 d.r.)",
-      "conditions": "X = Br",
+      "yield_percent": "28%",
+      "conditions": "10:1 d.r, X = Br",
       "panel_label": null,
-      "flag": "generic_scaffold flagged in SMILES but panel shows real compound 68"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg34.png",
+      "is_scoped_product": true,
       "compound_id": "69",
-      "yield_percent": "42% (5:1 d.r.)",
-      "conditions": "X = Br",
+      "yield_percent": "42%",
+      "conditions": "5:1 d.r., X = Br",
       "panel_label": null,
-      "flag": "too_many_fragments but matches 69"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg35.png",
+      "is_scoped_product": true,
       "compound_id": "70",
-      "yield_percent": "36% (>20:1 d.r.)",
-      "conditions": "X = Br",
+      "yield_percent": "36%",
+      "conditions": ">20:1 d.r., X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg36.png",
+      "is_scoped_product": true,
       "compound_id": "71",
-      "yield_percent": "25% (>10:1 d.r.)",
-      "conditions": "X = Br",
+      "yield_percent": "25%",
+      "conditions": ">10:1 d.r., X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg37.png",
+      "is_scoped_product": true,
       "compound_id": "72",
-      "yield_percent": "40% [previously 4 steps]",
-      "conditions": "X = Br",
+      "yield_percent": "40%",
+      "conditions": "X = Br, [previously 4 steps]",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg38.png",
+      "is_scoped_product": true,
       "compound_id": "73",
-      "yield_percent": "27% (>10:1 d.r.)",
-      "conditions": "X = Br",
+      "yield_percent": "27%",
+      "conditions": ">10:1 d.r., X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg39.png",
+      "is_scoped_product": true,
       "compound_id": "74",
-      "yield_percent": "24% (>10:1 d.r.)",
-      "conditions": "X = Br",
+      "yield_percent": "24%",
+      "conditions": ">10:1 d.r., X = Br",
       "panel_label": null,
-      "flag": "too_many_fragments but matches 74"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg40.png",
+      "is_scoped_product": true,
       "compound_id": "75",
       "yield_percent": "38%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg41.png",
+      "is_scoped_product": true,
       "compound_id": "76",
       "yield_percent": "55%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg42.png",
+      "is_scoped_product": true,
       "compound_id": "77",
       "yield_percent": "40%",
-      "conditions": "X = Br (b)",
+      "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg43.png",
+      "is_scoped_product": true,
       "compound_id": "78",
       "yield_percent": "29%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page8_fig0_seg44.png",
+      "is_scoped_product": true,
       "compound_id": "79",
       "yield_percent": "18%",
       "conditions": "X = Br",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     }
   ],
   "images_SI/page94_fig0.png": [
     {
       "segment_path": "segments/page94_fig0_seg0.png",
-      "compound_id": "17",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is a structure diagram (compound 17) shown alongside its NMR spectrum, not a scoped reaction-table product entry with yield/conditions."
     }
   ],
   "images_SI/page97_fig0.png": [
     {
       "segment_path": "segments/page97_fig0_seg0.png",
-      "compound_id": "18",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is a structure diagram for the NMR spectrum (compound 18), not a scope-table product entry with label/yield."
     }
   ],
   "images_SI/page98_fig0.png": [
     {
       "segment_path": "segments/page98_fig0_seg0.png",
-      "compound_id": "18",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is a structure shown alongside an NMR spectrum (analytical characterization figure), not a scope-table product entry with a label/yield."
     }
   ],
   "images_SI/page113_fig0.png": [
     {
       "segment_path": "segments/page113_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is an NMR spectrum figure; no compound ID, yield, or conditions text is printed next to the structure in the image."
+      "flag": "This is a single NMR structure image (not a scope table with labels/yields), and SMILES shows a triflamide group not matching the drawn tosyl (Ts) group"
     }
   ],
   "images_SI/page134_fig0.png": [
     {
       "segment_path": "segments/page134_fig0_seg0.png",
-      "compound_id": "45",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is the structure of compound 45 shown for NMR reference, not a scoped reaction product in a scheme/table."
     }
   ],
   "images_SI/page140_fig0.png": [
     {
       "segment_path": "segments/page140_fig0_seg0.png",
-      "compound_id": "49",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is the structure of compound 49 shown for context in an NMR spectrum figure, not a scoped product table entry."
     }
   ],
   "images_SI/page143_fig0.png": [
     {
       "segment_path": "segments/page143_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold - this is the single compound structure shown at top of NMR spectrum, not a scope table entry"
     },
     {
       "segment_path": "segments/page143_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This segment appears to be a peak/integration artifact from the NMR spectrum, not a real structure."
+      "flag": "generic_scaffold - appears to be a stray/artifact segment from the NMR spectrum region, not a structure"
     },
     {
       "segment_path": "segments/page143_fig0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This segment appears to be a peak/integration artifact from the NMR spectrum, not a real structure."
+      "flag": "generic_scaffold - appears to be a stray/artifact segment from the NMR spectrum region, not a structure"
     }
   ],
   "images_SI/page148_fig0.png": [
     {
       "segment_path": "segments/page148_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is a NMR spectrum figure; no compound ID or yield printed, only structure and 13C shifts."
+      "flag": "This is a structure diagram (Compound 53) shown alongside its NMR spectrum, not a scope-table entry with yield/conditions."
     }
   ],
   "images_SI/page150_fig0.png": [
     {
       "segment_path": "segments/page150_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is a 13C NMR spectrum figure for compound 54; no yield/label data printed next to structure, only NMR peak list."
+      "flag": "generic_scaffold"
     }
   ],
   "images_SI/page151_fig0.png": [
     {
       "segment_path": "segments/page151_fig0_seg0.png",
-      "compound_id": "54",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold"
     }
   ],
   "images_SI/page153_fig0.png": [
     {
       "segment_path": "segments/page153_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold; this is the structure of compound 58 shown as context for the NMR spectrum, not a scoped product table entry"
     }
   ],
   "images_SI/page157_fig0.png": [
     {
       "segment_path": "segments/page157_fig0_seg0.png",
-      "compound_id": "63",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is a structure diagram for compound 63 shown for NMR context, not a scope-table product entry."
     }
   ],
   "images_SI/page158_fig0.png": [
     {
       "segment_path": "segments/page158_fig0_seg0.png",
-      "compound_id": "63",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is a structure shown alongside an NMR spectrum, not a scoped reaction product entry."
     }
   ],
   "images_SI/page160_fig0.png": [
     {
       "segment_path": "segments/page160_fig0_seg0.png",
-      "compound_id": "64",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold - this is the NMR spectrum's compound structure image, not a scope table product entry"
     }
   ],
   "images_SI/page161_fig0.png": [
     {
       "segment_path": "segments/page161_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "No compound ID or yield label printed near structure; only NMR spectrum peak (-67.72) shown, corresponding to structure per caption 'Compound 64 19F NMR'"
+      "flag": "This is a structure shown alongside NMR spectrum data (compound 64), not a scoped reaction product table entry."
     }
   ],
   "images_SI/page163_fig0.png": [
     {
       "segment_path": "segments/page163_fig0_seg0.png",
-      "compound_id": "75",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "This is the compound structure shown for NMR characterization, not a scope-table product."
     }
   ]
 }

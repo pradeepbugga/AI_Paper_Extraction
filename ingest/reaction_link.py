@@ -65,17 +65,30 @@ RECORD_LINKS_TOOL = {
                             "type": "string",
                             "description": "Must exactly match one of the segment_path values given in the prompt.",
                         },
+                        "is_scoped_product": {
+                            "type": "boolean",
+                            "description": (
+                                "True if this segment's drawing is one specific, individually-labeled entry in the "
+                                "table/scope (even if its SMILES was misread as generic -- judge this from what the "
+                                "image actually shows, not from the has_generic_substituent hint). False if the "
+                                "drawing itself is a reaction-scheme template, a reagent/catalyst/starting-material "
+                                "structure, or any other component shown for context rather than a specific "
+                                "numbered/lettered product -- e.g. the general 'R-CF3' arrow-diagram template drawn "
+                                "once at the top of a panel is False even though a specific product below it "
+                                "sharing a similar structure is True."
+                            ),
+                        },
                         "compound_id": {
                             "anyOf": [{"type": "string"}, {"type": "null"}],
-                            "description": "The bold compound/entry label printed next to this structure (e.g. '3a'), or null if none is visible.",
+                            "description": "The bold compound/entry label printed next to this structure (e.g. '3a'), or null if none is visible. Must be null when is_scoped_product is false.",
                         },
                         "yield_percent": {
                             "anyOf": [{"type": "string"}, {"type": "null"}],
-                            "description": "The yield text as printed (e.g. '87%', 'trace', 'NR'), or null if none is shown for this structure.",
+                            "description": "The yield text as printed (e.g. '87%', 'trace', 'NR'), or null if none is shown for this structure. Must be null when is_scoped_product is false.",
                         },
                         "conditions": {
                             "anyOf": [{"type": "string"}, {"type": "null"}],
-                            "description": "Any condition-variant annotation specific to this structure (e.g. 'X = Cl', a footnote marker's condition), or null.",
+                            "description": "Any condition-variant annotation specific to this structure (e.g. 'X = Cl', a footnote marker's condition), or null. Must be null when is_scoped_product is false.",
                         },
                         "panel_label": {
                             "anyOf": [{"type": "string"}, {"type": "null"}],
@@ -83,10 +96,10 @@ RECORD_LINKS_TOOL = {
                         },
                         "flag": {
                             "anyOf": [{"type": "string"}, {"type": "null"}],
-                            "description": "Set if this segment is unreliable to link: e.g. 'multi_compound_merge' if the segment's SMILES looks like it covers more than one real structure, 'generic_scaffold' if this is a placeholder R/X/Z scope-table template rather than a real product, or a free-text note for anything else worth flagging. Null if the link is straightforward.",
+                            "description": "Set if this segment is unreliable to link: e.g. 'multi_compound_merge' if the segment's SMILES looks like it covers more than one real structure, 'generic_scaffold' if is_scoped_product is false, 'smiles_misread' if is_scoped_product is true but the given SMILES looks wrong for what the image shows, or a free-text note for anything else worth flagging. Null if the link is straightforward.",
                         },
                     },
-                    "required": ["segment_path", "compound_id", "yield_percent", "conditions", "panel_label", "flag"],
+                    "required": ["segment_path", "is_scoped_product", "compound_id", "yield_percent", "conditions", "panel_label", "flag"],
                     "additionalProperties": False,
                 },
             }
@@ -155,6 +168,23 @@ next to it in the image: its compound/entry-ID label, yield, any
 condition-variant annotation specific to it, and (if the figure has lettered
 sub-panels like (a)/(b)/(c)) which panel it belongs to.
 
+For every segment, first decide is_scoped_product from what the image
+actually shows at that segment's location -- not from the has_generic_
+substituent hint, which describes Stage 3's OCSR reading of the structure
+and can be wrong in either direction:
+- A segment can be a real, specific, individually-labeled product even
+  though has_generic_substituent=True (Stage 3's OCSR misread part of a
+  normal structure as a placeholder). In this case is_scoped_product is
+  true -- read its own real label/yield/conditions normally, and set flag
+  to note the SMILES looks wrong for what's drawn.
+- A segment can be a reaction-scheme template, a reagent/catalyst box, or
+  any other non-product component even when its own SMILES looks
+  ordinary. In this case is_scoped_product is false, and compound_id/
+  yield_percent/conditions MUST all be null -- never reuse or borrow a
+  nearby real product's label/yield/conditions for a non-product segment,
+  even if they happen to sit right next to each other or share a similar
+  structure.
+
 {caption_desc}
 
 Segments already extracted from this figure:
@@ -200,7 +230,24 @@ def link_figure_claude(client, image_bytes, media_type, caption, segments):
             "response truncated, raise max_tokens or split the figure's segments across calls"
         )
     tool_use = next(b for b in response.content if b.type == "tool_use")
-    return tool_use.input["links"]
+    return _enforce_non_product_nulls(tool_use.input["links"])
+
+
+def _enforce_non_product_nulls(links):
+    """Hard guarantee, independent of the model's own compliance: a segment
+    marked is_scoped_product=False can never carry compound_id/yield_percent/
+    conditions data. Confirmed necessary on a real case
+    (redox_neutral_2024/images/page5_fig0.png segment 55, the panel's own
+    'R'-CH2-CF3' scheme template) where the model set is_scoped_product
+    correctly-ish but still copied a neighboring real product's yield onto
+    it -- the prompt instruction alone wasn't sufficient, so this is
+    enforced in code rather than trusted."""
+    for link in links:
+        if not link.get("is_scoped_product", True):
+            link["compound_id"] = None
+            link["yield_percent"] = None
+            link["conditions"] = None
+    return links
 
 
 def link_figure(paper_dir, image_path, client, link_fn=link_figure_claude):

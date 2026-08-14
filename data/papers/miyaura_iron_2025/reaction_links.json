@@ -2,62 +2,70 @@
   "images/page2_raster0.png": [
     {
       "segment_path": "segments/page2_raster0_seg0.png",
-      "compound_id": "1",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page2_raster0_seg1.png",
-      "compound_id": "2a",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold, this is aryl chloride reagent 2a"
     },
     {
       "segment_path": "segments/page2_raster0_seg2.png",
-      "compound_id": "3a",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, this is product 3a"
     },
     {
       "segment_path": "segments/page2_raster0_seg3.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "dcpe/dmpe ligand structures",
+      "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold, ligand legend label dcpe likely, multi_compound_merge"
     },
     {
       "segment_path": "segments/page2_raster0_seg4.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "generic_scaffold, multi_compound_merge"
     },
     {
       "segment_path": "segments/page2_raster0_seg5.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold, smiles_misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg6.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "generic_scaffold, smiles_misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg7.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
@@ -66,59 +74,66 @@
     },
     {
       "segment_path": "segments/page2_raster0_seg8.png",
-      "compound_id": "dcpe",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely dmpe ligand structure, smiles_misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg9.png",
-      "compound_id": "IMes",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely IMes ligand structure, smiles_misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg10.png",
-      "compound_id": "6Mes",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely 6Mes ligand structure, smiles_misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg11.png",
-      "compound_id": "dmpe",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely dcpe ligand structure, smiles_misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg12.png",
-      "compound_id": "SciOPP",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely SciOPP ligand structure, multi_compound_merge"
     },
     {
       "segment_path": "segments/page2_raster0_seg13.png",
-      "compound_id": "tBuXantphos",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely tBuXantphos ligand structure, multi_compound_merge"
     },
     {
       "segment_path": "segments/page2_raster0_seg14.png",
-      "compound_id": "L-PN",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "generic_scaffold, likely L-PN ligand structure, smiles_misread"
     }
   ]
 }

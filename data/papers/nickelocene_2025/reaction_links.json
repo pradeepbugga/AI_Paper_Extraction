@@ -2,6 +2,7 @@
   "images/page3_raster0.png": [
     {
       "segment_path": "segments/page3_raster0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
@@ -10,6 +11,7 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
@@ -18,6 +20,7 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
@@ -26,14 +29,16 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg3.png",
+      "is_scoped_product": true,
       "compound_id": "3f",
       "yield_percent": "61% yield",
       "conditions": "2.4:1 d.r.",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg4.png",
+      "is_scoped_product": true,
       "compound_id": "3b",
       "yield_percent": "82% yield",
       "conditions": null,
@@ -42,14 +47,16 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg5.png",
+      "is_scoped_product": true,
       "compound_id": "3c",
       "yield_percent": "48% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg6.png",
+      "is_scoped_product": true,
       "compound_id": "3d",
       "yield_percent": "63% yield",
       "conditions": null,
@@ -58,14 +65,16 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg7.png",
+      "is_scoped_product": true,
       "compound_id": "3e",
       "yield_percent": "91% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg8.png",
+      "is_scoped_product": true,
       "compound_id": "3g",
       "yield_percent": "71% yield",
       "conditions": null,
@@ -74,22 +83,25 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg9.png",
+      "is_scoped_product": true,
       "compound_id": "3h",
       "yield_percent": "68% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg10.png",
+      "is_scoped_product": true,
       "compound_id": "3i",
       "yield_percent": "42% yield",
-      "conditions": null,
+      "conditions": "b",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg11.png",
+      "is_scoped_product": true,
       "compound_id": "6a",
       "yield_percent": "82% yield",
       "conditions": null,
@@ -98,6 +110,7 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg12.png",
+      "is_scoped_product": true,
       "compound_id": "6b",
       "yield_percent": "71% yield",
       "conditions": null,
@@ -106,22 +119,25 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg13.png",
+      "is_scoped_product": true,
       "compound_id": "6c",
       "yield_percent": "82% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg14.png",
+      "is_scoped_product": true,
       "compound_id": "6d",
       "yield_percent": "59% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg15.png",
+      "is_scoped_product": true,
       "compound_id": "6e",
       "yield_percent": "66% yield",
       "conditions": null,
@@ -130,78 +146,88 @@
     },
     {
       "segment_path": "segments/page3_raster0_seg16.png",
+      "is_scoped_product": true,
       "compound_id": "6f",
       "yield_percent": "41% yield",
-      "conditions": null,
+      "conditions": "b",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg17.png",
+      "is_scoped_product": true,
       "compound_id": "3j",
       "yield_percent": "56% yield",
-      "conditions": null,
+      "conditions": "b",
       "panel_label": null,
       "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page3_raster0_seg18.png",
+      "is_scoped_product": true,
       "compound_id": "3k",
       "yield_percent": "43% yield",
-      "conditions": null,
+      "conditions": "b",
       "panel_label": null,
       "flag": null
     },
     {
       "segment_path": "segments/page3_raster0_seg19.png",
+      "is_scoped_product": true,
       "compound_id": "3l",
       "yield_percent": "46% yield",
-      "conditions": null,
+      "conditions": "b",
       "panel_label": null,
       "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page3_raster0_seg20.png",
+      "is_scoped_product": true,
       "compound_id": "6g",
       "yield_percent": "33% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg21.png",
+      "is_scoped_product": true,
       "compound_id": "6h",
       "yield_percent": "65% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg22.png",
+      "is_scoped_product": true,
       "compound_id": "6i",
       "yield_percent": "58% yield",
-      "conditions": null,
+      "conditions": "b",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg23.png",
+      "is_scoped_product": true,
       "compound_id": "6j",
       "yield_percent": "79% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg24.png",
+      "is_scoped_product": true,
       "compound_id": "6k",
       "yield_percent": "7% yield",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page3_raster0_seg25.png",
+      "is_scoped_product": true,
       "compound_id": "6l",
       "yield_percent": "23% yield",
       "conditions": null,
@@ -212,21 +238,23 @@
   "images_SI/page42_rasterstrip0.png": [
     {
       "segment_path": "segments/page42_rasterstrip0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "3g",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread: Ph group misread as Pb placeholder"
     }
   ],
   "images_SI/page51_rasterstrip0.png": [
     {
       "segment_path": "segments/page51_rasterstrip0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "3l",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     }
   ]
 }

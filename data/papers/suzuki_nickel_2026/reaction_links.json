@@ -2,22 +2,25 @@
   "images/page4_fig1.png": [
     {
       "segment_path": "segments/page4_fig1_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "reaction scheme starting material, not a product"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page4_fig1_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "R2 = H or Ph",
+      "conditions": null,
       "panel_label": null,
       "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page4_fig1_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
@@ -26,256 +29,288 @@
     },
     {
       "segment_path": "segments/page4_fig1_seg3.png",
+      "is_scoped_product": true,
       "compound_id": "3a",
-      "yield_percent": "78%",
-      "conditions": "42%, 90% eeb",
+      "yield_percent": "78%, 93% ee",
+      "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg4.png",
+      "is_scoped_product": true,
       "compound_id": "4a",
-      "yield_percent": "80%",
+      "yield_percent": "80%, 92% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg5.png",
+      "is_scoped_product": true,
       "compound_id": "5a",
-      "yield_percent": "73%",
+      "yield_percent": "73%, 90% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg6.png",
+      "is_scoped_product": true,
       "compound_id": "6a",
-      "yield_percent": "74%",
+      "yield_percent": "74%, 91% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg7.png",
+      "is_scoped_product": true,
       "compound_id": "7a",
-      "yield_percent": "68%",
+      "yield_percent": "68%, 91% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg8.png",
+      "is_scoped_product": true,
       "compound_id": "8a",
-      "yield_percent": "69%",
+      "yield_percent": "69%, 92% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg9.png",
+      "is_scoped_product": true,
       "compound_id": "9a",
-      "yield_percent": "73%",
+      "yield_percent": "73%, 90% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg10.png",
+      "is_scoped_product": true,
       "compound_id": "10a",
-      "yield_percent": "70%",
+      "yield_percent": "70%, 92% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg11.png",
+      "is_scoped_product": true,
       "compound_id": "11a",
-      "yield_percent": "61%",
+      "yield_percent": "61%, 89% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg12.png",
+      "is_scoped_product": true,
       "compound_id": "12a",
-      "yield_percent": "66%",
+      "yield_percent": "66%, 92% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "too_many_fragments; smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg13.png",
+      "is_scoped_product": true,
       "compound_id": "13a",
-      "yield_percent": "82%",
+      "yield_percent": "82%, 94% ee",
       "conditions": "XRD single crystal diffraction CCDC# 2486619",
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "too_many_fragments; smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg14.png",
+      "is_scoped_product": true,
       "compound_id": "14a",
-      "yield_percent": "68%",
+      "yield_percent": "68%, 93% ee",
       "conditions": null,
       "panel_label": null,
       "flag": null
     },
     {
       "segment_path": "segments/page4_fig1_seg15.png",
+      "is_scoped_product": true,
       "compound_id": "15a",
-      "yield_percent": "56%",
+      "yield_percent": "56%, 89% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg16.png",
+      "is_scoped_product": true,
       "compound_id": "16a",
-      "yield_percent": "45%",
+      "yield_percent": "45%, 88% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "too_many_fragments; smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg17.png",
+      "is_scoped_product": true,
       "compound_id": "17a",
-      "yield_percent": "60%",
+      "yield_percent": "60%, 91% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "too_many_fragments; smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg18.png",
+      "is_scoped_product": true,
       "compound_id": "18a",
-      "yield_percent": "54%",
+      "yield_percent": "54%, 90% ee",
       "conditions": null,
       "panel_label": null,
       "flag": null
     },
     {
       "segment_path": "segments/page4_fig1_seg19.png",
+      "is_scoped_product": true,
       "compound_id": "19a",
-      "yield_percent": "58%",
+      "yield_percent": "58%, 94% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg20.png",
+      "is_scoped_product": true,
       "compound_id": "20a",
-      "yield_percent": "67%",
+      "yield_percent": "67%, 92% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg21.png",
+      "is_scoped_product": true,
       "compound_id": "21a",
-      "yield_percent": "66%",
+      "yield_percent": "66%, 91% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg22.png",
+      "is_scoped_product": true,
       "compound_id": "22a",
-      "yield_percent": "55%",
+      "yield_percent": "55%, 90% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "too_many_fragments; smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg23.png",
+      "is_scoped_product": true,
       "compound_id": "23a",
-      "yield_percent": "50%",
+      "yield_percent": "50%, 87% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg24.png",
+      "is_scoped_product": true,
       "compound_id": "24a",
-      "yield_percent": "71%",
+      "yield_percent": "71%, 90% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments"
+      "flag": "too_many_fragments; smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg25.png",
+      "is_scoped_product": true,
       "compound_id": "25a",
-      "yield_percent": "57%",
+      "yield_percent": "57%, 92% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page4_fig1_seg26.png",
+      "is_scoped_product": true,
       "compound_id": "26a",
-      "yield_percent": "36%",
+      "yield_percent": "36%, 87% ee",
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "smiles_misread"
     }
   ],
   "images/page5_fig1.png": [
     {
       "segment_path": "segments/page5_fig1_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - this is the epoxide reactant scaffold in the scheme, not a product entry"
+      "flag": "generic_scaffold - reaction scheme starting material template"
     },
     {
       "segment_path": "segments/page5_fig1_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - this is the epoxide reactant scaffold in the scheme, not a product entry"
+      "flag": "generic_scaffold - reaction scheme boronic acid/epoxide template"
     },
     {
       "segment_path": "segments/page5_fig1_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold - this is the epoxide reactant scaffold in the scheme, not a product entry"
+      "flag": "generic_scaffold - reaction scheme arrow product template"
     },
     {
       "segment_path": "segments/page5_fig1_seg3.png",
+      "is_scoped_product": true,
       "compound_id": "27a",
       "yield_percent": "58%",
       "conditions": "85% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig1_seg4.png",
+      "is_scoped_product": true,
       "compound_id": "28a",
       "yield_percent": "42%",
       "conditions": "88% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig1_seg5.png",
+      "is_scoped_product": true,
       "compound_id": "29a",
       "yield_percent": "65%",
       "conditions": "85% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig1_seg6.png",
+      "is_scoped_product": true,
       "compound_id": "30a",
       "yield_percent": "52%",
       "conditions": "86% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page5_fig1_seg7.png",
+      "is_scoped_product": true,
       "compound_id": "31a",
       "yield_percent": "70%",
       "conditions": "88% ee",
@@ -284,14 +319,16 @@
     },
     {
       "segment_path": "segments/page5_fig1_seg8.png",
+      "is_scoped_product": true,
       "compound_id": "32a",
       "yield_percent": "68%",
       "conditions": "89% ee",
       "panel_label": null,
-      "flag": "too_many_fragments=True (may be several compounds merged into one crop)"
+      "flag": "too_many_fragments"
     },
     {
       "segment_path": "segments/page5_fig1_seg9.png",
+      "is_scoped_product": true,
       "compound_id": "33a",
       "yield_percent": "55%",
       "conditions": "83% ee",
@@ -300,80 +337,90 @@
     },
     {
       "segment_path": "segments/page5_fig1_seg10.png",
+      "is_scoped_product": true,
       "compound_id": "34a",
       "yield_percent": "66%",
       "conditions": "87% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     }
   ],
   "images/page6_fig1.png": [
     {
       "segment_path": "segments/page6_fig1_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "R1",
+      "conditions": null,
       "panel_label": "a",
       "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page6_fig1_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "R2",
+      "conditions": null,
       "panel_label": "a",
       "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page6_fig1_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "R2, R1",
+      "conditions": null,
       "panel_label": "a",
       "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page6_fig1_seg3.png",
+      "is_scoped_product": true,
       "compound_id": "35a",
       "yield_percent": "56%",
       "conditions": "dr = 94.5:5.5, Estrone derivative",
       "panel_label": "a",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page6_fig1_seg4.png",
+      "is_scoped_product": true,
       "compound_id": "36a",
       "yield_percent": "63%",
       "conditions": "90% ee, Indometacin derivative",
       "panel_label": "a",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page6_fig1_seg5.png",
-      "compound_id": "1b",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": "b",
-      "flag": null
+      "flag": "generic_scaffold, this is compound 1b starting material"
     },
     {
       "segment_path": "segments/page6_fig1_seg6.png",
-      "compound_id": "2a",
+      "is_scoped_product": false,
+      "compound_id": null,
       "yield_percent": null,
-      "conditions": "3 mmol",
+      "conditions": null,
       "panel_label": "b",
-      "flag": null
+      "flag": "generic_scaffold, this is compound 2a starting material"
     },
     {
       "segment_path": "segments/page6_fig1_seg7.png",
+      "is_scoped_product": true,
       "compound_id": "37a",
       "yield_percent": "70%",
       "conditions": "91% ee",
       "panel_label": "b",
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page6_fig1_seg8.png",
+      "is_scoped_product": true,
       "compound_id": "38a",
       "yield_percent": "63%",
       "conditions": "91% ee",
@@ -382,106 +429,119 @@
     },
     {
       "segment_path": "segments/page6_fig1_seg9.png",
+      "is_scoped_product": true,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "(+)-sertraline",
+      "conditions": null,
       "panel_label": "b",
-      "flag": null
+      "flag": "This is (+)-sertraline, a named final product not a scoped table entry"
     },
     {
       "segment_path": "segments/page6_fig1_seg10.png",
+      "is_scoped_product": true,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "(+)-indatraline",
+      "conditions": null,
       "panel_label": "b",
-      "flag": null
+      "flag": "This is (+)-indatraline, a named final product not a scoped table entry"
     },
     {
       "segment_path": "segments/page6_fig1_seg11.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "R1",
+      "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold, Table 4 general scheme aryl boronic acid"
     },
     {
       "segment_path": "segments/page6_fig1_seg12.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
-      "conditions": "R2, Ts",
+      "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold, Table 4 general scheme aziridine"
     },
     {
       "segment_path": "segments/page6_fig1_seg13.png",
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": "R1, R2",
-      "panel_label": null,
-      "flag": "generic_scaffold"
-    },
-    {
-      "segment_path": "segments/page6_fig1_seg14.png",
+      "is_scoped_product": true,
       "compound_id": "39a",
       "yield_percent": "65%",
       "conditions": "94% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
+    },
+    {
+      "segment_path": "segments/page6_fig1_seg14.png",
+      "is_scoped_product": true,
+      "compound_id": "39a",
+      "yield_percent": "65%",
+      "conditions": "94% ee",
+      "panel_label": null,
+      "flag": "smiles_misread; duplicate detection possible with seg13"
     },
     {
       "segment_path": "segments/page6_fig1_seg15.png",
+      "is_scoped_product": true,
       "compound_id": "40a",
       "yield_percent": "61%",
       "conditions": "93% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page6_fig1_seg16.png",
+      "is_scoped_product": true,
       "compound_id": "41a",
       "yield_percent": "62%",
       "conditions": "92% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page6_fig1_seg17.png",
+      "is_scoped_product": true,
       "compound_id": "42a",
       "yield_percent": "61%",
       "conditions": "88% ee",
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread"
     }
   ],
   "images_SI/page76_fig0.png": [
     {
       "segment_path": "segments/page76_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "4a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments; structure is compound 4a from caption, no yield/label text visible near structure itself"
+      "flag": "smiles_misread: SMILES includes many spurious CC/CCC fragments not part of actual structure"
     },
     {
       "segment_path": "segments/page76_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is just noise/artifact segment (CCC.CCC), not a real structure"
+      "flag": "This is part of the NMR spectrum data (peak labels/curve), not a chemical structure"
     },
     {
       "segment_path": "segments/page76_fig0_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "4a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "duplicate depiction of compound 4a structure for 13C NMR panel, no yield/label text visible"
+      "flag": "smiles_misread: extraneous II fragments appended to correct structure"
     }
   ],
   "images_SI/page81_fig3.png": [
     {
       "segment_path": "segments/page81_fig3_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
@@ -490,6 +550,7 @@
     },
     {
       "segment_path": "segments/page81_fig3_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "6a",
       "yield_percent": null,
       "conditions": null,
@@ -500,92 +561,103 @@
   "images_SI/page90_fig1.png": [
     {
       "segment_path": "segments/page90_fig1_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is a peak-cluster region of the 13C NMR spectrum, not a chemical structure; too_many_fragments merge artifact."
+      "flag": "multi_compound_merge; this is the NMR spectrum peak region, not a product structure"
     },
     {
       "segment_path": "segments/page90_fig1_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is a peak cluster region of the 13C NMR spectrum (CDCl3 residual solvent peaks), not a real structure."
+      "flag": "generic_scaffold; this segment corresponds to NMR peak lines, not a chemical structure"
     },
     {
       "segment_path": "segments/page90_fig1_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "10a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread; SMILES misses aromatic ring substituent (SMe group) and phenyl group shown in structure"
     }
   ],
   "images_SI/page94_fig0.png": [
     {
       "segment_path": "segments/page94_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "12a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page94_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "12a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "smiles_misread"
     },
     {
       "segment_path": "segments/page94_fig0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "spurious segment - appears to be mislabeled fragment not part of compound structure, likely artifact from peak label region"
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page94_fig0_seg3.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "spurious segment - appears to be mislabeled fragment not part of compound structure, likely artifact from peak label region"
+      "flag": "generic_scaffold"
     }
   ],
   "images_SI/page100_fig0.png": [
     {
       "segment_path": "segments/page100_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is an NMR spectrum figure; no compound ID/yield labels are printed next to the structure, only NMR peak assignment boxes (A-F)."
+      "flag": "This is the compound structure (15a) shown for context in an NMR figure, not a scope-table entry with its own label/yield."
     }
   ],
   "images_SI/page102_fig0.png": [
     {
       "segment_path": "segments/page102_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "16a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments: SMILES appears to merge structure with extraneous fragments"
+      "flag": "multi_compound_merge; SMILES contains extraneous fragments not shown in image"
     },
     {
       "segment_path": "segments/page102_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold: this segment appears to be a mismatched/irrelevant structure (durene-like), not part of the compound 16a NMR figure"
+      "flag": "generic_scaffold; appears to be an unrelated structure not the actual compound"
     },
     {
       "segment_path": "segments/page102_fig0_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "16a",
       "yield_percent": null,
       "conditions": null,
@@ -596,242 +668,270 @@
   "images_SI/page106_fig0.png": [
     {
       "segment_path": "segments/page106_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "18a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments merge artifact; structure corresponds to compound 18a shown in figure"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page106_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This segment appears to be a spurious/incorrect extraction not matching visible structure in image"
+      "flag": "generic_scaffold - this is NMR spectrum peak region, not a structure"
     },
     {
       "segment_path": "segments/page106_fig0_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "18a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge - extra fragments included besides real structure 18a"
+      "flag": "smiles_misread"
     }
   ],
   "images_SI/page116_fig0.png": [
     {
       "segment_path": "segments/page116_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "23a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments merge artifact; structure is the acid precursor shown in 1H NMR spectrum panel, no yield/label text visible near structure"
+      "flag": "smiles_misread - structure shown is the carboxylic acid/ester precursor drawn in NMR figure, SMILES contains many merged fragments (too_many_fragments), likely misread"
     },
     {
       "segment_path": "segments/page116_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments; this segment corresponds to noise/peak region of 13C spectrum, not a real structure"
+      "flag": "generic_scaffold - this segment corresponds to peak-label boxes/axis text in the 13C NMR spectrum, not a chemical structure"
     },
     {
       "segment_path": "segments/page116_fig0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "segment corresponds to peak-label region of 13C spectrum, not a real structure"
+      "flag": "generic_scaffold - this segment corresponds to peak-label boxes/axis text in the 13C NMR spectrum, not a chemical structure"
     },
     {
       "segment_path": "segments/page116_fig0_seg3.png",
+      "is_scoped_product": true,
       "compound_id": "23a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments merge artifact; structure is compound 23a shown in 13C NMR spectrum panel, no yield/label text visible near structure"
+      "flag": "smiles_misread - structure shown is the alcohol product 23a drawn above the 13C spectrum, SMILES contains extraneous fragments (too_many_fragments)"
     }
   ],
   "images_SI/page121_fig0.png": [
     {
       "segment_path": "segments/page121_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "25a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "smiles_misread: structure is single compound 25a, SMILES artifactually includes extra fragments"
     },
     {
       "segment_path": "segments/page121_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "25a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "smiles_misread: structure is single compound 25a, SMILES artifactually includes extra CO fragments"
     },
     {
       "segment_path": "segments/page121_fig0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold; this is a stray peak label artifact, not a product structure"
     }
   ],
   "images_SI/page125_fig0.png": [
     {
       "segment_path": "segments/page125_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "27a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread - extra fragments appended to real structure"
     },
     {
       "segment_path": "segments/page125_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "27a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments - duplicate structure for 13C NMR panel, extra fragments likely solvent/impurity peaks misparsed as SMILES"
+      "flag": "too_many_fragments/smiles_misread - this is the same compound 27a structure repeated in 13C NMR panel, extra fragments appended erroneously"
     },
     {
       "segment_path": "segments/page125_fig0_seg2.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "not a real product structure; appears to be a spurious/unrelated fragment (methyl dimethylbenzoate) not linked to any label in the image"
+      "flag": "not a product structure, appears to be a mislabeled/irrelevant fragment near 13C data"
     }
   ],
   "images_SI/page136_fig0.png": [
     {
       "segment_path": "segments/page136_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "31a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "multi_compound_merge - SMILES appears to merge two structures, but image shows single compound 31a with biphenyl and methoxyphenyl groups, no alkyne present"
     },
     {
       "segment_path": "segments/page136_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "31a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": "multi_compound_merge - SMILES has extra CC fragments not present in the actual structure shown"
     }
   ],
   "images_SI/page138_fig0.png": [
     {
       "segment_path": "segments/page138_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "32a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments merge; this is the 1H NMR spectrum panel with structure, not a scope entry with yield"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page138_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "32a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments merge; this is the 13C NMR spectrum panel with structure, not a scope entry with yield"
+      "flag": "multi_compound_merge"
     }
   ],
   "images_SI/page140_fig0.png": [
     {
       "segment_path": "segments/page140_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "33a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread: extra CC fragments appended, not part of actual structure; this is a single NMR compound from caption"
     }
   ],
   "images_SI/page142_fig0.png": [
     {
       "segment_path": "segments/page142_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "34a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread; extra CC fragments not part of structure, this is the 1H NMR structure"
     },
     {
       "segment_path": "segments/page142_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "34a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "smiles_misread; extra CC fragments not part of structure, this is the 13C NMR structure"
     }
   ],
   "images_SI/page145_fig0.png": [
     {
       "segment_path": "segments/page145_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "36a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments artifact; single compound structure with 1H NMR data annotated"
+      "flag": "multi_compound_merge; SMILES appears misread (halide/substituent mismatch), structure is the top NMR structure labeled 36a per caption"
     },
     {
       "segment_path": "segments/page145_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "36a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments artifact; single compound structure with 13C NMR data annotated"
+      "flag": "multi_compound_merge; SMILES appears misread, structure is the bottom 13C NMR structure labeled 36a per caption"
     }
   ],
   "images_SI/page147_fig1.png": [
     {
       "segment_path": "segments/page147_fig1_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This segment appears to be a spurious/mislabeled fragment from the NMR spectrum area, not a real chemical structure; no compound label or yield printed nearby."
+      "flag": "This is a peak-label/annotation artifact from the NMR spectrum region, not a structure."
     },
     {
       "segment_path": "segments/page147_fig1_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge: SMILES represents disconnected fragments corresponding to NMR peak labels (A-L boxes), not an actual compound structure; no compound ID or yield printed."
+      "flag": "This is a spectral peak cluster region misread as a structure, not a compound."
     },
     {
       "segment_path": "segments/page147_fig1_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "37a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": null
+      "flag": "SMILES includes stray fragments (CC.CC.[CH3-].[V]) not present in actual structure; the real structure is the chiral diol/phenol shown at bottom left."
     }
   ],
   "images_SI/page149_fig0.png": [
     {
       "segment_path": "segments/page149_fig0_seg0.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "not a real structure - spurious fragment from spectrum region, no label present"
+      "flag": "This appears to be a mis-cropped fragment of the NMR spectrum region, not a chemical structure/product."
     },
     {
       "segment_path": "segments/page149_fig0_seg1.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge: SMILES is a nonsensical polyene chain from misread spectrum lines, not a real structure"
+      "flag": "SMILES is a nonsensical polyene chain, likely a misread of NMR peak markers/axis, not an actual structure."
     },
     {
-      "segment_path": "segments/page149_fig0_seg2.png",
+      "segment_path": "segmentsments/page149_fig0_seg2.png",
+      "is_scoped_product": true,
       "compound_id": "38a",
       "yield_percent": null,
       "conditions": null,
@@ -842,19 +942,21 @@
   "images_SI/page151_fig0.png": [
     {
       "segment_path": "segments/page151_fig0_seg0.png",
+      "is_scoped_product": true,
       "compound_id": "39a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "too_many_fragments: this is the structure drawing itself with NMR peak annotations overlapping, not a scope table entry"
+      "flag": "multi_compound_merge; this is the single product structure shown in the NMR figure header, but SMILES parsing merged extraneous fragments"
     },
     {
       "segment_path": "segments/page151_fig0_seg1.png",
+      "is_scoped_product": true,
       "compound_id": "39a",
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "this is the structure drawing in the 13C NMR panel, no yield/label text present"
+      "flag": "multi_compound_merge; this is the duplicate structure shown above the 13C spectrum, SMILES includes spurious fragments"
     }
   ]
 }
