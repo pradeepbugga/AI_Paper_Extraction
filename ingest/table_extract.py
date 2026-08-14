@@ -344,12 +344,22 @@ def _find_rule_lines(page):
     return rule_lines_by_region
 
 
-def _text_spans_in_band(page, y0, y1, x0, x1):
+def _text_spans_in_band(page, y0, y1, x0, x1, y1_tol=1):
     """Like _text_in_band but keeps each span's own x1 too -- needed to
     cluster a header's words into columns by real gap (_cluster_header_
     columns) when the only column-boundary signal is the header text
     itself, not fragmented rule segments (see _borderless_from_rule_lines'
-    single-continuous-rule case)."""
+    single-continuous-rule case).
+
+    y1_tol defaults to a small fuzz margin so a row starting right at
+    start_y isn't excluded when this is used for row reconstruction (see
+    _reconstruct_rows). But a header extraction call bounded by its own
+    two rules must pass y1_tol=0: confirmed on suzuki_iron_2024/SI's
+    Supplementary Table 19, where the first data row ("PhCl (1a)") starts
+    only 0.25pt below the header-bottom rule -- comfortably inside the
+    default +1pt margin -- and got vacuumed into the header text itself,
+    producing a header with the row's own values concatenated into it
+    and a duplicated first row."""
     entries = []
     for block in page.get_text("dict")["blocks"]:
         if block.get("type") != 0:
@@ -360,14 +370,14 @@ def _text_spans_in_band(page, y0, y1, x0, x1):
                 if not text:
                     continue
                 sx0, sy0, sx1 = s["bbox"][0], s["bbox"][1], s["bbox"][2]
-                if y0 - 1 <= sy0 <= y1 + 1 and x0 - 5 <= sx0 <= x1 + 5:
+                if y0 - 1 <= sy0 <= y1 + y1_tol and x0 - 5 <= sx0 <= x1 + 5:
                     entries.append((sy0, sx0, sx1, text))
     return entries
 
 
-def _text_in_band(page, y0, y1, x0, x1):
+def _text_in_band(page, y0, y1, x0, x1, y1_tol=1):
     entries = []
-    for sy0, sx0, sx1, text in _text_spans_in_band(page, y0, y1, x0, x1):
+    for sy0, sx0, sx1, text in _text_spans_in_band(page, y0, y1, x0, x1, y1_tol):
         entries.append((sy0, sx0, text))
     return entries
 
@@ -595,7 +605,7 @@ def _borderless_from_rule_lines(page):
             if len(segs_b) > 1:
                 # fragmented per-column segments double as column boundaries
                 col_anchors = [(x0 + x1) / 2 for x0, x1 in segs_b]
-                header_entries = _text_in_band(page, y_a, y_b, table_x0, table_x1)
+                header_entries = _text_in_band(page, y_a, y_b, table_x0, table_x1, y1_tol=0)
                 if not header_entries:
                     continue
                 header_buckets = [[] for _ in col_anchors]
@@ -610,7 +620,7 @@ def _borderless_from_rule_lines(page):
                 # fragmented segments. Derive columns from the header text's
                 # own word spacing instead (the same approach Path C's OCR
                 # detector uses for the same underlying problem).
-                header_spans = _text_spans_in_band(page, y_a, y_b, table_x0, table_x1)
+                header_spans = _text_spans_in_band(page, y_a, y_b, table_x0, table_x1, y1_tol=0)
                 if len(header_spans) < 2:
                     continue
                 header_words = [(sx0, sx1, text) for sy0, sx0, sx1, text in header_spans]
