@@ -131,7 +131,7 @@ def run_paper(paper_dir):
         elapsed = time.time() - start
 
         stem = Path(image_path).stem.replace("/", "_")
-        seg_paths = []
+        seg_entries = []
         for seg_idx, (y0, x0, y1, x1) in enumerate(bboxes):
             m_left, m_right, m_top, m_bottom = compute_safe_margin(seg_idx, bboxes, PADDED_BBOX_MARGIN_PX)
             py0 = max(0, y0 - m_top)
@@ -143,9 +143,14 @@ def run_paper(paper_dir):
                 continue
             seg_filename = f"{stem}_seg{seg_idx}.png"
             cv2.imwrite(str(segments_dir / seg_filename), seg)
-            seg_paths.append(f"segments/{seg_filename}")
+            # bbox is in the *parent* image's own pixel coordinate space (the
+            # actual crop bounds used above, post-margin/clamp) -- Stage 5
+            # needs this to ground a vision-LLM call on where each segment's
+            # structure sits within the original figure, not just that it
+            # exists (see reaction_link.py).
+            seg_entries.append({"path": f"segments/{seg_filename}", "bbox": [px0, py0, px1, py1]})
 
-        manifest[image_path] = seg_paths
+        manifest[image_path] = seg_entries
         tqdm.write(f"  {image_path} -> {len(seg_paths)} segment(s) ({elapsed:.1f}s)")
 
     return manifest

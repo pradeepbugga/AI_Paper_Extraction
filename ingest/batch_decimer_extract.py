@@ -2,12 +2,18 @@
 (DECIMER Segmentation's Mask R-CNN) and writes one decimer_results.json per
 paper: {image_path: [{"smiles": str, "mean_confidence": float,
 "need_human_review": bool, "detected_missing_abbreviations": [str],
-"has_generic_substituent": bool, "rdkit_valid": bool, "segment_path": str},
-...]}. See decimer_extract.py's docstring for what has_generic_substituent
-catches (scope-table/scheme scaffolds with a placeholder R/X/Z group, not a
-real compound -- kept as its own field, not folded silently into
-need_human_review) and what rdkit_valid catches (syntactically/valence-
-broken SMILES -- a floor on coherence, not a correctness check).
+"has_generic_substituent": bool, "rdkit_valid": bool, "segment_path": str,
+"bbox": [x0, y0, x1, y1] | None}, ...]}. See decimer_extract.py's docstring
+for what has_generic_substituent catches (scope-table/scheme scaffolds with
+a placeholder R/X/Z group, not a real compound -- kept as its own field, not
+folded silently into need_human_review) and what rdkit_valid catches
+(syntactically/valence-broken SMILES -- a floor on coherence, not a
+correctness check). `bbox` is the segment's location within the *parent*
+image's own pixel coordinates (as cropped by batch_segment.py) -- None for
+the zero-segment fallback case, where the "segment" is the uncropped parent
+image itself and there's nothing to locate within it. Needed by Stage 5
+(reaction_link.py) to ground a vision-LLM call on where each structure sits
+in the figure.
 
 A figure normally produces exactly one segment (the isolated structure,
 composite spectrum/labels dropped by the segmentation model), but a
@@ -54,18 +60,20 @@ def run_paper(paper_dir):
     pbar = tqdm(targets, desc=paper_dir.name, unit="fig", mininterval=1.0)
     for image_path in pbar:
         pbar.set_postfix_str(image_path[-40:])
-        segment_paths = manifest.get(image_path, [])
-        if not segment_paths:
-            segment_paths = [image_path]  # nothing segmented -- fall back to the original
+        segments = manifest.get(image_path, [])
+        if not segments:
+            segments = [{"path": image_path, "bbox": None}]  # nothing segmented -- fall back to the original
 
         entries = []
-        for segment_path in segment_paths:
+        for segment in segments:
+            segment_path, bbox = segment["path"], segment.get("bbox")
             full_path = paper_dir / segment_path
             if not full_path.exists():
                 continue
             start = time.time()
             result = extract_structure(str(full_path))
             result["segment_path"] = segment_path
+            result["bbox"] = bbox
             elapsed = time.time() - start
             flag = " NEEDS REVIEW" if result["need_human_review"] else ""
             tqdm.write(

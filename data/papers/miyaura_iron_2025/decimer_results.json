@@ -8,7 +8,13 @@
       "has_generic_substituent": true,
       "rdkit_valid": false,
       "segment_path": "segments/page1_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        48,
+        48,
+        238,
+        210
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)[X].CC.[Ba].[Hg].[O]",
@@ -18,7 +24,13 @@
       "has_generic_substituent": true,
       "rdkit_valid": false,
       "segment_path": "segments/page1_fig2_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        238,
+        44,
+        410,
+        207
+      ]
     },
     {
       "smiles": "CCCCCCCCCC1=CC=CC=C1.[Li].[Li].[Li].[Li]",
@@ -28,7 +40,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page1_fig2_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        497,
+        45,
+        705,
+        208
+      ]
     }
   ],
   "images/page2_raster0.png": [
@@ -40,7 +58,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        278,
+        211
+      ]
     },
     {
       "smiles": "C1=C(C=C(C(=C1)I)[X3])Cl",
@@ -50,7 +74,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page2_raster0_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        306,
+        14,
+        516,
+        196
+      ]
     },
     {
       "smiles": "CCCCCCCCC1=CC=CC(=C1)CCCCCCCC",
@@ -60,7 +90,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        807,
+        14,
+        1000,
+        196
+      ]
     },
     {
       "smiles": "CC12CCC(CC1)CC2.CC12CCC(CC1)CC2.CC12CCC(CC1)CC2",
@@ -70,7 +106,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg3.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        188,
+        1072,
+        318,
+        1215
+      ]
     },
     {
       "smiles": "CC(C)(C)C1CCCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCCC1.CC(C)(C)C1CCC1.CC(C)(C)C1CCC1.CC(C)(C)C1CCC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.CC(C)(C)C1CC1.",
@@ -80,7 +122,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page2_raster0_seg4.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        338,
+        1070,
+        521,
+        1274
+      ]
     },
     {
       "smiles": "C.O=O",
@@ -90,7 +138,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg5.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        538,
+        1070,
+        656,
+        1237
+      ]
     },
     {
       "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
@@ -100,7 +154,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg6.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        657,
+        1071,
+        746,
+        1219
+      ]
     },
     {
       "smiles": "CCCC(C)(C)CC(C)(C)CC",
@@ -110,7 +170,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg7.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        746,
+        1070,
+        856,
+        1213
+      ]
     },
     {
       "smiles": "C(CP(=O)(Cl)Cl)P(=O)(Cl)Cl",
@@ -120,7 +186,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg8.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        1259,
+        274,
+        1386
+      ]
     },
     {
       "smiles": "CSN1C=CN(C1=[S+])SC",
@@ -130,7 +202,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg9.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        370,
+        1275,
+        701,
+        1413
+      ]
     },
     {
       "smiles": "C[C@H]1N(CCCN1SC)SC",
@@ -140,7 +218,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg10.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        719,
+        1238,
+        1000,
+        1422
+      ]
     },
     {
       "smiles": "CP(C)CCP(C)C.[Co]",
@@ -150,7 +234,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg11.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        1386,
+        260,
+        1511
+      ]
     },
     {
       "smiles": "CCC(C)C1=CC(=CC(=C1)C(C)CC)P(C2=CC(=CC(=C2)C(C)CC)C(C)CC)C3=C(C=CC=C3)P(C4=CC(=CC(=C4)C(C)CC)C(C)CC)C5=CC(=CC(=C5)C(C)CC)C(C)CC.CC",
@@ -160,7 +250,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg12.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        269,
+        1423,
+        803,
+        1804
+      ]
     },
     {
       "smiles": "CCCCP(CCCC)C1=C2C(=CC=C1)C(C)(C)C3=CC=CC(=C3O2)P(CCCC)CCCC.[CH2-]CCCC.[CH2-]CCCC.[Pd+2]",
@@ -170,7 +266,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg13.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        1511,
+        269,
+        1761
+      ]
     },
     {
       "smiles": "CCCCP(CCCC)(CCCC)(CCCC)I.CN(C)C1=CC=CC=C1",
@@ -180,7 +282,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page2_raster0_seg14.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        804,
+        1506,
+        1000,
+        1714
+      ]
     }
   ],
   "images/page3_fig0.png": [
@@ -192,7 +300,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        18,
+        0,
+        238,
+        197
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)CC2=CC=CC(=C2)CC3=CC=CC=C3",
@@ -202,7 +316,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        542,
+        83,
+        760,
+        258
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)OS(=O)(=O)C(F)(F)F.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CC.CCC.CC.CCC.CCC.CCC.CC.CCC.CCC.CC.CCC.CC.CC.CCC.CC.CC.CCCC.CC.CCC.CCC.CCC.CC.CC.CCC.CCC.CCC.CC.CCC.CC.CCC.CCC.CCC.CC.CC.CC.CC.CCC.CC.CC.CC.CC.CCC.CC.CC",
@@ -212,7 +332,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg2.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        927,
+        56,
+        1138,
+        221
+      ]
     },
     {
       "smiles": "C1=C(C=C[R](=C1)Br)Br",
@@ -222,7 +348,13 @@
       "has_generic_substituent": true,
       "rdkit_valid": false,
       "segment_path": "segments/page3_fig0_seg3.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1344,
+        56,
+        1543,
+        220
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)CC2=CC=CC=C2.CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
@@ -232,7 +364,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg4.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        53,
+        258,
+        265,
+        416
+      ]
     },
     {
       "smiles": "CNC1=C(C=CC=C1)CC2=CC=CC=C2.CC.CC",
@@ -242,7 +380,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg5.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        291,
+        227,
+        499,
+        417
+      ]
     },
     {
       "smiles": "CC1=CC=CC(=C1)[Bi].[Sc]",
@@ -252,7 +396,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg6.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        499,
+        258,
+        755,
+        416
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2CCCC[C@@H]2C3=CC=CC=C3",
@@ -262,7 +412,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg7.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        824,
+        221,
+        1036,
+        370
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)CC2=C(C=CC=C2)[N-]C3=CC=CC=C3.[CH3-].[CH3-].[CH3-].[CH3-].[Th]",
@@ -272,7 +428,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg8.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1062,
+        181,
+        1270,
+        371
+      ]
     },
     {
       "smiles": "CCCCCC1=CC=CC(=C1)[Se]C.CC.CC.CC.[Sc]",
@@ -282,7 +444,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg9.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1271,
+        221,
+        1527,
+        370
+      ]
     },
     {
       "smiles": "CN(C1=CC=C(C=C1)CC2=CC=CC=C2)[Ge](C)(C)C.[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-][In][In][In][In][In][In][In]",
@@ -292,7 +460,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg10.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        3,
+        416,
+        246,
+        575
+      ]
     },
     {
       "smiles": "COC1=CC=C(C=C1)CC2=CC=CC=C2.[89Tc]",
@@ -302,7 +476,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg11.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        247,
+        417,
+        504,
+        570
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)CC2=CC=C(C=C2)F.CCCCCCCC1=CC=C(C=C1)F.CCCCCCCC1=CC=C(C=C1)F.CCCCCCCC1=CC=C(C=C1)F.CCCCCCCC1=CC=C(C=C1)F.CCCCCCCC1=CC=C(C=C1)F.CCCCCCC1=CC=C(C=C1)F.CCCCCCC1=CC=C(C=C1)F.CCCCCCC1=CC=C(C=C1)F.CCCCCC1=CC=C(C=C1)F.CCCCC1=CC=C(C=C1)F.CCCCC1=CC=C(C=C1)F.CCCCC1=CC=C(C=C1)F.CCCC1=CC=C(C=C1)F.CCCC1",
@@ -312,7 +492,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page3_fig0_seg12.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        515,
+        416,
+        757,
+        573
+      ]
     },
     {
       "smiles": "CC(C)(C)C(=O)C1=CC=C(C=C1)CC2=CC=C(C=C2)OC.[Ag]",
@@ -322,7 +508,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg13.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        779,
+        370,
+        1023,
+        537
+      ]
     },
     {
       "smiles": "COC1=CC=C(C=C1)CC2=CC=CC=C2.[18F-].[18F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F-].[F.[F-]F.[F-].[F-]F.[F-]F.[F-]F.[F-]F.[F.[F-]F.[F-]F.[F-]F.[F.FF.FF.FF.FF.FF.FF.FF.FF.FF.FFF.FFF.FFF.FFF.FFF.FF.FF.FFF.FFF.FF.FF.F",
@@ -332,7 +524,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page3_fig0_seg14.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        1023,
+        371,
+        1281,
+        532
+      ]
     },
     {
       "smiles": "CCCCCCCCCC1=CC=C(C=C1)F.[Br-]",
@@ -342,7 +540,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg15.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1286,
+        370,
+        1528,
+        536
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2C=CC(=CC2)C(F)(F)F.[Ag]",
@@ -352,7 +556,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg16.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        576,
+        263,
+        733
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2CC=CC3=C2C=CC=C3.[Sb]",
@@ -362,7 +572,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg17.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        264,
+        570,
+        475,
+        743
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=C1)C=C(C=C2)[77Br].[Si]",
@@ -372,7 +588,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg18.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        495,
+        573,
+        760,
+        726
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2C=CC(=CC2)C(F)(F)F.[Hg].[Hg]",
@@ -382,7 +604,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg19.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        773,
+        537,
+        1039,
+        709
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2CC=CC3=C2C=CC=C3.[13CH3]I",
@@ -392,7 +620,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg20.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1039,
+        532,
+        1251,
+        711
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2C=CC(=CC2)[Pb].[Bi](I)I",
@@ -402,7 +636,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg21.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1273,
+        553,
+        1529,
+        714
+      ]
     },
     {
       "smiles": "CCCCCCCCCCC1=CC(=CC(=C1)OC)OC.CCCCCCCCCCC1=CC(=CC(=C1)OC)OC",
@@ -412,7 +652,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg22.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        734,
+        244,
+        904
+      ]
     },
     {
       "smiles": "CN(C)C1=CC=CC(=C1)[Se]CC2=CC=CC=C2.[K]",
@@ -422,7 +668,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg23.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        244,
+        744,
+        487,
+        900
+      ]
     },
     {
       "smiles": "CCCCCCCCCCC1=CC=C(C=C1)C(=O)OCC.[123I-]",
@@ -432,7 +684,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg24.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        488,
+        726,
+        759,
+        911
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C[C@H]2C=C(C=C(C2)F)F.S=S=S",
@@ -442,7 +700,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg25.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        916,
+        712,
+        1156,
+        907
+      ]
     },
     {
       "smiles": "CCCCC1=CC(=CC(=C1)CCCC)CCCC.[Mg].[Mg]",
@@ -452,7 +716,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg26.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        1156,
+        714,
+        1406,
+        909
+      ]
     },
     {
       "smiles": "CN(C)C(=O)C1=CC=C(C=C1)CC2=CC=CC=C2.[Sn].[Sn]",
@@ -462,7 +732,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg27.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        904,
+        269,
+        1080
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)CC2=CC=C(C=C2)N.[Sn]",
@@ -472,7 +748,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg28.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        269,
+        900,
+        487,
+        1075
+      ]
     },
     {
       "smiles": "CC1=NC2=C(C=C1)C=C(C=C2)Br.[I-].[I-].[Re]",
@@ -482,7 +764,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg29.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        488,
+        911,
+        759,
+        1070
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=CC(=C2)Br)N(C1)[R20]",
@@ -492,7 +780,13 @@
       "has_generic_substituent": true,
       "rdkit_valid": false,
       "segment_path": "segments/page3_fig0_seg30.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        25,
+        1080,
+        290,
+        1229
+      ]
     },
     {
       "smiles": "CC(C)(C)N1C=CC=C(C1)Br",
@@ -502,7 +796,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg31.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        296,
+        1075,
+        494,
+        1227
+      ]
     },
     {
       "smiles": "C[Si](C)(C)C1=CC=C(C=C1)CC2=CC=CC=C2.CC",
@@ -514,7 +814,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg32.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        494,
+        1072,
+        754,
+        1228
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=C1[78Br])OCO2.[78Br].[78Br].[78Br]",
@@ -524,7 +830,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg33.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        136,
+        1230,
+        372,
+        1381
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)CC2=CC=C(C=C2)CC3=CC=CC=C3.F[Sb](F)(F)(F)F.[90Tc].[90Tc]",
@@ -534,7 +846,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg34.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        373,
+        1228,
+        622,
+        1388
+      ]
     }
   ],
   "images_SI/page3_fig0.png": [
@@ -546,7 +864,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        18,
+        0,
+        238,
+        197
+      ]
     }
   ],
   "images_SI/page3_fig1.png": [
@@ -558,7 +882,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        277,
+        0,
+        530,
+        140
+      ]
     }
   ],
   "images_SI/page3_fig2.png": [
@@ -570,7 +900,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        278,
+        16,
+        530,
+        191
+      ]
     }
   ],
   "images_SI/page3_fig3.png": [
@@ -582,7 +918,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig3_seg0.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        18,
+        0,
+        238,
+        197
+      ]
     }
   ],
   "images_SI/page3_fig4.png": [
@@ -594,7 +936,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        184,
+        164,
+        302
+      ]
     },
     {
       "smiles": "CP(C)CCP(C)C",
@@ -604,7 +952,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        97,
+        164,
+        140
+      ]
     },
     {
       "smiles": "C(CP(=O)(O)O)P(=O)(O)O",
@@ -614,7 +968,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        53,
+        164,
+        96
+      ]
     },
     {
       "smiles": "C(=C/P(P)P)/P(P)P",
@@ -624,7 +984,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg3.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        141,
+        164,
+        184
+      ]
     },
     {
       "smiles": "C(CP(P)P)P(P)P",
@@ -634,7 +1000,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg4.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        164,
+        52
+      ]
     },
     {
       "smiles": "C1=CC(=C(C=C1)P(P)P)P(P)P",
@@ -644,7 +1016,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg5.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        303,
+        164,
+        394
+      ]
     },
     {
       "smiles": "C(CP(P)P)CP(P)P",
@@ -654,7 +1032,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg6.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        395,
+        164,
+        433
+      ]
     },
     {
       "smiles": "C(CP(P)P)P(P)P",
@@ -664,7 +1048,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg7.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        434,
+        164,
+        478
+      ]
     },
     {
       "smiles": "[Pb]P([Pb])[Pb]",
@@ -674,7 +1064,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page3_fig4_seg8.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        21,
+        478,
+        158,
+        547
+      ]
     }
   ],
   "images_SI/page4_fig0.png": [
@@ -686,7 +1082,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        266,
+        0,
+        640,
+        116
+      ]
     },
     {
       "smiles": "C1=CC(=C2C(=C1)C=CC=C2P(P)P)P(P)P",
@@ -696,7 +1098,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        373,
+        116,
+        563,
+        213
+      ]
     },
     {
       "smiles": "C1=CC(=C(C=C1)P(Cl)Cl)P(Cl)Cl",
@@ -706,7 +1114,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        366,
+        213,
+        569,
+        301
+      ]
     },
     {
       "smiles": "CC(C)P(CCNCCP(C(C)C)C(C)C)C(C)C",
@@ -716,7 +1130,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg3.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        310,
+        302,
+        624,
+        392
+      ]
     },
     {
       "smiles": "C(=C/P(P)P)/P(P)P",
@@ -726,7 +1146,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg4.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        362,
+        392,
+        575,
+        436
+      ]
     },
     {
       "smiles": "C(=CP(P)P)P(P)P",
@@ -736,7 +1162,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg5.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        363,
+        436,
+        573,
+        507
+      ]
     },
     {
       "smiles": "CC1(C)C2=CC=CC(=C2OC3=C1C=CC=C3[Pb](Br)(Br)Br)[Pb](Br)(Br)Br",
@@ -746,7 +1178,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg6.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        347,
+        507,
+        590,
+        630
+      ]
     },
     {
       "smiles": "CCC(C)C1=CC(=CC(=C1)C(C)CC)P(C2=CC(=CC(=C2)C(C)CC)C(C)CC)C3=C(C=CC=C3)P(C4=CC(=CC(=C4)C(C)CC)C(C)CC)C5=CC(=CC(=C5)C(C)CC)C(C)CC",
@@ -756,7 +1194,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg7.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        290,
+        630,
+        640,
+        800
+      ]
     },
     {
       "smiles": "CCCCP(CCCC)C1=CC=CC=C1N(C)C",
@@ -766,7 +1210,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg8.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        369,
+        800,
+        569,
+        884
+      ]
     },
     {
       "smiles": "CSN1CC[N+](=C1)SC.[Cl-]",
@@ -776,7 +1226,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg9.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        351,
+        884,
+        584,
+        958
+      ]
     },
     {
       "smiles": "CCCCCCCCN1CC[N+](=C1)CCCCCCCC.[Cl-]",
@@ -786,7 +1242,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg10.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        349,
+        958,
+        587,
+        1038
+      ]
     },
     {
       "smiles": "CSN1C=C[N+](=C1)SC.[Cl-]",
@@ -796,7 +1258,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg11.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        354,
+        1038,
+        586,
+        1115
+      ]
     },
     {
       "smiles": "CCCCCCCCN1C=C[N+](=C1)CCCCCCCC.[Cl-]",
@@ -806,7 +1274,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg12.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        348,
+        1115,
+        590,
+        1194
+      ]
     },
     {
       "smiles": "CSN1CCC[N+](=C1)SC.[B](F)(F)(F)S(=O)(=O)[O-]",
@@ -816,7 +1290,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page4_fig0_seg13.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        336,
+        1195,
+        592,
+        1270
+      ]
     },
     {
       "smiles": "CSN1CCCC[N+](=C1)CS(=O)(=O)O.B(F)(F)F.[F-]",
@@ -826,7 +1306,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg14.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        336,
+        1270,
+        595,
+        1352
+      ]
     },
     {
       "smiles": "CSN1CCCCC(N(C=C1)SC)OB(F)F",
@@ -836,7 +1322,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg15.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        336,
+        1352,
+        596,
+        1447
+      ]
     },
     {
       "smiles": "CCCCCCCCN1CCCN(CCCCCCCC)C1.B(F)(F)F",
@@ -846,7 +1338,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg16.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        348,
+        1448,
+        590,
+        1554
+      ]
     },
     {
       "smiles": "CSN1C=CN([C]1)SC.CC.CC",
@@ -856,7 +1354,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page4_fig0_seg17.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        353,
+        1554,
+        585,
+        1622
+      ]
     }
   ],
   "images_SI/page8_fig0.png": [
@@ -868,7 +1372,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page8_fig0_seg0.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        19,
+        0,
+        238,
+        196
+      ]
     }
   ],
   "images_SI/page8_fig1.png": [
@@ -880,7 +1390,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page8_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        302,
+        0,
+        587,
+        169
+      ]
     }
   ],
   "images_SI/page9_fig0.png": [
@@ -892,7 +1408,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page9_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        17,
+        0,
+        271,
+        215
+      ]
     },
     {
       "smiles": "C[C@@H]1C=CC(=CC1)B2OC(C)(C)C(C)(C)O2",
@@ -902,7 +1424,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page9_fig0_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        510,
+        10,
+        796,
+        188
+      ]
     }
   ],
   "images_SI/page5_fig0.png": [
@@ -914,7 +1442,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page5_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        277,
+        16,
+        530,
+        189
+      ]
     }
   ],
   "images_SI/page5_fig1.png": [
@@ -926,7 +1460,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page5_fig1_seg0.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        19,
+        0,
+        238,
+        196
+      ]
     }
   ],
   "images_SI/page6_fig0.png": [
@@ -938,7 +1478,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page6_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        274,
+        122
+      ]
     },
     {
       "smiles": "C[C@H]1N(C=CN1SC)SC.CC.CC",
@@ -948,7 +1494,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page6_fig0_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        354,
+        0,
+        666,
+        123
+      ]
     },
     {
       "smiles": "C[C@H]1N(CCCN1SC)SC.CC",
@@ -958,7 +1510,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page6_fig0_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        672,
+        0,
+        934,
+        163
+      ]
     },
     {
       "smiles": "CP(C)CCP(C)C.[17CH3-].[17CH3-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-].[17CH2-]=[17CH2][17CH2-].[17CH2-]=[17CH2][17CH2-].[17CH2-].[17CH2-]=[77CH2][17CH2].[17CH2-][2].[17CH2-][18CH2].[17CH2-].[17CH2-][18CH2][18CH2].[17CH2-][2].[17CH2][2].[17CH2",
@@ -968,7 +1526,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page6_fig0_seg3.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        0,
+        122,
+        278,
+        256
+      ]
     },
     {
       "smiles": "CCC(C)C1=CC(=CC(=C1)C(C)CC)P(C2=CC(=CC(=C2)C(C)CC)C(C)CC)C3=C(C=CC=C3)P(C4=CC(=CC(=C4)C(C)CC)C(C)CC)C5=CC(=CC(=C5)C(C)CC)C(C)CC",
@@ -978,7 +1542,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page6_fig0_seg4.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        269,
+        178,
+        733,
+        535
+      ]
     },
     {
       "smiles": "CCCCP(CCCC)C1=C2C(=CC=C1)C(C)(C)C3=CC=CC(=C3O2)P(CCCC)CCCC.[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-].[I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-][I-]",
@@ -988,7 +1558,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page6_fig0_seg5.png",
-      "too_many_fragments": true
+      "too_many_fragments": true,
+      "bbox": [
+        0,
+        293,
+        268,
+        535
+      ]
     },
     {
       "smiles": "CCCCP(CCCC)(CCCC)(CCCC)C1=CC=CC=C1N(C)C",
@@ -998,7 +1574,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page6_fig0_seg6.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        734,
+        289,
+        934,
+        484
+      ]
     }
   ],
   "images_SI/page7_fig0.png": [
@@ -1010,7 +1592,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": false,
       "segment_path": "segments/page7_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        19,
+        0,
+        239,
+        195
+      ]
     }
   ],
   "images_SI/page7_fig1.png": [
@@ -1022,7 +1610,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page7_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        278,
+        0,
+        531,
+        162
+      ]
     }
   ],
   "images_SI/page10_fig0.png": [
@@ -1034,7 +1628,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        183,
+        167
+      ]
     }
   ],
   "images_SI/page10_fig2.png": [
@@ -1046,7 +1646,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        231,
+        177
+      ]
     }
   ],
   "images_SI/page10_fig3.png": [
@@ -1058,7 +1664,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        276,
+        202
+      ]
     },
     {
       "smiles": "CSC1=CC=C(C=C1)Cl",
@@ -1068,7 +1680,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        276,
+        0,
+        575,
+        178
+      ]
     },
     {
       "smiles": "C1=C(C=C2C=CNC2=C1)Cl.[Tm]",
@@ -1078,7 +1696,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        601,
+        0,
+        892,
+        193
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=C1)N=CC(=C2)Cl",
@@ -1088,7 +1712,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg3.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        250,
+        259,
+        454
+      ]
     },
     {
       "smiles": "COC(=O)C1=CC=C(C=C1)OS(=O)(=O)C(F)(F)F",
@@ -1098,7 +1728,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg4.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        259,
+        247,
+        614,
+        485
+      ]
     },
     {
       "smiles": "C1=CC(=C(C=C1)I)Cl",
@@ -1108,7 +1744,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg5.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        634,
+        211,
+        858,
+        446
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=C1)SC(=N2)Cl.[Co]",
@@ -1118,7 +1760,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg6.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        478,
+        275,
+        664
+      ]
     },
     {
       "smiles": "C1=CSC(=C1)Cl.[Mo]",
@@ -1128,7 +1776,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg7.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        317,
+        486,
+        535,
+        660
+      ]
     },
     {
       "smiles": "C1=CSC=C1Cl.O=[V]",
@@ -1138,7 +1792,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg8.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        638,
+        477,
+        855,
+        667
+      ]
     },
     {
       "smiles": "C1=C(C=CC(=C1)O)Cl.C=C",
@@ -1148,7 +1808,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg9.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        666,
+        267,
+        871
+      ]
     },
     {
       "smiles": "CC(=O)NC1=CC=C(C=C1)Cl.C=C",
@@ -1158,7 +1824,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg10.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        268,
+        666,
+        589,
+        871
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=C1Cl)N=CO2.CC",
@@ -1168,7 +1840,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg11.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        601,
+        668,
+        892,
+        863
+      ]
     },
     {
       "smiles": "C1=CC2=C(C=C1)C(=C(C=C2)OS(=O)(=O)C(F)(F)F)Br",
@@ -1178,7 +1856,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg12.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        906,
+        281,
+        1141
+      ]
     },
     {
       "smiles": "C1=C(C=CC(=C1)OS(=O)(=O)C(F)(F)F)Br",
@@ -1188,7 +1872,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg13.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        282,
+        948,
+        551,
+        1151
+      ]
     },
     {
       "smiles": "C1=C(C=CC(=C1)OC2=CC=C(C=C2)OS(=O)(=O)C(F)(F)F)Br.O=O",
@@ -1198,7 +1888,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig3_seg14.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        551,
+        948,
+        944,
+        1152
+      ]
     }
   ],
   "images_SI/page10_fig4.png": [
@@ -1210,7 +1906,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig4_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        6,
+        0,
+        220,
+        165
+      ]
     },
     {
       "smiles": "C1=CSC(=N1)Cl.[Au]",
@@ -1220,7 +1922,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig4_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        10,
+        206,
+        217,
+        386
+      ]
     },
     {
       "smiles": "CC(=O)C1=CC=C(C=C1)Cl.CC",
@@ -1230,7 +1938,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig4_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        395,
+        236,
+        640
+      ]
     }
   ],
   "images_SI/page10_fig5.png": [
@@ -1242,7 +1956,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page10_fig5_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        257,
+        166
+      ]
     }
   ],
   "images_SI/page13_fig0.png": [
@@ -1254,7 +1974,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page13_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        219,
+        129
+      ]
     }
   ],
   "images_SI/page13_fig1.png": [
@@ -1266,7 +1992,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page13_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        13,
+        0,
+        270,
+        147
+      ]
     }
   ],
   "images_SI/page13_fig2.png": [
@@ -1278,7 +2010,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page13_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        229,
+        147
+      ]
     }
   ],
   "images_SI/page14_fig0.png": [
@@ -1290,7 +2028,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page14_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        2,
+        0,
+        259,
+        152
+      ]
     }
   ],
   "images_SI/page14_fig1.png": [
@@ -1302,7 +2046,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page14_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        178,
+        172
+      ]
     }
   ],
   "images_SI/page14_fig2.png": [
@@ -1314,7 +2064,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page14_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        292,
+        193
+      ]
     }
   ],
   "images_SI/page14_fig3.png": [
@@ -1326,7 +2082,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page14_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        228,
+        191
+      ]
     }
   ],
   "images_SI/page15_fig0.png": [
@@ -1338,7 +2100,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page15_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        251,
+        196
+      ]
     }
   ],
   "images_SI/page15_fig1.png": [
@@ -1350,7 +2118,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page15_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        242,
+        147
+      ]
     }
   ],
   "images_SI/page15_fig2.png": [
@@ -1362,7 +2136,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page15_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        389,
+        147
+      ]
     }
   ],
   "images_SI/page15_fig3.png": [
@@ -1374,7 +2154,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page15_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        252,
+        135
+      ]
     }
   ],
   "images_SI/page16_fig0.png": [
@@ -1386,7 +2172,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page16_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        255,
+        171
+      ]
     }
   ],
   "images_SI/page16_fig1.png": [
@@ -1398,7 +2190,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page16_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        288,
+        193
+      ]
     }
   ],
   "images_SI/page17_fig0.png": [
@@ -1410,7 +2208,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page17_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        190,
+        171
+      ]
     }
   ],
   "images_SI/page17_fig1.png": [
@@ -1422,7 +2226,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page17_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        15,
+        0,
+        262,
+        130
+      ]
     }
   ],
   "images_SI/page17_fig2.png": [
@@ -1434,7 +2244,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page17_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        262,
+        147
+      ]
     }
   ],
   "images_SI/page18_fig0.png": [
@@ -1446,7 +2262,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page18_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        13,
+        0,
+        282,
+        147
+      ]
     }
   ],
   "images_SI/page18_fig1.png": [
@@ -1458,7 +2280,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page18_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        239,
+        147
+      ]
     }
   ],
   "images_SI/page18_fig2.png": [
@@ -1470,7 +2298,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page18_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        2,
+        0,
+        269,
+        154
+      ]
     }
   ],
   "images_SI/page18_fig3.png": [
@@ -1482,7 +2316,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page18_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        5,
+        190,
+        170
+      ]
     }
   ],
   "images_SI/page19_fig0.png": [
@@ -1494,7 +2334,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page19_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        250,
+        133
+      ]
     }
   ],
   "images_SI/page19_fig1.png": [
@@ -1506,7 +2352,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page19_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        272,
+        191
+      ]
     }
   ],
   "images_SI/page19_fig2.png": [
@@ -1518,7 +2370,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page19_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        294,
+        133
+      ]
     }
   ],
   "images_SI/page19_fig3.png": [
@@ -1530,7 +2388,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page19_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        296,
+        191
+      ]
     }
   ],
   "images_SI/page20_fig0.png": [
@@ -1542,7 +2406,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page20_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        320,
+        191
+      ]
     }
   ],
   "images_SI/page20_fig1.png": [
@@ -1554,7 +2424,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page20_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        275,
+        155
+      ]
     }
   ],
   "images_SI/page20_fig2.png": [
@@ -1566,7 +2442,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page20_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        304,
+        147
+      ]
     }
   ],
   "images_SI/page20_fig3.png": [
@@ -1578,7 +2460,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page20_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        259,
+        147
+      ]
     }
   ],
   "images_SI/page20_fig4.png": [
@@ -1590,7 +2478,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page20_fig4_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        158,
+        147
+      ]
     }
   ],
   "images_SI/page21_fig0.png": [
@@ -1602,7 +2496,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page21_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        14,
+        0,
+        282,
+        147
+      ]
     }
   ],
   "images_SI/page21_fig1.png": [
@@ -1614,7 +2514,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page21_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        319,
+        217
+      ]
     }
   ],
   "images_SI/page21_fig2.png": [
@@ -1626,7 +2532,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page21_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        270,
+        151
+      ]
     }
   ],
   "images_SI/page21_fig3.png": [
@@ -1638,7 +2550,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page21_fig3_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        253,
+        147
+      ]
     }
   ],
   "images_SI/page22_fig0.png": [
@@ -1650,7 +2568,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page22_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        227,
+        191
+      ]
     }
   ],
   "images_SI/page22_fig1.png": [
@@ -1662,7 +2586,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page22_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        252,
+        200
+      ]
     }
   ],
   "images_SI/page28_fig0.png": [
@@ -1674,7 +2604,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page28_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        687,
+        534,
+        1037,
+        862
+      ]
     }
   ],
   "images_SI/page23_fig0.png": [
@@ -1686,7 +2622,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig0_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        0,
+        0,
+        173,
+        165
+      ]
     },
     {
       "smiles": "CCCCCB(OCC)OC(=O)C.[Ba].[Ba].[Li].[Li].[Li].[Li]",
@@ -1696,7 +2638,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig0_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        313,
+        0,
+        615,
+        191
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)F.[CH3]",
@@ -1706,7 +2654,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig0_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        889,
+        0,
+        1036,
+        165
+      ]
     }
   ],
   "images_SI/page23_fig1.png": [
@@ -1718,7 +2672,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig1_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        261,
+        78,
+        463,
+        248
+      ]
     },
     {
       "smiles": "CC1(C)CCCC(C)(C)N1OC2=CC=CC=C2.CC.CC.CC",
@@ -1728,7 +2688,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig1_seg1.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        463,
+        56,
+        706,
+        260
+      ]
     },
     {
       "smiles": "CC1(C)CCCC(C)(C)N1O[In].CC.CC.CC",
@@ -1738,7 +2704,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig1_seg2.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        707,
+        57,
+        930,
+        261
+      ]
     },
     {
       "smiles": "C[C@H]1C=CC(=CC1)CC2=CC=CC=C2.[H]",
@@ -1748,7 +2720,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig1_seg3.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        261,
+        394,
+        462,
+        564
+      ]
     },
     {
       "smiles": "C1=CC=C(C=C1)C(CBr)C2=CC=CC=C2.CC.CC",
@@ -1758,7 +2736,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig1_seg4.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        463,
+        345,
+        714,
+        564
+      ]
     }
   ],
   "images_SI/page23_fig2.png": [
@@ -1770,7 +2754,13 @@
       "has_generic_substituent": false,
       "rdkit_valid": true,
       "segment_path": "segments/page23_fig2_seg0.png",
-      "too_many_fragments": false
+      "too_many_fragments": false,
+      "bbox": [
+        45,
+        0,
+        207,
+        141
+      ]
     }
   ]
 }

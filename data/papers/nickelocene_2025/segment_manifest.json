@@ -1,416 +1,1976 @@
 {
   "images/page2_fig0.png": [
-    "segments/page2_fig0_seg0.png",
-    "segments/page2_fig0_seg1.png",
-    "segments/page2_fig0_seg2.png",
-    "segments/page2_fig0_seg3.png",
-    "segments/page2_fig0_seg4.png",
-    "segments/page2_fig0_seg5.png",
-    "segments/page2_fig0_seg6.png",
-    "segments/page2_fig0_seg7.png",
-    "segments/page2_fig0_seg8.png",
-    "segments/page2_fig0_seg9.png",
-    "segments/page2_fig0_seg10.png",
-    "segments/page2_fig0_seg11.png",
-    "segments/page2_fig0_seg12.png",
-    "segments/page2_fig0_seg13.png",
-    "segments/page2_fig0_seg14.png",
-    "segments/page2_fig0_seg15.png",
-    "segments/page2_fig0_seg16.png",
-    "segments/page2_fig0_seg17.png",
-    "segments/page2_fig0_seg18.png",
-    "segments/page2_fig0_seg19.png",
-    "segments/page2_fig0_seg20.png",
-    "segments/page2_fig0_seg21.png",
-    "segments/page2_fig0_seg22.png",
-    "segments/page2_fig0_seg23.png",
-    "segments/page2_fig0_seg24.png",
-    "segments/page2_fig0_seg25.png",
-    "segments/page2_fig0_seg26.png",
-    "segments/page2_fig0_seg27.png"
+    {
+      "path": "segments/page2_fig0_seg0.png",
+      "bbox": [
+        0,
+        90,
+        254,
+        304
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg1.png",
+      "bbox": [
+        254,
+        88,
+        417,
+        299
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg2.png",
+      "bbox": [
+        417,
+        104,
+        591,
+        296
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg3.png",
+      "bbox": [
+        477,
+        67,
+        758,
+        299
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg4.png",
+      "bbox": [
+        769,
+        139,
+        973,
+        307
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg5.png",
+      "bbox": [
+        973,
+        145,
+        1157,
+        301
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg6.png",
+      "bbox": [
+        1339,
+        115,
+        1543,
+        321
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg7.png",
+      "bbox": [
+        10,
+        349,
+        216,
+        559
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg8.png",
+      "bbox": [
+        227,
+        373,
+        396,
+        535
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg9.png",
+      "bbox": [
+        396,
+        373,
+        553,
+        535
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg10.png",
+      "bbox": [
+        17,
+        592,
+        199,
+        735
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg11.png",
+      "bbox": [
+        200,
+        579,
+        325,
+        742
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg12.png",
+      "bbox": [
+        325,
+        602,
+        526,
+        740
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg13.png",
+      "bbox": [
+        527,
+        570,
+        697,
+        746
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg14.png",
+      "bbox": [
+        795,
+        619,
+        964,
+        808
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg15.png",
+      "bbox": [
+        965,
+        619,
+        1114,
+        811
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg16.png",
+      "bbox": [
+        1115,
+        619,
+        1325,
+        812
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg17.png",
+      "bbox": [
+        1326,
+        618,
+        1543,
+        818
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg18.png",
+      "bbox": [
+        18,
+        738,
+        202,
+        905
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg19.png",
+      "bbox": [
+        203,
+        743,
+        339,
+        887
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg20.png",
+      "bbox": [
+        340,
+        746,
+        533,
+        884
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg21.png",
+      "bbox": [
+        534,
+        746,
+        702,
+        908
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg22.png",
+      "bbox": [
+        19,
+        906,
+        198,
+        1050
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg23.png",
+      "bbox": [
+        198,
+        887,
+        353,
+        1052
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg24.png",
+      "bbox": [
+        518,
+        909,
+        714,
+        1087
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg25.png",
+      "bbox": [
+        31,
+        1098,
+        216,
+        1266
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg26.png",
+      "bbox": [
+        216,
+        1104,
+        382,
+        1259
+      ]
+    },
+    {
+      "path": "segments/page2_fig0_seg27.png",
+      "bbox": [
+        514,
+        1088,
+        723,
+        1286
+      ]
+    }
   ],
   "images/page3_raster0.png": [
-    "segments/page3_raster0_seg0.png",
-    "segments/page3_raster0_seg1.png",
-    "segments/page3_raster0_seg2.png",
-    "segments/page3_raster0_seg3.png",
-    "segments/page3_raster0_seg4.png",
-    "segments/page3_raster0_seg5.png",
-    "segments/page3_raster0_seg6.png",
-    "segments/page3_raster0_seg7.png",
-    "segments/page3_raster0_seg8.png",
-    "segments/page3_raster0_seg9.png",
-    "segments/page3_raster0_seg10.png",
-    "segments/page3_raster0_seg11.png",
-    "segments/page3_raster0_seg12.png",
-    "segments/page3_raster0_seg13.png",
-    "segments/page3_raster0_seg14.png",
-    "segments/page3_raster0_seg15.png",
-    "segments/page3_raster0_seg16.png",
-    "segments/page3_raster0_seg17.png",
-    "segments/page3_raster0_seg18.png",
-    "segments/page3_raster0_seg19.png",
-    "segments/page3_raster0_seg20.png",
-    "segments/page3_raster0_seg21.png",
-    "segments/page3_raster0_seg22.png",
-    "segments/page3_raster0_seg23.png",
-    "segments/page3_raster0_seg24.png",
-    "segments/page3_raster0_seg25.png"
+    {
+      "path": "segments/page3_raster0_seg0.png",
+      "bbox": [
+        2851,
+        0,
+        3248,
+        372
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg1.png",
+      "bbox": [
+        729,
+        9,
+        1128,
+        318
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg2.png",
+      "bbox": [
+        1447,
+        25,
+        1810,
+        302
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg3.png",
+      "bbox": [
+        2161,
+        453,
+        2760,
+        970
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg4.png",
+      "bbox": [
+        23,
+        517,
+        480,
+        932
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg5.png",
+      "bbox": [
+        527,
+        517,
+        968,
+        926
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg6.png",
+      "bbox": [
+        999,
+        517,
+        1454,
+        926
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg7.png",
+      "bbox": [
+        1501,
+        517,
+        2116,
+        932
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg8.png",
+      "bbox": [
+        2807,
+        521,
+        3204,
+        920
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg9.png",
+      "bbox": [
+        3251,
+        521,
+        3652,
+        924
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg10.png",
+      "bbox": [
+        3699,
+        521,
+        4134,
+        896
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg11.png",
+      "bbox": [
+        1399,
+        1299,
+        1842,
+        1892
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg12.png",
+      "bbox": [
+        1843,
+        1299,
+        2317,
+        1892
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg13.png",
+      "bbox": [
+        2318,
+        1299,
+        2838,
+        1900
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg14.png",
+      "bbox": [
+        2839,
+        1299,
+        3280,
+        1892
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg15.png",
+      "bbox": [
+        3281,
+        1299,
+        3740,
+        1900
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg16.png",
+      "bbox": [
+        3741,
+        1299,
+        4182,
+        1934
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg17.png",
+      "bbox": [
+        15,
+        1419,
+        456,
+        1828
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg18.png",
+      "bbox": [
+        457,
+        1419,
+        928,
+        1828
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg19.png",
+      "bbox": [
+        929,
+        1419,
+        1360,
+        1836
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg20.png",
+      "bbox": [
+        763,
+        2269,
+        1204,
+        2780
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg21.png",
+      "bbox": [
+        1247,
+        2269,
+        1688,
+        2744
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg22.png",
+      "bbox": [
+        1731,
+        2269,
+        2172,
+        2744
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg23.png",
+      "bbox": [
+        2215,
+        2269,
+        2656,
+        2740
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg24.png",
+      "bbox": [
+        2697,
+        2269,
+        3138,
+        2778
+      ]
+    },
+    {
+      "path": "segments/page3_raster0_seg25.png",
+      "bbox": [
+        3181,
+        2269,
+        3684,
+        2826
+      ]
+    }
   ],
   "images_SI/page4_fig0.png": [
-    "segments/page4_fig0_seg0.png",
-    "segments/page4_fig0_seg1.png",
-    "segments/page4_fig0_seg2.png"
+    {
+      "path": "segments/page4_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        220,
+        183
+      ]
+    },
+    {
+      "path": "segments/page4_fig0_seg1.png",
+      "bbox": [
+        220,
+        7,
+        438,
+        175
+      ]
+    },
+    {
+      "path": "segments/page4_fig0_seg2.png",
+      "bbox": [
+        694,
+        0,
+        926,
+        200
+      ]
+    }
   ],
   "images_SI/page4_fig1.png": [
-    "segments/page4_fig1_seg0.png",
-    "segments/page4_fig1_seg1.png",
-    "segments/page4_fig1_seg2.png"
+    {
+      "path": "segments/page4_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        220,
+        183
+      ]
+    },
+    {
+      "path": "segments/page4_fig1_seg1.png",
+      "bbox": [
+        220,
+        7,
+        437,
+        175
+      ]
+    },
+    {
+      "path": "segments/page4_fig1_seg2.png",
+      "bbox": [
+        693,
+        0,
+        926,
+        200
+      ]
+    }
   ],
   "images_SI/page5_fig0.png": [
-    "segments/page5_fig0_seg0.png",
-    "segments/page5_fig0_seg1.png",
-    "segments/page5_fig0_seg2.png"
+    {
+      "path": "segments/page5_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        220,
+        181
+      ]
+    },
+    {
+      "path": "segments/page5_fig0_seg1.png",
+      "bbox": [
+        220,
+        7,
+        437,
+        174
+      ]
+    },
+    {
+      "path": "segments/page5_fig0_seg2.png",
+      "bbox": [
+        693,
+        0,
+        923,
+        199
+      ]
+    }
   ],
   "images_SI/page5_fig1.png": [
-    "segments/page5_fig1_seg0.png",
-    "segments/page5_fig1_seg1.png",
-    "segments/page5_fig1_seg2.png"
+    {
+      "path": "segments/page5_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        220,
+        182
+      ]
+    },
+    {
+      "path": "segments/page5_fig1_seg1.png",
+      "bbox": [
+        220,
+        7,
+        438,
+        175
+      ]
+    },
+    {
+      "path": "segments/page5_fig1_seg2.png",
+      "bbox": [
+        694,
+        0,
+        927,
+        200
+      ]
+    }
   ],
   "images_SI/page5_fig2.png": [
-    "segments/page5_fig2_seg0.png",
-    "segments/page5_fig2_seg1.png",
-    "segments/page5_fig2_seg2.png"
+    {
+      "path": "segments/page5_fig2_seg0.png",
+      "bbox": [
+        0,
+        0,
+        220,
+        181
+      ]
+    },
+    {
+      "path": "segments/page5_fig2_seg1.png",
+      "bbox": [
+        220,
+        7,
+        436,
+        174
+      ]
+    },
+    {
+      "path": "segments/page5_fig2_seg2.png",
+      "bbox": [
+        692,
+        0,
+        923,
+        199
+      ]
+    }
   ],
   "images_SI/page6_fig0.png": [
-    "segments/page6_fig0_seg0.png",
-    "segments/page6_fig0_seg1.png",
-    "segments/page6_fig0_seg2.png"
+    {
+      "path": "segments/page6_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        219,
+        183
+      ]
+    },
+    {
+      "path": "segments/page6_fig0_seg1.png",
+      "bbox": [
+        220,
+        8,
+        427,
+        175
+      ]
+    },
+    {
+      "path": "segments/page6_fig0_seg2.png",
+      "bbox": [
+        693,
+        0,
+        924,
+        200
+      ]
+    }
   ],
   "images_SI/page6_fig1.png": [
-    "segments/page6_fig1_seg0.png",
-    "segments/page6_fig1_seg1.png",
-    "segments/page6_fig1_seg2.png"
+    {
+      "path": "segments/page6_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        217,
+        181
+      ]
+    },
+    {
+      "path": "segments/page6_fig1_seg1.png",
+      "bbox": [
+        217,
+        7,
+        432,
+        173
+      ]
+    },
+    {
+      "path": "segments/page6_fig1_seg2.png",
+      "bbox": [
+        685,
+        0,
+        914,
+        198
+      ]
+    }
   ],
   "images_SI/page6_fig2.png": [
-    "segments/page6_fig2_seg0.png",
-    "segments/page6_fig2_seg1.png",
-    "segments/page6_fig2_seg2.png",
-    "segments/page6_fig2_seg3.png",
-    "segments/page6_fig2_seg4.png",
-    "segments/page6_fig2_seg5.png"
+    {
+      "path": "segments/page6_fig2_seg0.png",
+      "bbox": [
+        0,
+        11,
+        179,
+        177
+      ]
+    },
+    {
+      "path": "segments/page6_fig2_seg1.png",
+      "bbox": [
+        179,
+        4,
+        390,
+        186
+      ]
+    },
+    {
+      "path": "segments/page6_fig2_seg2.png",
+      "bbox": [
+        591,
+        0,
+        818,
+        199
+      ]
+    },
+    {
+      "path": "segments/page6_fig2_seg3.png",
+      "bbox": [
+        105,
+        189,
+        345,
+        414
+      ]
+    },
+    {
+      "path": "segments/page6_fig2_seg4.png",
+      "bbox": [
+        380,
+        197,
+        607,
+        406
+      ]
+    },
+    {
+      "path": "segments/page6_fig2_seg5.png",
+      "bbox": [
+        643,
+        199,
+        851,
+        414
+      ]
+    }
   ],
   "images_SI/page7_fig0.png": [
-    "segments/page7_fig0_seg0.png",
-    "segments/page7_fig0_seg1.png"
+    {
+      "path": "segments/page7_fig0_seg0.png",
+      "bbox": [
+        228,
+        21,
+        476,
+        220
+      ]
+    },
+    {
+      "path": "segments/page7_fig0_seg1.png",
+      "bbox": [
+        476,
+        44,
+        687,
+        197
+      ]
+    }
   ],
   "images_SI/page7_fig1.png": [
-    "segments/page7_fig1_seg0.png"
+    {
+      "path": "segments/page7_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        234,
+        161
+      ]
+    }
   ],
   "images_SI/page9_fig0.png": [
-    "segments/page9_fig0_seg0.png"
+    {
+      "path": "segments/page9_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        155,
+        139
+      ]
+    }
   ],
   "images_SI/page10_fig0.png": [
-    "segments/page10_fig0_seg0.png",
-    "segments/page10_fig0_seg1.png",
-    "segments/page10_fig0_seg2.png"
+    {
+      "path": "segments/page10_fig0_seg0.png",
+      "bbox": [
+        206,
+        77,
+        407,
+        244
+      ]
+    },
+    {
+      "path": "segments/page10_fig0_seg1.png",
+      "bbox": [
+        407,
+        77,
+        625,
+        259
+      ]
+    },
+    {
+      "path": "segments/page10_fig0_seg2.png",
+      "bbox": [
+        969,
+        60,
+        1160,
+        270
+      ]
+    }
   ],
   "images_SI/page10_fig1.png": [
-    "segments/page10_fig1_seg0.png"
+    {
+      "path": "segments/page10_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        178,
+        173
+      ]
+    }
   ],
   "images_SI/page11_fig0.png": [
-    "segments/page11_fig0_seg0.png"
+    {
+      "path": "segments/page11_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        189,
+        173
+      ]
+    }
   ],
   "images_SI/page11_fig1.png": [
-    "segments/page11_fig1_seg0.png"
+    {
+      "path": "segments/page11_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        179,
+        168
+      ]
+    }
   ],
   "images_SI/page11_fig2.png": [
-    "segments/page11_fig2_seg0.png"
+    {
+      "path": "segments/page11_fig2_seg0.png",
+      "bbox": [
+        0,
+        0,
+        178,
+        168
+      ]
+    }
   ],
   "images_SI/page12_fig0.png": [
-    "segments/page12_fig0_seg0.png"
+    {
+      "path": "segments/page12_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        256,
+        172
+      ]
+    }
   ],
   "images_SI/page12_fig1.png": [
-    "segments/page12_fig1_seg0.png"
+    {
+      "path": "segments/page12_fig1_seg0.png",
+      "bbox": [
+        0,
+        7,
+        249,
+        217
+      ]
+    }
   ],
   "images_SI/page14_fig0.png": [
-    "segments/page14_fig0_seg0.png"
+    {
+      "path": "segments/page14_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        178,
+        154
+      ]
+    }
   ],
   "images_SI/page14_fig1.png": [
-    "segments/page14_fig1_seg0.png"
+    {
+      "path": "segments/page14_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        186,
+        168
+      ]
+    }
   ],
   "images_SI/page15_fig0.png": [
-    "segments/page15_fig0_seg0.png"
+    {
+      "path": "segments/page15_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        192,
+        168
+      ]
+    }
   ],
   "images_SI/page15_fig1.png": [
-    "segments/page15_fig1_seg0.png"
+    {
+      "path": "segments/page15_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        182,
+        172
+      ]
+    }
   ],
   "images_SI/page15_fig2.png": [
-    "segments/page15_fig2_seg0.png"
+    {
+      "path": "segments/page15_fig2_seg0.png",
+      "bbox": [
+        0,
+        0,
+        179,
+        248
+      ]
+    }
   ],
   "images_SI/page16_fig0.png": [
-    "segments/page16_fig0_seg0.png"
+    {
+      "path": "segments/page16_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        196,
+        250
+      ]
+    }
   ],
   "images_SI/page16_fig1.png": [
-    "segments/page16_fig1_seg0.png"
+    {
+      "path": "segments/page16_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        210,
+        253
+      ]
+    }
   ],
   "images_SI/page17_fig0.png": [
-    "segments/page17_fig0_seg0.png"
+    {
+      "path": "segments/page17_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        181,
+        251
+      ]
+    }
   ],
   "images_SI/page17_fig1.png": [
-    "segments/page17_fig1_seg0.png"
+    {
+      "path": "segments/page17_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        188,
+        253
+      ]
+    }
   ],
   "images_SI/page18_fig0.png": [
-    "segments/page18_fig0_seg0.png"
+    {
+      "path": "segments/page18_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        179,
+        266
+      ]
+    }
   ],
   "images_SI/page18_fig1.png": [
-    "segments/page18_fig1_seg0.png"
+    {
+      "path": "segments/page18_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        179,
+        210
+      ]
+    }
   ],
   "images_SI/page19_fig0.png": [
-    "segments/page19_fig0_seg0.png"
+    {
+      "path": "segments/page19_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        180,
+        199
+      ]
+    }
   ],
   "images_SI/page19_fig1.png": [
-    "segments/page19_fig1_seg0.png"
+    {
+      "path": "segments/page19_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        181,
+        199
+      ]
+    }
   ],
   "images_SI/page19_fig2.png": [
-    "segments/page19_fig2_seg0.png"
+    {
+      "path": "segments/page19_fig2_seg0.png",
+      "bbox": [
+        0,
+        0,
+        181,
+        194
+      ]
+    }
   ],
   "images_SI/page20_fig0.png": [
-    "segments/page20_fig0_seg0.png"
+    {
+      "path": "segments/page20_fig0_seg0.png",
+      "bbox": [
+        0,
+        0,
+        178,
+        210
+      ]
+    }
   ],
   "images_SI/page20_fig1.png": [
-    "segments/page20_fig1_seg0.png"
+    {
+      "path": "segments/page20_fig1_seg0.png",
+      "bbox": [
+        0,
+        0,
+        207,
+        235
+      ]
+    }
   ],
   "images_SI/page21_fig0.png": [
-    "segments/page21_fig0_seg0.png",
-    "segments/page21_fig0_seg1.png",
-    "segments/page21_fig0_seg2.png"
+    {
+      "path": "segments/page21_fig0_seg0.png",
+      "bbox": [
+        239,
+        47,
+        481,
+        221
+      ]
+    },
+    {
+      "path": "segments/page21_fig0_seg1.png",
+      "bbox": [
+        482,
+        55,
+        700,
+        221
+      ]
+    },
+    {
+      "path": "segments/page21_fig0_seg2.png",
+      "bbox": [
+        954,
+        17,
+        1165,
+        221
+      ]
+    }
   ],
   "images_SI/page22_fig0.png": [
-    "segments/page22_fig0_seg0.png"
+    {
+      "path": "segments/page22_fig0_seg0.png",
+      "bbox": [
+        262,
+        34,
+        480,
+        202
+      ]
+    }
   ],
   "images_SI/page22_fig1.png": [],
   "images_SI/page23_fig0.png": [
-    "segments/page23_fig0_seg0.png",
-    "segments/page23_fig0_seg1.png",
-    "segments/page23_fig0_seg2.png"
+    {
+      "path": "segments/page23_fig0_seg0.png",
+      "bbox": [
+        0,
+        27,
+        213,
+        210
+      ]
+    },
+    {
+      "path": "segments/page23_fig0_seg1.png",
+      "bbox": [
+        231,
+        35,
+        448,
+        202
+      ]
+    },
+    {
+      "path": "segments/page23_fig0_seg2.png",
+      "bbox": [
+        624,
+        14,
+        866,
+        224
+      ]
+    }
   ],
   "images_SI/page25_rasterstrip0.png": [
-    "segments/page25_rasterstrip0_seg0.png",
-    "segments/page25_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page25_rasterstrip0_seg0.png",
+      "bbox": [
+        431,
+        0,
+        1788,
+        254
+      ]
+    },
+    {
+      "path": "segments/page25_rasterstrip0_seg1.png",
+      "bbox": [
+        18,
+        202,
+        385,
+        425
+      ]
+    }
   ],
   "images_SI/page25_raster7.png": [
-    "segments/page25_raster7_seg0.png"
+    {
+      "path": "segments/page25_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        218,
+        387
+      ]
+    }
   ],
   "images_SI/page26_rasterstrip0.png": [
-    "segments/page26_rasterstrip0_seg0.png",
-    "segments/page26_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page26_rasterstrip0_seg0.png",
+      "bbox": [
+        46,
+        195,
+        389,
+        409
+      ]
+    },
+    {
+      "path": "segments/page26_rasterstrip0_seg1.png",
+      "bbox": [
+        165,
+        1127,
+        401,
+        1264
+      ]
+    }
   ],
   "images_SI/page26_raster4.png": [
-    "segments/page26_raster4_seg0.png"
+    {
+      "path": "segments/page26_raster4_seg0.png",
+      "bbox": [
+        0,
+        3,
+        213,
+        359
+      ]
+    }
   ],
   "images_SI/page27_raster3.png": [
-    "segments/page27_raster3_seg0.png"
+    {
+      "path": "segments/page27_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        356,
+        212
+      ]
+    }
   ],
   "images_SI/page28_rasterstrip0.png": [
-    "segments/page28_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page28_rasterstrip0_seg0.png",
+      "bbox": [
+        80,
+        111,
+        360,
+        300
+      ]
+    }
   ],
   "images_SI/page30_rasterstrip0.png": [
-    "segments/page30_rasterstrip0_seg0.png",
-    "segments/page30_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page30_rasterstrip0_seg0.png",
+      "bbox": [
+        394,
+        70,
+        1067,
+        250
+      ]
+    },
+    {
+      "path": "segments/page30_rasterstrip0_seg1.png",
+      "bbox": [
+        94,
+        197,
+        364,
+        395
+      ]
+    }
   ],
   "images_SI/page32_rasterstrip0.png": [
-    "segments/page32_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page32_rasterstrip0_seg0.png",
+      "bbox": [
+        78,
+        205,
+        349,
+        463
+      ]
+    }
   ],
   "images_SI/page34_rasterstrip0.png": [
-    "segments/page34_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page34_rasterstrip0_seg0.png",
+      "bbox": [
+        0,
+        209,
+        279,
+        468
+      ]
+    }
   ],
   "images_SI/page34_raster4.png": [
-    "segments/page34_raster4_seg0.png"
+    {
+      "path": "segments/page34_raster4_seg0.png",
+      "bbox": [
+        0,
+        0,
+        275,
+        268
+      ]
+    }
   ],
   "images_SI/page35_raster3.png": [
-    "segments/page35_raster3_seg0.png"
+    {
+      "path": "segments/page35_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        263,
+        274
+      ]
+    }
   ],
   "images_SI/page36_rasterstrip0.png": [
-    "segments/page36_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page36_rasterstrip0_seg0.png",
+      "bbox": [
+        42,
+        185,
+        319,
+        444
+      ]
+    }
   ],
   "images_SI/page36_raster7.png": [
-    "segments/page36_raster7_seg0.png"
+    {
+      "path": "segments/page36_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        275,
+        261
+      ]
+    }
   ],
   "images_SI/page37_rasterstrip0.png": [
-    "segments/page37_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page37_rasterstrip0_seg0.png",
+      "bbox": [
+        39,
+        186,
+        325,
+        446
+      ]
+    }
   ],
   "images_SI/page37_raster7.png": [
-    "segments/page37_raster7_seg0.png"
+    {
+      "path": "segments/page37_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        276,
+        275
+      ]
+    }
   ],
   "images_SI/page38_rasterstrip0.png": [
-    "segments/page38_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page38_rasterstrip0_seg0.png",
+      "bbox": [
+        3,
+        189,
+        370,
+        449
+      ]
+    }
   ],
   "images_SI/page38_raster4.png": [
-    "segments/page38_raster4_seg0.png"
+    {
+      "path": "segments/page38_raster4_seg0.png",
+      "bbox": [
+        0,
+        0,
+        279,
+        388
+      ]
+    }
   ],
   "images_SI/page39_raster3.png": [
-    "segments/page39_raster3_seg0.png"
+    {
+      "path": "segments/page39_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        389,
+        278
+      ]
+    }
   ],
   "images_SI/page40_rasterstrip0.png": [
-    "segments/page40_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page40_rasterstrip0_seg0.png",
+      "bbox": [
+        1,
+        210,
+        353,
+        520
+      ]
+    }
   ],
   "images_SI/page40_raster7.png": [
-    "segments/page40_raster7_seg0.png"
+    {
+      "path": "segments/page40_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        344,
+        367
+      ]
+    }
   ],
   "images_SI/page41_raster3.png": [
-    "segments/page41_raster3_seg0.png"
+    {
+      "path": "segments/page41_raster3_seg0.png",
+      "bbox": [
+        0,
+        20,
+        368,
+        344
+      ]
+    }
   ],
   "images_SI/page42_rasterstrip0.png": [
-    "segments/page42_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page42_rasterstrip0_seg0.png",
+      "bbox": [
+        8,
+        218,
+        257,
+        470
+      ]
+    }
   ],
   "images_SI/page43_rasterstrip0.png": [
-    "segments/page43_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page43_rasterstrip0_seg0.png",
+      "bbox": [
+        14,
+        221,
+        264,
+        471
+      ]
+    }
   ],
   "images_SI/page45_rasterstrip0.png": [
-    "segments/page45_rasterstrip0_seg0.png",
-    "segments/page45_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page45_rasterstrip0_seg0.png",
+      "bbox": [
+        0,
+        142,
+        263,
+        380
+      ]
+    },
+    {
+      "path": "segments/page45_rasterstrip0_seg1.png",
+      "bbox": [
+        1519,
+        1184,
+        1671,
+        1358
+      ]
+    }
   ],
   "images_SI/page47_rasterstrip0.png": [
-    "segments/page47_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page47_rasterstrip0_seg0.png",
+      "bbox": [
+        20,
+        194,
+        299,
+        448
+      ]
+    }
   ],
   "images_SI/page49_rasterstrip0.png": [
-    "segments/page49_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page49_rasterstrip0_seg0.png",
+      "bbox": [
+        19,
+        161,
+        303,
+        415
+      ]
+    }
   ],
   "images_SI/page51_rasterstrip0.png": [
-    "segments/page51_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page51_rasterstrip0_seg0.png",
+      "bbox": [
+        13,
+        106,
+        287,
+        363
+      ]
+    }
   ],
   "images_SI/page51_raster4.png": [
-    "segments/page51_raster4_seg0.png"
+    {
+      "path": "segments/page51_raster4_seg0.png",
+      "bbox": [
+        0,
+        0,
+        272,
+        260
+      ]
+    }
   ],
   "images_SI/page52_raster3.png": [
-    "segments/page52_raster3_seg0.png"
+    {
+      "path": "segments/page52_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        260,
+        272
+      ]
+    }
   ],
   "images_SI/page53_rasterstrip0.png": [
-    "segments/page53_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page53_rasterstrip0_seg0.png",
+      "bbox": [
+        31,
+        72,
+        301,
+        420
+      ]
+    }
   ],
   "images_SI/page53_raster4.png": [
-    "segments/page53_raster4_seg0.png"
+    {
+      "path": "segments/page53_raster4_seg0.png",
+      "bbox": [
+        0,
+        0,
+        376,
+        254
+      ]
+    }
   ],
   "images_SI/page54_raster3.png": [
-    "segments/page54_raster3_seg0.png"
+    {
+      "path": "segments/page54_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        254,
+        375
+      ]
+    }
   ],
   "images_SI/page55_rasterstrip0.png": [
-    "segments/page55_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page55_rasterstrip0_seg0.png",
+      "bbox": [
+        39,
+        77,
+        328,
+        428
+      ]
+    }
   ],
   "images_SI/page55_raster4.png": [
-    "segments/page55_raster4_seg0.png"
+    {
+      "path": "segments/page55_raster4_seg0.png",
+      "bbox": [
+        0,
+        0,
+        402,
+        281
+      ]
+    }
   ],
   "images_SI/page56_raster3.png": [
-    "segments/page56_raster3_seg0.png"
+    {
+      "path": "segments/page56_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        281,
+        401
+      ]
+    }
   ],
   "images_SI/page57_rasterstrip0.png": [
-    "segments/page57_rasterstrip0_seg0.png",
-    "segments/page57_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page57_rasterstrip0_seg0.png",
+      "bbox": [
+        22,
+        96,
+        337,
+        453
+      ]
+    },
+    {
+      "path": "segments/page57_rasterstrip0_seg1.png",
+      "bbox": [
+        498,
+        1184,
+        686,
+        1360
+      ]
+    }
   ],
   "images_SI/page57_raster7.png": [
-    "segments/page57_raster7_seg0.png"
+    {
+      "path": "segments/page57_raster7_seg0.png",
+      "bbox": [
+        0,
+        24,
+        404,
+        316
+      ]
+    }
   ],
   "images_SI/page58_raster3.png": [
-    "segments/page58_raster3_seg0.png"
+    {
+      "path": "segments/page58_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        294,
+        403
+      ]
+    }
   ],
   "images_SI/page59_rasterstrip0.png": [
-    "segments/page59_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page59_rasterstrip0_seg0.png",
+      "bbox": [
+        50,
+        97,
+        320,
+        446
+      ]
+    }
   ],
   "images_SI/page59_raster7.png": [
-    "segments/page59_raster7_seg0.png"
+    {
+      "path": "segments/page59_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        400,
+        254
+      ]
+    }
   ],
   "images_SI/page60_raster3.png": [
-    "segments/page60_raster3_seg0.png"
+    {
+      "path": "segments/page60_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        254,
+        400
+      ]
+    }
   ],
   "images_SI/page61_rasterstrip0.png": [
-    "segments/page61_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page61_rasterstrip0_seg0.png",
+      "bbox": [
+        48,
+        97,
+        327,
+        454
+      ]
+    }
   ],
   "images_SI/page61_raster7.png": [
-    "segments/page61_raster7_seg0.png"
+    {
+      "path": "segments/page61_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        403,
+        268
+      ]
+    }
   ],
   "images_SI/page62_raster3.png": [
-    "segments/page62_raster3_seg0.png"
+    {
+      "path": "segments/page62_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        289,
+        402
+      ]
+    }
   ],
   "images_SI/page63_raster2.png": [
-    "segments/page63_raster2_seg0.png"
+    {
+      "path": "segments/page63_raster2_seg0.png",
+      "bbox": [
+        0,
+        0,
+        269,
+        402
+      ]
+    }
   ],
   "images_SI/page64_rasterstrip0.png": [
-    "segments/page64_rasterstrip0_seg0.png",
-    "segments/page64_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page64_rasterstrip0_seg0.png",
+      "bbox": [
+        582,
+        0,
+        1531,
+        240
+      ]
+    },
+    {
+      "path": "segments/page64_rasterstrip0_seg1.png",
+      "bbox": [
+        45,
+        94,
+        315,
+        467
+      ]
+    }
   ],
   "images_SI/page64_raster7.png": [
-    "segments/page64_raster7_seg0.png"
+    {
+      "path": "segments/page64_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        432,
+        254
+      ]
+    }
   ],
   "images_SI/page65_raster3.png": [
-    "segments/page65_raster3_seg0.png"
+    {
+      "path": "segments/page65_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        254,
+        433
+      ]
+    }
   ],
   "images_SI/page66_rasterstrip0.png": [
-    "segments/page66_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page66_rasterstrip0_seg0.png",
+      "bbox": [
+        71,
+        103,
+        344,
+        413
+      ]
+    }
   ],
   "images_SI/page66_raster7.png": [
-    "segments/page66_raster7_seg0.png"
+    {
+      "path": "segments/page66_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        345,
+        257
+      ]
+    }
   ],
   "images_SI/page67_raster3.png": [
-    "segments/page67_raster3_seg0.png"
+    {
+      "path": "segments/page67_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        257,
+        345
+      ]
+    }
   ],
   "images_SI/page68_rasterstrip0.png": [
-    "segments/page68_rasterstrip0_seg0.png",
-    "segments/page68_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page68_rasterstrip0_seg0.png",
+      "bbox": [
+        102,
+        0,
+        1258,
+        252
+      ]
+    },
+    {
+      "path": "segments/page68_rasterstrip0_seg1.png",
+      "bbox": [
+        67,
+        260,
+        340,
+        549
+      ]
+    }
   ],
   "images_SI/page68_raster7.png": [
-    "segments/page68_raster7_seg0.png"
+    {
+      "path": "segments/page68_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        318,
+        254
+      ]
+    }
   ],
   "images_SI/page69_raster3.png": [
-    "segments/page69_raster3_seg0.png"
+    {
+      "path": "segments/page69_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        257,
+        300
+      ]
+    }
   ],
   "images_SI/page70_rasterstrip0.png": [
-    "segments/page70_rasterstrip0_seg0.png",
-    "segments/page70_rasterstrip0_seg1.png"
+    {
+      "path": "segments/page70_rasterstrip0_seg0.png",
+      "bbox": [
+        69,
+        203,
+        339,
+        492
+      ]
+    },
+    {
+      "path": "segments/page70_rasterstrip0_seg1.png",
+      "bbox": [
+        1505,
+        1184,
+        1652,
+        1360
+      ]
+    }
   ],
   "images_SI/page70_raster7.png": [
-    "segments/page70_raster7_seg0.png"
+    {
+      "path": "segments/page70_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        316,
+        254
+      ]
+    }
   ],
   "images_SI/page71_raster3.png": [
-    "segments/page71_raster3_seg0.png"
+    {
+      "path": "segments/page71_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        254,
+        299
+      ]
+    }
   ],
   "images_SI/page72_rasterstrip0.png": [
-    "segments/page72_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page72_rasterstrip0_seg0.png",
+      "bbox": [
+        33,
+        207,
+        306,
+        498
+      ]
+    }
   ],
   "images_SI/page72_raster7.png": [
-    "segments/page72_raster7_seg0.png"
+    {
+      "path": "segments/page72_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        319,
+        257
+      ]
+    }
   ],
   "images_SI/page73_raster3.png": [
-    "segments/page73_raster3_seg0.png"
+    {
+      "path": "segments/page73_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        257,
+        319
+      ]
+    }
   ],
   "images_SI/page74_rasterstrip0.png": [
-    "segments/page74_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page74_rasterstrip0_seg0.png",
+      "bbox": [
+        22,
+        195,
+        294,
+        506
+      ]
+    }
   ],
   "images_SI/page74_raster7.png": [
-    "segments/page74_raster7_seg0.png"
+    {
+      "path": "segments/page74_raster7_seg0.png",
+      "bbox": [
+        0,
+        0,
+        348,
+        257
+      ]
+    }
   ],
   "images_SI/page75_raster3.png": [
-    "segments/page75_raster3_seg0.png"
+    {
+      "path": "segments/page75_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        257,
+        348
+      ]
+    }
   ],
   "images_SI/page76_rasterstrip0.png": [
-    "segments/page76_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page76_rasterstrip0_seg0.png",
+      "bbox": [
+        41,
+        227,
+        343,
+        558
+      ]
+    }
   ],
   "images_SI/page76_raster7.png": [
-    "segments/page76_raster7_seg0.png"
+    {
+      "path": "segments/page76_raster7_seg0.png",
+      "bbox": [
+        0,
+        10,
+        375,
+        299
+      ]
+    }
   ],
   "images_SI/page77_raster3.png": [
-    "segments/page77_raster3_seg0.png"
+    {
+      "path": "segments/page77_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        280,
+        350
+      ]
+    }
   ],
   "images_SI/page78_rasterstrip0.png": [
-    "segments/page78_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page78_rasterstrip0_seg0.png",
+      "bbox": [
+        25,
+        213,
+        289,
+        467
+      ]
+    }
   ],
   "images_SI/page78_raster7.png": [
-    "segments/page78_raster7_seg0.png"
+    {
+      "path": "segments/page78_raster7_seg0.png",
+      "bbox": [
+        0,
+        1,
+        270,
+        245
+      ]
+    }
   ],
   "images_SI/page79_raster3.png": [
-    "segments/page79_raster3_seg0.png"
+    {
+      "path": "segments/page79_raster3_seg0.png",
+      "bbox": [
+        0,
+        0,
+        245,
+        270
+      ]
+    }
   ],
   "images_SI/page80_rasterstrip0.png": [
-    "segments/page80_rasterstrip0_seg0.png"
+    {
+      "path": "segments/page80_rasterstrip0_seg0.png",
+      "bbox": [
+        30,
+        252,
+        289,
+        426
+      ]
+    }
   ]
 }
