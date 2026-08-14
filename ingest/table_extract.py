@@ -47,6 +47,9 @@ import re
 from pathlib import Path
 
 import fitz
+import numpy as np
+import pytesseract
+from PIL import Image
 
 PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
 
@@ -155,25 +158,97 @@ def _extract_bordered_tables(page, page_vector_regions):
 
 # --- Path B: borderless tables -------------------------------------------
 
-ROW_Y_TOLERANCE_PT = 5.0  # absorbs a subscript/superscript span's vertical
+ROW_Y_TOLERANCE_PT = 6.0  # absorbs a subscript/superscript span's vertical
                             # offset from its cell's baseline (confirmed:
-                            # ~3.4pt on real cases) while staying well under
-                            # real row-to-row spacing (confirmed: ~11pt)
+                            # ~3.4pt on real cases, up to 5.04pt on
+                            # suzuki_iron_2024/SI's own multi-part species
+                            # labels like "HS I_U *") while staying well
+                            # under real row-to-row spacing (confirmed as
+                            # low as ~8.56pt on suzuki_nhc_2026's Table 2)
 SPACING_DEVIATION_FRAC = 0.4  # once a stable row cadence is established, a
                                 # candidate row breaks the table if its gap
                                 # from the previous row deviates this much
                                 # from the running median spacing -- only
                                 # used as a fallback when no closing rule
                                 # was found (see RULE_* below)
+NEW_ROW_VS_WRAP_FRAC = 0.6  # a line with column 0 empty is normally a
+                              # wrapped continuation of the previous cell,
+                              # but a real new row can also legitimately
+                              # have nothing recognized in column 0 -- OCR
+                              # failing to read a repeated/ditto-marked
+                              # value, confirmed on nickelocene_2025's
+                              # Table 2 (entry 2's catalyst name never
+                              # got OCR'd at all). Distinguished from a
+                              # genuine wrap by gap size against the
+                              # established row spacing: a real wrapped
+                              # line sits close to its parent row
+                              # (confirmed ~3.4pt on the DFT-table
+                              # subscript case, ~31% of that table's
+                              # ~10.9pt row spacing), while a real row
+                              # missing its column-0 value still sits a
+                              # full row apart (confirmed ~9.8pt on
+                              # nickelocene Table 2, ~100% of its ~9.8pt
+                              # spacing) -- 0.6 sits with margin between
+                              # both confirmed cases.
 HEADER_ROW_GAP_MAX_PT = 30  # a header's own top/bottom bounding rules (or
                               # a header table + the next rule below it)
                               # are one text line apart, not a whole table
 RULE_MAX_HEIGHT_PT = 3.0
-RULE_MIN_SEGMENTS = 2
 RULE_Y_TOLERANCE_PT = 0.5
-RULE_MIN_TOTAL_WIDTH_FRAC = 0.4  # a real table-width rule spans a large
-                                    # fraction of the page's content width;
-                                    # excludes short decorative underlines
+# A real table-width rule spans a large fraction of the page's content
+# width, excluding short decorative underlines -- but "page" here means
+# whatever column the table sits in, not necessarily the full page.
+# Originally required >=2 segments AND >=0.4 of the full page width, both
+# calibrated only against single-column SI pages (where a rule spans the
+# whole page). Confirmed wrong on nickelocene_2025's main-text Table 1: a
+# real, single continuous rule (not fragmented into per-column segments
+# at all) spanning its own two-column layout's column width -- 240pt,
+# only 0.395 of the 607pt full page width, and just one segment, so it
+# failed both the old segment-count and width checks. A single segment is
+# now accepted (real rules aren't always fragmented, see
+# redox_neutral_2024/SI page 40 vs. this case), and the width fraction is
+# lowered with margin below both confirmed-real cases (single-column
+# ~0.83, two-column ~0.395) -- re-verified corpus-wide after lowering that
+# this doesn't newly accept a false positive.
+RULE_MIN_TOTAL_WIDTH_FRAC = 0.3
+# Two unrelated tables sitting side by side in a two-column page layout
+# can share close-to-identical y-positions for their own rules purely by
+# coincidence of column layout (sometimes even deliberately, for visual
+# alignment) -- confirmed on suzuki_nhc_2026, where Table 1 (left column)
+# and Table 3 (right column) each have their own header-bounding rules at
+# the *same* y, and grouping by y alone merged them into one rule
+# spanning both, which then made the header-row pairing fail entirely (a
+# real header-bounding pair on one side no longer matched the other
+# side's unrelated segment count). Within one real table, adjacent
+# per-column segments touch or overlap slightly (confirmed ~1.4-1.5pt
+# apart on redox_neutral_2024/SI's fragmented rule); the gap between two
+# actually-different tables/columns is much larger (confirmed 17.9pt on
+# suzuki_nhc_2026) -- comfortably separated by this threshold.
+RULE_REGION_GAP_PT = 10.0
+# Threshold for collapsing same-y segments into one when they overlap --
+# see the comment at the merge site in _find_rule_lines. Genuine per-column
+# segments can overlap by rendering-rounding noise (confirmed ~0.24-0.49pt
+# on suzuki_nickel_2026/SI page 65's closing rule); the PDF-export artifact
+# this merge targets overlaps by tens of points (confirmed 53.6pt on
+# suzuki_nhc_2026's Table 1 header-bottom rule). This sits comfortably
+# between the two.
+RULE_SEGMENT_OVERLAP_MERGE_PT = 5.0
+
+
+def _cluster_x_regions(intervals, gap_pt=RULE_REGION_GAP_PT):
+    """Merges (x0, x1, ...) intervals into disjoint regions wherever a
+    real gap (not just adjacency) separates them -- see RULE_REGION_GAP_PT
+    for why. Returns a list of region (x0, x1) bounds; the caller matches
+    its own items back to a region by containment."""
+    ordered = sorted(intervals, key=lambda iv: iv[0])
+    regions = []
+    for iv in ordered:
+        x0, x1 = iv[0], iv[1]
+        if regions and x0 - regions[-1][1] <= gap_pt:
+            regions[-1] = (regions[-1][0], max(regions[-1][1], x1))
+        else:
+            regions.append((x0, x1))
+    return regions
 
 
 def _find_rule_lines(page):
@@ -183,9 +258,19 @@ def _find_rule_lines(page):
     boundary) instead of one continuous line -- confirmed on
     redox_neutral_2024/SI page 40, where find_tables() fails to recognize
     the table at all because of this. The segments' own x-ranges double as
-    column boundaries once found."""
+    column boundaries once found.
+
+    Segments are first split into x-regions (_cluster_x_regions) and
+    grouped by y independently *within* each region -- see
+    RULE_REGION_GAP_PT for why two side-by-side tables in a two-column
+    layout must never be allowed to merge into one rule just because they
+    share a y-position. Returns one sorted rule-line list *per region*
+    (not a single flattened list) -- a flat list interleaves two columns'
+    rules whenever their y-values happen to be close, and the caller's
+    pairing logic (adjacent rules = one table's header bounds) would then
+    pair a rule from one column with an unrelated rule from the other."""
     page_width = page.rect.width
-    candidates = {}
+    raw = []
     for d in page.get_drawings():
         rect = d["rect"]
         if rect.height > RULE_MAX_HEIGHT_PT or rect.width < 5:
@@ -193,21 +278,78 @@ def _find_rule_lines(page):
         fill = d.get("fill")
         if fill is None or sum(fill[:3]) / 3 >= 0.3:  # dark fill only
             continue
-        y_center = round((rect.y0 + rect.y1) / 2, 1)
-        key = next((k for k in candidates if abs(k - y_center) <= RULE_Y_TOLERANCE_PT), y_center)
-        candidates.setdefault(key, []).append((rect.x0, rect.x1))
+        raw.append((rect.x0, rect.x1, round((rect.y0 + rect.y1) / 2, 1)))
 
-    rule_lines = []
-    for y_center, segments in candidates.items():
-        segments.sort()
-        total_width = sum(x1 - x0 for x0, x1 in segments)
-        if len(segments) >= RULE_MIN_SEGMENTS and total_width >= page_width * RULE_MIN_TOTAL_WIDTH_FRAC:
-            rule_lines.append((y_center, segments))
-    rule_lines.sort(key=lambda r: r[0])
-    return rule_lines
+    # A lone decorative rule (e.g. a heading underline) that happens to
+    # straddle the gutter between two columns must not be allowed to bridge
+    # the region split -- confirmed on suzuki_nhc_2026 page 4, where a 94pt
+    # segment at y=76.5 (not part of any table, no sibling segment anywhere
+    # near that y) sits across the column gap and re-merges Table 1's and
+    # Table 3's regions into one, reproducing the exact bug this region
+    # split exists to fix. Only segments that look like real rule-line
+    # pieces -- part of a multi-segment y-band (a fragmented per-column
+    # rule) or individually wide enough to be a genuine full rule on their
+    # own -- are used to determine region boundaries.
+    y_sibling_counts = {}
+    for x0, x1, y_center in raw:
+        key = next((k for k in y_sibling_counts if abs(k - y_center) <= RULE_Y_TOLERANCE_PT), y_center)
+        y_sibling_counts[key] = y_sibling_counts.get(key, 0) + 1
+    region_seed_raw = [
+        (x0, x1, y_center)
+        for x0, x1, y_center in raw
+        if y_sibling_counts[next(k for k in y_sibling_counts if abs(k - y_center) <= RULE_Y_TOLERANCE_PT)] >= 2
+        or (x1 - x0) >= page_width * RULE_MIN_TOTAL_WIDTH_FRAC
+    ]
+
+    regions = _cluster_x_regions(region_seed_raw)
+
+    rule_lines_by_region = []
+    for rx0, rx1 in regions:
+        region_raw = [(x0, x1, y) for x0, x1, y in raw if rx0 <= x0 and x1 <= rx1]
+        candidates = {}
+        for x0, x1, y_center in region_raw:
+            key = next((k for k in candidates if abs(k - y_center) <= RULE_Y_TOLERANCE_PT), y_center)
+            candidates.setdefault(key, []).append((x0, x1))
+        region_lines = []
+        for y_center, segments in candidates.items():
+            segments.sort()
+            # Segments that overlap deeply are a PDF-export artifact, not
+            # real per-column fragments -- confirmed on suzuki_nhc_2026's
+            # own Table 1/3 header-bottom rule, where 3 segments overlap
+            # each other by tens of points (e.g. (37.6,112.6) and
+            # (59.0,253.5) overlap by 53.6pt) yet render as one visually
+            # continuous line. But a genuine fragmented per-column rule can
+            # *also* overlap its neighbor slightly, just by a rendering
+            # rounding amount rather than a real one -- confirmed on
+            # suzuki_nickel_2026/SI page 65's own closing rule, whose 4
+            # legitimate per-column segments overlap by only ~0.24-0.49pt
+            # each; merging on any overlap at all collapsed them to one
+            # segment and broke this table's close_y match against its
+            # 4-segment header. RULE_SEGMENT_OVERLAP_MERGE_PT sits well
+            # above that rounding noise and well below the confirmed
+            # artifact's overlap, so only the latter gets merged.
+            merged = []
+            for x0, x1 in segments:
+                if merged and merged[-1][1] - x0 > RULE_SEGMENT_OVERLAP_MERGE_PT:
+                    merged[-1] = (merged[-1][0], max(merged[-1][1], x1))
+                else:
+                    merged.append((x0, x1))
+            segments = merged
+            total_width = sum(x1 - x0 for x0, x1 in segments)
+            if total_width >= page_width * RULE_MIN_TOTAL_WIDTH_FRAC:
+                region_lines.append((y_center, segments))
+        region_lines.sort(key=lambda r: r[0])
+        if region_lines:
+            rule_lines_by_region.append(region_lines)
+    return rule_lines_by_region
 
 
-def _text_in_band(page, y0, y1, x0, x1):
+def _text_spans_in_band(page, y0, y1, x0, x1):
+    """Like _text_in_band but keeps each span's own x1 too -- needed to
+    cluster a header's words into columns by real gap (_cluster_header_
+    columns) when the only column-boundary signal is the header text
+    itself, not fragmented rule segments (see _borderless_from_rule_lines'
+    single-continuous-rule case)."""
     entries = []
     for block in page.get_text("dict")["blocks"]:
         if block.get("type") != 0:
@@ -217,9 +359,16 @@ def _text_in_band(page, y0, y1, x0, x1):
                 text = s["text"].strip()
                 if not text:
                     continue
-                sx0, sy0 = s["bbox"][0], s["bbox"][1]
+                sx0, sy0, sx1 = s["bbox"][0], s["bbox"][1], s["bbox"][2]
                 if y0 - 1 <= sy0 <= y1 + 1 and x0 - 5 <= sx0 <= x1 + 5:
-                    entries.append((sy0, sx0, text))
+                    entries.append((sy0, sx0, sx1, text))
+    return entries
+
+
+def _text_in_band(page, y0, y1, x0, x1):
+    entries = []
+    for sy0, sx0, sx1, text in _text_spans_in_band(page, y0, y1, x0, x1):
+        entries.append((sy0, sx0, text))
     return entries
 
 
@@ -240,8 +389,33 @@ def _finalize_cell_buckets(buckets):
     return cells
 
 
+def _looks_like_new_row_gap(group_y0, row_y0s):
+    """See NEW_ROW_VS_WRAP_FRAC. Only usable once >=2 rows have already
+    been confirmed (need a real median spacing to compare against) --
+    with fewer, falls back to treating a column-0-empty line as a wrap,
+    the safer default when there's no established cadence yet to check
+    against."""
+    if len(row_y0s) < 2:
+        return False
+    spacings = [row_y0s[k] - row_y0s[k - 1] for k in range(1, len(row_y0s))]
+    median = sorted(spacings)[len(spacings) // 2]
+    if median <= 0:
+        return False
+    return (group_y0 - row_y0s[-1]) >= median * NEW_ROW_VS_WRAP_FRAC
+
+
 def _reconstruct_rows(page, col_anchors, table_x0, table_x1, start_y, close_y):
-    """Groups text below a known header into rows, buckets each row's text
+    """PDF-text-backed wrapper around _reconstruct_rows_from_entries -- see
+    that function for the actual reconstruction logic. Kept separate so
+    the OCR-backed path (_ocr_reconstruct_rows, for tables with no real
+    text/vector content at all) can feed the same core algorithm from a
+    different entries source without duplicating it."""
+    entries = _text_in_band(page, start_y, close_y if close_y else start_y + 2000, table_x0, table_x1)
+    return _reconstruct_rows_from_entries(entries, col_anchors, start_y, close_y)
+
+
+def _reconstruct_rows_from_entries(entries, col_anchors, start_y, close_y):
+    """Groups (y0, x0, text) entries into rows, buckets each row's text
     into columns by nearest anchor, and stops either at a known closing
     rule (`close_y`, authoritative when available) or, when none exists,
     once the row spacing or column-fill count breaks from what's been
@@ -253,17 +427,25 @@ def _reconstruct_rows(page, col_anchors, table_x0, table_x1, start_y, close_y):
     cell, confirmed on miyaura_iron_2025/SI's GC-MS table (an m/z reading
     wrapping across two lines) -- so grouping can't just be "one physical
     line = one row" the way the single-line reaction-optimization tables
-    this was first validated against allow. The real signal: a genuine
+    this was first validated against allow. The general signal: a genuine
     new row has its first (leftmost/anchor) column populated -- a wrapped
     continuation line doesn't, since it's continuing a *later* column's
     cell, never restarting the row's own index/key value. So a physical
-    line with column 0 empty is appended onto the still-open previous row
-    instead of starting a new one. Validated end-to-end against three real
-    tables: suzuki_nickel_2026 Table 1 (20/20 rows, single-line);
-    redox_neutral_2024/SI Table S6 (10/10 rows, single-line);
-    miyaura_iron_2025/SI's GC-MS table continuing from page 27 onto page
-    28 (correctly reconstructs the wrapped m/z cells there, previously
-    produced a garbled partial row under the old one-line-per-row model).
+    line with column 0 empty is normally appended onto the still-open
+    previous row instead of starting a new one -- UNLESS its gap from the
+    last row looks like a full row apart rather than a tight wrap (see
+    _looks_like_new_row_gap/NEW_ROW_VS_WRAP_FRAC), which means it's a
+    real new row that's simply missing its own column-0 value (confirmed
+    necessary on nickelocene_2025's Table 2/OCR path: entry 2's catalyst
+    name never got OCR'd at all, and without this check that row silently
+    vanished into entry 1's instead of becoming its own row). Validated
+    end-to-end against four real tables: suzuki_nickel_2026 Table 1
+    (20/20 rows, single-line); redox_neutral_2024/SI Table S6 (10/10
+    rows, single-line); miyaura_iron_2025/SI's GC-MS table continuing
+    from page 27 onto page 28 (correctly reconstructs the wrapped m/z
+    cells there, previously produced a garbled partial row under the old
+    one-line-per-row model); nickelocene_2025's Table 2, OCR-sourced (see
+    above -- entry 2 now correctly recovered as its own row).
 
     Returns (rows, last_row_y1) -- the latter approximates the bottom edge
     of the actual last reconstructed row (not just the header/start_y),
@@ -271,19 +453,28 @@ def _reconstruct_rows(page, col_anchors, table_x0, table_x1, start_y, close_y):
     bottom" (for continuation-merging across a page break) isn't comparing
     against the wrong, far-too-early position when there's no closing
     rule to give an exact bound."""
-    entries = _text_in_band(page, start_y, close_y if close_y else start_y + 2000, table_x0, table_x1)
-    entries.sort(key=lambda e: (e[0], e[1]))
+    entries = sorted(entries, key=lambda e: (e[0], e[1]))
 
+    # Compared against the group's own first (topmost) y0, not the previous
+    # entry's y0 -- comparing to the previous entry lets tolerance chain
+    # transitively across genuinely different rows: confirmed on
+    # suzuki_nhc_2026's Table 2, where row 20's subscript ("4" in "K3PO4",
+    # y=523.55) sat only 4.65pt from row 21's superscript footnote marker
+    # ("d", y=528.20) -- each within ROW_Y_TOLERANCE_PT of its neighbor,
+    # chaining the two rows' entries into one line even though the rows'
+    # own baselines are 8.56pt apart, well over tolerance. Comparing to the
+    # group's first y0 instead still correctly merges a single physical
+    # line's own super/subscript spread (confirmed within ~4pt here) while
+    # refusing to bridge into the next row.
     lines = []
-    current, last_y, group_y0 = [], None, None
+    current, group_y0 = [], None
     for y0, x0, text in entries:
-        if last_y is None or abs(y0 - last_y) <= ROW_Y_TOLERANCE_PT:
+        if group_y0 is None or abs(y0 - group_y0) <= ROW_Y_TOLERANCE_PT:
             current.append((x0, text))
             group_y0 = group_y0 if group_y0 is not None else y0
         else:
             lines.append((group_y0, current))
             current, group_y0 = [(x0, text)], y0
-        last_y = y0
     if current:
         lines.append((group_y0, current))
 
@@ -297,7 +488,7 @@ def _reconstruct_rows(page, col_anchors, table_x0, table_x1, start_y, close_y):
             buckets[nearest].append((group_y0, x0, text))
             matched.add(nearest)
 
-        if 0 not in matched:
+        if 0 not in matched and not _looks_like_new_row_gap(group_y0, row_y0s):
             # a wrapped continuation line of the still-open row's cell(s)
             if open_row is not None:
                 for i, b in enumerate(buckets):
@@ -348,6 +539,13 @@ def _header_looks_valid(header):
         return False
     if any(len(h) > MAX_HEADER_CELL_CHARS for h in header):
         return False
+    # A real column label is never a bare number by itself (even a short
+    # one -- "T" always has its letter) -- confirmed necessary on
+    # suzuki_nhc_2026, where a rule-pair mismatch produced a garbled
+    # 3-cell "header" (['7', '[PtCl2(DMS)]', 'NR']) that otherwise passed
+    # the word-majority check below (2 of 3 cells have real letters).
+    if any(re.fullmatch(r"\d+", h.strip()) for h in nonempty):
+        return False
     word_count = sum(1 for h in nonempty if HEADER_WORD_RE.search(h))
     if word_count < len(nonempty) / 2:
         return False
@@ -384,36 +582,51 @@ def _borderless_from_rule_lines(page):
     segments rather than one line. Also recovers the table's closing rule
     when a matching third rule line exists further down, giving an exact
     geometric stop instead of the content-based fallback."""
-    rules = _find_rule_lines(page)
+    rule_lines_by_region = _find_rule_lines(page)
     results = []
-    for i in range(len(rules) - 1):
-        y_a, segs_a = rules[i]
-        y_b, segs_b = rules[i + 1]
-        if len(segs_a) != len(segs_b) or not (3 <= y_b - y_a <= HEADER_ROW_GAP_MAX_PT):
-            continue
-        col_anchors = [(x0 + x1) / 2 for x0, x1 in segs_b]
-        table_x0, table_x1 = segs_b[0][0], segs_b[-1][1]
+    for rules in rule_lines_by_region:
+        for i in range(len(rules) - 1):
+            y_a, segs_a = rules[i]
+            y_b, segs_b = rules[i + 1]
+            if len(segs_a) != len(segs_b) or not (3 <= y_b - y_a <= HEADER_ROW_GAP_MAX_PT):
+                continue
+            table_x0, table_x1 = segs_b[0][0], segs_b[-1][1]
 
-        header_entries = _text_in_band(page, y_a, y_b, table_x0, table_x1)
-        if not header_entries:
-            continue
-        header_buckets = [[] for _ in col_anchors]
-        for sy0, sx0, text in header_entries:
-            nearest = min(range(len(col_anchors)), key=lambda k: abs(col_anchors[k] - sx0))
-            header_buckets[nearest].append(text)
-        header = [" ".join(b).strip() for b in header_buckets]
-        if not _header_looks_valid(header):
-            continue
+            if len(segs_b) > 1:
+                # fragmented per-column segments double as column boundaries
+                col_anchors = [(x0 + x1) / 2 for x0, x1 in segs_b]
+                header_entries = _text_in_band(page, y_a, y_b, table_x0, table_x1)
+                if not header_entries:
+                    continue
+                header_buckets = [[] for _ in col_anchors]
+                for sy0, sx0, text in header_entries:
+                    nearest = min(range(len(col_anchors)), key=lambda k: abs(col_anchors[k] - sx0))
+                    header_buckets[nearest].append(text)
+                header = [" ".join(b).strip() for b in header_buckets]
+            else:
+                # a single continuous rule carries no per-column information
+                # at all -- confirmed on nickelocene_2025's main Table 1 and
+                # SI Tables S1/S2, both ruled with one solid line rather than
+                # fragmented segments. Derive columns from the header text's
+                # own word spacing instead (the same approach Path C's OCR
+                # detector uses for the same underlying problem).
+                header_spans = _text_spans_in_band(page, y_a, y_b, table_x0, table_x1)
+                if len(header_spans) < 2:
+                    continue
+                header_words = [(sx0, sx1, text) for sy0, sx0, sx1, text in header_spans]
+                col_anchors, header = _cluster_header_columns(sorted(header_words))
+            if not _header_looks_valid(header):
+                continue
 
-        close_y = next((y_c for y_c, segs_c in rules[i + 2:] if len(segs_c) == len(segs_b)), None)
-        rows, last_y1 = _reconstruct_rows(page, col_anchors, table_x0, table_x1, y_b, close_y)
-        if rows:
-            results.append({
-                "header": header, "rows": rows,
-                "bbox": [table_x0, y_a, table_x1, close_y if close_y is not None else last_y1],
-                "col_anchors": col_anchors,
-                "closed": close_y is not None,
-            })
+            close_y = next((y_c for y_c, segs_c in rules[i + 2:] if len(segs_c) == len(segs_b)), None)
+            rows, last_y1 = _reconstruct_rows(page, col_anchors, table_x0, table_x1, y_b, close_y)
+            if rows:
+                results.append({
+                    "header": header, "rows": rows,
+                    "bbox": [table_x0, y_a, table_x1, close_y if close_y is not None else last_y1],
+                    "col_anchors": col_anchors,
+                    "closed": close_y is not None,
+                })
     return results
 
 
@@ -437,6 +650,244 @@ def _extract_borderless_tables(page):
             continue
         kept_visual.append(v)
     return from_lines + kept_visual
+
+
+# --- Path C: raster-image tables (OCR) ------------------------------------
+
+# A raster-image table has real visual structure to key off even though
+# it has zero extractable text or vector paths -- the same journal house
+# style seen everywhere else in this corpus (a header row bounded by bold
+# rule lines, sometimes a shaded background too) is still *rendered* into
+# the picture, just as pixels instead of PDF drawing/text objects. Tried
+# inferring the header from OCR content instead (a fixed column-name
+# vocabulary, then a structural best-fit search over every line) and
+# confirmed both too unreliable: nickelocene_2025's own two tables use
+# different column names entirely ("[Ni]/base/additive/solvent" vs.
+# "metallocene/equivalents"), and the best-fit search picked a data row
+# over the real header on the second table (a coincidental column-anchor
+# fit). Detecting the same bold rule lines this session's vector-based
+# Path B already looks for, but directly in the rendered pixels, is both
+# more reliable and simpler -- confirmed identical rule positions (to
+# 0.3pt) on both of nickelocene_2025's tables despite their completely
+# different column layouts, since both share the same journal template.
+OCR_RULE_DARK_PIXEL_THRESHOLD = 100  # 0-255 grayscale; a genuine printed
+                                       # rule is near-black
+OCR_RULE_DARK_FRAC = 0.7  # fraction of a pixel-row that must be this dark
+                            # to count as a rule spanning the image width
+                            # -- confirmed real rules measure ~0.99,
+                            # ordinary text rows measure far lower (text
+                            # only darkens the small fraction of a row's
+                            # width the glyphs themselves occupy)
+OCR_HEADER_RULE_GAP_MAX_PT = 15.0  # the two rules bounding a header sit
+                                     # one text line apart -- confirmed
+                                     # ~9.3pt on both nickelocene tables
+OCR_TABLE_ZOOM = 5.0  # checked directly: 3.0 (this module's original
+                        # default) missed real words at a meaningfully
+                        # higher rate on nickelocene_2025's Table 1 (94
+                        # words recognized vs. 136 at 5.0) -- higher DPI
+                        # matters more here than in decimer_extract.py's
+                        # OCR checks, which upscale an already-cropped
+                        # single-structure image rather than a whole
+                        # multi-row table region
+OCR_TABLE_MIN_CONFIDENCE = 40
+OCR_HEADER_COLUMN_GAP_PT = 15.0
+# A caption's own table must start close below it -- generous enough to
+# clear a reaction-scheme graphic sitting between the caption and the
+# table's own header (confirmed gap on nickelocene_2025 Table 1: caption
+# sits directly above the combined scheme+table raster image).
+OCR_CAPTION_TO_IMAGE_MAX_GAP_PT = 40
+
+
+def _render_table_region(page, rect, zoom=OCR_TABLE_ZOOM):
+    """Renders a raster-image region once for both pixel-based rule
+    detection and OCR, so callers needing both don't pay for two
+    pixmaps. Returns (PIL RGB image, grayscale numpy array)."""
+    pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), clip=rect)
+    img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    gray = np.array(img.convert("L"))
+    return img, gray
+
+
+def _find_pixel_rule_bands(gray, rect, zoom=OCR_TABLE_ZOOM):
+    """Finds horizontal rule lines directly in the rendered pixels -- see
+    the Path C module comment for why this replaced inferring the header
+    from OCR content. A rule is a pixel-row where a large fraction of
+    pixels are near-black (a solid printed line spans nearly the full
+    image width; ordinary text only darkens the narrow fraction of a
+    row's width its glyphs occupy). Adjacent matching rows (a rule is
+    several pixels thick at this zoom) are merged into one band. Returns
+    a list of (y0, y1) rule bands in PDF-point coordinates, top to
+    bottom."""
+    dark_frac = (gray < OCR_RULE_DARK_PIXEL_THRESHOLD).mean(axis=1)
+    rule_rows = [i for i, f in enumerate(dark_frac) if f > OCR_RULE_DARK_FRAC]
+    bands = []
+    for i in rule_rows:
+        if bands and i - bands[-1][-1] <= 2:
+            bands[-1].append(i)
+        else:
+            bands.append([i])
+    return [(rect.y0 + b[0] / zoom, rect.y0 + b[-1] / zoom) for b in bands]
+
+
+def _find_ocr_header_bounds(rule_bands):
+    """The header sits between the first two rule bands close enough
+    together to be one text line apart (see OCR_HEADER_RULE_GAP_MAX_PT) --
+    confirmed identical on both of nickelocene_2025's tables (~9.3pt
+    apart) despite their different column layouts. Deliberately returns
+    on the FIRST qualifying pair, scanning top to bottom, rather than
+    picking whichever pair looks "best" some other way: the real header
+    is always the table's first row (continuation pages, with no header
+    of their own, are handled separately -- see _try_continue_table), and
+    a highlighted/colored data row further down can carry its own
+    visual marker too (confirmed on redox_neutral_2024/SI page 40's
+    green-highlighted entry 8, which is exactly the kind of false
+    candidate a "pick whichever looks most header-like" rule would risk
+    picking over the real one). Returns (header_y0, header_y1) -- the
+    OCR'd text band -- or None if no such pair exists (not every raster
+    image under a "Table N" caption is actually a table with this rule
+    style; safer to find nothing than to guess)."""
+    for i in range(len(rule_bands) - 1):
+        y0 = rule_bands[i][1]
+        y1 = rule_bands[i + 1][0]
+        if 0 < y1 - y0 <= OCR_HEADER_RULE_GAP_MAX_PT:
+            return y0, y1
+    return None
+
+
+def _ocr_words_in_image(img, rect, zoom=OCR_TABLE_ZOOM):
+    """OCRs an already-rendered region image and returns (y0, x0, x1,
+    text) entries in PDF-point coordinates -- x1 is kept alongside x0
+    here (unlike the PDF-text paths) because OCR gives no separate
+    per-word column structure to lean on; finding column boundaries has
+    to start from real word widths.
+
+    `--psm 6` (assume one uniform text block) matters here, the same way
+    it already does for decimer_extract.py's own OCR checks: tesseract's
+    default full-page auto-segmentation badly misreads a narrow, mostly-
+    numeric column in isolation (confirmed on nickelocene_2025's Table 2
+    -- clearly legible entry numbers "1".."6" came back as "=", "o",
+    "na", "&", garbage under the default mode, and correctly as
+    "1".."6" at 95%+ confidence under psm 6). Checked this doesn't cost
+    anything on a wider/busier table -- word count was flat on Table 1
+    (129 vs. 131) while recovering 18 more real words on Table 2."""
+    data = pytesseract.image_to_data(img, config="--psm 6", output_type=pytesseract.Output.DICT)
+    entries = []
+    for i in range(len(data["text"])):
+        text = data["text"][i].strip()
+        conf = int(data["conf"][i])
+        if not text or conf < OCR_TABLE_MIN_CONFIDENCE:
+            continue
+        x0 = rect.x0 + data["left"][i] / zoom
+        y0 = rect.y0 + data["top"][i] / zoom
+        x1 = x0 + data["width"][i] / zoom
+        entries.append((y0, x0, x1, text))
+    return entries
+
+
+def _cluster_header_columns(words, gap_pt=OCR_HEADER_COLUMN_GAP_PT):
+    """Groups a header line's individual OCR words into columns by real
+    x-gap (e.g. "yield" and "(%)" are two separate OCR tokens that belong
+    to one "yield (%)" column) -- the same gap-based clustering principle
+    pdf_ingest.py's cluster_drawing_rects uses for vector rects, applied
+    to 1D word spans instead. Returns (col_anchors, header_cell_texts)."""
+    clusters = [[words[0]]]
+    for x0, x1, text in words[1:]:
+        prev_x0, prev_x1, prev_text = clusters[-1][-1]
+        if x0 - prev_x1 > gap_pt:
+            clusters.append([])
+        clusters[-1].append((x0, x1, text))
+    anchors = [sum((x0 + x1) / 2 for x0, x1, _ in c) / len(c) for c in clusters]
+    header = [" ".join(t for _, _, t in c) for c in clusters]
+    return anchors, header
+
+
+def _extract_ocr_table(page, image_rect):
+    """Path C entry point: renders a raster-image region once, finds its
+    header from bold rule lines in the pixels themselves (see the Path C
+    module comment for why -- OCR-content-based header detection was
+    tried twice and confirmed too unreliable), OCRs the header band for
+    column labels and the rest of the region for data, then reconstructs
+    rows with the same shared core the text-based paths use
+    (_reconstruct_rows_from_entries): column-bucketing and row-stopping
+    logic doesn't care whether an entry came from real PDF text or an OCR
+    word, both are just (y0, x0, text)."""
+    img, gray = _render_table_region(page, image_rect)
+    rule_bands = _find_pixel_rule_bands(gray, image_rect)
+    header_bounds = _find_ocr_header_bounds(rule_bands)
+    if header_bounds is None:
+        return None
+    header_y0, header_y1 = header_bounds
+
+    entries = _ocr_words_in_image(img, image_rect)
+    if not entries:
+        return None
+    header_words = [(x0, x1, text) for y0, x0, x1, text in entries if header_y0 - 1 <= y0 <= header_y1 + 1]
+    if len(header_words) < 2:
+        return None
+    col_anchors, header = _cluster_header_columns(sorted(header_words))
+    if not _header_looks_valid(header):
+        return None
+
+    # header_y1 is the rule's own bottom edge, already a precise bound --
+    # only a small buffer is needed to skip the header text itself (not
+    # a full ROW_Y_TOLERANCE_PT, confirmed that margin was wide enough to
+    # exclude row 1 by 0.01pt on nickelocene_2025's Table 1).
+    row_entries = [(y0, x0, text) for y0, x0, x1, text in entries if y0 > header_y1 + 1]
+    rows, last_y1 = _reconstruct_rows_from_entries(row_entries, col_anchors, header_y1, None)
+    if not rows:
+        return None
+
+    # A raster-image table has no rule/caption below it to bound
+    # reconstruction with (unlike Paths A/B), and this corpus's
+    # optimization tables are routinely followed immediately by ligand/
+    # catalyst structure drawings with no real gap -- confirmed on
+    # nickelocene_2025's Table 1, where OCR noise from those drawings
+    # ("aad ipr...", "iPr Cl UNi dipp...") cleared the spacing-deviation
+    # check (the drawings start close enough below the last real row that
+    # the y-gap alone doesn't look anomalous) and got appended as two
+    # garbage trailing rows. Every real row in every table extracted by
+    # any path this session uses a small integer entry number, optionally
+    # with a lowercase letter suffix, in column 0 -- truncate at the
+    # first row that doesn't, rather than trust the spacing/column-count
+    # heuristics alone for content with no real structural bound at all.
+    entry_number_re = re.compile(r"^\d{1,3}[a-z]?$")
+    for i, row in enumerate(rows):
+        if not entry_number_re.match(row[0].strip()):
+            rows = rows[:i]
+            break
+    if not rows:
+        return None
+
+    return {
+        "header": header,
+        "rows": rows,
+        "bbox": [image_rect.x0, image_rect.y0, image_rect.x1, last_y1],
+        "col_anchors": col_anchors,
+        "closed": False,
+    }
+
+
+def _extract_ocr_tables(page):
+    """Only attempted for a raster image sitting close below this page's
+    own "Table N" caption -- OCR is expensive and noisy, not run
+    speculatively on every raster image on a page (most are real figures,
+    already Stage 1/3's job)."""
+    results = []
+    for block in page.get_text("blocks"):
+        bx0, by0, bx1, by1, text, _, block_type = block
+        if block_type != 0 or not CAPTION_RE.match(text.strip()):
+            continue
+        caption_text = text.strip()
+        for img in page.get_images(full=True):
+            xref = img[0]
+            for rect in page.get_image_rects(xref):
+                if not (by1 - 5 <= rect.y0 <= by1 + OCR_CAPTION_TO_IMAGE_MAX_GAP_PT):
+                    continue
+                table = _extract_ocr_table(page, rect)
+                if table:
+                    table["caption"] = caption_text
+                    results.append(table)
+    return results
 
 
 # --- Captions and page/paper orchestration --------------------------------
@@ -481,11 +932,31 @@ CONTINUATION_CAPTION_CHECK_PT = 150
 def extract_tables_for_page(page, page_number, page_vector_regions):
     tables = _extract_bordered_tables(page, page_vector_regions) + _extract_borderless_tables(page)
     results = []
+    found_captions = set()
     for t in tables:
         caption = _find_caption(page, t["bbox"])
+        if caption:
+            found_captions.add(caption)
         results.append({
             "page_number": page_number,
             "caption": caption,
+            "header": t["header"],
+            "rows": t["rows"],
+            "bbox": [round(v, 1) for v in t["bbox"]],
+            "col_anchors": t.get("col_anchors"),
+            "closed": t.get("closed"),
+        })
+
+    # Path C (OCR) is only a fallback for a "Table N" caption that Paths
+    # A/B found no real text/vector table for at all -- confirmed
+    # necessary to avoid a duplicate when a caption's table IS real text/
+    # vector content that Paths A/B already extracted correctly.
+    for t in _extract_ocr_tables(page):
+        if t["caption"] in found_captions:
+            continue
+        results.append({
+            "page_number": page_number,
+            "caption": t["caption"],
             "header": t["header"],
             "rows": t["rows"],
             "bbox": [round(v, 1) for v in t["bbox"]],
