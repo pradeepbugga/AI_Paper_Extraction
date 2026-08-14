@@ -1,0 +1,20 @@
+{
+  "images_SI/page5_fig0.png": [
+    {
+      "segment_path": "segments/page5_fig0_seg0.png",
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": "sulfonamide starting material (R1-SO2NH2)",
+      "panel_label": null,
+      "flag": "generic_scaffold - this is the sulfonamide reactant structure in the scheme, not a product; also merge artifact with many extraneous fragments"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg1.png",
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": "R2-X coupling partner / generic product placeholder",
+      "panel_label": null,
+      "flag": "generic_scaffold"
+    }
+  ]
+}
