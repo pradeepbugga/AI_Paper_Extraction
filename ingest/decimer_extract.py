@@ -209,6 +209,18 @@ OCR_MIN_CONFIDENCE = 50
 OCR_UPSCALE = 4
 OCR_TILE_THRESHOLD_PX = 400  # see _detected_missing_abbreviations docstring
 OCR_TILE_GRID = (3, 3)
+# A single tesseract page-segmentation mode is not reliable enough on its
+# own for this check -- confirmed on suzuki_nickel_2026/SI page6_fig1_seg15,
+# where the sole mode in use (6, "assume a single uniform block of text")
+# dropped the trailing "s" off "NHTs" (read "NHT", 92% confidence) and so
+# silently missed a real Ts label, while every other mode tested read it
+# correctly. But no single mode is a strict upgrade either: a corpus-wide
+# spot check (20 already-correctly-flagged cases) found mode 11 alone
+# missing 7 of them that mode 6 alone still catches. Trying several modes
+# and taking the union of hits (first match wins, short-circuits) recovers
+# both -- confirmed 0 misses across that same 20-case sample plus the new
+# case, using only modes already validated on real cases here.
+OCR_ABBREVIATION_PSM_MODES = (6, 11, 3, 4)
 KNOWN_MISSING_ABBREVIATIONS = {"ts"}
 GENERIC_SUBSTITUENT_PATTERN = re.compile(r"\[(?:R\d*|X|Z)\]")
 JUNK_ANNOTATION_TOKEN_RE = re.compile(r"%|=|[()]|^[A-Za-z]{6,}$")
@@ -275,17 +287,21 @@ def _ocr_abbreviation_matches(img):
     checked) and returns the set of KNOWN_MISSING_ABBREVIATIONS confirmed
     present via substring match -- see module docstring for why exact
     token equality silently misses labels fused with an adjacent atom
-    (TsN, OTs, ...)."""
+    (TsN, OTs, ...), and OCR_ABBREVIATION_PSM_MODES's comment for why a
+    single page-segmentation mode isn't reliable enough on its own here."""
     scaled = img.resize((img.width * OCR_UPSCALE, img.height * OCR_UPSCALE), Image.LANCZOS)
-    data = pytesseract.image_to_data(scaled, config="--psm 6", output_type=pytesseract.Output.DICT)
     found = set()
-    for w, c in zip(data["text"], data["conf"]):
-        token = w.strip().lower()
-        if not token or c < OCR_MIN_CONFIDENCE:
-            continue
-        for abbrev in KNOWN_MISSING_ABBREVIATIONS:
-            if abbrev in token:
-                found.add(abbrev)
+    for psm in OCR_ABBREVIATION_PSM_MODES:
+        data = pytesseract.image_to_data(scaled, config=f"--psm {psm}", output_type=pytesseract.Output.DICT)
+        for w, c in zip(data["text"], data["conf"]):
+            token = w.strip().lower()
+            if not token or c < OCR_MIN_CONFIDENCE:
+                continue
+            for abbrev in KNOWN_MISSING_ABBREVIATIONS:
+                if abbrev in token:
+                    found.add(abbrev)
+        if found:
+            break  # short-circuit once any mode confirms a real hit
     return found
 
 
