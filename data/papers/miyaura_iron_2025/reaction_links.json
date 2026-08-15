@@ -7,7 +7,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - this is the L-PN ligand structure shown in the legend"
     },
     {
       "segment_path": "segments/page2_raster0_seg1.png",
@@ -16,7 +16,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, this is aryl chloride reagent 2a"
+      "flag": "generic_scaffold - this is the SciOPP ligand structure shown in the legend"
     },
     {
       "segment_path": "segments/page2_raster0_seg2.png",
@@ -25,7 +25,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, this is product 3a"
+      "flag": "generic_scaffold - this is the IMes ligand structure shown in the legend; SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg3.png",
@@ -34,7 +34,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, ligand legend label dcpe likely, multi_compound_merge"
+      "flag": "generic_scaffold - this is the aryl chloride starting material in the reaction scheme, SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg4.png",
@@ -43,7 +43,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, multi_compound_merge"
+      "flag": "generic_scaffold - this is the tBuXantphos ligand structure shown in the legend"
     },
     {
       "segment_path": "segments/page2_raster0_seg5.png",
@@ -52,7 +52,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, smiles_misread"
+      "flag": "generic_scaffold - this is the dcpe ligand structure shown in the legend, SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg6.png",
@@ -61,7 +61,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, smiles_misread"
+      "flag": "generic_scaffold - this is the product structure shown in the reaction scheme (not the data table); SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg7.png",
@@ -70,7 +70,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": "generic_scaffold - this is the 6Mes ligand structure shown in the legend, SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg8.png",
@@ -79,7 +79,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely dmpe ligand structure, smiles_misread"
+      "flag": "multi_compound_merge - this is the dmpe ligand structure shown in the legend"
     },
     {
       "segment_path": "segments/page2_raster0_seg9.png",
@@ -88,7 +88,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely IMes ligand structure, smiles_misread"
+      "flag": "generic_scaffold - this is the dmpe ligand label, SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg10.png",
@@ -97,7 +97,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely 6Mes ligand structure, smiles_misread"
+      "flag": "multi_compound_merge - tiny fragment of column header/structure area, not a distinct product"
     },
     {
       "segment_path": "segments/page2_raster0_seg11.png",
@@ -106,7 +106,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely dcpe ligand structure, smiles_misread"
+      "flag": "multi_compound_merge - tiny fragment of column header/structure area, not a distinct product"
     },
     {
       "segment_path": "segments/page2_raster0_seg12.png",
@@ -115,7 +115,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely SciOPP ligand structure, multi_compound_merge"
+      "flag": "generic_scaffold - this is the boronate reagent 1 in the reaction scheme, SMILES misread"
     },
     {
       "segment_path": "segments/page2_raster0_seg13.png",
@@ -124,7 +124,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely tBuXantphos ligand structure, multi_compound_merge"
+      "flag": "multi_compound_merge - tiny fragment of column header/structure area, not a distinct product"
     },
     {
       "segment_path": "segments/page2_raster0_seg14.png",
@@ -133,7 +133,7 @@
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold, likely L-PN ligand structure, smiles_misread"
+      "flag": "multi_compound_merge - tiny fragment of column header/structure area, not a distinct product"
     }
   ]
 }

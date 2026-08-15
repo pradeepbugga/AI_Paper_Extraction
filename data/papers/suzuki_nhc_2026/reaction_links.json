@@ -2,48 +2,48 @@
   "images/page5_fig0.png": [
     {
       "segment_path": "segments/page5_fig0_seg0.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
+      "is_scoped_product": true,
+      "compound_id": "4ag",
+      "yield_percent": "96%",
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "flag": null
     },
     {
       "segment_path": "segments/page5_fig0_seg1.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
-      "flag": "generic_scaffold"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg2.png",
-      "is_scoped_product": true,
-      "compound_id": "4aa",
-      "yield_percent": "99%",
-      "conditions": null,
-      "panel_label": null,
-      "flag": "smiles_misread"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg3.png",
       "is_scoped_product": true,
       "compound_id": "4ab",
       "yield_percent": "97%",
       "conditions": null,
       "panel_label": null,
-      "flag": "smiles_misread"
+      "flag": null
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg2.png",
+      "is_scoped_product": true,
+      "compound_id": "4ae",
+      "yield_percent": "98%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg3.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": "generic_scaffold"
     },
     {
       "segment_path": "segments/page5_fig0_seg4.png",
       "is_scoped_product": true,
-      "compound_id": "4ac",
-      "yield_percent": "98%",
+      "compound_id": "4aa",
+      "yield_percent": "99%",
       "conditions": null,
       "panel_label": null,
-      "flag": "smiles_misread"
+      "flag": null
     },
     {
       "segment_path": "segments/page5_fig0_seg5.png",
@@ -52,39 +52,19 @@
       "yield_percent": "91%",
       "conditions": null,
       "panel_label": null,
-      "flag": "smiles_misread"
+      "flag": "multi_compound_merge"
     },
     {
       "segment_path": "segments/page5_fig0_seg6.png",
-      "is_scoped_product": true,
-      "compound_id": "4ae",
-      "yield_percent": "98%",
-      "conditions": null,
-      "panel_label": null,
-      "flag": "smiles_misread"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg7.png",
       "is_scoped_product": true,
       "compound_id": "4af",
       "yield_percent": "53%",
       "conditions": null,
       "panel_label": null,
-      "flag": "smiles_misread"
+      "flag": null
     },
     {
-      "segment_path": "segments/page5_fig0_seg8.png",
-      "is_scoped_product": true,
-      "compound_id": "4ag",
-      "yield_percent": "96%",
-      "conditions": null,
-      "panel_label": null,
-      "flag": "smiles_misread"
-    }
-  ],
-  "images/page5_fig1.png": [
-    {
-      "segment_path": "segments/page5_fig1_seg0.png",
+      "segment_path": "segments/page5_fig0_seg7.png",
       "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
@@ -93,7 +73,18 @@
       "flag": "generic_scaffold"
     },
     {
-      "segment_path": "segments/page5_fig1_seg1.png",
+      "segment_path": "segments/page5_fig0_seg8.png",
+      "is_scoped_product": true,
+      "compound_id": "4ac",
+      "yield_percent": "98%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null
+    }
+  ],
+  "images/page5_fig1.png": [
+    {
+      "segment_path": "segments/page5_fig1_seg0.png",
       "is_scoped_product": true,
       "compound_id": "4ca",
       "yield_percent": "70%",
@@ -102,13 +93,22 @@
       "flag": "smiles_misread"
     },
     {
-      "segment_path": "segments/page5_fig1_seg2.png",
+      "segment_path": "segments/page5_fig1_seg1.png",
       "is_scoped_product": true,
       "compound_id": "4da",
       "yield_percent": "95%",
       "conditions": null,
       "panel_label": null,
       "flag": "smiles_misread"
+    },
+    {
+      "segment_path": "segments/page5_fig1_seg2.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": "generic_scaffold"
     }
   ]
 }
