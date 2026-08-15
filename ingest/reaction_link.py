@@ -197,10 +197,12 @@ label for one -- use null fields and set flag to explain why). Do not invent
 data that isn't visibly printed in the image."""
 
 
-def link_figure_claude(client, image_bytes, media_type, caption, segments):
+def link_figure_claude(client, image_bytes, media_type, caption, segments, model=CLAUDE_MODEL):
     """Provider-specific implementation #1. Returns a list of link dicts, one
     per segment_path. See module docstring for the provider-agnostic contract
-    a second model's implementation should match."""
+    a second model's implementation should match. `model` defaults to Sonnet
+    5 but accepts any Claude model string -- used to benchmark Haiku 4.5
+    against Sonnet 5 on the same grid figures, see handoff notes."""
     image_b64 = base64.standard_b64encode(image_bytes).decode()
     prompt = _build_prompt(caption, segments)
 
@@ -210,7 +212,7 @@ def link_figure_claude(client, image_bytes, media_type, caption, segments):
     # truncating the JSON before the tool call completed. Streamed so a
     # large response doesn't risk an HTTP timeout either.
     with client.messages.stream(
-        model=CLAUDE_MODEL,
+        model=model,
         max_tokens=16000,
         tools=[RECORD_LINKS_TOOL],
         tool_choice={"type": "tool", "name": "record_links"},
