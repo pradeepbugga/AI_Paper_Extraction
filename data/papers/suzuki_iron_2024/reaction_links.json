@@ -1,647 +1,789 @@
 {
   "images/page3_fig0.png": [
     {
-      "segment_path": "segments/page3_fig0_seg0.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "reagent structure (1a)"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg1.png",
-      "is_scoped_product": true,
-      "compound_id": "IMes",
-      "yield_percent": null,
       "conditions": null,
       "panel_label": "b",
-      "flag": "ligand structure, yields for 3a/4a printed in box beside it"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg2.png",
-      "is_scoped_product": true,
+      "is_scoped_product": false,
       "compound_id": "IPr",
+      "flag": null,
+      "segment_path": "segments/page3_fig0_seg2.png",
       "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page3_fig0_seg3.png",
-      "is_scoped_product": true,
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": "b",
+      "yield_percent": null,
+      "flag": null,
       "compound_id": "IMesMe",
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
+      "segment_path": "segments/page3_fig0_seg3.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page3_fig0_seg4.png",
-      "is_scoped_product": false,
-      "compound_id": null,
+      "segment_path": "segments/page3_fig0_seg0.png",
+      "compound_id": "1a",
       "yield_percent": null,
-      "conditions": null,
       "panel_label": "a",
-      "flag": "reagent/product template structure in scheme a"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg5.png",
-      "is_scoped_product": true,
-      "compound_id": "IMe",
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg6.png",
       "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
+      "flag": null,
       "conditions": null,
-      "panel_label": "a",
-      "flag": "product template structure 4a in scheme a"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg12.png",
+      "panel_label": "a",
+      "compound_id": "2a",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "b",
+      "segment_path": "segments/page3_fig0_seg11.png",
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "SIXyl(3,5)",
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
       "segment_path": "segments/page3_fig0_seg7.png",
-      "is_scoped_product": true,
-      "compound_id": "SIPr",
       "yield_percent": null,
-      "conditions": null,
       "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": "SIPr",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page3_fig0_seg8.png",
-      "is_scoped_product": true,
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
       "compound_id": "IXyl(2,6)",
       "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page3_fig0_seg9.png",
-      "is_scoped_product": true,
-      "compound_id": "SIMes",
+      "segment_path": "segments/page3_fig0_seg4.png",
+      "compound_id": "3a",
+      "panel_label": null,
+      "flag": null,
       "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg10.png",
-      "is_scoped_product": true,
-      "compound_id": "INap",
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg11.png",
-      "is_scoped_product": true,
-      "compound_id": "SIXyl(3,5)",
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "ligand structure, 3a/4a yields printed as text beside it"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg12.png",
       "is_scoped_product": false,
-      "compound_id": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page3_fig0_seg1.png",
       "yield_percent": null,
       "conditions": null,
-      "panel_label": "a",
-      "flag": "boronate reagent structure 2a in scheme a"
+      "compound_id": "IMes",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "compound_id": "IMe",
+      "flag": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page3_fig0_seg5.png",
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg6.png",
+      "compound_id": "4a",
+      "yield_percent": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "segment_path": "segments/page3_fig0_seg9.png",
+      "compound_id": "SIMes",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "compound_id": "INap",
+      "flag": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "segment_path": "segments/page3_fig0_seg10.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images/page4_fig0.png": [
     {
-      "segment_path": "segments/page4_fig0_seg0.png",
       "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
       "conditions": null,
-      "panel_label": null,
-      "flag": "generic_scaffold"
-    },
-    {
+      "flag": null,
+      "compound_id": "1",
       "segment_path": "segments/page4_fig0_seg1.png",
-      "is_scoped_product": false,
-      "compound_id": null,
       "yield_percent": null,
-      "conditions": null,
       "panel_label": "a",
-      "flag": "generic_scaffold"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg2.png",
-      "is_scoped_product": true,
-      "compound_id": "3y",
-      "yield_percent": "66% (62%)",
+      "compound_id": "2",
+      "is_scoped_product": false,
+      "flag": null,
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "yield_percent": null,
+      "segment_path": "segments/page4_fig0_seg33.png",
+      "panel_label": "a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg3.png",
       "is_scoped_product": true,
       "compound_id": "3a",
+      "segment_path": "segments/page4_fig0_seg3.png",
       "yield_percent": "61% (60%)",
-      "conditions": null,
+      "flag": null,
       "panel_label": "b",
-      "flag": null
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg4.png",
+      "yield_percent": "79% (72%)",
       "is_scoped_product": true,
-      "compound_id": "3h",
-      "yield_percent": "68% (64%)",
-      "conditions": null,
       "panel_label": "b",
-      "flag": "smiles_misread"
+      "segment_path": "segments/page4_fig0_seg14.png",
+      "conditions": null,
+      "flag": null,
+      "compound_id": "3b",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg5.png",
+      "yield_percent": "57%",
+      "conditions": null,
       "is_scoped_product": true,
-      "compound_id": "3ae",
-      "yield_percent": "45% (37%)",
-      "conditions": null,
+      "compound_id": "3f",
+      "segment_path": "segments/page4_fig0_seg0.png",
+      "flag": "SMILES misread as generic boronate; actual structure is AcHN-substituted biaryl",
       "panel_label": "b",
-      "flag": null
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": null,
+      "panel_label": "b",
       "segment_path": "segments/page4_fig0_seg6.png",
-      "is_scoped_product": true,
-      "compound_id": "3g",
       "yield_percent": "76% (71%)",
       "conditions": null,
+      "is_scoped_product": true,
+      "compound_id": "3g",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": "3h",
       "panel_label": "b",
-      "flag": null
+      "yield_percent": "68% (64%)",
+      "segment_path": "segments/page4_fig0_seg4.png",
+      "is_scoped_product": true,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page4_fig0_seg7.png",
-      "is_scoped_product": true,
-      "compound_id": "3f",
-      "yield_percent": "57%a",
-      "conditions": null,
+      "compound_id": "3j",
       "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg8.png",
       "is_scoped_product": true,
-      "compound_id": "3aa",
-      "yield_percent": "89% (81%)",
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "flag": null,
+      "yield_percent": "62% (60%)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg9.png",
       "is_scoped_product": true,
-      "compound_id": "3ad",
-      "yield_percent": "48% (45%)",
+      "yield_percent": "70% (61%)",
+      "compound_id": "3k",
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "panel_label": null,
+      "segment_path": "segments/page4_fig0_seg25.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg10.png",
-      "is_scoped_product": true,
-      "compound_id": "3ac",
-      "yield_percent": "60%a",
+      "flag": null,
+      "panel_label": null,
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg11.png",
-      "is_scoped_product": true,
-      "compound_id": "3d",
-      "yield_percent": "78% (74%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg12.png",
-      "is_scoped_product": true,
-      "compound_id": "3t",
-      "yield_percent": "73%a",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg13.png",
-      "is_scoped_product": true,
-      "compound_id": "3w",
-      "yield_percent": "63% (51%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg14.png",
-      "is_scoped_product": true,
-      "compound_id": "3b",
-      "yield_percent": "79% (72%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg15.png",
-      "is_scoped_product": true,
-      "compound_id": "3z",
-      "yield_percent": "64% (60%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg16.png",
-      "is_scoped_product": true,
-      "compound_id": "3i",
-      "yield_percent": "68% (66%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg17.png",
-      "is_scoped_product": true,
-      "compound_id": "3c",
-      "yield_percent": "70% (64%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg18.png",
-      "is_scoped_product": true,
-      "compound_id": "3p",
-      "yield_percent": "79% (76%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg19.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "generic_scaffold"
-    },
-    {
       "segment_path": "segments/page4_fig0_seg20.png",
       "is_scoped_product": true,
-      "compound_id": "3s",
-      "yield_percent": "79% (77%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg21.png",
-      "is_scoped_product": true,
-      "compound_id": "3u",
-      "yield_percent": "61% (60%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg22.png",
-      "is_scoped_product": true,
-      "compound_id": "3e",
-      "yield_percent": "70% (67%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg23.png",
-      "is_scoped_product": true,
-      "compound_id": "3o",
-      "yield_percent": "87%a",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "yield_percent": "79% (76%)",
+      "compound_id": "3p",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page4_fig0_seg24.png",
       "is_scoped_product": true,
-      "compound_id": "3v",
-      "yield_percent": "32% (30%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "compound_id": "3o",
+      "panel_label": null,
+      "conditions": "a",
+      "yield_percent": "87%",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg25.png",
+      "flag": null,
+      "yield_percent": "61% (60%)",
+      "panel_label": null,
+      "segment_path": "segments/page4_fig0_seg21.png",
+      "compound_id": "3u",
+      "conditions": null,
       "is_scoped_product": true,
-      "compound_id": "3k",
-      "yield_percent": "70% (61%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg26.png",
+      "compound_id": "3t",
+      "segment_path": "segments/page4_fig0_seg12.png",
+      "flag": null,
       "is_scoped_product": true,
-      "compound_id": "3l",
-      "yield_percent": "83% (78%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "yield_percent": "73%",
+      "conditions": "a",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg27.png",
+      "segment_path": "segments/page4_fig0_seg2.png",
+      "conditions": null,
+      "flag": null,
+      "compound_id": "3y",
       "is_scoped_product": true,
-      "compound_id": "3q",
-      "yield_percent": "80% (75%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "panel_label": null,
+      "yield_percent": "66% (62%)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg28.png",
+      "panel_label": null,
+      "yield_percent": "76% (71%)",
+      "conditions": null,
+      "compound_id": "3g",
+      "flag": null,
+      "segment_path": "segments/page4_fig0_seg18.png",
       "is_scoped_product": true,
-      "compound_id": "3ag",
-      "yield_percent": "57% (49%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg29.png",
+      "segment_path": "segments/page4_fig0_seg9.png",
+      "panel_label": null,
+      "flag": null,
+      "yield_percent": "48% (45%)",
       "is_scoped_product": true,
-      "compound_id": "3m",
-      "yield_percent": "82% (78%)",
+      "compound_id": "3ad",
       "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg30.png",
       "is_scoped_product": true,
-      "compound_id": "3n",
-      "yield_percent": "71%a",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "compound_id": "3ac",
+      "yield_percent": "60%",
+      "conditions": "a",
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page4_fig0_seg10.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
+      "compound_id": "4",
+      "panel_label": null,
+      "conditions": null,
+      "flag": null,
+      "segment_path": "segments/page4_fig0_seg34.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page4_fig0_seg19.png",
+      "panel_label": null,
+      "conditions": null,
+      "compound_id": "3",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "70% (67%)",
+      "conditions": null,
+      "segment_path": "segments/page4_fig0_seg22.png",
+      "compound_id": "3e",
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "68% (66%)",
+      "segment_path": "segments/page4_fig0_seg16.png",
+      "compound_id": "3i",
+      "is_scoped_product": true,
+      "panel_label": null,
+      "conditions": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "panel_label": null,
       "segment_path": "segments/page4_fig0_seg31.png",
-      "is_scoped_product": true,
-      "compound_id": "3af",
-      "yield_percent": "44%a",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "conditions": "a",
+      "compound_id": "3n",
+      "flag": null,
+      "yield_percent": "71%",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg32.png",
+      "flag": null,
+      "yield_percent": "82% (78%)",
+      "segment_path": "segments/page4_fig0_seg29.png",
+      "compound_id": "3m",
+      "conditions": null,
       "is_scoped_product": true,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page4_fig0_seg32.png",
       "compound_id": "3r",
       "yield_percent": "88% (75%)",
       "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg33.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "generic_scaffold"
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg34.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "generic_scaffold"
-    },
-    {
-      "segment_path": "segments/page4_fig0_seg35.png",
       "is_scoped_product": true,
-      "compound_id": "3x",
-      "yield_percent": "51% (47%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "smiles_misread"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "compound_id": "3s",
+      "panel_label": null,
+      "flag": null,
+      "conditions": null,
+      "segment_path": "segments/page4_fig0_seg30.png",
+      "is_scoped_product": true,
+      "yield_percent": "79% (77%)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "is_scoped_product": true,
+      "segment_path": "segments/page4_fig0_seg23.png",
+      "yield_percent": "30%",
+      "compound_id": "3v",
+      "panel_label": "b",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "panel_label": "b",
+      "yield_percent": "51%",
+      "conditions": null,
+      "compound_id": "3w",
+      "flag": null,
+      "segment_path": "segments/page4_fig0_seg13.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "47%",
+      "compound_id": "3x",
       "segment_path": "segments/page4_fig0_seg36.png",
       "is_scoped_product": true,
-      "compound_id": "3x",
-      "yield_percent": "51% (47%)",
+      "flag": null,
       "conditions": null,
       "panel_label": "b",
-      "flag": "multi_compound_merge"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page4_fig0_seg37.png",
       "is_scoped_product": true,
-      "compound_id": "3ab",
-      "yield_percent": "76% (70%)",
+      "panel_label": "b",
+      "flag": null,
+      "yield_percent": "81%",
+      "segment_path": "segments/page4_fig0_seg8.png",
+      "compound_id": "3aa",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "60%",
+      "segment_path": "segments/page4_fig0_seg15.png",
+      "compound_id": "3z",
+      "is_scoped_product": true,
+      "flag": null,
       "conditions": null,
       "panel_label": "b",
-      "flag": "smiles_misread"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "b",
+      "segment_path": "segments/page4_fig0_seg37.png",
+      "conditions": null,
+      "compound_id": "3ab",
+      "yield_percent": "70%",
+      "flag": null,
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "49%",
+      "conditions": null,
+      "compound_id": "3ag",
+      "panel_label": "b",
+      "is_scoped_product": true,
+      "segment_path": "segments/page4_fig0_seg28.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3ae",
+      "conditions": null,
+      "is_scoped_product": true,
+      "panel_label": "b",
+      "flag": null,
+      "yield_percent": "37%",
+      "segment_path": "segments/page4_fig0_seg5.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "b",
+      "yield_percent": "44%",
+      "conditions": "a",
+      "flag": null,
+      "segment_path": "segments/page4_fig0_seg35.png",
+      "compound_id": "3af",
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "flag": "Tag @A is not visible in this crop",
+      "conditions": null,
+      "panel_label": "b",
+      "compound_id": null,
+      "segment_path": "segments/page4_fig0_seg11.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3c, 3d",
+      "panel_label": "b",
+      "conditions": null,
+      "is_scoped_product": true,
+      "segment_path": "segments/page4_fig0_seg17.png",
+      "flag": "Merged segment containing two structures (3c and 3d)",
+      "yield_percent": "70% (64%), 78% (74%)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3l",
+      "panel_label": "b",
+      "flag": "SMILES contains poly-carbon artifact string",
+      "conditions": null,
+      "segment_path": "segments/page4_fig0_seg26.png",
+      "is_scoped_product": true,
+      "yield_percent": "83% (78%)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "b",
+      "compound_id": "3q",
+      "is_scoped_product": true,
+      "yield_percent": "80% (75%)",
+      "conditions": null,
+      "segment_path": "segments/page4_fig0_seg27.png",
+      "flag": "SMILES contains poly-carbon artifact string",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images/page5_fig0.png": [
     {
-      "segment_path": "segments/page5_fig0_seg0.png",
+      "conditions": null,
+      "flag": null,
       "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
       "panel_label": "a",
-      "flag": "boronic ester reagent 2a"
+      "yield_percent": null,
+      "compound_id": "1",
+      "segment_path": "segments/page5_fig0_seg9.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg1.png",
-      "is_scoped_product": true,
-      "compound_id": "3at",
-      "yield_percent": "87% (80%)",
+      "yield_percent": null,
+      "compound_id": "2a",
+      "panel_label": "a",
+      "segment_path": "segments/page5_fig0_seg15.png",
+      "is_scoped_product": false,
+      "flag": null,
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg2.png",
+      "flag": null,
       "is_scoped_product": true,
-      "compound_id": "3av",
-      "yield_percent": "71% (70%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg3.png",
-      "is_scoped_product": true,
-      "compound_id": "3ap",
-      "yield_percent": "80%",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
       "segment_path": "segments/page5_fig0_seg4.png",
-      "is_scoped_product": true,
-      "compound_id": "3ah",
       "yield_percent": "68% (65%)",
       "conditions": null,
+      "compound_id": "3ah",
       "panel_label": "b",
-      "flag": null
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg5.png",
-      "is_scoped_product": true,
-      "compound_id": "3ak",
-      "yield_percent": "61% (60%)",
-      "conditions": null,
       "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg6.png",
-      "is_scoped_product": true,
-      "compound_id": "3ak",
-      "yield_percent": "61% (60%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": "segment likely mislabeled/overlapping with seg5, check position - pyrimidine at position 4 corresponds to 3ak"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg7.png",
-      "is_scoped_product": true,
       "compound_id": "3ai",
-      "yield_percent": "48% (40%)",
+      "segment_path": "segments/page5_fig0_seg7.png",
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg8.png",
       "is_scoped_product": true,
-      "compound_id": "3aj",
-      "yield_percent": "60% (59%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "flag": null,
+      "yield_percent": "48% (40%)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg9.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
+      "flag": null,
+      "segment_path": "segments/page5_fig0_seg0.png",
+      "panel_label": "b",
+      "compound_id": "3al",
       "conditions": null,
-      "panel_label": "a",
-      "flag": "starting material heteroaryl chloride 1, generic scaffold"
+      "yield_percent": "54% (51%)",
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "22% (18%)",
+      "flag": null,
+      "compound_id": "3am",
+      "panel_label": "b",
+      "segment_path": "segments/page5_fig0_seg6.png",
+      "conditions": null,
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "is_scoped_product": true,
+      "flag": null,
+      "yield_percent": "80%",
+      "panel_label": "b",
+      "segment_path": "segments/page5_fig0_seg3.png",
+      "compound_id": "3ap",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3at",
+      "yield_percent": "87% (80%)",
+      "flag": null,
+      "panel_label": "b",
+      "is_scoped_product": true,
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "63% (58%)",
+      "flag": null,
+      "is_scoped_product": true,
+      "conditions": null,
+      "panel_label": "b",
+      "segment_path": "segments/page5_fig0_seg2.png",
+      "compound_id": "3au",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page5_fig0_seg10.png",
-      "is_scoped_product": true,
-      "compound_id": "3aq",
+      "flag": null,
       "yield_percent": "65 (58%)",
+      "panel_label": null,
+      "is_scoped_product": true,
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "compound_id": "3aq",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg11.png",
       "is_scoped_product": true,
-      "compound_id": "3au",
-      "yield_percent": "63% (58%)",
+      "yield_percent": "71% (70%)",
       "conditions": null,
-      "panel_label": "b",
-      "flag": null
+      "panel_label": null,
+      "segment_path": "segments/page5_fig0_seg11.png",
+      "compound_id": "3av",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page5_fig0_seg12.png",
-      "is_scoped_product": true,
-      "compound_id": "3as",
-      "yield_percent": "66% (65%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg13.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "generic_scaffold, reaction scheme template for product 3"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg14.png",
-      "is_scoped_product": true,
-      "compound_id": "3al",
-      "yield_percent": "54% (51%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg15.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "boronic ester reagent structure 2a"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg16.png",
-      "is_scoped_product": true,
-      "compound_id": "3ao",
-      "yield_percent": "52% (48%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg17.png",
-      "is_scoped_product": true,
-      "compound_id": "3aw",
-      "yield_percent": "64% (60%)",
-      "conditions": null,
-      "panel_label": "b",
-      "flag": null
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg18.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": "a",
-      "flag": "generic_scaffold, reaction scheme template for product 4"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg19.png",
-      "is_scoped_product": true,
       "compound_id": "3ar",
-      "yield_percent": "76% (72%)",
+      "is_scoped_product": true,
       "conditions": null,
+      "flag": null,
+      "yield_percent": "76% (72%)",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg8.png",
+      "compound_id": "3aj",
+      "is_scoped_product": true,
+      "yield_percent": "60% (59%)",
+      "conditions": null,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "82% (80%)",
+      "flag": null,
+      "compound_id": "3an",
+      "conditions": null,
+      "is_scoped_product": true,
+      "segment_path": "segments/page5_fig0_seg5.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page5_fig0_seg13.png",
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": "3",
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page5_fig0_seg18.png",
+      "panel_label": null,
+      "flag": null,
+      "compound_id": "4",
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "64% (60%)",
+      "is_scoped_product": true,
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page5_fig0_seg17.png",
+      "conditions": null,
+      "compound_id": "3aw",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3ak",
+      "flag": null,
+      "is_scoped_product": true,
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg14.png",
+      "yield_percent": "61% (60%)",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3ao",
+      "is_scoped_product": true,
+      "segment_path": "segments/page5_fig0_seg16.png",
+      "panel_label": null,
+      "yield_percent": "52% (48%)",
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "segment_path": "segments/page5_fig0_seg19.png",
+      "conditions": null,
+      "yield_percent": "65%",
+      "compound_id": "3as",
       "panel_label": "b",
-      "flag": "smiles_misread, appears to show indole not azaindole"
+      "flag": "SMILES has OCSR noise (extraneous sulfur fragments); structure is 5-(4-methoxyphenyl)-1H-indole",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images/page6_fig0.png": [
@@ -938,127 +1080,5096 @@
   ],
   "images_SI/page14_fig1.png": [
     {
-      "segment_path": "segments/page14_fig1_seg7.png",
-      "is_scoped_product": true,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
+      "is_scoped_product": false,
       "compound_id": "1",
       "yield_percent": null,
+      "segment_path": "segments/page14_fig1_seg7.png",
       "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page14_fig1_seg4.png",
-      "is_scoped_product": true,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
       "compound_id": "2",
-      "yield_percent": null,
-      "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": null,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
       "segment_path": "segments/page14_fig1_seg1.png",
-      "is_scoped_product": true,
       "compound_id": "3",
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
-      "flag": "generic_scaffold"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "conditions": null,
       "segment_path": "segments/page14_fig1_seg0.png",
-      "is_scoped_product": true,
-      "compound_id": "4",
       "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
-      "flag": "generic_scaffold"
+      "compound_id": "4",
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page14_fig1_seg3.png",
-      "is_scoped_product": true,
-      "compound_id": "5",
-      "yield_percent": null,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
       "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page14_fig1_seg3.png",
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "compound_id": "5",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page14_fig1_seg5.png",
-      "is_scoped_product": true,
       "compound_id": "6",
-      "yield_percent": null,
-      "conditions": null,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "conditions": null,
+      "yield_percent": null,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page14_fig1_seg2.png",
-      "is_scoped_product": true,
-      "compound_id": "7",
-      "yield_percent": null,
-      "conditions": null,
+      "is_scoped_product": false,
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "segment_path": "segments/page14_fig1_seg2.png",
+      "compound_id": "7",
+      "conditions": null,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page14_fig1_seg6.png",
-      "is_scoped_product": true,
-      "compound_id": "8",
-      "yield_percent": null,
+      "is_scoped_product": false,
       "conditions": null,
+      "flag": "Starting material / reagent in screening table (Supplementary Table 6)",
+      "yield_percent": null,
       "panel_label": null,
-      "flag": "smiles_misread"
+      "compound_id": "8",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page348_fig0.png": [
     {
       "segment_path": "segments/page348_fig0_seg0.png",
-      "is_scoped_product": false,
+      "is_scoped_product": null,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
       "panel_label": null,
-      "flag": "This is a structure drawing for the NMR spectrum, not a scoped reaction product from a table/scheme."
+      "flag": null,
+      "note": "19F NMR spectrum of 4-fluoro-4'-methoxybiphenyl with no compound identifier printed on the page.",
+      "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page355_fig0.png": [
     {
-      "segment_path": "segments/page355_fig0_seg0.png",
-      "is_scoped_product": true,
-      "compound_id": "3i",
-      "yield_percent": null,
       "conditions": null,
+      "segment_path": "segments/page355_fig0_seg0.png",
+      "compound_id": null,
       "panel_label": null,
-      "flag": null
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page355_fig0_seg1.png",
-      "is_scoped_product": true,
-      "compound_id": "3i",
-      "yield_percent": null,
-      "conditions": null,
+      "flag": null,
       "panel_label": null,
-      "flag": null
+      "compound_id": null,
+      "segment_path": "segments/page355_fig0_seg1.png",
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page400_fig0.png": [
     {
-      "segment_path": "segments/page400_fig0_seg0.png",
+      "flag": "NMR spectrum characterization, not a reaction scope/yield table",
+      "panel_label": null,
+      "conditions": null,
       "is_scoped_product": false,
       "compound_id": null,
+      "segment_path": "segments/page400_fig0_seg0.png",
       "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
-      "flag": "structure depiction accompanying 13C NMR spectrum, not a scope table entry"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": null,
+      "compound_id": null,
       "segment_path": "segments/page400_fig0_seg1.png",
+      "yield_percent": null,
+      "flag": "NMR spectrum characterization, not a reaction scope/yield table",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page5_fig1.png": [
+    {
+      "segment_path": "segments/page5_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Characterization data entry for 2-(4-methoxyphenyl)-4,4,6,6-tetramethyl-1,3,2-dioxaborinane, no alphanumeric identifier printed",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page5_fig3.png": [
+    {
+      "segment_path": "segments/page5_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Named compound (2-(4-methoxyphenyl)tetrahydro-4H-cyclopenta[d][1,3,2]dioxaborole) characterized in text without an alphanumeric identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page5_fig2.png": [
+    {
+      "segment_path": "segments/page5_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Named boronate ester product with no compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page6_fig0.png": [
+    {
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page6_fig0_seg0.png",
+      "panel_label": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "segment_path": "segments/page6_fig0_seg1.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page5_fig0.png": [
+    {
+      "segment_path": "segments/page5_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Named compound (2-(4-methoxyphenyl)-4,6-dimethyl-1,3,2-dioxaborinane) without an alphanumeric identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images/page2_fig0.png": [
+    {
+      "segment_path": "segments/page2_fig0_seg0.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "b",
+      "compound_id": "Boscalid",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": "OTBN",
+      "segment_path": "segments/page2_fig0_seg1.png",
+      "panel_label": "b",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page2_fig0_seg2.png",
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "panel_label": "a",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images/page7_fig0.png": [
+    {
+      "segment_path": "segments/page7_fig0_seg0.png",
       "is_scoped_product": false,
       "compound_id": null,
       "yield_percent": null,
       "conditions": null,
+      "panel_label": "a",
+      "flag": "generic_scaffold",
+      "note": null,
+      "source": "claude:claude-sonnet-5"
+    },
+    {
+      "segment_path": "segments/page7_fig0_seg1.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "a",
+      "flag": "generic_scaffold",
+      "note": null,
+      "source": "claude:claude-sonnet-5"
+    },
+    {
+      "segment_path": "segments/page7_fig0_seg2.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "a",
+      "flag": "generic_scaffold",
+      "note": null,
+      "source": "claude:claude-sonnet-5"
+    },
+    {
+      "segment_path": "segments/page7_fig0_seg3.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "a",
+      "flag": "generic_scaffold",
+      "note": null,
+      "source": "claude:claude-sonnet-5"
+    }
+  ],
+  "images_SI/page6_fig1.png": [
+    {
+      "segment_path": "segments/page6_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": "88%",
+      "conditions": null,
       "panel_label": null,
-      "flag": "structure depiction accompanying 1H NMR spectrum, not a scope table entry"
+      "flag": null,
+      "note": "Product of Synthesis of 2a (lithium tert-butyl 4-methoxyphenyl pinacol boronate)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page4_fig2.png": [
+    {
+      "segment_path": "segments/page4_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic diol reagent over reaction arrow in a scheme for General Procedure 1, with no compound ID.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page6_fig2.png": [
+    {
+      "segment_path": "segments/page6_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": "88%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product of the synthesis of 2a",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page4_fig0.png": [
+    {
+      "segment_path": "segments/page4_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic structure of 4-methoxyphenyl boronic esters without an alphanumeric identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page6_fig4.png": [
+    {
+      "segment_path": "segments/page6_fig4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "tert-butyl phenyl boronate complex prepared under the heading 'Synthesis of 2b'.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page4_fig1.png": [
+    {
+      "segment_path": "segments/page4_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Starting material (4-methoxyphenylboronic acid) used in General Procedure 1, with no identifier or yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page4_fig3.png": [
+    {
+      "segment_path": "segments/page4_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthesized boronic ester product, identified only by name without an alphanumeric ID.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page4_fig4.png": [
+    {
+      "segment_path": "segments/page4_fig4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "2-(4-methoxyphenyl)-5,5-dimethyl-1,3,2-dioxaborinane prepared via General Procedure 1 without a dedicated compound number/ID.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page4_fig5.png": [
+    {
+      "segment_path": "segments/page4_fig5_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": "quantitative yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "2-(4-methoxyphenyl)-1,3,2-dioxaborinane synthesized according to General Procedure 1, with no alphanumeric compound identifier assigned.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page8_fig2.png": [
+    {
+      "segment_path": "segments/page8_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3a in the reaction scheme for Supplementary Table 1.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page8_fig0.png": [
+    {
+      "segment_path": "segments/page8_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Homocoupling byproduct 4a evaluated across multiple entries in Supplementary Table 1",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page13_fig1.png": [
+    {
+      "segment_path": "segments/page13_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure labeled as 4a on the page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page8_fig1.png": [
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page8_fig1_seg0.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": "4b",
+      "yield_percent": null,
+      "conditions": null,
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page8_fig1_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page8_fig3.png": [
+    {
+      "compound_id": "4a",
+      "is_scoped_product": false,
+      "segment_path": "segments/page8_fig3_seg0.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "segment_path": "segments/page8_fig3_seg1.png",
+      "yield_percent": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "3a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "segment_path": "segments/page8_fig3_seg2.png",
+      "flag": null,
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": "4b",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page8_fig3_seg3.png",
+      "is_scoped_product": false,
+      "compound_id": "1",
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "segment_path": "segments/page8_fig3_seg4.png",
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page12_fig0.png": [
+    {
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": "3a",
+      "panel_label": null,
+      "segment_path": "segments/page12_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "4a",
+      "panel_label": null,
+      "segment_path": "segments/page12_fig0_seg1.png",
+      "flag": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "flag": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": "2a",
+      "segment_path": "segments/page12_fig0_seg2.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "flag": null,
+      "segment_path": "segments/page12_fig0_seg3.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": "4b",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page12_fig0_seg4.png",
+      "panel_label": null,
+      "compound_id": "1a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page13_fig2.png": [
+    {
+      "segment_path": "segments/page13_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product structure labeled 3a from screening procedure.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page13_fig3.png": [
+    {
+      "segment_path": "segments/page13_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic boronic ester reagent template from General Procedure 4, no specific identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page10_fig0.png": [
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "3a",
+      "segment_path": "segments/page10_fig0_seg0.png",
+      "yield_percent": null,
+      "conditions": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg1.png",
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg2.png",
+      "compound_id": "4a",
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "6Pr",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "segment_path": "segments/page10_fig0_seg3.png",
+      "flag": null,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg4.png",
+      "flag": null,
+      "compound_id": "4b",
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg5.png",
+      "compound_id": "1a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg6.png",
+      "yield_percent": null,
+      "compound_id": "6Mes",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "7Mes",
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg7.png",
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg8.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "compound_id": "8Mes",
+      "conditions": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page15_fig0.png": [
+    {
+      "segment_path": "segments/page15_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 4a shown on the page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page14_fig0.png": [
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page14_fig0_seg0.png",
+      "panel_label": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "compound_id": "2",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page14_fig0_seg1.png",
+      "panel_label": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "compound_id": "3a",
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page14_fig0_seg2.png",
+      "compound_id": "1a",
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "flag": null,
+      "conditions": null,
+      "segment_path": "segments/page14_fig0_seg3.png",
+      "yield_percent": null,
+      "compound_id": "4a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": null,
+      "segment_path": "segments/page14_fig0_seg4.png",
+      "compound_id": "4b",
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page15_fig1.png": [
+    {
+      "segment_path": "segments/page15_fig1_seg0.png",
+      "panel_label": null,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "4b",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "segment_path": "segments/page15_fig1_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page15_fig2.png": [
+    {
+      "segment_path": "segments/page15_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Cross-coupling product 3a shown in the general screening procedure.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page17_fig0.png": [
+    {
+      "segment_path": "segments/page17_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Homocoupling side-product or standard structure shown in procedure/table.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page17_fig2.png": [
+    {
+      "segment_path": "segments/page17_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Cross-coupling product 3a in General Procedure 6 scheme",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page11_fig0.png": [
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "segment_path": "segments/page11_fig0_seg14.png",
+      "compound_id": "1a",
+      "flag": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "2a",
+      "flag": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page11_fig0_seg13.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page11_fig0_seg6.png",
+      "flag": null,
+      "compound_id": "SciOPP",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page11_fig0_seg2.png",
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": "depe",
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": "dppe",
+      "flag": null,
+      "segment_path": "segments/page11_fig0_seg3.png",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "segment_path": "segments/page11_fig0_seg7.png",
+      "compound_id": "tBu-Xantphos",
+      "yield_percent": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "yield_percent": null,
+      "segment_path": "segments/page11_fig0_seg8.png",
+      "compound_id": "1,8-dppn",
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page11_fig0_seg5.png",
+      "flag": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "dppbz",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "dcype",
+      "segment_path": "segments/page11_fig0_seg0.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "compound_id": "dmpe",
+      "segment_path": "segments/page11_fig0_seg1.png",
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page11_fig0_seg10.png",
+      "compound_id": "dppt",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "segment_path": "segments/page11_fig0_seg16.png",
+      "compound_id": "4b",
+      "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page11_fig0_seg11.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "compound_id": "3a",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page11_fig0_seg12.png",
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": "trans-dppe",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "segment_path": "segments/page11_fig0_seg15.png",
+      "flag": null,
+      "is_scoped_product": false,
+      "compound_id": "dppp",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page11_fig0_seg4.png",
+      "panel_label": null,
+      "compound_id": "cis-dppe",
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "compound_id": "4a",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "segment_path": "segments/page11_fig0_seg9.png",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page17_fig1.png": [
+    {
+      "compound_id": "2a",
+      "flag": null,
+      "segment_path": "segments/page17_fig1_seg0.png",
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page17_fig1_seg1.png",
+      "compound_id": "4b",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images/page10_fig0.png": [
+    {
+      "segment_path": "segments/page10_fig0_seg8.png",
+      "conditions": null,
+      "panel_label": "a",
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg10.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "flag": null,
+      "compound_id": null,
+      "panel_label": "a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "b",
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "segment_path": "segments/page10_fig0_seg3.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "a",
+      "compound_id": null,
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg6.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "b",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "conditions": null,
+      "segment_path": "segments/page10_fig0_seg27.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": "b",
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "segment_path": "segments/page10_fig0_seg19.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg13.png",
+      "panel_label": "b",
+      "flag": null,
+      "compound_id": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": "b",
+      "compound_id": null,
+      "flag": null,
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg9.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg4.png",
+      "is_scoped_product": false,
+      "panel_label": "a",
+      "flag": null,
+      "compound_id": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg26.png",
+      "compound_id": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": "c",
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg17.png",
+      "flag": null,
+      "panel_label": "c",
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "panel_label": "a",
+      "segment_path": "segments/page10_fig0_seg25.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg2.png",
+      "yield_percent": null,
+      "panel_label": "c",
+      "compound_id": null,
+      "conditions": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg7.png",
+      "panel_label": null,
+      "flag": null,
+      "compound_id": null,
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": null,
+      "panel_label": null,
+      "segment_path": "segments/page10_fig0_seg0.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "conditions": null,
+      "segment_path": "segments/page10_fig0_seg14.png",
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": null,
+      "segment_path": "segments/page10_fig0_seg29.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg1.png",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page10_fig0_seg21.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "yield_percent": null,
+      "conditions": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg22.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg24.png",
+      "flag": "Computational intermediate/diagram component",
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg15.png",
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "panel_label": null,
+      "flag": "Computational intermediate/diagram component",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg11.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "conditions": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": "Computational intermediate/diagram component",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg20.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": "Computational intermediate/diagram component",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg16.png",
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "flag": "Computational intermediate/diagram component",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "flag": "Computational intermediate/diagram component",
+      "segment_path": "segments/page10_fig0_seg12.png",
+      "compound_id": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page10_fig0_seg5.png",
+      "flag": "Computational intermediate/diagram component",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg18.png",
+      "compound_id": null,
+      "flag": "Computational reaction pathway intermediate",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": "Computational reaction pathway intermediate",
+      "compound_id": null,
+      "panel_label": null,
+      "segment_path": "segments/page10_fig0_seg23.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg28.png",
+      "flag": "Computational reaction pathway intermediate",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page16_fig0.png": [
+    {
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": "3a",
+      "is_scoped_product": false,
+      "segment_path": "segments/page16_fig0_seg0.png",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": "4a",
+      "flag": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page16_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page16_fig0_seg2.png",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "4b",
+      "yield_percent": null,
+      "segment_path": "segments/page16_fig0_seg3.png",
+      "flag": null,
+      "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "1a",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "segment_path": "segments/page16_fig0_seg4.png",
+      "conditions": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page9_fig0.png": [
+    {
+      "compound_id": "1a",
+      "flag": null,
+      "segment_path": "segments/page9_fig0_seg13.png",
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page9_fig0_seg8.png",
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": "chloride counterion of IXyl(2,6)\u00b7HCl",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page9_fig0_seg1.png",
+      "compound_id": "IXyl(2,6)\u00b7HCl",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": "IPr\u00b7HCl",
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "segment_path": "segments/page9_fig0_seg2.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "flag": "chloride counterion of SIMes\u00b7HCl",
+      "segment_path": "segments/page9_fig0_seg11.png",
+      "compound_id": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": "SIMes\u00b7HCl",
+      "segment_path": "segments/page9_fig0_seg4.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page9_fig0_seg9.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "INap\u00b7HCl",
+      "segment_path": "segments/page9_fig0_seg5.png",
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page9_fig0_seg3.png",
+      "compound_id": "IMesMe\u00b7HCl",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": "duplicate box with @J",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page9_fig0_seg19.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "compound_id": "IMesMe\u00b7HCl",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "segment_path": "segments/page9_fig0_seg15.png",
+      "is_scoped_product": false,
+      "compound_id": "4b",
+      "panel_label": null,
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "compound_id": "4a",
+      "panel_label": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page9_fig0_seg12.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page9_fig0_seg7.png",
+      "compound_id": "3a",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "segment_path": "segments/page9_fig0_seg18.png",
+      "yield_percent": null,
+      "flag": "Fragment containing only the Cl- counterion of IMes\u00b7HCl",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page9_fig0_seg6.png",
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": "SIPr\u00b7HCl",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page9_fig0_seg20.png",
+      "conditions": null,
+      "compound_id": "SIPr\u00b7HCl",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page9_fig0_seg10.png",
+      "panel_label": null,
+      "compound_id": "IMes\u00b7HCl",
+      "is_scoped_product": false,
+      "flag": null,
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": "SIXyl(3,5)\u00b7HCl",
+      "panel_label": null,
+      "segment_path": "segments/page9_fig0_seg17.png",
+      "flag": "counterion of SIXyl(3,5)\u00b7HCl",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "compound_id": "SIXyl(3,5)\u00b7HCl",
+      "panel_label": null,
+      "segment_path": "segments/page9_fig0_seg16.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "flag": "counterion of IMe\u00b7HCl",
+      "segment_path": "segments/page9_fig0_seg14.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "IMe\u00b7HCl",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "compound_id": "IMe\u00b7HCl",
+      "panel_label": null,
+      "segment_path": "segments/page9_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page19_fig0.png": [
+    {
+      "segment_path": "segments/page19_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 4a tracked across multiple entries in halide salt screening Table 9.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page18_fig0.png": [
+    {
+      "compound_id": "3a",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page18_fig0_seg0.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "segment_path": "segments/page18_fig0_seg1.png",
+      "compound_id": "4a",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page18_fig0_seg2.png",
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": "4b",
+      "is_scoped_product": false,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "compound_id": "1a",
+      "conditions": null,
+      "segment_path": "segments/page18_fig0_seg3.png",
+      "is_scoped_product": false,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": "2a",
+      "segment_path": "segments/page18_fig0_seg4.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page21_fig0.png": [
+    {
+      "flag": null,
+      "compound_id": "2a",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page21_fig0_seg0.png",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "flag": null,
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page21_fig0_seg1.png",
+      "compound_id": "4b",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page21_fig1.png": [
+    {
+      "segment_path": "segments/page21_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 4a (homocoupling by-product in additive screening)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page19_fig1.png": [
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page19_fig1_seg0.png",
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "compound_id": "4b",
+      "conditions": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page19_fig1_seg1.png",
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page19_fig2.png": [
+    {
+      "segment_path": "segments/page19_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product in halide salt screening reaction scheme and table.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page21_fig2.png": [
+    {
+      "segment_path": "segments/page21_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Reaction scheme product 4-methoxybiphenyl in additive screening procedure",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page19_fig3.png": [
+    {
+      "yield_percent": null,
+      "compound_id": "3a",
+      "segment_path": "segments/page19_fig3_seg0.png",
+      "conditions": null,
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page19_fig3_seg1.png",
+      "conditions": null,
+      "compound_id": "2a",
+      "is_scoped_product": false,
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page19_fig3_seg2.png",
+      "compound_id": "4a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "1a",
+      "conditions": null,
+      "segment_path": "segments/page19_fig3_seg3.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page19_fig3_seg4.png",
+      "compound_id": "4b",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page24_fig0.png": [
+    {
+      "segment_path": "segments/page24_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Homocoupling/cross-coupling byproduct or product 4a depicted under General Procedure 9.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page24_fig2.png": [
+    {
+      "segment_path": "segments/page24_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product structure labeled as 3a in a reaction scheme",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page24_fig1.png": [
+    {
+      "panel_label": null,
+      "segment_path": "segments/page24_fig1_seg0.png",
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "4b",
+      "segment_path": "segments/page24_fig1_seg1.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page27_fig1.png": [
+    {
+      "segment_path": "segments/page27_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic structure of the biaryl cross-coupled product in General Procedure 11.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page22_fig0.png": [
+    {
+      "segment_path": "segments/page22_fig0_seg0.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": "3a",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page22_fig0_seg1.png",
+      "compound_id": "4a",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": "2a",
+      "segment_path": "segments/page22_fig0_seg2.png",
+      "panel_label": null,
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": "1a",
+      "segment_path": "segments/page22_fig0_seg3.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "segment_path": "segments/page22_fig0_seg4.png",
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "compound_id": "4b",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page23_fig0.png": [
+    {
+      "flag": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "compound_id": "3a",
+      "segment_path": "segments/page23_fig0_seg0.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "segment_path": "segments/page23_fig0_seg1.png",
+      "compound_id": "4a",
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": "4b",
+      "flag": null,
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page23_fig0_seg2.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "compound_id": "1a",
+      "segment_path": "segments/page23_fig0_seg3.png",
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "segment_path": "segments/page23_fig0_seg4.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page27_fig2.png": [
+    {
+      "segment_path": "segments/page27_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic aryl boronate starting material in General Procedure 11",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page28_fig1.png": [
+    {
+      "segment_path": "segments/page28_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3c",
+      "yield_percent": "64%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthetic product 4-fluoro-4'-methoxy-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page28_fig0.png": [
+    {
+      "segment_path": "segments/page28_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3b",
+      "yield_percent": "72%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3b (4-methoxy-4'-(trifluoromethyl)-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page25_fig0.png": [
+    {
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "segment_path": "segments/page25_fig0_seg4.png",
+      "compound_id": "1a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page25_fig0_seg1.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page25_fig0_seg3.png",
+      "flag": null,
+      "compound_id": "4b",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3a",
+      "is_scoped_product": false,
+      "segment_path": "segments/page25_fig0_seg0.png",
+      "yield_percent": null,
+      "conditions": null,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "compound_id": "4a",
+      "segment_path": "segments/page25_fig0_seg2.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page28_fig2.png": [
+    {
+      "segment_path": "segments/page28_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3d",
+      "yield_percent": "74%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3d reported with characterization data and yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page29_fig2.png": [
+    {
+      "segment_path": "segments/page29_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3g",
+      "yield_percent": "71%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 4-methoxy-4'-methyl-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page29_fig0.png": [
+    {
+      "segment_path": "segments/page29_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3e",
+      "yield_percent": "67%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3e (4-methoxy-4'-(trifluoromethoxy)-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page29_fig1.png": [
+    {
+      "segment_path": "segments/page29_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3f",
+      "yield_percent": "NMR yield 57%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3f, N-(4'-methoxy-[1,1'-biphenyl]-4-yl)acetamide",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page29_fig3.png": [
+    {
+      "segment_path": "segments/page29_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3h",
+      "yield_percent": "64%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3h, 4-(tert-butoxy)-4'-methoxy-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page30_fig0.png": [
+    {
+      "segment_path": "segments/page30_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3i",
+      "yield_percent": "66%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated biaryl product 3i",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page30_fig2.png": [
+    {
+      "segment_path": "segments/page30_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3k",
+      "yield_percent": "61%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product in characterization list",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page30_fig1.png": [
+    {
+      "segment_path": "segments/page30_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3j",
+      "yield_percent": "60%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product from the synthesis described on the page",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page31_fig2.png": [
+    {
+      "segment_path": "segments/page31_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3o",
+      "yield_percent": "87% (NMR yield)",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3o (3,4'-dimethoxy-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page30_fig3.png": [
+    {
+      "segment_path": "segments/page30_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3l",
+      "yield_percent": "78%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 5-(4-methoxyphenyl)benzo[d][1,3]dioxole",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page31_fig0.png": [
+    {
+      "segment_path": "segments/page31_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3m",
+      "yield_percent": "78%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 4'-methoxy-3-(trifluoromethyl)-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page31_fig3.png": [
+    {
+      "segment_path": "segments/page31_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3p",
+      "yield_percent": "76%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3p (4'-methoxy-3-methyl-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page31_fig1.png": [
+    {
+      "segment_path": "segments/page31_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3n",
+      "yield_percent": "NMR yield 71%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthesized product 3n (methyl 4'-methoxy-[1,1'-biphenyl]-3-carboxylate)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page32_fig1.png": [
+    {
+      "segment_path": "segments/page32_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3s",
+      "yield_percent": "77%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 2-fluoro-4'-methoxy-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page31_fig4.png": [
+    {
+      "segment_path": "segments/page31_fig4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3q",
+      "yield_percent": "75%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3q (4'-methoxy-N,N-dimethyl-[1,1'-biphenyl]-3-amine)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page32_fig0.png": [
+    {
+      "segment_path": "segments/page32_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3r",
+      "yield_percent": "75%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 1-(4-methoxyphenyl)naphthalene",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page33_fig1.png": [
+    {
+      "segment_path": "segments/page33_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3x",
+      "yield_percent": "47%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "isolated product 4-methyl-4'-(trifluoromethyl)-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page33_fig0.png": [
+    {
+      "segment_path": "segments/page33_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3v",
+      "yield_percent": "30%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3v (4'-methoxy-2,6-dimethyl-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page34_fig0.png": [
+    {
+      "segment_path": "segments/page34_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3g",
+      "yield_percent": "71%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3g (4-methoxy-4'-methyl-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page32_fig2.png": [
+    {
+      "segment_path": "segments/page32_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3t",
+      "yield_percent": "73% NMR yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3t (2,4'-dimethoxy-1,1'-biphenyl) described in the synthesis characterization data.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page32_fig3.png": [
+    {
+      "segment_path": "segments/page32_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3u",
+      "yield_percent": "60%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 4'-methoxy-2-methyl-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page34_fig3.png": [
+    {
+      "segment_path": "segments/page34_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ab",
+      "yield_percent": "70%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3,4',5-trimethyl-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page34_fig1.png": [
+    {
+      "segment_path": "segments/page34_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3z",
+      "yield_percent": "60%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthesis product: N,N,4'-trimethyl-[1,1'-biphenyl]-4-amine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page35_fig3.png": [
+    {
+      "segment_path": "segments/page35_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3af",
+      "yield_percent": "44% NMR yield",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthetic product: 1-(4-(trifluoromethyl)phenyl)naphthalene",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page35_fig0.png": [
+    {
+      "segment_path": "segments/page35_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ac",
+      "yield_percent": "NMR yield 60%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthesized product 3ac (2,4'-dimethyl-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page34_fig2.png": [
+    {
+      "segment_path": "segments/page34_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3aa",
+      "yield_percent": "81%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product (2-(p-tolyl)naphthalene)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page35_fig1.png": [
+    {
+      "segment_path": "segments/page35_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ad",
+      "yield_percent": "45%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3ad, 2-methoxy-4'-methyl-1,1'-biphenyl",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page35_fig2.png": [
+    {
+      "segment_path": "segments/page35_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ae",
+      "yield_percent": "37%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3ae (1,1':4',1''-terphenyl).",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page36_fig0.png": [
+    {
+      "segment_path": "segments/page36_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ah",
+      "yield_percent": "65%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Characterized product 2-(4-methoxyphenyl)pyridine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page36_fig1.png": [
+    {
+      "segment_path": "segments/page36_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3aj",
+      "yield_percent": "59%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "isolated product 4-(4-methoxyphenyl)pyridine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page35_fig4.png": [
+    {
+      "segment_path": "segments/page35_fig4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ag",
+      "yield_percent": "49%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3ag, 3',4'-dimethoxy-N,N-dimethyl-[1,1'-biphenyl]-3-amine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page36_fig2.png": [
+    {
+      "segment_path": "segments/page36_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ak",
+      "yield_percent": "60%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product: 2-(4-methoxyphenyl)pyrimidine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page37_fig1.png": [
+    {
+      "segment_path": "segments/page37_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ao",
+      "yield_percent": "48%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product in synthetic procedure",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page36_fig3.png": [
+    {
+      "segment_path": "segments/page36_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3al",
+      "yield_percent": "51%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "isolated product 5-(4-methoxyphenyl)pyrimidine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page37_fig0.png": [
+    {
+      "segment_path": "segments/page37_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3am",
+      "yield_percent": "18%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 2-(4-methoxyphenyl)pyrazine",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page37_fig2.png": [
+    {
+      "segment_path": "segments/page37_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3aq",
+      "yield_percent": "58%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Synthesis of 3-(4-methoxyphenyl)thiophene",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page38_fig2.png": [
+    {
+      "segment_path": "segments/page38_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3at",
+      "yield_percent": "80%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "2-(4-methoxyphenyl)benzo[d]thiazole",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page38_fig3.png": [
+    {
+      "segment_path": "segments/page38_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3au",
+      "yield_percent": "58%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3au, 2-(4-methoxyphenyl)quinoline",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page26_fig0.png": [
+    {
+      "segment_path": "segments/page26_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic cross-coupled biaryl product in General Procedure 10",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page26_fig1.png": [
+    {
+      "segment_path": "segments/page26_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Aryl boronate reactant in General Procedure 10 scheme",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page39_fig1.png": [
+    {
+      "segment_path": "segments/page39_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3aw",
+      "yield_percent": "60%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3aw, 6-(4-methoxyphenyl)-2-methylquinoline",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page38_fig1.png": [
+    {
+      "segment_path": "segments/page38_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3as",
+      "yield_percent": "65%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Isolated product 3as, 6-(4-methoxyphenyl)-1H-indole",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page46_fig0.png": [
+    {
+      "segment_path": "segments/page46_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Starting materials (FeCl2/FeBr3 and IMes/IMes\u00b7HCl) in a reaction scheme, no compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page46_fig2.png": [
+    {
+      "segment_path": "images_SI/page46_fig2.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Reaction conditions and reagents over a reaction arrow, not an isolated product or labeled compound.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page47_fig0.png": [
+    {
+      "segment_path": "segments/page47_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 4a (4,4'-dimethoxybiphenyl) shown with identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page46_fig1.png": [
+    {
+      "segment_path": "segments/page46_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "5",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "IMesFe(dvtms) complex (5)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page47_fig1.png": [
+    {
+      "segment_path": "segments/page47_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Starting material ate complex 2a in a reaction scheme.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page48_fig0.png": [
+    {
+      "segment_path": "segments/page48_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Homocoupling product structure labeled 4a.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page48_fig2.png": [
+    {
+      "segment_path": "segments/page48_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 4-methoxybiphenyl labeled as 3a in a reaction scheme.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page48_fig1.png": [
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page48_fig1_seg0.png",
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "panel_label": null,
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": "4b",
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page48_fig1_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page49_fig1.png": [
+    {
+      "segment_path": "segments/page49_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Boronate reagent used in the reaction monitoring experiment.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page49_raster0.png": [
+    {
+      "segment_path": "images_SI/page49_raster0.png",
+      "is_scoped_product": null,
+      "compound_id": "5",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Reaction product IMesFe(dvtms) (5) monitored by 1H NMR spectroscopy.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page50_fig2.png": [
+    {
+      "segment_path": "segments/page50_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Boronate reducing agent used in the reaction scheme",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page40_fig0.png": [
+    {
+      "panel_label": null,
+      "segment_path": "segments/page40_fig0_seg10.png",
+      "flag": null,
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": "1",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": null,
+      "segment_path": "segments/page40_fig0_seg4.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "flag": "Unsuccessful substrate; no yield or identifier printed",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page40_fig0_seg7.png",
+      "compound_id": null,
+      "flag": "Unsuccessful substrate; no yield or identifier printed",
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "2a",
+      "conditions": null,
+      "segment_path": "segments/page40_fig0_seg12.png",
+      "flag": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page40_fig0_seg3.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "flag": "Unsuccessful substrate; no yield or identifier printed",
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "flag": "Unsuccessful substrate; no yield or identifier printed",
+      "segment_path": "segments/page40_fig0_seg5.png",
+      "conditions": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page40_fig0_seg2.png",
+      "conditions": null,
+      "flag": null,
+      "compound_id": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page40_fig0_seg0.png",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "compound_id": null,
+      "panel_label": null,
+      "segment_path": "segments/page40_fig0_seg1.png",
+      "conditions": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "segment_path": "segments/page40_fig0_seg6.png",
+      "flag": null,
+      "panel_label": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page40_fig0_seg11.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3",
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page40_fig0_seg8.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "segment_path": "segments/page40_fig0_seg9.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page38_fig0.png": [
+    {
+      "segment_path": "segments/page38_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ar",
+      "yield_percent": "72%",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "5-(4-methoxyphenyl)-1H-indole isolated product",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page53_fig0.png": [
+    {
+      "yield_percent": null,
+      "compound_id": "3a",
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page53_fig0_seg0.png",
+      "is_scoped_product": false,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "1a",
+      "conditions": null,
+      "flag": null,
+      "segment_path": "segments/page53_fig0_seg1.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "segment_path": "segments/page53_fig0_seg2.png",
+      "panel_label": null,
+      "compound_id": "2a",
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page59_fig0.png": [
+    {
+      "segment_path": "segments/page59_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "6",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational model complex 6",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page53_fig1.png": [
+    {
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "compound_id": "2a",
+      "segment_path": "segments/page53_fig1_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page53_fig1_seg1.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page56_fig1.png": [
+    {
+      "segment_path": "segments/page56_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Named reagent (Triphos) added to the reaction, no alphanumeric compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page59_fig1.png": [
+    {
+      "segment_path": "segments/page59_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "7",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational model complex 7",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page84_fig0.png": [
+    {
+      "segment_path": "segments/page84_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 4a shown in kinetic analysis section with no yield reported.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page40_fig1.png": [
+    {
+      "flag": "Unsuccessful substrate with no individual label or yield printed",
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page40_fig1_seg6.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "flag": "Unsuccessful substrate with no individual label or yield printed",
+      "compound_id": null,
+      "conditions": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page40_fig1_seg8.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "1g",
+      "segment_path": "segments/page40_fig1_seg3.png",
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": "Unsuccessful substrate with no individual label or yield printed",
+      "conditions": null,
+      "segment_path": "segments/page40_fig1_seg0.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page40_fig1_seg2.png",
+      "panel_label": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "flag": "Unsuccessful substrate with no individual label or yield printed",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "segment_path": "segments/page40_fig1_seg12.png",
+      "conditions": null,
+      "compound_id": "2",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "Unsuccessful substrate with no individual label or yield printed",
+      "segment_path": "segments/page40_fig1_seg7.png",
+      "conditions": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "flag": "Unsuccessful coupling partner without individual compound ID or yield",
+      "is_scoped_product": false,
+      "conditions": null,
+      "segment_path": "segments/page40_fig1_seg10.png",
+      "compound_id": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "is_scoped_product": false,
+      "flag": "Unsuccessful coupling partner without individual compound ID or yield",
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page40_fig1_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page40_fig1_seg5.png",
+      "panel_label": null,
+      "conditions": null,
+      "flag": "Unsuccessful coupling partner without individual compound ID or yield",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "compound_id": null,
+      "segment_path": "segments/page40_fig1_seg11.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "flag": "Unsuccessful coupling partner without individual compound ID or yield",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "segment_path": "segments/page40_fig1_seg9.png",
+      "flag": "Unsuccessful coupling partner without individual compound ID or yield",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "flag": "Abbreviation definition structure for BPin",
+      "is_scoped_product": false,
+      "segment_path": "segments/page40_fig1_seg14.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page40_fig1_seg13.png",
+      "flag": "Unsuccessful coupling partner without individual compound ID or yield",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "3",
+      "segment_path": "segments/page40_fig1_seg4.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page56_fig0.png": [
+    {
+      "is_scoped_product": false,
+      "compound_id": "4a",
+      "segment_path": "segments/page56_fig0_seg0.png",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": "2a",
+      "segment_path": "segments/page56_fig0_seg1.png",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page84_fig1.png": [
+    {
+      "segment_path": "segments/page84_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Borate complex 2a used as a starting material in a kinetic study reaction scheme.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page84_fig2.png": [
+    {
+      "segment_path": "segments/page84_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure of 4-methoxybiphenyl 3a shown in activation parameters section",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page42_fig1.png": [
+    {
+      "segment_path": "segments/page42_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Aryl boronate starting material / reagent in a reaction scheme",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page42_fig2.png": [
+    {
+      "segment_path": "segments/page42_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "1g",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Starting material reactant in a reaction scheme",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page42_fig0.png": [
+    {
+      "segment_path": "segments/page42_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product biphenyl in the reaction scheme for General Procedure 12",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page60_fig0.png": [
+    {
+      "segment_path": "segments/page60_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "4a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 4a (4,4'-dimethoxybiphenyl) shown with identifier beneath it.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page60_fig2.png": [
+    {
+      "segment_path": "segments/page60_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Reaction product 4-methoxybiphenyl in kinetic experiments",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page41_fig0.png": [
+    {
+      "segment_path": "segments/page41_fig0_seg0.png",
+      "flag": null,
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "compound_id": "3a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page41_fig0_seg1.png",
+      "compound_id": "4a",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": "1a",
+      "segment_path": "segments/page41_fig0_seg2.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "4b",
+      "conditions": null,
+      "segment_path": "segments/page41_fig0_seg3.png",
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page41_fig0_seg4.png",
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page87_fig0.png": [
+    {
+      "segment_path": "segments/page87_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3a",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Biphenyl product 3a shown under linear free energy relationship procedures.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page87_fig2.png": [
+    {
+      "segment_path": "segments/page87_fig2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Aryl boronate reagent used in linear free energy relationship studies.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page87_fig3.png": [
+    {
+      "segment_path": "images_SI/page87_fig3.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Reaction conditions arrow for a general procedure/scheme, no compound structure or identifier present.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page87_fig5.png": [
+    {
+      "segment_path": "segments/page87_fig5_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "General structure of the biaryl product 3 used in linear free energy relationship studies",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page87_fig4.png": [
+    {
+      "segment_path": "segments/page87_fig4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Generic aryl boronic ester starting material shown in reaction scheme/general procedure.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page103_fig1.png": [
+    {
+      "segment_path": "segments/page103_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "SM3",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational model complex for benchmarking studies, no yield reported.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page103_fig3.png": [
+    {
+      "segment_path": "segments/page103_fig3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "SM4",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational benchmark model for Fe(III) species in Supplementary Figure 60",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page103_fig4.png": [
+    {
+      "segment_path": "segments/page103_fig4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "SM1",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational model used for benchmarking studies (Fe(0) complex).",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page97_fig0.png": [
+    {
+      "conditions": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "segment_path": "segments/page97_fig0_seg0.png",
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": null,
+      "segment_path": "segments/page97_fig0_seg2.png",
+      "conditions": null,
+      "flag": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "segment_path": "segments/page97_fig0_seg1.png",
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page98_fig1.png": [
+    {
+      "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": "Internal standard structure annotated on NMR spectrum",
+      "segment_path": "segments/page98_fig1_seg0.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page98_fig1_seg1.png",
+      "compound_id": null,
+      "flag": "Reaction mixture component structure annotated on NMR spectrum",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "flag": "Reaction mixture byproduct structure annotated on NMR spectrum",
+      "is_scoped_product": false,
+      "segment_path": "segments/page98_fig1_seg2.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page99_fig0.png": [
+    {
+      "compound_id": "3a",
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page99_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page99_fig0_seg1.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "compound_id": "4a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": "1a",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page99_fig0_seg2.png",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "compound_id": "4b",
+      "segment_path": "segments/page99_fig0_seg3.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "compound_id": "2a",
+      "segment_path": "segments/page99_fig0_seg4.png",
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page98_fig0.png": [
+    {
+      "flag": "Internal standard in 19F NMR spectrum",
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page98_fig0_seg0.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page98_fig0_seg1.png",
+      "conditions": null,
+      "flag": "Product peak assignment in 19F NMR spectrum",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page98_fig0_seg2.png",
+      "flag": "Byproduct peak assignment in 19F NMR spectrum",
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page98_fig0_seg3.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "compound_id": null,
+      "conditions": null,
+      "flag": "Starting material peak assignment in 19F NMR spectrum",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster0.png": [
+    {
+      "segment_path": "segments/page105_raster0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot for a reaction intermediate in a mechanistic pathway.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster1.png": [
+    {
+      "segment_path": "segments/page105_raster1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a reaction intermediate/transition state in Supplementary Figure 63 with no unique isolated compound identifier or yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster6.png": [
+    {
+      "segment_path": "segments/page105_raster6_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Spin density plot of a computational intermediate/transition state from Supplementary Figure 63.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster4.png": [
+    {
+      "segment_path": "segments/page105_raster4_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Spin density plot of a computational intermediate in Supplementary Figure 63.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page104_fig0.png": [
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page104_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page104_fig0_seg2.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page104_fig0_seg3.png",
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "panel_label": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page104_fig0_seg4.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page104_fig0_seg5.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "flag": null,
+      "segment_path": "segments/page104_fig0_seg6.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page104_fig0_seg7.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "panel_label": null,
+      "segment_path": "segments/page104_fig0_seg9.png",
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "flag": null,
+      "conditions": null,
+      "segment_path": "segments/page104_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page104_fig0_seg8.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "yield_percent": null,
+      "segment_path": "segments/page104_fig0_seg10.png",
+      "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page104_fig0_seg11.png",
+      "is_scoped_product": false,
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster7.png": [
+    {
+      "segment_path": "segments/page105_raster7_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational intermediate spin density plot from Supplementary Figure 63, no synthetic compound identifier or yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster3.png": [
+    {
+      "segment_path": "segments/page105_raster3_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a reaction intermediate/transition state in Supplementary Figure 63, with no specific isolated compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster8.png": [
+    {
+      "segment_path": "segments/page105_raster8_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a mechanistic intermediate from Supplementary Figure 63, not a synthesized compound.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster9.png": [
+    {
+      "segment_path": "segments/page105_raster9_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Calculated spin density plot of a mechanistic intermediate (Supplementary Figure 63), no compound ID or yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster14.png": [
+    {
+      "segment_path": "segments/page105_raster14_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Spin density plot of a computational intermediate or transition state in Supplementary Figure 63.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster12.png": [
+    {
+      "segment_path": "segments/page105_raster12_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Spin density plot of a transition state from a computational DFT pathway (Supplementary Figure 63), no compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster16.png": [
+    {
+      "segment_path": "segments/page105_raster16_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Spin density plot of a computational intermediate/transition state in Supplementary Figure 63.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster13.png": [
+    {
+      "segment_path": "segments/page105_raster13_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a reaction intermediate from Supplementary Figure 63, without an individual compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster15.png": [
+    {
+      "segment_path": "segments/page105_raster15_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a reaction intermediate/transition state in Supplementary Figure 63, no synthetic compound ID or yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page106_fig0.png": [
+    {
+      "segment_path": "segments/page106_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "6",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational Fe complex model",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page106_fig1.png": [
+    {
+      "segment_path": "segments/page106_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "7",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "DFT-calculated iron complex model",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster18.png": [
+    {
+      "segment_path": "segments/page105_raster18_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a mechanistic intermediate/transition state in Supplementary Figure 63, with no compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page335_fig0.png": [
+    {
+      "segment_path": "segments/page335_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown on an NMR spectrum page with no compound identifier or yield printed.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page328_fig0.png": [
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page328_fig0_seg0.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "yield_percent": null,
+      "segment_path": "segments/page328_fig0_seg1.png",
+      "conditions": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page337_fig0.png": [
+    {
+      "segment_path": "segments/page337_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown on an NMR spectrum page without an associated compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page330_fig0.png": [
+    {
+      "conditions": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": "NMR spectrum inset structure; not a scope table",
+      "panel_label": null,
+      "segment_path": "segments/page330_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": "NMR spectrum inset structure; not a scope table",
+      "yield_percent": null,
+      "conditions": null,
+      "compound_id": null,
+      "segment_path": "segments/page330_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page326_fig0.png": [
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "flag": "NMR spectrum structure inset; not a yield-bearing product in a reaction scope",
+      "segment_path": "segments/page326_fig0_seg0.png",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "segment_path": "segments/page326_fig0_seg1.png",
+      "flag": "NMR spectrum structure inset; not a yield-bearing product in a reaction scope",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "segment_path": "segments/page326_fig0_seg2.png",
+      "conditions": null,
+      "flag": "NMR spectrum structure inset; not a yield-bearing product in a reaction scope",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page336_fig0.png": [
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": "NMR spectrum inset structure",
+      "conditions": null,
+      "compound_id": null,
+      "segment_path": "segments/page336_fig0_seg0.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "flag": "NMR spectrum inset structure",
+      "segment_path": "segments/page336_fig0_seg1.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page334_fig0.png": [
+    {
+      "flag": null,
+      "segment_path": "segments/page334_fig0_seg0.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "segment_path": "segments/page334_fig0_seg1.png",
+      "flag": null,
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page332_fig0.png": [
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "segment_path": "segments/page332_fig0_seg0.png",
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page332_fig0_seg1.png",
+      "is_scoped_product": false,
+      "flag": null,
+      "compound_id": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page339_fig0.png": [
+    {
+      "segment_path": "segments/page339_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown on an NMR spectrum page without an accompanying compound label or yield.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page342_fig0.png": [
+    {
+      "segment_path": "segments/page342_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Phenyl activated boronic ester shown on its NMR spectra page",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page342_fig1.png": [
+    {
+      "segment_path": "segments/page342_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "2b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 2b (Phenyl activated boronic ester) shown on its 13C NMR spectrum page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page343_fig0.png": [
+    {
+      "segment_path": "segments/page343_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown inside an 11B NMR spectrum without any compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page341_fig0.png": [
+    {
+      "segment_path": "segments/page341_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown as an inset in an 11B NMR spectrum without an alphanumeric compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page338_fig0.png": [
+    {
+      "segment_path": "segments/page338_fig0_seg0.png",
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
+      "flag": "NMR spectrum characterization, not a reaction scope entry",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "compound_id": null,
+      "flag": "NMR spectrum characterization, not a reaction scope entry",
+      "segment_path": "segments/page338_fig0_seg1.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page340_fig0.png": [
+    {
+      "yield_percent": null,
+      "compound_id": null,
+      "flag": "NMR spectrum inset structure; not a reaction scope table",
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page340_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": null,
+      "segment_path": "segments/page340_fig0_seg1.png",
+      "flag": "NMR spectrum inset structure; not a reaction scope table",
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page344_fig0.png": [
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "segment_path": "segments/page344_fig0_seg1.png",
+      "conditions": null,
+      "flag": "Structure shown as inset in 1H NMR spectrum; not a scope table product with yield.",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page344_fig0_seg0.png",
+      "flag": "Structure shown as inset in 13C NMR spectrum; not a scope table product with yield.",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page345_fig1.png": [
+    {
+      "segment_path": "segments/page345_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3b",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "13C NMR spectrum for compound 3b (4-methoxy-4'-(trifluoromethyl)-1,1'-biphenyl).",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page349_fig1.png": [
+    {
+      "segment_path": "segments/page349_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3d",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "13C NMR spectrum of compound 3d",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page352_fig0.png": [
+    {
+      "segment_path": "segments/page352_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3f",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 3f shown with its 1H NMR spectrum.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page358_fig0.png": [
+    {
+      "segment_path": "segments/page358_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3l",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown on NMR spectrum page for 3l, 5-(4-methoxyphenyl)benzo[d][1,3]dioxole.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page358_fig1.png": [
+    {
+      "segment_path": "segments/page358_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3l",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 3l with 13C NMR spectrum shown.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page350_fig0.png": [
+    {
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "compound_id": "3e",
+      "is_scoped_product": false,
+      "flag": "NMR spectrum structure inset",
+      "segment_path": "segments/page350_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "NMR spectrum structure inset",
+      "is_scoped_product": false,
+      "segment_path": "segments/page350_fig0_seg1.png",
+      "panel_label": null,
+      "conditions": null,
+      "compound_id": "3e",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page354_fig0.png": [
+    {
+      "segment_path": "segments/page354_fig0_seg1.png",
+      "compound_id": "3h",
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "3h",
+      "conditions": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page354_fig0_seg0.png",
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page360_fig0.png": [
+    {
+      "segment_path": "segments/page360_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown as an inset on a 19F NMR spectrum page without an alphanumeric identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page361_fig0.png": [
+    {
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page361_fig0_seg0.png",
+      "panel_label": null,
+      "flag": "Structure shown in NMR spectrum; no yield or compound ID printed directly in image",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "flag": "Not a chemical structure; misextracted NMR spectrum text/peaks",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "segment_path": "segments/page361_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page367_fig0.png": [
+    {
+      "segment_path": "segments/page367_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown in a 19F NMR spectrum without an explicit alphanumeric identifier printed on the page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page364_fig0.png": [
+    {
+      "conditions": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": "NMR spectrum inset, no yield or compound label in image",
+      "panel_label": null,
+      "segment_path": "segments/page364_fig0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "flag": "NMR spectrum inset, no yield or compound label in image",
+      "segment_path": "segments/page364_fig0_seg1.png",
+      "compound_id": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page369_fig1.png": [
+    {
+      "segment_path": "segments/page369_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3u",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3u shown on its 13C NMR spectra page",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page368_fig0.png": [
+    {
+      "segment_path": "segments/page368_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3t",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "NMR spectrum for compound 3t (2,4'-dimethoxy-1,1'-biphenyl)",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page363_fig0.png": [
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": null,
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page363_fig0_seg0.png",
+      "flag": "Structure shown in NMR spectrum",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "Structure shown in NMR spectrum",
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page363_fig0_seg1.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page376_fig1.png": [
+    {
+      "segment_path": "segments/page376_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3g",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure of 4-methoxy-4'-methyl-1,1'-biphenyl shown alongside its 13C NMR spectrum.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page376_fig0.png": [
+    {
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page376_fig0_seg0.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": "3g",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "flag": "Not a chemical structure; artifact crop from NMR spectrum axis",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page376_fig0_seg1.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page380_fig0.png": [
+    {
+      "segment_path": "segments/page380_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ac",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 3ac (2,4'-dimethyl-1,1'-biphenyl) shown on an 1H NMR spectra page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page381_fig0.png": [
+    {
+      "segment_path": "segments/page381_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ad",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3ad on an NMR spectrum page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page382_raster1.png": [
+    {
+      "segment_path": "segments/page382_raster1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ae",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "1,1':4',1''-terphenyl product labeled as 3ae on its 13C NMR spectrum page",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page381_fig1.png": [
+    {
+      "segment_path": "segments/page381_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ad",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 3ad shown on its 13C NMR spectrum page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page377_fig0.png": [
+    {
+      "compound_id": "3z",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "segment_path": "segments/page377_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "segment_path": "segments/page377_fig0_seg0.png",
+      "compound_id": "3z",
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page377_fig0_seg2.png",
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "flag": "artifact: NMR baseline noise falsely detected as chemical structure",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page383_raster0.png": [
+    {
+      "segment_path": "segments/page383_raster0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3af",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product structure shown on an NMR spectrum page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page385_fig0.png": [
+    {
+      "segment_path": "segments/page385_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ah",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure of 2-(4-methoxyphenyl)pyridine shown on an NMR spectrum page",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page387_fig1.png": [
+    {
+      "segment_path": "segments/page387_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ai",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3-(4-methoxyphenyl)pyridine shown on its 13C NMR spectrum page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page383_raster1.png": [
+    {
+      "segment_path": "segments/page383_raster1_seg0.png",
+      "is_scoped_product": false,
+      "flag": "NMR spectrum characterization figure, not a reaction scope table; no yield reported",
+      "compound_id": null,
+      "conditions": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "conditions": null,
+      "flag": "Artifact / text or NMR peak misdetected as chemical structure",
+      "segment_path": "segments/page383_raster1_seg1.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page384_raster0.png": [
+    {
+      "panel_label": null,
+      "compound_id": "3ag",
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page384_raster0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "Spurious detection of NMR spectrum integration/baseline artifact",
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": null,
+      "segment_path": "segments/page384_raster0_seg1.png",
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page392_fig1.png": [
+    {
+      "segment_path": "segments/page392_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3an",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure of 2-(4-methoxyphenyl)thiazole shown on its NMR spectra page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page386_fig0.png": [
+    {
+      "segment_path": "segments/page386_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "13C NMR spectrum of 2-(4-methoxyphenyl)pyridine without compound identifier or yield printed on the page.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page393_fig0.png": [
+    {
+      "is_scoped_product": false,
+      "compound_id": "3ao",
+      "yield_percent": null,
+      "segment_path": "segments/page393_fig0_seg0.png",
+      "panel_label": null,
+      "flag": "Structure inset on 1H NMR spectrum; no reaction scope or yield present",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": null,
+      "segment_path": "segments/page393_fig0_seg1.png",
+      "flag": "NMR spectrum peak/baseline artifact misidentified as a chemical structure",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page385_raster0.png": [
+    {
+      "segment_path": "segments/page385_raster0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown as an inset in a 13C NMR spectrum without an alphanumeric compound identifier printed beside it.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page396_fig1.png": [
+    {
+      "segment_path": "segments/page396_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ar",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 3ar, 5-(4-methoxyphenyl)-1H-indole, shown with its 13C NMR spectrum.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page393_fig1.png": [
+    {
+      "segment_path": "segments/page393_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3ao",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Compound 3ao with 13C NMR spectrum.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page397_fig1.png": [
+    {
+      "segment_path": "segments/page397_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3as",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown on an NMR spectrum page for 6-(4-methoxyphenyl)-1H-indole.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page398_fig1.png": [
+    {
+      "segment_path": "segments/page398_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3at",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product structure shown with its 1H and 13C NMR spectra.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page401_fig0.png": [
+    {
+      "segment_path": "segments/page401_fig0_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3aw",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "NMR spectrum for compound 3aw, 6-(4-methoxyphenyl)-2-methylquinoline.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page399_fig1.png": [
+    {
+      "segment_path": "segments/page399_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3au",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Product 3au shown with its 1H and 13C NMR spectra.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page401_fig1.png": [
+    {
+      "segment_path": "segments/page401_fig1_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": "3aw",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Structure shown on a 13C NMR spectrum page for 6-(4-methoxyphenyl)-2-methylquinoline.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page51_raster0.png": [
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page51_raster0_seg0.png",
+      "conditions": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "flag": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page51_raster0_seg1.png",
+      "flag": null,
+      "yield_percent": null,
+      "compound_id": "5",
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster2.png": [
+    {
+      "segment_path": "segments/page105_raster2_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational spin density plot of a mechanistic intermediate in Supplementary Figure 63, no compound ID.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster5.png": [
+    {
+      "segment_path": "segments/page105_raster5_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Spin density plot for a computational intermediate/transition state in Supplementary Figure 63, no compound ID.",
+      "source": "gemini:google/gemini-3.7-flash"
+    }
+  ],
+  "images_SI/page105_raster11.png": [
+    {
+      "segment_path": "segments/page105_raster11_seg0.png",
+      "is_scoped_product": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "note": "Computational transition state model (HSTSTM) from a spin density plot, no compound identifier.",
+      "source": "gemini:google/gemini-3.7-flash"
     }
   ]
 }

@@ -1,114 +1,309 @@
 {
   "images/page5_fig0.png": [
     {
-      "segment_path": "segments/page5_fig0_seg0.png",
-      "is_scoped_product": true,
-      "compound_id": "4ag",
-      "yield_percent": "96%",
       "conditions": null,
+      "compound_id": "4ag",
       "panel_label": null,
-      "flag": null
+      "is_scoped_product": true,
+      "yield_percent": "96%",
+      "segment_path": "segments/page5_fig0_seg0.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg1.png",
-      "is_scoped_product": true,
+      "panel_label": null,
+      "flag": null,
       "compound_id": "4ab",
+      "segment_path": "segments/page5_fig0_seg1.png",
       "yield_percent": "97%",
       "conditions": null,
-      "panel_label": null,
-      "flag": null
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": null,
       "segment_path": "segments/page5_fig0_seg2.png",
+      "panel_label": null,
       "is_scoped_product": true,
       "compound_id": "4ae",
       "yield_percent": "98%",
       "conditions": null,
-      "panel_label": null,
-      "flag": null
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg3.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
-      "flag": "generic_scaffold"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg4.png",
-      "is_scoped_product": true,
-      "compound_id": "4aa",
+      "flag": null,
       "yield_percent": "99%",
-      "conditions": null,
       "panel_label": null,
-      "flag": null
+      "compound_id": "4aa",
+      "segment_path": "segments/page5_fig0_seg3.png",
+      "is_scoped_product": true,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg5.png",
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page5_fig0_seg4.png",
+      "flag": null,
+      "compound_id": "2a",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "is_scoped_product": true,
-      "compound_id": "4ad",
       "yield_percent": "91%",
-      "conditions": null,
       "panel_label": null,
-      "flag": "multi_compound_merge"
+      "flag": null,
+      "conditions": null,
+      "compound_id": "4ad",
+      "segment_path": "segments/page5_fig0_seg5.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg6.png",
-      "is_scoped_product": true,
+      "flag": null,
       "compound_id": "4af",
-      "yield_percent": "53%",
-      "conditions": null,
       "panel_label": null,
-      "flag": null
+      "segment_path": "segments/page5_fig0_seg6.png",
+      "conditions": null,
+      "is_scoped_product": true,
+      "yield_percent": "53%",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page5_fig0_seg7.png",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
-      "conditions": null,
+      "compound_id": "4aa-ag",
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "conditions": null,
+      "yield_percent": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg8.png",
-      "is_scoped_product": true,
-      "compound_id": "4ac",
       "yield_percent": "98%",
-      "conditions": null,
+      "flag": null,
       "panel_label": null,
-      "flag": null
+      "is_scoped_product": true,
+      "conditions": null,
+      "compound_id": "4ac",
+      "segment_path": "segments/page5_fig0_seg8.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images/page5_fig1.png": [
     {
+      "panel_label": null,
+      "flag": null,
+      "compound_id": "4ca",
+      "conditions": null,
+      "yield_percent": "70%",
       "segment_path": "segments/page5_fig1_seg0.png",
       "is_scoped_product": true,
-      "compound_id": "4ca",
-      "yield_percent": "70%",
-      "conditions": null,
-      "panel_label": null,
-      "flag": "smiles_misread"
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig1_seg1.png",
-      "is_scoped_product": true,
       "compound_id": "4da",
+      "is_scoped_product": true,
+      "flag": null,
+      "segment_path": "segments/page5_fig1_seg1.png",
       "yield_percent": "95%",
-      "conditions": null,
       "panel_label": null,
-      "flag": "smiles_misread"
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig1_seg2.png",
+      "yield_percent": null,
       "is_scoped_product": false,
-      "compound_id": null,
+      "conditions": null,
+      "segment_path": "segments/page5_fig1_seg2.png",
+      "flag": null,
+      "compound_id": "4ba-da",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images/page2_raster0.png": [
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": null,
+      "segment_path": "segments/page2_raster0_seg1.png",
+      "yield_percent": null,
+      "compound_id": "Arduengo 1994",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "Marko 2002",
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page2_raster0_seg2.png",
+      "is_scoped_product": false,
       "yield_percent": null,
       "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
+      "compound_id": "Marinetti 2007",
       "panel_label": null,
-      "flag": "generic_scaffold"
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page2_raster0_seg0.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "compound_id": "Hor 2009",
+      "panel_label": null,
+      "segment_path": "segments/page2_raster0_seg3.png",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images/page3_fig0.png": [
+    {
+      "flag": null,
+      "compound_id": "1d",
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page3_fig0_seg0.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "compound_id": "1a",
+      "flag": null,
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "segment_path": "segments/page3_fig0_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg2.png",
+      "compound_id": "1b",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "compound_id": "1e",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "segment_path": "segments/page3_fig0_seg3.png",
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page3_fig0_seg4.png",
+      "flag": null,
+      "conditions": null,
+      "compound_id": "1c",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    }
+  ],
+  "images/page6_fig2.png": [
+    {
+      "segment_path": "segments/page6_fig2_seg0.png",
+      "panel_label": null,
+      "compound_id": null,
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "segment_path": "segments/page6_fig2_seg1.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "panel_label": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "segment_path": "segments/page6_fig2_seg2.png",
+      "flag": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "segment_path": "segments/page6_fig2_seg3.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page6_fig2_seg4.png",
+      "panel_label": null,
+      "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page6_fig2_seg5.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ]
 }

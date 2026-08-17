@@ -199,8 +199,8 @@
             310.1
           ],
           "path": "images/page1_raster10.png",
-          "width": 1000,
-          "height": 300
+          "width": 721,
+          "height": 217
         },
         {
           "image_id": "main_p1_fig0",
@@ -213,7 +213,14 @@
           ],
           "path": "images/page1_fig0.png",
           "width": 1543,
-          "height": 248
+          "height": 248,
+          "wide_path": "images/page1_fig0_wide.png",
+          "wide_bbox": [
+            0.0,
+            0.0,
+            607.4,
+            298.9
+          ]
         },
         {
           "image_id": "main_p1_fig1",
@@ -226,7 +233,14 @@
           ],
           "path": "images/page1_fig1.png",
           "width": 1823,
-          "height": 650
+          "height": 650,
+          "wide_path": "images/page1_fig1_wide.png",
+          "wide_bbox": [
+            0.0,
+            0.0,
+            607.4,
+            583.1
+          ]
         },
         {
           "image_id": "main_p1_fig2",
@@ -239,7 +253,14 @@
           ],
           "path": "images/page1_fig2.png",
           "width": 751,
-          "height": 216
+          "height": 216,
+          "wide_path": "images/page1_fig2_wide.png",
+          "wide_bbox": [
+            110.5,
+            468.9,
+            607.4,
+            800.9
+          ]
         },
         {
           "image_id": "main_p1_fig3",
@@ -252,7 +273,14 @@
           ],
           "path": "images/page1_fig3.png",
           "width": 375,
-          "height": 96
+          "height": 96,
+          "wide_path": "images/page1_fig3_wide.png",
+          "wide_bbox": [
+            0.0,
+            554.7,
+            371.2,
+            800.9
+          ]
         }
       ]
     },
@@ -412,8 +440,8 @@
             302.9
           ],
           "path": "images/page2_raster0.png",
-          "width": 1986,
-          "height": 1796
+          "width": 716,
+          "height": 647
         },
         {
           "image_id": "main_p2_fig0",
@@ -426,7 +454,14 @@
           ],
           "path": "images/page2_fig0.png",
           "width": 1543,
-          "height": 1307
+          "height": 1307,
+          "wide_path": "images/page2_fig0_wide.png",
+          "wide_bbox": [
+            0.0,
+            0.0,
+            607.4,
+            668.9
+          ]
         }
       ]
     },
@@ -556,8 +591,8 @@
             728.2
           ],
           "path": "images/page3_raster0.png",
-          "width": 4196,
-          "height": 3022
+          "width": 1511,
+          "height": 1089
         },
         {
           "image_id": "main_p3_raster1",
@@ -569,8 +604,8 @@
             210.5
           ],
           "path": "images/page3_raster1.png",
-          "width": 1984,
-          "height": 1026
+          "width": 715,
+          "height": 370
         },
         {
           "image_id": "main_p3_fig0",
@@ -583,7 +618,14 @@
           ],
           "path": "images/page3_fig0.png",
           "width": 1543,
-          "height": 67
+          "height": 67,
+          "wide_path": "images/page3_fig0_wide.png",
+          "wide_bbox": [
+            0.0,
+            0.0,
+            607.4,
+            255.5
+          ]
         }
       ]
     },
@@ -833,8 +875,8 @@
             274.9
           ],
           "path": "images/page4_raster0.png",
-          "width": 1000,
-          "height": 827
+          "width": 721,
+          "height": 596
         },
         {
           "image_id": "main_p4_fig0",
@@ -847,7 +889,14 @@
           ],
           "path": "images/page4_fig0.png",
           "width": 1543,
-          "height": 67
+          "height": 67,
+          "wide_path": "images/page4_fig0_wide.png",
+          "wide_bbox": [
+            0.0,
+            0.0,
+            607.4,
+            255.5
+          ]
         }
       ]
     },
@@ -1078,7 +1127,14 @@
           ],
           "path": "images/page5_fig0.png",
           "width": 1543,
-          "height": 67
+          "height": 67,
+          "wide_path": "images/page5_fig0_wide.png",
+          "wide_bbox": [
+            0.0,
+            0.0,
+            607.4,
+            255.5
+          ]
         }
       ]
     }
