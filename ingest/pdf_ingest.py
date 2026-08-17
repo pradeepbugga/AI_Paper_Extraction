@@ -119,9 +119,20 @@ def extract_raster_images(doc, page, page_number, images_dir, doc_source, zoom=3
         bbox = entry["bbox"]
         if is_decorative_raster(bbox):
             continue
-        pix = fitz.Pixmap(doc, entry["xref"])
-        if pix.n - pix.alpha >= 4:  # CMYK -> RGB
-            pix = fitz.Pixmap(fitz.csRGB, pix)
+        # Render via the page's own rendering pipeline (clip to this image's
+        # placement rect) rather than extracting the raw embedded XObject
+        # with fitz.Pixmap(doc, xref) -- confirmed on a real case
+        # (miyaura_iron_2025/SI.pdf page 27 onward) that raw extraction can
+        # return solid black for what's actually a white-background NMR
+        # spectrum: fitz.Pixmap(doc, xref).pixel(x, y) returned (0, 0, 0)
+        # everywhere, even though the image renders correctly white on the
+        # page itself. Raw XObject extraction bypasses whatever the PDF's
+        # rendering pipeline applies (soft masks, decode arrays, ICC
+        # profiles) to make it display correctly; page.get_pixmap(clip=...)
+        # goes through that same pipeline, so it matches what the image
+        # actually looks like on the page -- same approach already used for
+        # the strip-cluster case above, now used here too.
+        pix = page.get_pixmap(matrix=matrix, clip=bbox)
         image_filename = f"page{page_number}_raster{entry['img_index']}.png"
         pix.save(images_dir / image_filename)
         images.append({
@@ -270,6 +281,45 @@ def measure_column_gutter(doc, sample_pages=8):
 
 CROP_MARGIN_PT = 5.0  # see extract_vector_figures docstring for why this exists
 
+# Second, much wider margin used to render an EXTRA crop per vector-figure
+# cluster (see extract_vector_figures' wide_margin_pt) purely to give
+# DECIMER Segmentation more surrounding context -- CROP_MARGIN_PT's small
+# margin is enough to avoid mid-glyph edge cuts, but not enough for DECIMER
+# to reliably include a structure's own label text when that text sits
+# diagonally or vertically outside its tight bbox (confirmed: a label whose
+# real ink was fully present in a CROP_MARGIN_PT=5pt crop was still only
+# ~30-56% covered by DECIMER's own predicted mask at margins up to 150pt,
+# and only reached full, stable coverage at ~200pt on an 11pt-body-font
+# document). Padding the whole image with BLANK space was tested separately
+# and confirmed NOT to help (batch_segment.py's docstring/history) -- this
+# is different: the wide crop reveals real surrounding page content (other
+# text, neighboring compounds), which is what DECIMER actually needs to
+# extend its own mask boundary, not empty canvas.
+#
+# Expressed relative to the document's own dominant body-font size (like a
+# CSS "rem" unit) rather than a fixed point value, since real corpus
+# documents range 10.0-12.0pt body text -- a fixed constant tuned on one
+# document wouldn't necessarily generalize to another with meaningfully
+# different type scale. WIDE_MARGIN_K=20 was chosen with a safety buffer
+# above the ~18.2x ratio (200pt / 11.0pt) that produced stable, full label
+# coverage on the case that motivated this.
+WIDE_MARGIN_K = 20.0
+DEFAULT_DOMINANT_FONT_PT = 11.0  # fallback if no body text is found at all
+
+
+def measure_dominant_font_size(doc, sample_pages=5):
+    """Same philosophy as measure_column_gutter: measure this specific
+    document's own real characteristic (here, its dominant body-text font
+    size) rather than assuming one fixed constant for every document."""
+    from collections import Counter
+    sizes = Counter()
+    for page in list(doc)[:sample_pages]:
+        for block in page.get_text("dict")["blocks"]:
+            for line in block.get("lines", []):
+                for span in line.get("spans", []):
+                    sizes[round(span["size"], 1)] += len(span["text"])
+    return sizes.most_common(1)[0][0] if sizes else DEFAULT_DOMINANT_FONT_PT
+
 # Atom labels (S, O, N-H, CO2Me, ...) are frequently real embedded PDF text,
 # not vector-drawn glyphs -- page.get_drawings() never sees them, so a crop
 # built purely from vector paths can slice a label in half at the crop edge.
@@ -338,7 +388,7 @@ def _label_text_rects(page):
     return rects
 
 
-def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0, pad_x=DEFAULT_PAD_X):
+def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0, pad_x=DEFAULT_PAD_X, wide_margin_pt=None):
     """pad_x/pad_y (via cluster_drawing_rects) only ever decide whether two
     nearby vector-drawing rects get merged into the same cluster -- they are
     a clustering *tolerance*, never applied to the resulting bbox. A cluster
@@ -392,15 +442,37 @@ def extract_vector_figures(page, page_number, images_dir, doc_source, zoom=3.0, 
         pix = page.get_pixmap(matrix=matrix, clip=bbox)
         image_filename = f"page{page_number}_fig{fig_index}.png"
         pix.save(images_dir / image_filename)
-        figures.append({
+        entry = {
             "image_id": f"{doc_source}_p{page_number}_fig{fig_index}",
             "source": "vector_region",
             "bbox": [round(bbox.x0, 1), round(bbox.y0, 1), round(bbox.x1, 1), round(bbox.y1, 1)],
             "path": f"{images_dir.name}/{image_filename}",
             "width": pix.width,
             "height": pix.height,
-        })
+        }
         pix = None
+
+        # Second, much wider crop of the SAME cluster purely for DECIMER
+        # Segmentation's benefit -- see WIDE_MARGIN_K's comment. Stored as a
+        # separate file + its own PDF-point bbox (both in the SAME
+        # coordinate space/zoom as the tight crop above) so batch_segment.py
+        # can translate a mask found in the tight crop into the wide crop's
+        # own pixel space and match them up, without ever needing to touch
+        # the PDF itself -- Stage 3 stays PDF-free, as before.
+        if wide_margin_pt:
+            wide_bbox = fitz.Rect(
+                bbox.x0 - wide_margin_pt, bbox.y0 - wide_margin_pt,
+                bbox.x1 + wide_margin_pt, bbox.y1 + wide_margin_pt,
+            ) & page.rect
+            if wide_bbox.width > 0 and wide_bbox.height > 0:
+                wide_pix = page.get_pixmap(matrix=matrix, clip=wide_bbox)
+                wide_filename = f"page{page_number}_fig{fig_index}_wide.png"
+                wide_pix.save(images_dir / wide_filename)
+                entry["wide_path"] = f"{images_dir.name}/{wide_filename}"
+                entry["wide_bbox"] = [round(wide_bbox.x0, 1), round(wide_bbox.y0, 1), round(wide_bbox.x1, 1), round(wide_bbox.y1, 1)]
+                wide_pix = None
+
+        figures.append(entry)
     return figures
 
 
@@ -429,10 +501,12 @@ def ingest_pdf(pdf_path: Path, output_dir: Path, doc_source: str = "main", image
     else:
         pad_x = min(MAX_PAD_X, max(DEFAULT_PAD_X, gutter - PAD_X_SAFETY_BUFFER_PT))
 
+    wide_margin_pt = WIDE_MARGIN_K * measure_dominant_font_size(doc)
+
     pages = []
     for page_number, page in enumerate(doc, start=1):
         raster_images = extract_raster_images(doc, page, page_number, images_dir, doc_source)
-        vector_figures = extract_vector_figures(page, page_number, images_dir, doc_source, pad_x=pad_x)
+        vector_figures = extract_vector_figures(page, page_number, images_dir, doc_source, pad_x=pad_x, wide_margin_pt=wide_margin_pt)
         pages.append({
             "page_number": page_number,
             "source": doc_source,

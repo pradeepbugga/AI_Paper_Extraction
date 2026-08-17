@@ -74,6 +74,17 @@ def run_paper(paper_dir):
             result = extract_structure(str(full_path))
             result["segment_path"] = segment_path
             result["bbox"] = bbox
+            # Carried through from batch_segment.py's ink-walk recovery --
+            # non-empty means a side still hit its extension cap without
+            # finding a real gap, so the crop (and therefore this SMILES)
+            # may still be truncated even after the best safe recovery
+            # attempt. See that module's docstring. Folded into
+            # need_human_review here (extract_structure can't know this --
+            # it only sees the already-cropped image) so a still-truncated
+            # crop gets surfaced the same way every other quality flag does.
+            truncated_sides = segment.get("truncated_sides", [])
+            result["truncated_sides"] = truncated_sides
+            result["need_human_review"] = result["need_human_review"] or bool(truncated_sides)
             elapsed = time.time() - start
             flag = " NEEDS REVIEW" if result["need_human_review"] else ""
             tqdm.write(

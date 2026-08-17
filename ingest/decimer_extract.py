@@ -234,8 +234,36 @@ JUNK_MASK_PADDING_PX = 2
 OCR_PAD_PX = 20
 # See _has_too_many_fragments docstring for how this was picked -- corpus-
 # scale sizing at the time: >=10 added 25 new flags, >=8 added 47, >=6
-# added 103, on top of the 659 already flagged by everything else.
+# added 103, on top of the 659 already flagged by everything else. Kept as
+# a secondary backstop (see MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT below for the
+# primary signal) and as the sole signal when the SMILES doesn't parse at
+# all, since raw "." count is all that's available then.
 MAX_DISCONNECTED_FRAGMENTS = 8
+# Primary signal, added after a real audit found MAX_DISCONNECTED_FRAGMENTS
+# alone missing 5 of 6 confirmed real merge cases on
+# copper_iron_2025/images/page3_fig1.png (4-5 total fragments each, well
+# under the threshold of 8). Raw fragment COUNT is a poor proxy: DECIMER
+# very commonly appends 1-2 small spurious fragments (".CC", ".[F-]",
+# ".[Ar]") to an otherwise-correct single-compound SMILES, which inflates
+# the count without being a real merge -- corpus-wide, 930+ legitimate
+# single-compound entries sit at 1-2 fragments and a long tail of these
+# small-junk cases sits at 3-7, exactly where the real merges also live, so
+# raising the raw threshold to catch the real merges would flood in far
+# more of these than real cases. What actually distinguishes a real merge
+# is fragment SIZE, not count: each of the 6 missed cases has 2-3
+# fragments with >=5 heavy atoms (full aromatic/sulfonamide substructures,
+# each individually plausible as its own compound), while the small-junk
+# cases have exactly one large fragment plus 1-2 tiny ones (a counterion,
+# a placeholder, a spurious 2-3-atom chain). Corpus-wide check before
+# adopting: >=2 large fragments flags 39 previously-unflagged entries, of
+# which 19 were already caught by another signal (rdkit_valid=False or low
+# confidence) and the other 20 were manually spot-checked -- all genuine
+# review-worthy cases (the 6 confirmed merges, plus other real OCSR
+# failures this metric incidentally also catches, like a hallucinated
+# 70+-carbon spurious alkyl chain glued onto an otherwise normal
+# structure). No false positives found in the sample checked.
+MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT = 5
+MAX_LARGE_FRAGMENTS = 2
 
 
 def _has_generic_substituent(smiles):
@@ -260,25 +288,26 @@ def _has_too_many_fragments(smiles, mol):
     existing checks; both cases the pipeline actually hit scored 0.90-0.91
     confidence, comfortably above MEAN_CONFIDENCE_THRESHOLD too.
 
-    MAX_DISCONNECTED_FRAGMENTS=8 was picked by checking the corpus-wide
-    fragment-count distribution among currently-*unflagged* results before
-    trusting a threshold: legitimate single compounds with one real
-    counterion or generic-substituent placeholder cluster at 1-2 fragments
-    (930 of 1358 then-unflagged entries), while the two confirmed seg13/
-    seg20 merge cases sit at 10-12 fragments. 8 was chosen as a margin
-    below the real merge cases without reaching into the much larger
-    population of 2-3 fragment cases, most of which are ordinary salts/
-    placeholders rather than merge artifacts.
+    Two signals, either one sufficient: (1) MAX_LARGE_FRAGMENTS or more
+    fragments with >=MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT heavy atoms each --
+    the primary signal, see MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT's comment
+    for why fragment size beats raw fragment count at telling a real merge
+    apart from DECIMER's much more common habit of appending small spurious
+    fragments to an otherwise-correct single compound. (2)
+    MAX_DISCONNECTED_FRAGMENTS raw fragments regardless of size -- a
+    backstop for extreme cases (one real case hit 59 raw fragments) and the
+    only signal available when mol is None (already-invalid SMILES,
+    falls back to counting "." in the raw string) since fragment size can't
+    be measured without a parsed mol.
 
     This does NOT fix the underlying DECIMER Segmentation under-splitting
     (still one crop, one review item covering N real compounds) -- it only
     ensures the result is never silently accepted as a single correct
-    compound. Falls back to counting "." in the raw SMILES when mol is
-    None (already-invalid SMILES), so an unparseable, heavily-fragmented
-    string doesn't dodge this check just because rdkit_valid already
-    failed it a different way."""
+    compound."""
     if mol is not None:
-        return len(Chem.GetMolFrags(mol)) >= MAX_DISCONNECTED_FRAGMENTS
+        frags = Chem.GetMolFrags(mol, asMols=True, sanitizeFrags=False)
+        n_large = sum(1 for f in frags if f.GetNumAtoms() >= MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT)
+        return n_large >= MAX_LARGE_FRAGMENTS or len(frags) >= MAX_DISCONNECTED_FRAGMENTS
     return smiles.count(".") + 1 >= MAX_DISCONNECTED_FRAGMENTS
 
 

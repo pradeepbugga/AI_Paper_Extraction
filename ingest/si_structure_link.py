@@ -139,6 +139,7 @@ import json
 import re
 from pathlib import Path
 
+import aiohttp
 import fitz
 import requests
 
@@ -250,16 +251,11 @@ def _page_text_for_image(paper_dir, image_path):
     return doc[page_number - 1].get_text()
 
 
-def link_structure_claude(client, paper_dir, image_path, model=CLAUDE_LIGHTWEIGHT_MODEL):
-    """Links one individually-drawn SI structure to its alphanumeric
-    identifier (and yield, if shown), using the whole SI page's real text
-    as context. Returns {"compound_id": str|None, "yield_percent": str|None,
-    "note": str}."""
+def _claude_messages_kwargs(paper_dir, image_path, model):
     page_text = _page_text_for_image(paper_dir, image_path)
     image_bytes = (paper_dir / image_path).read_bytes()
     image_b64 = base64.b64encode(image_bytes).decode()
-
-    resp = client.messages.create(
+    return dict(
         model=model,
         max_tokens=500,
         tools=[RECORD_ID_TOOL],
@@ -272,11 +268,32 @@ def link_structure_claude(client, paper_dir, image_path, model=CLAUDE_LIGHTWEIGH
             ],
         }],
     )
+
+
+def _parse_claude_response(resp):
     tool_use = next(b for b in resp.content if b.type == "tool_use")
     result = tool_use.input
     if not _looks_like_real_id(result.get("compound_id")):
         result["compound_id"] = None
     return result
+
+
+def link_structure_claude(client, paper_dir, image_path, model=CLAUDE_LIGHTWEIGHT_MODEL):
+    """Links one individually-drawn SI structure to its alphanumeric
+    identifier (and yield, if shown), using the whole SI page's real text
+    as context. Returns {"compound_id": str|None, "yield_percent": str|None,
+    "note": str}."""
+    resp = client.messages.create(**_claude_messages_kwargs(paper_dir, image_path, model))
+    return _parse_claude_response(resp)
+
+
+async def link_structure_claude_async(async_client, paper_dir, image_path, model=CLAUDE_LIGHTWEIGHT_MODEL):
+    """Same contract as link_structure_claude, via anthropic.AsyncAnthropic --
+    for batch runs across many figures at once (see batch_link_structures.py),
+    where a synchronous per-call round trip would leave the process idle on
+    network I/O almost the entire time."""
+    resp = await async_client.messages.create(**_claude_messages_kwargs(paper_dir, image_path, model))
+    return _parse_claude_response(resp)
 
 
 # OpenRouter uses OpenAI-style function-calling tools, not Anthropic's
@@ -293,31 +310,25 @@ _RECORD_ID_TOOL_OPENROUTER = {
 }
 
 
-def link_structure_gemini(api_key, paper_dir, image_path, model=GEMINI_MODEL):
-    """Same contract as link_structure_claude, via OpenRouter. Recommended
-    pipeline default -- see module docstring's benchmark summary."""
+def _gemini_request_body(paper_dir, image_path, model):
     page_text = _page_text_for_image(paper_dir, image_path)
     image_bytes = (paper_dir / image_path).read_bytes()
     image_b64 = base64.b64encode(image_bytes).decode()
+    return {
+        "model": model,
+        "tools": [_RECORD_ID_TOOL_OPENROUTER],
+        "tool_choice": {"type": "function", "function": {"name": "record_id"}},
+        "messages": [{
+            "role": "user",
+            "content": [
+                {"type": "text", "text": PROMPT_TEMPLATE.format(page_text=page_text)},
+                {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}},
+            ],
+        }],
+    }
 
-    resp = requests.post(
-        OPENROUTER_URL,
-        headers={"Authorization": f"Bearer {api_key}"},
-        json={
-            "model": model,
-            "tools": [_RECORD_ID_TOOL_OPENROUTER],
-            "tool_choice": {"type": "function", "function": {"name": "record_id"}},
-            "messages": [{
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": PROMPT_TEMPLATE.format(page_text=page_text)},
-                    {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}},
-                ],
-            }],
-        },
-        timeout=90,
-    )
-    data = resp.json()
+
+def _parse_gemini_response(data, image_path, model):
     if "error" in data:
         raise RuntimeError(f"OpenRouter error for {model}: {data['error']}")
     tool_calls = data["choices"][0]["message"].get("tool_calls")
@@ -327,3 +338,30 @@ def link_structure_gemini(api_key, paper_dir, image_path, model=GEMINI_MODEL):
     if not _looks_like_real_id(result.get("compound_id")):
         result["compound_id"] = None
     return result
+
+
+def link_structure_gemini(api_key, paper_dir, image_path, model=GEMINI_MODEL):
+    """Same contract as link_structure_claude, via OpenRouter. Recommended
+    pipeline default -- see module docstring's benchmark summary."""
+    resp = requests.post(
+        OPENROUTER_URL,
+        headers={"Authorization": f"Bearer {api_key}"},
+        json=_gemini_request_body(paper_dir, image_path, model),
+        timeout=90,
+    )
+    return _parse_gemini_response(resp.json(), image_path, model)
+
+
+async def link_structure_gemini_async(session, api_key, paper_dir, image_path, model=GEMINI_MODEL):
+    """Same contract as link_structure_gemini, via a shared aiohttp
+    ClientSession -- OpenRouter has no batch API for VLM calls, so a batch
+    run gets its concurrency from many of these in flight at once (see
+    batch_link_structures.py) rather than from provider-side batching."""
+    async with session.post(
+        OPENROUTER_URL,
+        headers={"Authorization": f"Bearer {api_key}"},
+        json=_gemini_request_body(paper_dir, image_path, model),
+        timeout=aiohttp.ClientTimeout(total=90),
+    ) as resp:
+        data = await resp.json()
+    return _parse_gemini_response(data, image_path, model)
