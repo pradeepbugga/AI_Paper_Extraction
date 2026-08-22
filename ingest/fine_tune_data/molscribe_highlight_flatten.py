@@ -51,6 +51,13 @@ BG_MIN_FRACTION = 0.5   # the background must be the clearly dominant cluster
 FILL_MIN_FRACTION = 0.01  # a fill candidate must cover a meaningful area
 FILL_MAX_GAP = 70       # lightness gap from background below which a cluster is a
                         # translucent fill, not real ink (observed: fills ~19-24, ink ~139+)
+FILL_MIN_SPREAD = 15    # max(channel)-min(channel): a deliberate highlight has a real hue
+                        # tint; a neutral gray (spread=0, R=G=B) close to background is
+                        # almost always anti-aliasing halo around real ink/text, not a fill
+                        # -- confirmed as the cause of a real regression (full-corpus check,
+                        # Aug 22 follow-up): several exotic-abbreviation labels ([Sc], [Rf],
+                        # [Ca]-style placeholders) have soft gray anti-aliasing that this gap
+                        # check alone misclassified as fill, erasing part of the label itself.
 MATCH_TOLERANCE = 10    # per-channel distance for matching a pixel to a detected fill color
 
 
@@ -76,7 +83,8 @@ def detect_fill_colors(img_bgr):
         if frac < FILL_MIN_FRACTION:
             continue
         gap = bg_lightness - color.mean()
-        if 0 < gap < FILL_MAX_GAP:
+        spread = int(color.max()) - int(color.min())
+        if 0 < gap < FILL_MAX_GAP and spread >= FILL_MIN_SPREAD:
             fills.append(tuple(int(c) for c in color))
     return tuple(int(c) for c in bg_color), fills
 
