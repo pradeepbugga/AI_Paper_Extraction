@@ -58,12 +58,26 @@ FILL_MIN_SPREAD = 15    # max(channel)-min(channel): a deliberate highlight has 
                         # Aug 22 follow-up): several exotic-abbreviation labels ([Sc], [Rf],
                         # [Ca]-style placeholders) have soft gray anti-aliasing that this gap
                         # check alone misclassified as fill, erasing part of the label itself.
-MATCH_TOLERANCE = 10    # per-channel distance for matching a pixel to a detected fill color
+MATCH_TOLERANCE = 20    # per-channel distance for matching a pixel to a detected fill color.
+                        # 10 was too tight: left a residual anti-aliased "ghost" of the fill at
+                        # its own edges (e.g. (187,235,235), distance 15 from a detected
+                        # (199,250,250) fill) that the flood of the interior didn't reach --
+                        # confirmed as the actual cause of 3 of the 4 unexplained regressions
+                        # (page17_fig1_seg0 et al.): not a case where removing the fill made
+                        # things worse, but a case where the fill was only partially removed.
+MINORITY_INK_MAX_RATIO = 0.2  # an ink cluster whose pixel count is under this fraction of the
+                              # dominant ink cluster's count is a minority highlight color (e.g.
+                              # one bond bolded red while the rest of the structure is black),
+                              # not this image's real overall ink color -- harmonize it to match
+                              # the majority ink instead of leaving it as an inconsistent outlier.
 
 
 def detect_fill_colors(img_bgr):
-    """Per-image, no cross-image calibration. Returns (background_color,
-    [fill_colors]) -- fill_colors is empty if this image has no fill."""
+    """Per-image, no cross-image calibration. Returns (fill_colors,
+    minority_ink_colors, majority_ink_color, bg_lightness) -- fill_colors
+    is empty if this image has no fill; minority_ink_colors is empty if
+    all of this image's ink is one consistent color; bg_lightness is None
+    if no clear dominant background was found."""
     arr = img_bgr.astype(int)
     total = arr.shape[0] * arr.shape[1]
     q = (arr // QUANTIZE) * QUANTIZE
@@ -73,11 +87,11 @@ def detect_fill_colors(img_bgr):
 
     bg_frac = counts[0] / total
     if bg_frac < BG_MIN_FRACTION:
-        return None, []  # no clear dominant background; don't guess
-    bg_color = colors[0]
-    bg_lightness = bg_color.mean()
+        return [], [], None, None  # no clear dominant background; don't guess
+    bg_lightness = float(colors[0].mean())
 
     fills = []
+    ink_clusters = []  # (color, count) for everything that isn't background or fill
     for color, count in zip(colors[1:], counts[1:]):
         frac = count / total
         if frac < FILL_MIN_FRACTION:
@@ -86,32 +100,89 @@ def detect_fill_colors(img_bgr):
         spread = int(color.max()) - int(color.min())
         if 0 < gap < FILL_MAX_GAP and spread >= FILL_MIN_SPREAD:
             fills.append(tuple(int(c) for c in color))
-    return tuple(int(c) for c in bg_color), fills
+        elif gap >= FILL_MAX_GAP:
+            ink_clusters.append((tuple(int(c) for c in color), count))
+
+    if not ink_clusters:
+        return fills, [], None, bg_lightness
+    ink_clusters.sort(key=lambda x: -x[1])
+    majority_ink_color, majority_count = ink_clusters[0]
+    minority_inks = [c for c, n in ink_clusters[1:] if n / majority_count < MINORITY_INK_MAX_RATIO]
+    return fills, minority_inks, majority_ink_color, bg_lightness
 
 
-def flatten_highlights(img_bgr, bg_color, fill_colors):
-    """Map pixels matching a detected fill color back to the background
-    color; leave everything else (real ink, any hue, anti-aliasing)
-    untouched."""
-    arr = img_bgr.astype(int)
+DILATE_KERNEL = np.ones((3, 3), np.uint8)
+DILATE_ITERATIONS = 2   # sweeps up the anti-aliased boundary ring around a fill region
+                        # that per-pixel color matching alone keeps missing regardless of
+                        # tolerance -- confirmed directly: even at MATCH_TOLERANCE=20 a faint
+                        # ghost of the fill remained visible right at the ring's double-bond
+                        # edges (a color like (187,235,235) shading into the black ink).
+                        #
+                        # DANGER, confirmed directly by rendering the node/edge overlay (Aug 22
+                        # follow-up): blind dilation can grow far enough to erase real, thin
+                        # bond-line ink when a fill sits flush against it with little clearance
+                        # (page61_fig2_seg0.png -- both entire ring skeletons vanished, and the
+                        # "fixed" RDKit-valid SMILES this had previously produced turned out to
+                        # be coincidental garbage, not a real structure -- a measurement error in
+                        # the validity check, not a real success). Every write to `out` below
+                        # MUST go through a protect mask that never overwrites a genuinely dark
+                        # (real-ink) pixel, however the candidate mask was grown.
+
+
+WHITE = (255, 255, 255)
+
+
+def _color_mask(arr, colors, tolerance):
     mask = np.zeros(arr.shape[:2], dtype=bool)
-    for color in fill_colors:
+    for color in colors:
         dist = np.abs(arr - np.array(color)).max(axis=2)
-        mask |= (dist <= MATCH_TOLERANCE)
-    if not mask.any():
-        return img_bgr, False
+        mask |= (dist <= tolerance)
+    return mask
+
+
+def flatten_highlights(img_bgr, fill_colors, minority_inks, majority_ink_color, bg_lightness):
+    """Map fill pixels (plus a small dilation to catch their anti-aliased
+    boundary) to pure white; harmonize any minority-colored highlight ink
+    (e.g. one bond bolded in a second color) to match the image's own
+    majority ink color. Leaves the majority ink itself -- any hue -- and
+    all background untouched. A dilated candidate mask can geometrically
+    overlap real ink; `protect` (same gap rule used to classify ink
+    clusters, applied per-pixel) guarantees no genuinely dark pixel is
+    ever overwritten, regardless of how the candidate mask was grown."""
+    arr = img_bgr.astype(int)
     out = img_bgr.copy()
-    out[mask] = bg_color
-    return out, True
+    modified = False
+
+    pixel_lightness = arr.mean(axis=2)
+    protect = (bg_lightness - pixel_lightness) >= FILL_MAX_GAP
+
+    if fill_colors:
+        fill_mask = _color_mask(arr, fill_colors, MATCH_TOLERANCE)
+        if fill_mask.any():
+            fill_mask = cv2.dilate(fill_mask.astype(np.uint8), DILATE_KERNEL,
+                                    iterations=DILATE_ITERATIONS).astype(bool)
+            fill_mask &= ~protect
+            out[fill_mask] = WHITE
+            modified = True
+
+    if minority_inks:
+        ink_mask = _color_mask(arr, minority_inks, MATCH_TOLERANCE)
+        if ink_mask.any():
+            ink_mask = cv2.dilate(ink_mask.astype(np.uint8), DILATE_KERNEL,
+                                   iterations=DILATE_ITERATIONS).astype(bool)
+            out[ink_mask] = majority_ink_color
+            modified = True
+
+    return out, modified
 
 
 def preprocess(img_bgr):
     """Gated, per-image, no calibration required. Returns
     (processed_img_bgr, was_modified)."""
-    bg_color, fill_colors = detect_fill_colors(img_bgr)
-    if not fill_colors:
+    fill_colors, minority_inks, majority_ink_color, bg_lightness = detect_fill_colors(img_bgr)
+    if not fill_colors and not minority_inks:
         return img_bgr, False
-    return flatten_highlights(img_bgr, bg_color, fill_colors)
+    return flatten_highlights(img_bgr, fill_colors, minority_inks, majority_ink_color, bg_lightness)
 
 
 if __name__ == "__main__":
