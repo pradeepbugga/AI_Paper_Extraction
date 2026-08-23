@@ -66,20 +66,21 @@ def _clean_ocr_text(text):
     return re.sub(r'[^A-Za-z0-9]', '', text)
 
 
-def predict_with_corrections(model, ocr_reader, image_path):
-    """Run MolScribe on image_path, then apply the label-misread and
-    boron-valence corrections described above.
+def apply_corrections(model, ocr_reader, img_bgr, out):
+    """Apply the label-misread and formal-charge corrections to an
+    already-computed prediction `out` (from
+    model.predict_image_file(..., return_atoms_bonds=True)) for the given
+    img_bgr array. Split out from predict_with_corrections so callers that
+    already have a prediction in hand (e.g. molscribe_ensemble_predict.py,
+    which generates several candidate preprocessings and only wants to
+    correct the winning one) don't need to re-run the model or re-read the
+    image from disk.
 
-    Returns a dict: {"smiles": corrected SMILES, "raw_smiles": MolScribe's
-    original output, "label_corrections": [(atom_idx, old, new, ocr_conf)],
-    "charge_fixes": [(atom_idx, total_bond_order)]}.
+    Returns the same result dict as predict_with_corrections.
     """
-    image_path = str(image_path)
-    img_bgr = cv2.imread(image_path)
     img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
     H, W = img_bgr.shape[:2]
 
-    out = model.predict_image_file(image_path, return_atoms_bonds=True, return_confidence=True)
     atoms = out["atoms"]
     n = len(atoms)
     coords = [[a["x"], a["y"]] for a in atoms]
@@ -131,6 +132,15 @@ def predict_with_corrections(model, ocr_reader, image_path):
         "label_corrections": label_corrections,
         "charge_fixes": charge_fixes,
     }
+
+
+def predict_with_corrections(model, ocr_reader, image_path):
+    """File-path convenience wrapper around apply_corrections() for
+    standalone/CLI use."""
+    image_path = str(image_path)
+    img_bgr = cv2.imread(image_path)
+    out = model.predict_image_file(image_path, return_atoms_bonds=True, return_confidence=True)
+    return apply_corrections(model, ocr_reader, img_bgr, out)
 
 
 if __name__ == "__main__":
