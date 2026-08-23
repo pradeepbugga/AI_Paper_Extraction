@@ -101,6 +101,14 @@ def apply_corrections(model, ocr_reader, img_bgr, out):
         if not (sym.startswith("[") and sym.endswith("]")):
             continue
         label = sym[1:-1]
+        if "@" in label:
+            # Stereocenter notation (e.g. [C@H], [C@@H]), not an
+            # abbreviation slot -- never a valid OCR-override target even
+            # when OCR correctly reads a real, unrelated label nearby
+            # (confirmed cause of a real regression: a chiral ring atom
+            # got overwritten with a neighboring branch's genuine "iBu"
+            # label, duplicating that branch).
+            continue
         x_px, y_px = coords[idx][0] * W * OCR_UPSCALE, coords[idx][1] * H * OCR_UPSCALE
         x0, y0 = max(0, int(x_px - half)), max(0, int(y_px - half))
         x1, y1 = min(big.shape[1], int(x_px + half)), min(big.shape[0], int(y_px + half))

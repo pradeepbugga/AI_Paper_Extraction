@@ -326,7 +326,7 @@ def extend_bbox(gray, bbox, siblings=()):
     return [new_x0, new_y0, new_x1, new_y1], truncated_sides
 
 
-def resolve_overlaps(tight_bboxes, final_bboxes):
+def resolve_overlaps(last_resort_bboxes, floor_bboxes, final_bboxes):
     """Guarantees zero NEW overlaps among a figure's segments. The per-side
     half-gap clamp in _side_cap prevents two segments from colliding when
     they extend toward each other along the SAME axis, but two segments can
@@ -334,27 +334,70 @@ def resolve_overlaps(tight_bboxes, final_bboxes):
     growing sideways, another below-left of it growing downward) -- neither
     one's independent per-side computation can see the other's own
     extension while computing its own. Confirmed on a real 59-segment dense
-    figure. Fallback: if extension introduces an overlap that wasn't already
-    present in the raw tight detections, revert both segments in that pair
-    back to their tight bboxes entirely -- loses recovery only for that
-    specific rare conflicting pair, never corrupts data. Returns
-    (resolved_bboxes, reverted_flags)."""
+    figure.
+
+    On conflict, first try shrinking each box on the conflicting axis back
+    toward its own `floor_bboxes` entry -- never past it -- splitting the
+    overlap region at its midpoint so both sides give up equal space. This
+    matters because `floor_bboxes` is real detected content (for the
+    two-pass path, the wide-crop mask recovery that motivated extending the
+    box in the first place; for the single-pass path, the same as
+    `last_resort_bboxes`, since there's no separate recovery stage to
+    protect). Shrinking blindly to `last_resort_bboxes` instead -- as this
+    function used to unconditionally do -- throws away that entire real
+    recovery even when trimming a few pixels of padding would have cleared
+    the conflict, silently truncating genuine structure content (confirmed
+    on a real densely-packed ligand list, `miyaura_iron_2025/page3_fig4`,
+    Aug 2026 session: recovered labels like "Cy2P" were being dropped this
+    way). Only if shrinking both boxes all the way to their floors still
+    can't clear the conflict (the real detected content itself overlaps)
+    does this fall back to `last_resort_bboxes` entirely, same as before.
+    Returns (resolved_bboxes, reverted_flags) -- `reverted` now means
+    "shrunk in some way", not necessarily "fully reverted to last-resort".
+    """
     def overlaps(a, b):
         ax0, ay0, ax1, ay1 = a
         bx0, by0, bx1, by1 = b
         return not (ax1 <= bx0 or bx1 <= ax0 or ay1 <= by0 or by1 <= ay0)
+
+    def shrink_to_clear(a, b, floor_a, floor_b):
+        """Try to separate two overlapping boxes by shrinking each toward
+        its own floor, on whichever axis needs the least shrinkage. Returns
+        (new_a, new_b, cleared)."""
+        for x_first in (True, False):
+            sa, sb = list(a), list(b)
+            axes = [(0, 2), (1, 3)] if x_first else [(1, 3), (0, 2)]
+            for lo, hi in axes:
+                if not (sa[lo] < sb[hi] and sb[lo] < sa[hi]):
+                    continue  # already clear on this axis
+                ov_lo, ov_hi = max(sa[lo], sb[lo]), min(sa[hi], sb[hi])
+                mid = (ov_lo + ov_hi) / 2
+                if sa[lo] < sb[lo]:  # a is the "left/top" box on this axis
+                    sa[hi] = max(floor_a[hi], min(sa[hi], mid))
+                    sb[lo] = min(floor_b[lo], max(sb[lo], mid))
+                else:
+                    sb[hi] = max(floor_b[hi], min(sb[hi], mid))
+                    sa[lo] = min(floor_a[lo], max(sa[lo], mid))
+            if not overlaps(sa, sb):
+                return sa, sb, True
+        return a, b, False
 
     boxes = [list(b) for b in final_bboxes]
     reverted = [False] * len(boxes)
     n = len(boxes)
     for i in range(n):
         for j in range(i + 1, n):
-            if overlaps(tight_bboxes[i], tight_bboxes[j]):
+            if overlaps(last_resort_bboxes[i], last_resort_bboxes[j]):
                 continue  # pre-existing in the raw detections, not ours to fix
             if not overlaps(boxes[i], boxes[j]):
                 continue
-            boxes[i] = list(tight_bboxes[i])
-            boxes[j] = list(tight_bboxes[j])
+            new_i, new_j, cleared = shrink_to_clear(
+                boxes[i], boxes[j], floor_bboxes[i], floor_bboxes[j])
+            if cleared:
+                boxes[i], boxes[j] = new_i, new_j
+            else:
+                boxes[i] = list(last_resort_bboxes[i])
+                boxes[j] = list(last_resort_bboxes[j])
             reverted[i] = reverted[j] = True
     return boxes, reverted
 
@@ -470,6 +513,7 @@ def two_pass_segment(paper_dir, image_path, meta_entry):
 
     wide_h, wide_w = wide_img.shape[:2]
     seg_idxs, padded_bboxes, anchors_in_wide, truncated_sides_list = [], [], [], []
+    recovered_bboxes = []
     for seg_idx, anchor in anchors:
         anchor_in_wide = [anchor[0] + dx, anchor[1] + dy, anchor[2] + dx, anchor[3] + dy]
         matched = [b for _, b in wide_boxes if _boxes_overlap(b, anchor_in_wide)]
@@ -494,12 +538,15 @@ def two_pass_segment(paper_dir, image_path, meta_entry):
         seg_idxs.append(seg_idx)
         padded_bboxes.append([int(round(x0)), int(round(y0)), int(round(x1)), int(round(y1))])
         anchors_in_wide.append([int(round(v)) for v in anchor_in_wide])
+        recovered_bboxes.append([int(round(v)) for v in recovered])
         truncated_sides_list.append(truncated_sides)
 
     # Safety net against the small-margin padding introducing a new overlap
     # between two segments that weren't already touching at their own
-    # anchors -- same backstop used by the single-pass path.
-    final_bboxes, reverted = resolve_overlaps(anchors_in_wide, padded_bboxes)
+    # anchors -- same backstop used by the single-pass path. Shrinks toward
+    # the real wide-crop-recovered content (recovered_bboxes) before ever
+    # falling all the way back to the raw tight-crop anchor.
+    final_bboxes, reverted = resolve_overlaps(anchors_in_wide, recovered_bboxes, padded_bboxes)
     for i, was_reverted in enumerate(reverted):
         if was_reverted:
             truncated_sides_list[i] = list(set(truncated_sides_list[i]) | {"overlap_reverted"})
@@ -545,7 +592,7 @@ def _single_pass_segment(full_path):
         extended_bboxes.append(final_bbox)
         truncated_sides_list.append(truncated_sides)
 
-    resolved_bboxes, reverted = resolve_overlaps(tight_bboxes, extended_bboxes)
+    resolved_bboxes, reverted = resolve_overlaps(tight_bboxes, tight_bboxes, extended_bboxes)
     for i, was_reverted in enumerate(reverted):
         if was_reverted:
             # Extension was reverted by resolve_overlaps -- back to the
