@@ -45,6 +45,24 @@ inspection before any dictionary lookup happens):
   alias couldn't. **Verify this actually works via `predict_best` with a
   real `ocr_reader`, not just the raw dictionary-lookup path, before
   assuming it's fixed.**
+- `F` (plain fluorine) and `PPh2` (diphenylphosphino, forward order --
+  already resolved via MolScribe's generic condensed-formula fallback
+  parser when the raw decoder spells it correctly, but wasn't a literal
+  `ABBREVIATIONS` key, so `molscribe_ocr_correction.py`'s OCR-override
+  pass -- which only overrides into a literal dictionary key -- couldn't
+  use either as a correction target): added as literal entries
+  specifically to let the OCR-override pass rescue cases where the raw
+  decoder token is garbled/wrong but an independent OCR read of the same
+  crop gets the real label right. See
+  [[project_ocr_correction_rerun_2026_08_23]] for whether this actually
+  works on the 3 confirmed hard misses it was tried against.
+- `iPrO`/`OiPr` (isopropoxy, both orderings -- neither existed) and
+  `BPin` (capital-P casing variant of the already-fixed `Bpin` -- the
+  decoder's own capitalization choice varies per image, and the
+  dictionary lookup is case-sensitive): found during the same manual
+  triage as `NMe2` above, on real corpus images
+  (`nickelocene_2025/page15_fig0_seg0.png` for `iPrO`,
+  `suzuki_iron_2024/page40_fig1_seg10.png` for `BPin`).
 - `NMe2` (N,N-dimethylamino / dimethylamide nitrogen -- extremely common,
   e.g. terminal `-C(=O)NMe2` dimethylamide caps): found investigating a
   case the user flagged as a suspected "genuine visual-recognition miss"
@@ -121,8 +139,8 @@ _NEW_SUBSTITUTIONS = [
                  "[c]1c(C(C)C)ccc(C(C)C)c1", 0.5),  # 2,6-diisopropylphenyl
     Substitution(['Bpin'], '[BH0;D2]1OC([CH3])([CH3])C([CH3])([CH3])O1',
                  "[B]1OC(C)(C)C(C)(C)O1", 0.5),  # pinacol boronate ester
-    Substitution(['NHPl'], '[NH0;D3]1C(=O)c2[cH][cH][cH][cH]c2C1=O',
-                 "[N]1C(=O)c2ccccc2C1=O", 0.5),  # N-phthalimide
+    Substitution(['NHPl', 'Nphth'], '[NH0;D3]1C(=O)c2[cH][cH][cH][cH]c2C1=O',
+                 "[N]1C(=O)c2ccccc2C1=O", 0.5),  # N-phthalimide, both spellings
     Substitution(['SePh'], '[SeH0;D2]c1[cH][cH][cH][cH][cH]1',
                  "[Se]c1ccccc1", 0.5),  # phenylselanyl
     Substitution(['OMOM'], '[OH0;D2]C[OH0;D2]C',
@@ -139,6 +157,12 @@ _NEW_SUBSTITUTIONS = [
                  "[P](C1CCCCC1)C1CCCCC1", 0.5),  # dicyclohexylphosphino, reversed order
     Substitution(['Me2P'], '[PH0;D3](C)C',
                  "[P](C)C", 0.5),  # dimethylphosphino, reversed order
+    Substitution(['iPrO', 'OiPr'], '[OH0;D2]C([CH3])[CH3]',
+                 "[O]C(C)C", 0.5),  # isopropoxy, both orderings
+    Substitution(['F'], '[F;D1]',
+                 "F", 0.9),  # plain fluorine -- OCR-override target only
+    Substitution(['PPh2'], '[PH0;D3](c1[cH][cH][cH][cH][cH]1)c1[cH][cH][cH][cH][cH]1',
+                 "[P](c1ccccc1)c1ccccc1", 0.5),  # diphenylphosphino, forward order, literal key
 ]
 
 
@@ -154,3 +178,5 @@ def apply():
         ABBREVIATIONS['NBoc'].smiles = '[NH0]C(=O)OC(C)(C)C'
         if 'BocN' not in ABBREVIATIONS:
             ABBREVIATIONS['BocN'] = ABBREVIATIONS['NBoc']
+    if 'Bpin' in ABBREVIATIONS and 'BPin' not in ABBREVIATIONS:
+        ABBREVIATIONS['BPin'] = ABBREVIATIONS['Bpin']  # capital-P casing variant

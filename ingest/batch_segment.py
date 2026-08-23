@@ -371,7 +371,7 @@ def resolve_overlaps(last_resort_bboxes, floor_bboxes, final_bboxes):
                 if not (sa[lo] < sb[hi] and sb[lo] < sa[hi]):
                     continue  # already clear on this axis
                 ov_lo, ov_hi = max(sa[lo], sb[lo]), min(sa[hi], sb[hi])
-                mid = (ov_lo + ov_hi) / 2
+                mid = (ov_lo + ov_hi) // 2  # keep box coords integer pixels
                 if sa[lo] < sb[lo]:  # a is the "left/top" box on this axis
                     sa[hi] = max(floor_a[hi], min(sa[hi], mid))
                     sb[lo] = min(floor_b[lo], max(sb[lo], mid))
