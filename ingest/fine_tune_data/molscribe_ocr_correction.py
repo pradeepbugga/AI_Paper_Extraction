@@ -17,15 +17,24 @@ project's full real-paper corpus (2,145 segments, Aug 2026 session):
    predicted bracket-atom's coordinate, and override the label when OCR
    strongly disagrees with a *different* known dictionary abbreviation.
 
-2. Under-specified boron valence. Once (1) is fixed, tetracoordinate
-   "ate"-complex boronates (aryl + alkyl + 2 ring-O on one boron, as in
-   Ar-B(pin)(tBu) reagents throughout the same paper) still fail RDKit
-   sanitization, because MolScribe's graph decoder assigns no formal
-   charge to the now-4-bonded boron. Fix: any plain (non-abbreviated) `B`
-   atom whose total bond order exceeds neutral boron valence (3) gets
-   bumped to `[B-]`, matching standard borate-anion valence -- narrowly
-   scoped to boron since that's the only case confirmed in this corpus;
-   not a general over-valence-fixer for other elements.
+2. Under-specified formal charges. Once (1) is fixed (and separately, once
+   molscribe_constants_patch.py's Dipp/Bpin dictionary entries expand
+   correctly), some atoms are still left over-valent because MolScribe's
+   graph decoder assigns no formal charge to them:
+   - Boron: tetracoordinate "ate"-complex boronates (aryl + alkyl + 2
+     ring-O on one boron, as in Ar-B(pin)(tBu) reagents, or a
+     boron-boron-bonded diboron reagent once `[Bpin]` expands) fail RDKit
+     sanitization otherwise.
+   - Nitrogen: aromatic imidazolium/amidinium ring nitrogens in NHC-ligand
+     salts (found via the same full-corpus scan that turned up the
+     Dipp/Bpin dictionary gap) end up with 3 substituents plus ring double
+     bonds -- over-valent for neutral trivalent nitrogen.
+   Fix: any plain (non-abbreviated) `B` or `N` atom whose total bond order
+   exceeds that element's neutral valence (3 for both) gets a formal
+   charge bumped on -- `[B-]` (standard borate-anion valence) or `[N+]`
+   (standard ammonium/iminium-cation valence) respectively. Narrowly
+   scoped to these two elements since they're the only cases confirmed in
+   this corpus; not a general over-valence-fixer for every element.
 
 Both passes are deterministic, run after MolScribe's own decode step, and
 touch only atoms/molecules that would otherwise be wrong or unparseable --
@@ -40,7 +49,8 @@ from molscribe.chemistry import convert_graph_to_smiles
 
 BOND_TYPES = ["", "single", "double", "triple", "aromatic", "solid wedge", "dashed wedge"]
 BOND_ORDER = {0: 0.0, 1: 1.0, 2: 2.0, 3: 3.0, 4: 1.5, 5: 1.0, 6: 1.0}
-BORON_NEUTRAL_VALENCE = 3.0
+NEUTRAL_VALENCE = {"B": 3.0, "N": 3.0}
+CHARGED_SYMBOL = {"B": "[B-]", "N": "[N+]"}
 
 # Fraction of max(image width, image height) to crop on each side of a
 # predicted atom's coordinate before handing it to OCR. Wide enough to
@@ -103,15 +113,15 @@ def predict_with_corrections(model, ocr_reader, image_path):
                 symbols[idx] = f"[{ct}]"
                 break
 
-    # --- pass 2: boron formal-charge fix ---
+    # --- pass 2: formal-charge fix (boron, nitrogen) ---
     charge_fixes = []
     for idx, sym in enumerate(symbols):
-        if sym != "B":
+        if sym not in NEUTRAL_VALENCE:
             continue
         total = sum(BOND_ORDER[e] for e in edges[idx])
-        if total > BORON_NEUTRAL_VALENCE:
-            symbols[idx] = "[B-]"
-            charge_fixes.append((idx, total))
+        if total > NEUTRAL_VALENCE[sym]:
+            symbols[idx] = CHARGED_SYMBOL[sym]
+            charge_fixes.append((idx, sym, total))
 
     smiles_list, molblock_list, _ = convert_graph_to_smiles([coords], [symbols], [edges], images=[img_rgb])
 
