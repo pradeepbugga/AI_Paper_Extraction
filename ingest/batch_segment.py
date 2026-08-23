@@ -105,6 +105,7 @@ recall backstop for whatever the extension still couldn't fix.
 
 import json
 import time
+from collections import Counter
 from pathlib import Path
 
 import cv2
@@ -644,6 +645,18 @@ def run_paper(paper_dir):
         all_tags = json.load(f)
 
     targets = [path for path, tags in all_tags.items() if has_structures(tags)]
+
+    # Main-text and SI figures can share the same page+figure number (each
+    # numbered independently), which previously collided into identical
+    # segment filenames since the stem drops the parent folder -- confirmed
+    # real and silent (no error, no manifest warning) across 4 papers, 19
+    # colliding groups, one whole 9-segment SI figure entirely clobbered by
+    # its main-text namesake in suzuki_iron_2024/images_SI/page10_fig0.png.
+    # Only prefix the folder name where a stem actually collides, so the
+    # vast majority of filenames stay unchanged.
+    stem_counts = Counter(Path(p).stem for p in targets)
+    ambiguous_stems = {s for s, c in stem_counts.items() if c > 1}
+
     segments_dir = paper_dir / "segments"
     segments_dir.mkdir(exist_ok=True)
     wide_meta = _load_wide_metadata(paper_dir)
@@ -668,7 +681,11 @@ def run_paper(paper_dir):
             ground_bboxes = bboxes
 
         elapsed = time.time() - start
-        stem = Path(image_path).stem.replace("/", "_")
+        raw_stem = Path(image_path).stem
+        if raw_stem in ambiguous_stems:
+            stem = f"{Path(image_path).parent.name}_{raw_stem}"
+        else:
+            stem = raw_stem
         seg_entries = _save_segments(
             segments_dir, stem, seg_idxs, bboxes, truncated_sides_list, src_img, ground_bboxes=ground_bboxes,
         )
