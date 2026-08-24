@@ -180,3 +180,8 @@ def apply():
             ABBREVIATIONS['BocN'] = ABBREVIATIONS['NBoc']
     if 'Bpin' in ABBREVIATIONS and 'BPin' not in ABBREVIATIONS:
         ABBREVIATIONS['BPin'] = ABBREVIATIONS['Bpin']  # capital-P casing variant
+    if 'NHAc' in ABBREVIATIONS and 'AcH' not in ABBREVIATIONS:
+        # decoder emits the fused "AcHN" label (Ac drawn before N) as the
+        # truncated bracket token [AcH], dropping the N entirely rather
+        # than just reordering it -- alias to the same fragment as NHAc.
+        ABBREVIATIONS['AcH'] = ABBREVIATIONS['NHAc']
