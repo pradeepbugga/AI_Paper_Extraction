@@ -5294,25 +5294,22 @@
   ],
   "images_SI/page80_raster0.png": [
     {
-      "smiles": "O=S(=O)(Oc1ccc2ccccc2c1Br)C(F)(F)F.OS(=O)(=O)C(F)(F)F.OS(=O)(=O)C(F)(F)F",
-      "mean_confidence": 0.8418915640647001,
-      "need_human_review": true,
+      "smiles": "O=S(=O)(Oc1ccc2ccccc2c1Br)C(F)(F)F",
+      "mean_confidence": 0.8987069674378045,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": true,
-      "method": "global_bw_t200",
-      "segment_path": "segments/page80_raster0_seg0.png",
+      "method": "grayscale-direct",
+      "segment_path": "segments/page80_raster0_seg0_split0.png",
       "bbox": [
-        93,
-        43,
-        407,
-        246
+        141,
+        82,
+        352,
+        221
       ],
-      "truncated_sides": [
-        "left",
-        "right"
-      ]
+      "truncated_sides": []
     }
   ],
   "images_SI/page80_raster1.png": [

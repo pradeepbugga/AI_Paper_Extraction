@@ -499,19 +499,37 @@
       "truncated_sides": []
     },
     {
-      "smiles": "COC(=O)c1ccc(-c2ccc(OC)cc2)cc1.COc1ccc(-c2ccc(F)cc2)cc1",
-      "mean_confidence": 0.905340675562957,
-      "need_human_review": true,
+      "smiles": "COc1ccc(-c2ccc(F)cc2)cc1",
+      "mean_confidence": 0.9161240501207435,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": true,
       "method": "global_bw_t180",
-      "segment_path": "segments/images_page4_fig0_seg11.png",
+      "segment_path": "segments/images_page4_fig0_seg11_split0.png",
       "bbox": [
         635,
+        274,
+        923,
+        356
+      ],
+      "truncated_sides": []
+    },
+    {
+      "smiles": "COc1ccc(-c2ccc(C(=O)N(C)C)cc2)cc1",
+      "mean_confidence": 0.9068332461235422,
+      "need_human_review": false,
+      "detected_missing_abbreviations": [],
+      "has_generic_substituent": false,
+      "too_many_fragments": false,
+      "rdkit_valid": true,
+      "method": "global_bw_t180",
+      "segment_path": "segments/images_page4_fig0_seg11_remainder0_split0.png",
+      "bbox": [
+        895,
         270,
-        1226,
+        1225,
         359
       ],
       "truncated_sides": []
@@ -611,19 +629,37 @@
       ]
     },
     {
-      "smiles": "COC(=O)c1ccc(-c2ccc(OC)cc2)cc1.COc1ccc(-c2ccc(F)cc2)cc1",
-      "mean_confidence": 0.905340675562957,
-      "need_human_review": true,
+      "smiles": "COc1ccc(-c2ccc(F)cc2)cc1",
+      "mean_confidence": 0.9161240501207435,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": true,
       "method": "global_bw_t180",
-      "segment_path": "segments/images_page4_fig0_seg17.png",
+      "segment_path": "segments/images_page4_fig0_seg17_split0.png",
       "bbox": [
-        635,
+        636,
+        273,
+        922,
+        351
+      ],
+      "truncated_sides": []
+    },
+    {
+      "smiles": "COc1ccc(-c2ccc(C(=O)N(C)C)cc2)cc1",
+      "mean_confidence": 0.9068332461235422,
+      "need_human_review": false,
+      "detected_missing_abbreviations": [],
+      "has_generic_substituent": false,
+      "too_many_fragments": false,
+      "rdkit_valid": true,
+      "method": "global_bw_t180",
+      "segment_path": "segments/images_page4_fig0_seg17_remainder0_split0.png",
+      "bbox": [
+        899,
         270,
-        1226,
+        1225,
         359
       ],
       "truncated_sides": []
@@ -5544,7 +5580,7 @@
       "too_many_fragments": true,
       "rdkit_valid": true,
       "method": "grayscale-direct",
-      "segment_path": "segments/page31_fig0_seg0.png",
+      "segment_path": "segments/page31_fig0_seg0_split0.png",
       "bbox": [
         5,
         6,

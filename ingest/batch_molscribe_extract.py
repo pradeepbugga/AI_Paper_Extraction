@@ -62,8 +62,20 @@ def run_paper(paper_dir, model, ocr_reader):
     with open(manifest_path) as f:
         manifest = json.load(f)
 
+    results_path = paper_dir / "decimer_results.json"
+    existing_results = json.load(open(results_path)) if results_path.exists() else {}
+    # segment_path -> its already-computed result, regardless of which
+    # figure it's currently filed under -- a re-split segment can end up
+    # under a different image_path than before, but its own crop content
+    # (and therefore its OCSR result) doesn't change just because the
+    # manifest entry that points to it moved.
+    known_by_segment = {
+        e["segment_path"]: e for entries in existing_results.values() for e in entries
+    }
+
     targets = [path for path, tags in all_tags.items() if has_structures(tags)]
     results = {}
+    skipped = 0
     pbar = tqdm(targets, desc=paper_dir.name, unit="fig", mininterval=1.0)
     for image_path in pbar:
         pbar.set_postfix_str(image_path[-40:])
@@ -76,6 +88,10 @@ def run_paper(paper_dir, model, ocr_reader):
             segment_path, bbox = segment["path"], segment.get("bbox")
             full_path = paper_dir / segment_path
             if not full_path.exists():
+                continue
+            if segment_path in known_by_segment:
+                entries.append(known_by_segment[segment_path])
+                skipped += 1
                 continue
             start = time.time()
             result = extract_structure(str(full_path), model, ocr_reader)
@@ -94,6 +110,8 @@ def run_paper(paper_dir, model, ocr_reader):
 
         if entries:
             results[image_path] = entries
+    if skipped:
+        print(f"  ({paper_dir.name}: reused {skipped} already-computed results, unchanged)")
     return results
 
 
