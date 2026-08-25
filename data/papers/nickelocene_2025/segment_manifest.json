@@ -171,10 +171,20 @@
       "truncated_sides": []
     },
     {
-      "path": "segments/page2_fig0_seg17.png",
+      "path": "segments/page2_fig0_seg17_split0.png",
       "bbox": [
         419,
-        107,
+        120,
+        553,
+        254
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page2_fig0_seg17_remainder0_split0.png",
+      "bbox": [
+        509,
+        109,
         717,
         258
       ],
@@ -928,12 +938,22 @@
   ],
   "images_SI/page10_fig1.png": [
     {
-      "path": "segments/page10_fig1_seg0.png",
+      "path": "segments/page10_fig1_seg0_split0.png",
       "bbox": [
         4,
         5,
-        181,
-        173
+        214,
+        153
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page10_fig1_seg0_split0.png",
+      "bbox": [
+        4,
+        5,
+        234,
+        157
       ],
       "truncated_sides": []
     }
@@ -1303,17 +1323,24 @@
   ],
   "images_SI/page26_rasterstrip0.png": [
     {
-      "path": "segments/page26_rasterstrip0_seg0.png",
+      "path": "segments/page26_rasterstrip0_seg0_split0.png",
       "bbox": [
         39,
-        170,
-        414,
-        394
+        224,
+        375,
+        377
       ],
-      "truncated_sides": [
-        "right",
-        "top"
-      ]
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page26_rasterstrip0_seg0_split0.png",
+      "bbox": [
+        71,
+        231,
+        368,
+        375
+      ],
+      "truncated_sides": []
     },
     {
       "path": "segments/page26_rasterstrip0_seg1.png",
@@ -1331,11 +1358,11 @@
   ],
   "images_SI/page26_raster4.png": [
     {
-      "path": "segments/page26_raster4_seg0.png",
+      "path": "segments/page26_raster4_seg0_split0.png",
       "bbox": [
         5,
         6,
-        155,
+        143,
         255
       ],
       "truncated_sides": []
@@ -1657,7 +1684,7 @@
   ],
   "images_SI/page52_raster3.png": [
     {
-      "path": "segments/page52_raster3_seg0.png",
+      "path": "segments/page52_raster3_seg0_split0.png",
       "bbox": [
         1,
         1,
@@ -2175,7 +2202,7 @@
   ],
   "images_SI/page78_raster7.png": [
     {
-      "path": "segments/page78_raster7_seg0.png",
+      "path": "segments/page78_raster7_seg0_split0.png",
       "bbox": [
         6,
         2,

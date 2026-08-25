@@ -645,16 +645,14 @@
       ]
     },
     {
-      "path": "segments/images_page5_fig0_seg36.png",
+      "path": "segments/images_page5_fig0_seg36_split0.png",
       "bbox": [
         1043,
-        113,
+        130,
         1230,
         234
       ],
-      "truncated_sides": [
-        "overlap_reverted"
-      ]
+      "truncated_sides": []
     },
     {
       "path": "segments/images_page5_fig0_seg37.png",
@@ -1143,16 +1141,24 @@
       ]
     },
     {
-      "path": "segments/page8_fig0_seg23.png",
+      "path": "segments/page8_fig0_seg23_split0.png",
       "bbox": [
         1150,
         248,
         1402,
+        410
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page8_fig0_seg23_remainder0_split0.png",
+      "bbox": [
+        1169,
+        392,
+        1394,
         496
       ],
-      "truncated_sides": [
-        "overlap_reverted"
-      ]
+      "truncated_sides": []
     },
     {
       "path": "segments/page8_fig0_seg24.png",
@@ -1209,7 +1215,37 @@
       ]
     },
     {
-      "path": "segments/page8_fig0_seg29.png",
+      "path": "segments/page8_fig0_seg29_split0.png",
+      "bbox": [
+        247,
+        557,
+        489,
+        664
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page8_fig0_seg29_remainder0_split0.png",
+      "bbox": [
+        419,
+        552,
+        713,
+        664
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page8_fig0_seg29_remainder0_remainder0_split0.png",
+      "bbox": [
+        673,
+        552,
+        895,
+        664
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page8_fig0_seg29_remainder0_remainder0_remainder0.png",
       "bbox": [
         247,
         552,
@@ -3285,16 +3321,24 @@
   ],
   "images_SI/page71_raster0.png": [
     {
-      "path": "segments/page71_raster0_seg0.png",
+      "path": "segments/page71_raster0_seg0_split0.png",
       "bbox": [
         117,
-        15,
-        544,
+        93,
+        409,
         406
       ],
-      "truncated_sides": [
-        "top"
-      ]
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page71_raster0_seg0_split0.png",
+      "bbox": [
+        119,
+        84,
+        399,
+        406
+      ],
+      "truncated_sides": []
     }
   ],
   "images_SI/page72_raster0.png": [

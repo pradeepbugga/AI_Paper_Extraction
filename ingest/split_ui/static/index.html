@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fragment Split Tool</title>
+<style>
+  :root {
+    --bg: #EDEFEA;
+    --surface: #FAFBF8;
+    --surface-raised: #FFFFFF;
+    --ink: #1E2A26;
+    --ink-soft: #445048;
+    --muted: #7C8983;
+    --border: #D9DDD4;
+    --accent: #B0432A;
+    --teal: #2F5D62;
+    --teal-soft: #DCE7E6;
+    --code-bg: #F1F0E9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 { font-size: 1.05rem; margin: 0; font-weight: 600; }
+  .progress { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; margin-left: auto; }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+    padding: 20px 24px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .canvas-panel {
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .canvas-wrap {
+    background:
+      linear-gradient(45deg, var(--code-bg) 25%, transparent 25%) 0 0/16px 16px,
+      linear-gradient(-45deg, var(--code-bg) 25%, transparent 25%) 0 0/16px 16px,
+      linear-gradient(45deg, transparent 75%, var(--code-bg) 75%) 0 0/16px 16px,
+      linear-gradient(-45deg, transparent 75%, var(--code-bg) 75%) 0 0/16px 16px,
+      var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: auto;
+    max-height: 70vh;
+  }
+  canvas { display: block; cursor: crosshair; }
+  .hint { font-size: 0.8rem; color: var(--muted); text-align: center; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  button {
+    font-family: inherit;
+    font-size: 0.85rem;
+    padding: 8px 14px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--surface-raised);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--teal); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  button.primary { background: var(--teal); color: white; border-color: var(--teal); }
+  button.primary:hover { background: #264c50; }
+  button.ghost { background: transparent; }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .panel {
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .panel h2 {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--teal);
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  .meta-row { display: flex; justify-content: space-between; font-size: 0.82rem; padding: 3px 0; }
+  .meta-row span:first-child { color: var(--muted); }
+  code.smiles {
+    display: block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    background: var(--code-bg);
+    border-radius: 6px;
+    padding: 8px 10px;
+    word-break: break-all;
+    max-height: 8em;
+    overflow-y: auto;
+  }
+  .shape-count {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .mode-toggle {
+    display: flex;
+    gap: 4px;
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 3px;
+  }
+  .mode-toggle button {
+    border: none;
+    background: transparent;
+    flex: 1;
+  }
+  .mode-toggle button.active {
+    background: var(--surface-raised);
+    box-shadow: 0 1px 2px rgba(30,42,38,0.12);
+    font-weight: 600;
+  }
+  .brush-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .brush-row input[type="range"] { flex: 1; }
+  .brush-row .val { font-family: "IBM Plex Mono", monospace; color: var(--ink); width: 2.2em; text-align: right; }
+  .zoom-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .zoom-row button {
+    padding: 4px 10px;
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+  .zoom-row .zoomVal {
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--ink);
+    width: 3.6em;
+    text-align: center;
+  }
+  .done-banner {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Fragment Split Tool</h1>
+  <div class="progress" id="progress">loading…</div>
+</header>
+
+<main id="app">
+  <p style="grid-column: 1 / -1; color: var(--muted);">Loading queue…</p>
+</main>
+
+<script>
+const state = {
+  items: [], idx: 0, total: 0,
+  shapes: [], drawing: null, img: null,
+  mode: "lasso",           // "lasso" | "erase"
+  brushRadius: 2,           // native image px
+  eraseStrokes: [],         // committed strokes: [{radius, points}]
+  eraseStroking: null,      // in-progress stroke while dragging
+  baseScale: 1,             // CSS px per canvas px at "Fit"
+  zoomMult: 1,              // user zoom on top of baseScale
+  cursorPos: null,          // last known mouse position, canvas-internal px
+};
+const ZOOM_MIN = 0.5, ZOOM_MAX = 12, ZOOM_STEP = 1.4;
+
+async function loadQueue() {
+  const res = await fetch("/api/queue");
+  const data = await res.json();
+  state.items = data.items;
+  state.total = data.total_remaining;
+  state.idx = 0;
+  render();
+}
+
+function currentItem() {
+  return state.items[state.idx];
+}
+
+function updateProgress() {
+  document.getElementById("progress").textContent =
+    state.items.length ? `${state.idx + 1} of ${state.items.length} remaining` : "";
+}
+
+function render() {
+  updateProgress();
+  const app = document.getElementById("app");
+  if (!state.items.length) {
+    app.innerHTML = `<div class="done-banner" style="grid-column:1/-1">Queue is empty — nothing left to review.</div>`;
+    return;
+  }
+  const item = currentItem();
+  state.shapes = [];
+  state.drawing = null;
+  state.eraseStrokes = [];
+  state.eraseStroking = null;
+  state.mode = "lasso";
+
+  app.innerHTML = `
+    <div class="canvas-panel">
+      <div class="mode-toggle" style="align-self: stretch;">
+        <button id="modeLasso" class="active">✏️ Lasso</button>
+        <button id="modeErase">🧽 Eraser</button>
+      </div>
+      <div id="brushControl" class="brush-row" style="display:none; align-self: stretch;">
+        <span>Brush size</span>
+        <input type="range" id="brushSize" min="1" max="10" step="0.5" value="${state.brushRadius}">
+        <span class="val" id="brushVal">${state.brushRadius}px</span>
+      </div>
+      <div class="zoom-row">
+        <button id="zoomOut" class="ghost" title="Zoom out">&minus;</button>
+        <span class="zoomVal" id="zoomVal">100%</span>
+        <button id="zoomIn" class="ghost" title="Zoom in">&plus;</button>
+        <button id="zoomReset" class="ghost" style="margin-left:auto;">Fit</button>
+      </div>
+      <div class="canvas-wrap"><canvas id="cv"></canvas></div>
+      <p class="hint" id="modeHint">Click-drag a freeform outline around each structure you want to keep as its own crop. You don't need to draw every structure now &mdash; "Extract & continue" saves what you've drawn and brings the rest of this crop right back for another pass.</p>
+      <div class="toolbar">
+        <button id="undo" class="ghost">Undo last shape</button>
+        <button id="undoErase" class="ghost">Undo last erase</button>
+        <button id="clear" class="ghost">Clear all</button>
+        <button id="skip">Skip</button>
+        <button id="saveContinue" disabled>Extract & continue (<span id="shapeCount">0</span>)</button>
+        <button id="saveFinish" class="primary" disabled>Extract & finish</button>
+      </div>
+    </div>
+    <div class="side">
+      <div class="panel">
+        <h2>Segment</h2>
+        <div class="meta-row"><span>Paper</span><span>${item.paper}</span></div>
+        <div class="meta-row"><span>File</span><span>${item.segment_path.split("/").pop()}</span></div>
+        ${item.is_remainder ? '' : `
+        <div class="meta-row"><span>Fragments</span><span>${item.n_fragments}</span></div>
+        <div class="meta-row"><span>Valid</span><span>${item.rdkit_valid ? "yes" : "no"}</span></div>
+        <div class="meta-row"><span>Confidence</span><span>${item.mean_confidence.toFixed(3)}</span></div>
+        `}
+      </div>
+      <div class="panel">
+        <h2>${item.is_remainder ? "Note" : "Decoded SMILES"}</h2>
+        <code class="smiles">${item.smiles.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</code>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("undo").onclick = undoShape;
+  document.getElementById("undoErase").onclick = undoErase;
+  document.getElementById("clear").onclick = clearShapes;
+  document.getElementById("skip").onclick = skipCurrent;
+  document.getElementById("saveContinue").onclick = () => saveSplit(true);
+  document.getElementById("saveFinish").onclick = () => saveSplit(false);
+  document.getElementById("modeLasso").onclick = () => setMode("lasso");
+  document.getElementById("modeErase").onclick = () => setMode("erase");
+  document.getElementById("brushSize").oninput = (e) => {
+    state.brushRadius = parseFloat(e.target.value);
+    document.getElementById("brushVal").textContent = state.brushRadius + "px";
+    const cv = document.getElementById("cv");
+    if (cv._redraw) cv._redraw();
+  };
+  document.getElementById("zoomIn").onclick = () => setZoom(state.zoomMult * ZOOM_STEP);
+  document.getElementById("zoomOut").onclick = () => setZoom(state.zoomMult / ZOOM_STEP);
+  document.getElementById("zoomReset").onclick = () => setZoom(1);
+
+  setupCanvas(item);
+}
+
+function setZoom(mult) {
+  state.zoomMult = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, mult));
+  applyZoom();
+}
+
+function applyZoom() {
+  const canvas = document.getElementById("cv");
+  if (!canvas || !state.img) return;
+  const scale = state.baseScale * state.zoomMult;
+  canvas.style.width = (state.img.naturalWidth * scale) + "px";
+  canvas.style.height = (state.img.naturalHeight * scale) + "px";
+  document.getElementById("zoomVal").textContent = Math.round(state.zoomMult * 100) + "%";
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  document.getElementById("modeLasso").classList.toggle("active", mode === "lasso");
+  document.getElementById("modeErase").classList.toggle("active", mode === "erase");
+  document.getElementById("brushControl").style.display = mode === "erase" ? "flex" : "none";
+  document.getElementById("modeHint").textContent = mode === "erase"
+    ? "Click-drag over stray junk (bled-in ink, annotation marks) to paint it white. Works underneath your lasso shapes."
+    : "Click-drag a freeform outline around each structure you want to keep as its own crop. Draw as many shapes as there are real structures.";
+  const cv = document.getElementById("cv");
+  // Native cursor icons cap out well below what this tool's zoom range
+  // needs (a 10px-radius brush at 1200% zoom is a 240px box) -- drawn as
+  // a real canvas overlay instead, sized in the same coordinate space as
+  // everything else so it scales correctly at any zoom level.
+  cv.style.cursor = mode === "erase" ? "none" : "crosshair";
+  if (cv._redraw) cv._redraw();
+}
+
+function setupCanvas(item) {
+  const canvas = document.getElementById("cv");
+  const ctx = canvas.getContext("2d");
+  const img = new Image();
+  state.img = img;
+  img.onload = () => {
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    // Upscale small crops for practical freeform drawing, native res for large ones.
+    const minDisplay = 640;
+    state.baseScale = Math.max(1, Math.min(3, minDisplay / img.naturalWidth));
+    state.zoomMult = 1;
+    applyZoom();
+    redraw();
+  };
+  img.src = `/api/image/${item.paper}/${item.segment_path}`;
+
+  function paintErase(ctx, stroke) {
+    ctx.fillStyle = "#FFFFFF";
+    for (const p of stroke.points) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, stroke.radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  // Converts a desired ON-SCREEN pixel width to canvas-internal units, so
+  // outlines stay a constant, thin visual weight at any zoom level
+  // instead of getting thicker as the CSS scale (baseScale * zoomMult)
+  // stretches everything up -- a fixed canvas-space lineWidth otherwise
+  // looks progressively chunkier the further in you zoom, working against
+  // the whole point of zooming in for precise edge work.
+  function screenPx(px) {
+    return px / (state.baseScale * state.zoomMult);
+  }
+
+  function redraw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0);
+    // Erased pixels first, underneath everything else -- matches what
+    // the backend actually does (erase, then crop/mask).
+    state.eraseStrokes.forEach(s => paintErase(ctx, s));
+    if (state.eraseStroking) paintErase(ctx, state.eraseStroking);
+
+    ctx.lineWidth = screenPx(1.25);
+    const colors = ["#B0432A", "#2F5D62", "#7A5FB0", "#3F7D4A", "#B08A2A"];
+    state.shapes.forEach((shape, i) => drawPath(ctx, shape, colors[i % colors.length], true));
+    if (state.drawing && state.drawing.length > 1) {
+      drawPath(ctx, state.drawing, "#1E2A26", false);
+    }
+
+    if (state.mode === "erase" && state.cursorPos) {
+      const r = state.brushRadius;
+      const { x, y } = state.cursorPos;
+      ctx.save();
+      ctx.lineWidth = screenPx(1);
+      ctx.strokeStyle = "#1E2A26";
+      ctx.strokeRect(x - r, y - r, r * 2, r * 2);
+      ctx.strokeStyle = "#FFFFFF";
+      ctx.setLineDash([screenPx(3), screenPx(3)]);
+      ctx.strokeRect(x - r, y - r, r * 2, r * 2);
+      ctx.restore();
+    }
+  }
+
+  function drawPath(ctx, pts, color, close) {
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (const p of pts.slice(1)) ctx.lineTo(p.x, p.y);
+    if (close) ctx.closePath();
+    ctx.strokeStyle = color;
+    ctx.stroke();
+    if (close) {
+      ctx.fillStyle = color + "33";
+      ctx.fill();
+    }
+  }
+
+  function toCanvasCoords(evt) {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    return {
+      x: (evt.clientX - rect.left) * scaleX,
+      y: (evt.clientY - rect.top) * scaleY,
+    };
+  }
+
+  // Ctrl/Cmd + scroll to zoom, centered roughly where the cursor is --
+  // plain scroll still pans the canvas-wrap normally when zoomed in.
+  canvas.parentElement.addEventListener("wheel", (evt) => {
+    if (!evt.ctrlKey && !evt.metaKey) return;
+    evt.preventDefault();
+    setZoom(state.zoomMult * (evt.deltaY < 0 ? ZOOM_STEP : 1 / ZOOM_STEP));
+  }, { passive: false });
+
+  let isDrawing = false;
+  canvas.onmousedown = (evt) => {
+    isDrawing = true;
+    if (state.mode === "erase") {
+      state.eraseStroking = { radius: state.brushRadius, points: [toCanvasCoords(evt)] };
+    } else {
+      state.drawing = [toCanvasCoords(evt)];
+    }
+  };
+  canvas.onmousemove = (evt) => {
+    state.cursorPos = toCanvasCoords(evt);
+    if (!isDrawing) {
+      if (state.mode === "erase") redraw();  // keep the cursor box tracking the mouse
+      return;
+    }
+    if (state.mode === "erase") {
+      state.eraseStroking.points.push(state.cursorPos);
+    } else {
+      state.drawing.push(state.cursorPos);
+    }
+    redraw();
+  };
+  canvas.onmouseleave = () => {
+    state.cursorPos = null;
+    if (!isDrawing) redraw();
+  };
+  window.addEventListener("mouseup", () => {
+    if (!isDrawing) return;
+    isDrawing = false;
+    if (state.mode === "erase") {
+      if (state.eraseStroking && state.eraseStroking.points.length >= 1) {
+        state.eraseStrokes.push(state.eraseStroking);
+      }
+      state.eraseStroking = null;
+    } else {
+      if (state.drawing && state.drawing.length >= 3) {
+        state.shapes.push(state.drawing);
+      }
+      state.drawing = null;
+    }
+    redraw();
+    updateShapeControls();
+  });
+
+  canvas._redraw = redraw;
+}
+
+function updateShapeControls() {
+  document.getElementById("shapeCount").textContent = state.shapes.length;
+  document.getElementById("saveContinue").disabled = state.shapes.length === 0;
+  document.getElementById("saveFinish").disabled = state.shapes.length === 0;
+}
+
+function undoShape() {
+  state.shapes.pop();
+  document.getElementById("cv")._redraw();
+  updateShapeControls();
+}
+
+function undoErase() {
+  state.eraseStrokes.pop();
+  document.getElementById("cv")._redraw();
+}
+
+function clearShapes() {
+  state.shapes = [];
+  state.eraseStrokes = [];
+  document.getElementById("cv")._redraw();
+  updateShapeControls();
+}
+
+async function skipCurrent() {
+  const item = currentItem();
+  await fetch("/api/skip", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ paper: item.paper, segment_path: item.segment_path }),
+  });
+  await loadQueue();
+}
+
+async function saveSplit(continueRemainder) {
+  const item = currentItem();
+  const polygons = state.shapes.map(shape => shape.map(p => ({ x: p.x, y: p.y })));
+  const erase_strokes = state.eraseStrokes.map(s => ({
+    radius: s.radius,
+    points: s.points.map(p => ({ x: p.x, y: p.y })),
+  }));
+  const res = await fetch("/api/split", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      paper: item.paper, segment_path: item.segment_path, polygons, erase_strokes,
+      continue_remainder: continueRemainder,
+    }),
+  });
+  if (!res.ok) {
+    alert("Save failed: " + (await res.text()));
+    return;
+  }
+  // Re-fetch rather than locally splice -- "extract & continue" can add a
+  // brand-new remainder item the client doesn't otherwise know about.
+  const { remainder } = await res.json();
+  await loadQueue();
+  if (remainder) {
+    // Jump straight to the remainder we just created, instead of
+    // whatever else happens to sort first -- keeps "peel one off, do the
+    // next one" a tight loop rather than a scavenger hunt through the queue.
+    const i = state.items.findIndex(it => `${it.paper}::${it.segment_path}` === remainder);
+    if (i >= 0) { state.idx = i; render(); }
+  }
+}
+
+loadQueue();
+</script>
+</body>
+</html>
