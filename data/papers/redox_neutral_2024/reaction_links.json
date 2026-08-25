@@ -1,57 +1,57 @@
 {
   "images/page5_fig0.png": [
     {
-      "compound_id": "9",
-      "flag": null,
-      "segment_path": "segments/page5_fig0_seg0.png",
       "yield_percent": "65%",
       "panel_label": "A",
       "is_scoped_product": true,
+      "flag": null,
+      "compound_id": "9",
       "conditions": null,
+      "segment_path": "segments/page5_fig0_seg0.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg3.png",
+      "compound_id": null,
+      "is_scoped_product": false,
       "panel_label": "B",
-      "flag": null,
+      "segment_path": "segments/page5_fig0_seg3.png",
       "yield_percent": null,
+      "flag": null,
       "conditions": null,
-      "is_scoped_product": false,
-      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "is_scoped_product": false,
-      "panel_label": "A",
-      "yield_percent": null,
-      "compound_id": null,
-      "conditions": null,
       "segment_path": "segments/page5_fig0_seg14.png",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "8",
-      "yield_percent": null,
-      "flag": null,
-      "is_scoped_product": false,
-      "panel_label": "A",
       "conditions": null,
-      "segment_path": "segments/page5_fig0_seg30.png",
+      "flag": null,
+      "compound_id": null,
+      "yield_percent": null,
+      "panel_label": "A",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg7.png",
+      "flag": null,
+      "segment_path": "segments/page5_fig0_seg30.png",
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": "A",
+      "compound_id": "8",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "conditions": null,
       "panel_label": "A",
       "yield_percent": "51%",
-      "is_scoped_product": true,
-      "compound_id": "10",
       "flag": null,
-      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg7.png",
+      "compound_id": "10",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
@@ -59,538 +59,538 @@
       "flag": null,
       "panel_label": "B",
       "conditions": null,
+      "compound_id": null,
       "yield_percent": null,
       "segment_path": "segments/page5_fig0_seg58.png",
       "is_scoped_product": false,
-      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "yield_percent": null,
-      "compound_id": null,
-      "conditions": null,
-      "panel_label": "A",
       "segment_path": "segments/page5_fig0_seg46.png",
+      "flag": null,
+      "compound_id": null,
+      "panel_label": "A",
+      "yield_percent": null,
+      "conditions": null,
       "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "panel_label": "A",
-      "yield_percent": null,
       "conditions": null,
-      "is_scoped_product": false,
-      "flag": null,
-      "compound_id": null,
       "segment_path": "segments/page5_fig0_seg22.png",
+      "flag": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": false,
       "flag": null,
       "segment_path": "segments/page5_fig0_seg40.png",
-      "compound_id": null,
-      "conditions": null,
-      "is_scoped_product": false,
       "panel_label": "B",
-      "yield_percent": null,
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": null,
+      "segment_path": "segments/page5_fig0_seg6.png",
       "is_scoped_product": true,
       "panel_label": "A",
-      "conditions": null,
-      "yield_percent": "47",
       "compound_id": "11",
-      "segment_path": "segments/page5_fig0_seg6.png",
-      "flag": null,
+      "yield_percent": "47%",
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
       "panel_label": "A",
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg51.png",
       "flag": null,
       "is_scoped_product": false,
-      "segment_path": "segments/page5_fig0_seg51.png",
-      "yield_percent": null,
       "compound_id": null,
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "is_scoped_product": true,
       "panel_label": "A",
+      "compound_id": "12",
+      "is_scoped_product": true,
+      "flag": null,
+      "yield_percent": "35%",
       "segment_path": "segments/page5_fig0_seg31.png",
       "conditions": null,
-      "yield_percent": "35",
-      "compound_id": "12",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "yield_percent": null,
-      "compound_id": null,
+      "panel_label": "A",
       "is_scoped_product": false,
+      "flag": null,
+      "compound_id": null,
       "segment_path": "segments/page5_fig0_seg25.png",
       "conditions": null,
-      "panel_label": "A",
-      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": "No compound ID or yield visible next to structure",
-      "panel_label": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page5_fig0_seg28.png",
-      "compound_id": null,
-      "conditions": null,
       "yield_percent": null,
+      "panel_label": null,
+      "flag": "Yield and compound label cropped or not visible in image",
+      "segment_path": "segments/page5_fig0_seg28.png",
+      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page5_fig0_seg43.png",
       "yield_percent": "46%",
       "compound_id": "3",
-      "flag": null,
-      "segment_path": "segments/page5_fig0_seg43.png",
       "conditions": null,
       "is_scoped_product": true,
-      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg49.png",
-      "panel_label": null,
-      "conditions": null,
-      "flag": null,
-      "yield_percent": "57%",
       "compound_id": "7",
+      "segment_path": "segments/page5_fig0_seg49.png",
+      "conditions": null,
+      "yield_percent": "57%",
+      "flag": null,
+      "panel_label": null,
       "is_scoped_product": true,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "panel_label": null,
-      "conditions": null,
-      "is_scoped_product": true,
-      "flag": null,
       "compound_id": "5",
       "segment_path": "segments/page5_fig0_seg8.png",
       "yield_percent": "65%",
+      "conditions": null,
+      "flag": null,
+      "is_scoped_product": true,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg53.png",
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "compound_id": "bpp",
+      "yield_percent": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "flag": null,
-      "is_scoped_product": false,
-      "conditions": null,
       "panel_label": null,
-      "yield_percent": null,
-      "segment_path": "segments/page5_fig0_seg53.png",
-      "compound_id": "bpp",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": null,
-      "yield_percent": null,
       "is_scoped_product": false,
       "segment_path": "segments/page5_fig0_seg27.png",
-      "panel_label": null,
-      "flag": null,
+      "compound_id": null,
+      "yield_percent": null,
       "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "flag": null,
-      "compound_id": "16",
-      "yield_percent": "64%",
-      "segment_path": "segments/page5_fig0_seg19.png",
-      "conditions": "X = I",
       "panel_label": null,
+      "segment_path": "segments/page5_fig0_seg19.png",
+      "yield_percent": "64%",
       "is_scoped_product": true,
+      "compound_id": "16",
+      "conditions": "X = I",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "panel_label": null,
       "conditions": "X = I",
-      "is_scoped_product": true,
-      "yield_percent": "49",
       "compound_id": "15",
+      "panel_label": null,
+      "yield_percent": "49",
+      "is_scoped_product": true,
       "flag": null,
       "segment_path": "segments/page5_fig0_seg11.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": "X = I, X = Br^b",
-      "compound_id": "13",
-      "is_scoped_product": true,
-      "flag": null,
-      "yield_percent": "61, 55",
-      "panel_label": null,
       "segment_path": "segments/page5_fig0_seg42.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
+      "conditions": "X = I; 55% for X = Br",
+      "compound_id": "13",
       "flag": null,
-      "yield_percent": "33",
-      "conditions": "X = Br^b",
       "panel_label": null,
-      "compound_id": "14",
       "is_scoped_product": true,
+      "yield_percent": "61",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "segment_path": "segments/page5_fig0_seg24.png",
+      "flag": null,
+      "panel_label": null,
+      "conditions": "X = Br",
+      "compound_id": "14",
+      "yield_percent": "33",
+      "is_scoped_product": true,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "panel_label": null,
-      "yield_percent": null,
-      "conditions": null,
-      "is_scoped_product": false,
-      "flag": "Reaction scheme template product",
       "compound_id": null,
       "segment_path": "segments/page5_fig0_seg20.png",
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page5_fig0_seg4.png",
-      "is_scoped_product": false,
-      "flag": "Reaction scheme template product",
       "panel_label": null,
-      "yield_percent": null,
-      "compound_id": null,
+      "is_scoped_product": false,
+      "flag": null,
       "conditions": null,
+      "compound_id": null,
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page5_fig0_seg54.png",
-      "compound_id": null,
       "yield_percent": null,
-      "flag": "Reaction scheme template product",
       "is_scoped_product": false,
-      "panel_label": null,
+      "compound_id": null,
+      "flag": null,
       "conditions": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "panel_label": null,
-      "flag": null,
-      "conditions": "X = Br^a,f,g",
-      "segment_path": "segments/page5_fig0_seg38.png",
-      "is_scoped_product": true,
       "compound_id": "22",
       "yield_percent": "76",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page5_fig0_seg2.png",
-      "compound_id": "23",
-      "is_scoped_product": true,
+      "segment_path": "segments/page5_fig0_seg38.png",
       "flag": null,
+      "is_scoped_product": true,
       "conditions": "X = Br",
-      "yield_percent": "54%",
-      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": "X = Br",
+      "segment_path": "segments/page5_fig0_seg2.png",
+      "is_scoped_product": true,
+      "compound_id": "23",
+      "panel_label": null,
+      "yield_percent": "54%",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "17",
+      "segment_path": "segments/page5_fig0_seg1.png",
+      "flag": null,
+      "yield_percent": "83%",
+      "panel_label": null,
       "is_scoped_product": true,
       "conditions": "(X = Cl)a,c,d",
-      "flag": null,
-      "panel_label": null,
-      "segment_path": "segments/page5_fig0_seg1.png",
-      "compound_id": "17",
-      "yield_percent": "83%",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "conditions": null,
-      "compound_id": null,
-      "is_scoped_product": false,
-      "yield_percent": null,
       "segment_path": "segments/page5_fig0_seg52.png",
-      "panel_label": "C",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
       "compound_id": null,
       "is_scoped_product": false,
       "conditions": null,
       "yield_percent": null,
-      "flag": null,
       "panel_label": "C",
-      "segment_path": "segments/page5_fig0_seg15.png",
+      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "panel_label": "C",
+      "is_scoped_product": false,
+      "segment_path": "segments/page5_fig0_seg15.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "flag": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "45%",
       "is_scoped_product": true,
+      "panel_label": null,
+      "segment_path": "segments/page5_fig0_seg5.png",
       "compound_id": "24",
       "conditions": "(X = I)d",
       "flag": null,
-      "yield_percent": "45%",
-      "segment_path": "segments/page5_fig0_seg5.png",
-      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "18",
-      "yield_percent": "85%",
-      "segment_path": "segments/page5_fig0_seg12.png",
-      "conditions": "(X = Cl)a,d,e",
       "flag": null,
-      "panel_label": null,
+      "yield_percent": "85%",
       "is_scoped_product": true,
+      "panel_label": null,
+      "segment_path": "segments/page5_fig0_seg12.png",
+      "compound_id": "18",
+      "conditions": "(X = Cl)a,d,e",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "panel_label": "C",
-      "conditions": null,
       "compound_id": null,
       "flag": null,
       "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
       "segment_path": "segments/page5_fig0_seg55.png",
+      "panel_label": "C",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": true,
+      "yield_percent": "23",
       "conditions": "(X = Br)",
-      "flag": null,
       "panel_label": null,
+      "is_scoped_product": true,
       "compound_id": "25",
       "segment_path": "segments/page5_fig0_seg41.png",
-      "yield_percent": "23%",
+      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "yield_percent": null,
       "conditions": null,
+      "segment_path": "segments/page5_fig0_seg17.png",
+      "is_scoped_product": false,
       "compound_id": null,
       "panel_label": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page5_fig0_seg17.png",
-      "flag": "starting material/precursor shown for context",
+      "flag": "Starting material / intermediate in arrow diagram",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg10.png",
-      "compound_id": "19",
-      "panel_label": null,
-      "yield_percent": "37%",
-      "conditions": "(X = Br)a,d,e",
       "flag": null,
+      "is_scoped_product": true,
+      "panel_label": null,
+      "yield_percent": "37",
+      "conditions": "(X = Br)a,d,e",
+      "compound_id": "19",
+      "segment_path": "segments/page5_fig0_seg10.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "conditions": null,
+      "flag": "Generic product template for panel C scheme",
+      "panel_label": "C",
+      "is_scoped_product": false,
+      "segment_path": "segments/page5_fig0_seg44.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page5_fig0_seg37.png",
+      "flag": "Generic product template for panel C scheme",
+      "is_scoped_product": false,
+      "compound_id": null,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": "C",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": "48",
+      "segment_path": "segments/page5_fig0_seg26.png",
+      "compound_id": "26",
+      "is_scoped_product": true,
+      "conditions": "(X = I)",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": "56",
+      "segment_path": "segments/page5_fig0_seg29.png",
+      "compound_id": "20",
+      "flag": null,
+      "conditions": "(X = Br)a,f,g",
       "is_scoped_product": true,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "flag": "generic product template",
-      "is_scoped_product": false,
-      "conditions": null,
-      "segment_path": "segments/page5_fig0_seg44.png",
-      "panel_label": "C",
-      "compound_id": null,
+      "segment_path": "segments/page5_fig0_seg35.png",
+      "yield_percent": "63%",
+      "conditions": "X = Br",
+      "flag": null,
+      "is_scoped_product": true,
+      "panel_label": null,
+      "compound_id": "21",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": null,
-      "panel_label": "C",
-      "flag": "generic product template",
-      "segment_path": "segments/page5_fig0_seg37.png",
-      "yield_percent": null,
-      "conditions": null,
-      "is_scoped_product": false,
+      "flag": null,
+      "panel_label": null,
+      "compound_id": "29",
+      "yield_percent": "53%",
+      "segment_path": "segments/page5_fig0_seg21.png",
+      "is_scoped_product": true,
+      "conditions": "X = I",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "yield_percent": "48%",
       "flag": null,
-      "is_scoped_product": true,
-      "conditions": "(X = I)",
-      "compound_id": "26",
       "panel_label": null,
-      "segment_path": "segments/page5_fig0_seg26.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "conditions": "(X = Br)a,f,g",
-      "yield_percent": "56%",
-      "panel_label": null,
-      "compound_id": "20",
-      "segment_path": "segments/page5_fig0_seg29.png",
-      "is_scoped_product": true,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "21",
-      "segment_path": "segments/page5_fig0_seg35.png",
-      "flag": null,
-      "conditions": "X = Br",
-      "panel_label": null,
-      "is_scoped_product": true,
-      "yield_percent": "63",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": "X = I",
-      "panel_label": null,
-      "yield_percent": "53",
-      "is_scoped_product": true,
-      "flag": null,
-      "segment_path": "segments/page5_fig0_seg21.png",
-      "compound_id": "29",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": "48",
-      "flag": null,
-      "panel_label": null,
-      "segment_path": "segments/page5_fig0_seg32.png",
-      "is_scoped_product": true,
-      "compound_id": "28",
       "conditions": "X = OTf",
+      "compound_id": "28",
+      "is_scoped_product": true,
+      "segment_path": "segments/page5_fig0_seg32.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg39.png",
       "flag": null,
       "conditions": "X = I",
+      "segment_path": "segments/page5_fig0_seg39.png",
       "compound_id": "27",
-      "yield_percent": "65",
-      "panel_label": null,
+      "yield_percent": "65%",
       "is_scoped_product": true,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": true,
+      "yield_percent": "73%",
       "conditions": "X = I",
       "compound_id": "34",
-      "flag": null,
       "segment_path": "segments/page5_fig0_seg45.png",
+      "is_scoped_product": true,
+      "flag": null,
       "panel_label": null,
-      "yield_percent": "73",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
+      "panel_label": null,
       "is_scoped_product": true,
-      "compound_id": "35",
+      "flag": null,
       "segment_path": "segments/page5_fig0_seg34.png",
-      "panel_label": null,
-      "flag": null,
-      "yield_percent": "35",
+      "conditions": null,
+      "compound_id": "35",
+      "yield_percent": "35%",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": "83",
-      "is_scoped_product": true,
       "panel_label": null,
-      "compound_id": "33",
       "segment_path": "segments/page5_fig0_seg50.png",
-      "conditions": "X = Br",
+      "compound_id": "33",
       "flag": null,
+      "is_scoped_product": true,
+      "conditions": "X = Br",
+      "yield_percent": "83%",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg23.png",
-      "yield_percent": "43",
-      "flag": null,
       "conditions": null,
       "is_scoped_product": true,
+      "flag": null,
+      "segment_path": "segments/page5_fig0_seg23.png",
+      "yield_percent": "43%",
       "compound_id": "36",
       "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": "52",
       "is_scoped_product": true,
-      "segment_path": "segments/page5_fig0_seg16.png",
       "flag": null,
-      "conditions": null,
       "panel_label": null,
       "compound_id": "39",
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg16.png",
+      "yield_percent": "52%",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "conditions": null,
-      "segment_path": "segments/page5_fig0_seg33.png",
       "panel_label": null,
       "compound_id": "38",
-      "is_scoped_product": true,
-      "yield_percent": "57",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": true,
-      "segment_path": "segments/page5_fig0_seg48.png",
-      "conditions": null,
-      "panel_label": null,
-      "compound_id": "37",
       "flag": null,
-      "yield_percent": "42",
+      "is_scoped_product": true,
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg33.png",
+      "yield_percent": "57%",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": null,
+      "is_scoped_product": true,
+      "flag": null,
+      "segment_path": "segments/page5_fig0_seg48.png",
+      "compound_id": "37",
+      "panel_label": null,
+      "yield_percent": "42%",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": "49%",
+      "is_scoped_product": true,
       "segment_path": "segments/page5_fig0_seg13.png",
+      "flag": null,
       "compound_id": "41",
       "panel_label": null,
-      "is_scoped_product": true,
-      "yield_percent": "49",
-      "flag": null,
-      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg9.png",
-      "yield_percent": "52",
-      "compound_id": "40",
-      "conditions": null,
-      "panel_label": null,
-      "is_scoped_product": true,
+      "yield_percent": "52%",
       "flag": null,
+      "is_scoped_product": true,
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg9.png",
+      "panel_label": null,
+      "compound_id": "40",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
@@ -598,472 +598,340 @@
       "is_scoped_product": true,
       "compound_id": "42",
       "panel_label": null,
-      "segment_path": "segments/page5_fig0_seg18.png",
-      "conditions": null,
       "flag": null,
-      "yield_percent": "51",
+      "yield_percent": "51%",
+      "conditions": null,
+      "segment_path": "segments/page5_fig0_seg18.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg36.png",
-      "flag": "Merged box containing compounds 4 (35%) and 6 (45%, footnotes a,e)",
       "panel_label": "A",
       "conditions": "a, e",
-      "yield_percent": "35%, 45%",
+      "yield_percent": "35, 45",
       "is_scoped_product": true,
+      "flag": "Merged segment enclosing both compound 4 (35%) and compound 6 (45%, a,e)",
+      "segment_path": "segments/page5_fig0_seg36.png",
       "compound_id": "4, 6",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page5_fig0_seg47.png",
-      "panel_label": "B",
-      "conditions": null,
-      "is_scoped_product": true,
-      "yield_percent": "40%, 29%, 38%",
       "compound_id": "30, 31, 32",
-      "flag": "Merged segment corresponding to compounds 30 (40%), 31 (29%), and 32 (38%) in panel B",
+      "flag": "Merged/duplicate segment corresponding to box @D enclosing compounds 30 (40%), 31 (29%), and 32 (38%)",
+      "segment_path": "segments/page5_fig0_seg47.png",
+      "conditions": null,
+      "yield_percent": "40, 29, 38",
+      "panel_label": "B",
+      "is_scoped_product": true,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "30, 31, 32",
-      "yield_percent": "40%, 29%, 38%",
-      "flag": "Merged segment corresponding to compounds 30 (40%), 31 (29%), and 32 (38%) in panel B",
       "conditions": null,
       "is_scoped_product": true,
       "segment_path": "segments/page5_fig0_seg56.png",
       "panel_label": "B",
+      "compound_id": "30, 31, 32",
+      "flag": "Merged/duplicate segment corresponding to box @D enclosing compounds 30 (40%), 31 (29%), and 32 (38%)",
+      "yield_percent": "40, 29, 38",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "30, 31, 32",
-      "flag": "Merged box @D containing compounds 30 (40%), 31 (29%), and 32 (38%) in panel B",
-      "conditions": null,
       "segment_path": "segments/page5_fig0_seg57.png",
-      "panel_label": "B",
+      "compound_id": "30, 31, 32",
+      "flag": "Merged segment labeled @D enclosing compounds 30 (40%), 31 (29%), and 32 (38%)",
       "is_scoped_product": true,
-      "yield_percent": "40%, 29%, 38%",
+      "conditions": null,
+      "panel_label": "B",
+      "yield_percent": "40, 29, 38",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images/page8_fig0.png": [
     {
-      "yield_percent": null,
-      "segment_path": "segments/page8_fig0_seg37.png",
-      "compound_id": null,
-      "flag": null,
-      "is_scoped_product": false,
-      "conditions": null,
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page8_fig0_seg42.png",
-      "panel_label": null,
-      "conditions": null,
-      "is_scoped_product": false,
-      "compound_id": null,
-      "flag": null,
-      "yield_percent": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page8_fig0_seg27.png",
-      "compound_id": null,
-      "panel_label": null,
-      "is_scoped_product": false,
-      "yield_percent": null,
-      "flag": null,
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page8_fig0_seg8.png",
-      "compound_id": "45",
-      "panel_label": null,
-      "conditions": "X = Br",
-      "is_scoped_product": true,
-      "flag": null,
-      "yield_percent": "79",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "43",
-      "is_scoped_product": true,
-      "panel_label": null,
-      "flag": null,
-      "conditions": "X = Br",
       "yield_percent": "38",
+      "segment_path": "segments/page8_fig0_seg37.png",
+      "compound_id": "44",
+      "is_scoped_product": true,
+      "flag": null,
+      "conditions": "X = Br",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": true,
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg42.png",
+      "compound_id": "50",
+      "conditions": "X = Br",
+      "yield_percent": "46",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "65 or 48",
+      "compound_id": "18",
+      "conditions": "X = Cl or X = OTf",
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg27.png",
+      "is_scoped_product": true,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "57",
+      "yield_percent": "49",
+      "flag": null,
+      "conditions": "X = Br",
+      "segment_path": "segments/page8_fig0_seg8.png",
+      "is_scoped_product": true,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "segment_path": "segments/page8_fig0_seg2.png",
+      "panel_label": null,
+      "yield_percent": "41",
+      "conditions": "X = Br",
+      "flag": null,
+      "is_scoped_product": true,
+      "compound_id": "55",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "segment_path": "segments/page8_fig0_seg6.png",
-      "is_scoped_product": true,
-      "flag": null,
-      "yield_percent": "38",
-      "conditions": "X = Br",
-      "compound_id": "44",
+      "yield_percent": "40%",
       "panel_label": null,
+      "is_scoped_product": true,
+      "compound_id": "56",
+      "conditions": "X = Br",
+      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": "44",
-      "conditions": "X = Br",
-      "flag": null,
-      "is_scoped_product": true,
-      "panel_label": null,
-      "compound_id": "49",
       "segment_path": "segments/page8_fig0_seg0.png",
+      "yield_percent": "52%",
+      "conditions": "X = Br",
+      "compound_id": "61",
+      "flag": null,
+      "is_scoped_product": true,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": "46",
+      "flag": null,
+      "panel_label": null,
       "segment_path": "segments/page8_fig0_seg11.png",
-      "conditions": "X = Br",
+      "conditions": "X = Cl",
+      "compound_id": "17",
+      "yield_percent": "67%",
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "62",
       "panel_label": null,
       "is_scoped_product": true,
-      "compound_id": "50",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
       "flag": null,
       "segment_path": "segments/page8_fig0_seg14.png",
-      "panel_label": null,
-      "yield_percent": "65 or 48",
-      "compound_id": "18",
-      "conditions": "X = Cl or X = OTf",
-      "is_scoped_product": true,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": true,
-      "panel_label": null,
-      "compound_id": "54",
-      "segment_path": "segments/page8_fig0_seg5.png",
-      "yield_percent": "70",
-      "conditions": "X = Cl",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": true,
-      "conditions": "X = Br",
-      "yield_percent": "41%",
-      "segment_path": "segments/page8_fig0_seg16.png",
-      "flag": null,
-      "compound_id": "55",
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "is_scoped_product": true,
-      "compound_id": "60",
-      "yield_percent": "22%",
-      "segment_path": "segments/page8_fig0_seg1.png",
-      "conditions": "X = Cl",
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page8_fig0_seg13.png",
-      "is_scoped_product": true,
-      "flag": null,
-      "yield_percent": "52%",
-      "panel_label": null,
-      "conditions": "X = Br, a,b",
-      "compound_id": "61",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
       "yield_percent": "55%",
-      "flag": null,
-      "segment_path": "segments/page8_fig0_seg33.png",
-      "panel_label": null,
-      "conditions": "X = Br, a",
-      "is_scoped_product": true,
-      "compound_id": "62",
+      "conditions": "X = Br",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": "X = Cl",
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg5.png",
       "compound_id": "66",
-      "segment_path": "segments/page8_fig0_seg28.png",
-      "conditions": "X = Cl, a",
       "is_scoped_product": true,
       "yield_percent": "15%",
       "panel_label": null,
-      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "65",
-      "segment_path": "segments/page8_fig0_seg4.png",
-      "is_scoped_product": true,
+      "segment_path": "segments/page8_fig0_seg16.png",
       "panel_label": null,
-      "conditions": "X = Cl",
-      "yield_percent": "27% NMR",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
       "conditions": ">10:1 d.r., X = Cl",
-      "panel_label": null,
-      "segment_path": "segments/page8_fig0_seg32.png",
       "compound_id": "67",
-      "is_scoped_product": true,
-      "flag": null,
       "yield_percent": "26%",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
-      "compound_id": "70",
+      "is_scoped_product": true,
       "flag": null,
-      "yield_percent": "36%",
-      "segment_path": "segments/page8_fig0_seg9.png",
-      "is_scoped_product": true,
-      "conditions": ">20:1 d.r., X = Br",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "71",
-      "is_scoped_product": true,
-      "panel_label": null,
-      "conditions": ">10:1 d.r., X = Br",
+      "segment_path": "segments/page8_fig0_seg1.png",
       "yield_percent": "25%",
-      "segment_path": "segments/page8_fig0_seg24.png",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": "OCSR SMILES contains placeholder artifact",
-      "conditions": "X = Br",
-      "segment_path": "segments/page8_fig0_seg26.png",
       "is_scoped_product": true,
       "panel_label": null,
-      "compound_id": "76",
-      "yield_percent": "55%",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": "OCSR SMILES contains artifact",
-      "is_scoped_product": true,
-      "yield_percent": "38%",
-      "conditions": "X = Br",
-      "compound_id": "75",
-      "panel_label": null,
-      "segment_path": "segments/page8_fig0_seg12.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": null,
-      "segment_path": "segments/page8_fig0_seg44.png",
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
       "flag": null,
-      "is_scoped_product": false,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "46",
-      "yield_percent": "35%",
-      "is_scoped_product": true,
-      "panel_label": null,
-      "conditions": "X = Br",
-      "segment_path": "segments/page8_fig0_seg7.png",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
-      "is_scoped_product": true,
-      "compound_id": "51",
-      "conditions": "X = Br",
-      "yield_percent": "28%",
-      "flag": null,
-      "segment_path": "segments/page8_fig0_seg10.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "yield_percent": "49%",
-      "panel_label": null,
-      "compound_id": "57",
-      "segment_path": "segments/page8_fig0_seg22.png",
-      "conditions": "X = Br",
-      "is_scoped_product": true,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "58",
-      "conditions": "X = Cl",
-      "yield_percent": "65%",
-      "flag": null,
-      "is_scoped_product": true,
-      "panel_label": null,
-      "segment_path": "segments/page8_fig0_seg3.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "52",
-      "flag": null,
-      "segment_path": "segments/page8_fig0_seg15.png",
-      "is_scoped_product": true,
-      "yield_percent": "37",
-      "conditions": "X = Br",
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page8_fig0_seg17.png",
-      "yield_percent": "47",
-      "panel_label": null,
-      "conditions": "X = Br",
-      "flag": null,
-      "compound_id": "47",
-      "is_scoped_product": true,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
-      "panel_label": null,
-      "segment_path": "segments/page8_fig0_seg38.png",
-      "compound_id": null,
-      "yield_percent": null,
-      "flag": null,
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page8_fig0_seg30.png",
-      "panel_label": null,
-      "compound_id": "59",
-      "is_scoped_product": true,
-      "yield_percent": "52",
-      "conditions": "X = Br",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
-      "compound_id": "53",
-      "segment_path": "segments/page8_fig0_seg25.png",
-      "flag": null,
-      "conditions": "(X = Br)b",
-      "yield_percent": "43",
-      "is_scoped_product": true,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "yield_percent": null,
-      "conditions": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page8_fig0_seg36.png",
-      "compound_id": "dNH2-bpy",
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
-      "yield_percent": "40",
-      "compound_id": "72",
-      "flag": null,
-      "conditions": "X = Br",
-      "segment_path": "segments/page8_fig0_seg31.png",
-      "is_scoped_product": true,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": "40",
-      "is_scoped_product": true,
-      "conditions": "(X = Br)\u1d47",
-      "segment_path": "segments/page8_fig0_seg35.png",
-      "panel_label": null,
-      "compound_id": "77",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": "67",
-      "segment_path": "segments/page8_fig0_seg20.png",
-      "panel_label": null,
-      "flag": null,
-      "is_scoped_product": true,
-      "compound_id": "17",
-      "conditions": "X = Cl",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": "29",
-      "segment_path": "segments/page8_fig0_seg39.png",
-      "conditions": "X = Br",
-      "panel_label": null,
-      "is_scoped_product": true,
-      "compound_id": "78",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": true,
-      "segment_path": "segments/page8_fig0_seg21.png",
-      "compound_id": "73",
-      "yield_percent": "27",
       "conditions": ">10:1 d.r., X = Br",
-      "flag": null,
-      "panel_label": null,
+      "compound_id": "71",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": "28%",
       "panel_label": null,
-      "segment_path": "segments/page8_fig0_seg19.png",
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg13.png",
+      "conditions": "X = Br",
+      "yield_percent": "40%",
       "is_scoped_product": true,
+      "compound_id": "72",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "55%",
+      "compound_id": "76",
+      "is_scoped_product": true,
+      "conditions": "X = Br",
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg4.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "flag": "Structure and label are cut off at the bottom border of the image",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg9.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page8_fig0_seg12.png",
+      "flag": "Segment not visible in this image crop",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "segment_path": "segments/page8_fig0_seg28.png",
+      "panel_label": null,
+      "conditions": "X = Br",
+      "flag": null,
+      "yield_percent": "40",
+      "compound_id": "77",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "Structure cut off at bottom edge of crop; label not visible",
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page8_fig0_seg24.png",
+      "is_scoped_product": true,
+      "yield_percent": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": true,
+      "yield_percent": null,
+      "flag": "Segment box not visible in this crop",
+      "conditions": null,
+      "compound_id": null,
+      "segment_path": "segments/page8_fig0_seg26.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg33.png",
+      "is_scoped_product": true,
+      "panel_label": null,
+      "yield_percent": "40",
+      "conditions": "X = Br",
+      "compound_id": "72",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg32.png",
+      "yield_percent": "29",
+      "is_scoped_product": true,
+      "panel_label": null,
+      "conditions": "X = Br",
+      "compound_id": "78",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page8_fig0_seg31.png",
+      "compound_id": null,
+      "is_scoped_product": true,
+      "flag": "Structure cut off at bottom edge of crop; label not visible",
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "compound_id": "53",
+      "conditions": "X = Br",
+      "yield_percent": "43",
+      "panel_label": null,
+      "flag": null,
+      "segment_path": "segments/page8_fig0_seg44.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "flag": null,
+      "conditions": "X = Cl",
+      "compound_id": "58",
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg7.png",
+      "yield_percent": "65",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "yield_percent": "51",
+      "compound_id": "63",
+      "panel_label": null,
+      "conditions": "X = Cl",
+      "segment_path": "segments/page8_fig0_seg10.png",
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "28",
+      "segment_path": "segments/page8_fig0_seg22.png",
+      "panel_label": null,
       "compound_id": "68",
+      "is_scoped_product": true,
       "conditions": "10:1 d.r., X = Br",
       "flag": null,
       "note": null,
@@ -1071,76 +939,208 @@
     },
     {
       "is_scoped_product": true,
-      "conditions": "X = Cl",
-      "yield_percent": "51%",
-      "flag": null,
+      "segment_path": "segments/page8_fig0_seg3.png",
+      "compound_id": "69",
+      "yield_percent": "42",
       "panel_label": null,
-      "compound_id": "63",
-      "segment_path": "segments/page8_fig0_seg18.png",
+      "conditions": "5:1 d.r., X = Br",
+      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "panel_label": null,
       "yield_percent": "57%",
-      "segment_path": "segments/page8_fig0_seg40.png",
+      "segment_path": "segments/page8_fig0_seg15.png",
       "flag": null,
-      "compound_id": "64",
-      "conditions": "X = Cl",
       "is_scoped_product": true,
+      "conditions": "X = Cl",
+      "compound_id": "64",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": "X = Br",
+      "segment_path": "segments/page8_fig0_seg17.png",
+      "compound_id": "59",
+      "yield_percent": "52%",
+      "flag": null,
+      "is_scoped_product": true,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "conditions": "X = Br",
+      "compound_id": "53",
+      "segment_path": "segments/page8_fig0_seg38.png",
+      "panel_label": null,
+      "yield_percent": "43%",
+      "flag": "Bounding box is misaligned over compound 53 and 48",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "conditions": null,
+      "flag": "Cropped at right border; label not visible in this crop",
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg23.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page8_fig0_seg25.png",
+      "panel_label": null,
+      "flag": "Cropped at right border; label not visible in this crop",
+      "compound_id": null,
+      "conditions": null,
+      "is_scoped_product": true,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "segment_path": "segments/page8_fig0_seg36.png",
+      "flag": "Segment not visible in this crop",
+      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "compound_id": null,
+      "flag": "structure and label cut off at image boundary",
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg30.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "flag": "structure and label cut off at image boundary",
+      "segment_path": "segments/page8_fig0_seg40.png",
+      "is_scoped_product": true,
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg20.png",
+      "conditions": ">10:1 d.r., X = Br",
+      "yield_percent": "27%",
+      "is_scoped_product": true,
+      "compound_id": "73",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "panel_label": null,
-      "is_scoped_product": true,
-      "conditions": "5:1 d.r., X = Br",
-      "segment_path": "segments/page8_fig0_seg34.png",
-      "compound_id": "69",
+      "yield_percent": "24%",
+      "segment_path": "segments/page8_fig0_seg18.png",
       "flag": null,
-      "yield_percent": "42%",
+      "conditions": ">10:1 d.r., X = Br",
+      "is_scoped_product": true,
+      "compound_id": "74",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "compound_id": "79",
-      "flag": null,
       "is_scoped_product": true,
-      "segment_path": "segments/page8_fig0_seg43.png",
-      "panel_label": null,
-      "conditions": "X = Br",
+      "segment_path": "segments/page8_fig0_seg19.png",
       "yield_percent": "18%",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": ">10:1 d.r., X = Br",
-      "yield_percent": "24%",
-      "panel_label": null,
-      "compound_id": "74",
-      "is_scoped_product": true,
-      "segment_path": "segments/page8_fig0_seg41.png",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
       "conditions": "X = Br",
-      "segment_path": "segments/page8_fig0_seg23.png",
-      "yield_percent": "21%",
-      "is_scoped_product": true,
-      "compound_id": "48",
+      "panel_label": null,
       "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "segment_path": "segments/page8_fig0_seg34.png",
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": true,
+      "flag": "Structure and label cut off at edge of image crop",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "panel_label": null,
+      "flag": "Structure and label cut off at edge of image crop",
+      "segment_path": "segments/page8_fig0_seg21.png",
+      "yield_percent": null,
+      "is_scoped_product": true,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page8_fig0_seg41.png",
+      "is_scoped_product": true,
+      "compound_id": null,
+      "panel_label": null,
+      "flag": "Structure and label cut off at edge of image crop",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
       "compound_id": null,
       "conditions": null,
-      "flag": "Multiple scoped products (55, 56, 57) merged into a single segment box",
+      "flag": "No red bounding box visible for this segment in the cropped image",
+      "segment_path": "segments/page8_fig0_seg39.png",
+      "panel_label": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "is_scoped_product": true,
+      "flag": "No red bounding box visible for this segment in the cropped image",
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page8_fig0_seg43.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page8_fig0_seg35.png",
+      "is_scoped_product": true,
+      "yield_percent": null,
+      "compound_id": null,
+      "flag": "No red bounding box visible for this segment in the cropped image",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": "26%",
+      "compound_id": "67",
       "segment_path": "segments/page8_fig0_seg29.png",
+      "flag": "segment box spans multiple compounds (67 and 68)",
+      "conditions": ">10:1 d.r., X = Cl",
       "panel_label": null,
       "is_scoped_product": true,
       "note": null,
@@ -1156,7 +1156,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum for Compound 17.",
+      "note": "Compound 17 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1169,7 +1169,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure corresponding to the 13C NMR spectrum of Compound 18.",
+      "note": "Structure shown with 13C NMR spectrum for Compound 18.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1182,7 +1182,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 19F NMR spectrum for Compound 18.",
+      "note": "Structure inset on the 19F NMR spectrum page for Compound 18.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1195,7 +1195,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of compound 28",
+      "note": "Structure shown on 1H NMR spectrum page for Compound 28",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1208,7 +1208,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 45 shown on its 13C NMR spectrum page.",
+      "note": "Compound 45 13C NMR spectrum",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1221,41 +1221,41 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 49 shown on its 13C NMR spectrum page.",
+      "note": "13C NMR spectrum for Compound 49",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page143_fig0.png": [
     {
+      "is_scoped_product": false,
       "flag": null,
-      "conditions": null,
-      "yield_percent": null,
-      "compound_id": "51",
-      "panel_label": null,
-      "is_scoped_product": false,
       "segment_path": "segments/page143_fig0_seg0.png",
+      "yield_percent": null,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": "51",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
-      "flag": "Artifact: NMR spectrum baseline/axis misidentified as a chemical structure",
+      "flag": "misidentified NMR integral/spectrum artifact",
+      "compound_id": null,
+      "panel_label": null,
       "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
       "segment_path": "segments/page143_fig0_seg1.png",
-      "yield_percent": null,
-      "panel_label": null,
-      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page143_fig0_seg2.png",
-      "flag": "Artifact: NMR spectrum baseline/axis misidentified as a chemical structure",
       "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page143_fig0_seg2.png",
+      "conditions": null,
+      "flag": "misidentified NMR integral/spectrum artifact",
       "panel_label": null,
       "compound_id": null,
-      "is_scoped_product": false,
-      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -1269,7 +1269,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown with 13C NMR spectrum for Compound 53.",
+      "note": "Compound 53 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1282,7 +1282,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of Compound 54",
+      "note": "Structure on 13C NMR spectrum page for Compound 54.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1295,7 +1295,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 54 shown on its 19F NMR spectrum page",
+      "note": "19F NMR spectrum of Compound 54",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1308,7 +1308,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum for Compound 58.",
+      "note": "Structure corresponding to 13C NMR spectrum titled Compound 58",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1321,7 +1321,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 13C NMR spectrum page for Compound 63",
+      "note": "13C NMR spectrum of Compound 63",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1334,7 +1334,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "19F NMR spectrum of compound 63.",
+      "note": "Structure on a 19F NMR spectrum page for Compound 63",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1347,7 +1347,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of Compound 64",
+      "note": "Structure of compound 64 inset in its 13C NMR spectrum",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1360,7 +1360,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 19F NMR spectrum page for Compound 64.",
+      "note": "Compound 64 shown on its 19F NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1373,7 +1373,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on the 13C NMR spectrum page for Compound 75",
+      "note": "Structure shown with 13C NMR spectrum for Compound 75.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1386,7 +1386,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic alkyl sulfonyl hydrazide starting material in General Procedure F, no ID",
+      "note": "Generic alkyl sulfonyl hydrazide starting material in a general procedure scheme, no ID",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1399,7 +1399,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Named reagent (pempidine) shown in a general procedure without an alphanumeric compound identifier.",
+      "note": "Named reagent (pempidine) with CAS number shown in a general procedure, no alphanumeric compound identifier",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1412,109 +1412,109 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic scheme illustrating General Procedure F for cross-coupling of alkyl hydrazides and (hetero)aryl halides, with no specific compound ID or yield.",
+      "note": "Generic reaction scheme illustrating General Procedure F, with no specific compound identifier or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page7_fig0.png": [
     {
-      "panel_label": null,
-      "compound_id": null,
-      "is_scoped_product": false,
       "yield_percent": null,
+      "flag": null,
+      "compound_id": null,
+      "panel_label": null,
       "segment_path": "segments/page7_fig0_seg0.png",
       "conditions": null,
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": null,
-      "compound_id": null,
-      "panel_label": null,
-      "conditions": null,
-      "segment_path": "segments/page7_fig0_seg2.png",
-      "flag": null,
       "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
+      "conditions": null,
       "yield_percent": null,
+      "compound_id": null,
       "flag": null,
       "panel_label": null,
-      "compound_id": null,
-      "conditions": null,
       "segment_path": "segments/page7_fig0_seg1.png",
-      "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "yield_percent": null,
+      "flag": null,
       "is_scoped_product": false,
       "conditions": null,
-      "segment_path": "segments/page7_fig0_seg3.png",
-      "yield_percent": null,
       "compound_id": null,
       "panel_label": null,
-      "flag": "text label misidentified as chemical structure",
+      "segment_path": "segments/page7_fig0_seg2.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "flag": "Misextracted text label under general product scheme",
+      "segment_path": "segments/page7_fig0_seg3.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page17_fig0.png": [
     {
-      "panel_label": null,
+      "flag": null,
       "compound_id": null,
-      "conditions": null,
+      "yield_percent": null,
       "is_scoped_product": false,
-      "flag": null,
-      "yield_percent": null,
       "segment_path": "segments/page17_fig0_seg0.png",
+      "panel_label": null,
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "segment_path": "segments/page17_fig0_seg1.png",
+      "panel_label": null,
+      "flag": null,
+      "yield_percent": "80%",
+      "compound_id": null,
+      "conditions": null,
+      "is_scoped_product": true,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
       "conditions": null,
       "panel_label": null,
-      "compound_id": null,
-      "is_scoped_product": true,
-      "flag": null,
-      "segment_path": "segments/page17_fig0_seg1.png",
-      "yield_percent": "80%",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": null,
-      "flag": null,
       "segment_path": "segments/page17_fig0_seg2.png",
       "compound_id": null,
-      "panel_label": null,
       "is_scoped_product": false,
-      "conditions": null,
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "segment_path": "segments/page17_fig0_seg3.png",
-      "panel_label": null,
-      "conditions": null,
-      "is_scoped_product": false,
       "compound_id": "dtbbpy",
+      "conditions": null,
       "yield_percent": null,
+      "segment_path": "segments/page17_fig0_seg3.png",
+      "flag": null,
+      "panel_label": null,
+      "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "conditions": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page17_fig0_seg4.png",
-      "flag": "False positive structure detection of text/label area",
-      "panel_label": null,
       "compound_id": null,
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page17_fig0_seg4.png",
+      "panel_label": null,
+      "is_scoped_product": false,
+      "flag": "Substructure fragment / artifact of product Ts group",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -1528,7 +1528,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic sulfonyl hydrazide starting material in the scheme for General Procedure G, with no specific compound identifier.",
+      "note": "Generic alkyl sulfonyl hydrazide starting material shown in a general procedure reaction scheme.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1541,7 +1541,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic sulfonyl hydrazide starting material in the reaction scheme for General Procedure H, without a specific identifier.",
+      "note": "Generic starting material in a general procedure reaction scheme.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1554,7 +1554,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic vinyl halide coupling partner shown in the general reaction scheme for Procedure G.",
+      "note": "Generic vinyl (pseudo)halide starting material in a general procedure reaction scheme, no ID.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1567,7 +1567,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Ligand used in General Procedure C.",
+      "note": "Ligand used in General Procedure C",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1580,52 +1580,52 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic product structure from a general reaction scheme with no alphanumeric compound identifier or yield.",
+      "note": "Generic product structure in the general procedure scheme for alkynylation of sulfonyl hydrazides, no specific ID.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page26_fig0.png": [
     {
-      "panel_label": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
       "segment_path": "segments/page26_fig0_seg0.png",
-      "compound_id": null,
       "conditions": null,
-      "is_scoped_product": false,
-      "yield_percent": null,
+      "panel_label": null,
       "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "is_scoped_product": false,
+      "conditions": null,
       "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
       "segment_path": "segments/page26_fig0_seg1.png",
-      "conditions": null,
       "panel_label": null,
-      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": null,
-      "conditions": null,
-      "flag": null,
-      "panel_label": null,
       "segment_path": "segments/page26_fig0_seg2.png",
       "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "compound_id": null,
       "is_scoped_product": false,
+      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "flag": null,
-      "compound_id": null,
-      "is_scoped_product": false,
-      "panel_label": null,
       "segment_path": "segments/page26_fig0_seg3.png",
       "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
       "conditions": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -1639,7 +1639,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material/reagent (RAE) in a graphical experimental procedure, without an alphanumeric compound identifier",
+      "note": "Starting material (redox-active ester) shown with quantity in a graphical experimental procedure, no compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1652,7 +1652,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material shown in graphical procedure with amount (3.67 g (1.5 equiv.)), without a compound identifier.",
+      "note": "Starting material (hydrazide reagent) shown in a graphical experimental procedure, no compound ID printed.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1665,7 +1665,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Ligand (2,6-bis(pyrazol-1-yl)pyridine, bpp) used as a reagent in the reaction, no alphanumeric compound identifier.",
+      "note": "Ligand bpp (2,6-bis(pyrazol-1-yl)pyridine) used in the gram-scale alkylation procedure.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1678,7 +1678,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Ligand/reagent (bpp, 2,6-bis(pyrazol-1-yl)pyridine) used in General Procedure J, no compound identifier assigned.",
+      "note": "Named ligand (bpp) used as a catalyst component in General Procedure J, with no alphanumeric compound identifier or yield reported.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1691,7 +1691,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product of gram-scale alkylation procedure with no alphanumeric identifier printed on this page.",
+      "note": "Gram-scale alkylation product without an alphanumeric compound identifier on this page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1704,7 +1704,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic starting material (sulfonyl chloride) in a general procedure scheme, no ID printed.",
+      "note": "Generic sulfonyl chloride starting material in a general procedure scheme, no compound ID.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -1717,294 +1717,294 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic structure representing unsubstituted sulfonyl hydrazides in General Procedure A, with no specific compound identifier.",
+      "note": "Generic structure representing the product class for General Procedure A with no specific compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images/page3_fig0.png": [
     {
-      "is_scoped_product": false,
-      "conditions": null,
-      "flag": null,
-      "yield_percent": null,
       "compound_id": null,
-      "panel_label": null,
+      "flag": "Segment not visible in cropped image",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "panel_label": "C",
+      "conditions": null,
       "segment_path": "segments/page3_fig0_seg2.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "flag": null,
-      "yield_percent": null,
-      "compound_id": null,
-      "conditions": null,
-      "panel_label": null,
       "segment_path": "segments/page3_fig0_seg5.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
-      "yield_percent": null,
-      "compound_id": null,
-      "conditions": null,
-      "segment_path": "segments/page3_fig0_seg1.png",
-      "flag": null,
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
-      "segment_path": "segments/page3_fig0_seg8.png",
-      "yield_percent": null,
-      "compound_id": null,
-      "flag": null,
-      "conditions": null,
-      "is_scoped_product": false,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
-      "conditions": null,
-      "segment_path": "segments/page3_fig0_seg9.png",
-      "yield_percent": null,
-      "panel_label": null,
-      "flag": null,
-      "compound_id": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "yield_percent": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page3_fig0_seg11.png",
-      "conditions": null,
-      "compound_id": null,
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
       "conditions": null,
       "flag": null,
       "compound_id": null,
-      "segment_path": "segments/page3_fig0_seg0.png",
-      "yield_percent": null,
       "panel_label": "C",
+      "is_scoped_product": false,
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "panel_label": "A",
-      "is_scoped_product": false,
-      "segment_path": "segments/page3_fig0_seg4.png",
-      "compound_id": null,
       "flag": null,
+      "compound_id": null,
+      "is_scoped_product": false,
       "conditions": null,
+      "yield_percent": null,
+      "panel_label": "B",
+      "segment_path": "segments/page3_fig0_seg1.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "yield_percent": null,
-      "compound_id": null,
-      "conditions": null,
-      "segment_path": "segments/page3_fig0_seg7.png",
       "flag": null,
       "panel_label": "B",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
-      "segment_path": "segments/page3_fig0_seg19.png",
-      "flag": null,
-      "panel_label": "C",
+      "segment_path": "segments/page3_fig0_seg8.png",
       "is_scoped_product": false,
       "yield_percent": null,
       "compound_id": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": "B",
+      "conditions": null,
+      "yield_percent": null,
+      "segment_path": "segments/page3_fig0_seg9.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": "B",
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg11.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "flag": "Segment box not visible in this image crop",
+      "segment_path": "segments/page3_fig0_seg0.png",
+      "compound_id": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": "B",
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg4.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "flag": "Artifact/misdetection on background",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "conditions": null,
       "compound_id": null,
-      "panel_label": "A",
+      "is_scoped_product": false,
       "yield_percent": null,
+      "flag": "General scheme starting material/intermediate template",
+      "panel_label": "C",
+      "segment_path": "segments/page3_fig0_seg7.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "Segment box not visible in this image crop",
+      "compound_id": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "segment_path": "segments/page3_fig0_seg19.png",
+      "conditions": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "compound_id": null,
+      "flag": "Artifact/misdetection on text banner",
+      "conditions": null,
       "is_scoped_product": false,
       "segment_path": "segments/page3_fig0_seg6.png",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": null,
-      "segment_path": "segments/page3_fig0_seg21.png",
-      "is_scoped_product": false,
-      "panel_label": "C",
-      "flag": null,
-      "conditions": null,
-      "compound_id": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": null,
-      "conditions": null,
-      "yield_percent": null,
       "panel_label": "B",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "is_scoped_product": false,
+      "compound_id": null,
+      "segment_path": "segments/page3_fig0_seg21.png",
+      "yield_percent": null,
+      "flag": "Segment box not visible in this image crop",
+      "panel_label": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "segment_path": "segments/page3_fig0_seg25.png",
-      "flag": null,
+      "panel_label": "C",
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": false,
+      "flag": "General scheme product template",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
+      "flag": "Box is misplaced on header/background",
+      "yield_percent": null,
       "panel_label": null,
       "conditions": null,
-      "yield_percent": null,
-      "is_scoped_product": false,
-      "compound_id": null,
-      "flag": null,
       "segment_path": "segments/page3_fig0_seg10.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
       "compound_id": null,
-      "panel_label": null,
-      "conditions": null,
-      "yield_percent": null,
-      "segment_path": "segments/page3_fig0_seg16.png",
-      "flag": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page3_fig0_seg18.png",
-      "compound_id": null,
-      "flag": null,
-      "is_scoped_product": false,
-      "yield_percent": null,
-      "conditions": null,
-      "panel_label": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": null,
-      "is_scoped_product": false,
-      "flag": null,
-      "segment_path": "segments/page3_fig0_seg13.png",
-      "yield_percent": null,
-      "panel_label": null,
-      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "compound_id": "2",
-      "yield_percent": "66%",
-      "flag": null,
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg13.png",
       "is_scoped_product": true,
-      "segment_path": "segments/page3_fig0_seg20.png",
-      "conditions": null,
+      "yield_percent": "66% (3.5:1 d.r.)",
+      "flag": null,
       "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
+      "segment_path": "segments/page3_fig0_seg16.png",
+      "compound_id": null,
+      "flag": "Box is misplaced on header/background",
+      "conditions": null,
+      "yield_percent": null,
       "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page3_fig0_seg14.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "conditions": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": null,
+      "conditions": null,
+      "segment_path": "segments/page3_fig0_seg20.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page3_fig0_seg18.png",
+      "is_scoped_product": false,
+      "panel_label": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "conditions": null,
+      "flag": "Segment not visible in image crop",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "compound_id": "2",
+      "segment_path": "segments/page3_fig0_seg3.png",
+      "yield_percent": "66%",
+      "panel_label": null,
+      "flag": null,
+      "conditions": "3.5:1 d.r.",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "segment_path": "segments/page3_fig0_seg12.png",
+      "flag": null,
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "flag": null,
+      "segment_path": "segments/page3_fig0_seg15.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "flag": null,
       "conditions": null,
       "is_scoped_product": false,
-      "yield_percent": null,
-      "compound_id": "1",
-      "segment_path": "segments/page3_fig0_seg14.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": null,
-      "conditions": null,
-      "flag": "Mechanistic intermediate in brackets",
-      "is_scoped_product": false,
-      "segment_path": "segments/page3_fig0_seg24.png",
-      "panel_label": null,
-      "compound_id": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
-      "panel_label": null,
-      "yield_percent": null,
-      "conditions": null,
-      "compound_id": null,
-      "segment_path": "segments/page3_fig0_seg22.png",
-      "flag": "General reaction template / scope overview entry without individual yield",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
       "segment_path": "segments/page3_fig0_seg17.png",
       "compound_id": null,
-      "conditions": null,
-      "flag": "General reaction template / scope overview entry without individual yield",
       "yield_percent": null,
-      "is_scoped_product": false,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "compound_id": null,
+      "conditions": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page3_fig0_seg22.png",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "flag": null,
+      "compound_id": null,
       "segment_path": "segments/page3_fig0_seg23.png",
-      "compound_id": null,
+      "conditions": null,
       "yield_percent": null,
       "is_scoped_product": false,
-      "flag": "General reaction template / scope overview entry without individual yield",
-      "panel_label": null,
-      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "compound_id": null,
-      "flag": "General reaction template / scope overview entry without individual yield",
+      "segment_path": "segments/page3_fig0_seg24.png",
       "yield_percent": null,
       "panel_label": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page3_fig0_seg15.png",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
+      "flag": null,
       "is_scoped_product": false,
       "conditions": null,
-      "yield_percent": null,
-      "flag": "General reaction template / scope overview entry without individual yield",
-      "panel_label": null,
-      "segment_path": "segments/page3_fig0_seg3.png",
-      "compound_id": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
-      "segment_path": "segments/page3_fig0_seg12.png",
-      "panel_label": null,
-      "flag": "General reaction template / scope overview entry without individual yield",
-      "yield_percent": null,
-      "is_scoped_product": false,
-      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -2018,7 +2018,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic sulfonyl hydrazide starting material in a general procedure scheme, no compound identifier.",
+      "note": "Generic sulfonyl hydrazide starting material in a general procedure scheme, no ID.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2031,7 +2031,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic template structure for sulfonyl hydrazones in General Procedure B, no identifier.",
+      "note": "Generic sulfonyl hydrazone product structure for General Procedure B with no specific compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2044,74 +2044,74 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic ketone starting material in a general procedure reaction scheme with no compound identifier.",
+      "note": "Generic ketone reactant in General Procedure B scheme, no ID.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page34_fig0.png": [
     {
-      "is_scoped_product": false,
       "compound_id": null,
-      "flag": null,
       "panel_label": null,
+      "flag": null,
       "yield_percent": null,
       "segment_path": "segments/page34_fig0_seg0.png",
+      "is_scoped_product": false,
       "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
       "flag": null,
-      "compound_id": null,
       "is_scoped_product": false,
+      "compound_id": null,
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
       "segment_path": "segments/page34_fig0_seg1.png",
-      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page34_fig0_seg2.png",
+      "is_scoped_product": false,
+      "flag": null,
+      "yield_percent": null,
       "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "conditions": null,
-      "yield_percent": null,
       "panel_label": null,
       "is_scoped_product": false,
       "compound_id": null,
-      "flag": null,
-      "segment_path": "segments/page34_fig0_seg2.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
-      "panel_label": null,
-      "is_scoped_product": false,
-      "flag": null,
       "yield_percent": null,
       "segment_path": "segments/page34_fig0_seg3.png",
-      "compound_id": null,
+      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "panel_label": null,
       "flag": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "panel_label": null,
       "segment_path": "segments/page34_fig0_seg4.png",
       "conditions": null,
       "yield_percent": null,
-      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "is_scoped_product": false,
+      "yield_percent": null,
       "segment_path": "segments/page34_fig0_seg5.png",
       "compound_id": null,
-      "yield_percent": null,
-      "flag": "Misdetected conditions text as structure",
       "panel_label": null,
       "conditions": null,
+      "flag": "misidentified text/conditions on arrow as chemical structure",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -2125,7 +2125,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic structure template for alkyl sulfonyl hydrazides in General Procedure E, no compound ID or yield reported.",
+      "note": "Generic structure of an alkyl sulfonyl hydrazide product in General Procedure E, no compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2138,7 +2138,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Generic product structure shown for General Procedure I with no compound identifier or yield.",
+      "note": "Generic product structure representing the general procedure without a specific compound ID or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2151,63 +2151,63 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material shown as part of the General Procedure I reaction scheme with no compound ID or yield.",
+      "note": "Starting material depicted in the general reaction scheme for General Procedure I, with no compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page11_fig0.png": [
     {
-      "compound_id": null,
-      "flag": null,
-      "segment_path": "segments/page11_fig0_seg0.png",
-      "panel_label": null,
       "yield_percent": null,
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page11_fig0_seg0.png",
+      "flag": null,
       "is_scoped_product": false,
       "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
-      "panel_label": null,
       "flag": null,
       "segment_path": "segments/page11_fig0_seg1.png",
-      "is_scoped_product": false,
-      "compound_id": null,
+      "panel_label": null,
       "yield_percent": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page11_fig0_seg2.png",
       "conditions": null,
       "is_scoped_product": false,
-      "flag": null,
-      "panel_label": null,
       "compound_id": null,
-      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "yield_percent": null,
+      "segment_path": "segments/page11_fig0_seg2.png",
       "is_scoped_product": false,
-      "compound_id": null,
       "panel_label": null,
+      "compound_id": null,
+      "conditions": null,
       "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
       "conditions": null,
       "segment_path": "segments/page11_fig0_seg3.png",
+      "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
       "yield_percent": null,
-      "compound_id": null,
       "flag": null,
-      "segment_path": "segments/page11_fig0_seg4.png",
-      "is_scoped_product": false,
       "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page11_fig0_seg4.png",
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -2221,7 +2221,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Ligand synthesized as described in section 2.12.",
+      "note": "Synthesis of dNH2-bpy ligand.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2234,7 +2234,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material (4,4'-dinitro-[2,2'-bipyridine] 1,1'-dioxide) with no alphanumeric identifier or yield assigned.",
+      "note": "Starting material 4,4'-dinitro-[2,2'-bipyridine] 1,1'-dioxide in the synthesis of dNH2-bpy ligand, with no bold alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2247,7 +2247,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Reaction conditions arrow from a reaction scheme, not a compound structure.",
+      "note": "Reaction arrow with reagents and conditions from a synthetic scheme, not a standalone compound structure",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2260,54 +2260,54 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Substrate shown under limitations of trifluoromethylation with yield indicated as traces, no identifier assigned.",
+      "note": "Substrate listed under limitations of trifluoromethylation giving trace yield, without a compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page40_fig0.png": [
     {
-      "yield_percent": null,
-      "panel_label": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page40_fig0_seg0.png",
-      "compound_id": null,
-      "conditions": null,
       "flag": null,
+      "panel_label": null,
+      "yield_percent": null,
+      "segment_path": "segments/page40_fig0_seg0.png",
+      "conditions": null,
+      "compound_id": null,
+      "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "compound_id": null,
-      "segment_path": "segments/page40_fig0_seg1.png",
+      "panel_label": null,
       "is_scoped_product": false,
+      "segment_path": "segments/page40_fig0_seg1.png",
+      "flag": null,
       "yield_percent": null,
       "conditions": null,
-      "panel_label": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page37_fig0.png": [
     {
-      "panel_label": null,
-      "conditions": null,
-      "flag": "No labels, yields, or condition annotations printed in the image",
-      "is_scoped_product": false,
-      "compound_id": null,
-      "yield_percent": null,
       "segment_path": "segments/page37_fig0_seg0.png",
+      "is_scoped_product": false,
+      "conditions": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "flag": "No compound ID or yield text present in image",
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "compound_id": null,
       "conditions": null,
-      "flag": "No labels, yields, or condition annotations printed in the image",
-      "is_scoped_product": false,
       "panel_label": null,
+      "compound_id": null,
       "segment_path": "segments/page37_fig0_seg1.png",
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "flag": "No compound ID or yield text present in image",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -2321,7 +2321,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown under the limitations of trifluoromethylation section with only a yield reported.",
+      "note": "Substrate shown in the limitations section with its corresponding 19F NMR yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2334,7 +2334,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Substrate for metal screening reaction, labeled with amount 0.05 mmol, no identifier printed.",
+      "note": "Substrate used in metal screening test reactions, labeled only with amount (0.05 mmol) and no compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2347,7 +2347,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Substrate in the limitations section showing a 7% yield, with no compound identifier printed.",
+      "note": "Substrate shown under 'Limitations of trifluoromethylation of alkyl hydrazides' with a 19F NMR yield of 7%, without an alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2360,7 +2360,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Target mass/product structure evaluated in a metal screening table without a specific compound identifier.",
+      "note": "Target product depicted in a metal screening table without a specific compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2373,7 +2373,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material/substrate in a reaction screening scheme with no compound identifier.",
+      "note": "Starting material in a reaction scheme for metal testing, with no compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2386,41 +2386,41 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Synthesized compound 24 with 45% yield.",
+      "note": "Title compound 24 prepared via General Procedure G",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page41_fig0.png": [
     {
-      "segment_path": "segments/page41_fig0_seg0.png",
-      "is_scoped_product": true,
-      "compound_id": "C(sp2)\u2013C(sp3) coupled product",
       "panel_label": null,
+      "yield_percent": null,
+      "flag": "SMILES misread Ts as SO2CF3; model product in optimization reaction scheme",
       "conditions": null,
-      "flag": null,
-      "yield_percent": "66% (65% isolated)",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page41_fig0_seg0.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "flag": null,
       "segment_path": "segments/page41_fig0_seg1.png",
       "compound_id": null,
-      "panel_label": null,
       "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": "SMILES misread Ts as Tl; starting material in reaction scheme",
+      "panel_label": null,
       "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "conditions": null,
+      "segment_path": "segments/page41_fig0_seg2.png",
       "compound_id": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": "Starting material in reaction scheme",
       "panel_label": null,
       "yield_percent": null,
-      "flag": null,
-      "segment_path": "segments/page41_fig0_seg2.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -2434,7 +2434,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Synthesized product for Compound 25",
+      "note": "Synthesis of compound 25.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2447,7 +2447,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 28 synthesized according to General Procedure G",
+      "note": "Product of General Procedure G, 4-(cyclohex-1-en-1-yl)-1-tosylpiperidine",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2460,7 +2460,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product of General Procedure G (methyl (E)-2-methyl-3-(1-tosylpiperidin-4-yl)acrylate)",
+      "note": "methyl (E)-2-methyl-3-(1-tosylpiperidin-4-yl)acrylate",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2473,7 +2473,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "methyl (E)-4-methyl-5-(1-tosylpiperidin-4-yl)pent-4-enoate",
+      "note": "Synthesized product methyl (E)-4-methyl-5-(1-tosylpiperidin-4-yl)pent-4-enoate",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2486,7 +2486,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Synthesis product for Compound 29",
+      "note": "Compound 29 synthesized according to General Procedure G",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2499,7 +2499,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Synthesis of 4-(phenylethynyl)-1-tosylpiperidine (32)",
+      "note": "Compound 32, 4-(phenylethynyl)-1-tosylpiperidine",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2512,7 +2512,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Isolated product 4-(cyclohexylethynyl)-1-tosylpiperidine",
+      "note": "Synthesis product 4-(cyclohexylethynyl)-1-tosylpiperidine (compound 31)",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2525,7 +2525,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "tert-butyl 4-(6-cyano-2-methylpyridin-3-yl)piperidine-1-carboxylate (52) synthesized via General Procedure B",
+      "note": "Title compound 52 prepared via General Procedure B.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2538,7 +2538,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of a starting material/reagent with no compound identifier or yield listed on this page.",
+      "note": "Starting material or reagent structure without an associated compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2551,7 +2551,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material / reactant (2-hydrazinylethan-1-ol) in the scheme for the synthesis of compound 80, with no compound identifier.",
+      "note": "Starting material (2-hydroxyethylhydrazine) in the reaction scheme for compound 80, no identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2564,7 +2564,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material (5-chloro-2-trifluoromethylpyridine) in the reaction scheme for the synthesis of compound 80, with no specific identifier.",
+      "note": "Starting material (5-chloro-2-trifluoromethylpyridine) in the reaction scheme for synthesis of compound 80, no ID assigned.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -2577,569 +2577,569 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product in synthesis scheme for Compound 80",
+      "note": "Product in the reaction scheme under the heading Compound 80.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images/page10_fig0.png": [
     {
-      "is_scoped_product": false,
-      "segment_path": "segments/page10_fig0_seg39.png",
-      "yield_percent": null,
-      "compound_id": null,
-      "flag": null,
-      "panel_label": "A",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page10_fig0_seg0.png",
-      "compound_id": "80",
-      "flag": null,
-      "panel_label": "A",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "is_scoped_product": false,
-      "yield_percent": null,
-      "segment_path": "segments/page10_fig0_seg3.png",
-      "flag": null,
       "compound_id": "83",
       "panel_label": "A",
+      "segment_path": "segments/page10_fig0_seg0.png",
       "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
-      "panel_label": "A",
-      "yield_percent": null,
-      "is_scoped_product": false,
-      "flag": null,
+      "segment_path": "segments/page10_fig0_seg39.png",
       "compound_id": "84",
+      "conditions": null,
+      "panel_label": "A",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "segment_path": "segments/page10_fig0_seg3.png",
+      "yield_percent": null,
+      "conditions": null,
+      "compound_id": "87",
+      "panel_label": "A",
+      "flag": null,
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "segment_path": "segments/page10_fig0_seg16.png",
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "panel_label": null,
+      "conditions": null,
+      "compound_id": "8",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "panel_label": "A",
+      "yield_percent": null,
       "segment_path": "segments/page10_fig0_seg45.png",
-      "conditions": null,
+      "compound_id": null,
+      "flag": "artifact bounding box on blank space",
       "is_scoped_product": false,
-      "yield_percent": null,
-      "compound_id": "82",
+      "panel_label": "A",
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": "bounding box on text annotation [single step]",
       "is_scoped_product": false,
-      "panel_label": "A",
-      "compound_id": "85",
-      "yield_percent": null,
       "conditions": null,
-      "flag": null,
       "segment_path": "segments/page10_fig0_seg6.png",
+      "compound_id": null,
+      "panel_label": "A",
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "yield_percent": null,
       "segment_path": "segments/page10_fig0_seg23.png",
-      "flag": null,
       "is_scoped_product": false,
-      "compound_id": "87",
+      "flag": "Empty box / artifact in whitespace",
       "conditions": null,
+      "compound_id": null,
       "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "86",
-      "is_scoped_product": false,
-      "yield_percent": null,
+      "compound_id": "80",
+      "panel_label": "A",
+      "flag": null,
+      "is_scoped_product": true,
       "conditions": null,
-      "panel_label": null,
+      "yield_percent": "68%",
       "segment_path": "segments/page10_fig0_seg24.png",
-      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
       "segment_path": "segments/page10_fig0_seg15.png",
-      "is_scoped_product": false,
-      "compound_id": "88",
-      "panel_label": null,
-      "flag": null,
       "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
-      "flag": null,
-      "panel_label": null,
-      "segment_path": "segments/page10_fig0_seg1.png",
-      "is_scoped_product": false,
       "yield_percent": null,
-      "compound_id": "81",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
       "flag": null,
+      "compound_id": "95",
       "panel_label": "C",
+      "is_scoped_product": false,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "conditions": null,
+      "flag": "Reagent/reaction arrow conditions box",
+      "panel_label": "C",
+      "compound_id": null,
+      "segment_path": "segments/page10_fig0_seg1.png",
       "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "conditions": null,
       "is_scoped_product": false,
       "segment_path": "segments/page10_fig0_seg2.png",
-      "compound_id": "94a",
+      "panel_label": "D",
+      "compound_id": null,
+      "flag": "Proposed catalytic cycle/mechanistic intermediate",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": "Proposed catalytic cycle/mechanistic intermediate",
+      "is_scoped_product": false,
       "yield_percent": null,
-      "panel_label": "C",
-      "flag": null,
       "segment_path": "segments/page10_fig0_seg4.png",
-      "is_scoped_product": false,
-      "compound_id": "95",
+      "panel_label": "D",
+      "compound_id": null,
       "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
       "yield_percent": null,
-      "flag": null,
-      "segment_path": "segments/page10_fig0_seg8.png",
-      "compound_id": "81",
-      "conditions": null,
-      "is_scoped_product": false,
-      "panel_label": "A",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
+      "flag": "Bounding box misaligned on starting material label",
       "compound_id": "89",
-      "panel_label": "B",
+      "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page10_fig0_seg8.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
       "yield_percent": null,
       "flag": null,
-      "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": "91",
+      "panel_label": null,
       "segment_path": "segments/page10_fig0_seg5.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
       "segment_path": "segments/page10_fig0_seg11.png",
-      "compound_id": "90",
-      "is_scoped_product": true,
-      "conditions": null,
-      "yield_percent": "33%",
-      "panel_label": "B",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
       "compound_id": "92",
-      "flag": null,
-      "panel_label": "B",
-      "segment_path": "segments/page10_fig0_seg19.png",
-      "is_scoped_product": true,
+      "panel_label": null,
       "yield_percent": "57%",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "yield_percent": null,
-      "conditions": null,
-      "is_scoped_product": false,
-      "panel_label": "B",
-      "compound_id": "91",
-      "flag": null,
-      "segment_path": "segments/page10_fig0_seg31.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page10_fig0_seg36.png",
-      "flag": null,
-      "is_scoped_product": false,
-      "compound_id": "8",
-      "yield_percent": null,
-      "panel_label": "B",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "panel_label": null,
-      "conditions": null,
-      "segment_path": "segments/page10_fig0_seg25.png",
-      "yield_percent": "80%",
-      "flag": null,
       "is_scoped_product": true,
+      "conditions": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "flag": "Segment box cut off at image boundary",
+      "panel_label": null,
+      "compound_id": null,
+      "segment_path": "segments/page10_fig0_seg19.png",
+      "conditions": null,
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
       "compound_id": "17",
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "segment_path": "segments/page10_fig0_seg31.png",
+      "flag": "Bounding box placed over label/whitespace area below product 17",
+      "is_scoped_product": false,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "conditions": null,
-      "flag": null,
-      "compound_id": "80",
-      "yield_percent": "68%",
+      "segment_path": "segments/page10_fig0_seg36.png",
+      "is_scoped_product": false,
       "panel_label": null,
+      "yield_percent": null,
+      "compound_id": "94a",
+      "flag": "Reagent/condition text block, not a product structure",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "yield_percent": null,
+      "conditions": null,
+      "flag": "Truncated at image boundary",
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg25.png",
+      "compound_id": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "panel_label": null,
+      "flag": null,
       "segment_path": "segments/page10_fig0_seg13.png",
-      "is_scoped_product": true,
+      "compound_id": "99",
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": true,
+      "compound_id": "100",
       "conditions": null,
-      "compound_id": "93",
-      "flag": null,
-      "yield_percent": null,
       "segment_path": "segments/page10_fig0_seg29.png",
+      "flag": null,
+      "yield_percent": "47%",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "panel_label": null,
+      "conditions": null,
+      "compound_id": "8",
+      "segment_path": "segments/page10_fig0_seg21.png",
+      "yield_percent": null,
+      "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "compound_id": "113",
+      "yield_percent": "81%",
+      "conditions": null,
+      "is_scoped_product": true,
+      "flag": null,
+      "panel_label": null,
+      "segment_path": "segments/page10_fig0_seg20.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": "Reagent text box",
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg33.png",
+      "compound_id": null,
+      "conditions": null,
       "is_scoped_product": false,
       "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "conditions": "R1 = Et, 4:1 d.r.",
-      "compound_id": "96",
-      "is_scoped_product": true,
-      "yield_percent": "51%",
-      "panel_label": "C",
-      "segment_path": "segments/page10_fig0_seg21.png",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "compound_id": "100",
-      "panel_label": "C",
-      "segment_path": "segments/page10_fig0_seg20.png",
-      "is_scoped_product": true,
-      "yield_percent": "47%",
-      "conditions": "14:1 d.r.",
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "compound_id": "99",
-      "flag": null,
-      "yield_percent": null,
-      "panel_label": "C",
-      "segment_path": "segments/page10_fig0_seg33.png",
-      "is_scoped_product": false,
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": "Mechanistic intermediate in proposed catalytic cycle",
-      "compound_id": null,
-      "yield_percent": null,
-      "panel_label": "D",
-      "is_scoped_product": false,
-      "conditions": null,
+      "panel_label": null,
       "segment_path": "segments/page10_fig0_seg46.png",
+      "conditions": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "flag": "Non-structure artifact box around plus sign",
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
+      "is_scoped_product": false,
       "flag": null,
+      "yield_percent": null,
+      "panel_label": null,
+      "conditions": null,
+      "compound_id": null,
       "segment_path": "segments/page10_fig0_seg14.png",
-      "is_scoped_product": false,
-      "panel_label": "D",
-      "yield_percent": null,
-      "compound_id": "102",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "compound_id": "105",
-      "panel_label": "D",
       "segment_path": "segments/page10_fig0_seg22.png",
-      "conditions": null,
       "is_scoped_product": false,
+      "conditions": null,
+      "compound_id": null,
+      "panel_label": null,
+      "flag": "segment not visible in crop",
       "yield_percent": null,
-      "flag": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "flag": "mechanistic diagram component",
+      "is_scoped_product": false,
       "segment_path": "segments/page10_fig0_seg9.png",
-      "is_scoped_product": false,
-      "flag": null,
-      "panel_label": "D",
-      "conditions": null,
-      "compound_id": "101",
       "yield_percent": null,
+      "conditions": null,
+      "compound_id": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
       "conditions": null,
-      "compound_id": "103",
+      "flag": "mechanistic diagram component",
       "segment_path": "segments/page10_fig0_seg35.png",
-      "panel_label": "D",
+      "compound_id": null,
+      "panel_label": null,
       "is_scoped_product": false,
-      "flag": null,
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "flag": null,
+      "compound_id": null,
+      "panel_label": null,
       "is_scoped_product": false,
       "conditions": null,
-      "compound_id": "107",
+      "yield_percent": null,
+      "flag": "mechanistic diagram component",
       "segment_path": "segments/page10_fig0_seg40.png",
-      "panel_label": "D",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "yield_percent": null,
+      "flag": "segment not visible in crop",
+      "conditions": null,
+      "is_scoped_product": false,
       "segment_path": "segments/page10_fig0_seg50.png",
-      "is_scoped_product": false,
-      "panel_label": "D",
-      "yield_percent": null,
-      "compound_id": "111",
-      "flag": null,
-      "conditions": null,
+      "compound_id": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": null,
+      "flag": "not_in_crop",
       "yield_percent": null,
-      "flag": "Box @A is not visible in the provided image crop",
-      "compound_id": null,
       "segment_path": "segments/page10_fig0_seg38.png",
-      "panel_label": "D",
       "is_scoped_product": false,
-      "conditions": null,
+      "compound_id": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "conditions": null,
-      "is_scoped_product": false,
-      "panel_label": "D",
-      "compound_id": "110",
+      "flag": "mechanistic intermediate/scheme diagram",
+      "yield_percent": null,
       "segment_path": "segments/page10_fig0_seg49.png",
-      "flag": null,
-      "yield_percent": null,
+      "is_scoped_product": false,
+      "compound_id": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "conditions": null,
-      "compound_id": "106",
-      "flag": null,
-      "panel_label": "D",
       "segment_path": "segments/page10_fig0_seg48.png",
+      "is_scoped_product": false,
+      "flag": "not_in_crop",
+      "compound_id": null,
+      "panel_label": null,
       "yield_percent": null,
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "compound_id": "105",
-      "yield_percent": null,
-      "panel_label": "D",
-      "flag": null,
       "segment_path": "segments/page10_fig0_seg44.png",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
-      "panel_label": "D",
-      "segment_path": "segments/page10_fig0_seg34.png",
       "is_scoped_product": false,
-      "compound_id": "107",
       "flag": null,
       "yield_percent": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "flag": null,
-      "yield_percent": null,
-      "compound_id": "109",
-      "panel_label": "D",
-      "is_scoped_product": false,
       "conditions": null,
-      "segment_path": "segments/page10_fig0_seg37.png",
+      "panel_label": null,
+      "compound_id": "114",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "compound_id": null,
+      "panel_label": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "flag": "not_in_crop",
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg34.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "conditions": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "panel_label": null,
+      "compound_id": "116",
+      "segment_path": "segments/page10_fig0_seg37.png",
       "flag": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "flag": null,
+      "conditions": null,
       "is_scoped_product": false,
       "segment_path": "segments/page10_fig0_seg42.png",
-      "panel_label": "D",
-      "conditions": null,
       "yield_percent": null,
+      "compound_id": "8",
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": null,
-      "compound_id": null,
-      "flag": "mechanistic intermediate",
+      "flag": "not visible in crop",
       "conditions": null,
+      "compound_id": null,
+      "yield_percent": null,
       "is_scoped_product": false,
+      "panel_label": null,
       "segment_path": "segments/page10_fig0_seg47.png",
-      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "flag": "radical intermediate",
-      "panel_label": null,
+      "flag": "text label / not a chemical structure",
+      "conditions": null,
       "segment_path": "segments/page10_fig0_seg43.png",
-      "yield_percent": null,
-      "conditions": null,
+      "is_scoped_product": false,
       "compound_id": null,
+      "yield_percent": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "is_scoped_product": false,
-      "compound_id": "116",
-      "flag": null,
-      "conditions": null,
+      "compound_id": null,
       "segment_path": "segments/page10_fig0_seg27.png",
+      "conditions": null,
+      "flag": "reagent/reaction arrow segment",
       "panel_label": null,
       "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": null,
-      "compound_id": "114",
-      "is_scoped_product": false,
-      "yield_percent": null,
       "conditions": null,
       "panel_label": null,
+      "flag": null,
+      "is_scoped_product": false,
+      "compound_id": "93",
       "segment_path": "segments/page10_fig0_seg32.png",
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "is_scoped_product": false,
       "flag": null,
-      "compound_id": "8",
+      "panel_label": null,
       "segment_path": "segments/page10_fig0_seg41.png",
-      "yield_percent": null,
-      "is_scoped_product": false,
-      "panel_label": null,
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "segment_path": "segments/page10_fig0_seg12.png",
-      "is_scoped_product": false,
-      "panel_label": null,
-      "flag": null,
-      "yield_percent": null,
-      "compound_id": "8",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
       "conditions": null,
       "compound_id": "93",
-      "panel_label": null,
       "yield_percent": null,
-      "flag": null,
-      "is_scoped_product": false,
-      "segment_path": "segments/page10_fig0_seg10.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
       "is_scoped_product": false,
-      "flag": null,
-      "segment_path": "segments/page10_fig0_seg30.png",
-      "compound_id": "93",
-      "panel_label": null,
-      "yield_percent": null,
       "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
-      "conditions": null,
-      "segment_path": "segments/page10_fig0_seg28.png",
-      "panel_label": null,
       "compound_id": null,
-      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg12.png",
+      "panel_label": null,
       "yield_percent": null,
-      "flag": null,
+      "flag": "not visible in crop",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "yield_percent": "55%",
+      "yield_percent": "32%",
+      "segment_path": "segments/page10_fig0_seg7.png",
+      "flag": null,
+      "conditions": null,
+      "compound_id": "117",
+      "panel_label": null,
       "is_scoped_product": true,
-      "compound_id": "115",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": true,
+      "compound_id": null,
+      "yield_percent": "44%",
       "panel_label": null,
       "segment_path": "segments/page10_fig0_seg17.png",
       "conditions": null,
-      "flag": "E/Z 1.4:1",
+      "flag": "uncyclised byproduct",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
+      "conditions": null,
+      "panel_label": null,
+      "segment_path": "segments/page10_fig0_seg28.png",
+      "yield_percent": null,
+      "compound_id": null,
+      "is_scoped_product": false,
       "flag": null,
-      "is_scoped_product": true,
-      "conditions": null,
-      "yield_percent": "23%",
-      "panel_label": null,
-      "compound_id": "3",
-      "segment_path": "segments/page10_fig0_seg18.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page10_fig0_seg7.png",
-      "is_scoped_product": true,
+      "compound_id": null,
       "panel_label": null,
-      "compound_id": "117",
-      "flag": "+ 44% uncyclised",
-      "yield_percent": "32%",
-      "conditions": null,
-      "note": null,
-      "source": "gemini-chunked:google/gemini-3.7-flash"
-    },
-    {
+      "is_scoped_product": false,
       "flag": null,
-      "panel_label": null,
-      "compound_id": "113",
-      "is_scoped_product": true,
       "conditions": null,
+      "segment_path": "segments/page10_fig0_seg10.png",
+      "yield_percent": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "panel_label": null,
+      "compound_id": null,
+      "conditions": null,
+      "flag": null,
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page10_fig0_seg30.png",
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "yield_percent": null,
+      "is_scoped_product": false,
+      "flag": null,
+      "conditions": null,
+      "compound_id": null,
       "segment_path": "segments/page10_fig0_seg26.png",
-      "yield_percent": "81%",
+      "panel_label": null,
+      "note": null,
+      "source": "gemini-chunked:google/gemini-3.7-flash"
+    },
+    {
+      "is_scoped_product": false,
+      "yield_percent": null,
+      "segment_path": "segments/page10_fig0_seg18.png",
+      "conditions": null,
+      "panel_label": null,
+      "flag": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -3153,7 +3153,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product shown under heading Compound 90; synthesis description is cut off at the bottom of the page, so no yield is reported on this page.",
+      "note": "Ticagrelor derivative compound 90 with the procedure continuing onto the next page",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3166,7 +3166,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Reagent (5-bromo-2-(trifluoromethyl)pyridine) shown above/below reaction arrow with no compound identifier",
+      "note": "Reagent/coupling partner (5-bromo-2-(trifluoromethyl)pyridine) drawn in a reaction arrow, with no compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3179,7 +3179,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "The structure is listed under the placeholder heading 'Compound Sxx' with characterization data but no specific compound identifier or yield.",
+      "note": "Compound labeled with placeholder 'Compound Sxx' with no specific alphanumeric identifier or yield reported.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3192,7 +3192,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure is labeled with a placeholder 'Compound Sxx' with no specific alphanumeric identifier or yield.",
+      "note": "Unassigned starting material labeled with placeholder text 'Compound Sxx' without specific compound number or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3205,7 +3205,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Starting material labeled with placeholder 'Compound Sxx' with no specific compound identifier or yield reported.",
+      "note": "The compound is listed under the placeholder heading 'Compound Sxx' with no specific identifier or yield given.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3218,7 +3218,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Synthesized product reported under Compound 38 with 1H and 13C NMR data",
+      "note": "Product under heading Compound 38",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3231,7 +3231,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product of synthesis of tert-butyl 4-(6-acetamidopyridin-3-yl)piperidine-1-carboxylate",
+      "note": "Product 51 (tert-butyl 4-(6-acetamidopyridin-3-yl)piperidine-1-carboxylate)",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3244,7 +3244,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure from 13C NMR spectrum page for Compound 32.",
+      "note": "Structure of Compound 32 on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3257,7 +3257,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "No compound identifier or yield is printed next to this structure on this page (likely continued from the previous page).",
+      "note": "Structure with NMR data continued from previous page, with no identifier or yield printed on this page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3270,7 +3270,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product of the synthesis under heading 'Compound 90'",
+      "note": "Product of the procedure under the heading 'Compound 90'; yield is not reported on this page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3283,7 +3283,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product of synthesis for Compound 46 (procedure continues on next page)",
+      "note": "Product of synthesis heading for compound 46; experimental details/yield continue on the next page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3296,7 +3296,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on its 13C NMR spectrum page labeled 'Compound 33 13C NMR'.",
+      "note": "Structure of compound 33 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3309,7 +3309,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 80 shown on its 19F NMR spectrum page.",
+      "note": "Compound 80 shown on its 19F NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3322,7 +3322,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of Compound 33",
+      "note": "1H NMR spectrum for Compound 33.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3335,7 +3335,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 92 shown in a 13C NMR spectrum.",
+      "note": "Structure shown on a 13C NMR spectrum page for Compound 92.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3348,7 +3348,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown with 1H NMR spectrum for Compound 92.",
+      "note": "1H NMR spectrum of Compound 92",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3361,7 +3361,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum for Compound 113",
+      "note": "Structure of compound 113 shown as an inset on its 1H NMR spectrum.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3374,7 +3374,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 13C NMR spectrum page for Compound 113.",
+      "note": "Structure on 13C NMR spectrum page for Compound 113.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3387,7 +3387,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "NMR spectrum labeled generically as 'Compound hydrazone' without an alphanumeric identifier.",
+      "note": "Structure shown on an NMR spectrum page labeled 'Compound hydrazone' without an alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3400,7 +3400,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of a hydrazone intermediate labeled only as 'hydrazone' with no alphanumeric identifier.",
+      "note": "13C NMR spectrum labeled 'Compound hydrazone' without an alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3413,7 +3413,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 1H NMR spectrum page with heading 'Compound 115 1H NMR'.",
+      "note": "Structure shown on 1H NMR spectrum page for Compound 115.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3426,7 +3426,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 115 with 13C NMR spectrum.",
+      "note": "13C NMR spectrum of Compound 115",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3439,7 +3439,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "The structure is labeled with its chemical name '1-tosylpiperidine' without a bold alphanumeric identifier.",
+      "note": "The structure is identified only by its chemical name, 1-tosylpiperidine, on an NMR spectrum page with no alphanumeric code or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3452,7 +3452,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of 1-tosylpiperidine, labeled only by chemical name without an alphanumeric identifier.",
+      "note": "Structure of 1-tosylpiperidine on a 13C NMR spectrum page without an alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3465,7 +3465,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on the 1H NMR spectrum for Compound 8.",
+      "note": "Structure of Compound 8 shown on its 1H NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3478,7 +3478,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 8 depicted on its 19F NMR spectrum page",
+      "note": "Structure shown on 19F NMR spectrum of Compound 8",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3491,7 +3491,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on a 13C NMR spectrum titled Compound 8.",
+      "note": "Structure shown on the 13C NMR spectrum page for Compound 8.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3504,7 +3504,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 8 shown in HSQC NMR spectrum.",
+      "note": "Structure shown on the HSQC NMR spectrum page for Compound 8.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3517,7 +3517,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of 3-fluoro-N'-(1-tosylpiperidin-4-yl)benzenesulfonohydrazide without an alphanumeric identifier",
+      "note": "Structure shown on an NMR spectrum page identified only by chemical name, with no alphanumeric code or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3530,7 +3530,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "19F NMR spectrum of named compound 3-fluoro-N'-(1-tosylpiperidin-4-yl)benzenesulfonohydrazide without an alphanumeric identifier.",
+      "note": "Structure on an NMR spectrum page identified only by its full systematic chemical name, with no alphanumeric compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3543,7 +3543,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound shown with chemical name on an NMR spectrum page, with no alphanumeric identifier or yield reported.",
+      "note": "NMR spectrum labeled with chemical name only (4-methyl-N-(4-phenylbutyl)benzenesulfonohydrazide), without an alphanumeric identifier",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3556,7 +3556,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown as an inset on a 13C NMR spectrum with only its chemical name provided.",
+      "note": "Structure shown on 13C NMR spectrum page labeled with chemical name only (4-methyl-N-(4-phenylbutyl)benzenesulfonohydrazide), without an alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3569,7 +3569,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of compound named 3-fluoro-N'-(1-tosylpiperidin-4-yl)benzenesulfonohydrazide with no alphanumeric ID printed.",
+      "note": "Structure shown on 13C NMR spectrum with full chemical name but no alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3582,7 +3582,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on a 1H NMR spectrum titled with the chemical name N-(hex-5-en-1-yl)-4-methylbenzenesulfonohydrazide, with no alphanumeric identifier or yield printed.",
+      "note": "NMR spectrum of N-(hex-5-en-1-yl)-4-methylbenzenesulfonohydrazide without an alphanumeric identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3595,7 +3595,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum for named compound N-(hex-5-en-1-yl)-4-methylbenzenesulfonohydrazide without an alphanumeric identifier.",
+      "note": "Structure shown on a 13C NMR spectrum page identified only by its chemical name, with no alphanumeric compound identifier.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3608,7 +3608,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure displayed on a 13C NMR spectrum page with a placeholder title 'Compound Sxx' and no valid identifier or yield.",
+      "note": "Structure shown in a 13C NMR spectrum titled Compound Sxx.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3621,7 +3621,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum labeled with placeholder 'Compound Sxx' without a specific identifier.",
+      "note": "Structure shown on a 13C NMR spectra page labeled with a placeholder 'Compound Sxx' and no yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3634,7 +3634,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "NMR spectrum with placeholder title 'Compound Sxx' without a valid specific identifier or yield.",
+      "note": "Structure shown with 1H NMR spectrum labeled with placeholder 'Compound Sxx'",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3647,7 +3647,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of N-(4-bromophenethyl)-N-tosylhydrazine with placeholder title 'Compound Sxx'; no specific compound identifier or yield is given.",
+      "note": "Structure on a 13C NMR spectra page with unreplaced template placeholder 'Compound Sxx' and no yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3660,7 +3660,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum labeled with placeholder 'Compound Sxx' without a specific identifier or yield.",
+      "note": "1H NMR spectrum with placeholder title 'Compound Sxx', no specific compound identifier or yield reported.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3673,7 +3673,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on an NMR spectrum page with an unassigned placeholder heading ('Compound Sxx') and no yield.",
+      "note": "1H NMR spectrum with placeholder heading 'Compound Sxx' and no specific identifier or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3686,7 +3686,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product of cross-coupling under General Procedure G",
+      "note": "Isolated product of General Procedure G (Compound 35).",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3699,7 +3699,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on a 13C NMR spectrum page with placeholder title 'Compound Sxx 13C NMR' and no valid compound identifier or yield.",
+      "note": "Structure shown on a 13C NMR spectrum page with placeholder title 'Compound Sxx', having no specific compound identifier or yield.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3712,7 +3712,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 1H NMR spectrum page titled Compound 3.",
+      "note": "1H NMR spectrum of compound 3",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3725,7 +3725,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product structure shown on its 13C NMR spectrum page.",
+      "note": "Structure inset on the 13C NMR spectrum for Compound 3",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3751,7 +3751,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown as an inset on its 1H NMR spectrum page.",
+      "note": "Structure shown on 1H NMR spectrum labeled Compound Sxx.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3764,7 +3764,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of Compound 5",
+      "note": "13C NMR spectrum for Compound 5",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3777,7 +3777,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure corresponding to the NMR spectrum labeled Compound 4.",
+      "note": "Structure shown as an inset on an NMR spectrum labeled Compound 4.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3790,7 +3790,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of compound 5",
+      "note": "Structure shown on 1H NMR spectrum for Compound 5",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3803,7 +3803,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 1H NMR spectrum of Compound 7.",
+      "note": "Structure shown on 1H NMR spectrum page for Compound 7.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3816,7 +3816,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure depicted on a 13C NMR spectrum page for Compound 5",
+      "note": "Structure shown on a 13C NMR spectrum page for Compound 5.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3829,7 +3829,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of compound 10",
+      "note": "Structure corresponding to the 1H NMR spectrum of Compound 10.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3842,7 +3842,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown in HSQC 2D NMR spectrum for compound 10.",
+      "note": "Structure shown on the HSQC NMR spectrum page labeled 'Compound 10 HSQC'.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3868,7 +3868,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of Compound 13.",
+      "note": "Compound 13 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3881,7 +3881,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum of compound 10",
+      "note": "Compound 10 shown on a 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3894,7 +3894,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on a 13C NMR spectrum page with placeholder identifier 'Compound Sxx'.",
+      "note": "Structure shown on a 13C NMR spectrum page with placeholder/label Compound Sxx.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3907,7 +3907,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 13C NMR spectrum titled Compound 14.",
+      "note": "Structure shown alongside 13C NMR spectrum for Compound 14.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3920,7 +3920,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown as an inset for the 1H NMR spectrum of Compound 14.",
+      "note": "1H NMR spectrum of Compound 14.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3933,7 +3933,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown in the 1H NMR spectrum of Compound 16.",
+      "note": "Compound 16 depicted on its 1H NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3946,7 +3946,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure associated with 13C NMR spectrum titled 'Compound 16'",
+      "note": "13C NMR spectrum of compound 16",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3959,7 +3959,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on an NMR spectra page labeled 'Compound 17'.",
+      "note": "Compound shown in NMR spectra section heading.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3972,7 +3972,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 16 structure shown on its HSQC spectrum page.",
+      "note": "Structure of compound 16 shown on its HSQC spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3985,7 +3985,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure on a 1H NMR spectrum page for Compound 17.",
+      "note": "Structure depicted on 1H NMR spectrum page for Compound 17.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -3998,7 +3998,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 16 shown on its 13C NMR spectrum page.",
+      "note": "Compound 16 depicted on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4011,7 +4011,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown in the 1H NMR spectrum of Compound 16.",
+      "note": "NMR spectrum of Compound 16",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4024,7 +4024,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure depicted on 1H NMR spectrum page for Compound 18.",
+      "note": "1H NMR spectrum of Compound 18",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4037,7 +4037,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 24 shown on its 1H NMR spectrum page.",
+      "note": "Structure shown in the 1H NMR spectrum of Compound 24",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4050,30 +4050,30 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 13C NMR spectrum page for Compound 21.",
+      "note": "13C NMR spectrum of Compound 21.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page99_raster0.png": [
     {
-      "flag": null,
-      "compound_id": "20",
-      "yield_percent": null,
-      "segment_path": "segments/page99_raster0_seg0.png",
-      "panel_label": null,
       "is_scoped_product": false,
+      "segment_path": "segments/page99_raster0_seg0.png",
+      "yield_percent": null,
+      "compound_id": "20",
       "conditions": null,
+      "flag": null,
+      "panel_label": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "segment_path": "segments/page99_raster0_seg1.png",
       "yield_percent": null,
-      "compound_id": null,
-      "flag": "Not a chemical structure (NMR peak pickings)",
-      "panel_label": null,
-      "conditions": null,
+      "flag": "Misdetected structure (NMR peaks/annotations)",
+      "segment_path": "segments/page99_raster0_seg1.png",
       "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -4087,7 +4087,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound structure on a 13C NMR spectrum page.",
+      "note": "Structure embedded on the 13C NMR spectrum page for Compound 24.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4113,7 +4113,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown as the analyte on its 13C NMR spectrum page.",
+      "note": "Compound structure on a 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4126,30 +4126,30 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product structure shown on 13C NMR spectrum page.",
+      "note": "Structure shown on 13C NMR spectrum page for Compound 25.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page101_raster0.png": [
     {
+      "compound_id": "21",
+      "panel_label": null,
+      "flag": null,
       "conditions": null,
       "yield_percent": null,
-      "segment_path": "segments/page101_raster0_seg0.png",
-      "compound_id": "21",
-      "flag": null,
       "is_scoped_product": false,
-      "panel_label": null,
+      "segment_path": "segments/page101_raster0_seg0.png",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "is_scoped_product": false,
-      "segment_path": "segments/page101_raster0_seg1.png",
-      "conditions": null,
-      "compound_id": null,
-      "flag": "Misdetected NMR spectrum peak labels, not a chemical structure",
-      "yield_percent": null,
       "panel_label": null,
+      "conditions": null,
+      "segment_path": "segments/page101_raster0_seg1.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "flag": "Not a chemical structure; misdetected NMR spectrum peaks and labels",
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -4163,7 +4163,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of compound 26 shown on its 1H NMR spectrum page.",
+      "note": "Compound 26 shown on its 1H NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4176,7 +4176,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on the 13C NMR spectrum page for Compound 26.",
+      "note": "Structure shown in 13C NMR spectrum titled Compound 26",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4189,7 +4189,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 27 shown on its 13C NMR spectrum page.",
+      "note": "Compound shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4202,7 +4202,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 29 shown on its 1H NMR spectrum page.",
+      "note": "Structure on NMR spectrum page for Compound 29",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4215,7 +4215,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure embedded in the 1H NMR spectrum page for Compound 27.",
+      "note": "Structure shown on 1H NMR spectrum page for Compound 27.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4228,7 +4228,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 29 shown on its 13C NMR spectrum page.",
+      "note": "13C NMR spectrum of compound 29.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4241,7 +4241,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Product whose 1H NMR spectrum is shown on this page",
+      "note": "1H NMR spectrum of compound 30",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4254,7 +4254,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown in 13C NMR spectrum for Compound 28",
+      "note": "Compound 28 shown on a 13C NMR spectra page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4267,7 +4267,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 30 shown on a 13C NMR spectrum page.",
+      "note": "Structure of compound 30 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4293,7 +4293,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 1H NMR spectra page for Compound 31.",
+      "note": "Structure of Compound 31 shown with its 1H NMR spectrum",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4306,7 +4306,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure associated with 13C NMR spectrum titled Compound 36",
+      "note": "Structure shown on the 13C NMR spectrum for Compound 36.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4319,7 +4319,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 36 from its 1H NMR spectrum page.",
+      "note": "Structure for Compound 36 shown on its 1H NMR spectrum page",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4332,7 +4332,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 36 shown on its 1H NMR spectrum page.",
+      "note": "Structure shown as Compound 36 on its 1H NMR spectrum page",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4345,7 +4345,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure on a 13C NMR spectrum page for Compound 31.",
+      "note": "Structure on 13C NMR spectrum page for Compound 31",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4358,7 +4358,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown in 13C NMR spectrum for Compound 36.",
+      "note": "Structure shown on 13C NMR spectrum page for Compound 36",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4371,7 +4371,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure corresponding to 1H NMR spectrum of Compound 38.",
+      "note": "1H NMR spectrum of compound 38",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4384,7 +4384,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown for Compound 38 1H NMR spectrum",
+      "note": "Compound 38 shown on its 1H NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4397,7 +4397,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 13C NMR spectrum page for Compound 36.",
+      "note": "Compound 36 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4410,7 +4410,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 36 on its 13C NMR spectrum page.",
+      "note": "Structure shown on the 13C NMR spectrum page for Compound 36.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4423,7 +4423,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum for Compound 45.",
+      "note": "Compound 45 1H NMR spectrum",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4436,7 +4436,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 47 shown on its 13C NMR spectrum page.",
+      "note": "13C NMR spectrum for compound 47.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4449,7 +4449,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure associated with the 13C NMR spectrum titled 'Compound 46 13C NMR'",
+      "note": "Structure shown on 13C NMR spectrum page for Compound 46.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4462,7 +4462,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure associated with 1H NMR spectrum labeled Compound 46",
+      "note": "Structure associated with the 1H NMR spectrum of Compound 46.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4475,7 +4475,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on its 1H NMR spectrum page labeled 'Compound 49'.",
+      "note": "Structure shown on 1H NMR spectrum page for Compound 49",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4488,29 +4488,29 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of Compound 50",
+      "note": "Product structure corresponding to the 1H NMR spectrum of Compound 50.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page137_fig0.png": [
     {
-      "panel_label": null,
-      "compound_id": "47",
-      "flag": null,
+      "flag": "NMR spectrum of compound 47; no scope yield reported.",
       "is_scoped_product": false,
+      "panel_label": null,
       "conditions": null,
-      "yield_percent": null,
       "segment_path": "segments/page137_fig0_seg0.png",
+      "yield_percent": null,
+      "compound_id": "47",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "conditions": null,
-      "flag": "Spurious detection: part of NMR spectrum, not a chemical structure",
       "is_scoped_product": false,
+      "conditions": null,
+      "panel_label": null,
+      "flag": "Artifact: NMR peaks/integrals misdetected as chemical structure.",
       "yield_percent": null,
       "segment_path": "segments/page137_fig0_seg1.png",
-      "panel_label": null,
       "compound_id": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
@@ -4525,7 +4525,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 13C NMR spectrum page for Compound 50.",
+      "note": "Structure of Compound 50 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4538,7 +4538,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown with 13C NMR spectrum for Compound 51.",
+      "note": "Structure of Compound 51 shown on its 13C NMR spectrum page.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4551,7 +4551,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 52 shown on its 13C NMR spectrum page.",
+      "note": "13C NMR spectrum of compound 52",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4564,7 +4564,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure shown on 1H NMR spectrum for Compound 54",
+      "note": "1H NMR spectrum of Compound 54",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4577,7 +4577,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "1H NMR spectrum of compound 58",
+      "note": "Structure shown on 1H NMR spectrum page for Compound 58.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4590,41 +4590,41 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 53 1H NMR spectrum",
+      "note": "1H NMR spectrum for Compound 53",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page145_fig0.png": [
     {
-      "panel_label": null,
-      "conditions": null,
-      "segment_path": "segments/page145_fig0_seg0.png",
-      "is_scoped_product": false,
       "flag": null,
-      "yield_percent": null,
+      "conditions": null,
+      "is_scoped_product": false,
+      "segment_path": "segments/page145_fig0_seg0.png",
+      "panel_label": null,
       "compound_id": "52",
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": "Artifact: NMR spectrum peak integration curve misdetected as chemical structure",
-      "panel_label": null,
-      "yield_percent": null,
-      "conditions": null,
       "is_scoped_product": false,
-      "compound_id": null,
       "segment_path": "segments/page145_fig0_seg1.png",
+      "yield_percent": null,
+      "panel_label": null,
+      "flag": "misdetected artifact (NMR spectrum peak)",
+      "compound_id": null,
+      "conditions": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "panel_label": null,
-      "is_scoped_product": false,
-      "conditions": null,
       "yield_percent": null,
-      "flag": "Artifact: NMR spectrum baseline/axis misdetected as chemical structure",
-      "compound_id": null,
+      "panel_label": null,
+      "conditions": null,
       "segment_path": "segments/page145_fig0_seg2.png",
+      "compound_id": null,
+      "is_scoped_product": false,
+      "flag": "misdetected artifact (NMR spectrum integral/baseline)",
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }
@@ -4638,7 +4638,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure associated with the 1H NMR spectrum for Compound 60.",
+      "note": "Structure shown on NMR spectrum page for Compound 60.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4651,7 +4651,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum for Compound 60.",
+      "note": "Structure labeled in 13C NMR spectrum page heading as Compound 60.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4664,7 +4664,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 63 shown on its 1H NMR spectrum page.",
+      "note": "Structure shown on 1H NMR spectrum labeled Compound 63",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4677,7 +4677,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Compound 75 with 1H NMR spectrum shown on the page.",
+      "note": "Structure shown on the 1H NMR spectrum page for Compound 75.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4690,7 +4690,7 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "13C NMR spectrum for compound 80.",
+      "note": "Structure depicted on the 13C NMR spectrum page for Compound 80.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
@@ -4703,30 +4703,30 @@
       "conditions": null,
       "panel_label": null,
       "flag": null,
-      "note": "Structure of Compound 80 shown on an NMR spectra page.",
+      "note": "Compound 80 structure shown in its 1H NMR spectrum header.",
       "source": "gemini:google/gemini-3.7-flash"
     }
   ],
   "images_SI/page159_fig0.png": [
     {
-      "yield_percent": null,
+      "segment_path": "segments/page159_fig0_seg0.png",
       "compound_id": "64",
       "panel_label": null,
-      "conditions": null,
       "is_scoped_product": false,
-      "segment_path": "segments/page159_fig0_seg0.png",
+      "conditions": null,
       "flag": null,
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     },
     {
-      "flag": "Not a chemical structure; NMR chemical shift peak labels",
       "conditions": null,
-      "segment_path": "segments/page159_fig0_seg1.png",
-      "panel_label": null,
-      "yield_percent": null,
-      "compound_id": null,
       "is_scoped_product": false,
+      "flag": "NMR chemical shift labels misidentified as structure",
+      "compound_id": null,
+      "panel_label": null,
+      "segment_path": "segments/page159_fig0_seg1.png",
+      "yield_percent": null,
       "note": null,
       "source": "gemini-chunked:google/gemini-3.7-flash"
     }

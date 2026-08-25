@@ -81,10 +81,10 @@
     {
       "path": "segments/page3_fig1_seg2.png",
       "bbox": [
-        20,
-        1186,
-        203,
-        1247
+        14,
+        1183,
+        207,
+        1252
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -93,10 +93,10 @@
     {
       "path": "segments/page3_fig1_seg3.png",
       "bbox": [
-        23,
-        95,
-        151,
-        168
+        17,
+        91,
+        154,
+        169
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -129,10 +129,10 @@
     {
       "path": "segments/page3_fig1_seg6.png",
       "bbox": [
-        383,
-        1182,
-        540,
-        1251
+        380,
+        1175,
+        546,
+        1276
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -315,10 +315,10 @@
     {
       "path": "segments/page3_fig1_seg22.png",
       "bbox": [
-        212,
-        1183,
-        378,
-        1256
+        207,
+        1180,
+        380,
+        1257
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -475,10 +475,10 @@
     {
       "path": "segments/page3_fig1_seg36.png",
       "bbox": [
-        21,
-        438,
-        169,
-        541
+        19,
+        414,
+        175,
+        543
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -577,10 +577,10 @@
     {
       "path": "segments/page3_fig1_seg45.png",
       "bbox": [
-        457,
-        575,
-        721,
-        653
+        15,
+        543,
+        723,
+        668
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -723,10 +723,10 @@
     {
       "path": "segments/page3_fig2_seg11.png",
       "bbox": [
-        16,
-        413,
-        259,
-        495
+        9,
+        410,
+        260,
+        511
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -735,10 +735,10 @@
     {
       "path": "segments/page3_fig2_seg12.png",
       "bbox": [
-        264,
-        411,
-        483,
-        498
+        260,
+        404,
+        488,
+        500
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -904,11 +904,13 @@
       "path": "segments/page3_fig0_seg3.png",
       "bbox": [
         54,
-        41,
-        566,
+        45,
+        564,
         325
       ],
-      "truncated_sides": []
+      "truncated_sides": [
+        "overlap_reverted"
+      ]
     },
     {
       "path": "segments/page3_fig0_seg4.png",
@@ -1093,10 +1095,10 @@
     {
       "path": "segments/page10_fig0_seg0.png",
       "bbox": [
-        412,
-        805,
-        547,
-        943
+        312,
+        706,
+        599,
+        948
       ],
       "truncated_sides": [
         "overlap_reverted"
@@ -1135,14 +1137,14 @@
     {
       "path": "segments/page10_fig0_seg4.png",
       "bbox": [
-        271,
-        666,
+        267,
+        662,
         343,
-        705
+        706
       ],
       "truncated_sides": [
-        "overlap_reverted",
-        "unmatched"
+        "unmatched",
+        "overlap_reverted"
       ]
     }
   ],
