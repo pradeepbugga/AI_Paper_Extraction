@@ -21,23 +21,24 @@ corpus (`data/papers/`): `suzuki_iron_2024`, `copper_iron_2025`,
    CLIP-based multi-label tagging (`figure_classify.py`/`tag_figure.py`:
    `has_structures`, `is_spectrum`, `has_grid_layout`, etc.), DECIMER
    Segmentation to crop individual structures out of each figure
-   (`batch_segment.py`), then OCSR. **Production OCSR is currently plain
-   DECIMER** (`decimer_extract.py`, `from DECIMER import predict_SMILES`)
-   — corpus-wide across all 7 papers (2,174 real segments): **214/2,174
-   (9.8%) RDKit-invalid** (measured directly from the committed
-   `decimer_results.json` files, 2026-08-24). A separate, extensively-
-   developed MolScribe ensemble/OCR-correction/dictionary-patch track
-   (`ingest/fine_tune_data/molscribe_*.py`) measures far better on its own
-   (~3.4% invalid) but was discovered 2026-08-24 to have **never been
-   wired into the production pipeline** — nothing in `ingest/*.py` imports
-   it. A production integration (`ingest/molscribe_extract.py`,
-   `ingest/batch_molscribe_extract.py`, mirroring `decimer_extract.py`'s
-   output contract) was built and validated on one small paper (29
-   segments) but a full-corpus swap was paused before running — see
+   (`batch_segment.py`), then OCSR. **Production OCSR is MolScribe**
+   (`ingest/molscribe_extract.py`/`ingest/batch_molscribe_extract.py`,
+   mirroring `decimer_extract.py`'s output contract so Stage 4/5 don't
+   need to change) — an extensively-developed ensemble/OCR-correction/
+   dictionary-patch track (`ingest/fine_tune_data/molscribe_*.py`) that
+   was discovered 2026-08-24 to have never actually been wired into the
+   pipeline (plain DECIMER, `decimer_extract.py`, was still producing
+   `decimer_results.json`) was integrated and run corpus-wide 2026-08-25:
+   **77/2,174 (3.5%) RDKit-invalid**, down from plain DECIMER's 214/2,174
+   (9.8%); 287/2,174 (13.2%) wildcard-present (MolScribe's `*` convention
+   for an unresolved substituent). `suzuki_nhc_2026` remains the outlier
+   (17.2% invalid) — disproportionately NHC-metal-complex (Pt/Ir)
+   structures, a harder case for MolScribe than ordinary organics. See
    `project_molscribe_integration_attempt_2026_08_24.md` in memory for
-   current status and the concrete open question (possible MolScribe
-   regression specifically on metal-complex structures) before resuming.
-   Known open failure modes, roughly by priority: NMR spectra occasionally
+   the full integration history. **Known follow-up, not yet done**:
+   `reaction_links.json` (Stage 5) was generated against the old DECIMER
+   SMILES and hasn't been re-run against these new results yet. Known
+   open failure modes, roughly by priority: NMR spectra occasionally
    mis-segmented as structures and silently hallucinated into
    fake-but-valid molecules (11+ confirmed instances; investigated
    2026-08-24, no viable auto-filter found after 3 attempts, deliberately
