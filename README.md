@@ -6,18 +6,68 @@ from chemistry/materials literature — text, figures, and tables.
 
 ## Status
 
-Early build, in progress. Working through the pipeline one stage at a time:
+In progress, working through the pipeline one stage at a time. 7-paper
+corpus (`data/papers/`): `suzuki_iron_2024`, `copper_iron_2025`,
+`suzuki_nickel_2026`, `miyaura_iron_2025`, `redox_neutral_2024`,
+`nickelocene_2025`, `suzuki_nhc_2026`.
 
 1. **PDF ingestion** (done) — parse text blocks and figures out of raw PDFs,
-   including Supporting Information.
+   including Supporting Information. See "Stage 1" below.
 2. **Section/layout parsing** (done) — group raw text blocks into
    headings/paragraphs/figure captions and assemble a document structure,
-   for both the main text and SI.
-3. Figure understanding (classification, structure recognition)
-4. Table extraction
-5. Schema-driven LLM extraction
-6. Entity normalization (canonical IDs)
-7. Provenance-linked knowledge graph
+   for both the main text and SI, validated across 4 publishers. See
+   "Stage 2"/"Stage 2b" below.
+3. **Figure understanding** (in progress, corpus-wide but not converged) —
+   CLIP-based multi-label tagging (`figure_classify.py`/`tag_figure.py`:
+   `has_structures`, `is_spectrum`, `has_grid_layout`, etc.), DECIMER
+   Segmentation to crop individual structures out of each figure
+   (`batch_segment.py`), then MolScribe OCSR with a project-specific
+   abbreviation dictionary + OCR-based label correction
+   (`decimer_extract.py`, `molscribe_ocr_correction.py`,
+   `molscribe_ensemble_predict.py`). Run corpus-wide across all 7 papers
+   (2,163 real segments); latest measured rates 74/2,163 (3.4%)
+   RDKit-invalid, 279/2,163 (12.9%) wildcard-present — both roughly halved
+   from session-start baselines, but not a finished number (see
+   `handoff_18.md`, current as of 2026-08-24). Known open failure modes,
+   roughly by priority: NMR spectra occasionally mis-segmented as
+   structures and silently hallucinated into fake-but-valid molecules (11+
+   confirmed instances; investigated 2026-08-24, no viable auto-filter
+   found after 3 attempts, deliberately parked — see
+   `project_nmr_segmentation_investigation_2026_08_24.md` in memory); a
+   reproducible `TsN`→`N` label-drop hallucination (OCR reads it correctly
+   and confidently, the decoder still drops it — well-evidenced fix
+   candidate, not yet built); several smaller segmentation-contamination
+   and stray-fragment patterns. See `handoff_18.md`'s "Outstanding tasks"
+   for the full punch list.
+4. **Table extraction** (first working version, done) — genuine data
+   tables (SI characterization data, reaction-optimization/screening
+   tables), explicitly excluding scope-table *scheme* graphics (which are
+   Stage 3's job, not Stage 4's). See `ingest/table_extract.py`. Run
+   corpus-wide across all 7 papers (`tables.json` per paper); not yet
+   validated as deeply as Stages 1-2.
+5. **Structure-to-data linking** (first slice, in progress) — narrower
+   than the originally-scoped "schema-driven LLM extraction": links each
+   Stage-3-extracted structure to its own compound-ID/yield/conditions,
+   using a vision-LLM (Claude Sonnet 5) grounded on each structure's own
+   bbox (Set-of-Mark). Two slices: `reaction_link.py` (scope-table/grid
+   figures, `has_structures=1 AND has_grid_layout=1`, 55 candidate figures
+   corpus-wide) and `si_structure_link.py` (individually-drawn SI
+   structures, widened scope after the grid-only candidate set proved too
+   narrow — deterministic PDF-text proximity matching was tried and
+   rejected, 5.8% hit rate). Run corpus-wide (`reaction_links.json` per
+   paper). Known gap: a single scope-table entry with more than one
+   condition-variant yield for the same product isn't captured (scalar
+   fields, deliberately deferred). Provider-agnostic by design — only one
+   model integration (Claude Sonnet 5) benchmarked so far.
+6. Entity normalization (canonical IDs) — not started.
+7. Provenance-linked knowledge graph — not started.
+
+Stage numbering in code/commits doesn't map 1:1 onto the original 7-stage
+plan above (e.g. what's committed as "Stage 5" is the structure-to-data
+linking work in item 5, not the originally-scoped "schema-driven LLM
+extraction" as a whole) — the plan evolved in the direction the corpus
+actually needed, this list reflects where things really stand, not the
+original scope literally.
 
 ## Environment
 
