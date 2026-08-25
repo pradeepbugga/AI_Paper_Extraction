@@ -21,30 +21,48 @@ corpus (`data/papers/`): `suzuki_iron_2024`, `copper_iron_2025`,
    CLIP-based multi-label tagging (`figure_classify.py`/`tag_figure.py`:
    `has_structures`, `is_spectrum`, `has_grid_layout`, etc.), DECIMER
    Segmentation to crop individual structures out of each figure
-   (`batch_segment.py`), then MolScribe OCSR with a project-specific
-   abbreviation dictionary + OCR-based label correction
-   (`decimer_extract.py`, `molscribe_ocr_correction.py`,
-   `molscribe_ensemble_predict.py`). Run corpus-wide across all 7 papers
-   (2,163 real segments); latest measured rates 74/2,163 (3.4%)
-   RDKit-invalid, 279/2,163 (12.9%) wildcard-present — both roughly halved
-   from session-start baselines, but not a finished number (see
-   `handoff_18.md`, current as of 2026-08-24). Known open failure modes,
-   roughly by priority: NMR spectra occasionally mis-segmented as
-   structures and silently hallucinated into fake-but-valid molecules (11+
-   confirmed instances; investigated 2026-08-24, no viable auto-filter
-   found after 3 attempts, deliberately parked — see
-   `project_nmr_segmentation_investigation_2026_08_24.md` in memory); a
-   reproducible `TsN`→`N` label-drop hallucination (OCR reads it correctly
-   and confidently, the decoder still drops it — well-evidenced fix
-   candidate, not yet built); several smaller segmentation-contamination
-   and stray-fragment patterns. See `handoff_18.md`'s "Outstanding tasks"
-   for the full punch list.
+   (`batch_segment.py`), then OCSR. **Production OCSR is currently plain
+   DECIMER** (`decimer_extract.py`, `from DECIMER import predict_SMILES`)
+   — corpus-wide across all 7 papers (2,174 real segments): **214/2,174
+   (9.8%) RDKit-invalid** (measured directly from the committed
+   `decimer_results.json` files, 2026-08-24). A separate, extensively-
+   developed MolScribe ensemble/OCR-correction/dictionary-patch track
+   (`ingest/fine_tune_data/molscribe_*.py`) measures far better on its own
+   (~3.4% invalid) but was discovered 2026-08-24 to have **never been
+   wired into the production pipeline** — nothing in `ingest/*.py` imports
+   it. A production integration (`ingest/molscribe_extract.py`,
+   `ingest/batch_molscribe_extract.py`, mirroring `decimer_extract.py`'s
+   output contract) was built and validated on one small paper (29
+   segments) but a full-corpus swap was paused before running — see
+   `project_molscribe_integration_attempt_2026_08_24.md` in memory for
+   current status and the concrete open question (possible MolScribe
+   regression specifically on metal-complex structures) before resuming.
+   Known open failure modes, roughly by priority: NMR spectra occasionally
+   mis-segmented as structures and silently hallucinated into
+   fake-but-valid molecules (11+ confirmed instances; investigated
+   2026-08-24, no viable auto-filter found after 3 attempts, deliberately
+   parked — see `project_nmr_segmentation_investigation_2026_08_24.md` in
+   memory); a reproducible `TsN`→`N` label-drop hallucination; a rare
+   (<5 confirmed instances) chain/polymer repeat-count miscounting issue,
+   also parked (`project_chain_notation_flag_parked_2026_08_24.md`);
+   several smaller segmentation-contamination and stray-fragment patterns.
+   See `handoff_18.md`'s "Outstanding tasks" for the full punch list.
+   Two flags already computed today, not yet routed to any review UI (see
+   Roadmap below): `too_many_fragments` (Stage 1 under-merged multiple
+   real compounds into one crop) and RDKit-invalid/wildcard-present
+   (model missed the structure entirely).
 4. **Table extraction** (first working version, done) — genuine data
    tables (SI characterization data, reaction-optimization/screening
    tables), explicitly excluding scope-table *scheme* graphics (which are
    Stage 3's job, not Stage 4's). See `ingest/table_extract.py`. Run
-   corpus-wide across all 7 papers (`tables.json` per paper); not yet
-   validated as deeply as Stages 1-2.
+   corpus-wide across all 7 papers (`tables.json`/`SI_tables.json` per
+   paper, 37 tables total); not yet validated as deeply as Stages 1-2.
+   Deliberately scoped to structured cell extraction only — caption/
+   context resolution (a table's real identity, e.g. "Table S6," or its
+   relationship to a nearby reaction scheme graphic) is punted to a
+   planned Stage 5 addition, `table_link.py`, not chased further with
+   regex here (see `project_stage4_stage5_table_linking_plan_2026_08_24.md`
+   in memory — design only, not built).
 5. **Structure-to-data linking** (first slice, in progress) — narrower
    than the originally-scoped "schema-driven LLM extraction": links each
    Stage-3-extracted structure to its own compound-ID/yield/conditions,
@@ -58,7 +76,9 @@ corpus (`data/papers/`): `suzuki_iron_2024`, `copper_iron_2025`,
    paper). Known gap: a single scope-table entry with more than one
    condition-variant yield for the same product isn't captured (scalar
    fields, deliberately deferred). Provider-agnostic by design — only one
-   model integration (Claude Sonnet 5) benchmarked so far.
+   model integration (Claude Sonnet 5) benchmarked so far. Planned
+   addition: `table_link.py` (see item 4 above), same VLM-grounding
+   pattern applied to Stage 4's tables.
 6. Entity normalization (canonical IDs) — not started.
 7. Provenance-linked knowledge graph — not started.
 
@@ -68,6 +88,28 @@ linking work in item 5, not the originally-scoped "schema-driven LLM
 extraction" as a whole) — the plan evolved in the direction the corpus
 actually needed, this list reflects where things really stand, not the
 original scope literally.
+
+## Roadmap (design only, not built — see `project_pipeline_roadmap_2026_08_24.md`)
+
+Agreed shape for the rest of the pipeline, tying the review/QA loop
+directly to signals Stage 3 already computes:
+
+1. Run the full corpus through Stages 1-3.
+2. `too_many_fragments=True` segments (Stage 1 under-merged multiple real
+   compounds into one crop) → a splitting UI where a human separates the
+   crop into its real constituent structures, then re-run OCSR on just
+   those new crops.
+3. RDKit-invalid/wildcard-present segments (expected small %) → a review
+   UI where a human draws the structure the model missed entirely, in a
+   sketch UI that auto-converts the drawing to SMILES.
+4. Stages 4/5 (tables + LLM/VLM context linkage for both structures and
+   tables).
+5. Stage 6 (entity normalization) and Stage 7 (knowledge graph).
+6. A final chemical sanity-check pass, positioned at the very end of the
+   whole pipeline rather than per-stage — substructure-based checks to
+   catch anything that slipped through everything upstream (e.g. a
+   missing aromatic double bond, a chain/polymer repeat-count miscount).
+   Not designed yet beyond these two motivating examples.
 
 ## Environment
 
