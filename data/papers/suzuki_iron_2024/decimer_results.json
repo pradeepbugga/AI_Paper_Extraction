@@ -6794,12 +6794,12 @@
   ],
   "images_SI/page46_fig1.png": [
     {
-      "smiles": "C=C[Si](C)(C)O[Si](C)(C)C=C.Cc1cc(C)c(N2C=CN(c3c(C)cc(C)cc3C)[CH]2[Fe]([I])[I])c(C)c1",
+      "smiles": "Cc1cc(C)c(N2C=CN(c3c(C)cc(C)cc3C)[C]2->[Fe]234<-[CH2]=[CH]->2[Si](C)(C)O[Si](C)(C)[CH]->3=[CH2]->4)c(C)c1",
       "mean_confidence": 0.8197444864117327,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page46_fig1_seg0.png",
@@ -6809,7 +6809,8 @@
         225,
         227
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     }
   ],
   "images_SI/page46_fig2.png": [
@@ -7044,12 +7045,12 @@
       ]
     },
     {
-      "smiles": "C=C[Si](C)(C)O[SiH2]C.C=[CH][Fe]([CH3])[c]1n(-c2c(C)cc(C)cc2C)cc[n+]1-c1c(C)cc(C)cc1C",
+      "smiles": "Cc1cc(C)c(N2C=CN(c3c(C)cc(C)cc3C)[C]2->[Fe]234<-[CH2]=[CH]->2[Si](C)(C)O[Si](C)(C)[CH]->3=[CH2]->4)c(C)c1",
       "mean_confidence": 0.7351456680190211,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page51_raster0_seg1_split0.png",
@@ -7059,7 +7060,8 @@
         1223,
         736
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     }
   ],
   "images_SI/page53_fig0.png": [
