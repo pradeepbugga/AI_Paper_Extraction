@@ -79,6 +79,19 @@ MAX_DISCONNECTED_FRAGMENTS = 8
 MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT = 5
 MAX_LARGE_FRAGMENTS = 2
 
+# Rough per-fragment heavy-atom count straight from SMILES text, for the
+# unparseable-SMILES fallback below -- matches bracket atoms as one unit,
+# then two-letter halogens, then the organic-subset single letters.
+# Confirmed calibration against real cases before adopting: small
+# counterions/junk ([Cl-], [Fe], [Na+], CC) all score 1-2, a real ring
+# (c1ccccc1) scores 6 -- same rough boundary MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT
+# already assumes for the RDKit-parsed path.
+_ATOM_TOKEN_RE = re.compile(r"\[[^\]]*\]|Br|Cl|[BCNOSPFI]|[bcnosp]")
+
+
+def _approx_heavy_atoms(fragment_smiles):
+    return len(_ATOM_TOKEN_RE.findall(fragment_smiles))
+
 
 def _has_generic_substituent(smiles):
     return "*" in smiles
@@ -88,12 +101,28 @@ def _has_too_many_fragments(smiles, mol):
     """Same logic/thresholds as decimer_extract.py's version -- see that
     module's docstring for the full derivation. Model-agnostic: operates
     only on the already-decoded SMILES/mol, not on anything DECIMER- or
-    MolScribe-specific."""
+    MolScribe-specific.
+
+    The mol=None fallback used to be pure fragment COUNT vs
+    MAX_DISCONNECTED_FRAGMENTS(8) -- a real, confirmed miss: a genuine
+    3-compound merge (redox_neutral_2024/images_page5_fig0_seg47.png,
+    each fragment a full tosyl-sulfonamide-piperidine-alkyne structure)
+    produced a SMILES RDKit couldn't even parse, so it fell straight to
+    this fallback, and 3 fragments is nowhere near 8 -- never flagged,
+    2026-08-26. The primary size-aware signal (n_large fragments with
+    >=5 heavy atoms) is exactly the check that would have caught it, but
+    it's gated behind `mol is not None` -- and a genuine multi-compound
+    merge is disproportionately likely to ALSO break RDKit's parser
+    (bonds crossing between two unrelated compounds create nonsensical
+    valence), so the fallback needs the same size-aware logic, just
+    estimated from raw text instead of a parsed Mol."""
     if mol is not None:
         frags = Chem.GetMolFrags(mol, asMols=True, sanitizeFrags=False)
         n_large = sum(1 for f in frags if f.GetNumAtoms() >= MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT)
         return n_large >= MAX_LARGE_FRAGMENTS or len(frags) >= MAX_DISCONNECTED_FRAGMENTS
-    return smiles.count(".") + 1 >= MAX_DISCONNECTED_FRAGMENTS
+    fragments = smiles.split(".")
+    n_large = sum(1 for f in fragments if _approx_heavy_atoms(f) >= MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT)
+    return n_large >= MAX_LARGE_FRAGMENTS or len(fragments) >= MAX_DISCONNECTED_FRAGMENTS
 
 
 def _strip_annotation_text(img):

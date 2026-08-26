@@ -270,6 +270,21 @@ def _has_generic_substituent(smiles):
     return bool(GENERIC_SUBSTITUENT_PATTERN.search(smiles))
 
 
+# Rough per-fragment heavy-atom count straight from SMILES text, for
+# _has_too_many_fragments' unparseable-SMILES fallback below -- matches
+# bracket atoms as one unit, then two-letter halogens, then the organic
+# subset's single letters. Confirmed calibration against real cases
+# before adopting: small counterions/junk ([Cl-], [Fe], [Na+], CC) all
+# score 1-2, a real ring (c1ccccc1) scores 6 -- same rough boundary
+# MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT already assumes for the RDKit-parsed
+# path.
+_ATOM_TOKEN_RE = re.compile(r"\[[^\]]*\]|Br|Cl|[BCNOSPFI]|[bcnosp]")
+
+
+def _approx_heavy_atoms(fragment_smiles):
+    return len(_ATOM_TOKEN_RE.findall(fragment_smiles))
+
+
 def _has_too_many_fragments(smiles, mol):
     """Flags a SMILES with more disconnected fragments than a real single
     compound (plus maybe one real counterion) would plausibly have -- a
@@ -295,10 +310,20 @@ def _has_too_many_fragments(smiles, mol):
     apart from DECIMER's much more common habit of appending small spurious
     fragments to an otherwise-correct single compound. (2)
     MAX_DISCONNECTED_FRAGMENTS raw fragments regardless of size -- a
-    backstop for extreme cases (one real case hit 59 raw fragments) and the
-    only signal available when mol is None (already-invalid SMILES,
-    falls back to counting "." in the raw string) since fragment size can't
-    be measured without a parsed mol.
+    backstop for extreme cases (one real case hit 59 raw fragments).
+
+    When mol is None (SMILES doesn't even parse), signal (1) still runs,
+    just estimating each fragment's heavy-atom count from the raw text
+    (_approx_heavy_atoms) instead of a parsed Mol. This used to fall
+    straight to signal (2) alone -- a real, confirmed miss: a genuine
+    3-compound merge (redox_neutral_2024/images_page5_fig0_seg47.png,
+    each fragment a full tosyl-sulfonamide-piperidine-alkyne structure)
+    produced an unparseable SMILES, and 3 fragments is nowhere near 8, so
+    it was never flagged (2026-08-26). A genuine multi-compound merge is
+    disproportionately likely to ALSO break RDKit's parser (bonds crossing
+    between two unrelated compounds create nonsensical valence), so the
+    fallback needs the same size-aware logic as the parsed path, not a
+    weaker one.
 
     This does NOT fix the underlying DECIMER Segmentation under-splitting
     (still one crop, one review item covering N real compounds) -- it only
@@ -308,7 +333,9 @@ def _has_too_many_fragments(smiles, mol):
         frags = Chem.GetMolFrags(mol, asMols=True, sanitizeFrags=False)
         n_large = sum(1 for f in frags if f.GetNumAtoms() >= MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT)
         return n_large >= MAX_LARGE_FRAGMENTS or len(frags) >= MAX_DISCONNECTED_FRAGMENTS
-    return smiles.count(".") + 1 >= MAX_DISCONNECTED_FRAGMENTS
+    fragments = smiles.split(".")
+    n_large = sum(1 for f in fragments if _approx_heavy_atoms(f) >= MIN_HEAVY_ATOMS_FOR_LARGE_FRAGMENT)
+    return n_large >= MAX_LARGE_FRAGMENTS or len(fragments) >= MAX_DISCONNECTED_FRAGMENTS
 
 
 def _ocr_abbreviation_matches(img):
