@@ -75,13 +75,13 @@
   ],
   "images/page3_fig0.png": [
     {
-      "smiles": "Cc1cc(C(C)C)c(-c23(ccccc2)-cc-c2(C4C(C(C)C)=C[C@@H](C)C=C4C(c4ccccc4)c4ccccc4)(ccccc2)-c-3[CH3](Cl)(Cl)[CH3](c2ccccc2)c2ccccc2)c(C(c2ccccc2)c2ccccc2)c1",
+      "smiles": "Cc1cc(C(c2ccccc2)c2ccccc2)c(N2C=CN(c3c(C(c4ccccc4)c4ccccc4)cc(C)cc3C(c3ccccc3)c3ccccc3)[C]2->[Pt]([Cl])([Cl])<-[S](C)C)c(C(c2ccccc2)c2ccccc2)c1",
       "mean_confidence": 0.1439072613900777,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": false,
+      "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page3_fig0_seg0.png",
       "bbox": [
@@ -90,16 +90,17 @@
         507,
         1136
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     },
     {
-      "smiles": "CC(C)(C)C1=CC2=C(O[PH](c3ccccc3)(c3ccccc3)c234(ccccc3)Clc23(ccccc2)(Cl4)C2=C(Oc-34(-c3ccccc3)(-c3ccccc3)ccccc4)C(C(C)(C)C)=CC(C(C)(C)C)=C2)C(C(C)(C)C)=C1",
+      "smiles": "CC(C)(C)c1cc(C(C)(C)C)c2O[P](c3ccccc3)(c3ccccc3)->[Pt]3(<-[Cl][Pt]4(<-[Cl]3)[c]3cc(C(C)(C)C)cc(C(C)(C)C)c3O[P]->4(c3ccccc3)c3ccccc3)[c]2c1",
       "mean_confidence": 0.8549547987894444,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": false,
+      "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page3_fig0_seg1.png",
       "bbox": [
@@ -108,16 +109,17 @@
         805,
         398
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     },
     {
-      "smiles": "CC[CH2]1(c2c(C(C)C)cccc2C(C)C)cc[CH2](CC)(c2c(C(C)C)cccc2C(C)C)c1[CH](C)(C)(Cl)(Cl)[CH3](C)C",
+      "smiles": "CC(C)c1cccc(C(C)C)c1N1C=CN(c2c(C(C)C)cccc2C(C)C)[C]1->[Pt]([Cl])([Cl])<-[S](C)C",
       "mean_confidence": 0.23024526166146345,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": false,
+      "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page3_fig0_seg2.png",
       "bbox": [
@@ -126,16 +128,17 @@
         456,
         724
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     },
     {
-      "smiles": "<invalid>",
+      "smiles": "Cc1cc(C)c(N2C=CN(c3c(C)cc(C)cc3C)[C]2->[Pt]([Cl])([Cl])<-[S](C)C)c(C)c1",
       "mean_confidence": 0.39090081539590027,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": false,
+      "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page3_fig0_seg3.png",
       "bbox": [
@@ -144,16 +147,17 @@
         1042,
         1133
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     },
     {
-      "smiles": "CC[CH2]1(c2c(C(C)C)cccc2C(C)C)CC[CH2](CC)(c2c(C(C)C)cccc2C(C)C)C1[CH](C)(C)(Cl)(Cl)[CH3](C)C",
+      "smiles": "CC(C)c1cccc(C(C)C)c1N1C=CN(c2c(C(C)C)cccc2C(C)C)[C]1->[Pt]([Cl])([Cl])<-[S](C)C",
       "mean_confidence": 0.3121639852564864,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": false,
+      "rdkit_valid": true,
       "method": "grayscale-direct",
       "segment_path": "segments/page3_fig0_seg4.png",
       "bbox": [
@@ -162,7 +166,8 @@
         991,
         724
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     }
   ],
   "images/page4_fig2.png": [

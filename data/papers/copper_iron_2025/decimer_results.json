@@ -1519,9 +1519,9 @@
       ]
     },
     {
-      "smiles": "*.*.*.*.COc1cc(N[S@TB19](=O)(=O)c2ccccc2)nc(OC)n1",
+      "smiles": "COc1cc(NS(=O)(=O)c2ccccc2)nc(OC)n1",
       "mean_confidence": 0.707394942151658,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": true,
       "too_many_fragments": false,
@@ -1534,7 +1534,8 @@
         708,
         514
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     },
     {
       "smiles": "Nc1ccc([S@TB16](=O)(=O)Nc2ccccc2)cc1",

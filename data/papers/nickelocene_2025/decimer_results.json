@@ -199,9 +199,9 @@
       "truncated_sides": []
     },
     {
-      "smiles": "*NC(=O)c1ccccc1",
+      "smiles": "CC(C)(C)C(=O)ONC(=O)c1ccccc1",
       "mean_confidence": 0.8294783719123574,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": true,
       "too_many_fragments": false,
@@ -214,7 +214,8 @@
         337,
         851
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     },
     {
       "smiles": "CC(C)C1CCCC(C(C)C)C1N1C=CN(C2C(C(C)C)CCCC2C(C)C)[C]1->[Ni]1234<-[cH]5[cH]->1[cH]->2[cH-]->3[cH]->45",
@@ -3723,9 +3724,9 @@
   ],
   "images_SI/page76_raster7.png": [
     {
-      "smiles": "*C(NC(=C)C12CC(NC(=O)OC(C)(C)C)(C1)C2)(C(C)=O)C(=O)OCC",
+      "smiles": "CCOC(=O)C(C)(NC(=O)C12CC(NC(=O)OC(C)(C)C)(C1)C2)C(C)=O",
       "mean_confidence": 0.861579593388663,
-      "need_human_review": true,
+      "need_human_review": false,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": true,
       "too_many_fragments": false,
@@ -3738,7 +3739,8 @@
         239,
         216
       ],
-      "truncated_sides": []
+      "truncated_sides": [],
+      "source": "human_drawn"
     }
   ],
   "images_SI/page77_raster3.png": [
