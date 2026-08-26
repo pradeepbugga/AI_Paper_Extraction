@@ -23,10 +23,13 @@ zero-build vendoring option) for the drawing surface itself.
 
 Run: uvicorn server:app --port 8430 (from this directory, in the
 `paper_extraction` conda env -- has PIL/numpy/rdkit already;
-fastapi/uvicorn were added for split_ui and are already present).
+fastapi/uvicorn were added for split_ui and are already present; easyocr
+was added 2026-08-26 for the Markush-template queue prefilter below,
+`pip install easyocr` into that same env).
 """
 
 import json
+import re
 import time
 from pathlib import Path
 
@@ -40,8 +43,44 @@ RDLogger.DisableLog("rdApp.*")
 
 PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 REVIEW_LOG_PATH = Path(__file__).resolve().parent / "review_log.json"
+MARKUSH_CACHE_PATH = Path(__file__).resolve().parent / "markush_ocr_cache.json"
 
 app = FastAPI()
+
+# Generic R-group/Markush template figures (not tied to a specific
+# numbered/named compound) are out of scope for this pipeline -- same
+# scoping decision already established for SMILES-level wildcards
+# (GENERIC_SUBSTITUENT_PATTERN in decimer_extract.py/molscribe_extract.py).
+# This is the image-level equivalent: OCR the crop and exclude it from the
+# draw queue if it carries one of these labels as its own standalone
+# token, so the user doesn't have to manually skip a queue full of
+# unfixable Markush structures one at a time. Validated against a sample
+# of 25 confirmed-real (human_drawn) segments across the corpus before
+# adopting -- 0 false positives with an exact-token match (real labels
+# like OMe/OPiv/Bpin/PPh2/TsN never match; only literal standalone R/R1/
+# X/Z/Ar/Ar1/Het-style tokens do), and confirmed catches both known
+# Markush examples from the wildcard triage (page2_fig1_seg5.png "Ar1" @
+# 0.71, page2_fig1_seg7.png "Ar" @ 1.0).
+MARKUSH_TOKEN_RE = re.compile(r"^(r\d*|x\d*|z\d*|ar\d*|het\d*)$", re.IGNORECASE)
+MARKUSH_OCR_MIN_CONFIDENCE = 0.5
+
+_ocr_reader = None
+
+
+def _get_ocr_reader():
+    global _ocr_reader
+    if _ocr_reader is None:
+        import easyocr
+        _ocr_reader = easyocr.Reader(["en"], gpu=False, verbose=False)
+    return _ocr_reader
+
+
+def _is_markush_template(image_path):
+    reader = _get_ocr_reader()
+    for _, text, conf in reader.readtext(str(image_path), detail=1):
+        if conf >= MARKUSH_OCR_MIN_CONFIDENCE and MARKUSH_TOKEN_RE.match(text.strip()):
+            return True
+    return False
 
 
 def _load_json(path):
@@ -71,6 +110,8 @@ def _build_queue():
     active pipeline anymore at all. Confirmed real, not hypothetical: 8
     such orphaned entries found across 4 papers, 2026-08-25."""
     log = _load_json(REVIEW_LOG_PATH)
+    markush_cache = _load_json(MARKUSH_CACHE_PATH)
+    cache_dirty = False
     items = []
     for paper_dir in sorted(PAPERS_DIR.iterdir()):
         results_path = paper_dir / "decimer_results.json"
@@ -91,6 +132,12 @@ def _build_queue():
                 k = _key(paper_dir.name, e["segment_path"])
                 if k in log:
                     continue
+                if k not in markush_cache:
+                    image_path = paper_dir / e["segment_path"]
+                    markush_cache[k] = _is_markush_template(image_path) if image_path.exists() else False
+                    cache_dirty = True
+                if markush_cache[k]:
+                    continue
                 items.append({
                     "paper": paper_dir.name,
                     "parent_image": parent_image,
@@ -100,6 +147,8 @@ def _build_queue():
                     "mean_confidence": e["mean_confidence"],
                     "has_wildcard": "*" in smiles,
                 })
+    if cache_dirty:
+        _save_json(MARKUSH_CACHE_PATH, markush_cache)
     # Invalid-and-wildcard-and-unparseable first -- the clearest "the
     # model has no idea" cases -- then invalid-only, then wildcard-only
     # (often just one generic substituent in an otherwise-correct read).
@@ -135,6 +184,13 @@ def _find_result_entry(results, segment_path):
     return None
 
 
+def _apply_fix(results, entry, smiles, valid):
+    entry["smiles"] = smiles
+    entry["rdkit_valid"] = valid
+    entry["need_human_review"] = False
+    entry["source"] = "human_drawn"
+
+
 @app.post("/api/save")
 def save_drawing(req: SaveRequest):
     mol = Chem.MolFromMolBlock(req.molfile)
@@ -155,10 +211,8 @@ def save_drawing(req: SaveRequest):
     if entry is None:
         raise HTTPException(404, "segment not found in decimer_results.json")
 
-    entry["smiles"] = smiles
-    entry["rdkit_valid"] = valid
-    entry["need_human_review"] = False
-    entry["source"] = "human_drawn"
+    original_smiles = entry["smiles"]
+    _apply_fix(results, entry, smiles, valid)
     _save_json(results_path, results)
 
     log = _load_json(REVIEW_LOG_PATH)
@@ -167,7 +221,31 @@ def save_drawing(req: SaveRequest):
     }
     _save_json(REVIEW_LOG_PATH, log)
 
-    return {"ok": True, "smiles": smiles, "valid": valid}
+    # Dedup: apply the same correction to every other still-queued segment
+    # that currently has this exact same (wrong) SMILES, so an identical
+    # misread doesn't need to be redrawn by hand for each occurrence.
+    applied_to = []
+    for item in _build_queue():
+        if item["segment_path"] == req.segment_path and item["paper"] == req.paper:
+            continue
+        if item["smiles"] != original_smiles:
+            continue
+        other_path = PAPERS_DIR / item["paper"] / "decimer_results.json"
+        other_results = json.load(open(other_path))
+        other_entry = _find_result_entry(other_results, item["segment_path"])
+        if other_entry is None:
+            continue
+        _apply_fix(other_results, other_entry, smiles, valid)
+        _save_json(other_path, other_results)
+        log[_key(item["paper"], item["segment_path"])] = {
+            "action": "drawn", "smiles": smiles, "timestamp": time.time(),
+            "applied_from": req.segment_path,
+        }
+        applied_to.append({"paper": item["paper"], "segment_path": item["segment_path"]})
+    if applied_to:
+        _save_json(REVIEW_LOG_PATH, log)
+
+    return {"ok": True, "smiles": smiles, "valid": valid, "applied_to": applied_to}
 
 
 class SkipRequest(BaseModel):

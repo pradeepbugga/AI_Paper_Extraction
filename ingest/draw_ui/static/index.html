@@ -263,7 +263,10 @@ async function saveDrawing() {
     setStatus("Save failed: " + (data.detail || "unknown error"), "error");
     return;
   }
-  setStatus(`Saved${data.valid ? "" : " (warning: RDKit still flags this as invalid)"}`, data.valid ? "ok" : "error");
+  const dedupeNote = data.applied_to && data.applied_to.length
+    ? ` — also applied to ${data.applied_to.length} other segment${data.applied_to.length === 1 ? "" : "s"} with the same SMILES`
+    : "";
+  setStatus(`Saved${data.valid ? "" : " (warning: RDKit still flags this as invalid)"}${dedupeNote}`, data.valid ? "ok" : "error");
   await loadQueue();
 }
 
