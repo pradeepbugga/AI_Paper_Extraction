@@ -193,16 +193,34 @@
       "truncated_sides": []
     },
     {
-      "path": "segments/page3_fig1_seg10.png",
+      "path": "segments/page3_fig1_seg10_split0.png",
       "bbox": [
         149,
+        328,
+        290,
+        401
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page3_fig1_seg10_remainder0_split0.png",
+      "bbox": [
+        272,
+        328,
+        443,
+        400
+      ],
+      "truncated_sides": []
+    },
+    {
+      "path": "segments/page3_fig1_seg10_remainder0_remainder0_split0.png",
+      "bbox": [
+        429,
         328,
         571,
         401
       ],
-      "truncated_sides": [
-        "overlap_reverted"
-      ]
+      "truncated_sides": []
     },
     {
       "path": "segments/page3_fig1_seg11.png",

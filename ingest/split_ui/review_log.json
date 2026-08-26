@@ -795,5 +795,184 @@
   "suzuki_nickel_2026::segments/page147_fig1_seg2.png": {
     "action": "skip",
     "timestamp": 1787651024.7563655
+  },
+  "suzuki_nickel_2026::segments/page114_fig0_seg0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/page114_fig0_seg0_split0.png"
+    ],
+    "remainder": null,
+    "erased": false,
+    "timestamp": 1787719148.5089161
+  },
+  "suzuki_iron_2024::segments/images_page8_fig0_seg2.png": {
+    "action": "skip",
+    "timestamp": 1787719150.5313904
+  },
+  "suzuki_iron_2024::segments/images_page8_fig0_seg12.png": {
+    "action": "skip",
+    "timestamp": 1787719152.3517282
+  },
+  "suzuki_iron_2024::segments/images_page10_fig0_seg28.png": {
+    "action": "skip",
+    "timestamp": 1787719156.0525496
+  },
+  "suzuki_iron_2024::segments/page105_raster12_seg0.png": {
+    "action": "skip",
+    "timestamp": 1787719158.1672542
+  },
+  "suzuki_iron_2024::segments/page104_fig0_seg10.png": {
+    "action": "skip",
+    "timestamp": 1787719159.3461056
+  },
+  "copper_iron_2025::segments/page3_fig1_seg10.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/page3_fig1_seg10_split0.png"
+    ],
+    "remainder": "copper_iron_2025::segments/page3_fig1_seg10_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719658.0543602
+  },
+  "copper_iron_2025::segments/page3_fig1_seg10_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/page3_fig1_seg10_remainder0_split0.png"
+    ],
+    "remainder": "copper_iron_2025::segments/page3_fig1_seg10_remainder0_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719670.0468216
+  },
+  "copper_iron_2025::segments/page3_fig1_seg10_remainder0_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/page3_fig1_seg10_remainder0_remainder0_split0.png"
+    ],
+    "remainder": null,
+    "erased": false,
+    "timestamp": 1787719685.1487777
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg47.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg47_split0.png"
+    ],
+    "remainder": "redox_neutral_2024::segments/images_page5_fig0_seg47_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719700.221494
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg47_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg47_remainder0_split0.png"
+    ],
+    "remainder": "redox_neutral_2024::segments/images_page5_fig0_seg47_remainder0_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719703.8997009
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg47_remainder0_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg47_remainder0_remainder0_split0.png"
+    ],
+    "remainder": null,
+    "erased": false,
+    "timestamp": 1787719708.7504838
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg56.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg56_split0.png"
+    ],
+    "remainder": "redox_neutral_2024::segments/images_page5_fig0_seg56_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719714.6002874
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg56_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg56_remainder0_split0.png"
+    ],
+    "remainder": "redox_neutral_2024::segments/images_page5_fig0_seg56_remainder0_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719719.5669978
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg56_remainder0_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg56_remainder0_remainder0_split0.png"
+    ],
+    "remainder": null,
+    "erased": false,
+    "timestamp": 1787719723.9034348
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg57.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg57_split0.png"
+    ],
+    "remainder": "redox_neutral_2024::segments/images_page5_fig0_seg57_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719729.906886
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg57_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg57_remainder0_split0.png"
+    ],
+    "remainder": "redox_neutral_2024::segments/images_page5_fig0_seg57_remainder0_remainder0.png",
+    "erased": false,
+    "timestamp": 1787719733.0140738
+  },
+  "redox_neutral_2024::segments/images_page5_fig0_seg57_remainder0_remainder0.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/images_page5_fig0_seg57_remainder0_remainder0_split0.png"
+    ],
+    "remainder": null,
+    "erased": false,
+    "timestamp": 1787719742.4228609
+  },
+  "suzuki_iron_2024::segments/images_page10_fig0_seg18.png": {
+    "action": "skip",
+    "timestamp": 1787719743.8711824
+  },
+  "suzuki_iron_2024::segments/page105_raster11_seg0.png": {
+    "action": "skip",
+    "timestamp": 1787719745.9805167
+  },
+  "miyaura_iron_2025::segments/page4_fig0_seg2.png": {
+    "action": "skip",
+    "timestamp": 1787719747.4504611
+  },
+  "miyaura_iron_2025::segments/page4_fig0_seg13.png": {
+    "action": "skip",
+    "timestamp": 1787719748.2891784
+  },
+  "miyaura_iron_2025::segments/page63_raster1_seg1.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/page63_raster1_seg1_split0.png"
+    ],
+    "remainder": null,
+    "erased": false,
+    "timestamp": 1787719756.3472767
+  },
+  "suzuki_iron_2024::segments/images_page10_fig0_seg4.png": {
+    "action": "skip",
+    "timestamp": 1787719758.7604177
+  },
+  "suzuki_iron_2024::segments/page51_raster0_seg1.png": {
+    "action": "split",
+    "new_segments": [
+      "segments/page51_raster0_seg1_split0.png"
+    ],
+    "remainder": null,
+    "erased": true,
+    "timestamp": 1787719799.1780806
+  },
+  "suzuki_iron_2024::segments/page105_raster0_seg0.png": {
+    "action": "skip",
+    "timestamp": 1787719800.7543597
   }
 }

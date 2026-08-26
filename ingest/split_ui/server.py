@@ -78,10 +78,30 @@ def _key(paper, segment_path):
     return f"{paper}::{segment_path}"
 
 
+def _already_split_paths(log, paper):
+    """segment_paths this paper's split tool has already produced (as a
+    prior action's new_segments) -- these are deliberate, completed split
+    decisions, not fresh candidates. Needed because too_many_fragments can
+    be TRUE on a split-tool output too (e.g. a re-run of the fragment-count
+    fix re-flagged some), and the review_log only ever excludes the
+    ORIGINAL segment_path a decision was made about, not the children that
+    decision produced -- without this, a segment you already split could
+    come right back into the queue under its own new filename. Confirmed
+    real, not hypothetical: page26_raster4_seg0_split0.png and others,
+    2026-08-26."""
+    produced = set()
+    for k, v in log.items():
+        if not k.startswith(f"{paper}::") or v.get("action") != "split":
+            continue
+        produced.update(v.get("new_segments", []))
+    return produced
+
+
 def _build_queue():
     """Every too_many_fragments=True segment across the corpus, PLUS every
     still-unresolved remainder from a previous "extract & continue" save,
-    minus anything already reviewed (split or skipped) in review_log.json."""
+    minus anything already reviewed (split or skipped) in review_log.json,
+    minus anything that IS the output of an already-completed split."""
     log = _load_json(REVIEW_LOG_PATH)
     pending = _load_json(PENDING_QUEUE_PATH)
     items = []
@@ -90,9 +110,12 @@ def _build_queue():
         if not results_path.exists():
             continue
         results = json.load(open(results_path))
+        already_split = _already_split_paths(log, paper_dir.name)
         for parent_image, entries in results.items():
             for e in entries:
                 if not e.get("too_many_fragments"):
+                    continue
+                if e["segment_path"] in already_split:
                     continue
                 k = _key(paper_dir.name, e["segment_path"])
                 if k in log:

@@ -1014,13 +1014,13 @@
   ],
   "images_SI/page3_fig3.png": [
     {
-      "smiles": "CC(C)(C)[B-]1(B2OC(C)(C)C(C)(C)O2)OC(C)(C)C(C)(C)O1",
+      "smiles": "CC1(C)O[B-]2(B3OC(C)(C)C(C)(C)O3)(C(C)(C)C)OC(C)(C)O12",
       "mean_confidence": 0.3120405148799501,
-      "need_human_review": false,
+      "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": true,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page3_fig3_seg0.png",
       "bbox": [
@@ -1029,8 +1029,7 @@
         230,
         157
       ],
-      "truncated_sides": [],
-      "source": "human_drawn"
+      "truncated_sides": []
     }
   ],
   "images_SI/page3_fig4.png": [
@@ -1253,13 +1252,13 @@
       "truncated_sides": []
     },
     {
-      "smiles": "Cc1cc(C)c(N2C=[N+](c3c(C)cc(C)cc3C)CCC2)c(C)c1.F[B-](F)(F)F",
+      "smiles": "Cc1cc(C)c([CH3]2=CN(c3c(C)cc(C)cc3C)CCC2)c(C)c1.Cc1cc(C)cc(C)c1",
       "mean_confidence": 0.8581382734673323,
       "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
-      "rdkit_valid": true,
+      "too_many_fragments": false,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page4_fig0_seg2.png",
       "bbox": [
@@ -1268,8 +1267,7 @@
         560,
         1269
       ],
-      "truncated_sides": [],
-      "source": "human_drawn"
+      "truncated_sides": []
     },
     {
       "smiles": "*.Cc1cc(C)c(N2C=[N+](c3c(C)cc(C)cc3C)CCCC2)c(C)c1",
@@ -1332,13 +1330,13 @@
       ]
     },
     {
-      "smiles": "COc1ccc(P(CCP(c2ccc(OC)cc2)c2ccc(OC)cc2)c2ccc(OC)cc2)cc1",
+      "smiles": "CC=C(C=CC(=CC=CCOC)CP1CCP2C34=C5(=C6(=CC=C(OC)C=C6)P36(CC1)C1(=CC=C(OC)C=C1)=C1=C=526C=CC(OC)=C1)C=C(OC)C=C4)OC",
       "mean_confidence": 0.06960558403684607,
-      "need_human_review": false,
+      "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": true,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page4_fig0_seg6.png",
       "bbox": [
@@ -1347,8 +1345,7 @@
         630,
         115
       ],
-      "truncated_sides": [],
-      "source": "human_drawn"
+      "truncated_sides": []
     },
     {
       "smiles": "CNc1ccccc1P(C(C)(C)C)C(C)(C)C",
@@ -1429,13 +1426,13 @@
       ]
     },
     {
-      "smiles": "CC(C)(C)c1cc(P(c2cc(C(C)(C)C)cc(C(C)(C)C)c2)c2ccccc2P(c2cc(C(C)(C)C)cc(C(C)(C)C)c2)c2ccc(C(C)(C)C)cc2C(C)(C)C)cc(C(C)(C)C)c1",
+      "smiles": "CCCCC1=CC(C(C)(C)C)=CC(P(C2=CC(C(C)(C)C)=CC(C(C)(C)C)=C2)C2=C(P3C4=CC(C(C)(C)C)=CC(C(C)(C)C)=C5(C(C)(C)C)=CC(C(C)(C)C)=CC43=C5)C=CC=C2)=C1",
       "mean_confidence": 0.6558389080954284,
-      "need_human_review": false,
+      "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": true,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page4_fig0_seg11.png",
       "bbox": [
@@ -1444,8 +1441,7 @@
         610,
         799
       ],
-      "truncated_sides": [],
-      "source": "human_drawn"
+      "truncated_sides": []
     },
     {
       "smiles": "*.CC(C)c1ccc(C(C)C)c(N2C=[N+](c3cc(C(C)C)ccc3C(C)C)CCC2)c1.O",
@@ -1468,13 +1464,13 @@
       ]
     },
     {
-      "smiles": "Cc1cc(C)c(N2/C=[N+](/c3c(C)cc(C)cc3C)CCCCC2)c(C)c1.F[B-](F)(F)F",
+      "smiles": "Br.Cc1cc(C)c([CH3]2=CN(c3c(C)cc(C)cc3C)CCCCC2)c(C)c1",
       "mean_confidence": 0.8106816943127951,
       "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
-      "rdkit_valid": true,
+      "too_many_fragments": false,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page4_fig0_seg13.png",
       "bbox": [
@@ -1485,8 +1481,7 @@
       ],
       "truncated_sides": [
         "overlap_reverted"
-      ],
-      "source": "human_drawn"
+      ]
     },
     {
       "smiles": "Cc1cc(C)c(N/C=C\\C(=O)c2c(C)cc(C)cc2C)c(C)c1.Cl",
@@ -1569,13 +1564,13 @@
   ],
   "images_SI/page8_fig0.png": [
     {
-      "smiles": "CC(C)(C)[B-]1(B2OC(C)(C)C(C)(C)O2)OC(C)(C)C(C)(C)O1",
+      "smiles": "CC1O[B-]2(B3OC(C)(C)C(C)(C)O3)(C(C)(C)C)OC(C)(C)O2C1(C)C",
       "mean_confidence": 0.3006651786153442,
-      "need_human_review": false,
+      "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": true,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page8_fig0_seg0.png",
       "bbox": [
@@ -1584,8 +1579,7 @@
         229,
         156
       ],
-      "truncated_sides": [],
-      "source": "human_drawn"
+      "truncated_sides": []
     }
   ],
   "images_SI/page8_fig1.png": [
@@ -1856,13 +1850,13 @@
   ],
   "images_SI/page10_fig0.png": [
     {
-      "smiles": "CC(C)(C)[B-]1(B2OC(C)(C)C(C)(C)O2)OC(C)(C)C(C)(C)O1",
+      "smiles": "CC1(C)OB(C2(C)(C)(C)(C(C)(C)C)OC(C)(C)C(C)(C)O2)OC1(C)C",
       "mean_confidence": 0.5111563086562025,
-      "need_human_review": false,
+      "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
       "too_many_fragments": false,
-      "rdkit_valid": true,
+      "rdkit_valid": false,
       "method": "grayscale-direct",
       "segment_path": "segments/page10_fig0_seg0.png",
       "bbox": [
@@ -1871,8 +1865,7 @@
         175,
         167
       ],
-      "truncated_sides": [],
-      "source": "human_drawn"
+      "truncated_sides": []
     }
   ],
   "images_SI/page10_fig2.png": [
@@ -4507,7 +4500,7 @@
       "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": false,
       "method": "global_bw_t200",
       "segment_path": "segments/page63_raster1_seg1.png",
@@ -4516,6 +4509,24 @@
         314,
         1354,
         711
+      ],
+      "truncated_sides": []
+    },
+    {
+      "smiles": "CCOC(=O)c1ccc(B2OC(C)(C)C(C)(C)O2)cc1",
+      "mean_confidence": 0.9127498808790515,
+      "need_human_review": false,
+      "detected_missing_abbreviations": [],
+      "has_generic_substituent": false,
+      "too_many_fragments": false,
+      "rdkit_valid": true,
+      "method": "grayscale-direct",
+      "segment_path": "segments/page63_raster1_seg1_split0.png",
+      "bbox": [
+        72,
+        365,
+        355,
+        530
       ],
       "truncated_sides": []
     }

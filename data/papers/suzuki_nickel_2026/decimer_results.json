@@ -5913,7 +5913,7 @@
       "need_human_review": true,
       "detected_missing_abbreviations": [],
       "has_generic_substituent": false,
-      "too_many_fragments": true,
+      "too_many_fragments": false,
       "rdkit_valid": false,
       "method": "global_bw_t200",
       "segment_path": "segments/page114_fig0_seg0.png",
@@ -5921,6 +5921,24 @@
         259,
         369,
         589,
+        560
+      ],
+      "truncated_sides": []
+    },
+    {
+      "smiles": "OC[C@H](c1ccccc1)c1ccc2sc3ccccc3c2c1",
+      "mean_confidence": 0.9102539626433018,
+      "need_human_review": false,
+      "detected_missing_abbreviations": [],
+      "has_generic_substituent": false,
+      "too_many_fragments": false,
+      "rdkit_valid": true,
+      "method": "grayscale-direct",
+      "segment_path": "segments/page114_fig0_seg0_split0.png",
+      "bbox": [
+        306,
+        369,
+        588,
         560
       ],
       "truncated_sides": []
