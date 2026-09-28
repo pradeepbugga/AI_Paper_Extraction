@@ -1,465 +1,132 @@
-# AI_Paper_Extraction
+# AI Paper Extraction
 
-Multimodal pipeline for extracting structured, provenance-linked scientific
-knowledge (synthesis conditions, characterization data, reaction outcomes)
-from chemistry/materials literature — text, figures, and tables.
+A multimodal ML pipeline that reads chemistry/materials-science papers — main
+text, figures, and Supporting Information — and turns them into structured,
+provenance-linked data: chemical structures as machine-readable SMILES,
+reaction conditions, yields, and characterization data, each one traceable
+back to the exact page, figure, or table it came from.
 
-## Status
+## Highlights
 
-In progress, working through the pipeline one stage at a time. 7-paper
-corpus (`data/papers/`): `suzuki_iron_2024`, `copper_iron_2025`,
-`suzuki_nickel_2026`, `miyaura_iron_2025`, `redox_neutral_2024`,
-`nickelocene_2025`, `suzuki_nhc_2026`.
+- **2,219 chemical structures** extracted from paper figures across a
+  7-paper corpus (up to ~400-page Supporting Information PDFs, 4 different
+  publisher formats). Optical structure recognition (OCSR) error rate cut
+  from a **9.8% baseline down to 1.6%** by integrating a stronger OCSR model
+  (MolScribe) and building a correction pipeline around it; ambiguous/
+  unresolved structures cut from 24.0% to **11.3%** over two full-corpus
+  triage passes.
+- **Two full-stack review tools built from scratch** (FastAPI + custom
+  canvas/JS frontends) to route model uncertainty to a human reviewer in
+  under a minute per structure: a freeform lasso-and-eraser tool for
+  figures where the model merged multiple compounds into one crop (154
+  reviewed), and a chemistry-aware sketch tool — an embedded Ketcher
+  molecular editor wired to correctly preserve dative bonds and metal
+  hapticity, which Ketcher's own SMILES export silently drops — for
+  structures the model missed outright (339 reviewed, 78 hand-corrected).
+- **Vision-LLM-grounded data linking**: each extracted structure's bounding
+  box is used as a Set-of-Mark prompt so a VLM can read the surrounding
+  figure and attach the right compound ID, yield, and reaction conditions —
+  no hand-written per-publisher parsing rules, and a large accuracy jump
+  over an earlier deterministic (PDF-text-proximity) approach that only
+  reached a 5.8% hit rate.
+- **37 data tables** (SI characterization data, reaction-optimization
+  tables) extracted corpus-wide with structured cell/row parsing.
+- ~8,800 lines of Python across PDF ingestion, layout parsing, computer
+  vision, OCSR, table extraction, and LLM-grounded linking, plus the two
+  standalone review applications.
 
-1. **PDF ingestion** (done) — parse text blocks and figures out of raw PDFs,
-   including Supporting Information. See "Stage 1" below.
-2. **Section/layout parsing** (done) — group raw text blocks into
-   headings/paragraphs/figure captions and assemble a document structure,
-   for both the main text and SI, validated across 4 publishers. See
-   "Stage 2"/"Stage 2b" below.
-3. **Figure understanding** (in progress, corpus-wide but not converged) —
-   CLIP-based multi-label tagging (`figure_classify.py`/`tag_figure.py`:
-   `has_structures`, `is_spectrum`, `has_grid_layout`, etc.), DECIMER
-   Segmentation to crop individual structures out of each figure
-   (`batch_segment.py`), then OCSR. **Production OCSR is MolScribe**
-   (`ingest/molscribe_extract.py`/`ingest/batch_molscribe_extract.py`,
-   mirroring `decimer_extract.py`'s output contract so Stage 4/5 don't
-   need to change) — an extensively-developed ensemble/OCR-correction/
-   dictionary-patch track (`ingest/fine_tune_data/molscribe_*.py`) that
-   was discovered 2026-08-24 to have never actually been wired into the
-   pipeline (plain DECIMER, `decimer_extract.py`, was still producing
-   `decimer_results.json`) was integrated and run corpus-wide 2026-08-25:
-   **77/2,174 (3.5%) RDKit-invalid**, down from plain DECIMER's 214/2,174
-   (9.8%); 287/2,174 (13.2%) wildcard-present (MolScribe's `*` convention
-   for an unresolved substituent). `suzuki_nhc_2026` remains the outlier
-   (17.2% invalid) — disproportionately NHC-metal-complex (Pt/Ir)
-   structures, a harder case for MolScribe than ordinary organics. See
-   `project_molscribe_integration_attempt_2026_08_24.md` in memory for
-   the full integration history. **Known follow-up, not yet done**:
-   `reaction_links.json` (Stage 5) was generated against the old DECIMER
-   SMILES and hasn't been re-run against these new results yet. Known
-   open failure modes, roughly by priority: NMR spectra occasionally
-   mis-segmented as structures and silently hallucinated into
-   fake-but-valid molecules (11+ confirmed instances; investigated
-   2026-08-24, no viable auto-filter found after 3 attempts, deliberately
-   parked — see `project_nmr_segmentation_investigation_2026_08_24.md` in
-   memory); a reproducible `TsN`→`N` label-drop hallucination; a rare
-   (<5 confirmed instances) chain/polymer repeat-count miscounting issue,
-   also parked (`project_chain_notation_flag_parked_2026_08_24.md`);
-   several smaller segmentation-contamination and stray-fragment patterns.
-   See `handoff_18.md`'s "Outstanding tasks" for the full punch list.
-   Two flags already computed today, not yet routed to any review UI (see
-   Roadmap below): `too_many_fragments` (Stage 1 under-merged multiple
-   real compounds into one crop) and RDKit-invalid/wildcard-present
-   (model missed the structure entirely).
-4. **Table extraction** (first working version, done) — genuine data
-   tables (SI characterization data, reaction-optimization/screening
-   tables), explicitly excluding scope-table *scheme* graphics (which are
-   Stage 3's job, not Stage 4's). See `ingest/table_extract.py`. Run
-   corpus-wide across all 7 papers (`tables.json`/`SI_tables.json` per
-   paper, 37 tables total); not yet validated as deeply as Stages 1-2.
-   Deliberately scoped to structured cell extraction only — caption/
-   context resolution (a table's real identity, e.g. "Table S6," or its
-   relationship to a nearby reaction scheme graphic) is punted to a
-   planned Stage 5 addition, `table_link.py`, not chased further with
-   regex here (see `project_stage4_stage5_table_linking_plan_2026_08_24.md`
-   in memory — design only, not built).
-5. **Structure-to-data linking** (first slice, in progress) — narrower
-   than the originally-scoped "schema-driven LLM extraction": links each
-   Stage-3-extracted structure to its own compound-ID/yield/conditions,
-   using a vision-LLM (Claude Sonnet 5) grounded on each structure's own
-   bbox (Set-of-Mark). Two slices: `reaction_link.py` (scope-table/grid
-   figures, `has_structures=1 AND has_grid_layout=1`, 55 candidate figures
-   corpus-wide) and `si_structure_link.py` (individually-drawn SI
-   structures, widened scope after the grid-only candidate set proved too
-   narrow — deterministic PDF-text proximity matching was tried and
-   rejected, 5.8% hit rate). Run corpus-wide (`reaction_links.json` per
-   paper). Known gap: a single scope-table entry with more than one
-   condition-variant yield for the same product isn't captured (scalar
-   fields, deliberately deferred). Provider-agnostic by design — only one
-   model integration (Claude Sonnet 5) benchmarked so far. Planned
-   addition: `table_link.py` (see item 4 above), same VLM-grounding
-   pattern applied to Stage 4's tables.
-6. Entity normalization (canonical IDs) — not started.
-7. Provenance-linked knowledge graph — not started.
+## Pipeline
 
-Stage numbering in code/commits doesn't map 1:1 onto the original 7-stage
-plan above (e.g. what's committed as "Stage 5" is the structure-to-data
-linking work in item 5, not the originally-scoped "schema-driven LLM
-extraction" as a whole) — the plan evolved in the direction the corpus
-actually needed, this list reflects where things really stand, not the
-original scope literally.
+| Stage | What it does | Status |
+|---|---|---|
+| 1. PDF ingestion | Extracts text blocks and figures from paper + SI PDFs, including vector-drawn (not embedded-raster) figures | Done |
+| 2. Layout parsing | Reconstructs headings/paragraphs/figure captions/references into a document structure, generalized across publishers via document-relative statistics rather than hardcoded per-journal rules | Done |
+| 3. Figure understanding | CLIP-based figure tagging → segmentation → OCSR (MolScribe) → RDKit validation, with two human review tools closing the loop on model errors | Corpus-wide, iterating |
+| 4. Table extraction | Structured cell/row extraction from genuine data tables (SI characterization data, screening tables) | First working version, done |
+| 5. Structure-to-data linking | VLM (Claude), grounded on each structure's bounding box, links it to its compound ID/yield/conditions | First slice, in progress |
+| 6. Entity normalization | Canonical compound IDs across papers | Not started |
+| 7. Knowledge graph | Provenance-linked graph over the above | Not started |
 
-## Roadmap (design only, not built — see `project_pipeline_roadmap_2026_08_24.md`)
+## Engineering deep-dives
 
-Agreed shape for the rest of the pipeline, tying the review/QA loop
-directly to signals Stage 3 already computes:
+A few of the harder problems this pipeline had to solve:
 
-1. Run the full corpus through Stages 1-3.
-2. `too_many_fragments=True` segments (Stage 1 under-merged multiple real
-   compounds into one crop) → a splitting UI where a human separates the
-   crop into its real constituent structures, then re-run OCSR on just
-   those new crops.
-3. RDKit-invalid/wildcard-present segments (expected small %) → a review
-   UI where a human draws the structure the model missed entirely, in a
-   sketch UI that auto-converts the drawing to SMILES.
-4. Stages 4/5 (tables + LLM/VLM context linkage for both structures and
-   tables).
-5. Stage 6 (entity normalization) and Stage 7 (knowledge graph).
-6. A final chemical sanity-check pass, positioned at the very end of the
-   whole pipeline rather than per-stage — substructure-based checks to
-   catch anything that slipped through everything upstream (e.g. a
-   missing aromatic double bond, a chain/polymer repeat-count miscount).
-   Not designed yet beyond these two motivating examples.
+- **Vector-graphic figure detection.** Chemistry figures in these PDFs are
+  almost always hundreds of individual vector path/line/fill operations, not
+  embedded raster images — naively pulling embedded images misses them
+  entirely. Stage 1 clusters nearby vector-drawing bounding boxes into
+  figure-sized regions instead, with asymmetric padding (wide vertically,
+  narrow horizontally) so multi-panel schemes merge correctly without
+  bridging across a two-column page's gutter.
+- **Publisher-agnostic layout parsing.** An early version hardcoded font
+  names and page-position bands tuned to one journal and silently produced
+  an empty document structure on a different publisher. Rewritten to rank
+  heading tiers by document-relative statistics (font size, then
+  numbered-list/ALL-CAPS/marker-glyph tie-breakers), validated cleanly
+  across 4 publisher formats with zero regressions as each new one was
+  added.
+- **OCSR error correction.** Beyond swapping in a stronger base OCSR model,
+  built a correction layer: multi-mode Tesseract OCR voting to catch
+  compound-label abbreviations a single PSM mode misreads (e.g. a tosyl
+  group silently dropping its trailing "s"), a dictionary patch for
+  domain-specific fragments, and a fragment-count heuristic to flag crops
+  where the model under-merged multiple real compounds into one image.
+- **Chemically-correct molecule encoding for organometallic structures.**
+  This corpus is rich in NHC/organometallic complexes with dative
+  metal-ligand bonds and π-hapticity (η⁵-Cp, η⁶-arene, etc.). The sketch
+  tool exports Ketcher's Molfile (never its SMILES, which silently drops
+  dative bond orders) and lets RDKit re-serialize it — the only reliable
+  path found for round-tripping these structures correctly.
+- **Set-of-Mark VLM grounding.** Rather than write per-publisher rules to
+  match a structure to its caption text, each structure's own bounding box
+  is drawn onto the figure and handed to a vision-LLM as a grounding
+  anchor — a general technique that replaced a bespoke, much lower-accuracy
+  deterministic matcher.
 
-## Environment
+## Tech stack
 
-This project uses a dedicated conda environment, **not** `base` — always
-activate it before running anything here:
+Python · PyMuPDF · RDKit · DECIMER / MolScribe (OCSR) · OpenCLIP ·
+Tesseract / EasyOCR · GROBID (reference parsing) · FastAPI · Ketcher
+(React/Vite, built from source) · Claude (Anthropic API) for VLM grounding.
 
-```
-conda activate paper_extraction
-```
-
-If it doesn't exist yet:
+## Setup
 
 ```
 conda create -n paper_extraction python=3.13 -y
 conda activate paper_extraction
 pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch torchvision
 pip install open_clip_torch pymupdf requests decimer "tensorflow[and-cuda]"
-```
-
-Notes:
-- `torch`/`torchvision` are pinned to the CPU build deliberately (via the
-  PyTorch CPU wheel index) — `pip install torch` alone silently pulls a
-  GPU-linked build that doesn't match this setup; only `tensorflow` (for
-  DECIMER) uses the GPU here.
-- `tensorflow[and-cuda]` needs an actual NVIDIA GPU + driver to matter;
-  falls back to (slow) CPU otherwise, no code changes required either way.
-- `pip check` should report nothing beyond pre-existing, unrelated conda
-  tooling warnings — if it reports anything about `torch`, `tensorflow`,
-  `open_clip_torch`, `decimer`, or `pymupdf`, the environment is broken.
-
-## Stage 1: PDF ingestion
-
-`ingest/pdf_ingest.py` extracts, per page:
-- Text blocks (position + content)
-- Figures
-
-The nontrivial part: journal figures (chemical structures, plots) are almost
-always drawn as vector graphics — hundreds of individual path/line/fill
-operations — not embedded raster images. Naively pulling embedded images
-misses them entirely. The script instead clusters nearby vector-drawing
-bounding boxes on each page into figure-sized regions, then rasterizes each
-region to PNG.
-
-Test paper: Rowsell et al., "The iron-catalysed Suzuki coupling of aryl
-chlorides," *Nature Catalysis* 7, 1186-1198 (2024) — chosen for its reaction
-scheme, large substrate-scope figures, and mechanistic plots.
-
-```
 pip install -r requirements.txt
-python3 ingest/pdf_ingest.py data/papers/suzuki_iron_2024
 ```
 
-Outputs `raw_extraction.json` (per-page text blocks + figure metadata) and an
-`images/` directory of rasterized figures, inside the paper's data directory.
+`torch`/`torchvision` are pinned to CPU builds deliberately; only
+`tensorflow` (DECIMER) uses a GPU if one's available, falling back to CPU
+otherwise with no code changes required.
 
-### Supporting Information
-
-Materials chemistry papers lean heavily on their SI PDF — most of the actual
-synthesis procedures and compound characterization data (NMR shifts, IR,
-HRMS, melting points) lives there, not in the main text. If `SI.pdf` is
-present alongside `paper.pdf` in a paper's directory, the same run also
-ingests it as its own document (`SI_raw_extraction.json`, `images_SI/`),
-with every page tagged `"source": "main"` or `"source": "SI"` so downstream
-stages can tell which document a given span of text or figure came from.
-Image IDs and output filenames are kept in per-source namespaces since both
-documents restart page numbering at 1.
-
-Tested on two SI PDFs of very different scale — 111 pages (`copper_iron_2025`,
-mostly text: procedures, per-compound characterization data, and NMR
-spectrum plots drawn as dense vector line traces rather than chemical
-structures) and 406 pages (`suzuki_iron_2024`, which also includes a large
-block of raw DFT-calculation Cartesian coordinates). The same vector-drawing
-clustering from the main text handles NMR spectrum traces correctly despite
-them being a structurally different kind of vector drawing (one continuous
-line, thousands of tiny path segments, vs. discrete chemical-structure
-bonds) — verified by rendering a crop and confirming it's a clean,
-correctly-cropped spectrum.
+## Running the pipeline
 
 ```
-python3 ingest/pdf_ingest.py data/papers/copper_iron_2025
+python3 ingest/pdf_ingest.py data/papers/<paper>       # Stage 1: PDF -> text + figures
+python3 ingest/section_parse.py data/papers/<paper>    # Stage 2: document structure
+python3 ingest/si_parse.py data/papers/<paper>         # Stage 2b: SI compound records
+python3 ingest/batch_tag_figures.py data/papers/<paper> # Stage 3a: figure classification
+python3 ingest/batch_segment.py data/papers/<paper>     # Stage 3b: crop individual structures
+python3 ingest/batch_molscribe_extract.py data/papers/<paper> # Stage 3c: OCSR
+python3 ingest/table_extract.py data/papers/<paper>     # Stage 4: table extraction
+python3 ingest/reaction_link.py data/papers/<paper>     # Stage 5: structure-to-data linking
 ```
 
-## Stage 2: section/layout parsing
+References are parsed via a local [GROBID](https://github.com/kermitt2/grobid)
+container (`docker run -d --name grobid -p 8070:8070 grobid/grobid:0.8.1`);
+Stage 2 falls back to a prose reference section if it isn't running.
 
-`ingest/section_parse.py` turns the flat per-page text blocks from Stage 1
-into a document structure: headings, paragraphs, and figure captions, in
-reading order.
+The two review tools (`ingest/split_ui/`, `ingest/draw_ui/`) run as
+standalone FastAPI apps (`uvicorn server:app --port 8420` / `8430`) and pull
+their queues from whatever the pipeline currently has flagged for review.
 
-The first version of this hardcoded literal font names and a page-position
-band tuned to one journal (Nature Catalysis), and it silently produced an
-empty structure on a paper from a different publisher (ACS *Org. Lett.*) —
-none of the hardcoded strings matched. It's now driven by document-relative
-statistics instead of per-publisher constants:
+## Corpus
 
-- **Heading detection**: PyMuPDF's `blocks` text mode strips font metadata,
-  so a heading and the paragraph right after it often land in the same block
-  with no visual gap. Stage 2 re-reads each page with `dict` mode for
-  per-line font size/boldness, computes the document's own body-text size
-  (the size with the most non-bold characters), and ranks heading tiers the
-  way a human reader would: font size first, then a numbered-list prefix or
-  ALL CAPS as a tie-breaker when two tiers share the same size (needed once
-  SI documents entered the picture — see Stage 2b below — since not every
-  document expresses every heading tier with a size difference). A style
-  tier only becomes a real heading *level* if it recurs across ≥2 distinct
-  blocks (a one-off large bold block, like a title or byline, isn't a
-  heading — real section headings are a family of different short blocks
-  sharing one style); same-as-body-size tiers need ≥4, since that's a
-  weaker signal, and are only eligible at the very start of a block, so a
-  coincidentally bold-and-short wrapped line mid-paragraph can't qualify. A
-  candidate is also rejected if it reads like a sentence (ends in
-  `.`/`?`/`!`, not all-caps, >3 words) or runs over ~20 words, since real
-  headings are short phrases, not emphasized prose.
-- **Figure-embedded text**: small blocks that are actually chemical-structure
-  labels sitting inside a figure (not body text) are dropped by checking
-  overlap against the figure bounding boxes found in Stage 1.
-- **Running headers/footers**: filtered per-line (not per-block, since a
-  running header can end up fused into a content block on the page with no
-  gap between them) by page-position band, plus text that recurs across a
-  large share of pages — matched both verbatim and with a trailing page
-  number stripped, since footers often differ only by that number.
-- **Two-column layout**: detected per page from the actual gap in block
-  x-positions rather than assumed at the page midpoint, so it also degrades
-  gracefully to single-column pages.
-- **Cross-page/column paragraphs**: a paragraph cut off at a page or column
-  boundary (no terminal punctuation at the break) is stitched back onto the
-  next block instead of appearing as two separate paragraphs.
-- **Figure captions**: `Fig./Figure/Scheme/Table/Chart N` (case-insensitive)
-  are matched to the nearest figure image on the page — checking both above
-  and below the caption (publishers differ on which side it's on), and
-  restricted to images sharing the caption's column first, so a two-column
-  page doesn't grab a same-height figure from the other column.
-- **References**: parsed by [GROBID](https://github.com/kermitt2/grobid)
-  (`ingest/grobid_client.py`, `/api/processReferences`) into structured
-  entries (authors, journal, volume, pages, year, DOI) instead of a prose
-  paragraph blob — see below. Falls back to the prose "References" section
-  if GROBID isn't running.
-
-Validated against two papers from different publishers with different
-typography: Rowsell et al., *Nature Catalysis* 7, 1186-1198 (2024)
-(`suzuki_iron_2024`) and Roy et al., *Org. Lett.* 28, 32-38 (2026)
-(`copper_iron_2025`).
-
-```
-python3 ingest/section_parse.py data/papers/suzuki_iron_2024
-python3 ingest/section_parse.py data/papers/copper_iron_2025
-```
-
-Outputs `sections.json`: front-matter paragraphs, a list of top-level
-sections (each with paragraphs and nested subsections), a list of figures
-with captions linked to their `image_id`/`image_path` from Stage 1, and a
-list of structured references.
-
-### References via GROBID
-
-An evaluation of GROBID as a full replacement for the hand-rolled section
-parsing above found it excellent for bibliographic metadata but inconsistent
-at section/figure segmentation across publishers (it missed nearly all
-structure on the ACS paper and found zero figures there), so it's used
-narrowly for just the one thing it's clearly better at: parsing the
-reference list. GROBID runs as a local Docker container:
-
-```
-docker run -d --name grobid -p 8070:8070 grobid/grobid:0.8.1
-```
-
-`fetch_references()` posts the PDF to GROBID's `processReferences` endpoint
-and parses the returned TEI XML `biblStruct` entries. If GROBID isn't
-reachable, `references` comes back empty and the prose "References" section
-stays in the section tree instead of being silently dropped.
-
-## Stage 2b: SI section parsing
-
-`ingest/si_parse.py` parses `SI_raw_extraction.json` the same way, but SI
-documents have a different shape than the main text: instead of a handful of
-prose sections, they're organized around dozens to hundreds of repeating
-*compound records* (a compound name or procedure label, followed by its
-characterization data and NMR spectra). Forcing that into the main text's
-prose section/subsection tree would lose the thing that actually matters
-here — "text blob and spectra per compound" — so `si_parse.py` reuses
-`section_parse.py`'s `parse_page`/`assemble_sections` unmodified to build the
-same kind of heading tree as the main text, then does one SI-specific thing:
-any *leaf* heading (nothing nested under it) is recast as a flat `record`
-(name + text blob + linked figures) instead of a subsection with a single
-paragraph. No SI-specific parsing logic exists anymore — it's a shape
-transform on top of the exact same document-relative heading detection used
-everywhere else.
-
-That heading detection had to generalize further to get here. The original
-version required a heading to be *strictly larger* than body text — true for
-every main-text heading tier seen so far, but SI documents don't always
-follow it:
-
-- **Nature's SI** uses genuine font-size-tiered headings, same convention as
-  its main text (`Supplementary Methods` at 16pt containing `General
-  Considerations` at 14pt, both clearly larger than 11pt body) — real
-  nesting, up to 4 levels deep in practice.
-- **ACS's SI** uses flat body-size-bold headings distinguished only by
-  numbering (`1. General experimental`, `12. Experimental procedures...`,
-  all at the exact same size as body text) — no size signal at all.
-
-`compute_heading_levels`/`classify_line` now rank heading tiers the way a
-human reader would: font size first, then secondary cues (a numbered prefix,
-ALL CAPS) as tie-breakers within equal sizes — so a same-size tier
-distinguished only by numbering still ranks as its own level instead of
-collapsing into body text. The relaxed (non-strictly-larger) tier is gated
-more conservatively than the strict one, since it's a weaker signal:
-eligible only at the very start of a block (so a coincidentally-short,
-coincidentally-bold last line of a wrapped paragraph — e.g. a chemistry
-compound ID like `3a` sitting alone at a line break — can't qualify; a real
-heading always starts a new block), and requires more repetitions across the
-document before being trusted as a real level (a bold "label lead-in" phrase
-in boilerplate prose, like "Correspondence and requests... :", can
-coincidentally repeat 2-3 times without being a heading).
-
-Two more general fixes came out of validating this against both SI
-documents:
-
-- **Trailing colon ≠ end of a sentence.** The shared sentence-suppression
-  check (used to reject a bold-but-prose-like fragment as "not a heading")
-  treated a trailing colon as terminal punctuation, which silently swallowed
-  every ACS compound header (`Synthesis of ... (14):`) into body text. A
-  colon introduces something, it doesn't end a declarative sentence — never
-  a valid "reject as heading" signal in the first place.
-- **A Table of Contents page isn't a real container.** Its entries are an
-  index of headings that appear again later, not genuine children of "Table
-  of Contents" — no typographic signal can tell a TOC's structure apart from
-  real nesting, so without an explicit check, a TOC page could validate a
-  heading level that then never legitimately closes for the rest of the
-  document (everything after it nests one level deeper, forever). Detecting
-  a dedicated TOC page and excluding it from heading-level validation is no
-  more publisher-specific than recognizing numbered lists or figure-caption
-  prefixes as conventions — it's a standard document convention independent
-  of either paper here.
-
-Figures are attached to whichever section/record is "open" at a given page
-(the most recent heading at or before it) — coarse, but matches how these
-documents are laid out: a compound's structure and spectra sit on or right
-after its own heading.
-
-```
-python3 ingest/si_parse.py data/papers/suzuki_iron_2024
-python3 ingest/si_parse.py data/papers/copper_iron_2025
-```
-
-Outputs `SI_sections.json`. Validated on all three SI documents so far: 250
-records (Suzuki), 152 records (copper-iron), 159 records (`suzuki_nickel_2026`,
-see below) — fewer than an earlier hand-rolled, SI-specific version for the
-first two, but a quality improvement, not a regression: verified zero
-orphaned figures (144/144 images in Suzuki's NMR section attached to a
-record) and confirmed the drop is entirely from removing noise a
-publisher-specific heuristic had let through (raw DFT-coordinate-dump
-fragments misread as headings, and NMR sub-spectra like `11B NMR` that used
-to spuriously split off from their parent compound now correctly merge back
-in). Known limitation, out of scope for this stage: dense comparison tables
-and reaction-scheme labels still fragment into spurious low-content records
-— real table extraction is Stage 4, not something this layout-level parsing
-is expected to solve.
-
-## Validated against a third publisher
-
-A third paper (Lu et al., *ACS Catal.* 16, 2417-2426 (2026),
-`suzuki_nickel_2026` — main text + 159-page SI) surfaced new conventions none
-of the first two papers had, each fixed as a further generalization of the
-existing document-relative signals rather than a new special case:
-
-- **Leading marker glyph as a heading signal.** ACS section headings are
-  preceded by a bullet-like glyph (`■`) in a completely different font/size
-  than the heading text. This is now a positive signal in
-  `heading_style_key`, ranked alongside a numbered prefix and ALL CAPS — the
-  specific character varies by publisher and can't be hardcoded, but "a
-  short, non-alphanumeric, differently-styled span immediately before the
-  heading text" is a generic convention. It's found relative to wherever the
-  dominant-style run of the line actually starts, not just at index 0, so it
-  survives the same fused-line pollution (`paper.■AUTHOR INFORMATION`, an
-  unrelated preceding sentence's tail landing on the same PDF line with zero
-  separating whitespace) that the marker itself needs to be robust to.
-  Restricted to non-alphanumeric text specifically so a superscript
-  affiliation number at a coincidental line-wrap point isn't mistaken for a
-  decorative bullet.
-- **A controlled vocabulary for chemistry-nomenclature italics.** Terms like
-  `tert`, `sec`, `cis`, `trans`, `R`/`S`/`E`/`Z` are conventionally
-  italicized inline (`lithium tert-butyl aryl boronates`) and are now kept
-  verbatim when reconstructing a heading's clean text, rather than relying on
-  their weight/size happening to match the surrounding heading style, which
-  isn't something to count on in general.
-- **Figure-region exclusion made length-aware.** Stage 1's figure detection
-  is purely geometric — it has no idea what text is nearby, so an oversized
-  or badly-merged figure region can coincidentally overlap real headings and
-  even whole paragraphs of body prose. `block_in_figure` now only ever
-  excludes short fragments (≤8 words for body text, ≤2 characters for
-  anything already classified as a heading): genuine figure debris (a
-  compound ID, a yield, a single-letter panel label) is always short;
-  a real heading or a real sentence never is, regardless of geometric
-  overlap with a bad figure box. This fixed two headings (`CONCLUSIONS`,
-  `MATERIALS AND METHODS`) that a badly-merged figure region had been
-  silently swallowing whole.
-- **Asymmetric figure-clustering padding.** `cluster_drawing_rects` (Stage 1)
-  now pads 25pt vertically but only 8pt horizontally. A multi-panel scheme
-  (5 sub-panels stacked down a page with generous whitespace between them)
-  needs a wide vertical gap tolerance to merge into one region; the same
-  tolerance horizontally risks bridging across a two-column page's gutter
-  and merging a figure with unrelated text in the other column. This also
-  surfaced and fixed a crash: a drawing rect extending into the page's
-  negative-coordinate margin/bleed area (previously too small on its own to
-  matter) became part of a larger, otherwise-valid cluster after the wider
-  vertical merge, and PyMuPDF's renderer rejects an out-of-bounds clip
-  region — fixed by clipping cluster bounding boxes to the page's actual
-  visible bounds before rendering.
-- **Body size computed across all text, not just non-bold.** This SI
-  document's characterization data — normally the clearest non-bold prose in
-  a document — renders entirely bold, including the data itself, not just
-  compound-name headers. Excluding bold text left the body-size estimate
-  reflecting only a small, unrepresentative non-bold sliver (running
-  headers, stray captions), well below the real compound-name headings —
-  they never qualified as headings at all. Bold text is a small enough share
-  of total characters in a normal prose document that including it doesn't
-  move the mode; it only matters when, as here, it's the majority of the
-  page.
-
-The two earlier papers were re-validated against every change in this batch
-and show zero regressions from their existing baselines. Known remaining
-limitation: two figures vertically close together on the same page (e.g. a
-scheme and a table six lines apart) can still merge into one region and
-share a caption match — lower priority, since it degrades gracefully (both
-captions still resolve to *a* relevant image) rather than losing content.
-
-## Validated against a fourth paper (same publisher family)
-
-A fourth paper (Daley-Dee et al., *Org. Lett.* 27, 197-201 (2025),
-`miyaura_iron_2025` — main text + 83-page SI) is the same publisher as
-`copper_iron_2025`, used as a check on whether the generalization actually
-holds within a family rather than being tuned to one example of it. It did,
-with no code changes needed: main text (3/3 real sections, 4 figures, 46
-references via GROBID) and SI (10 sections, 120 records — including a
-decimal-numbered convention, `3.2.3 Precatalyst screen`, not seen before and
-not matched by `NUMBERED_PREFIX_RE`, correctly nested anyway via the size/
-marker signals) both parsed correctly on the first run.
-
-One thing this surfaced worth noting as a genuine document-type difference,
-not a detection gap: *Organic Letters* is a short-communication format with
-a strict length limit, so a paper like this one has no `RESULTS AND
-DISCUSSION` heading at all — the whole body is continuous discussion prose,
-with only the standardized back-matter sections formally headed. Two
-`General Procedure for...` subheadings inside that prose (9.5pt, just under
-10pt body size, occurring only twice) don't get elevated to heading status —
-the procedure text itself is preserved in the body, just not organized under
-them. Investigated and left as-is rather than risk a regression: loosening
-either the size threshold or the recurrence requirement to catch a
-twice-occurring, unmarked, non-numbered, non-caps heading would also let
-back in the earlier false positive (a bold "label lead-in" phrase in
-boilerplate prose, e.g. "Correspondence and requests..."), which looks
-identical by every signal currently available.
+Seven papers spanning four publisher formats, chosen to stress-test the
+pipeline against real-world layout and chemistry diversity: `suzuki_iron_2024`,
+`copper_iron_2025`, `suzuki_nickel_2026`, `miyaura_iron_2025`,
+`redox_neutral_2024`, `nickelocene_2025`, `suzuki_nhc_2026`.
