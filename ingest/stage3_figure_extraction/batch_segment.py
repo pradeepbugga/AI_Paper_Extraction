@@ -113,7 +113,7 @@ import numpy as np
 from tqdm import tqdm
 from decimer_segmentation import get_expanded_masks
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 
 INK_DARK = 200                     # grayscale pixel value below this counts as "ink"
 LABEL_GAP_LOOKAHEAD_PX = 15         # how far past a candidate gap to look for content resuming

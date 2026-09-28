@@ -6,8 +6,8 @@ layout exactly; regenerate into a new numbered dir after any corpus re-run
 that changes reaction_links.json, rather than overwriting the old one, so
 the previous state stays available for comparison.
 
-Usage: python3 ingest/generate_audit_pages.py <output_dir_name>
-e.g.:  python3 ingest/generate_audit_pages.py audit_pages_v4
+Usage: python3 ingest/stage3_figure_extraction/generate_audit_pages.py <output_dir_name>
+e.g.:  python3 ingest/stage3_figure_extraction/generate_audit_pages.py audit_pages_v4
 """
 import base64
 import html
@@ -15,7 +15,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 PAPERS_DIR = ROOT / "data" / "papers"
 
 STYLE = """

@@ -12,10 +12,10 @@ Usage:
     scp -r pod:/workspace/.../data/papers /tmp/pod_pull
 
     # 2. dry-run to see what would change:
-    python ingest/sync_pod_results.py /tmp/pod_pull/papers
+    python ingest/stage3_figure_extraction/sync_pod_results.py /tmp/pod_pull/papers
 
     # 3. apply once the diff looks right:
-    python ingest/sync_pod_results.py /tmp/pod_pull/papers --apply
+    python ingest/stage3_figure_extraction/sync_pod_results.py /tmp/pod_pull/papers --apply
 
 Merge rule, per paper, keyed by segment_path across the whole file:
   - local segment has source == "human_drawn"  -> keep local, untouched

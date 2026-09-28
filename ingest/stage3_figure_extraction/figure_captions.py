@@ -25,7 +25,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 SI_FIGURE_ID_RE = re.compile(r"^SI_p(\d+)_(fig|raster|rasterstrip)(\d+)$")
 TRAILING_PAGE_NUM_RE = re.compile(r"\s*\d+\s*$")
 MAX_LOCAL_CAPTION_WORDS = 20  # a genuine per-figure label reads as a short

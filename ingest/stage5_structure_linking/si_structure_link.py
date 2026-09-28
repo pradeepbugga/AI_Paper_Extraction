@@ -143,7 +143,7 @@ import aiohttp
 import fitz
 import requests
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 
 # Best Claude option (95.5% single-structure accuracy, ~1.2s/call), but NOT
 # the pipeline's overall recommended default -- Gemini 3.7 Flash ties this

@@ -51,7 +51,7 @@ import numpy as np
 import pytesseract
 from PIL import Image
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 
 CAPTION_RE = re.compile(r"^(?:Supplementary\s+)?Table\s+S?\d+\s*[\.\:–—-]", re.IGNORECASE)
 CAPTION_SEARCH_ABOVE_PT = 400  # captions sit above the table in this

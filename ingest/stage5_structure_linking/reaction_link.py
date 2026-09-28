@@ -63,7 +63,7 @@ import anthropic
 import requests
 from PIL import Image, ImageDraw
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 
 CLAUDE_MODEL = "claude-sonnet-5"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"

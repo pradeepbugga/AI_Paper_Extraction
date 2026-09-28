@@ -11,8 +11,8 @@ Card status/fields (compound_id, yield, flag, note, source) still come from
 the real, current reaction_links.json -- only the pictured crop changes.
 
 Must run in the decimer_seg env (needs get_expanded_masks).
-Usage: python3 ingest/generate_audit_pages_raw.py <output_dir_name>
-e.g.:  python3 ingest/generate_audit_pages_raw.py audit_pages_v4_raw
+Usage: python3 ingest/stage3_figure_extraction/generate_audit_pages_raw.py <output_dir_name>
+e.g.:  python3 ingest/stage3_figure_extraction/generate_audit_pages_raw.py audit_pages_v4_raw
 """
 import base64
 import html

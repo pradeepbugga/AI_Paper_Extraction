@@ -14,7 +14,7 @@ from pathlib import Path
 from figure_classify import build_prototypes
 from tag_figure import tag_figure
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 
 
 def tag_paper(paper_dir, prototypes):

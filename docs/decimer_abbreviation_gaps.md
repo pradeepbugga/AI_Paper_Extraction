@@ -16,7 +16,7 @@ thallium (`[Tl]`) instead — reproducible on the public DECIMER web app,
 not just this pipeline. Since thallium organometallics are implausible in
 routine synthetic-chemistry SI documents, and the misread happens at
 moderate-to-high confidence (not a low-confidence guess), the
-`MEAN_CONFIDENCE_THRESHOLD` gate in `ingest/decimer_extract.py` cannot
+`MEAN_CONFIDENCE_THRESHOLD` gate in `ingest/stage3_figure_extraction/decimer_extract.py` cannot
 catch this on its own. Instead, `decimer_extract.py` OCRs the source image
 for any label in `KNOWN_MISSING_ABBREVIATIONS` and forces
 `need_human_review=True` whenever one is found, regardless of DECIMER's
@@ -97,7 +97,7 @@ case comes up).
 
 ## Step 4: add it
 
-In `ingest/decimer_extract.py`, add the lowercase label to
+In `ingest/stage3_figure_extraction/decimer_extract.py`, add the lowercase label to
 `KNOWN_MISSING_ABBREVIATIONS`:
 
 ```python

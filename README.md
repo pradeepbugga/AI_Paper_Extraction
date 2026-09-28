@@ -47,6 +47,21 @@ back to the exact page, figure, or table it came from.
 | 6. Entity normalization | Canonical compound IDs across papers | Not started |
 | 7. Knowledge graph | Provenance-linked graph over the above | Not started |
 
+## Repo layout
+
+```
+ingest/
+  stage1_pdf_ingestion/     # Stage 1: PDF -> text blocks + figures
+  stage2_layout_parsing/    # Stage 2/2b: document structure, SI records, references
+  stage3_figure_extraction/ # Stage 3: figure tagging, segmentation, OCSR, audit tooling
+  stage4_table_extraction/  # Stage 4: data table extraction
+  stage5_structure_linking/ # Stage 5: VLM-grounded structure-to-data linking
+  draw_ui/                  # Human review tool: sketch corrections for missed structures
+  split_ui/                 # Human review tool: split mis-merged multi-compound crops
+data/papers/<paper>/        # Per-paper corpus: source PDFs + every stage's output JSON
+docs/                       # Standalone write-ups of specific bugs/gaps
+```
+
 ## Engineering deep-dives
 
 A few of the harder problems this pipeline had to solve:
@@ -106,14 +121,14 @@ otherwise with no code changes required.
 ## Running the pipeline
 
 ```
-python3 ingest/pdf_ingest.py data/papers/<paper>       # Stage 1: PDF -> text + figures
-python3 ingest/section_parse.py data/papers/<paper>    # Stage 2: document structure
-python3 ingest/si_parse.py data/papers/<paper>         # Stage 2b: SI compound records
-python3 ingest/batch_tag_figures.py data/papers/<paper> # Stage 3a: figure classification
-python3 ingest/batch_segment.py data/papers/<paper>     # Stage 3b: crop individual structures
-python3 ingest/batch_molscribe_extract.py data/papers/<paper> # Stage 3c: OCSR
-python3 ingest/table_extract.py data/papers/<paper>     # Stage 4: table extraction
-python3 ingest/reaction_link.py data/papers/<paper>     # Stage 5: structure-to-data linking
+python3 ingest/stage1_pdf_ingestion/pdf_ingest.py data/papers/<paper>            # Stage 1: PDF -> text + figures
+python3 ingest/stage2_layout_parsing/section_parse.py data/papers/<paper>        # Stage 2: document structure
+python3 ingest/stage2_layout_parsing/si_parse.py data/papers/<paper>            # Stage 2b: SI compound records
+python3 ingest/stage3_figure_extraction/batch_tag_figures.py data/papers/<paper> # Stage 3a: figure classification
+python3 ingest/stage3_figure_extraction/batch_segment.py data/papers/<paper>     # Stage 3b: crop individual structures
+python3 ingest/stage3_figure_extraction/batch_molscribe_extract.py data/papers/<paper> # Stage 3c: OCSR
+python3 ingest/stage4_table_extraction/table_extract.py data/papers/<paper>      # Stage 4: table extraction
+python3 ingest/stage5_structure_linking/reaction_link.py data/papers/<paper>     # Stage 5: structure-to-data linking
 ```
 
 References are parsed via a local [GROBID](https://github.com/kermitt2/grobid)

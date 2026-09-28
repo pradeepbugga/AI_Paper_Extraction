@@ -17,7 +17,7 @@ from PIL import Image
 
 MODEL_NAME = "ViT-B-32-quickgelu"
 PRETRAINED = "openai"
-EXAMPLES_DIR = Path(__file__).resolve().parent.parent / "data" / "figure_examples"
+EXAMPLES_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "figure_examples"
 LABELS_CSV = EXAMPLES_DIR / "labels.csv"
 IMAGES_DIR = EXAMPLES_DIR / "images"
 

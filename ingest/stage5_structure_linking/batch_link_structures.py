@@ -71,7 +71,7 @@ from tqdm import tqdm
 import reaction_link
 import si_structure_link
 
-PAPERS_DIR = Path(__file__).resolve().parent.parent / "data" / "papers"
+PAPERS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "papers"
 DEFAULT_CONCURRENCY = 8
 
 
